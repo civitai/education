@@ -63,11 +63,16 @@ import Logo from './Logo.astro';
   });
 
   // Any chip row (header, phone front page and topic pages) starts scrolled to the current topic.
-  for (const row of document.querySelectorAll<HTMLElement>('.chips')) {
-    const current = row.querySelector<HTMLElement>('[aria-current="page"]');
-    const end = current ? current.getBoundingClientRect().right - row.getBoundingClientRect().left : 0;
-    if (end > row.clientWidth) row.scrollLeft = end - row.clientWidth + 40;
-  }
+  // Measured again once web fonts load, since the chip widths change with them.
+  const revealCurrentChip = () => {
+    for (const row of document.querySelectorAll<HTMLElement>('.chips')) {
+      const current = row.querySelector<HTMLElement>('[aria-current="page"]');
+      const end = current ? current.getBoundingClientRect().right - row.getBoundingClientRect().left + row.scrollLeft : 0;
+      if (end > row.clientWidth) row.scrollLeft = end - row.clientWidth + 40;
+    }
+  };
+  revealCurrentChip();
+  document.fonts?.ready.then(revealCurrentChip);
 
   // Header chips: on narrow desktops the row scrolls; mark which edges hide chips (the CSS fades
   // them).

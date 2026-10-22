@@ -10,6 +10,7 @@ interface Props {
     | 'external-link'
     | 'arrow-right'
     | 'arrow-up-right'
+    | 'chevron-left'
     | 'chevron-right'
     | 'chevron-down'
     | 'list'
@@ -29,6 +30,7 @@ const PATHS: Record<Props['name'], string> = {
   'external-link': '<path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
   'arrow-right': '<path d="M5 12h14m-7-7 7 7-7 7"/>',
   'arrow-up-right': '<path d="M7 17 17 7M7 7h10v10"/>',
+  'chevron-left': '<path d="m15 18-6-6 6-6"/>',
   'chevron-right': '<path d="m9 18 6-6-6-6"/>',
   'chevron-down': '<path d="m6 9 6 6 6-6"/>',
   list: '<path d="M3 6h.01M3 12h.01M3 18h.01M8 6h13M8 12h13M8 18h13"/>',

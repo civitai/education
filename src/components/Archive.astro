@@ -1,7 +1,8 @@
 ---
 // A paginated list of posts: the posts page, categories, tags, authors and /page/N/.
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PostList from './PostList.astro';
+import CategoryChips from './CategoryChips.astro';
+import PostCard from './PostCard.astro';
 import Pagination from './Pagination.astro';
 import { pageCount, paginate, type Post } from '../lib/content';
 
@@ -9,26 +10,47 @@ interface Props {
   title: string;
   /** Visible heading; defaults to title. */
   heading?: string;
+  /** What kind of listing this is, shown in the breadcrumb ("Topic", "Tag", "Author", ...). */
+  kind: string;
   description?: string;
   base: string;
   page: number;
   posts: Post[];
   feed?: string;
 }
-const { title, heading = title, description, base, page, posts, feed } = Astro.props;
+const { title, heading = title, kind, description, base, page, posts, feed } = Astro.props;
 const total = pageCount(posts.length);
 const path = page === 1 ? base : `${base}page/${page}/`;
 const pageTitle = page === 1 ? title : `${title} - Page ${page} of ${total}`;
-const currentCategory = base.match(/^\/category\/([^/]+)\/$/)?.[1];
+const isCategory = base.startsWith('/category/');
+const count = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
 ---
 
-<BaseLayout title={pageTitle} description={description} path={path} feed={feed} currentCategory={currentCategory}>
+<BaseLayout title={pageTitle} description={description} path={path} feed={feed}>
   <div class="archive">
-    <header class="archive-header">
-      <h1>{heading}</h1>
-      {description && <p class="archive-description">{description}</p>}
+    {isCategory && <CategoryChips class="home-chips" />}
+    <header class="archive-head">
+      <p class="crumbs">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>{kind}</span>
+      </p>
+      <h1 class="archive-title">{heading}</h1>
+      {description && <p class="archive-desc">{description}</p>}
+      <p class="archive-count">
+        {count}
+        {total > 1 && <span>· Page {page} of {total}</span>}
+      </p>
     </header>
-    <PostList posts={paginate(posts, page)} />
+    <ul class="story-grid archive-grid">
+      {
+        paginate(posts, page).map((post, i) => (
+          <li>
+            <PostCard post={post} level={2} eager={i < 3} />
+          </li>
+        ))
+      }
+    </ul>
     <Pagination base={base} current={page} total={total} />
   </div>
 </BaseLayout>

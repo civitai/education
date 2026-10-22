@@ -1,7 +1,7 @@
 import type { MarkdownHeading } from 'astro';
 import { getCategories, getPosts, type Post, type Term } from './content';
 
-/** Sidebar and front-page order; categories not listed follow alphabetically. */
+/** Front-page topic order. */
 const CATEGORY_ORDER = ['beginner-guides', 'quickstart-guides', 'guides', 'training', 'prompting', 'video', 'news'];
 
 /** Which of a post's categories to show as "its" category (most specific first). */
@@ -35,7 +35,7 @@ export function activeChip(path: string): string | undefined {
 
 /**
  * Every category with posts, for the phone menu: the chip categories first in chip order, then the
- * rest alphabetically, so a phone reaches every archive the sidebar lists on wide screens.
+ * rest alphabetically, so a phone reaches every archive, not only the header chips.
  */
 export async function getMenuTopics(): Promise<{ main: MenuTopic[]; more: MenuTopic[] }> {
   const categories = (await getCategories()).filter((t) => t.slug !== 'uncategorized');
@@ -75,23 +75,6 @@ export async function getHomeTopics(): Promise<MenuTopic[]> {
     if (!term || term.count === 0) return [];
     return [{ ...term, description: term.description || TOPIC_BLURBS[slug], href: `/category/${slug}/` }];
   });
-}
-
-export type CategoryGroup = Term & { posts: Post[]; items: Post[] };
-
-/** Categories in display order, each with its posts (newest first) and the latest `limit` of them. */
-export async function getCategoryGroups(limit: number): Promise<CategoryGroup[]> {
-  const rank = (slug: string) => {
-    const i = CATEGORY_ORDER.indexOf(slug);
-    return i < 0 ? CATEGORY_ORDER.length : i;
-  };
-  const posts = await getPosts();
-  return (await getCategories())
-    .sort((a, b) => rank(a.slug) - rank(b.slug) || a.name.localeCompare(b.name))
-    .map((term) => {
-      const all = posts.filter((p) => p.data.categories.includes(term.slug));
-      return { ...term, posts: all, items: all.slice(0, limit) };
-    });
 }
 
 export function primaryCategory(post: Post): string | undefined {

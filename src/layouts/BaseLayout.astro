@@ -2,7 +2,6 @@
 import '../styles/base.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Sidebar from '../components/Sidebar.astro';
 import { SITE } from '../lib/site';
 import { absolute } from '../lib/content';
 
@@ -21,12 +20,8 @@ interface Props {
   /** Alternate RSS feed for this archive, e.g. /category/news/feed/. */
   feed?: string;
   noindex?: boolean;
-  /** Category sidebar (wide screens; phones use the header menu); the front page turns it off. */
+  /** @deprecated The category sidebar was retired (topics live in the header); ignored. */
   sidebar?: boolean;
-  /** Post slug being read, highlighted in the sidebar. */
-  currentPost?: string;
-  /** Category archive being viewed, opened in the sidebar. */
-  currentCategory?: string;
 }
 
 const {
@@ -40,13 +35,7 @@ const {
   modified,
   feed,
   noindex,
-  sidebar = true,
-  currentPost,
-  currentCategory,
 } = Astro.props;
-// The rail can render nothing (a post with fewer than three headings), so check the output.
-const aside = Astro.slots.has('aside') ? (await Astro.slots.render('aside')).trim() : '';
-const hasAside = aside.length > 0;
 const fullTitle = documentTitle || (path === '/' ? SITE.title : `${title} - ${SITE.title}`);
 const canonical = Astro.props.canonical || absolute(path);
 ---
@@ -98,21 +87,9 @@ const canonical = Astro.props.canonical || absolute(path);
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <Header />
-    {
-      sidebar ? (
-        <div class:list={['layout', { 'has-aside': hasAside }]}>
-          <Sidebar currentPost={currentPost} currentCategory={currentCategory} />
-          <main id="main" class="site-main">
-            <slot />
-          </main>
-          {hasAside && <div class="aside" set:html={aside} />}
-        </div>
-      ) : (
-        <main id="main" class="site-main wide">
-          <slot />
-        </main>
-      )
-    }
+    <main id="main" class="site-main">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

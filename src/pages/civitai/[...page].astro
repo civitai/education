@@ -18,4 +18,4 @@ export async function getStaticPaths() {
 const { page, posts, title } = Astro.props;
 ---
 
-<Archive title={title} base={`/${SITE.postsPageSlug}/`} page={page} posts={posts} feed="/feed/" />
+<Archive title={title} heading="Every guide" kind="All guides" base={`/${SITE.postsPageSlug}/`} page={page} posts={posts} feed="/feed/" />

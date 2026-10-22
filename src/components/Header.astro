@@ -62,8 +62,15 @@ import Logo from './Logo.astro';
     }
   });
 
+  // Any chip row (header, phone front page and topic pages) starts scrolled to the current topic.
+  for (const row of document.querySelectorAll<HTMLElement>('.chips')) {
+    const current = row.querySelector<HTMLElement>('[aria-current="page"]');
+    const end = current ? current.getBoundingClientRect().right - row.getBoundingClientRect().left : 0;
+    if (end > row.clientWidth) row.scrollLeft = end - row.clientWidth + 40;
+  }
+
   // Header chips: on narrow desktops the row scrolls; mark which edges hide chips (the CSS fades
-  // them) and bring the current topic into view.
+  // them).
   const chips = document.querySelector<HTMLElement>('.hdr-chips');
   if (chips) {
     const mark = () => {
@@ -71,9 +78,6 @@ import Logo from './Logo.astro';
       chips.toggleAttribute('data-more-start', max > 1 && chips.scrollLeft > 1);
       chips.toggleAttribute('data-more-end', max > 1 && chips.scrollLeft < max - 1);
     };
-    const current = chips.querySelector<HTMLElement>('[aria-current="page"]');
-    const end = current ? current.getBoundingClientRect().right - chips.getBoundingClientRect().left : 0;
-    if (end > chips.clientWidth) chips.scrollLeft = end - chips.clientWidth + 40;
     mark();
     chips.addEventListener('scroll', mark, { passive: true });
     new ResizeObserver(mark).observe(chips);

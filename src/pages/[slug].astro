@@ -39,7 +39,6 @@ const hasToc = toc.length >= TOC_MIN;
   type={post ? 'article' : 'website'}
   published={post ? post.data.date : undefined}
   modified={post ? modified : undefined}
-  sidebar={false}
 >
   <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body>
     {hasToc && <MobileContents items={toc} />}

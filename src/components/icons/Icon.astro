@@ -1,7 +1,20 @@
 ---
 /** Inline stroke icons (lucide shapes), so the chrome needs no icon font or library. */
 interface Props {
-  name: 'search' | 'moon' | 'sun' | 'menu' | 'x' | 'external-link' | 'arrow-right' | 'arrow-up-right' | 'chevron-right';
+  name:
+    | 'search'
+    | 'moon'
+    | 'sun'
+    | 'menu'
+    | 'x'
+    | 'external-link'
+    | 'arrow-right'
+    | 'arrow-up-right'
+    | 'chevron-right'
+    | 'chevron-down'
+    | 'list'
+    | 'bookmark'
+    | 'check';
   size?: number;
   class?: string;
 }
@@ -17,6 +30,10 @@ const PATHS: Record<Props['name'], string> = {
   'arrow-right': '<path d="M5 12h14m-7-7 7 7-7 7"/>',
   'arrow-up-right': '<path d="M7 17 17 7M7 7h10v10"/>',
   'chevron-right': '<path d="m9 18 6-6-6-6"/>',
+  'chevron-down': '<path d="m6 9 6 6 6-6"/>',
+  list: '<path d="M3 6h.01M3 12h.01M3 18h.01M8 6h13M8 12h13M8 18h13"/>',
+  bookmark: '<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
 };
 ---
 

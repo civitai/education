@@ -1,0 +1,38 @@
+---
+// After an article: the newest posts in its primary category (cards on wide screens, rows on phones).
+import PostCard from './PostCard.astro';
+import Icon from './icons/Icon.astro';
+import { termName, type Post } from '../lib/content';
+import { getUpNext } from '../lib/nav';
+
+interface Props {
+  post: Post;
+  category: string;
+}
+const { post, category } = Astro.props;
+const { posts, total } = await getUpNext(post, category);
+const name = termName('categories', category);
+---
+
+{
+  posts.length > 0 && (
+    <section class="upnext" aria-labelledby="upnext-heading" data-pagefind-ignore>
+      <div class="upnext-inner">
+        <div class="upnext-head">
+          <h2 id="upnext-heading">Up next in {name}</h2>
+          <a class="upnext-all" href={`/category/${category}/`}>
+            All {total} guides
+            <Icon name="arrow-right" size={16} />
+          </a>
+        </div>
+        <ul class="upnext-list">
+          {posts.map((p) => (
+            <li>
+              <PostCard post={p} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}

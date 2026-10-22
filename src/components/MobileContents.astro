@@ -1,0 +1,108 @@
+---
+// Phone contents: a bar under the header naming the section being read, which opens a sheet of
+// every section. TableOfContents.astro's script fills in the bar and marks the links; this
+// component's script only opens and closes the sheet.
+import Icon from './icons/Icon.astro';
+import type { TocItem } from '../lib/nav';
+
+interface Props {
+  items: TocItem[];
+}
+const { items } = Astro.props;
+const first = items[0];
+---
+
+<div class="mc" data-pagefind-ignore>
+  <button class="mc-bar" type="button" aria-expanded="false" aria-controls="mc-sheet" data-mc-toggle>
+    <Icon name="list" size={18} class="mc-icon" />
+    <span class="mc-now">
+      <span class="mc-label">In this guide · <span data-toc-count>1 of {items.length}</span></span>
+      <span class="mc-title">
+        <span class="mc-num" data-toc-num>{first.num}</span>
+        <span data-toc-title>{first.text}</span>
+      </span>
+    </span>
+    <span class="mc-open-label" aria-hidden="true">
+      <span>In this guide</span>
+      <span class="mc-open-count" data-toc-count>1 of {items.length}</span>
+    </span>
+    <span class="mc-progress" data-toc-progress style={`--p: ${1 / items.length}`} aria-hidden="true"></span>
+    <Icon name="chevron-down" size={18} class="mc-chevron" />
+  </button>
+  <nav class="mc-sheet" id="mc-sheet" aria-label="In this guide" hidden>
+    <ol class="mc-list">
+      {
+        items.map((h) => (
+          <li class={`depth-${h.depth}`}>
+            <a href={`#${h.slug}`} data-toc-link>
+              <span class="num">{h.num}</span>
+              <span class="toc-text">{h.text}</span>
+              <span class="mc-reading">Reading</span>
+              <Icon name="check" size={16} class="mc-check" />
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+    <a class="toc-resume" href="#" data-toc-resume hidden>
+      <Icon name="bookmark" size={14} />
+      <span>You stopped at <span data-resume-label></span></span>
+    </a>
+  </nav>
+  <div class="mc-scrim" data-mc-scrim hidden></div>
+</div>
+
+<script>
+  // The sheet locks page scroll like the menu, keeps Tab inside the bar and the sheet, and closes on
+  // Escape, the scrim, a chosen section, or a resize to wide screens; focus returns to the bar.
+  const root = document.documentElement;
+  const wrap = document.querySelector<HTMLElement>('.mc');
+  const toggle = wrap?.querySelector<HTMLButtonElement>('[data-mc-toggle]');
+  const sheet = document.getElementById('mc-sheet');
+  const scrim = wrap?.querySelector<HTMLElement>('[data-mc-scrim]');
+
+  if (wrap && toggle && sheet && scrim) {
+    const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+    const setOpen = (open: boolean, restoreFocus = true) => {
+      if (open === isOpen()) return;
+      toggle.setAttribute('aria-expanded', String(open));
+      sheet.hidden = !open;
+      scrim.hidden = !open;
+      root.toggleAttribute('data-contents-open', open);
+      if (open) {
+        const target = sheet.querySelector<HTMLElement>('[aria-current]') ?? sheet.querySelector<HTMLElement>('a');
+        target?.focus();
+        target?.scrollIntoView({ block: 'nearest' });
+      } else if (restoreFocus) {
+        toggle.focus();
+      }
+    };
+    toggle.addEventListener('click', () => setOpen(!isOpen()));
+    scrim.addEventListener('click', () => setOpen(false));
+    // A chosen section: close first (unlocking scroll) so the browser's jump to the anchor lands.
+    sheet.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) setOpen(false, false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!isOpen()) return;
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        setOpen(false);
+      } else if (e.key === 'Tab') {
+        const items = [toggle, ...sheet.querySelectorAll<HTMLElement>('a:not([hidden])')];
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+    matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
+      if (e.matches) setOpen(false, false);
+    });
+  }
+</script>

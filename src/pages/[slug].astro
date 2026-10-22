@@ -3,10 +3,14 @@
 import { render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Prose from '../components/Prose.astro';
+import ArticleHero from '../components/ArticleHero.astro';
+import Cover from '../components/Cover.astro';
 import TableOfContents from '../components/TableOfContents.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import MobileContents from '../components/MobileContents.astro';
+import FollowAlong from '../components/FollowAlong.astro';
+import UpNext from '../components/UpNext.astro';
 import { getSlugEntries, termName } from '../lib/content';
-import { entryDeck, primaryCategory, readingMinutes } from '../lib/nav';
+import { TOC_MIN, entryDeck, primaryCategory, readingMinutes, tocItems } from '../lib/nav';
 import taxonomies from '../data/taxonomies.json';
 
 export async function getStaticPaths() {
@@ -21,8 +25,10 @@ const data = entry.data;
 const author = post ? taxonomies.authors.find((a) => a.slug === post.data.author) : undefined;
 const modified = data.modified && data.date && data.modified.getTime() > data.date.getTime() ? data.modified : undefined;
 const category = post ? primaryCategory(post) : undefined;
-const minutes = post ? readingMinutes(entry.body) : 0;
 const deck = post ? entryDeck(post.data.excerpt, entry.body) : undefined;
+// Pages (about, contact) are a title and a column; only posts get contents, the aside and up next.
+const toc = post ? tocItems(headings) : [];
+const hasToc = toc.length >= TOC_MIN;
 ---
 
 <BaseLayout
@@ -33,72 +39,91 @@ const deck = post ? entryDeck(post.data.excerpt, entry.body) : undefined;
   type={post ? 'article' : 'website'}
   published={post ? post.data.date : undefined}
   modified={post ? modified : undefined}
-  currentPost={post?.id}
+  sidebar={false}
 >
-  <article class="entry" data-pagefind-body>
-    <header class="entry-header">
-      {
-        post && category && (
-          <p class="crumbs" data-pagefind-ignore>
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href={`/category/${category}/`}>{termName('categories', category)}</a>
-          </p>
-        )
-      }
-      <h1 class="entry-title" data-pagefind-meta="title">{data.title}</h1>
-      {deck && <p class="entry-deck">{deck}</p>}
-      {
-        post && (
-          <dl class="entry-kv" data-pagefind-ignore>
-            <div>
-              <dt>Category</dt>
-              <dd>{category ? <a href={`/category/${category}/`}>{termName('categories', category)}</a> : '-'}</dd>
-            </div>
-            <div>
-              <dt>Published</dt>
-              <dd><FormattedDate date={post.data.date} numeric /></dd>
-            </div>
-            <div>
-              <dt>{modified ? 'Updated' : 'Author'}</dt>
-              <dd>
-                {modified ? (
-                  <FormattedDate date={modified} numeric />
-                ) : author ? (
-                  <a href={`/author/${author.slug}/`} rel="author">{author.name}</a>
-                ) : (
-                  '-'
-                )}
-              </dd>
-            </div>
-            <div>
-              <dt>Read time</dt>
-              <dd>{minutes} min</dd>
-            </div>
-          </dl>
-        )
-      }
-    </header>
-    {post && <TableOfContents headings={headings} variant="inline" />}
-    <Prose searchable={false} numbered={Boolean(post)}>
-      <Content />
-    </Prose>
+  <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body>
+    {hasToc && <MobileContents items={toc} />}
+    <div class="article-shell">
+      <ArticleHero
+        title={data.title}
+        deck={deck}
+        category={category}
+        author={author}
+        published={post?.data.date}
+        updated={post ? modified : undefined}
+        minutes={post ? readingMinutes(entry.body) : undefined}
+      />
+    </div>
     {
-      post && post.data.tags.length > 0 && (
-        <footer class="entry-footer">
-          <h2 class="entry-tags-heading">Tags</h2>
-          <ul class="entry-tags">
-            {post.data.tags.map((t) => (
-              <li>
-                <a href={`/tag/${t}/`} rel="tag">
-                  {termName('tags', t)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </footer>
+      post?.data.image && (
+        <div class="article-cover">
+          <Cover src={post.data.image} shape="wide" priority />
+        </div>
       )
     }
+    <div class="article-shell article-body">
+      {hasToc && post && <TableOfContents items={toc} slug={post.id} />}
+      <div class="article-main">
+        <Prose searchable={false} numbered={Boolean(post)}>
+          <Content />
+        </Prose>
+        <script is:inline>
+          // Revision history (rehype-table-wrap) is rendered open; phones start with the latest entry.
+          if (matchMedia('(max-width: 1023px)').matches)
+            document.querySelectorAll('details[data-revisions]').forEach(function (d) {
+              d.open = false;
+            });
+        </script>
+        {
+          post && post.data.tags.length > 0 && (
+            <footer class="entry-footer" data-pagefind-ignore>
+              <h2 class="entry-tags-heading">Tags</h2>
+              <ul class="entry-tags">
+                {post.data.tags.map((t) => (
+                  <li>
+                    <a href={`/tag/${t}/`} rel="tag">
+                      {termName('tags', t)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </footer>
+          )
+        }
+      </div>
+      {
+        post && (
+          <aside class="article-aside" aria-label="Try it">
+            <FollowAlong />
+          </aside>
+        )
+      }
+    </div>
+    {post && category && <UpNext post={post} category={category} />}
   </article>
-  {post && <TableOfContents slot="aside" headings={headings} />}
 </BaseLayout>
+
+<script>
+  // Copy buttons on code blocks (markup from rehype-table-wrap; hidden until this runs).
+  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-copy]')) {
+    const code = button.closest('.code-block')?.querySelector('pre');
+    if (!code || !navigator.clipboard) continue;
+    button.hidden = false;
+    const label = button.querySelector('[data-copy-label]');
+    let timer = 0;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(code.innerText.replace(/\n$/, ''));
+        if (label) label.textContent = 'Copied';
+        button.setAttribute('aria-label', 'Copied to clipboard');
+      } catch {
+        if (label) label.textContent = 'Copy failed';
+      }
+      clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        if (label) label.textContent = 'Copy';
+        button.setAttribute('aria-label', 'Copy code');
+      }, 2000);
+    });
+  }
+</script>

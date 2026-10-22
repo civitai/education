@@ -1,3 +1,4 @@
+import type { MarkdownHeading } from 'astro';
 import { getCategories, getPosts, type Post, type Term } from './content';
 
 /** Sidebar and front-page order; categories not listed follow alphabetically. */
@@ -114,4 +115,33 @@ export function readingMinutes(body: string | undefined): number {
   const text = (body || '').replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/<[^>]+>/g, ' ');
   const words = text.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 230));
+}
+
+/** A contents entry: an h2 or h3, numbered 1, 1.1 to match the section numbers prose.css draws. */
+export type TocItem = { depth: number; slug: string; text: string; num: string };
+
+/** Fewer headings than this and a post gets no contents rail or bar. */
+export const TOC_MIN = 3;
+
+/** The h2 and h3 headings (the WordPress table of contents depth), numbered. */
+export function tocItems(headings: MarkdownHeading[]): TocItem[] {
+  let section = 0;
+  let sub = 0;
+  return headings
+    .filter((h) => h.depth >= 2 && h.depth <= 3)
+    .map((h) => {
+      if (h.depth === 2) {
+        section += 1;
+        sub = 0;
+        return { depth: h.depth, slug: h.slug, text: h.text, num: String(section) };
+      }
+      sub += 1;
+      return { depth: h.depth, slug: h.slug, text: h.text, num: `${section}.${sub}` };
+    });
+}
+
+/** The newest posts in a category other than `post`, and how many posts the category has. */
+export async function getUpNext(post: Post, category: string, limit = 3): Promise<{ posts: Post[]; total: number }> {
+  const inCategory = (await getPosts()).filter((p) => p.data.categories.includes(category));
+  return { posts: inCategory.filter((p) => p.id !== post.id).slice(0, limit), total: inCategory.length };
 }

@@ -1,93 +1,151 @@
 ---
-import type { MarkdownHeading } from 'astro';
+// The article's contents rail (wide screens). Its script also drives the phone contents bar and
+// sheet (MobileContents.astro): both list the same links, marked data-toc-link.
+import Icon from './icons/Icon.astro';
+import type { TocItem } from '../lib/nav';
 
 interface Props {
-  headings: MarkdownHeading[];
-  /** "aside" is the sticky rail (slot="aside" of BaseLayout); "inline" is the collapsible block shown above the article on narrow screens. */
-  variant?: 'aside' | 'inline';
+  items: TocItem[];
+  /** Post slug: the furthest section read is remembered per post. */
+  slug: string;
 }
-const { headings, variant = 'aside' } = Astro.props;
-
-// Same depth as the WordPress table of contents (h2 and h3), numbered 1, 1.1 to match the section
-// numbers prose.css draws on the headings.
-let section = 0;
-let sub = 0;
-const items = headings
-  .filter((h) => h.depth >= 2 && h.depth <= 3)
-  .map((h) => {
-    if (h.depth === 2) {
-      section += 1;
-      sub = 0;
-      return { ...h, num: String(section) };
-    }
-    sub += 1;
-    return { ...h, num: `${section}.${sub}` };
-  });
+const { items, slug } = Astro.props;
 ---
 
-{
-  items.length >= 3 && (
-    <Fragment>
-      {variant === 'inline' ? (
-        <details class="toc-m" data-pagefind-ignore>
-          <summary>On this page</summary>
-          <nav aria-label="On this page (inline)">
-            <ul>
-              {items.map((h) => (
-                <li class={`depth-${h.depth}`}>
-                  <a href={`#${h.slug}`} data-toc-link>
-                    <span class="num">{h.num}</span>
-                    <span>{h.text}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </details>
-      ) : (
-        <nav class="toc" aria-label="On this page" data-pagefind-ignore>
-          <h2 class="toc-heading">On this page</h2>
-          <ul>
-            {items.map((h) => (
-              <li class={`depth-${h.depth}`}>
-                <a href={`#${h.slug}`} data-toc-link>
-                  <span class="num">{h.num}</span>
-                  <span>{h.text}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
-    </Fragment>
-  )
-}
+<nav class="toc" aria-labelledby="toc-heading" data-toc={slug} data-pagefind-ignore>
+  <h2 class="toc-heading" id="toc-heading">In this guide</h2>
+  <ol class="toc-list">
+    {
+      items.map((h) => (
+        <li class={`depth-${h.depth}`}>
+          <a href={`#${h.slug}`} data-toc-link>
+            <span class="num">{h.num}</span>
+            <span class="toc-text">{h.text}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+  <a class="toc-resume" href="#" data-toc-resume hidden>
+    <Icon name="bookmark" size={14} />
+    <span>You stopped at <span data-resume-label></span></span>
+  </a>
+</nav>
 
 <script>
-  // Highlight the section being read, in both the rail and the inline block.
+  // Marks the section being read in every contents list (rail and phone sheet), dims the ones
+  // already passed, and updates the phone bar. Headings crossing the line under the sticky header
+  // trigger the update (IntersectionObserver), so nothing runs on every scroll frame.
+  // The furthest section reached is kept per post in localStorage; a later visit offers a link back.
+  const rail = document.querySelector<HTMLElement>('[data-toc]');
   const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')];
-  const heads = [...new Set(links.map((a) => a.getAttribute('href')!.slice(1)))]
-    .map((id) => document.getElementById(id))
-    .filter((el): el is HTMLElement => Boolean(el));
-  if (heads.length) {
-    let frame = 0;
-    const update = () => {
-      const line = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top-h')) + 40;
-      let current = heads[0];
-      for (const h of heads) {
-        if (h.getBoundingClientRect().top <= line) current = h;
-        else break;
+  const ids = [...new Set(links.map((a) => decodeURIComponent(a.hash.slice(1))))];
+  const heads = ids.map((id) => document.getElementById(id)).filter((el): el is HTMLElement => Boolean(el));
+
+  if (rail && heads.length) {
+    const key = `toc-resume:${rail.dataset.toc}`;
+    const read = () => {
+      try {
+        return localStorage.getItem(key);
+      } catch {
+        return null;
       }
-      for (const a of links) a.classList.toggle('active', a.getAttribute('href') === `#${current.id}`);
     };
+    const write = (id: string) => {
+      try {
+        localStorage.setItem(key, id);
+      } catch {
+        // No storage (private mode, blocked): the mark just doesn't persist.
+      }
+    };
+    const targetOf = (a: HTMLAnchorElement) => decodeURIComponent(a.hash.slice(1));
+    const labelOf = (h: HTMLElement) => {
+      const a = links.find((l) => targetOf(l) === h.id);
+      const part = (sel: string) => a?.querySelector(sel)?.textContent?.trim() ?? '';
+      return { num: part('.num'), title: part('.toc-text') };
+    };
+
+    // Offer the way back only when a previous visit got past the first section.
+    let furthest = -1;
+    const saved = read();
+    const savedIndex = saved ? heads.findIndex((h) => h.id === saved) : -1;
+    if (savedIndex > 0) {
+      furthest = savedIndex;
+      for (const mark of document.querySelectorAll<HTMLAnchorElement>('[data-toc-resume]')) {
+        mark.href = `#${heads[savedIndex].id}`;
+        const label = mark.querySelector('[data-resume-label]');
+        const { num, title } = labelOf(heads[savedIndex]);
+        if (label) label.textContent = `${num} ${title}`;
+        mark.hidden = false;
+        mark.addEventListener('click', () => {
+          for (const m of document.querySelectorAll<HTMLElement>('[data-toc-resume]')) m.hidden = true;
+        });
+      }
+    }
+
+    const bar = {
+      count: document.querySelectorAll('[data-toc-count]'),
+      num: document.querySelector('[data-toc-num]'),
+      title: document.querySelector('[data-toc-title]'),
+      progress: document.querySelector<HTMLElement>('[data-toc-progress]'),
+    };
+
+    let current = -1;
+    const line = () => {
+      const root = getComputedStyle(document.documentElement);
+      const top = parseFloat(root.getPropertyValue('--top-h')) || 0;
+      const barEl = document.querySelector<HTMLElement>('.mc');
+      return top + (barEl && barEl.offsetParent ? barEl.offsetHeight : 0) + 24;
+    };
+    const update = () => {
+      const y = line();
+      let index = 0;
+      heads.forEach((h, i) => {
+        if (h.getBoundingClientRect().top <= y) index = i;
+      });
+      if (index === current) return;
+      current = index;
+      const id = heads[index].id;
+      const doneIds = new Set(heads.slice(0, index).map((h) => h.id));
+      for (const a of links) {
+        const target = targetOf(a);
+        const isCurrent = target === id;
+        a.classList.toggle('is-current', isCurrent);
+        a.classList.toggle('is-done', doneIds.has(target));
+        if (isCurrent) a.setAttribute('aria-current', 'location');
+        else a.removeAttribute('aria-current');
+      }
+      for (const el of bar.count) el.textContent = `${index + 1} of ${heads.length}`;
+      const { num, title } = labelOf(heads[index]);
+      if (bar.num) bar.num.textContent = num;
+      if (bar.title) bar.title.textContent = title;
+      if (bar.progress) bar.progress.style.setProperty('--p', String((index + 1) / heads.length));
+      // Only a section actually scrolled to counts as read, not the first one shown on load.
+      if (index > furthest && scrollY > 0) {
+        furthest = index;
+        write(id);
+      }
+    };
+
+    let frame = 0;
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+    const observe = () => {
+      // The root runs from the line under the header to far below the page, so every heading is
+      // "in" until it passes the line: any crossing fires, even a jump straight to the end.
+      const io = new IntersectionObserver(schedule, { rootMargin: `-${line()}px 0px 100000px 0px` });
+      heads.forEach((h) => io.observe(h));
+      return io;
+    };
+    let io = observe();
+    // The line moves with the header height (56px phones, 68px wide); re-arm on that breakpoint.
+    matchMedia('(min-width: 1024px)').addEventListener('change', () => {
+      io.disconnect();
+      io = observe();
+      schedule();
+    });
     update();
-    addEventListener(
-      'scroll',
-      () => {
-        cancelAnimationFrame(frame);
-        frame = requestAnimationFrame(update);
-      },
-      { passive: true },
-    );
   }
 </script>

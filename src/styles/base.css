@@ -494,7 +494,7 @@ iframe {
   .menu-links a:hover {
     color: var(--heading);
   }
-  .menu-cta {
+  .btn.menu-cta {
     flex: none;
     margin: 0 var(--gutter) max(var(--sp-5), env(safe-area-inset-bottom));
     min-height: 48px;

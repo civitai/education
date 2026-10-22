@@ -43,6 +43,18 @@ function frame(p) {
   });
 }
 
+// WordPress media URLs (plain, protocol-relative, or through Jetpack's i0.wp.com image CDN) become
+// same-host /wp-content/ paths, served from the media mirror by nginx.
+const WP_MEDIA = /^(?:https?:)?\/\/(?:i\d\.wp\.com\/)?education\.civitai\.com\/+(wp-content\/[^?#]*)(?:[?#].*)?$/;
+export const localMedia = (url) => {
+  const m = typeof url === 'string' && url.match(WP_MEDIA);
+  return m ? `/${m[1]}` : url;
+};
+function localizeMedia(props) {
+  if (!props) return;
+  for (const key of ['src', 'href', 'dataOrigFile', 'poster']) if (props[key]) props[key] = localMedia(props[key]);
+}
+
 function selfHosted(p) {
   const src = String(p.dataSrc || '');
   const guid = src.match(/videopress\.com\/(?:embed|v)\/([A-Za-z0-9]{8})/)?.[1];
@@ -67,6 +79,7 @@ function selfHosted(p) {
 export default function rehypeEmbeds() {
   return (tree) => {
     walk(tree, (node) => {
+      if (node.type === 'element') localizeMedia(node.properties);
       // Many posts open with a "Last Updated | Changes" table; keep it out of search snippets.
       if (node.type === 'element' && node.tagName === 'table' && /^\s*last\s+updated/i.test(textOf(node))) {
         node.properties = { ...node.properties, dataPagefindIgnore: '' };

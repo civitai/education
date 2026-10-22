@@ -84,6 +84,13 @@ import Icon from './icons/Icon.astro';
   if (toggle && menu) {
     document.querySelector('[data-menu-fallback]')?.remove();
     toggle.hidden = false;
+    // From here the script owns the sheet: the no-JS :target rule stops applying, and a page
+    // loaded at #site-menu (the fallback link) opens through the script so the X can close it.
+    root.classList.add('menu-js');
+    if (location.hash === '#site-menu') {
+      history.replaceState(history.state, '', location.pathname + location.search);
+      if (matchMedia('(max-width: 1023px)').matches) setMenu(true);
+    }
     toggle.addEventListener('click', () => setMenu(!isOpen()));
     document.querySelector('[data-search-open]')?.addEventListener('click', (e) => {
       e.preventDefault();

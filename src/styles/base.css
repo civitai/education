@@ -386,7 +386,7 @@ iframe {
   html[data-menu-open] .search-btn {
     display: none;
   }
-  .mobile-menu:target,
+  html:not(.menu-js) .mobile-menu:target,
   html[data-menu-open] .mobile-menu {
     position: fixed;
     inset: var(--top-h) 0 0;

@@ -32,13 +32,21 @@ export function activeChip(path: string): string | undefined {
   return CHIPS.find((c) => c.href !== '/' && path.startsWith(c.href))?.href;
 }
 
-/** The chip categories with their names and post counts, for the phone menu. */
-export async function getMenuTopics(): Promise<Array<Term & { href: string }>> {
-  const categories = await getCategories();
-  return CHIPS.flatMap((c) => {
-    const term = categories.find((t) => c.href === `/category/${t.slug}/`);
+/**
+ * Every category with posts, for the phone menu: the chip categories first in chip order, then the
+ * rest alphabetically, so a phone reaches every archive the sidebar lists on wide screens.
+ */
+export async function getMenuTopics(): Promise<{ main: MenuTopic[]; more: MenuTopic[] }> {
+  const categories = (await getCategories()).filter((t) => t.slug !== 'uncategorized');
+  const href = (t: Term) => `/category/${t.slug}/`;
+  const main = CHIPS.flatMap((c) => {
+    const term = categories.find((t) => c.href === href(t));
     return term ? [{ ...term, href: c.href }] : [];
   });
+  const more = categories
+    .filter((t) => !main.some((m) => m.slug === t.slug))
+    .map((t) => ({ ...t, href: href(t) }));
+  return { main, more };
 }
 
 export type MenuTopic = Term & { href: string };

@@ -57,7 +57,11 @@ export async function getLeadPost(): Promise<Post | undefined> {
   return (await getPosts())[0];
 }
 
-/** Front-page topic list: the ordered categories, with short descriptions where WordPress has none. */
+/**
+ * Front-page topic list: the ordered categories, each with a short line. The written lines win;
+ * a WordPress description is used only when there is none and it fits on one row.
+ */
+const TOPIC_DESC_MAX = 48;
 const TOPIC_BLURBS: Record<string, string> = {
   'beginner-guides': 'First steps on Civitai',
   'quickstart-guides': 'One model or tool, fast',
@@ -73,7 +77,9 @@ export async function getHomeTopics(): Promise<MenuTopic[]> {
   return CATEGORY_ORDER.flatMap((slug) => {
     const term = categories.find((t) => t.slug === slug);
     if (!term || term.count === 0) return [];
-    return [{ ...term, description: term.description || TOPIC_BLURBS[slug], href: `/category/${slug}/` }];
+    const own = term.description?.trim();
+    const description = TOPIC_BLURBS[slug] || (own && own.length <= TOPIC_DESC_MAX ? own : undefined);
+    return [{ ...term, description, href: `/category/${slug}/` }];
   });
 }
 

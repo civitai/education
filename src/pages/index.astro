@@ -111,12 +111,15 @@ const TERMS = [
               return (
                 <li>
                   <a class="step" href={postPath(p)}>
-                    {coverOf(p) && <Cover src={coverOf(p)!} />}
-                    <span class="step-body">
-                      <span class="step-meta">
-                        STEP {String(i + 1).padStart(2, '0')} · {readingMinutes(p.body)} min
+                    <span class="step-thumb">
+                      {coverOf(p) && <Cover src={coverOf(p)!} />}
+                      <span class="step-num" aria-hidden="true">
+                        {String(i + 1).padStart(2, '0')}
                       </span>
+                    </span>
+                    <span class="step-body">
                       <span class="step-title">{stepTitle(p.data.title)}</span>
+                      <span class="step-meta">{readingMinutes(p.body)} min read</span>
                       {deck && <span class="step-deck">{deck}</span>}
                     </span>
                   </a>

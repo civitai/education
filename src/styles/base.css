@@ -655,9 +655,6 @@ iframe {
   margin: var(--sp-6) auto 0;
   padding-inline: var(--gutter);
 }
-.article-cover .cover.wide {
-  aspect-ratio: 2 / 1;
-}
 
 .article-body {
   padding-block: var(--sp-7) var(--sp-8);
@@ -903,7 +900,6 @@ iframe {
     padding-inline: 0;
   }
   .article-cover .cover.wide {
-    aspect-ratio: 16 / 9;
     border-radius: 0;
   }
   .article-body {
@@ -1185,6 +1181,19 @@ iframe {
   object-fit: cover;
   transition: filter 0.2s;
 }
+/* The lead story and the article show the whole cover at its own shape: covers often carry their
+   own lettering, which a crop slices. A tall one is capped and contained over its blurred copy. */
+:is(.lead, .article-cover) .cover.wide {
+  aspect-ratio: auto;
+}
+:is(.lead, .article-cover) .cover.wide::before {
+  content: '';
+}
+:is(.lead, .article-cover) .cover.wide img {
+  height: auto;
+  max-height: min(72vh, 640px);
+  object-fit: contain;
+}
 
 /* Post card: wide cover, category and date, title, deck. */
 .story {
@@ -1307,9 +1316,8 @@ iframe {
 .lead-cover {
   display: block;
 }
-.lead .cover {
-  aspect-ratio: auto;
-  height: 460px;
+.lead .cover.wide img {
+  max-height: min(72vh, 560px);
 }
 .lead-cover:hover img {
   filter: brightness(1.08);
@@ -1543,11 +1551,6 @@ iframe {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--sp-5);
   }
-  .lead .cover {
-    height: auto;
-    aspect-ratio: 16 / 9;
-    max-height: 420px;
-  }
   .lead-crumb {
     margin-bottom: var(--sp-2);
   }
@@ -1583,10 +1586,6 @@ iframe {
 }
 
 @media (max-width: 699px) {
-  .lead .cover {
-    aspect-ratio: auto;
-    height: 220px;
-  }
   .lead .btn {
     width: 100%;
   }

@@ -1,95 +1,130 @@
 /*
- * Design tokens for the handbook theme. Every colour, font and size in base.css and prose.css
- * reads from here, so a re-skin is this one file. Light is the default; dark follows the OS until
- * the visitor picks a theme (html[data-theme], set by the toggle and the inline script in
- * BaseLayout).
+ * Design tokens for the Civitai Journal theme, on civitai.com's Mantine palette. Every colour, font
+ * and size in base.css and prose.css reads from here, so a re-skin is this one file. Dark is
+ * civitai.com's default, but the site follows the OS until the visitor picks a theme
+ * (html[data-theme], set by the toggle and the inline script in BaseLayout). Light is the
+ * fallback when neither says otherwise.
  */
 
 :root {
-  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: 'Mona Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-  --fs-h1: clamp(1.9rem, 1.4rem + 1.8vw, 2.5rem);
-  --fs-h2: 1.5rem;
-  --fs-h3: 1.2rem;
-  --fs-h4: 0.74rem;
-  --fs-body: 0.97rem;
-  --fs-small: 0.82rem;
-  --lh-body: 1.62;
+  /* Type scale: 17px body; headings step down to their mobile sizes with the viewport. */
+  --fs-display: clamp(2.125rem, 1.3rem + 2.6vw, 3.5rem);
+  --fs-h1: clamp(2.125rem, 1.55rem + 1.8vw, 3rem);
+  --fs-h2: clamp(1.5625rem, 1.4rem + 0.5vw, 1.875rem);
+  --fs-h3: clamp(1.1875rem, 1.1rem + 0.3vw, 1.375rem);
+  --fs-h4: 1.0625rem;
+  --fs-body: 1.0625rem;
+  --fs-ui: 0.9375rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+  --lh-body: 1.65;
 
-  --radius: 3px;
-  --radius-sm: 2px;
-  --measure: 780px;
-  --top-h: 48px;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  --measure: 720px;
+  --page-w: 1376px;
+  --gutter: 32px;
+  --top-h: 68px;
   --side-w: 272px;
   --aside-w: 224px;
 
+  --pro: linear-gradient(135deg, #7950f2, #4c6ef5);
+  --buzz: #fcc419;
+  --primary: #228be6;
+  --primary-hover: #1c7ed6;
+  --on-primary: #ffffff;
+
   color-scheme: light;
-  --bg: #ffffff;
-  --surface: #f6f7f9;
-  --surface-2: #eef0f3;
-  --border: #dfe3e8;
-  --border-strong: #b9c0ca;
-  --text: #1f2328;
-  --text-dim: #57606a;
-  --heading: #0d1117;
+  --bg: #fefefe;
+  --bg-sunken: #f8f9fa;
+  --surface: #f1f3f5;
+  --surface-2: #e9ecef;
+  --border: #e9ecef;
+  --border-strong: #ced4da;
+  --text: #373a40;
+  --heading: #101113;
+  --text-dim: #5c5f66;
   --link: #1971c2;
-  --accent: #1c7ed6;
-  --accent-ink: #1864ab;
-  --accent-contrast: #ffffff;
-  --accent-soft: rgba(28, 126, 214, 0.09);
-  --code-bg: #f2f4f7;
-  --code-text: #1f2328;
-  --c-note: #1c7ed6;
-  --c-tip: #2f9e44;
-  --c-warn: #d9480f;
-  --c-danger: #c92a2a;
+  --primary-soft: #e7f5ff;
+  --success: #2f9e44;
+  --warning: #e8590c;
+  --danger: #e03131;
+  --code-bg: #f1f3f5;
+  --shadow-pop: 0 12px 32px rgba(16, 17, 19, 0.14);
+
+  /* Older names, kept so every rule reads one source of truth. */
+  --accent: var(--primary);
+  --accent-ink: var(--link);
+  --accent-contrast: var(--on-primary);
+  --accent-soft: var(--primary-soft);
+  --code-text: var(--text);
+  --c-note: var(--link);
+  --c-tip: var(--success);
+  --c-warn: var(--warning);
+  --c-danger: var(--danger);
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --top-h: 56px;
+    --gutter: 16px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;
-    --bg: #0f1115;
-    --surface: #14171c;
-    --surface-2: #1b1f26;
-    --border: #272c35;
-    --border-strong: #3a414d;
-    --text: #d0d4da;
-    --text-dim: #8b93a1;
-    --heading: #f5f7fa;
-    --link: #74c0fc;
-    --accent: #339af0;
-    --accent-ink: #74c0fc;
-    --accent-contrast: #08111a;
-    --accent-soft: rgba(51, 154, 240, 0.13);
-    --code-bg: #14171c;
-    --code-text: #d0d4da;
-    --c-note: #74c0fc;
-    --c-tip: #69db7c;
-    --c-warn: #ffa94d;
-    --c-danger: #ff8787;
+    --bg: #1a1b1e;
+    --bg-sunken: #141517;
+    --surface: #25262b;
+    --surface-2: #2c2e33;
+    --border: #2c2e33;
+    --border-strong: #373a40;
+    --text: #c1c2c5;
+    --heading: #fefefe;
+    --text-dim: #a6a7ab;
+    --link: #4dabf7;
+    --primary-soft: rgba(34, 139, 230, 0.15);
+    --success: #51cf66;
+    --warning: #ffa94d;
+    --danger: #ff8787;
+    --code-bg: #141517;
+    --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0f1115;
-  --surface: #14171c;
-  --surface-2: #1b1f26;
-  --border: #272c35;
-  --border-strong: #3a414d;
-  --text: #d0d4da;
-  --text-dim: #8b93a1;
-  --heading: #f5f7fa;
-  --link: #74c0fc;
-  --accent: #339af0;
-  --accent-ink: #74c0fc;
-  --accent-contrast: #08111a;
-  --accent-soft: rgba(51, 154, 240, 0.13);
-  --code-bg: #14171c;
-  --code-text: #d0d4da;
-  --c-note: #74c0fc;
-  --c-tip: #69db7c;
-  --c-warn: #ffa94d;
-  --c-danger: #ff8787;
+  --bg: #1a1b1e;
+  --bg-sunken: #141517;
+  --surface: #25262b;
+  --surface-2: #2c2e33;
+  --border: #2c2e33;
+  --border-strong: #373a40;
+  --text: #c1c2c5;
+  --heading: #fefefe;
+  --text-dim: #a6a7ab;
+  --link: #4dabf7;
+  --primary-soft: rgba(34, 139, 230, 0.15);
+  --success: #51cf66;
+  --warning: #ffa94d;
+  --danger: #ff8787;
+  --code-bg: #141517;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.45);
 }

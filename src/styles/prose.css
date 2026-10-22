@@ -30,24 +30,20 @@
   text-wrap: balance;
 }
 .prose h2 {
-  margin-top: 2.8em;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border-strong);
+  margin-top: 2.4em;
   font-size: var(--fs-h2);
-  font-weight: 600;
-  letter-spacing: -0.008em;
-  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
 }
 .prose h3 {
   font-size: var(--fs-h3);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 .prose :where(h4, h5, h6) {
-  color: var(--text-dim);
-  font: 600 var(--fs-h4) / 1.4 var(--font-mono);
-  letter-spacing: 0.09em;
   margin-top: 2em;
-  text-transform: uppercase;
+  font: 600 var(--fs-h4) / 1.4 var(--font-display);
 }
 .prose > h2:first-child {
   margin-top: 0;
@@ -65,10 +61,10 @@
 .prose-numbered h2::before {
   content: counter(s1);
   display: inline-block;
-  width: 2.72em;
+  width: 3.17em;
   text-indent: 0;
-  color: var(--accent-ink);
-  font: 500 0.7em var(--font-mono);
+  color: var(--link);
+  font: 400 0.6em var(--font-mono);
 }
 .prose-numbered h3 {
   padding-left: 2.8em;
@@ -78,10 +74,10 @@
 .prose-numbered h3::before {
   content: counter(s1) '.' counter(s2);
   display: inline-block;
-  width: 4em;
+  width: 4.67em;
   text-indent: 0;
   color: var(--text-dim);
-  font: 500 0.7em var(--font-mono);
+  font: 400 0.6em var(--font-mono);
 }
 
 .prose :where(ul, ol) {
@@ -112,7 +108,7 @@
 .prose blockquote {
   margin-inline: 0;
   padding: 0.1em 0 0.1em 1.1em;
-  border-left: 3px solid var(--border-strong);
+  border-left: 2px solid var(--border-strong);
   color: var(--text-dim);
 }
 .prose blockquote > :last-child {
@@ -143,7 +139,7 @@
   border-radius: var(--radius);
   background: var(--code-bg);
   color: var(--code-text);
-  font-size: 0.86rem;
+  font-size: var(--fs-small);
   line-height: 1.65;
 }
 .prose pre code {
@@ -159,7 +155,7 @@
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.86rem;
+  font-size: var(--fs-small);
   line-height: 1.45;
 }
 .prose :where(th, td) {
@@ -176,11 +172,10 @@
   border-bottom: 0;
 }
 .prose th {
-  background: var(--surface-2);
+  background: var(--surface);
   color: var(--heading);
-  font: 600 0.68rem var(--font-mono);
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
+  font-size: var(--fs-small);
+  font-weight: 600;
 }
 .prose tbody tr:nth-child(even) > td {
   background: color-mix(in srgb, var(--surface) 70%, transparent);
@@ -282,11 +277,10 @@
   left: 0;
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius) 0 var(--radius) 0;
-  background: color-mix(in srgb, var(--cc) 20%, var(--bg));
-  color: color-mix(in srgb, var(--cc) 55%, var(--heading));
-  font: 600 0.62rem var(--font-mono);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  background: color-mix(in srgb, var(--cc) 18%, var(--bg));
+  color: color-mix(in srgb, var(--cc) 70%, var(--heading));
+  font-size: var(--fs-micro);
+  font-weight: 600;
 }
 .prose .callout-tip {
   --cc: var(--c-tip);
@@ -315,7 +309,7 @@
 }
 .prose .callout-title {
   color: var(--heading);
-  font-size: 0.95rem;
+  font-size: var(--fs-ui);
   font-weight: 600;
   margin-bottom: 0.4em;
 }

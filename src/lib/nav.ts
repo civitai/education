@@ -72,7 +72,7 @@ export async function getHomeTopics(): Promise<MenuTopic[]> {
   const categories = await getCategories();
   return CATEGORY_ORDER.flatMap((slug) => {
     const term = categories.find((t) => t.slug === slug);
-    if (!term) return [];
+    if (!term || term.count === 0) return [];
     return [{ ...term, description: term.description || TOPIC_BLURBS[slug], href: `/category/${slug}/` }];
   });
 }

@@ -1,0 +1,40 @@
+---
+// A post as a cover card: wide cover, "CATEGORY · date", title and deck. Used by the front page's
+// Latest grid and the archives.
+import Cover from './Cover.astro';
+import FormattedDate from './FormattedDate.astro';
+import { postPath, termName, type Post } from '../lib/content';
+import { entryDeck, primaryCategory } from '../lib/nav';
+
+interface Props {
+  post: Post;
+  /** Heading level for the title, so the card fits the outline of the page it sits on. */
+  level?: 2 | 3;
+  /** Load the cover at once (a card above the fold). */
+  eager?: boolean;
+  /** Leave out the deck (dense lists). */
+  compact?: boolean;
+}
+const { post, level = 3, eager = false, compact = false } = Astro.props;
+const Title = `h${level}` as const;
+const href = postPath(post);
+const category = primaryCategory(post);
+const deck = compact ? undefined : entryDeck(post.data.excerpt, post.body);
+---
+
+<article class="story">
+  {
+    post.data.image && (
+      <a class="story-cover" href={href} tabindex="-1" aria-hidden="true">
+        <Cover src={post.data.image} shape="wide" eager={eager} />
+      </a>
+    )
+  }
+  <p class="story-meta">
+    {category && <a class="story-cat" href={`/category/${category}/`}>{termName('categories', category)}</a>}
+    {category && <span aria-hidden="true">·</span>}
+    <FormattedDate date={post.data.date} />
+  </p>
+  <Title class="story-title"><a href={href}>{post.data.title}</a></Title>
+  {deck && <p class="story-deck">{deck}</p>}
+</article>

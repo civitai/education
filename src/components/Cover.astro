@@ -1,14 +1,32 @@
 ---
-// A post cover in a square frame. Covers come in several shapes (most square, many 16:9), so the
-// image is contained, never cropped, over a blurred copy of itself that fills the rest of the square.
+// A post cover in a fixed frame. Covers come in several shapes (most square, many 16:9). The square
+// frame contains the image, never cropping it, over a blurred copy of itself that fills the rest;
+// the wide frame (cards, the lead story) fills edge to edge and crops from the centre.
 interface Props {
   src: string;
+  /** Square thumbnail (pass coverOf) or a wide, cropped frame (pass the original image). */
+  shape?: 'square' | 'wide';
+  /** Empty by default: covers sit next to the post title, which already names the link. */
+  alt?: string;
   /** Load at once (above the fold) instead of lazily. */
   eager?: boolean;
+  /** Fetch first: the one image that is the page's largest paint. */
+  priority?: boolean;
+  class?: string;
 }
-const { src, eager = false } = Astro.props;
+const { src, shape = 'square', alt = '', eager = false, priority = false, class: className } = Astro.props;
+// Intrinsic size hints for layout before load; the frame's own aspect ratio wins.
+const [width, height] = shape === 'wide' ? [1280, 720] : [640, 640];
 ---
 
-<span class="cover" style={`--cover: url("${src}")`}>
-  <img src={src} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+<span class:list={['cover', { wide: shape === 'wide' }, className]} style={`--cover: url("${src}")`}>
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={eager || priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : undefined}
+    decoding="async"
+  />
 </span>

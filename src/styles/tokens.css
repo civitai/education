@@ -49,6 +49,9 @@
   --primary: #228be6;
   --primary-hover: #1c7ed6;
   --on-primary: #ffffff;
+  /* Filled buttons: Mantine blue-8 keeps white text above 4.5:1; --primary stays for accents. */
+  --button-bg: #1971c2;
+  --button-bg-hover: #1864ab;
 
   color-scheme: light;
   --bg: #fefefe;

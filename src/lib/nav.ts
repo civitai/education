@@ -41,6 +41,33 @@ export async function getMenuTopics(): Promise<Array<Term & { href: string }>> {
   });
 }
 
+export type MenuTopic = Term & { href: string };
+
+/** The front page's lead story: the newest post (sticky only reorders the posts page). */
+export async function getLeadPost(): Promise<Post | undefined> {
+  return (await getPosts())[0];
+}
+
+/** Front-page topic list: the ordered categories, with short descriptions where WordPress has none. */
+const TOPIC_BLURBS: Record<string, string> = {
+  'beginner-guides': 'First steps on Civitai',
+  'quickstart-guides': 'One model or tool, fast',
+  guides: 'Deep dives and workflows',
+  training: 'Datasets, LoRAs, settings',
+  prompting: 'Writing prompts that work',
+  video: 'Wan, Hunyuan, LTXV, AnimateDiff',
+  news: 'Releases and site updates',
+};
+
+export async function getHomeTopics(): Promise<MenuTopic[]> {
+  const categories = await getCategories();
+  return CATEGORY_ORDER.flatMap((slug) => {
+    const term = categories.find((t) => t.slug === slug);
+    if (!term) return [];
+    return [{ ...term, description: term.description || TOPIC_BLURBS[slug], href: `/category/${slug}/` }];
+  });
+}
+
 export type CategoryGroup = Term & { posts: Post[]; items: Post[] };
 
 /** Categories in display order, each with its posts (newest first) and the latest `limit` of them. */

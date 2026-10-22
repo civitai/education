@@ -5,13 +5,17 @@ import CategoryChips from './CategoryChips.astro';
 import PostCard from './PostCard.astro';
 import Pagination from './Pagination.astro';
 import { pageCount, paginate, type Post } from '../lib/content';
+import { SITE } from '../lib/site';
 
 interface Props {
   title: string;
   /** Visible heading; defaults to title. */
   heading?: string;
-  /** What kind of listing this is, shown in the breadcrumb ("Topic", "Tag", "Author", ...). */
-  kind: string;
+  /**
+   * Prefixes the current crumb ("Tag: LoRA") where the name alone would not say what the listing
+   * is. Topics and the all-guides list leave it out: their name is the place.
+   */
+  kind?: string;
   description?: string;
   base: string;
   page: number;
@@ -24,6 +28,9 @@ const path = page === 1 ? base : `${base}page/${page}/`;
 const pageTitle = page === 1 ? title : `${title} - Page ${page} of ${total}`;
 const isCategory = base.startsWith('/category/');
 const count = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
+const crumb = kind ? `${kind}: ${heading}` : heading;
+// /page/N/ continues the front page's listing; its first page is the posts page.
+const firstPage = base === '/' ? `/${SITE.postsPageSlug}/` : base;
 ---
 
 <BaseLayout title={pageTitle} description={description} path={path} feed={feed}>
@@ -33,7 +40,17 @@ const count = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
       <p class="crumbs">
         <a href="/">Home</a>
         <span aria-hidden="true">/</span>
-        <span>{kind}</span>
+        {
+          page === 1 ? (
+            <span aria-current="page">{crumb}</span>
+          ) : (
+            <>
+              <a href={firstPage}>{crumb}</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Page {page}</span>
+            </>
+          )
+        }
       </p>
       <h1 class="archive-title">{heading}</h1>
       {description && <p class="archive-desc">{description}</p>}

@@ -1650,7 +1650,7 @@ iframe {
 .archive-head .crumbs {
   margin-bottom: var(--sp-4);
 }
-.archive-head .crumbs span:last-child {
+.archive-head .crumbs [aria-current] {
   color: var(--text);
 }
 .archive-title {

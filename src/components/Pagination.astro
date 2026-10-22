@@ -1,0 +1,32 @@
+---
+interface Props {
+  /** Archive root, e.g. "/category/news/". Page N lives at `${base}page/N/`. */
+  base: string;
+  current: number;
+  total: number;
+}
+const { base, current, total } = Astro.props;
+const href = (n: number) => (n === 1 ? base : `${base}page/${n}/`);
+---
+
+{
+  total > 1 && (
+    <nav class="pagination" aria-label="Pagination">
+      {current > 1 && (
+        <a rel="prev" href={href(current - 1)}>
+          Newer posts
+        </a>
+      )}
+      <ol>
+        {Array.from({ length: total }, (_, i) => i + 1).map((n) => (
+          <li>{n === current ? <span aria-current="page">{n}</span> : <a href={href(n)}>{n}</a>}</li>
+        ))}
+      </ol>
+      {current < total && (
+        <a rel="next" href={href(current + 1)}>
+          Older posts
+        </a>
+      )}
+    </nav>
+  )
+}

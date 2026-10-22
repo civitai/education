@@ -1,0 +1,52 @@
+---
+import { getCategoryGroups, primaryCategory } from '../lib/nav';
+import { postPath } from '../lib/content';
+
+interface Props {
+  /** Post slug being read; its primary category opens with the post highlighted. */
+  currentPost?: string;
+  /** Category archive being viewed. */
+  currentCategory?: string;
+}
+const { currentPost, currentCategory } = Astro.props;
+
+const LIMIT = 6;
+const all = await getCategoryGroups(LIMIT);
+const post = currentPost ? all.flatMap((g) => g.posts).find((p) => p.id === currentPost) : undefined;
+// A post in several categories opens only its primary one, so the sidebar doesn't repeat it.
+const home = post ? primaryCategory(post) : undefined;
+const groups = all.map((g) => {
+  const current = g.slug === home ? post : undefined;
+  // The post being read stays visible even when it is older than the latest few.
+  const items = current && !g.items.includes(current) ? [...g.items.slice(0, LIMIT - 1), current] : g.items;
+  return { ...g, items, open: Boolean(current) || currentCategory === g.slug };
+});
+---
+
+<aside class="side" id="side" aria-label="Categories">
+  <a class="side-link" href="/">&larr; Home</a>
+  {
+    groups.map((g) => (
+      <details class="grp" open={g.open}>
+        <summary>
+          <span>{g.name}</span>
+          <em>{g.count}</em>
+        </summary>
+        <ul>
+          {g.items.map((p) => (
+            <li>
+              <a href={postPath(p)} aria-current={p.id === currentPost ? 'page' : undefined}>
+                {p.data.title}
+              </a>
+            </li>
+          ))}
+          <li class="all">
+            <a href={`/category/${g.slug}/`} aria-current={currentCategory === g.slug ? 'page' : undefined}>
+              All {g.count} &rarr;
+            </a>
+          </li>
+        </ul>
+      </details>
+    ))
+  }
+</aside>

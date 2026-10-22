@@ -1,0 +1,716 @@
+{
+  "categories": [
+    {
+      "id": 1384,
+      "slug": "audio",
+      "name": "Audio",
+      "description": ""
+    },
+    {
+      "id": 1431,
+      "slug": "beginner-guides",
+      "name": "Beginner's Guides",
+      "description": "Guides and Information to help those taking their first steps in Generative AI"
+    },
+    {
+      "id": 1371,
+      "slug": "civitai",
+      "name": "Civitai",
+      "description": ""
+    },
+    {
+      "id": 1459,
+      "slug": "community-articles",
+      "name": "Community Articles",
+      "description": ""
+    },
+    {
+      "id": 1375,
+      "slug": "featured-articles",
+      "name": "Featured Articles",
+      "description": ""
+    },
+    {
+      "id": 1452,
+      "slug": "flux",
+      "name": "Flux",
+      "description": ""
+    },
+    {
+      "id": 1380,
+      "slug": "glossary",
+      "name": "Glossary",
+      "description": ""
+    },
+    {
+      "id": 1446,
+      "slug": "guides",
+      "name": "Guides",
+      "description": ""
+    },
+    {
+      "id": 1385,
+      "slug": "llm",
+      "name": "LLM",
+      "description": ""
+    },
+    {
+      "id": 1389,
+      "slug": "news",
+      "name": "News",
+      "description": ""
+    },
+    {
+      "id": 1381,
+      "slug": "prompting",
+      "name": "Prompting",
+      "description": ""
+    },
+    {
+      "id": 1458,
+      "slug": "quickstart-guides",
+      "name": "Quickstart Guides",
+      "description": ""
+    },
+    {
+      "id": 1449,
+      "slug": "sd3",
+      "name": "SD3",
+      "description": ""
+    },
+    {
+      "id": 1361,
+      "slug": "sdxl",
+      "name": "SDXL",
+      "description": ""
+    },
+    {
+      "id": 1382,
+      "slug": "training",
+      "name": "Training",
+      "description": ""
+    },
+    {
+      "id": 1,
+      "slug": "uncategorized",
+      "name": "Uncategorized",
+      "description": ""
+    },
+    {
+      "id": 1383,
+      "slug": "video",
+      "name": "Video",
+      "description": ""
+    }
+  ],
+  "tags": [
+    {
+      "id": 1407,
+      "slug": "acceleration-modules",
+      "name": "Acceleration Modules",
+      "description": ""
+    },
+    {
+      "id": 1465,
+      "slug": "ads",
+      "name": "ads",
+      "description": ""
+    },
+    {
+      "id": 1493,
+      "slug": "ai-influencer",
+      "name": "AI Influencer",
+      "description": ""
+    },
+    {
+      "id": 1399,
+      "slug": "animatediff",
+      "name": "AnimateDiff",
+      "description": ""
+    },
+    {
+      "id": 1411,
+      "slug": "animation",
+      "name": "Animation",
+      "description": ""
+    },
+    {
+      "id": 1425,
+      "slug": "api",
+      "name": "API",
+      "description": ""
+    },
+    {
+      "id": 1434,
+      "slug": "badge",
+      "name": "Badge",
+      "description": ""
+    },
+    {
+      "id": 1439,
+      "slug": "badge-creation",
+      "name": "Badge Creation",
+      "description": ""
+    },
+    {
+      "id": 1463,
+      "slug": "beggars-board",
+      "name": "beggars board",
+      "description": ""
+    },
+    {
+      "id": 1432,
+      "slug": "beginner",
+      "name": "Beginner",
+      "description": ""
+    },
+    {
+      "id": 1404,
+      "slug": "bounties",
+      "name": "Bounties",
+      "description": ""
+    },
+    {
+      "id": 1405,
+      "slug": "bounty",
+      "name": "Bounty",
+      "description": ""
+    },
+    {
+      "id": 1403,
+      "slug": "buzz",
+      "name": "Buzz",
+      "description": ""
+    },
+    {
+      "id": 1464,
+      "slug": "changelog",
+      "name": "changelog",
+      "description": ""
+    },
+    {
+      "id": 1415,
+      "slug": "civbot",
+      "name": "CivBot",
+      "description": ""
+    },
+    {
+      "id": 1397,
+      "slug": "civitai",
+      "name": "Civitai",
+      "description": ""
+    },
+    {
+      "id": 1466,
+      "slug": "civitai-green",
+      "name": "Civitai.green",
+      "description": ""
+    },
+    {
+      "id": 1429,
+      "slug": "civitaiair",
+      "name": "CivitaiAiR",
+      "description": ""
+    },
+    {
+      "id": 1419,
+      "slug": "clubs",
+      "name": "Clubs",
+      "description": ""
+    },
+    {
+      "id": 1491,
+      "slug": "community",
+      "name": "Community",
+      "description": ""
+    },
+    {
+      "id": 1461,
+      "slug": "community-article",
+      "name": "Community Article",
+      "description": ""
+    },
+    {
+      "id": 1378,
+      "slug": "competition",
+      "name": "Competition",
+      "description": ""
+    },
+    {
+      "id": 1457,
+      "slug": "content-classification",
+      "name": "Content Classification",
+      "description": ""
+    },
+    {
+      "id": 1470,
+      "slug": "contest",
+      "name": "contest",
+      "description": ""
+    },
+    {
+      "id": 1398,
+      "slug": "controlnet",
+      "name": "ControlNet",
+      "description": ""
+    },
+    {
+      "id": 1438,
+      "slug": "cosmetic",
+      "name": "Cosmetic",
+      "description": ""
+    },
+    {
+      "id": 1448,
+      "slug": "cosmetic-shop",
+      "name": "Cosmetic Shop",
+      "description": ""
+    },
+    {
+      "id": 1447,
+      "slug": "cosmetic-store",
+      "name": "Cosmetic Store",
+      "description": ""
+    },
+    {
+      "id": 1433,
+      "slug": "cosmetics",
+      "name": "Cosmetics",
+      "description": ""
+    },
+    {
+      "id": 1418,
+      "slug": "creator-club",
+      "name": "Creator Club",
+      "description": ""
+    },
+    {
+      "id": 1478,
+      "slug": "daily-challenge",
+      "name": "daily challenge",
+      "description": ""
+    },
+    {
+      "id": 1486,
+      "slug": "deepseek",
+      "name": "deepseek",
+      "description": ""
+    },
+    {
+      "id": 1401,
+      "slug": "depth",
+      "name": "Depth",
+      "description": ""
+    },
+    {
+      "id": 1402,
+      "slug": "depthmap",
+      "name": "depthmap",
+      "description": ""
+    },
+    {
+      "id": 1428,
+      "slug": "direct-messages",
+      "name": "Direct Messages",
+      "description": ""
+    },
+    {
+      "id": 1427,
+      "slug": "dms",
+      "name": "DMs",
+      "description": ""
+    },
+    {
+      "id": 1455,
+      "slug": "early-access",
+      "name": "Early Access",
+      "description": ""
+    },
+    {
+      "id": 1462,
+      "slug": "edubot",
+      "name": "EduBot",
+      "description": ""
+    },
+    {
+      "id": 1485,
+      "slug": "education-hub",
+      "name": "Education Hub",
+      "description": ""
+    },
+    {
+      "id": 1469,
+      "slug": "event",
+      "name": "event",
+      "description": ""
+    },
+    {
+      "id": 1400,
+      "slug": "faq",
+      "name": "FAQ",
+      "description": ""
+    },
+    {
+      "id": 1410,
+      "slug": "fast-inference",
+      "name": "Fast Inference",
+      "description": ""
+    },
+    {
+      "id": 1453,
+      "slug": "flux",
+      "name": "Flux",
+      "description": ""
+    },
+    {
+      "id": 1414,
+      "slug": "fooocus",
+      "name": "Fooocus",
+      "description": ""
+    },
+    {
+      "id": 1437,
+      "slug": "forge",
+      "name": "Forge",
+      "description": ""
+    },
+    {
+      "id": 1370,
+      "slug": "generative-ai",
+      "name": "generative ai",
+      "description": ""
+    },
+    {
+      "id": 1369,
+      "slug": "glossary",
+      "name": "glossary",
+      "description": ""
+    },
+    {
+      "id": 1426,
+      "slug": "google-colab",
+      "name": "Google Colab",
+      "description": ""
+    },
+    {
+      "id": 1490,
+      "slug": "gpt-image-1",
+      "name": "GPT Image 1",
+      "description": ""
+    },
+    {
+      "id": 1365,
+      "slug": "guide",
+      "name": "Guide",
+      "description": ""
+    },
+    {
+      "id": 1476,
+      "slug": "haiper",
+      "name": "Haiper",
+      "description": ""
+    },
+    {
+      "id": 1488,
+      "slug": "hunyuan",
+      "name": "Hunyuan",
+      "description": ""
+    },
+    {
+      "id": 1413,
+      "slug": "interface",
+      "name": "Interface",
+      "description": ""
+    },
+    {
+      "id": 1480,
+      "slug": "large-language-model",
+      "name": "Large Language Model",
+      "description": ""
+    },
+    {
+      "id": 1481,
+      "slug": "large-language-models",
+      "name": "Large Language Models",
+      "description": ""
+    },
+    {
+      "id": 1406,
+      "slug": "lcm",
+      "name": "LCM",
+      "description": ""
+    },
+    {
+      "id": 1416,
+      "slug": "leaderboard",
+      "name": "Leaderboard",
+      "description": ""
+    },
+    {
+      "id": 1417,
+      "slug": "legendboard",
+      "name": "legendboard",
+      "description": ""
+    },
+    {
+      "id": 1436,
+      "slug": "licensing",
+      "name": "Licensing",
+      "description": ""
+    },
+    {
+      "id": 1487,
+      "slug": "lightricks",
+      "name": "lightricks",
+      "description": ""
+    },
+    {
+      "id": 1445,
+      "slug": "link",
+      "name": "Link",
+      "description": ""
+    },
+    {
+      "id": 1479,
+      "slug": "llm",
+      "name": "LLM",
+      "description": ""
+    },
+    {
+      "id": 1395,
+      "slug": "lora",
+      "name": "LoRA",
+      "description": ""
+    },
+    {
+      "id": 1394,
+      "slug": "lora-lora-training",
+      "name": "LoRA LoRA Training",
+      "description": ""
+    },
+    {
+      "id": 1396,
+      "slug": "lora-training",
+      "name": "LoRA Training",
+      "description": ""
+    },
+    {
+      "id": 1477,
+      "slug": "ltxv",
+      "name": "LTXV",
+      "description": ""
+    },
+    {
+      "id": 1442,
+      "slug": "membership",
+      "name": "Membership",
+      "description": ""
+    },
+    {
+      "id": 1473,
+      "slug": "mochi",
+      "name": "Mochi",
+      "description": ""
+    },
+    {
+      "id": 1435,
+      "slug": "moderation",
+      "name": "Moderation",
+      "description": ""
+    },
+    {
+      "id": 1471,
+      "slug": "new-account",
+      "name": "new account",
+      "description": ""
+    },
+    {
+      "id": 1392,
+      "slug": "news",
+      "name": "news",
+      "description": ""
+    },
+    {
+      "id": 1441,
+      "slug": "nsfw",
+      "name": "NSFW",
+      "description": ""
+    },
+    {
+      "id": 1430,
+      "slug": "opencall",
+      "name": "OpenCall",
+      "description": ""
+    },
+    {
+      "id": 1373,
+      "slug": "prompt",
+      "name": "prompt",
+      "description": ""
+    },
+    {
+      "id": 1374,
+      "slug": "prompt-engineering",
+      "name": "prompt engineering",
+      "description": ""
+    },
+    {
+      "id": 1372,
+      "slug": "prompting",
+      "name": "prompting",
+      "description": ""
+    },
+    {
+      "id": 1454,
+      "slug": "quickstart-guide",
+      "name": "Quickstart Guide",
+      "description": ""
+    },
+    {
+      "id": 1460,
+      "slug": "resources",
+      "name": "Resources",
+      "description": ""
+    },
+    {
+      "id": 1420,
+      "slug": "scd",
+      "name": "SCD",
+      "description": ""
+    },
+    {
+      "id": 1450,
+      "slug": "sd3",
+      "name": "SD3",
+      "description": ""
+    },
+    {
+      "id": 1472,
+      "slug": "sd3-5",
+      "name": "SD3.5",
+      "description": ""
+    },
+    {
+      "id": 1409,
+      "slug": "sdxl",
+      "name": "SDXL",
+      "description": ""
+    },
+    {
+      "id": 1408,
+      "slug": "sdxl-turbo",
+      "name": "SDXL Turbo",
+      "description": ""
+    },
+    {
+      "id": 1364,
+      "slug": "sdxl0-9",
+      "name": "SDXL0.9",
+      "description": ""
+    },
+    {
+      "id": 1376,
+      "slug": "sdxl1-0",
+      "name": "SDXL1.0",
+      "description": ""
+    },
+    {
+      "id": 1468,
+      "slug": "showcase-request",
+      "name": "Showcase Request",
+      "description": ""
+    },
+    {
+      "id": 1451,
+      "slug": "stable-diffusion-3",
+      "name": "Stable Diffusion 3",
+      "description": ""
+    },
+    {
+      "id": 1422,
+      "slug": "stable-video-diffusion",
+      "name": "Stable Video Diffusion",
+      "description": ""
+    },
+    {
+      "id": 1444,
+      "slug": "supporter",
+      "name": "Supporter",
+      "description": ""
+    },
+    {
+      "id": 1421,
+      "slug": "svd",
+      "name": "SVD",
+      "description": ""
+    },
+    {
+      "id": 1474,
+      "slug": "text2video",
+      "name": "text2video",
+      "description": ""
+    },
+    {
+      "id": 1443,
+      "slug": "tiers",
+      "name": "Tiers",
+      "description": ""
+    },
+    {
+      "id": 1467,
+      "slug": "update",
+      "name": "update",
+      "description": ""
+    },
+    {
+      "id": 1423,
+      "slug": "upscale",
+      "name": "upscale",
+      "description": ""
+    },
+    {
+      "id": 1424,
+      "slug": "upscaling",
+      "name": "upscaling",
+      "description": ""
+    },
+    {
+      "id": 1440,
+      "slug": "vault",
+      "name": "Vault",
+      "description": ""
+    },
+    {
+      "id": 1412,
+      "slug": "vid2vid",
+      "name": "vid2vid",
+      "description": ""
+    },
+    {
+      "id": 1475,
+      "slug": "video",
+      "name": "video",
+      "description": ""
+    },
+    {
+      "id": 1489,
+      "slug": "wan",
+      "name": "Wan",
+      "description": ""
+    }
+  ],
+  "authors": [
+    {
+      "id": 237966451,
+      "slug": "civitai",
+      "name": "Civitai",
+      "description": ""
+    },
+    {
+      "id": 237966452,
+      "slug": "2ffactoragency",
+      "name": "juanpablodevis",
+      "description": ""
+    }
+  ]
+}

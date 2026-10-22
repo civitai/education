@@ -1,0 +1,113 @@
+---
+import '../styles/base.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE } from '../lib/site';
+import { absolute } from '../lib/content';
+
+interface Props {
+  title: string;
+  /** Full <title>; defaults to "<title> - Civitai Education". */
+  documentTitle?: string;
+  description?: string;
+  /** Path of this page; the canonical URL is built from it unless `canonical` is given. */
+  path?: string;
+  canonical?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  published?: Date;
+  modified?: Date;
+  /** Alternate RSS feed for this archive, e.g. /category/news/feed/. */
+  feed?: string;
+  noindex?: boolean;
+  /** Category sidebar and phone drawer; the front page turns it off (its index is the navigation). */
+  sidebar?: boolean;
+  /** Post slug being read, highlighted in the sidebar. */
+  currentPost?: string;
+  /** Category archive being viewed, opened in the sidebar. */
+  currentCategory?: string;
+}
+
+const {
+  title,
+  documentTitle,
+  description = SITE.description,
+  path = Astro.url.pathname,
+  image,
+  type = 'website',
+  published,
+  modified,
+  feed,
+  noindex,
+  sidebar = true,
+  currentPost,
+  currentCategory,
+} = Astro.props;
+// The rail can render nothing (a post with fewer than three headings), so check the output.
+const aside = Astro.slots.has('aside') ? (await Astro.slots.render('aside')).trim() : '';
+const hasAside = aside.length > 0;
+const fullTitle = documentTitle || (path === '/' ? SITE.title : `${title} - ${SITE.title}`);
+const canonical = Astro.props.canonical || absolute(path);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE.title} />
+    {image && <meta property="og:image" content={image} />}
+    {published && <meta property="article:published_time" content={published.toISOString()} />}
+    {modified && <meta property="article:modified_time" content={modified.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={SITE.twitter} />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE.title} » Feed`} href="/feed/" />
+    {feed && <link rel="alternate" type="application/rss+xml" title={`${SITE.title} » ${title} Feed`} href={feed} />}
+    <link rel="sitemap" href="/sitemap_index.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    />
+    <!-- Apply a saved light/dark choice before first paint; with none, the OS preference decides. -->
+    <script is:inline>
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header sidebar={sidebar} />
+    {
+      sidebar ? (
+        <div class:list={['layout', { 'has-aside': hasAside }]}>
+          <Sidebar currentPost={currentPost} currentCategory={currentCategory} />
+          <div class="nav-backdrop" data-nav-close></div>
+          <main id="main" class="site-main">
+            <slot />
+          </main>
+          {hasAside && <div class="aside" set:html={aside} />}
+        </div>
+      ) : (
+        <main id="main" class="site-main wide">
+          <slot />
+        </main>
+      )
+    }
+    <Footer />
+  </body>
+</html>

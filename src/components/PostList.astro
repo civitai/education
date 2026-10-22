@@ -1,0 +1,49 @@
+---
+import Cover from './Cover.astro';
+import FormattedDate from './FormattedDate.astro';
+import { coverOf, postPath, termName, type Post } from '../lib/content';
+
+interface Props {
+  posts: Post[];
+  /** Heading level for post titles inside the list. */
+  level?: 2 | 3;
+}
+const { posts, level = 2 } = Astro.props;
+const H = level === 3 ? 'h3' : 'h2';
+---
+
+<ol class="post-list">
+  {
+    posts.map((post) => (
+      <li>
+        <article class="post-card">
+          {coverOf(post) && (
+            <a class="post-card-image" href={postPath(post)} tabindex="-1" aria-hidden="true">
+              <Cover src={coverOf(post)!} />
+            </a>
+          )}
+          <div class="post-card-body">
+            <H class="post-card-title">
+              <a href={postPath(post)}>{post.data.title}</a>
+            </H>
+            <p class="post-meta">
+              <FormattedDate date={post.data.date} numeric />
+              {post.data.categories.length > 0 && (
+                <>
+                  {' · '}
+                  {post.data.categories.map((c, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={`/category/${c}/`}>{termName('categories', c)}</a>
+                    </>
+                  ))}
+                </>
+              )}
+            </p>
+            {post.data.excerpt && <p class="post-card-excerpt">{post.data.excerpt}</p>}
+          </div>
+        </article>
+      </li>
+    ))
+  }
+</ol>

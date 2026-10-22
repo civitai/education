@@ -1,0 +1,21 @@
+---
+// /tag/<slug>/ and /tag/<slug>/page/N/.
+import Archive from '../../../components/Archive.astro';
+import { extraPages, getPosts, getTags } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const all = await getPosts();
+  return (await getTags()).flatMap((term) => {
+    const posts = all.filter((p) => p.data.tags.includes(term.slug));
+    return [
+      { params: { slug: term.slug, page: undefined }, props: { term, posts, page: 1 } },
+      ...extraPages(posts.length).map((n) => ({ params: { slug: term.slug, page: `page/${n}` }, props: { term, posts, page: n } })),
+    ];
+  });
+}
+
+const { term, posts, page } = Astro.props;
+const base = `/tag/${term.slug}/`;
+---
+
+<Archive title={`${term.name} Archives`} heading={`Tag: ${term.name}`} description={term.description} base={base} page={page} posts={posts} feed={`${base}feed/`} />

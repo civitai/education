@@ -1,0 +1,1427 @@
+{
+ "/": [
+  "rest:pages",
+  "sitemap:page-sitemap.xml"
+ ],
+ "/1-core-concepts/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/2-installations-easy-diffusion-automatic-1111/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/3-file-management-easy-diffusion-automatic-1111/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/31-days-of-halloween-cosmetic-event/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/4-u-i-walkthrough-easy-diffusion-automatic-1111/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/5-prompting-principles/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/about-us/": [
+  "rest:pages",
+  "sitemap:page-sitemap.xml"
+ ],
+ "/ai-music-video-editing-process-ft-visual-frisson/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/amazing-ai-animations-using-morph/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/animating-anything-w-live-portrait-ft-syntaxdiffusion/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/announcing-civitai-green/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/audio-reactive-ai-animation-masterclass-ft-cerspense/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/author-sitemap.xml": [
+  "sitemap"
+ ],
+ "/author/2ffactoragency/": [
+  "rest:users"
+ ],
+ "/author/2ffactoragency/feed/": [
+  "feed"
+ ],
+ "/author/civitai/": [
+  "rest:users",
+  "sitemap:author-sitemap.xml"
+ ],
+ "/author/civitai/feed/": [
+  "feed"
+ ],
+ "/author/civitai/page/10/": [
+  "pagination"
+ ],
+ "/author/civitai/page/11/": [
+  "pagination"
+ ],
+ "/author/civitai/page/2/": [
+  "pagination"
+ ],
+ "/author/civitai/page/3/": [
+  "pagination"
+ ],
+ "/author/civitai/page/4/": [
+  "pagination"
+ ],
+ "/author/civitai/page/5/": [
+  "pagination"
+ ],
+ "/author/civitai/page/6/": [
+  "pagination"
+ ],
+ "/author/civitai/page/7/": [
+  "pagination"
+ ],
+ "/author/civitai/page/8/": [
+  "pagination"
+ ],
+ "/author/civitai/page/9/": [
+  "pagination"
+ ],
+ "/bad-generations/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/badge-creation-guide/": [
+  "rest:posts"
+ ],
+ "/beginners-guide-to-animatediff/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/build-an-ai-influencer-with-civitai-com/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/buzz-beggars-board/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/calling-all-developers-civbot-wants-you/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/category-sitemap.xml": [
+  "sitemap"
+ ],
+ "/category/audio/": [
+  "rest:categories"
+ ],
+ "/category/audio/feed/": [
+  "feed"
+ ],
+ "/category/beginner-guides/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/beginner-guides/feed/": [
+  "feed"
+ ],
+ "/category/civitai/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/civitai/feed/": [
+  "feed"
+ ],
+ "/category/civitai/page/2/": [
+  "pagination"
+ ],
+ "/category/civitai/page/3/": [
+  "pagination"
+ ],
+ "/category/civitai/page/4/": [
+  "pagination"
+ ],
+ "/category/community-articles/": [
+  "rest:categories"
+ ],
+ "/category/community-articles/feed/": [
+  "feed"
+ ],
+ "/category/featured-articles/": [
+  "rest:categories"
+ ],
+ "/category/featured-articles/feed/": [
+  "feed"
+ ],
+ "/category/flux/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/flux/feed/": [
+  "feed"
+ ],
+ "/category/glossary/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/glossary/feed/": [
+  "feed"
+ ],
+ "/category/guides/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/guides/feed/": [
+  "feed"
+ ],
+ "/category/guides/page/2/": [
+  "pagination"
+ ],
+ "/category/llm/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/llm/feed/": [
+  "feed"
+ ],
+ "/category/news/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/news/feed/": [
+  "feed"
+ ],
+ "/category/news/page/2/": [
+  "pagination"
+ ],
+ "/category/news/page/3/": [
+  "pagination"
+ ],
+ "/category/news/page/4/": [
+  "pagination"
+ ],
+ "/category/prompting/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/prompting/feed/": [
+  "feed"
+ ],
+ "/category/quickstart-guides/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/quickstart-guides/feed/": [
+  "feed"
+ ],
+ "/category/quickstart-guides/page/2/": [
+  "pagination"
+ ],
+ "/category/sd3/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/sd3/feed/": [
+  "feed"
+ ],
+ "/category/sdxl/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/sdxl/feed/": [
+  "feed"
+ ],
+ "/category/training/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/training/feed/": [
+  "feed"
+ ],
+ "/category/uncategorized/": [
+  "rest:categories"
+ ],
+ "/category/uncategorized/feed/": [
+  "feed"
+ ],
+ "/category/video/": [
+  "rest:categories",
+  "sitemap:category-sitemap.xml"
+ ],
+ "/category/video/feed/": [
+  "feed"
+ ],
+ "/changelog/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/check-out-our-stable-diffusion-pre-release-overview-article-for-the-latest-info/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civchan-test-page/": [
+  "rest:pages"
+ ],
+ "/civitai-air-artist-in-residence-program/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai-faq-known-bugs/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai-guide-to-controlnet/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai-guide-to-depth/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai-lora-trainer-live/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai-moderation-guide-2/": [
+  "rest:posts"
+ ],
+ "/civitai/": [
+  "rest:pages",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitai/page/10/": [
+  "pagination"
+ ],
+ "/civitai/page/11/": [
+  "pagination"
+ ],
+ "/civitai/page/2/": [
+  "pagination"
+ ],
+ "/civitai/page/3/": [
+  "pagination"
+ ],
+ "/civitai/page/4/": [
+  "pagination"
+ ],
+ "/civitai/page/5/": [
+  "pagination"
+ ],
+ "/civitai/page/6/": [
+  "pagination"
+ ],
+ "/civitai/page/7/": [
+  "pagination"
+ ],
+ "/civitai/page/8/": [
+  "pagination"
+ ],
+ "/civitai/page/9/": [
+  "pagination"
+ ],
+ "/civitais-guide-to-ads-2/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-bounties/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-buybuzz-io/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-checkpoint-coverage-featured-models-and-the-auction-system/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-civbot/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-clubs/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-content-levels/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-direct-messages-dms/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-downloading-via-api/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-early-access/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-earning-with-the-creator-program/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-gpt-image-1/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-image-upscaling/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-link-v2/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-local-civitai-development/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-membership-tiers/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-purchasing-buzz-with-crypto/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-resource-types/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-the-cosmetic-shop/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-the-rating-game/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-vault/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-video-gen-prompting/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-guide-to-video-in-the-civitai-generator/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-prompt-crafting-guide-part-1-basics/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-prompt-crafting-guide-part-2-intermediate/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-quickstart-guide-to-large-language-models/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-quickstart-guide-to-lightricks-ltxv/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/civitais-quickstart-guide-to-mochi-1-text2video/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/comfyui-node-that-creates-any-node-for-you-ft-nate-creator-of-anynode/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/comments/feed/": [
+  "legacy"
+ ],
+ "/compositing-w-automation-in-comfyui-ft-yvann-mp4/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/consistent-style-transfer-tutorial-using-sdxl-unsampling-ft-inner-reflections-ai/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/contact-us/": [
+  "rest:pages",
+  "sitemap:page-sitemap.xml"
+ ],
+ "/controlnet-basics-guide/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/deepseek-llm-shock/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/easy-alpha-mattes-rotoscoping-in-comfyui-using-sam2/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/education-hub-live/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/feed/": [
+  "legacy"
+ ],
+ "/flux-guide-updated-2/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/flux-guide-updated/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/fooocus-interface-for-sd/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/generative-ai-art-with-fooocus-quickstart-guide/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/generative-ai-art-with-forge-quickstart-guide/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/generative-ai-glossary/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/getting-started-with-stable-diffusion-3-5/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/guide-to-licensing-options-on-civitai/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/huge-milestone-full-checkpoint-coverage/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/huge-on-site-image-generator-updates/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/hunyuan-wan2-1-generation/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/introducing-edubot/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/knights-of-the-new-order-minigame/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/llm-glossary/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/lora-training-glossary/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/make-insane-ai-logo-animations-using-masks-ft-purz/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/new-animatediff-motion-modules/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/new-education-hub-section-for-beginner-guides/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/new-ltxv-model-released/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/new-server/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/page-sitemap.xml": [
+  "sitemap"
+ ],
+ "/page/10/": [
+  "pagination"
+ ],
+ "/page/11/": [
+  "pagination"
+ ],
+ "/page/2/": [
+  "pagination"
+ ],
+ "/page/3/": [
+  "pagination"
+ ],
+ "/page/4/": [
+  "pagination"
+ ],
+ "/page/5/": [
+  "pagination"
+ ],
+ "/page/6/": [
+  "pagination"
+ ],
+ "/page/7/": [
+  "pagination"
+ ],
+ "/page/8/": [
+  "pagination"
+ ],
+ "/page/9/": [
+  "pagination"
+ ],
+ "/post-sitemap.xml": [
+  "sitemap"
+ ],
+ "/post_tag-sitemap.xml": [
+  "sitemap"
+ ],
+ "/quickstart-guide-to-flux-1/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/quickstart-guide-to-flux/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/quickstart-guide-to-lcm-lora-acceleration-modules/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/quickstart-guide-to-sdxl-turbo/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/quickstart-guide-to-stable-diffusion-3/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/quickstart-guide-to-stable-video-diffusion/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/rapid-flux-training-on-sale/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/rapid-flux-training-sale-extended/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/real-time-ai-generations-in-touch-designer-ft-dotsimulate/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/return-of-ads-to-civitai/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/rollback/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/sdxl-1-0-training-overview/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/sdxl-1-0/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/showcase-requests-getting-featured/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/sitemap.xml": [
+  "legacy"
+ ],
+ "/sitemap_index.xml": [
+  "sitemap"
+ ],
+ "/stable-diffusion-3-5-is-here/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/stable-diffusion-3-pre-release-overview/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/stable-diffusion-3-weights-released/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/start-making-ai-art-with-civitai/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/tag/acceleration-modules/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/acceleration-modules/feed/": [
+  "feed"
+ ],
+ "/tag/ads/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/ads/feed/": [
+  "feed"
+ ],
+ "/tag/ai-influencer/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/ai-influencer/feed/": [
+  "feed"
+ ],
+ "/tag/animatediff/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/animatediff/feed/": [
+  "feed"
+ ],
+ "/tag/animation/": [
+  "rest:tags"
+ ],
+ "/tag/animation/feed/": [
+  "feed"
+ ],
+ "/tag/api/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/api/feed/": [
+  "feed"
+ ],
+ "/tag/badge-creation/": [
+  "rest:tags"
+ ],
+ "/tag/badge-creation/feed/": [
+  "feed"
+ ],
+ "/tag/badge/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/badge/feed/": [
+  "feed"
+ ],
+ "/tag/beggars-board/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/beggars-board/feed/": [
+  "feed"
+ ],
+ "/tag/beginner/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/beginner/feed/": [
+  "feed"
+ ],
+ "/tag/bounties/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/bounties/feed/": [
+  "feed"
+ ],
+ "/tag/bounty/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/bounty/feed/": [
+  "feed"
+ ],
+ "/tag/buzz/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/buzz/feed/": [
+  "feed"
+ ],
+ "/tag/changelog/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/changelog/feed/": [
+  "feed"
+ ],
+ "/tag/civbot/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/civbot/feed/": [
+  "feed"
+ ],
+ "/tag/civitai-green/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/civitai-green/feed/": [
+  "feed"
+ ],
+ "/tag/civitai/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/civitai/feed/": [
+  "feed"
+ ],
+ "/tag/civitai/page/2/": [
+  "pagination"
+ ],
+ "/tag/civitai/page/3/": [
+  "pagination"
+ ],
+ "/tag/civitai/page/4/": [
+  "pagination"
+ ],
+ "/tag/civitaiair/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/civitaiair/feed/": [
+  "feed"
+ ],
+ "/tag/clubs/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/clubs/feed/": [
+  "feed"
+ ],
+ "/tag/community-article/": [
+  "rest:tags"
+ ],
+ "/tag/community-article/feed/": [
+  "feed"
+ ],
+ "/tag/community/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/community/feed/": [
+  "feed"
+ ],
+ "/tag/competition/": [
+  "rest:tags"
+ ],
+ "/tag/competition/feed/": [
+  "feed"
+ ],
+ "/tag/content-classification/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/content-classification/feed/": [
+  "feed"
+ ],
+ "/tag/contest/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/contest/feed/": [
+  "feed"
+ ],
+ "/tag/controlnet/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/controlnet/feed/": [
+  "feed"
+ ],
+ "/tag/cosmetic-shop/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/cosmetic-shop/feed/": [
+  "feed"
+ ],
+ "/tag/cosmetic-store/": [
+  "rest:tags"
+ ],
+ "/tag/cosmetic-store/feed/": [
+  "feed"
+ ],
+ "/tag/cosmetic/": [
+  "rest:tags"
+ ],
+ "/tag/cosmetic/feed/": [
+  "feed"
+ ],
+ "/tag/cosmetics/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/cosmetics/feed/": [
+  "feed"
+ ],
+ "/tag/creator-club/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/creator-club/feed/": [
+  "feed"
+ ],
+ "/tag/daily-challenge/": [
+  "rest:tags"
+ ],
+ "/tag/daily-challenge/feed/": [
+  "feed"
+ ],
+ "/tag/deepseek/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/deepseek/feed/": [
+  "feed"
+ ],
+ "/tag/depth/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/depth/feed/": [
+  "feed"
+ ],
+ "/tag/depthmap/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/depthmap/feed/": [
+  "feed"
+ ],
+ "/tag/direct-messages/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/direct-messages/feed/": [
+  "feed"
+ ],
+ "/tag/dms/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/dms/feed/": [
+  "feed"
+ ],
+ "/tag/early-access/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/early-access/feed/": [
+  "feed"
+ ],
+ "/tag/edubot/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/edubot/feed/": [
+  "feed"
+ ],
+ "/tag/education-hub/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/education-hub/feed/": [
+  "feed"
+ ],
+ "/tag/event/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/event/feed/": [
+  "feed"
+ ],
+ "/tag/faq/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/faq/feed/": [
+  "feed"
+ ],
+ "/tag/fast-inference/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/fast-inference/feed/": [
+  "feed"
+ ],
+ "/tag/flux/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/flux/feed/": [
+  "feed"
+ ],
+ "/tag/fooocus/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/fooocus/feed/": [
+  "feed"
+ ],
+ "/tag/forge/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/forge/feed/": [
+  "feed"
+ ],
+ "/tag/generative-ai/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/generative-ai/feed/": [
+  "feed"
+ ],
+ "/tag/generative-ai/page/2/": [
+  "pagination"
+ ],
+ "/tag/generative-ai/page/3/": [
+  "pagination"
+ ],
+ "/tag/glossary/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/glossary/feed/": [
+  "feed"
+ ],
+ "/tag/google-colab/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/google-colab/feed/": [
+  "feed"
+ ],
+ "/tag/gpt-image-1/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/gpt-image-1/feed/": [
+  "feed"
+ ],
+ "/tag/guide/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/guide/feed/": [
+  "feed"
+ ],
+ "/tag/guide/page/2/": [
+  "pagination"
+ ],
+ "/tag/guide/page/3/": [
+  "pagination"
+ ],
+ "/tag/guide/page/4/": [
+  "pagination"
+ ],
+ "/tag/guide/page/5/": [
+  "pagination"
+ ],
+ "/tag/guide/page/6/": [
+  "pagination"
+ ],
+ "/tag/guide/page/7/": [
+  "pagination"
+ ],
+ "/tag/guide/page/8/": [
+  "pagination"
+ ],
+ "/tag/haiper/": [
+  "rest:tags"
+ ],
+ "/tag/haiper/feed/": [
+  "feed"
+ ],
+ "/tag/hunyuan/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/hunyuan/feed/": [
+  "feed"
+ ],
+ "/tag/interface/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/interface/feed/": [
+  "feed"
+ ],
+ "/tag/large-language-model/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/large-language-model/feed/": [
+  "feed"
+ ],
+ "/tag/large-language-models/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/large-language-models/feed/": [
+  "feed"
+ ],
+ "/tag/lcm/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/lcm/feed/": [
+  "feed"
+ ],
+ "/tag/leaderboard/": [
+  "rest:tags"
+ ],
+ "/tag/leaderboard/feed/": [
+  "feed"
+ ],
+ "/tag/legendboard/": [
+  "rest:tags"
+ ],
+ "/tag/legendboard/feed/": [
+  "feed"
+ ],
+ "/tag/licensing/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/licensing/feed/": [
+  "feed"
+ ],
+ "/tag/lightricks/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/lightricks/feed/": [
+  "feed"
+ ],
+ "/tag/link/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/link/feed/": [
+  "feed"
+ ],
+ "/tag/llm/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/llm/feed/": [
+  "feed"
+ ],
+ "/tag/lora-lora-training/": [
+  "rest:tags"
+ ],
+ "/tag/lora-lora-training/feed/": [
+  "feed"
+ ],
+ "/tag/lora-training/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/lora-training/feed/": [
+  "feed"
+ ],
+ "/tag/lora/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/lora/feed/": [
+  "feed"
+ ],
+ "/tag/ltxv/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/ltxv/feed/": [
+  "feed"
+ ],
+ "/tag/membership/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/membership/feed/": [
+  "feed"
+ ],
+ "/tag/mochi/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/mochi/feed/": [
+  "feed"
+ ],
+ "/tag/moderation/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/moderation/feed/": [
+  "feed"
+ ],
+ "/tag/new-account/": [
+  "rest:tags"
+ ],
+ "/tag/new-account/feed/": [
+  "feed"
+ ],
+ "/tag/news/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/news/feed/": [
+  "feed"
+ ],
+ "/tag/news/page/2/": [
+  "pagination"
+ ],
+ "/tag/news/page/3/": [
+  "pagination"
+ ],
+ "/tag/nsfw/": [
+  "rest:tags"
+ ],
+ "/tag/nsfw/feed/": [
+  "feed"
+ ],
+ "/tag/opencall/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/opencall/feed/": [
+  "feed"
+ ],
+ "/tag/prompt-engineering/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/prompt-engineering/feed/": [
+  "feed"
+ ],
+ "/tag/prompt/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/prompt/feed/": [
+  "feed"
+ ],
+ "/tag/prompting/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/prompting/feed/": [
+  "feed"
+ ],
+ "/tag/quickstart-guide/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/quickstart-guide/feed/": [
+  "feed"
+ ],
+ "/tag/resources/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/resources/feed/": [
+  "feed"
+ ],
+ "/tag/scd/": [
+  "rest:tags"
+ ],
+ "/tag/scd/feed/": [
+  "feed"
+ ],
+ "/tag/sd3-5/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/sd3-5/feed/": [
+  "feed"
+ ],
+ "/tag/sd3/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/sd3/feed/": [
+  "feed"
+ ],
+ "/tag/sdxl-turbo/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/sdxl-turbo/feed/": [
+  "feed"
+ ],
+ "/tag/sdxl/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/sdxl/feed/": [
+  "feed"
+ ],
+ "/tag/sdxl0-9/": [
+  "rest:tags"
+ ],
+ "/tag/sdxl0-9/feed/": [
+  "feed"
+ ],
+ "/tag/sdxl1-0/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/sdxl1-0/feed/": [
+  "feed"
+ ],
+ "/tag/showcase-request/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/showcase-request/feed/": [
+  "feed"
+ ],
+ "/tag/stable-diffusion-3/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/stable-diffusion-3/feed/": [
+  "feed"
+ ],
+ "/tag/stable-video-diffusion/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/stable-video-diffusion/feed/": [
+  "feed"
+ ],
+ "/tag/supporter/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/supporter/feed/": [
+  "feed"
+ ],
+ "/tag/svd/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/svd/feed/": [
+  "feed"
+ ],
+ "/tag/text2video/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/text2video/feed/": [
+  "feed"
+ ],
+ "/tag/tiers/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/tiers/feed/": [
+  "feed"
+ ],
+ "/tag/update/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/update/feed/": [
+  "feed"
+ ],
+ "/tag/upscale/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/upscale/feed/": [
+  "feed"
+ ],
+ "/tag/upscaling/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/upscaling/feed/": [
+  "feed"
+ ],
+ "/tag/vault/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/vault/feed/": [
+  "feed"
+ ],
+ "/tag/vid2vid/": [
+  "rest:tags"
+ ],
+ "/tag/vid2vid/feed/": [
+  "feed"
+ ],
+ "/tag/video/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/video/feed/": [
+  "feed"
+ ],
+ "/tag/wan/": [
+  "rest:tags",
+  "sitemap:post_tag-sitemap.xml"
+ ],
+ "/tag/wan/feed/": [
+  "feed"
+ ],
+ "/the-great-halloween-contest-running-now/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/using-civitai-a-guide/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/using-civitai-the-on-site-image-generator/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/using-civitai-the-on-site-lora-trainer/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/using-civitai-uploading-content/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ],
+ "/vfx-nodes-in-comfyui-ft-machine-delusions/": [
+  "rest:posts",
+  "sitemap:post-sitemap.xml"
+ ]
+}

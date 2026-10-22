@@ -1,0 +1,86 @@
+---
+// The front page. WordPress used an Elementor page here (src/content/pages/home.md keeps its
+// content and SEO fields); the site generates the listing itself: a "start here" row and a numbered
+// index of every category, each showing its newest posts as cover cards.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Cover from '../components/Cover.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { SITE } from '../lib/site';
+import { coverOf, getPage, postPath } from '../lib/content';
+import { START_HERE, getCategoryGroups } from '../lib/nav';
+
+const home = await getPage(SITE.frontPageSlug);
+const groups = await getCategoryGroups(4);
+const everyPost = groups.flatMap((g) => g.posts);
+const start = START_HERE.map((slug) => everyPost.find((p) => p.id === slug)).filter((p) => p !== undefined);
+---
+
+<BaseLayout
+  title={SITE.title}
+  documentTitle={home?.data.seo?.title}
+  description={home?.data.seo?.description || home?.data.excerpt || SITE.description}
+  image={home?.data.seo?.ogImage}
+  path="/"
+  sidebar={false}
+>
+  <div class="home">
+    <header class="home-hero">
+      <h1>{SITE.title}</h1>
+      <p>{home?.data.excerpt || SITE.description}</p>
+    </header>
+
+    {
+      start.length > 0 && (
+        <section aria-labelledby="start-here">
+          <h2 class="home-heading" id="start-here">Start here</h2>
+          <ol class="start">
+            {start.map((p, i) => (
+              <li>
+                <a href={postPath(p)}>
+                  {coverOf(p) && <Cover src={coverOf(p)!} eager />}
+                  <span class="start-body">
+                    <span class="n">{String(i + 1).padStart(2, '0')}</span>
+                    <b>{p.data.title}</b>
+                    {p.data.excerpt && <span class="s">{p.data.excerpt}</span>}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="index">
+      <h2 class="home-heading" id="index">Index</h2>
+      <div class="idx">
+        {
+          groups.map((g, i) => (
+            <section aria-labelledby={`cat-${g.slug}`}>
+              <h3 id={`cat-${g.slug}`}>
+                <span class="num">{String(i + 1).padStart(2, '0')}</span>
+                <a href={`/category/${g.slug}/`}>{g.name}</a>
+                <em>{g.count} articles</em>
+              </h3>
+              <ol class="cards">
+                {g.items.map((p) => (
+                  <li>
+                    <a href={postPath(p)}>
+                      {coverOf(p) && <Cover src={coverOf(p)!} />}
+                      <span class="t">{p.data.title}</span>
+                      <span class="d"><FormattedDate date={p.data.date} numeric /></span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+              {g.count > g.items.length && (
+                <a class="all" href={`/category/${g.slug}/`}>All {g.count} &rarr;</a>
+              )}
+            </section>
+          ))
+        }
+      </div>
+      <p><a href={`/${SITE.postsPageSlug}/`}>All posts</a></p>
+    </section>
+  </div>
+</BaseLayout>

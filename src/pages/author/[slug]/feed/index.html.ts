@@ -1,0 +1,16 @@
+// /author/<slug>/feed/ (see src/lib/feed.ts for why the file is index.html).
+import type { APIRoute, GetStaticPaths } from 'astro';
+import { feedResponse } from '../../../../lib/feed';
+import { getAuthors, getPosts, type Term } from '../../../../lib/content';
+import { SITE } from '../../../../lib/site';
+
+export const getStaticPaths = (async () => {
+  const terms = await getAuthors();
+  return terms.map((term) => ({ params: { slug: term.slug }, props: { term } }));
+}) satisfies GetStaticPaths;
+
+export const GET: APIRoute = async ({ props }) => {
+  const term = props.term as Term;
+  const posts = (await getPosts()).filter((p) => p.data.author === term.slug);
+  return feedResponse({ title: `${SITE.title} » Posts by ${term.name} Feed`, description: term.description || SITE.description, path: `/author/${term.slug}/`, posts });
+};

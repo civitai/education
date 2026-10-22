@@ -1,0 +1,15 @@
+---
+// /page/N/: older posts on the front page.
+import Archive from '../../components/Archive.astro';
+import { SITE } from '../../lib/site';
+import { extraPages, getPosts } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return extraPages(posts.length).map((n) => ({ params: { page: String(n) }, props: { page: n, posts } }));
+}
+
+const { page, posts } = Astro.props;
+---
+
+<Archive title={SITE.title} heading="All posts" base="/" page={page} posts={posts} feed="/feed/" />

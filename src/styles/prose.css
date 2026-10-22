@@ -1,0 +1,356 @@
+/*
+ * Long-form content typography: everything rendered from Markdown sits inside .prose. Reads the
+ * tokens in tokens.css. Also styles the markup produced by the Markdown pipeline:
+ *   .callout.callout-note|tip|warn|danger  (src/lib/remark-callouts.mjs, from :::note etc.)
+ *   .table-wrap                            (src/lib/rehype-table-wrap.mjs)
+ *   .embed, .gallery, .image-compare       (src/lib/rehype-embeds.mjs)
+ * Posts also get numbered sections: add .prose-numbered (the Prose component's `numbered` prop).
+ */
+
+.prose {
+  max-width: var(--measure);
+  color: var(--text);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  overflow-wrap: break-word;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose :where(p, ul, ol, blockquote, pre, figure, hr, .gallery, .table-wrap, .callout) {
+  margin-block: 0 1.15em;
+}
+
+.prose :where(h2, h3, h4, h5, h6) {
+  margin-block: 2.1em 0.55em;
+  color: var(--heading);
+  line-height: 1.3;
+  scroll-margin-top: calc(var(--top-h) + 1rem);
+  text-wrap: balance;
+}
+.prose h2 {
+  margin-top: 2.8em;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-strong);
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  line-height: 1.25;
+}
+.prose h3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+}
+.prose :where(h4, h5, h6) {
+  color: var(--text-dim);
+  font: 600 var(--fs-h4) / 1.4 var(--font-mono);
+  letter-spacing: 0.09em;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+.prose > h2:first-child {
+  margin-top: 0;
+}
+
+.prose-numbered {
+  counter-reset: s1 s2;
+}
+.prose-numbered h2 {
+  padding-left: 1.9em;
+  text-indent: -1.9em;
+  counter-increment: s1;
+  counter-reset: s2;
+}
+.prose-numbered h2::before {
+  content: counter(s1);
+  display: inline-block;
+  width: 2.72em;
+  text-indent: 0;
+  color: var(--accent-ink);
+  font: 500 0.7em var(--font-mono);
+}
+.prose-numbered h3 {
+  padding-left: 2.8em;
+  text-indent: -2.8em;
+  counter-increment: s2;
+}
+.prose-numbered h3::before {
+  content: counter(s1) '.' counter(s2);
+  display: inline-block;
+  width: 4em;
+  text-indent: 0;
+  color: var(--text-dim);
+  font: 500 0.7em var(--font-mono);
+}
+
+.prose :where(ul, ol) {
+  padding-left: 1.45em;
+}
+.prose li + li {
+  margin-top: 0.35em;
+}
+.prose li > :where(ul, ol) {
+  margin-top: 0.35em;
+  margin-bottom: 0;
+}
+.prose li::marker {
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.prose a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.prose strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.prose blockquote {
+  margin-inline: 0;
+  padding: 0.1em 0 0.1em 1.1em;
+  border-left: 3px solid var(--border-strong);
+  color: var(--text-dim);
+}
+.prose blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border-strong);
+  margin-block: 2.5em;
+}
+
+.prose :where(code, kbd, samp) {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+}
+.prose :not(pre) > code {
+  padding: 0.05em 0.35em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--code-bg);
+  color: var(--code-text);
+}
+.prose pre {
+  padding: 1em 1.15em;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  color: var(--code-text);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+.prose pre code {
+  font-size: inherit;
+}
+
+.prose .table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+.prose :where(th, td) {
+  padding: 0.45em 0.7em;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.prose :where(th, td):last-child {
+  border-right: 0;
+}
+.prose tr:last-child > :where(th, td) {
+  border-bottom: 0;
+}
+.prose th {
+  background: var(--surface-2);
+  color: var(--heading);
+  font: 600 0.68rem var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.prose tbody tr:nth-child(even) > td {
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+
+.prose img,
+.prose video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+.prose p > img {
+  margin-block: 0.5em;
+}
+.prose :where(img:not(.emoji), video) {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.prose figure {
+  margin-inline: 0;
+}
+.prose figcaption {
+  margin-top: 0.6em;
+  color: var(--text-dim);
+  font-size: var(--fs-small);
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* WordPress column blocks (text beside an image); stacked on narrow screens. */
+.prose .columns {
+  display: flex;
+  gap: 1.5rem;
+  margin-block: 1.4em;
+}
+.prose .columns.va-center {
+  align-items: center;
+}
+.prose .columns.va-bottom {
+  align-items: flex-end;
+}
+.prose .column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.prose .column[style*='flex-basis'] {
+  flex-grow: 0;
+}
+.prose .column > :first-child {
+  margin-top: 0;
+}
+.prose .column > :last-child {
+  margin-bottom: 0;
+}
+.prose .column img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 720px) {
+  .prose .columns {
+    flex-direction: column;
+  }
+  .prose .column {
+    flex-basis: auto !important;
+  }
+}
+
+.prose figure.alignright,
+.prose figure.alignleft {
+  max-width: min(50%, 22rem);
+  margin-block: 0.3em 1em;
+}
+.prose figure.alignright {
+  float: right;
+  margin-left: 1.5rem;
+}
+.prose figure.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+}
+.prose :where(h2, h3, h4, hr, .columns) {
+  clear: both;
+}
+
+/* Callouts: :::note, :::tip, :::warning, :::caution */
+.prose .callout {
+  --cc: var(--c-note);
+  position: relative;
+  padding: 1.9rem 1.1rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--cc) 55%, var(--border));
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+.prose .callout::before {
+  content: 'Note';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius) 0 var(--radius) 0;
+  background: color-mix(in srgb, var(--cc) 20%, var(--bg));
+  color: color-mix(in srgb, var(--cc) 55%, var(--heading));
+  font: 600 0.62rem var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.prose .callout-tip {
+  --cc: var(--c-tip);
+}
+.prose .callout-tip::before {
+  content: 'Tip';
+}
+.prose .callout-warn {
+  --cc: var(--c-warn);
+}
+.prose .callout-warn::before {
+  content: 'Warning';
+}
+.prose .callout-danger {
+  --cc: var(--c-danger);
+}
+.prose .callout-danger::before {
+  content: 'Caution';
+}
+.prose .callout > :last-child {
+  margin-bottom: 0;
+}
+.prose .callout p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+.prose .callout-title {
+  color: var(--heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+/* Embeds (rehype-embeds.mjs) */
+.prose .embed iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  background: var(--surface);
+}
+.prose .embed-portrait iframe {
+  max-width: min(100%, 24rem);
+  margin-inline: auto;
+}
+.prose .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+.prose .gallery img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+.prose .image-compare-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.prose .image-compare-pair img {
+  margin: 0;
+}
+.prose .embed-tweet blockquote {
+  color: inherit;
+}

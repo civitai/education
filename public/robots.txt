@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /search/
+
+Sitemap: https://education.civitai.com/sitemap_index.xml

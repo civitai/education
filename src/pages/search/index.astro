@@ -1,0 +1,25 @@
+---
+// Pagefind search. The index is built after `astro build` (see the build script) from every
+// element marked data-pagefind-body, i.e. post and page bodies.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Search" description="Search Civitai Education guides, tutorials and news." noindex>
+  <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <div class="container search">
+    <h1>Search</h1>
+    <div id="search"></div>
+    <noscript><p>Search needs JavaScript. Browse by <a href="/civitai/">all posts</a> instead.</p></noscript>
+  </div>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      // eslint-disable-next-line no-undef
+      const ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+      // WordPress search links use ?s=; support those and ?q=.
+      const params = new URLSearchParams(location.search);
+      const q = params.get('q') || params.get('s');
+      if (q) ui.triggerSearch(q);
+    });
+  </script>
+</BaseLayout>

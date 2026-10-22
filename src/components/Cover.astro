@@ -1,0 +1,14 @@
+---
+// A post cover in a square frame. Covers come in several shapes (most square, many 16:9), so the
+// image is contained, never cropped, over a blurred copy of itself that fills the rest of the square.
+interface Props {
+  src: string;
+  /** Load at once (above the fold) instead of lazily. */
+  eager?: boolean;
+}
+const { src, eager = false } = Astro.props;
+---
+
+<span class="cover" style={`--cover: url("${src}")`}>
+  <img src={src} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+</span>

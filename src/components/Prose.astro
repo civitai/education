@@ -1,0 +1,17 @@
+---
+// Wrapper for long-form Markdown. All typography for content lives in src/styles/prose.css, so the
+// site theme can be swapped without touching the rest of the layout.
+import '../styles/prose.css';
+
+interface Props {
+  /** Mark this block as the search index body (unless an ancestor already is). */
+  searchable?: boolean;
+  /** Number the h2 and h3 sections (1, 1.1) with CSS counters. */
+  numbered?: boolean;
+}
+const { searchable = false, numbered = false } = Astro.props;
+---
+
+<div class:list={['prose', { 'prose-numbered': numbered }]} data-pagefind-body={searchable ? '' : undefined}>
+  <slot />
+</div>

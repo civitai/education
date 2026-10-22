@@ -143,4 +143,4 @@ Chats can be reported from the **cogwheel/gear icon** at the top of the **Chat P
 
 ## I need more help!
 
-If you’re experiencing issues with the Direct Message system which are not mentioned on this page, or have received undesirable or harassing messages, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Feedback System](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+If you’re experiencing issues with the Direct Message system which are not mentioned on this page, or have received undesirable or harassing messages, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

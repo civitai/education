@@ -92,7 +92,7 @@ If you’re in the [Discord Server](https://discord.gg/civitai) you can check ou
 
 ### Bug Reporting & Feature Requests {#bug-reporting-feature-requests}
 
-Civitai.com is in a constant development cycle. New features and bug fixes are released multiple times per week, and you may encounter features which don’t operate as you’d expect! [You can report bugs to us here](https://www.civitai.com/support) and send us your [Feedback and suggestions here](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+Civitai.com is in a constant development cycle. New features and bug fixes are released multiple times per week, and you may encounter features which don’t operate as you’d expect! [You can report bugs to us here](https://www.civitai.com/support) and send us your [Feedback and suggestions here](https://civitai.com/support).
 
 ### Creating an Account
 

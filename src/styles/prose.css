@@ -52,15 +52,19 @@
 .prose-numbered {
   counter-reset: s1;
 }
+/* The number hangs left of the heading text with a fixed 14px gap. Its box is as wide as the digits
+   (a mono digit is 0.6em of the 0.6em number, so 0.36em of the heading), so the gap does not grow
+   with the heading size; wrapped lines align with the text of a one-digit heading. */
 .prose-numbered h2 {
-  padding-left: 1.2em;
-  text-indent: -1.2em;
+  --num-gap: 14px;
+  padding-left: calc(0.36em + var(--num-gap));
+  text-indent: calc(-0.36em - var(--num-gap));
   counter-increment: s1;
 }
 .prose-numbered h2::before {
   content: counter(s1);
   display: inline-block;
-  width: 2em;
+  margin-right: var(--num-gap);
   text-indent: 0;
   color: var(--link);
   font: 400 0.6em var(--font-mono);

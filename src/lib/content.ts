@@ -101,6 +101,6 @@ export function coverOf(p: Post): string | undefined {
   const src = p.data.image;
   if (!src) return undefined;
   const path = new URL(src, SITE.url).pathname.replace(/\/{2,}/g, '/');
-  return (squareCovers as Record<string, string>)[path] ?? src;
+  return (squareCovers as Record<string, string>)[path] ?? (path.startsWith('/wp-content/') ? path : src);
 }
 export const absolute = (path: string) => new URL(path, SITE.url).href;

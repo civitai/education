@@ -59,20 +59,17 @@ const TERMS = [
             </a>
           )}
           <div class="lead-copy">
-            <p class="lead-crumb">
-              {leadCategory && (
-                <>
-                  <a href={`/category/${leadCategory}/`}>{termName('categories', leadCategory)}</a>
-                  <span aria-hidden="true">/</span>
-                </>
-              )}
-              <span>Featured guide</span>
-            </p>
             <h2 class="lead-title" id="lead-title">
               <a href={postPath(lead)}>{lead.data.title}</a>
             </h2>
             {leadDeck && <p class="lead-deck">{leadDeck}</p>}
             <p class="byline">
+              {leadCategory && (
+                <>
+                  <a class="byline-topic" href={`/category/${leadCategory}/`}>{termName('categories', leadCategory)}</a>
+                  <span aria-hidden="true">·</span>
+                </>
+              )}
               <span>{leadAuthor}</span>
               <span aria-hidden="true">·</span>
               <FormattedDate date={lead.data.date} />

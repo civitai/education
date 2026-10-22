@@ -1321,19 +1321,12 @@ iframe {
 .lead-cover:hover img {
   filter: brightness(1.08);
 }
-.lead-crumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-2);
-  margin: 0 0 var(--sp-4);
-  color: var(--text-dim);
-  font-size: var(--fs-small);
+.byline-topic {
+  color: var(--link);
   font-weight: 500;
-}
-.lead-crumb a {
   text-decoration: none;
 }
-.lead-crumb a:hover {
+.byline-topic:hover {
   text-decoration: underline;
 }
 .home .lead-title {
@@ -1570,9 +1563,6 @@ iframe {
   .home-band {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--sp-5);
-  }
-  .lead-crumb {
-    margin-bottom: var(--sp-2);
   }
   .home .lead-title {
     margin-bottom: var(--sp-3);

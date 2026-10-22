@@ -223,6 +223,10 @@ iframe {
   max-width: var(--measure);
   margin-inline: auto;
 }
+/* The front page's card grids want more room than a reading column. */
+.layout .site-main > .home {
+  max-width: 1180px;
+}
 .site-main.wide {
   max-width: 1180px;
   margin-inline: auto;

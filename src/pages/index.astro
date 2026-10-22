@@ -21,7 +21,6 @@ const start = START_HERE.map((slug) => everyPost.find((p) => p.id === slug)).fil
   description={home?.data.seo?.description || home?.data.excerpt || SITE.description}
   image={home?.data.seo?.ogImage}
   path="/"
-  sidebar={false}
 >
   <div class="home">
     <header class="home-hero">

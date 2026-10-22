@@ -207,13 +207,18 @@ iframe {
 }
 
 /* Shell: sidebar | main | on-this-page. Full width, so the sidebar sits under the brand at the left
-   edge on any screen; the text column centers in the space between. */
+   edge on any screen; the text column centers in the space between. Pages with no on-this-page list
+   keep the empty column, so their text sits where it does on every guide. */
 .layout {
   display: grid;
-  grid-template-columns: var(--side-w) minmax(0, 1fr);
-}
-.layout.has-aside {
   grid-template-columns: var(--side-w) minmax(0, 1fr) var(--aside-w);
+}
+/* The front page's card grids take that column back. Scoped to wide screens: :has() outranks the
+   single-column rule for phones. */
+@media (min-width: 1280px) {
+  .layout:has(> .site-main > .home) {
+    grid-template-columns: var(--side-w) minmax(0, 1fr);
+  }
 }
 .site-main {
   min-width: 0;
@@ -830,7 +835,7 @@ iframe {
 }
 
 @media (max-width: 1279px) {
-  .layout.has-aside {
+  .layout {
     grid-template-columns: var(--side-w) minmax(0, 1fr);
   }
   .aside {

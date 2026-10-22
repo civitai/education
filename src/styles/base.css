@@ -169,6 +169,17 @@ iframe {
 .hdr-chips {
   flex: 0 1 auto;
 }
+/* When the row overflows (Header.astro sets data-more-start/end), the clipped edge fades out so
+   a chip is never cut off without a sign that the row scrolls. */
+.hdr-chips[data-more-end] {
+  mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+}
+.hdr-chips[data-more-start] {
+  mask-image: linear-gradient(to right, transparent, #000 40px);
+}
+.hdr-chips[data-more-start][data-more-end] {
+  mask-image: linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+}
 
 /* Search box: header (wide screens) and the phone menu sheet. */
 .top-search {
@@ -178,6 +189,25 @@ iframe {
 .hdr-search {
   flex: none;
   width: 240px;
+}
+
+/* Below 1440px the bar tightens so the chips fit; below 1280px the "Education" label goes too, and
+   what still does not fit scrolls behind the fade. */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hdr-bar {
+    gap: var(--sp-4);
+  }
+  .chip {
+    padding-inline: 10px;
+  }
+  .hdr-search {
+    width: 184px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .brand-sub {
+    display: none;
+  }
 }
 .search-field {
   display: flex;

@@ -62,6 +62,23 @@ import Logo from './Logo.astro';
     }
   });
 
+  // Header chips: on narrow desktops the row scrolls; mark which edges hide chips (the CSS fades
+  // them) and bring the current topic into view.
+  const chips = document.querySelector<HTMLElement>('.hdr-chips');
+  if (chips) {
+    const mark = () => {
+      const max = chips.scrollWidth - chips.clientWidth;
+      chips.toggleAttribute('data-more-start', max > 1 && chips.scrollLeft > 1);
+      chips.toggleAttribute('data-more-end', max > 1 && chips.scrollLeft < max - 1);
+    };
+    const current = chips.querySelector<HTMLElement>('[aria-current="page"]');
+    const end = current ? current.getBoundingClientRect().right - chips.getBoundingClientRect().left : 0;
+    if (end > chips.clientWidth) chips.scrollLeft = end - chips.clientWidth + 40;
+    mark();
+    chips.addEventListener('scroll', mark, { passive: true });
+    new ResizeObserver(mark).observe(chips);
+  }
+
   // Phone menu: a sheet under the header. Focus stays inside the header while it is open, Escape
   // or the X closes it and focus goes back to the button that opened it.
   const header = document.querySelector<HTMLElement>('.site-header');

@@ -23,3 +23,6 @@ Thumbs.db
 
 # script scratch output
 .cache/
+
+# Playwright MCP screenshots and snapshots
+.playwright-mcp/

@@ -193,6 +193,12 @@
   height: auto;
   margin-inline: auto;
 }
+/* Tall images (portraits, phone screenshots) stay within one screen; width follows the ratio. */
+.prose :where(p, figure, figure > a, p > a) > img,
+.prose figure > video {
+  width: auto;
+  max-height: min(75vh, 720px);
+}
 .prose p > img {
   margin-block: 0.5em;
 }

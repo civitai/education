@@ -21,7 +21,7 @@ interface Props {
   /** Alternate RSS feed for this archive, e.g. /category/news/feed/. */
   feed?: string;
   noindex?: boolean;
-  /** Category sidebar and phone drawer; the front page turns it off (its index is the navigation). */
+  /** Category sidebar (wide screens; phones use the header menu); the front page turns it off. */
   sidebar?: boolean;
   /** Post slug being read, highlighted in the sidebar. */
   currentPost?: string;
@@ -93,12 +93,11 @@ const canonical = Astro.props.canonical || absolute(path);
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header sidebar={sidebar} />
+    <Header />
     {
       sidebar ? (
         <div class:list={['layout', { 'has-aside': hasAside }]}>
           <Sidebar currentPost={currentPost} currentCategory={currentCategory} />
-          <div class="nav-backdrop" data-nav-close></div>
           <main id="main" class="site-main">
             <slot />
           </main>

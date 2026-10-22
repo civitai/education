@@ -13,6 +13,34 @@ export const START_HERE = [
   'using-civitai-the-on-site-lora-trainer',
 ];
 
+/** Topic chips in the header (and the phone front page), in display order. */
+export const CHIPS = [
+  { label: 'All', href: '/' },
+  { label: 'Beginner', href: '/category/beginner-guides/' },
+  { label: 'Quickstart', href: '/category/quickstart-guides/' },
+  { label: 'Guides', href: '/category/guides/' },
+  { label: 'Training', href: '/category/training/' },
+  { label: 'Prompting', href: '/category/prompting/' },
+  { label: 'Video', href: '/category/video/' },
+  { label: 'Glossary', href: '/category/glossary/' },
+  { label: 'News', href: '/category/news/' },
+];
+
+/** The chip for a URL path: "All" on the front page, a category on its archive and its pages. */
+export function activeChip(path: string): string | undefined {
+  if (path === '/') return '/';
+  return CHIPS.find((c) => c.href !== '/' && path.startsWith(c.href))?.href;
+}
+
+/** The chip categories with their names and post counts, for the phone menu. */
+export async function getMenuTopics(): Promise<Array<Term & { href: string }>> {
+  const categories = await getCategories();
+  return CHIPS.flatMap((c) => {
+    const term = categories.find((t) => c.href === `/category/${t.slug}/`);
+    return term ? [{ ...term, href: c.href }] : [];
+  });
+}
+
 export type CategoryGroup = Term & { posts: Post[]; items: Post[] };
 
 /** Categories in display order, each with its posts (newest first) and the latest `limit` of them. */

@@ -98,4 +98,4 @@ API Reference – [https://developer.civitai.com/docs/api/public-rest](https://d
 
 ## API Issues
 
-If you’re having trouble connecting to the API, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Feedback System](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+If you’re having trouble connecting to the API, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

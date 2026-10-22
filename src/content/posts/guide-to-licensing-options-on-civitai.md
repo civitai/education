@@ -79,4 +79,4 @@ Models that don’t utilize the Open RAIL License, or an Open RAIL variant, will
 
 ## I need more help!
 
-If you have questions about the Licensing system which aren’t answered on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Feedback System](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+If you have questions about the Licensing system which aren’t answered on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

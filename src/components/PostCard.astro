@@ -1,5 +1,5 @@
 ---
-// A post as a cover card: wide cover, "CATEGORY · date", title and deck. Used by the front page's
+// A post as a cover card: wide cover, title, "Category · date" and deck. Used by the front page's
 // Latest grid and the archives.
 import Cover from './Cover.astro';
 import FormattedDate from './FormattedDate.astro';
@@ -30,11 +30,11 @@ const deck = compact ? undefined : entryDeck(post.data.excerpt, post.body);
       </a>
     )
   }
+  <Title class="story-title"><a href={href}>{post.data.title}</a></Title>
   <p class="story-meta">
     {category && <a class="story-cat" href={`/category/${category}/`}>{termName('categories', category)}</a>}
     {category && <span aria-hidden="true">·</span>}
     <FormattedDate date={post.data.date} />
   </p>
-  <Title class="story-title"><a href={href}>{post.data.title}</a></Title>
   {deck && <p class="story-deck">{deck}</p>}
 </article>

@@ -38,6 +38,7 @@ body {
 
 :where(h1, h2, h3, h4) {
   font-family: var(--font-display);
+  font-stretch: var(--wdth-mild);
   text-wrap: balance;
 }
 
@@ -599,6 +600,7 @@ iframe {
   margin: 0 0 var(--sp-4);
   color: var(--heading);
   font-size: var(--fs-display);
+  font-stretch: var(--wdth-display);
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.05;
@@ -815,6 +817,7 @@ iframe {
   margin: 0;
   color: var(--heading);
   font-size: 1.625rem;
+  font-stretch: var(--wdth-wide);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -1253,6 +1256,7 @@ iframe {
   margin: 0;
   color: var(--heading);
   font-size: var(--fs-h3);
+  font-stretch: var(--wdth-wide);
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -1328,6 +1332,7 @@ iframe {
 .home .lead-title {
   margin: 0 0 var(--sp-5);
   font-size: var(--fs-display);
+  font-stretch: var(--wdth-display);
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.04;
@@ -1448,6 +1453,7 @@ iframe {
 .topic-name {
   color: var(--heading);
   font: 600 1.1875rem / 1.3 var(--font-display);
+  font-stretch: var(--wdth-mild);
 }
 .topic-list a:hover .topic-name {
   color: var(--link);
@@ -1503,6 +1509,7 @@ iframe {
 }
 .home .try h2 {
   font-size: var(--fs-h2);
+  font-stretch: var(--wdth-wide);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -1631,6 +1638,7 @@ iframe {
   margin: 0;
   color: var(--heading);
   font-size: clamp(2.125rem, 1.6rem + 1.6vw, 3rem);
+  font-stretch: var(--wdth-display);
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.05;
@@ -1675,6 +1683,7 @@ iframe {
   .archive-grid > li:first-child .story-title {
     grid-row: 3;
     font-size: var(--fs-h2);
+    font-stretch: var(--wdth-wide);
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.12;
@@ -1854,6 +1863,7 @@ a.pager-step:hover {
 .pagefind-ui__result-title {
   margin: 0;
   font: 700 1.25rem / 1.3 var(--font-display);
+  font-stretch: var(--wdth-mild);
   letter-spacing: -0.01em;
 }
 .pagefind-ui__result-link {
@@ -1918,6 +1928,7 @@ a.pager-step:hover {
   margin: 0;
   color: var(--heading);
   font: 900 clamp(4.5rem, 3rem + 6vw, 6rem) / 0.95 var(--font-display);
+  font-stretch: var(--wdth-display);
   letter-spacing: -0.04em;
   text-align: center;
 }

@@ -32,6 +32,7 @@
 .prose h2 {
   margin-top: 2.4em;
   font-size: var(--fs-h2);
+  font-stretch: var(--wdth-wide);
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;

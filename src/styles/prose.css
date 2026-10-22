@@ -2,7 +2,7 @@
  * Long-form content typography: everything rendered from Markdown sits inside .prose. Reads the
  * tokens in tokens.css. Also styles the markup produced by the Markdown pipeline:
  *   .callout.callout-note|tip|warn|danger  (src/lib/remark-callouts.mjs, from :::note etc.)
- *   .table-wrap                            (src/lib/rehype-table-wrap.mjs)
+ *   .table-wrap, .revisions, .code-block   (src/lib/rehype-table-wrap.mjs)
  *   .embed, .gallery, .image-compare       (src/lib/rehype-embeds.mjs)
  * Posts also get numbered sections: add .prose-numbered (the Prose component's `numbered` prop).
  */
@@ -11,14 +11,14 @@
   max-width: var(--measure);
   color: var(--text);
   font-size: var(--fs-body);
-  line-height: var(--lh-body);
+  line-height: 1.7;
   overflow-wrap: break-word;
 }
 .prose > :first-child {
   margin-top: 0;
 }
 
-.prose :where(p, ul, ol, blockquote, pre, figure, hr, .gallery, .table-wrap, .callout) {
+.prose :where(p, ul, ol, blockquote, pre, figure, hr, .gallery, .table-wrap, .callout, .code-block) {
   margin-block: 0 1.15em;
 }
 
@@ -50,33 +50,19 @@
 }
 
 .prose-numbered {
-  counter-reset: s1 s2;
+  counter-reset: s1;
 }
 .prose-numbered h2 {
-  padding-left: 1.9em;
-  text-indent: -1.9em;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
   counter-increment: s1;
-  counter-reset: s2;
 }
 .prose-numbered h2::before {
   content: counter(s1);
   display: inline-block;
-  width: 3.17em;
+  width: 2em;
   text-indent: 0;
   color: var(--link);
-  font: 400 0.6em var(--font-mono);
-}
-.prose-numbered h3 {
-  padding-left: 2.8em;
-  text-indent: -2.8em;
-  counter-increment: s2;
-}
-.prose-numbered h3::before {
-  content: counter(s1) '.' counter(s2);
-  display: inline-block;
-  width: 4.67em;
-  text-indent: 0;
-  color: var(--text-dim);
   font: 400 0.6em var(--font-mono);
 }
 
@@ -97,6 +83,7 @@
 }
 
 .prose a {
+  color: var(--link);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
@@ -126,11 +113,10 @@
   font-size: 0.86em;
 }
 .prose :not(pre) > code {
-  padding: 0.05em 0.35em;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--code-bg);
-  color: var(--code-text);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--heading);
 }
 .prose pre {
   padding: 1em 1.15em;
@@ -146,39 +132,175 @@
   font-size: inherit;
 }
 
+/* Code and prompt blocks: a header strip with the language and Copy (rehype-table-wrap.mjs). Shiki's
+   inline colours are overridden: snippets are prompts and commands, kept literal and on-theme. */
+.prose .code-block {
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--code-bg);
+}
+.prose .code-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  min-height: 36px;
+  padding: 0 var(--sp-2) 0 var(--sp-3);
+  border-bottom: 1px solid var(--border);
+}
+.prose .code-lang {
+  color: var(--text-dim);
+  font: 600 11px var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.prose .code-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 var(--sp-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-dim);
+  font: 500 var(--fs-micro) var(--font-body);
+  cursor: pointer;
+}
+.prose .code-copy:hover {
+  background: var(--surface-2);
+  color: var(--heading);
+}
+.prose .code-copy[hidden] {
+  display: none;
+}
+.prose .code-block pre {
+  margin: 0;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 0;
+  background: transparent !important;
+  color: var(--code-text) !important;
+  font: 400 0.875rem / 1.6 var(--font-mono);
+  /* Prompts are long single lines: wrap them rather than hide the end off to the side. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.prose .code-block pre span {
+  color: inherit !important;
+}
+
 .prose .table-wrap {
   max-width: 100%;
   overflow-x: auto;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius);
 }
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  font-size: var(--fs-small);
+  font-size: var(--fs-ui);
   line-height: 1.45;
+  font-variant-numeric: tabular-nums;
 }
 .prose :where(th, td) {
-  padding: 0.45em 0.7em;
-  border-right: 1px solid var(--border);
+  padding: 10px 12px;
   border-bottom: 1px solid var(--border);
   text-align: left;
   vertical-align: top;
 }
-.prose :where(th, td):last-child {
-  border-right: 0;
+.prose :where(th, td):first-child {
+  padding-left: 0;
 }
-.prose tr:last-child > :where(th, td) {
-  border-bottom: 0;
+.prose :where(th, td):last-child {
+  padding-right: 0;
 }
 .prose th {
+  padding-block: 8px;
+  border-bottom-color: var(--border-strong);
+  color: var(--text-dim);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.prose th strong {
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* Revision history: the guides' "Last updated / Changes" table (rehype-table-wrap.mjs). */
+.prose .revisions {
+  margin-block: 0 2.25em;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+.prose .rev-head {
+  display: block;
+  list-style: none;
+}
+.prose summary.rev-head {
+  cursor: pointer;
+}
+.prose .rev-head::-webkit-details-marker {
+  display: none;
+}
+.prose .rev-title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--border-strong);
   background: var(--surface);
   color: var(--heading);
   font-size: var(--fs-small);
   font-weight: 600;
+  line-height: 1.4;
 }
-.prose tbody tr:nth-child(even) > td {
-  background: color-mix(in srgb, var(--surface) 70%, transparent);
+.prose .rev-title .icon {
+  color: var(--text-dim);
+}
+.prose .rev-count {
+  margin-left: -0.25em;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+.prose .rev-chevron {
+  margin-left: auto;
+  color: var(--text-dim);
+  transition: rotate 0.2s;
+}
+.prose .revisions[open] .rev-chevron {
+  rotate: 180deg;
+}
+.prose .rev-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.prose .rev-row {
+  display: grid;
+  grid-template-columns: 9em minmax(0, 1fr);
+  gap: var(--sp-4);
+  margin: 0;
+  padding: var(--sp-2) var(--sp-3);
+  color: var(--text);
+  font-size: var(--fs-small);
+  line-height: 1.45;
+}
+.prose .rev-list .rev-row {
+  border-top: 1px solid var(--border);
+}
+.prose .rev-date {
+  color: var(--text-dim);
+  font: 400 0.8125rem / 1.6 var(--font-mono);
+}
+@media (max-width: 1023px) {
+  .prose .rev-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
 }
 
 .prose img,
@@ -191,7 +313,7 @@
 .prose p > img {
   margin-block: 0.5em;
 }
-.prose :where(img:not(.emoji), video) {
+.prose :where(img:not(.emoji), video, .embed iframe) {
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
@@ -261,44 +383,27 @@
   clear: both;
 }
 
-/* Callouts: :::note, :::tip, :::warning, :::caution */
+/* Callouts: :::note, :::tip, :::warning, :::caution. Tinted fill and a thin full border in the role colour. */
 .prose .callout {
   --cc: var(--c-note);
+  --ci: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4M12 8h.01'/%3E%3C/svg%3E");
   position: relative;
-  padding: 1.9rem 1.1rem 0.9rem;
-  border: 1px solid color-mix(in srgb, var(--cc) 55%, var(--border));
+  padding: 12px 16px 12px 42px;
+  border: 1px solid color-mix(in srgb, var(--cc) 32%, transparent);
   border-radius: var(--radius);
-  background: var(--bg);
-}
-.prose .callout::before {
-  content: 'Note';
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--radius) 0 var(--radius) 0;
-  background: color-mix(in srgb, var(--cc) 18%, var(--bg));
-  color: color-mix(in srgb, var(--cc) 70%, var(--heading));
-  font-size: var(--fs-micro);
-  font-weight: 600;
+  background: color-mix(in srgb, var(--cc) 8%, var(--bg));
 }
 .prose .callout-tip {
   --cc: var(--c-tip);
-}
-.prose .callout-tip::before {
-  content: 'Tip';
+  --ci: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4'/%3E%3C/svg%3E");
 }
 .prose .callout-warn {
   --cc: var(--c-warn);
-}
-.prose .callout-warn::before {
-  content: 'Warning';
+  --ci: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4M12 17h.01'/%3E%3C/svg%3E");
 }
 .prose .callout-danger {
   --cc: var(--c-danger);
-}
-.prose .callout-danger::before {
-  content: 'Caution';
+  --ci: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7.86 2h8.28L22 7.86v8.28L16.14 22H7.86L2 16.14V7.86zM12 8v4M12 16h.01'/%3E%3C/svg%3E");
 }
 .prose .callout > :last-child {
   margin-bottom: 0;
@@ -308,10 +413,20 @@
   line-height: 1.6;
 }
 .prose .callout-title {
-  color: var(--heading);
-  font-size: var(--fs-ui);
+  margin-bottom: 0.2em;
+  /* Darkened (light) or lightened (dark) toward the heading colour to keep small text above 4.5:1. */
+  color: color-mix(in srgb, var(--cc) 75%, var(--heading));
   font-weight: 600;
-  margin-bottom: 0.4em;
+}
+.prose .callout-title::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background: var(--cc);
+  mask: var(--ci) center / contain no-repeat;
 }
 
 /* Embeds (rehype-embeds.mjs) */

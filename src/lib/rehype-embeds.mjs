@@ -19,6 +19,8 @@ function walk(node, fn) {
   for (const child of node.children) walk(child, fn);
 }
 
+const textOf = (node) => (node.type === 'text' ? node.value : (node.children || []).map(textOf).join(''));
+
 function split(children) {
   const caption = children.find((c) => c.type === 'element' && c.tagName === 'figcaption');
   const rest = children.filter((c) => c !== caption && !(c.type === 'text' && !c.value.trim()));
@@ -65,6 +67,11 @@ function selfHosted(p) {
 export default function rehypeEmbeds() {
   return (tree) => {
     walk(tree, (node) => {
+      // Many posts open with a "Last Updated | Changes" table; keep it out of search snippets.
+      if (node.type === 'element' && node.tagName === 'table' && /^\s*last\s+updated/i.test(textOf(node))) {
+        node.properties = { ...node.properties, dataPagefindIgnore: '' };
+        return;
+      }
       if (node.type !== 'element' || !node.properties?.dataEmbed) return;
       const p = node.properties;
       const kind = String(p.dataEmbed);

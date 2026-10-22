@@ -46,7 +46,7 @@ const deck = post ? entryDeck(post.data.excerpt, entry.body) : undefined;
           </p>
         )
       }
-      <h1 class="entry-title" data-pagefind-meta="title">{data.title}</h1>
+      <h1 class="entry-title" data-pagefind-meta="title" data-pagefind-ignore>{data.title}</h1>
       {deck && <p class="entry-deck">{deck}</p>}
       {
         post && (

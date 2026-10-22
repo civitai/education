@@ -100,18 +100,21 @@ iframe {
 .brand {
   display: flex;
   flex: none;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   text-decoration: none;
   white-space: nowrap;
 }
 .brand-mark {
-  color: var(--heading);
-  font: 900 1.5rem/1 var(--font-display);
-  letter-spacing: -0.01em;
+  display: block;
+  height: 22px;
+  width: auto;
 }
-.brand-mark span {
-  color: var(--primary);
+.logo-base {
+  fill: var(--heading);
+}
+.logo-accent {
+  fill: var(--button-bg);
 }
 .brand-sub {
   color: var(--text-dim);
@@ -363,7 +366,7 @@ iframe {
     gap: var(--sp-1);
   }
   .brand-mark {
-    font-size: 1.3125rem;
+    height: 19px;
   }
   .brand-sub {
     font-size: var(--fs-small);

@@ -17,7 +17,7 @@ import { START_HERE, entryDeck, getHomeTopics, getLeadPost, primaryCategory, rea
 const home = await getPage(SITE.frontPageSlug);
 const posts = await getPosts();
 const lead = await getLeadPost();
-const latest = posts.filter((p) => p !== lead).slice(0, 6);
+const latest = posts.filter((p) => p.id !== lead?.id).slice(0, 6);
 const start = START_HERE.map((slug) => posts.find((p) => p.id === slug)).filter((p) => p !== undefined);
 const topics = await getHomeTopics();
 

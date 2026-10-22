@@ -45,8 +45,10 @@ function changeLog(table) {
   if (!head) return undefined;
   const labels = cells(head).map((c) => toText(c).trim().toLowerCase());
   if (labels.length !== 2 || labels[0] !== 'last updated' || !/^changes?$/.test(labels[1])) return undefined;
-  const rows = rowsOf(child(table, 'tbody')).map(cells).filter((r) => r.length === 2);
-  return rows.length ? rows : undefined;
+  const rows = rowsOf(child(table, 'tbody')).map(cells);
+  // Any row that isn't exactly date | change (raw HTML with colspans, extra cells) keeps the plain
+  // table, so no author content is dropped.
+  return rows.length && rows.every((r) => r.length === 2) ? rows : undefined;
 }
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -56,7 +58,9 @@ function parseDate(value) {
   const m = value.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (!m) return undefined;
   const [month, day, year] = [Number(m[1]), Number(m[2]), Number(m[3])];
-  if (month < 1 || month > 12 || day < 1 || day > 31) return undefined;
+  // Round-trip through Date so impossible days (Feb 30, Apr 31) are rejected.
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return undefined;
   return { month, day, year, iso: `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}` };
 }
 

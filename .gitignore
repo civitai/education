@@ -24,5 +24,8 @@ Thumbs.db
 # script scratch output
 .cache/
 
+# Pencil design sources
+designs/
+
 # Playwright MCP screenshots and snapshots
 .playwright-mcp/

@@ -581,11 +581,10 @@ iframe {
   grid-template-columns: [main] minmax(0, var(--measure));
   justify-content: center;
 }
-/* The hero shares the body's grid so breadcrumb, title, deck and body text all start on one left
-   edge (the reading column); the title runs on to the shell's right edge, the deck keeps the
-   measure. Where the grid has no aside track the title simply stays in the column. */
+/* The hero shares the body's grid and sits in the reading column, so breadcrumb, title, deck and
+   body text share one column over the article. */
 .article-head .hero {
-  grid-column: main / -1;
+  grid-column: main;
   min-width: 0;
 }
 .article-main {

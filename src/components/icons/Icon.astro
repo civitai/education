@@ -23,8 +23,10 @@ const { name, size = 18, class: className } = Astro.props;
 
 const PATHS: Record<Props['name'], string> = {
   search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
-  moon: '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>',
-  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>',
+  moon: '<path stroke-width="1.75" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>',
+  // Drawn for the 18px theme toggle: longer, evenly spaced rays and a lighter stroke so they read
+  // as rays rather than dots at small sizes.
+  sun: '<g stroke-width="1.75"><circle cx="12" cy="12" r="3.6"/><path d="M18.6 12h2.8M16.67 16.67l1.98 1.98M12 18.6v2.8M7.33 16.67l-1.98 1.98M5.4 12H2.6M7.33 7.33 5.35 5.35M12 5.4V2.6M16.67 7.33l1.98-1.98"/></g>',
   menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
   x: '<path d="M18 6 6 18M6 6l12 12"/>',
   'external-link': '<path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',

@@ -2070,3 +2070,41 @@ a.pager-step:hover {
     padding: var(--sp-5) var(--sp-4);
   }
 }
+
+/* The front page renders eight latest posts; below 1920px only six show. */
+.latest .story-grid > li:nth-child(n + 7) {
+  display: none;
+}
+
+/* Big screens (1920px and up): the shell is 1600px (tokens.css). Listings go four across, the lead
+   story grows with it, and the article keeps its 720px column centred while the contents rail and
+   the Follow-along card move out to the shell's edges. */
+@media (min-width: 1920px) {
+  .story-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  /* Seven and eight complete the second row of four. */
+  .latest .story-grid > li:nth-child(n + 7) {
+    display: list-item;
+  }
+  .lead .cover.wide img {
+    max-height: min(72vh, 640px);
+  }
+  /* The archive lead spans three columns and the next post takes the fourth, so the nine after the
+     lead still fill whole rows. */
+  .archive-grid > li:first-child {
+    grid-column: span 3;
+  }
+  .article-shell {
+    grid-template-columns: [rail] minmax(0, 1fr) [main] minmax(0, var(--measure)) [aside] minmax(0, 1fr);
+  }
+  .toc {
+    justify-self: start;
+    width: 100%;
+    max-width: 240px;
+  }
+  .article-cover {
+    max-width: calc(1280px + 2 * var(--gutter));
+  }
+}
+

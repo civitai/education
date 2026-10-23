@@ -93,6 +93,14 @@
   }
 }
 
+/* Big screens (1920px and up): the shell widens so the page stops floating in empty margins. Below
+   1920px nothing changes. */
+@media (min-width: 1920px) {
+  :root {
+    --page-w: 1600px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;

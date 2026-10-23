@@ -613,7 +613,7 @@ iframe {
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.05;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 .hero-deck {
   max-width: var(--measure);

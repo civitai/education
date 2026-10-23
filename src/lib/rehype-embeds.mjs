@@ -19,6 +19,8 @@ function walk(node, fn) {
   for (const child of node.children) walk(child, fn);
 }
 
+const textOf = (node) => (node.type === 'text' ? node.value : (node.children || []).map(textOf).join(''));
+
 function split(children) {
   const caption = children.find((c) => c.type === 'element' && c.tagName === 'figcaption');
   const rest = children.filter((c) => c !== caption && !(c.type === 'text' && !c.value.trim()));
@@ -39,6 +41,18 @@ function frame(p) {
     height: p.dataHeight || undefined,
     style: `aspect-ratio: ${width} / ${height}`,
   });
+}
+
+// WordPress media URLs (plain, protocol-relative, or through Jetpack's i0.wp.com image CDN) become
+// same-host /wp-content/ paths, served from the media mirror by nginx.
+const WP_MEDIA = /^(?:https?:)?\/\/(?:i\d\.wp\.com\/)?education\.civitai\.com\/+(wp-content\/[^?#]*)(?:[?#].*)?$/;
+export const localMedia = (url) => {
+  const m = typeof url === 'string' && url.match(WP_MEDIA);
+  return m ? `/${m[1]}` : url;
+};
+function localizeMedia(props) {
+  if (!props) return;
+  for (const key of ['src', 'href', 'dataOrigFile', 'poster']) if (props[key]) props[key] = localMedia(props[key]);
 }
 
 function selfHosted(p) {
@@ -65,6 +79,12 @@ function selfHosted(p) {
 export default function rehypeEmbeds() {
   return (tree) => {
     walk(tree, (node) => {
+      if (node.type === 'element') localizeMedia(node.properties);
+      // Many posts open with a "Last Updated | Changes" table; keep it out of search snippets.
+      if (node.type === 'element' && node.tagName === 'table' && /^\s*last\s+updated/i.test(textOf(node))) {
+        node.properties = { ...node.properties, dataPagefindIgnore: '' };
+        return;
+      }
       if (node.type !== 'element' || !node.properties?.dataEmbed) return;
       const p = node.properties;
       const kind = String(p.dataEmbed);

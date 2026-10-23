@@ -29,7 +29,7 @@ const short = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', mont
       </p>
     )
   }
-  <h1 class="hero-title" data-pagefind-meta="title">{title}</h1>
+  <h1 class="hero-title" data-pagefind-meta="title" data-pagefind-ignore>{title}</h1>
   {deck && <p class="hero-deck">{deck}</p>}
   {
     published && (

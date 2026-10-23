@@ -129,4 +129,4 @@ For example, putting a resource into EA just to unpublish it and put it back int
 
 ## I need more help!
 
-If you’re experiencing issues with the Early Access system and a solution isn’t mentioned on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Feedback System](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+If you’re experiencing issues with the Early Access system and a solution isn’t mentioned on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

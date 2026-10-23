@@ -86,4 +86,4 @@ Changes will be communicated via email, onsite notification and/or direct messag
 
 ## I need more help!
 
-If you need assistance with the Creators Program, or have additional questions not mentioned here, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Feedback System](https://feedback.civitai.com/?b=64b5672908ba41c35a1b5f1f).
+If you need assistance with the Creators Program, or have additional questions not mentioned here, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

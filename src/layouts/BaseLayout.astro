@@ -90,5 +90,18 @@ const canonical = Astro.props.canonical || absolute(path);
     </main>
     <Footer />
     <p class="big-monitor" aria-hidden="true" data-pagefind-ignore>Wow, you have a big monitor!</p>
+    <!-- The big-monitor greeting is a rare treat: about one page load in eight, once per session. -->
+    <script is:inline>
+      try {
+        if (
+          matchMedia('(min-width: 2200px)').matches &&
+          !sessionStorage.getItem('big-monitor-seen') &&
+          Math.random() < 0.125
+        ) {
+          document.querySelector('.big-monitor').classList.add('is-shown');
+          sessionStorage.setItem('big-monitor-seen', '1');
+        }
+      } catch (e) {}
+    </script>
   </body>
 </html>

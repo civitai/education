@@ -2115,12 +2115,14 @@ a.pager-step:hover {
 
 /* "Wow, you have a big monitor!": a decorative greeting down the right edge, shown only where the
    right gutter is clearly wider than the rotated line plus breathing room (2200px and up: a 252px
-   gutter beside the 1696px shell). It sits below the header and over nothing but the page ground. */
+   gutter beside the 1696px shell). It sits below the header and over nothing but the page ground.
+   It is rare on purpose: BaseLayout's script adds .is-shown on about one page load in eight, at
+   most once per session, and the line fades out again after a few seconds. */
 .big-monitor {
   display: none;
 }
 @media (min-width: 2200px) {
-  .big-monitor {
+  .big-monitor.is-shown {
     position: fixed;
     top: calc(var(--top-h) + var(--sp-7));
     right: var(--sp-6);
@@ -2140,17 +2142,38 @@ a.pager-step:hover {
     pointer-events: none;
     user-select: none;
     -webkit-user-select: none;
+    /* Fade only, no movement, unless motion is welcome (below). Ends hidden. */
+    animation: big-monitor-fade 7s ease 0.4s both;
   }
 }
 @media (min-width: 2200px) and (prefers-reduced-motion: no-preference) {
-  .big-monitor {
-    animation: big-monitor-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+  .big-monitor.is-shown {
+    animation-name: big-monitor-visit;
   }
 }
-@keyframes big-monitor-in {
-  from {
+@keyframes big-monitor-fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  12%,
+  85% {
+    opacity: 1;
+  }
+}
+@keyframes big-monitor-visit {
+  0% {
     opacity: 0;
     transform: translateY(var(--sp-5));
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  15%,
+  85% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media print {

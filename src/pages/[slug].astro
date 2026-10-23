@@ -42,7 +42,7 @@ const hasToc = toc.length >= TOC_MIN;
 >
   <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body>
     {hasToc && <MobileContents items={toc} />}
-    <div class="article-head">
+    <div class="article-shell article-head">
       <ArticleHero
         title={data.title}
         deck={deck}

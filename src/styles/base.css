@@ -581,15 +581,12 @@ iframe {
   grid-template-columns: [main] minmax(0, var(--measure));
   justify-content: center;
 }
-/* The hero sits above the cover in a plain block the width of the shell, so it starts at the logo's
-   edge and runs to the cover's right edge. Pages keep it on their centred reading column. */
-.article-head {
-  max-width: calc(var(--page-w) + 2 * var(--gutter));
-  margin-inline: auto;
-  padding-inline: var(--gutter);
-}
-.is-page .article-head {
-  max-width: calc(var(--measure) + 2 * var(--gutter));
+/* The hero shares the body's grid so breadcrumb, title, deck and body text all start on one left
+   edge (the reading column); the title runs on to the shell's right edge, the deck keeps the
+   measure. Where the grid has no aside track the title simply stays in the column. */
+.article-head .hero {
+  grid-column: main / -1;
+  min-width: 0;
 }
 .article-main {
   grid-column: main;

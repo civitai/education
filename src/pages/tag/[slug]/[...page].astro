@@ -18,4 +18,4 @@ const { term, posts, page } = Astro.props;
 const base = `/tag/${term.slug}/`;
 ---
 
-<Archive title={`${term.name} Archives`} heading={`Tag: ${term.name}`} description={term.description} base={base} page={page} posts={posts} feed={`${base}feed/`} />
+<Archive title={`${term.name} Archives`} heading={term.name} kind="Tag" description={term.description} base={base} page={page} posts={posts} feed={`${base}feed/`} />

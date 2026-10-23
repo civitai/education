@@ -1,0 +1,61 @@
+---
+// Article header: breadcrumb, title, deck and byline. Pages get only the title (and deck).
+import { termName } from '../lib/content';
+
+interface Props {
+  title: string;
+  deck?: string;
+  /** Primary category slug (posts only). */
+  category?: string;
+  author?: { slug: string; name: string };
+  published?: Date;
+  /** Only when later than `published`. */
+  updated?: Date;
+  minutes?: number;
+}
+const { title, deck, category, author, published, updated, minutes } = Astro.props;
+const short = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+---
+
+<header class="hero">
+  {
+    category && (
+      <p class="crumbs" data-pagefind-ignore>
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <a class="crumb-cat" href={`/category/${category}/`}>
+          {termName('categories', category)}
+        </a>
+      </p>
+    )
+  }
+  <h1 class="hero-title" data-pagefind-meta="title" data-pagefind-ignore>{title}</h1>
+  {deck && <p class="hero-deck">{deck}</p>}
+  {
+    published && (
+      <div class="hero-byline" data-pagefind-ignore>
+        {author && (
+          <span class="avatar" aria-hidden="true">
+            {author.name.charAt(0).toUpperCase()}
+          </span>
+        )}
+        <p class="hero-meta">
+          {author && (
+            <a class="hero-author" href={`/author/${author.slug}/`} rel="author">
+              {author.name}
+            </a>
+          )}
+          <span class:list={['hero-published', { 'has-updated': updated }]}>
+            Published <time datetime={published.toISOString()}>{short(published)}</time>
+          </span>
+          {updated && (
+            <span>
+              Updated <time datetime={updated.toISOString()}>{short(updated)}</time>
+            </span>
+          )}
+          {minutes && <span>{minutes} min read</span>}
+        </p>
+      </div>
+    )
+  }
+</header>

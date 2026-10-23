@@ -1,10 +1,47 @@
 ---
+// Served by nginx for any unknown path (error_page 404), so the status stays 404.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/icons/Icon.astro';
+import { getPosts, postPath } from '../lib/content';
+import { START_HERE } from '../lib/nav';
+
+const posts = await getPosts();
+const popular = START_HERE.flatMap((slug) => posts.find((p) => p.id === slug) ?? []);
 ---
 
 <BaseLayout title="Page not found" noindex>
-  <div class="container entry">
-    <h1>Page not found</h1>
-    <p>That page isn't here. Try <a href="/search/">searching</a> or start from the <a href="/">home page</a>.</p>
+  <div class="notfound">
+    <p class="notfound-code" aria-hidden="true">404</p>
+    <h1 class="notfound-title">This page isn't here. Search for it, or start from a guide below.</h1>
+    <form class="notfound-search" action="/search/" role="search">
+      <label class="search-field">
+        <Icon name="search" size={18} />
+        <input type="search" name="q" placeholder="Search guides and terms" aria-label="Search guides" />
+      </label>
+      <button class="btn" type="submit">Search</button>
+    </form>
+    {
+      popular.length > 0 && (
+        <nav class="notfound-links" aria-labelledby="notfound-popular">
+          <h2 id="notfound-popular">Start here</h2>
+          <ul>
+            {popular.map((p) => (
+              <li>
+                <a href={postPath(p)}>
+                  <span>{p.data.title}</span>
+                  <Icon name="arrow-right" size={16} />
+                </a>
+              </li>
+            ))}
+            <li>
+              <a href="/">
+                <span>Home page</span>
+                <Icon name="arrow-right" size={16} />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )
+    }
   </div>
 </BaseLayout>

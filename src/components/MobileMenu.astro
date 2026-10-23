@@ -1,0 +1,58 @@
+---
+import Icon from './icons/Icon.astro';
+import { getMenuTopics } from '../lib/nav';
+
+const topics = await getMenuTopics();
+const groups = [
+  { id: 'menu-topics', label: 'Topics', items: topics.main },
+  { id: 'menu-more', label: 'More topics', items: topics.more },
+].filter((g) => g.items.length > 0);
+---
+
+<!--
+  Phone menu sheet under the header. Header.astro opens it (data-menu-open on <html>); without
+  JavaScript the menu link targets #site-menu and :target shows it. It lists every category, so a
+  phone reaches every archive the wide-screen header chips do, and the ones they leave out.
+-->
+<div class="mobile-menu" id="site-menu" tabindex="-1">
+  <div class="menu-body">
+    <form class="top-search menu-search" action="/search/" role="search" data-top-search>
+      <label class="search-field">
+        <Icon name="search" size={18} />
+        <input type="search" name="q" placeholder="Search guides and terms" aria-label="Search guides" autocomplete="off" />
+      </label>
+      <div class="top-results" hidden></div>
+    </form>
+    {
+      groups.map((g) => (
+        <nav aria-labelledby={g.id}>
+          <h2 class="menu-label" id={g.id}>
+            {g.label}
+          </h2>
+          <ul class="menu-topics">
+            {g.items.map((t) => (
+              <li>
+                <a href={t.href}>
+                  <span>{t.name}</span>
+                  <span class="count">
+                    {t.count}
+                    <span class="sr-only"> posts</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      ))
+    }
+    <ul class="menu-links">
+      <li><a href="/about-us/">About</a></li>
+      <li><a href="/contact-us/">Contact</a></li>
+      <li><a href="/feed/">RSS</a></li>
+    </ul>
+  </div>
+  <a class="btn menu-cta" href="https://civitai.com/">
+    Go to civitai.com
+    <Icon name="external-link" size={18} />
+  </a>
+</div>

@@ -1,26 +1,18 @@
 ---
-import { SITE } from '../lib/site';
-import { getCategories } from '../lib/content';
-const categories = await getCategories();
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <nav aria-label="Categories">
-      <h2 class="footer-heading">Categories</h2>
-      <ul class="footer-list">
-        {categories.map((c) => <li><a href={`/category/${c.slug}/`}>{c.name}</a></li>)}
-      </ul>
-    </nav>
+    <p class="footer-copy">&copy; Civitai {year}</p>
     <nav aria-label="Site">
       <ul class="footer-list">
-        <li><a href="/about-us/">About Us</a></li>
-        <li><a href="/contact-us/">Contact Us</a></li>
+        <li><a href="/about-us/">About</a></li>
+        <li><a href="/contact-us/">Contact</a></li>
         <li><a href="/feed/">RSS</a></li>
-        <li><a href="https://civitai.com/">Civitai.com</a></li>
+        <li><a href="/sitemap_index.xml">Sitemap</a></li>
+        <li><a href="https://civitai.com/">civitai.com</a></li>
       </ul>
     </nav>
-    <p class="footer-copy">&copy; {year} Civitai. {SITE.title}.</p>
   </div>
 </footer>

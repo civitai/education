@@ -1,8 +1,10 @@
 import { visit } from 'unist-util-visit';
 
 // `:::tip[Title]` ... `:::` renders <div class="callout callout-tip"><p class="callout-title">Title</p>...</div>.
+// Without a [Title] the title is the kind itself ("Tip"); prose.css draws its icon.
 // Needs remark-directive earlier in the remarkPlugins list.
 const CLASS = { note: 'note', tip: 'tip', warning: 'warn', caution: 'danger' };
+const LABEL = { note: 'Note', tip: 'Tip', warning: 'Warning', caution: 'Caution' };
 
 export default function remarkCallouts() {
   return (tree, file) => {
@@ -15,13 +17,13 @@ export default function remarkCallouts() {
         data.hName = 'div';
         data.hProperties = { className: ['callout', `callout-${CLASS[node.name]}`] };
         const first = node.children[0];
-        if (first?.data?.directiveLabel) {
-          node.children[0] = {
-            type: 'paragraph',
-            data: { hName: 'p', hProperties: { className: ['callout-title'] } },
-            children: first.children,
-          };
-        }
+        const labelled = Boolean(first?.data?.directiveLabel);
+        const title = {
+          type: 'paragraph',
+          data: { hName: 'p', hProperties: { className: ['callout-title'] } },
+          children: labelled ? first.children : [{ type: 'text', value: LABEL[node.name] }],
+        };
+        node.children.splice(0, labelled ? 1 : 0, title);
         return;
       }
 

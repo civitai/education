@@ -1,0 +1,24 @@
+---
+import { CHIPS, activeChip } from '../lib/nav';
+
+interface Props {
+  /** Extra class for placement, e.g. the header row or the phone front page's scrolling row. */
+  class?: string;
+}
+const { class: className } = Astro.props;
+const active = activeChip(Astro.url.pathname);
+---
+
+<nav class:list={['chips', className]} aria-label="Topics">
+  <ul>
+    {
+      CHIPS.map((c) => (
+        <li>
+          <a class="chip" href={c.href} aria-current={c.href === active ? 'page' : undefined}>
+            {c.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

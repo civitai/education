@@ -2,7 +2,6 @@
 import '../styles/base.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Sidebar from '../components/Sidebar.astro';
 import { SITE } from '../lib/site';
 import { absolute } from '../lib/content';
 
@@ -21,12 +20,6 @@ interface Props {
   /** Alternate RSS feed for this archive, e.g. /category/news/feed/. */
   feed?: string;
   noindex?: boolean;
-  /** Category sidebar and phone drawer. */
-  sidebar?: boolean;
-  /** Post slug being read, highlighted in the sidebar. */
-  currentPost?: string;
-  /** Category archive being viewed, opened in the sidebar. */
-  currentCategory?: string;
 }
 
 const {
@@ -40,13 +33,7 @@ const {
   modified,
   feed,
   noindex,
-  sidebar = true,
-  currentPost,
-  currentCategory,
 } = Astro.props;
-// The rail can render nothing (a post with fewer than three headings), so check the output.
-const aside = Astro.slots.has('aside') ? (await Astro.slots.render('aside')).trim() : '';
-const hasAside = aside.length > 0;
 const fullTitle = documentTitle || (path === '/' ? SITE.title : `${title} - ${SITE.title}`);
 const canonical = Astro.props.canonical || absolute(path);
 ---
@@ -56,6 +43,8 @@ const canonical = Astro.props.canonical || absolute(path);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fefefe" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1b1e" media="(prefers-color-scheme: dark)" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -74,11 +63,15 @@ const canonical = Astro.props.canonical || absolute(path);
     <link rel="alternate" type="application/rss+xml" title={`${SITE.title} » Feed`} href="/feed/" />
     {feed && <link rel="alternate" type="application/rss+xml" title={`${SITE.title} » ${title} Feed`} href={feed} />}
     <link rel="sitemap" href="/sitemap_index.xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Mona+Sans:wdth,wght@75..125,600..900&display=swap"
     />
     <!-- Apply a saved light/dark choice before first paint; with none, the OS preference decides. -->
     <script is:inline>
@@ -91,23 +84,11 @@ const canonical = Astro.props.canonical || absolute(path);
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header sidebar={sidebar} />
-    {
-      sidebar ? (
-        <div class:list={['layout', { 'has-aside': hasAside }]}>
-          <Sidebar currentPost={currentPost} currentCategory={currentCategory} />
-          <div class="nav-backdrop" data-nav-close></div>
-          <main id="main" class="site-main">
-            <slot />
-          </main>
-          {hasAside && <div class="aside" set:html={aside} />}
-        </div>
-      ) : (
-        <main id="main" class="site-main wide">
-          <slot />
-        </main>
-      )
-    }
+    <Header />
+    <main id="main" class="site-main">
+      <slot />
+    </main>
     <Footer />
+    <p class="big-monitor" aria-hidden="true" data-pagefind-ignore>Wow, you have a big monitor!</p>
   </body>
 </html>

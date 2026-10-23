@@ -1,18 +1,43 @@
 ---
-// The front page. WordPress used an Elementor page here (src/content/pages/home.md keeps its
-// content and SEO fields); the site generates the listing itself: a "start here" row and a numbered
-// index of every category, each showing its newest posts as cover cards.
+// The front page, laid out as an issue of the journal. WordPress used an Elementor page here
+// (src/content/pages/home.md keeps its content and SEO fields); the site generates the listing
+// itself: the newest post as the lead story, a start-here path, the latest posts, the topics, a
+// glossary teaser and the way back to civitai.com.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryChips from '../components/CategoryChips.astro';
 import Cover from '../components/Cover.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import PostCard from '../components/PostCard.astro';
+import Icon from '../components/icons/Icon.astro';
+import taxonomies from '../data/taxonomies.json';
 import { SITE } from '../lib/site';
-import { coverOf, getPage, postPath } from '../lib/content';
-import { START_HERE, getCategoryGroups } from '../lib/nav';
+import { coverOf, getPage, getPosts, postPath, termName } from '../lib/content';
+import { START_HERE, entryDeck, getHomeTopics, getLeadPost, primaryCategory, readingMinutes } from '../lib/nav';
 
 const home = await getPage(SITE.frontPageSlug);
-const groups = await getCategoryGroups(4);
-const everyPost = groups.flatMap((g) => g.posts);
-const start = START_HERE.map((slug) => everyPost.find((p) => p.id === slug)).filter((p) => p !== undefined);
+const posts = await getPosts();
+const lead = await getLeadPost();
+// Eight render; screens under 1920px show six (base.css), phones three.
+const latest = posts.filter((p) => p.id !== lead?.id).slice(0, 8);
+const start = START_HERE.map((slug) => posts.find((p) => p.id === slug)).filter((p) => p !== undefined);
+const topics = await getHomeTopics();
+
+const leadCategory = lead && primaryCategory(lead);
+const leadAuthor = lead && (taxonomies.authors.find((a) => a.slug === lead.data.author)?.name || lead.data.author);
+const leadDeck = lead && entryDeck(lead.data.excerpt, lead.body);
+const leadMinutes = lead ? readingMinutes(lead.body) : 0;
+
+// The series titles repeat "Using Civitai –"; the steps read better as the tool's name.
+const stepTitle = (title: string) => title.replace(/^Using Civitai\s+[–-]\s+(?=The )/, '');
+
+// Plain-language definitions for the terms beginners hit first; the glossary post has the rest.
+const GLOSSARY_PATH = '/generative-ai-glossary/';
+const TERMS = [
+  { term: 'LoRA', text: 'A small add-on file that teaches a model one style, character or concept.' },
+  { term: 'Checkpoint', text: 'The full base model that every image starts from.' },
+  { term: 'CFG scale', text: 'How strictly the image follows your prompt.' },
+  { term: 'Sampler', text: 'The method that turns noise into an image, step by step.' },
+];
 ---
 
 <BaseLayout
@@ -23,63 +48,157 @@ const start = START_HERE.map((slug) => everyPost.find((p) => p.id === slug)).fil
   path="/"
 >
   <div class="home">
-    <header class="home-hero">
-      <h1>{SITE.title}</h1>
-      <p>{home?.data.excerpt || SITE.description}</p>
-    </header>
+    <h1 class="sr-only">{SITE.title}</h1>
+    <CategoryChips class="home-chips" />
+
+    {
+      lead && (
+        <section class="lead" aria-labelledby="lead-title">
+          {lead.data.image && (
+            <a class="lead-cover" href={postPath(lead)} tabindex="-1" aria-hidden="true">
+              <Cover src={lead.data.image} shape="wide" priority />
+            </a>
+          )}
+          <div class="lead-copy">
+            <h2 class="lead-title" id="lead-title">
+              <a href={postPath(lead)}>{lead.data.title}</a>
+            </h2>
+            {leadDeck && <p class="lead-deck">{leadDeck}</p>}
+            <p class="byline">
+              {leadCategory && (
+                <>
+                  <a class="byline-topic" href={`/category/${leadCategory}/`}>{termName('categories', leadCategory)}</a>
+                  <span aria-hidden="true">·</span>
+                </>
+              )}
+              <span>{leadAuthor}</span>
+              <span aria-hidden="true">·</span>
+              <FormattedDate date={lead.data.date} />
+              <span aria-hidden="true">·</span>
+              <span>{leadMinutes} min read</span>
+            </p>
+            <a class="btn" href={postPath(lead)}>
+              Read the guide
+              <Icon name="arrow-right" size={16} />
+            </a>
+          </div>
+        </section>
+      )
+    }
 
     {
       start.length > 0 && (
-        <section aria-labelledby="start-here">
-          <h2 class="home-heading" id="start-here">Start here</h2>
-          <ol class="start">
-            {start.map((p, i) => (
-              <li>
-                <a href={postPath(p)}>
-                  {coverOf(p) && <Cover src={coverOf(p)!} eager />}
-                  <span class="start-body">
-                    <span class="n">{String(i + 1).padStart(2, '0')}</span>
-                    <b>{p.data.title}</b>
-                    {p.data.excerpt && <span class="s">{p.data.excerpt}</span>}
-                  </span>
-                </a>
-              </li>
-            ))}
+        <section class="start" aria-labelledby="start-here">
+          <div class="section-head">
+            <div>
+              <h2 id="start-here">
+                <span class="wide-only">New here? Start with these three</span>
+                <span class="phone-only">Start here</span>
+              </h2>
+              <p class="section-sub wide-only">The path most people take from first visit to first trained LoRA.</p>
+            </div>
+            <a class="more" href="/category/beginner-guides/">
+              <span class="wide-only">All beginner guides</span>
+              <span class="phone-only">All</span>
+              <Icon name="arrow-right" size={14} />
+            </a>
+          </div>
+          <ol class="steps">
+            {start.map((p, i) => {
+              const deck = entryDeck(p.data.excerpt, p.body);
+              return (
+                <li>
+                  <a class="step" href={postPath(p)}>
+                    <span class="step-thumb">
+                      {coverOf(p) && <Cover src={coverOf(p)!} />}
+                      <span class="step-num" aria-hidden="true">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                    </span>
+                    <span class="step-body">
+                      <span class="step-title">{stepTitle(p.data.title)}</span>
+                      <span class="step-meta">{readingMinutes(p.body)} min read</span>
+                      {deck && <span class="step-deck">{deck}</span>}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
           </ol>
         </section>
       )
     }
 
-    <section aria-labelledby="index">
-      <h2 class="home-heading" id="index">Index</h2>
-      <div class="idx">
+    <section class="latest" aria-labelledby="latest">
+      <div class="section-head ruled">
+        <h2 id="latest">Latest</h2>
+        <a class="more" href={`/${SITE.postsPageSlug}/`}>
+          Everything
+          <Icon name="arrow-right" size={14} />
+        </a>
+      </div>
+      <ul class="story-grid">
         {
-          groups.map((g, i) => (
-            <section aria-labelledby={`cat-${g.slug}`}>
-              <h3 id={`cat-${g.slug}`}>
-                <span class="num">{String(i + 1).padStart(2, '0')}</span>
-                <a href={`/category/${g.slug}/`}>{g.name}</a>
-                <em>{g.count} articles</em>
-              </h3>
-              <ol class="cards">
-                {g.items.map((p) => (
-                  <li>
-                    <a href={postPath(p)}>
-                      {coverOf(p) && <Cover src={coverOf(p)!} />}
-                      <span class="t">{p.data.title}</span>
-                      <span class="d"><FormattedDate date={p.data.date} numeric /></span>
-                    </a>
-                  </li>
-                ))}
-              </ol>
-              {g.count > g.items.length && (
-                <a class="all" href={`/category/${g.slug}/`}>All {g.count} &rarr;</a>
-              )}
-            </section>
+          latest.map((p) => (
+            <li>
+              <PostCard post={p} />
+            </li>
           ))
         }
+      </ul>
+    </section>
+
+    <div class="home-band">
+      <section class="topics" aria-labelledby="topics">
+        <h2 id="topics">Browse by topic</h2>
+        <ul class="topic-list">
+          {
+            topics.map((t) => (
+              <li>
+                <a href={t.href}>
+                  <span class="topic-name">{t.name}</span>
+                  {t.description && <span class="topic-desc">{t.description}</span>}
+                  <span class="topic-count">
+                    {t.count}
+                    <span class="sr-only"> posts</span>
+                  </span>
+                  <Icon name="arrow-up-right" size={16} class="wide-only" />
+                  <Icon name="chevron-right" size={16} class="phone-only" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="glossary" aria-labelledby="glossary">
+        <h2 id="glossary">Hit a word you don't know?</h2>
+        <dl>
+          {
+            TERMS.map((t) => (
+              <div>
+                <dt>{t.term}</dt>
+                <dd>{t.text}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <a class="more" href={GLOSSARY_PATH}>
+          Open the glossary
+          <Icon name="arrow-right" size={14} />
+        </a>
+      </section>
+    </div>
+
+    <section class="try" aria-labelledby="try">
+      <div>
+        <h2 id="try">Read it, then make it.</h2>
+        <p>Every guide here works with the generator and trainer on civitai.com.</p>
       </div>
-      <p><a href={`/${SITE.postsPageSlug}/`}>All posts</a></p>
+      <a class="btn-pro" href="https://civitai.com/">
+        Try it on Civitai
+        <Icon name="external-link" size={16} />
+      </a>
     </section>
   </div>
 </BaseLayout>

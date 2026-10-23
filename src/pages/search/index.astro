@@ -1,21 +1,36 @@
 ---
 // Pagefind search. The index is built after `astro build` (see the build script) from every
-// element marked data-pagefind-body, i.e. post and page bodies.
+// element marked data-pagefind-body, i.e. post and page bodies. Pagefind's own stylesheet is not
+// loaded: base.css styles its markup (.pagefind-ui__*) from the site tokens.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Search" description="Search Civitai Education guides, tutorials and news." noindex>
-  <link slot="head" rel="stylesheet" href="/pagefind/pagefind-ui.css" />
-  <div class="container search">
-    <h1>Search</h1>
+  <div class="search-page">
+    <header class="archive-head">
+      <p class="crumbs">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Search</span>
+      </p>
+      <h1 class="archive-title">Search the guides</h1>
+    </header>
     <div id="search"></div>
-    <noscript><p>Search needs JavaScript. Browse by <a href="/civitai/">all posts</a> instead.</p></noscript>
+    <noscript><p>Search needs JavaScript. Browse <a href="/civitai/">every guide</a> instead.</p></noscript>
   </div>
   <script is:inline src="/pagefind/pagefind-ui.js"></script>
   <script is:inline>
     window.addEventListener('DOMContentLoaded', () => {
+      if (typeof PagefindUI === 'undefined') return; // No index (dev server).
       // eslint-disable-next-line no-undef
-      const ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+      const ui = new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        resetStyles: false,
+        autofocus: true,
+        translations: { placeholder: 'Search guides and terms' },
+      });
       // WordPress search links use ?s=; support those and ?q=.
       const params = new URLSearchParams(location.search);
       const q = params.get('q') || params.get('s');

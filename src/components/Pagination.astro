@@ -1,4 +1,6 @@
 ---
+import Icon from './icons/Icon.astro';
+
 interface Props {
   /** Archive root, e.g. "/category/news/". Page N lives at `${base}page/N/`. */
   base: string;
@@ -7,25 +9,68 @@ interface Props {
 }
 const { base, current, total } = Astro.props;
 const href = (n: number) => (n === 1 ? base : `${base}page/${n}/`);
+
+// First, last and the pages next to the current one; a gap of one page shows the page itself
+// instead of an ellipsis.
+const shown = [...new Set([1, current - 1, current, current + 1, total])]
+  .filter((n) => n >= 1 && n <= total)
+  .sort((a, b) => a - b);
+const items: Array<number | 'gap'> = [];
+for (const n of shown) {
+  const prev = items[items.length - 1];
+  if (typeof prev === 'number' && n - prev === 2) items.push(n - 1);
+  else if (typeof prev === 'number' && n - prev > 2) items.push('gap');
+  items.push(n);
+}
 ---
 
 {
   total > 1 && (
-    <nav class="pagination" aria-label="Pagination">
-      {current > 1 && (
-        <a rel="prev" href={href(current - 1)}>
-          Newer posts
+    <nav class="pager" aria-label="Pagination">
+      {current > 1 ? (
+        <a class="pager-step" rel="prev" href={href(current - 1)}>
+          <Icon name="chevron-left" size={16} />
+          <span class="pager-label">Newer</span>
         </a>
+      ) : (
+        <span class="pager-step" aria-disabled="true">
+          <Icon name="chevron-left" size={16} />
+          <span class="pager-label">Newer</span>
+        </span>
       )}
-      <ol>
-        {Array.from({ length: total }, (_, i) => i + 1).map((n) => (
-          <li>{n === current ? <span aria-current="page">{n}</span> : <a href={href(n)}>{n}</a>}</li>
-        ))}
+      <ol class="pager-pages">
+        {items.map((n) =>
+          n === 'gap' ? (
+            <li class="pager-gap" aria-hidden="true">
+              …
+            </li>
+          ) : (
+            <li>
+              {n === current ? (
+                <span class="pager-num" aria-current="page">
+                  <span class="sr-only">Page </span>
+                  {n}
+                </span>
+              ) : (
+                <a class="pager-num" href={href(n)}>
+                  <span class="sr-only">Page </span>
+                  {n}
+                </a>
+              )}
+            </li>
+          ),
+        )}
       </ol>
-      {current < total && (
-        <a rel="next" href={href(current + 1)}>
-          Older posts
+      {current < total ? (
+        <a class="pager-step" rel="next" href={href(current + 1)}>
+          <span class="pager-label">Older</span>
+          <Icon name="chevron-right" size={16} />
         </a>
+      ) : (
+        <span class="pager-step" aria-disabled="true">
+          <span class="pager-label">Older</span>
+          <Icon name="chevron-right" size={16} />
+        </span>
       )}
     </nav>
   )

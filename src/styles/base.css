@@ -2108,3 +2108,48 @@ a.pager-step:hover {
   }
 }
 
+/* "Wow, you have a big monitor!": a decorative greeting down the right edge, shown only where the
+   right gutter is clearly wider than the rotated line plus breathing room (2200px and up: a 252px
+   gutter beside the 1696px shell). It sits below the header and over nothing but the page ground. */
+.big-monitor {
+  display: none;
+}
+@media (min-width: 2200px) {
+  .big-monitor {
+    position: fixed;
+    top: calc(var(--top-h) + var(--sp-7));
+    right: var(--sp-6);
+    z-index: 1;
+    display: block;
+    margin: 0;
+    color: var(--border-strong);
+    font-family: var(--font-display);
+    /* The line is about 15.5em long: it shrinks to fit short windows instead of running off. */
+    font-size: min(5rem, calc((100vh - var(--top-h) - 2 * var(--sp-7)) / 16));
+    font-stretch: var(--wdth-display);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+@media (min-width: 2200px) and (prefers-reduced-motion: no-preference) {
+  .big-monitor {
+    animation: big-monitor-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+  }
+}
+@keyframes big-monitor-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--sp-5));
+  }
+}
+@media print {
+  .big-monitor {
+    display: none !important;
+  }
+}

@@ -46,5 +46,9 @@ self-hosted `<video>` from `/videos/<guid>/<file>`; unknown guids fall back to t
 **Deployment** is nginx in-cluster, not Cloudflare Pages (see `Dockerfile`). `public/_redirects` is
 kept in Cloudflare format as the source of truth; `scripts/build-nginx-conf.mjs` converts it plus
 `wp-ids.json` into `maps.conf` (WordPress `?p=` / `?page_id=` shortlinks) and `redirects.conf`,
-included by `nginx/default.conf`. That config also proxies `/wp-content/` and `/videos/` to a
-Backblaze B2 bucket, so media URLs in content still use WordPress paths but are served from B2.
+included by `nginx/default.conf`, along with a map that 301s old WordPress image URLs to their WebP names
+(`src/data/media-renames.json`).
+
+**Media** is in the repo: images under `public/wp-content/uploads/` (served from the image), videos and
+the one >100 MB download in Git LFS. The image build cannot fetch LFS, so `.dockerignore` drops those
+and nginx serves them from a B2 copy. See README "Media".

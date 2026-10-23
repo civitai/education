@@ -64,7 +64,7 @@ kept current with dated change logs.
 
 ## Evidence on Hand
 
-- Cover art per post in `public/covers/` and WordPress media proxied from B2.
+- Cover art per post in `public/covers/`; all WordPress media in `public/wp-content/uploads/` (videos in Git LFS).
 - No testimonials, metrics or learner counts exist; do not invent them.
 
 ## Product Principles

@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 3297
 excerpt: "Civitai Guide to downloading resources with the Civitai API"
-image: "https://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
+image: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
 seo:
   title: "Civitai's Guide to Downloading via API - Civitai Education"
   description: "Documentation describing the use of the Civitai API to download resources, and common frequently asked API questions for wget, curl"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
+  ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-downloading-via-api/"
 ---
 
@@ -30,7 +30,7 @@ seo:
 
 -   Creators can **require** that people be logged in to download their resources. That is an option we provide but not something we require – it’s entirely up to the resource owner.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-124233.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-26-124233.webp)
 
 -   Logging in to the API can be done with an API token, created in your **User Account Settings**.
 
@@ -44,7 +44,7 @@ Older notebooks and plugins may have been written _without_ API tokens in mind a
 
 -   Create an API token from your user account page – [https://civitai.com/user/account](https://civitai.com/user/account)
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-121827-1.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-26-121827-1.webp)
 
 -   Copy the token and save it in your password manager. If you don’t use a password manager, post-its are almost as secure!
 

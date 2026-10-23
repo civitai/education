@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3970
 excerpt: "Learn about Civitai’s new Content Classification System – a five level system designed to categorize content into five easy to understand levels!"
-image: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
+image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
 seo:
   title: "Civitai's Guide to the Content Classification System - Civitai Education"
   description: "Learn about Civitai's new Content Classification System - a five level system designed to categorize content into five levels!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
+  ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-content-levels/"
 ---
 
@@ -42,7 +42,7 @@ There are two key changes which are important to understand when using this new 
 
 -   **\*Resources can be marked nsfw**! Resources intended to produce **_mature themes_** can be marked as such from the Model Edit menu. _**This will hide the model from PG and PG-13 feeds, regardless of the level of the associated images.**_
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-132521.png" alt="Content Classification System - Content intended to produce mature themes" width="697" height="167" loading="lazy"><figcaption><em>Check box for resources intended to produce mature themes</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-132521.webp" alt="Content Classification System - Content intended to produce mature themes" width="697" height="167" loading="lazy"><figcaption><em>Check box for resources intended to produce mature themes</em></figcaption></figure>
 
 ## Why do we need a new Content Classification System?
 
@@ -50,7 +50,7 @@ Previously, we had a binary **Safe** and **Everything** system, and gave users t
 
 The change also allows for greater flexibility in the content displayed – if you _**only**_ want to see **XXX** content, you can choose to do so!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-130529.png" alt="Content Classification System Levels" width="427" height="186" loading="lazy"><figcaption><em>The five new Content Classifications, enabled</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-130529.png" alt="Content Classification System Levels" width="427" height="186" loading="lazy"><figcaption><em>The five new Content Classifications, enabled</em></figcaption></figure>
 
 ## How do I set these ratings?
 
@@ -58,29 +58,29 @@ Every user will see an initial onboarding screen, where Content Levels will be e
 
 These choices can be changed at any time from the **Content Moderation** section of the **[Manage your Account screen](https://civitai.com/user/account)**.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-130219.png" alt="Content Classification System Controls" width="557" height="1160" loading="lazy"><figcaption><em>Content Moderation onboarding</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-130219.webp" alt="Content Classification System Controls" width="557" height="1160" loading="lazy"><figcaption><em>Content Moderation onboarding</em></figcaption></figure>
 
 If you’ve opted to show mature content (and thereby confirmed that you’re over the age of 18), you will be able to see, and toggle, the five content levels from the **eye icon**, in the top right of the site menu.
 
 You can enable as many (or as few) content levels as desired.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-124543.png" alt="Content Classification System browsing levels" width="492" height="235" loading="lazy"><figcaption><em>Access the browsing levels</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-124543.webp" alt="Content Classification System browsing levels" width="492" height="235" loading="lazy"><figcaption><em>Access the browsing levels</em></figcaption></figure>
 
 If using the site on a mobile device, the browsing levels can be changed from the bottom of the hamburger menu (the three horizontal lines, top right of the browser window);
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-131138.png" alt="Civitai Mobile Hamburger Menu" width="253" height="72" loading="lazy"><figcaption><em>The hamburger menu, top right</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-131138.webp" alt="Civitai Mobile Hamburger Menu" width="253" height="72" loading="lazy"><figcaption><em>The hamburger menu, top right</em></figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-131143.png" alt="Civitai Mobile Content Classification System Content Levels view" width="494" height="451" loading="lazy"><figcaption><em>Mobile view of the Content Levels</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-131143.webp" alt="Civitai Mobile Content Classification System Content Levels view" width="494" height="451" loading="lazy"><figcaption><em>Mobile view of the Content Levels</em></figcaption></figure>
 
 ## What are My Filters?
 
 **My Filters** is much the same system as it was previously, and allows for content to be finetuned via tags. It works in conjunction with the five content rating levels, and provides additional filtering of certain topics or themes which you might not wish to see.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-134331.png" alt="Content Classification System - My Filters" width="498" height="236" loading="lazy"><figcaption><em>My Filters, applied</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-134331.webp" alt="Content Classification System - My Filters" width="498" height="236" loading="lazy"><figcaption><em>My Filters, applied</em></figcaption></figure>
 
 Clicking the **my filters** link from the Browsing Level settings launches a modal window allowing tags to be entered into Hidden Tags, and pre-set filters for the removal of **Anime**, **Furry**, **Gore**, and **Political** content/themes/topics.
 
-![Content Classification System - Content Controls - Hidden Tags](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-27-001322.png)
+![Content Classification System - Content Controls - Hidden Tags](/wp-content/uploads/2024/03/Screenshot-2024-03-27-001322.webp)
 
 ## I’ve found content which I believe is incorrectly rated!
 
@@ -92,9 +92,9 @@ All images will display their rating at the front of the tag list – in this ca
 
 This image will now be placed into a queue for moderator review.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-125648.png" alt="Content Classification System - Image Tags" width="455" height="356" loading="lazy"><figcaption>An image with a <strong>PG </strong>rating</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-125648.webp" alt="Content Classification System - Image Tags" width="455" height="356" loading="lazy"><figcaption>An image with a <strong>PG </strong>rating</figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-145949.png" alt="Content Classification System - Browsing Level Guide" width="443" height="639" loading="lazy"><figcaption><em>The currently selected level will be highlighted. Click on the desired level to place the image into the moderator review queue.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-145949.webp" alt="Content Classification System - Browsing Level Guide" width="443" height="639" loading="lazy"><figcaption><em>The currently selected level will be highlighted. Click on the desired level to place the image into the moderator review queue.</em></figcaption></figure>
 
 ## FAQ {#requirements-limitations}
 
@@ -105,7 +105,7 @@ This image will now be placed into a queue for moderator review.
 
 Test your image rating knowledge (while helping us gather unique data insights!) with Civitai’s new “mini-game”, _Rater_. [Read how it works here!](/civitais-guide-to-the-rating-game/)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-232346-1024x852.png" alt="Civitai Rater Game" width="1024" height="852" loading="lazy"><figcaption><em>Rater</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-232346-1024x852.webp" alt="Civitai Rater Game" width="1024" height="852" loading="lazy"><figcaption><em>Rater</em></figcaption></figure>
 
 ## I need more help! {#i-need-more-help-2}
 

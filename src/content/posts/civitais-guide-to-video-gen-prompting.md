@@ -18,11 +18,11 @@ tags:
 author: "civitai"
 wpId: 6981
 excerpt: "Civitai’s Guide to Video Gen Prompting! This guide will help you create more compelling, dynamic AI-generated videos."
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
 seo:
   title: "Civitai's Guide to Video Gen Prompting - Civitai Education"
   description: "Civitai's Guide to Video Gen Prompting! This guide will help you create more compelling, dynamic AI-generated videos."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-video-gen-prompting/"
 ---
 

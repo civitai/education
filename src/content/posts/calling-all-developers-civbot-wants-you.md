@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5482
 excerpt: "We are thrilled to announce the launch of Civitai’s new Community Development Team, aimed at bringing together our talented community and our internal Civitai developers."
-image: "https://education.civitai.com/wp-content/uploads/2024/10/UncleSamSquare.png"
+image: "/wp-content/uploads/2024/10/UncleSamSquare.webp"
 seo:
   title: "Calling all Developers! CivBot Wants You! - Civitai Education"
   description: "Announcing the launch of Civitai's Community Development Team aimed at bringing together our talented community and our own developers!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/10/UncleSamSquare.png"
+  ogImage: "/wp-content/uploads/2024/10/UncleSamSquare.webp"
   canonical: "https://education.civitai.com/calling-all-developers-civbot-wants-you/"
 ---
 
@@ -23,7 +23,7 @@ We are thrilled to announce the launch of Civitai’s new **Community Developmen
 
 Weekly syncs will be live-streamed on [Twitch](https://twitch.tv/civitai), ensuring full transparency and encouraging broader participation.
 
-[![CivBot Wants You!](http://education.civitai.com//wp-content/uploads/2024/10/UncleSamSquare-1-1024x701.png)](https://civitai.com/articles/7782/calling-all-developers-join-civitais-community-development-team)
+[![CivBot Wants You!](/wp-content/uploads/2024/10/UncleSamSquare-1-1024x701.webp)](https://civitai.com/articles/7782/calling-all-developers-join-civitais-community-development-team)
 
 Members of the **Community Dev Team** will receive exclusive perks such as special cosmetics and direct access to our internal dev team. This program also presents future opportunities for team expansion, as we hope to hire from this talented pool of contributors.
 

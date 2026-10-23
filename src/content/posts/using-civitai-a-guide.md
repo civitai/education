@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1413
 excerpt: "How to Get Started with Civitai! This guide focuses on the Basics – Creating & Configuring an account, navigating the Home Page, & Discovering content."
-image: "https://education.civitai.com/wp-content/uploads/2025/03/beginner_guide_anim.webp"
+image: "/wp-content/uploads/2025/03/beginner_guide_anim.webp"
 seo:
   title: "Beginner's Guide to Using Civitai, the Largest Generative AI Hub"
   description: "Learn how to navigate the world of generative AI with Civitai, the largest platform for discovering, creating, and sharing generative art."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/beginner_guide_anim.webp"
+  ogImage: "/wp-content/uploads/2025/03/beginner_guide_anim.webp"
   canonical: "https://education.civitai.com/using-civitai-a-guide/"
 ---
 
@@ -46,7 +46,7 @@ You can read more about [our naming origins here](https://civitai.com/articles/8
 
 Whenever you’re uploading content, whether it’s a model, a review, or an image post, you must keep the Terms of Service in mind; [https://civitai.com/content/tos](https://civitai.com/content/tos). Please review the **Content Removal Criteria**, prior to sharing content to Civitai.
 
-![](http://education.civitai.com/wp-content/uploads/2023/08/Screenshot-2025-07-30-174108.png)
+![](/wp-content/uploads/2023/08/Screenshot-2025-07-30-174108.webp)
 
 Some of the rules _**most commonly violated**_ by Content Creators are;
 
@@ -84,11 +84,11 @@ Sometimes the site goes through short periods of disruption due to the huge volu
 
 We also maintain an on-site [Updates](https://civitai.com/changelog) [pa](https://civitai.com/changelog)[ge](https://civitai.com/changelog), on which important announcements are posted.
 
-[![](http://education.civitai.com/wp-content/uploads/2023/08/Screenshot-2025-07-30-174632-1024x592.png)](https://civitai.com/changelog)
+[![](/wp-content/uploads/2023/08/Screenshot-2025-07-30-174632-1024x592.webp)](https://civitai.com/changelog)
 
 If you’re in the [Discord Server](https://discord.gg/civitai) you can check out the **Announcements channel** for updates on outages and issues.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/status-1024x777.png)
+![](/wp-content/uploads/2023/08/status-1024x777.webp)
 
 ### Bug Reporting & Feature Requests {#bug-reporting-feature-requests}
 
@@ -102,11 +102,11 @@ If you want access to mature content (18+ only content) and other site features,
 
 Creating an account is as simple as clicking the **Sign In** button at the top right of every page.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-125246-1024x45.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-125246-1024x45.webp)
 
 You can sign into Civitai with a **Discord**, **Github**, **Google**, or **Reddit** account, or an **email address.**
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-44.png)
+![](/wp-content/uploads/2023/08/image-44.webp)
 
 Follow the steps to create your account – it’s really simple, but if you run into problems you can email [support@civitai.com](mailto:support@civitai.com) for help!
 
@@ -118,7 +118,7 @@ The account settings page let’s us configure many aspects of our account, incl
 
 #### Profile Settings
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/Screenshot-2024-11-26-174843-1024x584.png)
+![](/wp-content/uploads/2023/08/Screenshot-2024-11-26-174843-1024x584.webp)
 
 We can also control some settings related to our preferred image viewing format, and the preferred format for any model resources on the site. If **Safetensor** format is selected, for example, a model card with both a **.ckpt** and a **.safetensors** upload will present the .safetensors model for download first – if selected as the Model File Preference.
 
@@ -136,7 +136,7 @@ Some of the current features which can be toggled on/off include larger images i
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/Screenshot-2024-11-26-175056.png)
+![](/wp-content/uploads/2023/08/Screenshot-2024-11-26-175056.webp)
 
 </div>
 
@@ -150,7 +150,7 @@ The **Hidden Tags** field allows resources with specific tags to be completely h
 
 The **Hidden Users** field allows content from _**specific creators**_ to be hidden. Use the search box to find and exclude specific users from your site experience.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-48.png)
+![](/wp-content/uploads/2023/08/image-48.webp)
 
 #### Mature Content
 
@@ -162,7 +162,7 @@ By default, **users will not see Explicit Adult Content**, and Mature Content wi
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-50.png)
+![](/wp-content/uploads/2023/08/image-50.webp)
 
 Enabling **Mature Content** enables the granular content opt-in menu.
 
@@ -170,7 +170,7 @@ Enabling **Mature Content** enables the granular content opt-in menu.
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-49.png)
+![](/wp-content/uploads/2023/08/image-49.webp)
 
 </div>
 
@@ -195,7 +195,7 @@ After enabling Mature and Explicit content, an “eye” icon will appear in the
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2023/08/Screenshot-2025-07-30-174837.png)
+![](/wp-content/uploads/2023/08/Screenshot-2025-07-30-174837.webp)
 
 </div>
 
@@ -211,13 +211,13 @@ From [Account](https://civitai.com/user/account) [Sett](https://civitai.com/user
 
 Notifications appear in the top right of the Civitai page, and display a red dot highlighting new unread messages.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/Screenshot-2024-11-26-175326.png)
+![](/wp-content/uploads/2023/08/Screenshot-2024-11-26-175326.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/Screenshot-2024-11-26-175258.png)
+![](/wp-content/uploads/2023/08/Screenshot-2024-11-26-175258.webp)
 
 </div>
 
@@ -229,13 +229,13 @@ In rare instances you may receive personal messages/notifications from Site Admi
 
 If you wish to sign in with **Discord**, **GitHub**, **Google**, or **Reddit**, you can connect those accounts in the **Connected Accounts section**, allowing easy access to the site.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-55.png)
+![](/wp-content/uploads/2023/08/image-55.webp)
 
 #### API Keys
 
 If you’d like to interact with Civitai via the Application Programmer Interface (API), you can generate an API key from this page, allowing you to connect your own application or script to Civitai data.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-56.png)
+![](/wp-content/uploads/2023/08/image-56.webp)
 
 #### Delete Account
 
@@ -243,13 +243,13 @@ Lastly, if you wish to leave Civitai and delete all data pertaining to your acco
 
 Beware, this is destructive and **cannot be reversed**! Make sure you’re sure before proceeding!
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-57.png)
+![](/wp-content/uploads/2023/08/image-57.webp)
 
 ## The Civitai Homepage
 
 When you first visit the site you’ll see the page split into a number of blocks, or sections, starting with **Announcements** at the top (if there are any active Announcements);
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-125516-1024x377.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-125516-1024x377.webp)
 
 Followed by the “**Home Blocks**” – modular sections containing specific, curated, content.
 
@@ -261,11 +261,11 @@ Followed by the “**Home Blocks**” – modular sections containing specific, 
 
 You may also encounter **Contest blocks**, containing details of currently running Contests/Competitions, and links to enter;
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-59-1024x873.png)
+![](/wp-content/uploads/2023/08/image-59-1024x873.webp)
 
 The Home Block system is **modular**, and **configurable**, from the “**gear**/**cog**” button on the top right;
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/123-1024x104.png)
+![](/wp-content/uploads/2024/01/123-1024x104.webp)
 
 <div class="columns">
 
@@ -281,7 +281,7 @@ In future, new Home Block types for various categories of content and site funct
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-61.png)
+![](/wp-content/uploads/2023/08/image-61.webp)
 
 </div>
 
@@ -295,7 +295,7 @@ There are literally **_thousands_** of models (and other types of content) avail
 
 The main **Content categories** can be accessed from the **Top Menu**. These are “list” style pages, by default showing the **Highest Rated** content from the current **Month**.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-125920-1024x115.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-125920-1024x115.webp)
 
 <div class="columns">
 
@@ -307,7 +307,7 @@ Content ordering can be changed to highlight various resources based on common r
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-63.png)
+![](/wp-content/uploads/2023/08/image-63.webp)
 
 </div>
 
@@ -323,7 +323,7 @@ Timescales can be changed to view those resources by a number of time periods.
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-64.png)
+![](/wp-content/uploads/2023/08/image-64.webp)
 
 </div>
 
@@ -339,7 +339,7 @@ Model resources can be filtered by a number of **types** and **categories**. Thi
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-65.png)
+![](/wp-content/uploads/2023/08/image-65.webp)
 
 </div>
 
@@ -349,7 +349,7 @@ Model resources can be filtered by a number of **types** and **categories**. Thi
 
 Civitai has a powerful **Search function**, allowing us to search for **Models**, **Images** (including Prompt content!), **Articles**, **Collections** and **Users**.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/search_menu-1024x145.png)
+![](/wp-content/uploads/2024/01/search_menu-1024x145.webp)
 
 Additional filtering options can be accessed from the **filter button to the left of the Search categories**.
 
@@ -357,7 +357,7 @@ Additional filtering options can be accessed from the **filter button to the lef
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-67-422x1024.png)
+![](/wp-content/uploads/2023/08/image-67-422x1024.webp)
 
 </div>
 
@@ -383,10 +383,10 @@ A Model Hash is a **unique identifier** on Civitai – there can only be a singl
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-69.png)
+![](/wp-content/uploads/2023/08/image-69.webp)
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-130205-1024x122.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-130205-1024x122.webp)

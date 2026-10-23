@@ -93,9 +93,22 @@ typography (and the embed markup) is in `src/styles/prose.css`, applied by
 
 ## Media
 
-Images, videos and downloads still point at their original WordPress URLs
-(`https://education.civitai.com/wp-content/uploads/…`, VideoPress). They are not stored in this
-repository; a later step will move them and rewrite the URLs.
+All media is in this repository, so a clone builds the whole site.
+
+- **Images and downloads** are in `public/wp-content/uploads/`, at their old WordPress paths. Most were
+  converted to WebP. The old `.png`/`.jpg` URLs redirect to the new names
+  (`src/data/media-renames.json`). PNGs that carry ComfyUI or A1111 generation data (`workflow`,
+  `prompt`, `parameters`) are kept as they are, so readers can still load them into ComfyUI.
+- **Videos** (`public/videos/`, the former VideoPress embeds) and the one download over GitHub's
+  100 MB limit are in **Git LFS**. Run `git lfs install` before cloning to get them; without it they
+  are small pointer files and the videos won't play locally.
+
+To add an image, put it under `public/` and link it by its path, e.g. `/wp-content/uploads/2026/10/x.webp`
+or a new folder. Prefer WebP, and keep it under about 1 MB.
+
+On the hosted site the image build cannot fetch Git LFS files, so `.dockerignore` leaves them out and
+nginx serves them from a B2 copy (`nginx/default.conf`). A new video therefore also needs uploading to
+that bucket; ask an infra owner.
 
 ## WordPress export
 

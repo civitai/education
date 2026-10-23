@@ -11,12 +11,12 @@ tags:
 author: "civitai"
 wpId: 3481
 excerpt: "New Education Hub section for Beginner’s Guides! Start your journey into Generative AI art here!"
-image: "https://education.civitai.com/wp-content/uploads/2024/03/Beginner.png"
+image: "/wp-content/uploads/2024/03/Beginner.webp"
 sticky: true
 seo:
   title: "New Beginner's Guides Section! - Civitai Education"
   description: "New Education Hub section for Beginner's Guides now available! Start your journey into Generative AI art here!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/03/Beginner.png"
+  ogImage: "/wp-content/uploads/2024/03/Beginner.webp"
   canonical: "http://education.civitai.com/new-education-hub-section-for-beginner-guides/"
 ---
 

@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 2581
 excerpt: "Civitai Guide to Bounties!"
-image: "https://education.civitai.com/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
+image: "/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
 seo:
   title: "Civitai's Guide to Bounties! - Civitai Education"
   description: "Bounties are challenges created by our users each carrying a specific Buzz reward! If you need something created, you can post a Bounty!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
+  ogImage: "/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-bounties/"
 ---
 
@@ -32,7 +32,7 @@ seo:
 
 If you need something created, but don’t have the time or technical knowledge, you can post a Bounty, which other Civitai community members can submit their **Entries** to. It’s a little like trading for services at a marketplace!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/Bounty-1024x739.png" alt="" width="1024" height="739" loading="lazy"><figcaption>The Bounty Page</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/Bounty-1024x739.webp" alt="" width="1024" height="739" loading="lazy"><figcaption>The Bounty Page</figcaption></figure>
 
 ## What are the Bounty Types?
 
@@ -57,7 +57,7 @@ To get started posting a Bounty, hover over the blue “**Create**” button in 
 
 You’ll be asked for some information;
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/post_bounty-805x1024.png)
+![](/wp-content/uploads/2023/10/post_bounty-805x1024.webp)
 
 | Field | Purpose/Description |
 | --- | --- |
@@ -80,7 +80,7 @@ Upon clicking **Save**, the amount you set for the Bounty Amount **will be debit
 
 Inside a Bounty, below the main information, there’s a Submit Entry button. **There is no Buzz charge to submit an Entry to a Bounty**. Entries require the following inputs to be posted;
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/entry-882x1024.png)
+![](/wp-content/uploads/2023/10/entry-882x1024.webp)
 
 | Field | Purpose/Description |
 | --- | --- |
@@ -99,7 +99,7 @@ There are two ways to filter Bounties;
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/Bounty_Expiring_Soon.png)
+![](/wp-content/uploads/2023/10/Bounty_Expiring_Soon.webp)
 
 </div>
 
@@ -115,7 +115,7 @@ The time period filter allows us to order the Bounty view a number of ways – f
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/bounty_filters.png)
+![](/wp-content/uploads/2023/10/bounty_filters.webp)
 
 </div>
 

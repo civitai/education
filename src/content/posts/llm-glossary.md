@@ -15,11 +15,11 @@ tags:
 author: "civitai"
 wpId: 6074
 excerpt: "LLM (Large Language Model) terminology can be super confusing! Find some answers to what everything is here!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+image: "/wp-content/uploads/2025/03/network_anim.webp"
 seo:
   title: "LLM Glossary - Civitai Education"
   description: "LLM (Large Language Model) terminology can be super confusing! Find some answers to what everything is here!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+  ogImage: "/wp-content/uploads/2025/03/network_anim.webp"
   canonical: "https://education.civitai.com/llm-glossary/"
 ---
 

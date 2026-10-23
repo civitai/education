@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2071
 excerpt: "Part one of our two-part ControlNet guide is live! We’re touching on what ControlNet actually IS, how we install it, where we get the models which power it, and explore some of the Preprocessors, options, and settings! The first SDXL ControlNet models are appearing, and this guide will help you understand how to get started […]"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/download-4.png"
+image: "/wp-content/uploads/2023/09/download-4.webp"
 seo:
   title: "ControlNet Basics Guide! - Civitai Education"
   description: "Part one of our two-part ControlNet guide is live! We're touching on what ControlNet actually IS, options, and settings!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/download-4.png"
+  ogImage: "/wp-content/uploads/2023/09/download-4.webp"
   canonical: "https://education.civitai.com/controlnet-basics-guide/"
 ---
 

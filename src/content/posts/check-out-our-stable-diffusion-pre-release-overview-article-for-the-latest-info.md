@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 4395
 excerpt: "SD3 is almost here, and we still don’t know all that much about it! What we do know has been collated into our Pre-Release Overview article! Check it out here; Stable Diffusion 3 Pre-Release Overview."
-image: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_pre-2.png"
+image: "/wp-content/uploads/2024/06/sd3_pre-2.webp"
 seo:
   title: "Stable Diffusion 3 Pre-Release Overview - Civitai Education"
   description: "SD3 is almost here, and we still don't know all that much about it! What we do know has been collated into our Pre-Release Overview article!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_pre-2.png"
+  ogImage: "/wp-content/uploads/2024/06/sd3_pre-2.webp"
   canonical: "https://education.civitai.com/check-out-our-stable-diffusion-pre-release-overview-article-for-the-latest-info/"
 ---
 

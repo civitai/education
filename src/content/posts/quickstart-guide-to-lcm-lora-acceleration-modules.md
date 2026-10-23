@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2723
 excerpt: "Civitai guide to getting started with LCM Stable Diffusion Acceleration Modules! Everything you need to know to getting started generating super fast!"
-image: "https://education.civitai.com/wp-content/uploads/2023/11/workflow.gif"
+image: "/wp-content/uploads/2023/11/workflow.webp"
 seo:
   title: "Quickstart Guide to LCM LoRA - Acceleration Modules! - Civitai Education"
   description: "Learn how to leverage the new LCM LoRA for fast Stable Diffusion inference! Boost generation speeds on both SDXL and SD 1.5!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/11/workflow.gif"
+  ogImage: "/wp-content/uploads/2023/11/workflow.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-lcm-lora-acceleration-modules/"
 ---
 
@@ -49,13 +49,13 @@ The following **SDXL** images were generated on an **RTX 4090** at **1280×1024*
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/00602-3811230654-1024x614.png)
+![](/wp-content/uploads/2023/11/00602-3811230654-1024x614.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/00603-3047174923-1024x614.png)
+![](/wp-content/uploads/2023/11/00603-3047174923-1024x614.webp)
 
 </div>
 
@@ -67,13 +67,13 @@ The following **SDXL** images were generated on an **RTX 4090** at **1024×1024*
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/ComfyUI_00009_.png)
+![](/wp-content/uploads/2023/11/ComfyUI_00009_.png)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/ComfyUI_00030_.png)
+![](/wp-content/uploads/2023/11/ComfyUI_00030_.png)
 
 </div>
 
@@ -83,13 +83,13 @@ The following **SDXL** images were generated on an **RTX 4090** at **1024×1024*
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/ComfyUI_00090_.png)
+![](/wp-content/uploads/2023/11/ComfyUI_00090_.png)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/ComfyUI_00128_.png)
+![](/wp-content/uploads/2023/11/ComfyUI_00128_.png)
 
 </div>
 
@@ -123,7 +123,7 @@ We then need to **include the LoRA in our prompt**, as we would any other LoRA. 
 
 The examples below are all **sub 5 second generations**, and showcase the kind of quality that can be achieved with a bit of experimentation;
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2023/11/1699625912-1591038555-1-614x1024.jpeg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/11/1699625912-1591038555-1.jpeg" width="1152" height="1920" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2023/11/1699622970-490107229-1-614x1024.jpeg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/11/1699622970-490107229-1.jpeg" width="1152" height="1920" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2023/11/1699622969-1252707533-2-614x1024.jpeg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/11/1699622969-1252707533-2.jpeg" width="1152" height="1920" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2023/11/1699622039-1623182716-2-614x1024.jpeg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/11/1699622039-1623182716-2.jpeg" width="1152" height="1920" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2023/11/1699623205-3349485722-2-614x1024.jpeg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/11/1699623205-3349485722-2.jpeg" width="1152" height="1920" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2023/11/1699625912-1591038555-1-614x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/11/1699625912-1591038555-1.jpeg" width="1152" height="1920" loading="lazy"><img src="/wp-content/uploads/2023/11/1699622970-490107229-1-614x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/11/1699622970-490107229-1.webp" width="1152" height="1920" loading="lazy"><img src="/wp-content/uploads/2023/11/1699622969-1252707533-2-614x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/11/1699622969-1252707533-2.webp" width="1152" height="1920" loading="lazy"><img src="/wp-content/uploads/2023/11/1699622039-1623182716-2-614x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/11/1699622039-1623182716-2.webp" width="1152" height="1920" loading="lazy"><img src="/wp-content/uploads/2023/11/1699623205-3349485722-2-614x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/11/1699623205-3349485722-2.webp" width="1152" height="1920" loading="lazy"></div>
 
 _Images/Prompts by [Wizz](https://civitai.com/user/_Wizz_)_
 
@@ -135,7 +135,7 @@ We’re able to leverage the rapid image generation speed to create **_near real
 
 Using Creator [ToyXYZ’s experimental ComfyU](https://github.com/toyxyz/ComfyUI_toyxyz_test_nodes)[I](https://github.com/toyxyz/ComfyUI_toyxyz_test_nodes) [nodes](https://github.com/toyxyz/ComfyUI_toyxyz_test_nodes), we can capture a .jpg or .png webcam image stream, bringing it into ComfyUI with a new node type;
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/Screenshot-2023-11-24-124630.png)
+![](/wp-content/uploads/2023/11/Screenshot-2023-11-24-124630.webp)
 
 This allows us to capture a webcam output image stream (see [ToyXYZ’s CaptureCam Github](https://github.com/toyxyz/ComfyUI_toyxyz_test_nodes)), passing it into our flow as the input image (instead of a latent image), to create wonderful outputs like the following!
 

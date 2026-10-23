@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 2631
 excerpt: "Level up your prompting for SD with our Beginner to Advanced Guide! Part 2 covers Intermediate techniques, token weighting and emphasis."
-image: "https://education.civitai.com/wp-content/uploads/2023/10/output_00259_.png"
+image: "/wp-content/uploads/2023/10/output_00259_.png"
 seo:
   title: "Civitai's Prompt-Crafting Guide: Part 2 - Intermediate - Civitai Education"
   description: "In this Prompt-Crafting Guide we're discussing an advanced technique that's essential for any Prompter: adding emphasis."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/10/output_00259_.png"
+  ogImage: "/wp-content/uploads/2023/10/output_00259_.png"
   canonical: "https://education.civitai.com/civitais-prompt-crafting-guide-part-2-intermediate/"
 ---
 
@@ -62,13 +62,13 @@ The following (extreme!) example shows how much we can vary an image by adding e
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/stars_before-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, moonlight, <strong><code>[stars]</code></strong>, vivid colors…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/stars_before-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, moonlight, <strong><code>[stars]</code></strong>, vivid colors…</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/01167-920741122-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, moonlight, <strong><code>((((stars))))</code></strong>, vivid colors…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/01167-920741122-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, moonlight, <strong><code>((((stars))))</code></strong>, vivid colors…</figcaption></figure>
 
 </div>
 
@@ -98,13 +98,13 @@ The following examples show the progression from a very low weight **`(moonlight
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/01169-3537987699-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, <strong><code>(moonlight:0.3)</code></strong>, stars, vivid colors…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/01169-3537987699-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, <strong><code>(moonlight:0.3)</code></strong>, stars, vivid colors…</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/01170-3537987699-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, <strong><code>(moonlight:1.7)</code></strong>, stars, vivid colors…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/01170-3537987699-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…statement sunglasses, in a park, sky, trees, <strong><code>(moonlight:1.7)</code></strong>, stars, vivid colors…</figcaption></figure>
 
 </div>
 
@@ -122,13 +122,13 @@ The example below shows the effect of a high powered LoRA, vs a slightly down-we
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/01174-3115332920-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…&lt;lora:FaeTastic2:<strong><code>1.2</code></strong>&gt;…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/01174-3115332920-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…&lt;lora:FaeTastic2:<strong><code>1.2</code></strong>&gt;…</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/01173-2043391231-819x1024.png" alt="" width="819" height="1024" loading="lazy"><figcaption>…&lt;lora:FaeTastic2:<strong><code>0.8</code></strong>&gt;…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/01173-2043391231-819x1024.webp" alt="" width="819" height="1024" loading="lazy"><figcaption>…&lt;lora:FaeTastic2:<strong><code>0.8</code></strong>&gt;…</figcaption></figure>
 
 </div>
 

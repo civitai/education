@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 7199
 excerpt: "Buzz Gift Cards for Civitai Memberships are now available!"
-image: "https://education.civitai.com/wp-content/uploads/2025/08/announcement.png"
+image: "/wp-content/uploads/2025/08/announcement.webp"
 seo:
   title: "Civitai's Guide to Buzz Gift Codes! - Civitai Education"
   description: "Buzz Gift Card and Membership Codes are now available for purchase!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/08/announcement.png"
+  ogImage: "/wp-content/uploads/2025/08/announcement.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-buybuzz-io/"
 ---
 
@@ -79,7 +79,7 @@ For instance, if you purchased 12 months of Silver and then added 3 months of Br
 **Q**:  ************I’ve purchased and activated a number of prepaid Memberships – how do I see when each tier ends and what my stack looks like?************
 **A**: Visit your [Membership Management](https://civitai.com/user/membership) page. If you’ve stacked multiple Memberships, you’ll see a chart showing how long you have left at each tier and when each one begins or ends.
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/777ae61c-e191-4fc5-82f2-39b8774b5b41.png)
+![](/wp-content/uploads/2025/05/777ae61c-e191-4fc5-82f2-39b8774b5b41.webp)
 
 **Q**: **Are there fees?**
 **A**: For crypto purchases on Civitai.com, network (gas) fees apply depending on the coin and network you use. We recommend USDC on the Base network for the lowest fees. Civitai does not charge additional fees. On Civitai.Green, standard payment processing applies.

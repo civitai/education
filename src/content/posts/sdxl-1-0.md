@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 187
 excerpt: "SDXL 1.0 is a groundbreaking new text-to-image model from Stability AI."
-image: "https://education.civitai.com/wp-content/uploads/2023/07/Splash_final_crop.png"
+image: "/wp-content/uploads/2023/07/Splash_final_crop.webp"
 seo:
   title: "SDXL 1.0 Overview: A Remarkable Leap for Generative AI Imagery"
   description: "Learn more about SDXL 1.0, a model transforming text-to-image synthesis with unprecedented resolution, depth, and quality."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/07/Splash_final_crop-1024x576.png"
+  ogImage: "/wp-content/uploads/2023/07/Splash_final_crop-1024x576.webp"
   canonical: "https://education.civitai.com/sdxl-1-0/"
 ---
 
@@ -37,7 +37,7 @@ Aside from **~3x more training parameters** than previous SD models, SDXL runs o
 
 Unlike previous SD models, SDXL uses a _**two-stage**_ image creation process. The base model generates the initial latent image (txt2img), before passing the output and the same prompt through a refiner model (essentially an img2img workflow), upscaling, and adding fine detail to the generated output.
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/1-1024x360.png)
+![](/wp-content/uploads/2023/07/1-1024x360.webp)
 
 ### What does all that mean for image generation?
 
@@ -59,13 +59,13 @@ It also performs exceptionally well when creating images with complex lighting.
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00145_-1024x796.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00145_-1024x796.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00163_-1024x796.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00163_-1024x796.webp)
 
 </div>
 
@@ -75,13 +75,13 @@ It also performs exceptionally well when creating images with complex lighting.
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00153_-1024x796.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00153_-1024x796.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00160_-1024x796.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00160_-1024x796.webp)
 
 </div>
 
@@ -139,7 +139,7 @@ Automatic1111’s support for **SDXL** and the Refiner model is quite rudimentar
 
 [WCDE](https://github.com/wcde) has released a simple extension to automatically run the final steps of image generation on the Refiner model, removing the need to switch models or perform an img2img!
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-1-1024x148.png)
+![](/wp-content/uploads/2023/08/image-1-1024x148.webp)
 
 ?? [https://github.com/wcde/sd-webui-refiner](https://github.com/wcde/sd-webui-refiner)
 
@@ -163,7 +163,7 @@ git clone https://github.com/comfyanonymous/ComfyUI
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/2-1024x318.png)
+![](/wp-content/uploads/2023/07/2-1024x318.webp)
 
 </div>
 
@@ -187,7 +187,7 @@ pip install -r requirements.txt
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/3-1024x114.png)
+![](/wp-content/uploads/2023/07/3-1024x114.webp)
 
 </div>
 
@@ -203,15 +203,15 @@ Place these in your root ComfyUI folder.
 
 The xformers bat will launch ComfyUI with **xformers** activated.
 
-[start-xformers](http://education.civitai.com//wp-content/uploads/2023/07/start-xformers.zip)
+[start-xformers](/wp-content/uploads/2023/07/start-xformers.zip)
 
 But since we’re all using Torch 2.0, you can also run ComfyUI with **Pytorch sdp-cross-attention** activated, which may boost your iterations per second (image generation speed)
 
-[start-sdp-cross-attention](http://education.civitai.com//wp-content/uploads/2023/07/start-sdp-cross-attention.zip)
+[start-sdp-cross-attention](/wp-content/uploads/2023/07/start-sdp-cross-attention.zip)
 
 Note – if you get the common Torch not compiled with CUDA enabled error, follow these directions;
 
-> ![](http://education.civitai.com//wp-content/uploads/2023/07/4-1024x118.png)
+> ![](/wp-content/uploads/2023/07/4-1024x118.webp)
 >
 > -   Ensure (venv) is still activated – if not, enable it by running the Venv Activate script again.
 > -   Run pip uninstall torch
@@ -224,19 +224,19 @@ Note – if you get the common Torch not compiled with CUDA enabled error, follo
 
 > A number of Official and Semi-Official “Workflows” for ComfyUI were released during the SDXL 0.9 testing phase. These still work for SDXL 1.0, but **Stability AI’s Joe Penna** released a new “Official” ComfyUI workflow which is easy to follow, contains a lot of tips and usage information, and most importantly, produces beautiful results!
 >
-> [Official\_Stability\_ComfyUI\_Workflow 7-23](http://education.civitai.com//wp-content/uploads/2023/07/Official_Stability_ComfyUI_Workflow-7-23.zip)
+> [Official\_Stability\_ComfyUI\_Workflow 7-23](/wp-content/uploads/2023/07/Official_Stability_ComfyUI_Workflow-7-23.zip)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/07/sdxl1.0-1-1024x733.png" alt="" width="1024" height="733" loading="lazy"><figcaption>SDXL 1.0 Flow</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/07/sdxl1.0-1-1024x733.webp" alt="" width="1024" height="733" loading="lazy"><figcaption>SDXL 1.0 Flow</figcaption></figure>
 
 ### SDXL 0.9/1.0 VAE {#sdxl-0-9-1-0-vae}
 
 Immediately after 1.0’s July 26th release it was apparent that Stability had changed the model somewhat from the 0.9 version, and images now had quite significant “rainbow” artifacts.
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/badness-1024x546.png)
+![](/wp-content/uploads/2023/07/badness-1024x546.webp)
 
 It was quickly established that the new **SDXL 1.0 VAE** was the culprit. There has been no official word on _**why**_ the SDXL 1.0 VAE produces these artifacts, but we do know that by removing the baked in SDXL 1.0 VAE and replacing it with the SDXL **0.9** VAE, the images are much clearer/sharper.
 
-<div data-embed="image-compare" data-mode="horizontal"><img src="http://education.civitai.com//wp-content/uploads/2023/07/badvae.png" alt="before" width="1960" height="840" data-role="before" loading="lazy"><img src="http://education.civitai.com//wp-content/uploads/2023/07/goodvae.png" alt="after" width="1960" height="840" data-role="after" loading="lazy"></div>
+<div data-embed="image-compare" data-mode="horizontal"><img src="/wp-content/uploads/2023/07/badvae.webp" alt="before" width="1960" height="840" data-role="before" loading="lazy"><img src="/wp-content/uploads/2023/07/goodvae.webp" alt="after" width="1960" height="840" data-role="after" loading="lazy"></div>
 
 ### Prompting for SDXL 1.0 {#prompting-for-sdxl-1-0}
 
@@ -250,7 +250,7 @@ One of the most significant challenges facing users who are used to prompting SD
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/00543-1634788662-666x1024.png)
+![](/wp-content/uploads/2023/07/00543-1634788662-666x1024.webp)
 
 </div>
 
@@ -268,7 +268,7 @@ An original prompt running on an SD 1.5 based model
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00184_-1-1-796x1024.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00184_-1-1-796x1024.webp)
 
 </div>
 
@@ -284,7 +284,7 @@ The same prompt in SDXL. Note that “**cowboy shot**” has been taken quite li
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/07/ComfyUI_00189_-1-796x1024.png)
+![](/wp-content/uploads/2023/07/ComfyUI_00189_-1-796x1024.webp)
 
 </div>
 
@@ -304,13 +304,13 @@ a `beautiful woman in a white dress, blowing in the wind, walking on a stormy be
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/07/9-910x1024.png" alt="" width="910" height="1024" loading="lazy"><figcaption>Experiment with hashtags – #photography, mood setting hashtags #evil, #sinister, #whimsical</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/07/9-910x1024.webp" alt="" width="910" height="1024" loading="lazy"><figcaption>Experiment with hashtags – #photography, mood setting hashtags #evil, #sinister, #whimsical</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/07/10-910x1024.png" alt="" width="910" height="1024" loading="lazy"><figcaption>Experiment with emojis – ??</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/07/10-910x1024.webp" alt="" width="910" height="1024" loading="lazy"><figcaption>Experiment with emojis – ??</figcaption></figure>
 
 </div>
 
@@ -320,13 +320,13 @@ a `beautiful woman in a white dress, blowing in the wind, walking on a stormy be
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/07/11-910x1024.png" alt="" width="910" height="1024" loading="lazy"><figcaption>Less can be more! <code>ultra detailed 8k cg, japanese ramen, chopsticks, egg, steam, food photography, shallow depth of field, realism</code></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/07/11-910x1024.webp" alt="" width="910" height="1024" loading="lazy"><figcaption>Less can be more! <code>ultra detailed 8k cg, japanese ramen, chopsticks, egg, steam, food photography, shallow depth of field, realism</code></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/07/12-910x1024.png" alt="" width="910" height="1024" loading="lazy"><figcaption>Try extremely simple, no modifier prompts! <code>a set of magical potions with magical properties that can be used to heal someone</code></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/07/12-910x1024.webp" alt="" width="910" height="1024" loading="lazy"><figcaption>Try extremely simple, no modifier prompts! <code>a set of magical potions with magical properties that can be used to heal someone</code></figcaption></figure>
 
 </div>
 

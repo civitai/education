@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 2992
 excerpt: "Civitai Guide to CivBot!"
-image: "https://education.civitai.com/wp-content/uploads/2023/12/Civbot.png"
+image: "/wp-content/uploads/2023/12/Civbot.webp"
 seo:
   title: "Civitai's Guide to CivBot! - Civitai Education"
   description: "Learn how to use CivBot, Civitai's helpful and intelligent AI companion, in our comprehensive Civitai's Guide to CivBot!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/12/Civbot.png"
+  ogImage: "/wp-content/uploads/2023/12/Civbot.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-civbot/"
 ---
 
@@ -39,13 +39,13 @@ We’re constantly expanding his knowledge and capabilities to make him as usefu
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/12/Civbot.png" alt="" width="900" height="900" loading="lazy"><figcaption><em>CivBot Chat Icon</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/12/Civbot.webp" alt="" width="900" height="900" loading="lazy"><figcaption><em>CivBot Chat Icon</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/Screenshot-2024-07-29-102958.png)
+![](/wp-content/uploads/2023/12/Screenshot-2024-07-29-102958.webp)
 
 </div>
 
@@ -55,7 +55,7 @@ We’re constantly expanding his knowledge and capabilities to make him as usefu
 
 <div class="column" style="flex-basis:33.33%">
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2023-12-30-132858.png)
+![](/wp-content/uploads/2024/01/Screenshot-2023-12-30-132858.webp)
 
 </div>
 
@@ -79,7 +79,7 @@ Currently, these pre-set questions include responses for;
 
 CivBot currently has a “memory” of up to one week of chats. During this time he will recall past conversations, allowing you to continue a conversation without having to re-enter any context. If you’d like to clear his “memory”, click the **reload** button, in the top right of CivBot’s header pane;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/12/Screenshot-2024-07-29-103429.png" alt="" width="330" height="61" loading="lazy"><figcaption><em>Reload button, top right</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/12/Screenshot-2024-07-29-103429.webp" alt="" width="330" height="61" loading="lazy"><figcaption><em>Reload button, top right</em></figcaption></figure>
 
 ## What can CivBot do?
 
@@ -111,11 +111,11 @@ Samples of CivBot’s prompting work;
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/11D14EFF2399416785AC936DD0BEAED6F205E5E476CDE4F16B182A8F0D21BCD9-1024x701.jpg)
+![](/wp-content/uploads/2024/01/11D14EFF2399416785AC936DD0BEAED6F205E5E476CDE4F16B182A8F0D21BCD9-1024x701.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/18900067E1D09BCF1C1242AF5B21D9E8AFF0B492304DE9E1CF47197BD0C94484-1024x701.jpg)
+![](/wp-content/uploads/2024/01/18900067E1D09BCF1C1242AF5B21D9E8AFF0B492304DE9E1CF47197BD0C94484-1024x701.webp)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/01/DB37F8BC8B97AA4F573378C7F585D72FA33FB9DE60BE43AADE7DCB21D28171EF-1024x701.jpg" alt="" width="1024" height="701" loading="lazy"><figcaption><em>images from the Civitai on-site Generator</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/01/DB37F8BC8B97AA4F573378C7F585D72FA33FB9DE60BE43AADE7DCB21D28171EF-1024x701.webp" alt="" width="1024" height="701" loading="lazy"><figcaption><em>images from the Civitai on-site Generator</em></figcaption></figure>
 
 </div>
 
@@ -145,7 +145,7 @@ _This prompt aims to depict a powerful and regal young queen as she overlooks he
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/01/F82977009AE907400CAF4996D32285918874CBC56EC13059A3C33811469C93CC-701x1024.jpg" alt="" width="701" height="1024" loading="lazy"><figcaption><em>image from the Civitai on-site Generator</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/01/F82977009AE907400CAF4996D32285918874CBC56EC13059A3C33811469C93CC-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>image from the Civitai on-site Generator</em></figcaption></figure>
 
 </div>
 
@@ -161,13 +161,13 @@ To receive a personalized model recommendation, simply type, “**I need a model
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/Screenshot-2024-07-29-123542.png)
+![](/wp-content/uploads/2023/12/Screenshot-2024-07-29-123542.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/Screenshot-2024-07-29-123627.png)
+![](/wp-content/uploads/2023/12/Screenshot-2024-07-29-123627.webp)
 
 </div>
 

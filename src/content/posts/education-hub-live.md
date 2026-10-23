@@ -10,11 +10,11 @@ tags:
 author: "civitai"
 wpId: 513
 excerpt: "Introducing the Civitai Education Hub: Your Gateway to Generative AI Mastery! Hey Civitans! Ready to dive into the fascinating world of generative AI art? Our brand new Education Hub is now live, designed specifically to fuel your passion and creativity. Whether you’re just starting out with Generative AI art tools or looking to level up […]"
-image: "https://education.civitai.com/wp-content/uploads/2023/08/00929-36543644.png"
+image: "/wp-content/uploads/2023/08/00929-36543644.png"
 seo:
   title: "New Education Hub! - Civitai Education"
   description: "Our brand new Education Hub is now live, designed specifically to fuel your passion and creativity! Check it out!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/08/00929-36543644.png"
+  ogImage: "/wp-content/uploads/2023/08/00929-36543644.png"
   canonical: "https://education.civitai.com/education-hub-live/"
 ---
 

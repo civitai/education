@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 6762
 excerpt: "Civitai’s Guide to Checkpoint Coverage, Featured Models, and the Auction System!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/coverage_anim.webp"
+image: "/wp-content/uploads/2025/03/coverage_anim.webp"
 seo:
   title: "Civitai's Guide to Checkpoint Coverage, Featured Models, and the Auction System - Civitai Education"
   description: "Civitai guide to Checkpoint Coverage and Featured Models! Find out what we're doing to enable all Checkpoints for use in the Generator!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/coverage_anim.webp"
+  ogImage: "/wp-content/uploads/2025/03/coverage_anim.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-checkpoint-coverage-featured-models-and-the-auction-system/"
 ---
 
@@ -72,7 +72,7 @@ Originally, model auctions were used solely to determine which models would be p
 
 Each week, users can bid on the Checkpoints they want to see featured. At the end of the bidding period, the **top 200 models** by bid ranking are selected and made available in the Generator for the following week. This approach allows the community to play an active role in shaping what’s accessible, while keeping the Generator responsive to real-time interest and demand – and not burning down our Datacenter.
 
-![](http://education.civitai.com/wp-content/uploads/2025/03/Screenshot-2025-03-11-093516.png)
+![](/wp-content/uploads/2025/03/Screenshot-2025-03-11-093516.webp)
 
 Here’s how it works:
 
@@ -116,7 +116,7 @@ Note that LoRAs and similar resources are always available for generation, regar
 
 **\* The top 5 resources from each Auction are added to the Homepage Featured Models homeblock, only if they’re Safe-For-Work, and do not depict a real person! All winning resources are added to the Featured tab of the resource picker;**
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2025/03/Screenshot-2025-03-28-181635-1024x1010.png" alt="" width="1024" height="1010" loading="lazy"><figcaption><em>The Featured Models tab of the Generator</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2025/03/Screenshot-2025-03-28-181635-1024x1010.webp" alt="" width="1024" height="1010" loading="lazy"><figcaption><em>The Featured Models tab of the Generator</em></figcaption></figure>
 
 ## **Why Auctions?**
 

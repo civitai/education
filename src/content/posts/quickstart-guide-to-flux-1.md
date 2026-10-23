@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4652
 excerpt: "Our Quickstart Guide to Flux.1 will help you understand what the model is, what it can do, and how to start using it!"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/fluxoncivit.png"
+image: "/wp-content/uploads/2024/08/fluxoncivit.png"
 seo:
   title: "Quickstart Guide to Flux.1 - Civitai Education"
   description: "Updated! Our Quickstart Guide to Flux.1 will help you understand what the model is, what it can do, and how to start using it!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/fluxoncivit.png"
+  ogImage: "/wp-content/uploads/2024/08/fluxoncivit.png"
   canonical: "https://education.civitai.com/quickstart-guide-to-flux-1/"
 ---
 
@@ -44,39 +44,39 @@ Flux.1 consists of a number of distinct model variations;
 
 -   **Flux.1 Krea \[Dev\]** – developed in collaboration with [Krea AI](http://krea.ai/blog/flux-krea-open-source-release). **FLUX.1 Krea \[dev\]** is a new (July 2025) state-of-the-art **_open-weights model_** (can be used offline, locally) for text-to-image generation that overcomes the oversaturated ‘AI look’ to achieve new levels of photorealism with its distinctive aesthetic approach.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_00259_-1024x701.png" alt="" width="1024" height="701" loading="lazy"><figcaption><strong>Flux.1 Krea [Dev] </strong></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_00259_-1024x701.webp" alt="" width="1024" height="701" loading="lazy"><figcaption><strong>Flux.1 Krea [Dev] </strong></figcaption></figure>
 
 -   **Flux.1 \[Pro 1.1 Ultra & Ultra Raw\]** – Pro 1.1 Ultra, and Ultra Raw are _only available for use via API_. You can use Black Forest Labs’ [ow](https://docs.bfl.ml/)[n A](https://docs.bfl.ml/)[PI](https://docs.bfl.ml/), or a number of their commercial partners, to generate images with Flux.1 Pro 1.1 Ultra, and Ultra Raw. The weights can’t be downloaded, and even if they could, the system requirements would be too high for use with consumer hardware.
 
     [Flux Pro 1.1 Ultra](https://blackforestlabs.ai/flux-1-1-ultra/) adds 4 megapixel, ultra high resolution outputs, while **Ultra Raw** captures a more natural, candid, aesthetic.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/pro1.1ultra-1024x572.jpeg" alt="" width="1024" height="572" loading="lazy"><figcaption><em><strong>Flux Pro 1.1 Ultra</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/pro1.1ultra-1024x572.jpeg" alt="" width="1024" height="572" loading="lazy"><figcaption><em><strong>Flux Pro 1.1 Ultra</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/Pro1.1ultra-raw-1024x572.jpeg" alt="" width="1024" height="572" loading="lazy"><figcaption><em><strong>Flux Pro 1.1 Ultra</strong> <strong>Raw</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Pro1.1ultra-raw-1024x572.jpeg" alt="" width="1024" height="572" loading="lazy"><figcaption><em><strong>Flux Pro 1.1 Ultra</strong> <strong>Raw</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
 -   **Flux.1 \[Pro 1.1\]** – Pro 1.1 is _only available for use via API_. You can use Black Forest Labs’ [ow](https://docs.bfl.ml/)[n A](https://docs.bfl.ml/)[PI](https://docs.bfl.ml/), or a number of their commercial partners, to generate images with Flux.1 Pro 1.1. **Pro 1.1 supersedes Pro in many ways – it’s cheaper, and provides better quality images**! The weights can’t be downloaded. Flux.1 \[Pro\] **is available for use via the [Civitai on-site Generator](https://civitai.com/generate)**, as Model Mode: **Pro** 1.1.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/Pro1.1-1-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Pro 1.1</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Pro1.1-1-1024x701.webp" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Pro 1.1</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
 -   **Flux.1 \[Pro\]** – Pro is _only available for use via API_. You can use Black Forest Labs’ [ow](https://docs.bfl.ml/)[n A](https://docs.bfl.ml/)[PI](https://docs.bfl.ml/), or a number of their commercial partners, to generate images with Flux.1 Pro. Pro has largely been replaced by Pro 1.1, which is cheaper, more performant, and provides better outputs. The weights can’t be downloaded. Flux.1 \[Pro\] **is available for use via the [Civitai on-site Generator](https://civitai.com/generate)**, as Model Mode: **Pro**.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/Pro-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Pro (legacy)</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Pro-1024x701.webp" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Pro (legacy)</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
 -   **Flux.1 \[Dev\]** – Dev is an open-weight, distilled, model for non-commercial applications. Distilled from Flux.1 \[Pro\], it provides similar quality and prompt-adherence capabilities while being more efficient; we can run it locally on consumer hardware. Flux.1 \[Dev\] is released under the [Flux.1 Dev Non Commercial License](https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev). Flux.1 \[Dev\] **is available for use via the [Civitai on-site Generator](https://civitai.com/generate),** as Model Mode: **Standard**. [Model Weights can be dow](https://civitai.com/models/618692?modelVersionId=691639)[nloade](https://civitai.com/models/618692?modelVersionId=691639)[d from Civitai here](https://civitai.com/models/618692?modelVersionId=691639).
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/Dev-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Dev</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Dev-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Dev</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
 -   **Flux.1 \[Schnell\]** – Schnell (German for “fast”), is the equivalent of an SDXL Lightning model; fast low step-count generations at the expense of some image fidelity. Flux.1 \[Schnell\] is released under the [Apache-2.0 License](https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-schnell). Flux.1 \[Schnell\] **is available for use via the [Civitai on-site Generator](https://civitai.com/generate)**, as Model Mode: **Draft**. [Model Weights can be downloaded from Civitai here](https://civitai.com/models/618692?modelVersionId=699279).
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/schnell-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Schnell</strong>, generated on-site at Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/schnell-1024x701.jpeg" alt="" width="1024" height="701" loading="lazy"><figcaption><em><strong>Flux Schnell</strong>, generated on-site at Civitai.com</em></figcaption></figure>
 
 ## How does Flux Perform? What does it look like?
 
 How does Flux perform? In a word; phenomenally. Described by many in the Community as “the model we’ve been waiting for”, after the disappointment of **SD3**, Flux has been warmly received. Image fidelity, prompt adherence, and overall image quality are exceptional, setting a new standard in the text2img landscape.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/big_comp-7-1280x896-1-1024x717.png" alt="" width="1024" height="717" loading="lazy"><figcaption><em>ELO scored chart showing model performance ranked against similar models, <a href="https://blackforestlabs.ai/announcing-black-forest-labs/">source: Black Forest Labs</a></em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/big_comp-7-1280x896-1-1024x717.webp" alt="" width="1024" height="717" loading="lazy"><figcaption><em>ELO scored chart showing model performance ranked against similar models, <a href="https://blackforestlabs.ai/announcing-black-forest-labs/">source: Black Forest Labs</a></em></figcaption></figure>
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00073_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00073_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00142_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00142_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00115_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00115_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00183_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00183_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00152_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00152_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00096_-1024x701.png" alt="Flux on Civitai!" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png" width="1216" height="832" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00073_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00073_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00142_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00142_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00115_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00115_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00183_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00183_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00152_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00152_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/MarkuryFLUX_00096_-1024x701.webp" alt="Flux on Civitai!" data-orig-file="/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png" width="1216" height="832" loading="lazy"></div>
 
 ## How do I make images with Flux?
 
@@ -86,15 +86,15 @@ To get started, pop open the [Image](https://civitai.com/generate) [Gen](https:/
 
 From here you’ll be able to select a Model Mode; **Draft**, **Standard**, **Pro**, **Pro 1.1**, and **Ultra**. _Pro, Pro 1.1, and Ultra are API-only models and will yield the best results, for a price!_
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/flux_gen_options.png" alt="" width="626" height="285" loading="lazy"><figcaption><em>Draft (Flux Schnell), Standard (Flux Dev), Pro (Flux Pro, 1.1, Ultra) pre-set</em> <em>options</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/flux_gen_options.webp" alt="" width="626" height="285" loading="lazy"><figcaption><em>Draft (Flux Schnell), Standard (Flux Dev), Pro (Flux Pro, 1.1, Ultra) pre-set</em> <em>options</em></figcaption></figure>
 
 You’ll notice that the **Advanced Settings** for Flux are more limited than for SD1.5, SDXL or Pony Models.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-114535-1.png" alt="" width="719" height="282" loading="lazy"><figcaption><em>Flux Advanced Options</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-15-114535-1.webp" alt="" width="719" height="282" loading="lazy"><figcaption><em>Flux Advanced Options</em></figcaption></figure>
 
 There aren’t many settings which need to be tweaked to make great Flux images, but we’ll expand these options for power users in future!
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/WE4CH530QW0DE86Q7H00GC0DP0-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/WE4CH530QW0DE86Q7H00GC0DP0.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ZG3FA92K5YMJYXZ55CD1X5SBR0-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ZG3FA92K5YMJYXZ55CD1X5SBR0.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/55YW8SBQRP77TJ4SQ1K2HM2AH0-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/55YW8SBQRP77TJ4SQ1K2HM2AH0.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ZTD9NQ606SNH44CA2M4F2JKFX0-1024x701.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ZTD9NQ606SNH44CA2M4F2JKFX0.jpg" width="1216" height="832" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/2XHQGGR97TEZ05DYCBYWPPW400-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/2XHQGGR97TEZ05DYCBYWPPW400.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ZMMK3EQ0DA1BEFQ0JPDYBYZ8H0-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ZMMK3EQ0DA1BEFQ0JPDYBYZ8H0.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/D08QFCCHKVD06HFWJZ5RC56CW0-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/D08QFCCHKVD06HFWJZ5RC56CW0.jpg" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/8QHHA5SKZ0ZXJKQGFXPTD2V300-701x1024.jpg" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/8QHHA5SKZ0ZXJKQGFXPTD2V300.jpg" width="832" height="1216" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2024/08/WE4CH530QW0DE86Q7H00GC0DP0-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/WE4CH530QW0DE86Q7H00GC0DP0.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ZG3FA92K5YMJYXZ55CD1X5SBR0-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/ZG3FA92K5YMJYXZ55CD1X5SBR0.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/55YW8SBQRP77TJ4SQ1K2HM2AH0-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/55YW8SBQRP77TJ4SQ1K2HM2AH0.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ZTD9NQ606SNH44CA2M4F2JKFX0-1024x701.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/ZTD9NQ606SNH44CA2M4F2JKFX0.webp" width="1216" height="832" loading="lazy"><img src="/wp-content/uploads/2024/08/2XHQGGR97TEZ05DYCBYWPPW400-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/2XHQGGR97TEZ05DYCBYWPPW400.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ZMMK3EQ0DA1BEFQ0JPDYBYZ8H0-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/ZMMK3EQ0DA1BEFQ0JPDYBYZ8H0.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/D08QFCCHKVD06HFWJZ5RC56CW0-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/D08QFCCHKVD06HFWJZ5RC56CW0.webp" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/8QHHA5SKZ0ZXJKQGFXPTD2V300-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/08/8QHHA5SKZ0ZXJKQGFXPTD2V300.webp" width="832" height="1216" loading="lazy"></div>
 
 _Images Generated on-site with Flux, Dev and Pro_
 
@@ -152,9 +152,9 @@ Creator [Kijai](https://huggingface.co/Kijai) has released compressed fp8 versio
 
 You’ll also need a basic text-to-image workflow to get started. The download link below provides a straightforward setup with some solid pre-set options.
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/civitai_workflow-1024x423.png)
+![](/wp-content/uploads/2024/08/civitai_workflow-1024x423.webp)
 
-[civitai\_flux\_t2i\_workflow](http://education.civitai.com//wp-content/uploads/2024/08/civitai_flux_t2i_workflow.zip)
+[civitai\_flux\_t2i\_workflow](/wp-content/uploads/2024/08/civitai_flux_t2i_workflow.zip)
 
 ### Forge
 
@@ -164,7 +164,7 @@ Forge can support the original Flux models, and text encoders, as listed above f
 
 To use the full models and text encoders, there are new fields in which the models and encoders can be loaded;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/357418265-d76ad56c-f871-47a3-8dfb-13b331b45af1.png)
+![](/wp-content/uploads/2024/08/357418265-d76ad56c-f871-47a3-8dfb-13b331b45af1.webp)
 
 Forge creator, [Illyasviel](https://huggingface.co/lllyasviel), has released a “compressed” NF4 model ~~which is currently the recommended way to use Flux with Forge~~ (See Quantized models, below); “_NF4 is significantly faster than FP8 on 6GB/8GB/12GB devices and slightly faster for >16GB vram devices. For GPUs with 6GB/8GB VRAM, the speed-up is about 1.3x to 2.5x (pytorch 2.4, cuda 12.4) or about 1.3x to 4x (pytorch 2.1, cuda 12.1)_“
 
@@ -192,13 +192,13 @@ There are now a range of “GGUF” ([Georgi Gerganov’s Unified Format](https:
 
 Note that the GGUF models can be used with the ComfyUI-GGUF [custom node](https://github.com/city96/ComfyUI-GGUF). A Civitai created sample workflow can be found below. [Use the ComfyUI manager](https://github.com/ltdrdata/ComfyUI-Manager) to detect and install missing nodes in your ComfyUI installation.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-1024x621.png" alt="ComfyUI GGUF workflow" width="1024" height="621" loading="lazy"><figcaption><em>Simple GGUF Flux Workflow</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-1024x621.webp" alt="ComfyUI GGUF workflow" width="1024" height="621" loading="lazy"><figcaption><em>Simple GGUF Flux Workflow</em></figcaption></figure>
 
-[Flux GGUF text2img Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow.zip)
+[Flux GGUF text2img Workflow](/wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow.zip)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-with-Upscale-1024x432.png" alt="" width="1024" height="432" loading="lazy"><figcaption><em>Simple GGUF Flux Workflow – With optional Upscaling</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-with-Upscale-1024x432.webp" alt="" width="1024" height="432" loading="lazy"><figcaption><em>Simple GGUF Flux Workflow – With optional Upscaling</em></figcaption></figure>
 
-[Flux GGUF text2img Workflow With Upscale](http://education.civitai.com//wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-With-Upscale.zip)
+[Flux GGUF text2img Workflow With Upscale](/wp-content/uploads/2024/08/Flux-GGUF-text2img-Workflow-With-Upscale.zip)
 
 ## Flux Prompting {#how-do-i-make-images}
 
@@ -216,7 +216,7 @@ Prompt: _intricate detail, (standing stone:1.3) carved with (glowing blue text:1
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00569_-701x1024.png)
+![](/wp-content/uploads/2024/08/MarkuryFLUX_00569_-701x1024.webp)
 
 </div>
 
@@ -232,7 +232,7 @@ Prompt: _Ultra high quality, very detailed, A mysterious fog-shrouded landscape 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/MarkuryFLUX_00579_-701x1024.png)
+![](/wp-content/uploads/2024/08/MarkuryFLUX_00579_-701x1024.webp)
 
 </div>
 
@@ -254,7 +254,7 @@ The following licenses apply to the three Flux variants;
 
 Flux LoRA training is available on-site!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-144705.png" alt="" width="693" height="264" loading="lazy"><figcaption><em>Flux Dev Base Model for LoRA Training</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-15-144705.webp" alt="" width="693" height="264" loading="lazy"><figcaption><em>Flux Dev Base Model for LoRA Training</em></figcaption></figure>
 
 Here are some tips and tricks we’ve found during testing Flux training on-site;
 
@@ -274,7 +274,7 @@ Here are some tips and tricks we’ve found during testing Flux training on-site
 
 With a data set of ~30 portrait photos, an excellent, flexible, likeness LoRA can be trained (_subject, one of our [on-site Moderators](https://civitai.com/user/LochKesMonster), reproduced here with permission_).
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/image-1024x262.png" alt="" width="1024" height="262" loading="lazy"><figcaption><em>Example of good input Images; a range of expressions, poses, lighting, backgrounds, etc.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/image-1024x262.webp" alt="" width="1024" height="262" loading="lazy"><figcaption><em>Example of good input Images; a range of expressions, poses, lighting, backgrounds, etc.</em></figcaption></figure>
 
 Captioned with the [on-site Trainer’s Natural Langua](/using-civitai-the-on-site-lora-trainer/#captioning-managing-image-captions)[ge ca](/using-civitai-the-on-site-lora-trainer/#captioning-managing-image-captions)[ptioning tool](/using-civitai-the-on-site-lora-trainer/#captioning-managing-image-captions), and trained with _**default Flux settings**_, changed only to increase **repeats (10)** and **Epochs (12)**, decrease **Batch Size (2)**, and aim for a **Target Steps of 1560**.
 
@@ -314,7 +314,7 @@ Settings changed from Default shown in **bold**;
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-09-11-013500.png" alt="" width="669" height="744" loading="lazy"><figcaption><em>Output Epochs #9 and #10</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-09-11-013500.webp" alt="" width="669" height="744" loading="lazy"><figcaption><em>Output Epochs #9 and #10</em></figcaption></figure>
 
 </div>
 
@@ -322,7 +322,7 @@ Settings changed from Default shown in **bold**;
 
 After testing, **Epoch #6** offered an excellent balance of **likeness capture**, **fidelity**, and **flexibility of prompting**. Example images below (25 steps, 3.5 Guidance);
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01472_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01472_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01463_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01463_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01479_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01479_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01452_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01452_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01449_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01449_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01487_-701x1024.png" alt="Flux likeness capture LoRA output" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01487_.png" width="832" height="1216" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2024/08/ComfyUI_01472_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01472_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01463_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01463_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01479_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01479_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01452_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01452_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01449_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01449_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01487_-701x1024.webp" alt="Flux likeness capture LoRA output" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01487_.png" width="832" height="1216" loading="lazy"></div>
 
 **Remember**! LoRAs trained on images of real people _cannot be hosted on Civitai_. Please see our [Content Policies](https://civitai.com/safety#content-policies) for more information.
 
@@ -332,19 +332,19 @@ Phenomenal examples of Flux LoRA’s trained with the [Civitai on-site LoRA Trai
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/553752/mosaic-sd-15-sdxl-pony-flux?modelVersionId=778704"><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_00006_-1024x1024.png" alt="Mosaic (SD 1.5, SDXL, Pony, Flux)" width="1024" height="1024" loading="lazy"></a><figcaption><em>Mosaic (Flux)</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/553752/mosaic-sd-15-sdxl-pony-flux?modelVersionId=778704"><img src="/wp-content/uploads/2024/08/ComfyUI_00006_-1024x1024.webp" alt="Mosaic (SD 1.5, SDXL, Pony, Flux)" width="1024" height="1024" loading="lazy"></a><figcaption><em>Mosaic (Flux)</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/683579/pixel-art-illustrations-flux?modelVersionId=765098"><img src="http://education.civitai.com//wp-content/uploads/2024/08/D7CSZVKNZHVY2738VXM2C9YZZ0.jpeg" alt="Pixel Art Illustrations FLUX" width="1024" height="1024" loading="lazy"></a><figcaption><em>Pixel Art Illustrations FLUX</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/683579/pixel-art-illustrations-flux?modelVersionId=765098"><img src="/wp-content/uploads/2024/08/D7CSZVKNZHVY2738VXM2C9YZZ0.webp" alt="Pixel Art Illustrations FLUX" width="1024" height="1024" loading="lazy"></a><figcaption><em>Pixel Art Illustrations FLUX</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/551903/ars-midjourney-watercolor-sd-15-sdxl-pony-flux?modelVersionId=742802"><img src="http://education.civitai.com//wp-content/uploads/2024/08/1000072661-768x1024.png" alt="Ars MidJourney Watercolor (SD 1.5, SDXL, Pony, Flux)" width="768" height="1024" loading="lazy"></a><figcaption><em>Ars MidJourney Watercolor (Flux)</em><br></figcaption></figure>
+<figure><a href="https://civitai.com/models/551903/ars-midjourney-watercolor-sd-15-sdxl-pony-flux?modelVersionId=742802"><img src="/wp-content/uploads/2024/08/1000072661-768x1024.webp" alt="Ars MidJourney Watercolor (SD 1.5, SDXL, Pony, Flux)" width="768" height="1024" loading="lazy"></a><figcaption><em>Ars MidJourney Watercolor (Flux)</em><br></figcaption></figure>
 
 </div>
 
@@ -354,19 +354,19 @@ Phenomenal examples of Flux LoRA’s trained with the [Civitai on-site LoRA Trai
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/545264/impressionism-sdxl-pony-flux?modelVersionId=755598"><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_00093_-768x1024.png" alt="Impressionism (SDXL, Pony, Flux)" width="768" height="1024" loading="lazy"></a><figcaption><em>Impressionism (Flux)</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/545264/impressionism-sdxl-pony-flux?modelVersionId=755598"><img src="/wp-content/uploads/2024/08/ComfyUI_00093_-768x1024.webp" alt="Impressionism (SDXL, Pony, Flux)" width="768" height="1024" loading="lazy"></a><figcaption><em>Impressionism (Flux)</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/684720/mastering-manicure-a-visual-guide-to-nail-art-techniques?modelVersionId=766350"><img src="http://education.civitai.com//wp-content/uploads/2024/08/image011-796x1024.png" alt="Mastering Manicure: A Visual Guide to Nail Art Techniques" width="796" height="1024" loading="lazy"></a><figcaption><em>Mastering Manicure: A Visual Guide to Nail Art Techniques</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/684720/mastering-manicure-a-visual-guide-to-nail-art-techniques?modelVersionId=766350"><img src="/wp-content/uploads/2024/08/image011-796x1024.webp" alt="Mastering Manicure: A Visual Guide to Nail Art Techniques" width="796" height="1024" loading="lazy"></a><figcaption><em>Mastering Manicure: A Visual Guide to Nail Art Techniques</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/719041/tangbohu-wool-kintted-style-flux?modelVersionId=804021"><img src="http://education.civitai.com//wp-content/uploads/2024/08/tangbohu_wool_style_FLUX_e000010_00_20240904143954.png" alt="Tangbohu wool knitted style [FLUX]" width="512" height="512" loading="lazy"></a><figcaption><em>Tangbohu wool knitted style</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/719041/tangbohu-wool-kintted-style-flux?modelVersionId=804021"><img src="/wp-content/uploads/2024/08/tangbohu_wool_style_FLUX_e000010_00_20240904143954.webp" alt="Tangbohu wool knitted style [FLUX]" width="512" height="512" loading="lazy"></a><figcaption><em>Tangbohu wool knitted style</em></figcaption></figure>
 
 </div>
 
@@ -376,7 +376,7 @@ Phenomenal examples of Flux LoRA’s trained with the [Civitai on-site LoRA Trai
 
 We’re offering **Rapid Flux Training** – LoRAs trained in _under 5 minutes_! To enable this, simply check the **Rapid Training** toggle after selecting Flux Dev as the Base model;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-09-12-172216.png)
+![](/wp-content/uploads/2024/08/Screenshot-2024-09-12-172216.webp)
 
 Rapid Training _**does not accept custom Training Parameters**_, and outputs a **single LoRA file (one Epoch)** when training is complete.
 
@@ -386,7 +386,7 @@ Using the same data set as the likeness capture example, above, a LoRA was train
 
 The following images demonstrate the fidelity of the output (compare to those from the “traditionally trained” LoRA, above);
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01803_-701x1024.png" alt="Rapid Flux Trained LoRA" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01803_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01805_-701x1024.png" alt="Rapid Flux Trained LoRA" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01805_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/08/ComfyUI_01809_-701x1024.png" alt="Rapid Flux Trained LoRA" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_01809_.png" width="832" height="1216" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2024/08/ComfyUI_01803_-701x1024.webp" alt="Rapid Flux Trained LoRA" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01803_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01805_-701x1024.webp" alt="Rapid Flux Trained LoRA" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01805_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_01809_-701x1024.webp" alt="Rapid Flux Trained LoRA" data-orig-file="/wp-content/uploads/2024/08/ComfyUI_01809_.png" width="832" height="1216" loading="lazy"></div>
 
 ## Flux ControlNets?
 
@@ -403,13 +403,13 @@ Yes! The first Flux ControlNet models are appearing and can be used in ComfyUI! 
 
 Below are simple Civitai-created ControlNet workflows based upon the XLabs ControlNet models;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Depth-Controlnet-1-1024x411.png)
+![](/wp-content/uploads/2024/08/Flux-Depth-Controlnet-1-1024x411.webp)
 
-[Flux Depth Controlnet Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Depth-Controlnet-Workflow-1.zip)
+[Flux Depth Controlnet Workflow](/wp-content/uploads/2024/08/Flux-Depth-Controlnet-Workflow-1.zip)
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Flux-IP-Adapter-Workflow-1024x411.png)
+![](/wp-content/uploads/2024/08/Flux-IP-Adapter-Workflow-1024x411.webp)
 
-[Flux IP Adapter Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-IP-Adapter-Workflow.zip)
+[Flux IP Adapter Workflow](/wp-content/uploads/2024/08/Flux-IP-Adapter-Workflow.zip)
 
 ### Train Flux locally with Kohya and X-Flux
 
@@ -419,7 +419,7 @@ To train a LoRA against the Flux Dev model, you’ll need an **NVIDIA RTX3000** 
 
 Even more impressively, according to reports from the Kohya GitHub repository, full BF16 finetuning (without the need for quantization or fp8) can be achieved with just 24GB of VRAM. This development marks a significant breakthrough, making advanced training more accessible than ever before;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/zz75ars20iid1-1024x403.png" alt="" width="1024" height="403" loading="lazy"><figcaption>Source: <a href="https://github.com/kohya-ss/sd-scripts/pull/1374#issuecomment-2287134623" target="_blank" rel="noreferrer noopener">Kohya-ss Github Discussion</a></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/zz75ars20iid1-1024x403.webp" alt="" width="1024" height="403" loading="lazy"><figcaption>Source: <a href="https://github.com/kohya-ss/sd-scripts/pull/1374#issuecomment-2287134623" target="_blank" rel="noreferrer noopener">Kohya-ss Github Discussion</a></figcaption></figure>
 
 The Flux landscape is rapidly evolving, with tens of GitHub commits daily as new features and improvements are discovered and implemented, so stay tuned for more updates!
 
@@ -448,23 +448,23 @@ _The workflows below have been updated with input from Civitai Creator **diogod*
 
 _Additionally, we’ve added a **GrowMaskWithBlur** node which requires a third-party node pack – you can install missing nodes from the ComfyUI manager – which will ensure the painted mask is feathered to blend with the original image._
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-11-27-101431-1024x160.png)
+![](/wp-content/uploads/2024/08/Screenshot-2024-11-27-101431-1024x160.webp)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-11-21-223606-1024x583.png" alt="" width="1024" height="583" loading="lazy"><figcaption><em>ComfyUI Mask Editor, inpainting a specific detail of a Flux image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-11-21-223606-1024x583.webp" alt="" width="1024" height="583" loading="lazy"><figcaption><em>ComfyUI Mask Editor, inpainting a specific detail of a Flux image</em></figcaption></figure>
 
-<div data-embed="image-compare" data-mode="horizontal"><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04378_.png" alt="before" width="832" height="1216" data-role="before" loading="lazy"><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04452_.png" alt="after" width="832" height="1216" data-role="after" loading="lazy"><figcaption>Caption for masked area; cocktail drink umbrella</figcaption></div>
+<div data-embed="image-compare" data-mode="horizontal"><img src="/wp-content/uploads/2024/08/ComfyUI_04378_.png" alt="before" width="832" height="1216" data-role="before" loading="lazy"><img src="/wp-content/uploads/2024/08/ComfyUI_04452_.png" alt="after" width="832" height="1216" data-role="after" loading="lazy"><figcaption>Caption for masked area; cocktail drink umbrella</figcaption></div>
 
 Example ComfyUI Flux Fill Inpainting workflow;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/inpainting_workflow-1024x580.png)
+![](/wp-content/uploads/2024/08/inpainting_workflow-1024x580.webp)
 
-[Flux Inpainting v2](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Inpainting-v2.zip)
+[Flux Inpainting v2](/wp-content/uploads/2024/08/Flux-Inpainting-v2.zip)
 
 Example ComfyUI Flux Fill Outpainting workflow;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/outpainting_workflow-1024x588.png)
+![](/wp-content/uploads/2024/08/outpainting_workflow-1024x588.webp)
 
-[Flux Outpainting v2](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Outpainting-v2.zip)
+[Flux Outpainting v2](/wp-content/uploads/2024/08/Flux-Outpainting-v2.zip)
 
 ## Flux.1 Redux {#flux-1-redux}
 
@@ -476,13 +476,13 @@ Redux is excellent at creating image variations, and can be chained to combine d
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04452_-1-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_04452_-1-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original image</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04458_-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Flux Redux variation</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_04458_-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Flux Redux variation</em></figcaption></figure>
 
 </div>
 
@@ -490,9 +490,9 @@ Redux is excellent at creating image variations, and can be chained to combine d
 
 Example ComfyUI Flux Redux workflow;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/redux_workflow-1024x896.png)
+![](/wp-content/uploads/2024/08/redux_workflow-1024x896.webp)
 
-[Flux Redux Basic Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Redux-Basic-Workflow.zip)
+[Flux Redux Basic Workflow](/wp-content/uploads/2024/08/Flux-Redux-Basic-Workflow.zip)
 
 ## Flux Depth & Canny “ControlNet” Models {#flux-depth-canny-controlnet-models}
 
@@ -504,53 +504,53 @@ Flux Tools includes two “ControlNet” like models, [Canny](https://civitai.co
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04370_-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original Image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_04370_-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original Image</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_temp_fgqpb_00003_-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Canny Mask</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_temp_fgqpb_00003_-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Canny Mask</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/FluxCanny_00005_-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Output Image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/FluxCanny_00005_-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Output Image</em></figcaption></figure>
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/canny_workflow-1024x443.png)
+![](/wp-content/uploads/2024/08/canny_workflow-1024x443.webp)
 
-[Flux Canny Basic Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Canny-Basic-Workflow.zip)
+[Flux Canny Basic Workflow](/wp-content/uploads/2024/08/Flux-Canny-Basic-Workflow.zip)
 
 <div class="columns va-center">
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_04370_-1-701x1024.png" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original Image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_04370_-1-701x1024.webp" alt="" width="701" height="1024" loading="lazy"><figcaption><em>Original Image</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/ComfyUI_temp_fgqpb_00002_.png" alt="" width="512" height="748" loading="lazy"><figcaption><em>MiDAS Depth mask</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_temp_fgqpb_00002_.png" alt="" width="512" height="748" loading="lazy"><figcaption><em>MiDAS Depth mask</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/FluxCanny_00004_.png" alt="" width="512" height="744" loading="lazy"><figcaption><em>Output Image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/FluxCanny_00004_.png" alt="" width="512" height="744" loading="lazy"><figcaption><em>Output Image</em></figcaption></figure>
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/workflow-1-1024x443.png)
+![](/wp-content/uploads/2024/08/workflow-1-1024x443.webp)
 
-[Flux Depth Basic Workflow](http://education.civitai.com//wp-content/uploads/2024/08/Flux-Depth-Basic-Workflow.zip)
+[Flux Depth Basic Workflow](/wp-content/uploads/2024/08/Flux-Depth-Basic-Workflow.zip)
 
 ## Flux.1 Kontext {#flux-1-kontext}
 
@@ -564,7 +564,7 @@ There are three Flux Kontext models – two of which can be used on Civitai’s 
 
 -   **FLUX.1 Kontext \[dev\]** – A 12B parameter open-source version, suitable for local research usage.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/teaser-1024x732.png" alt="" width="1024" height="732" loading="lazy"><figcaption><em>Flux Kontext usage examples</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/teaser-1024x732.webp" alt="" width="1024" height="732" loading="lazy"><figcaption><em>Flux Kontext usage examples</em></figcaption></figure>
 
 ### Using Flux.1 Kontext on Civitai {#any-other-details}
 
@@ -584,7 +584,7 @@ Use natural language in the Prompt box, to describe changes you’d like to see 
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2024/08/Screenshot-2025-07-30-191001.png)
+![](/wp-content/uploads/2024/08/Screenshot-2025-07-30-191001.webp)
 
 </div>
 
@@ -594,19 +594,19 @@ Use natural language in the Prompt box, to describe changes you’d like to see 
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/ComfyUI_00168_-683x1024.png" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Original/input image</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/ComfyUI_00168_-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Original/input image</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/306276a3-f964-4fed-afca-977034327eb3-0-683x1024.jpg" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Variation 1 – “Give the subject a dark green tartan plaid dress”</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/306276a3-f964-4fed-afca-977034327eb3-0-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Variation 1 – “Give the subject a dark green tartan plaid dress”</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/08/a05f0ac9-a398-46a3-861c-ef7b7870e950-0-683x1024.jpg" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Variation 2 – “Change the woman’s dress into a white swimsuit, change the background to a tropical beach scene</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/a05f0ac9-a398-46a3-861c-ef7b7870e950-0-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Variation 2 – “Change the woman’s dress into a white swimsuit, change the background to a tropical beach scene</em></figcaption></figure>
 
 </div>
 

@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5216
 excerpt: "In this video, we walk through the popular workflow by IPIV called MORPH. This workflow interpolates multiple images from IPAdapters and seamlessly blends the animation together using black and white looping masks."
-image: "https://education.civitai.com/wp-content/uploads/2024/09/MORPH-STREAM.png"
+image: "/wp-content/uploads/2024/09/MORPH-STREAM.webp"
 seo:
   title: "Amazing AI Animations using MORPH - Civitai Education"
   description: "In this video, we walk through the popular workflow by IPIV called MORPH. This workflow interpolates multiple images from IPAdapters."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/09/MORPH-STREAM.png"
+  ogImage: "/wp-content/uploads/2024/09/MORPH-STREAM.webp"
   canonical: "https://education.civitai.com/amazing-ai-animations-using-morph/"
 ---
 

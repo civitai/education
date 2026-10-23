@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 6644
 excerpt: "Civitai guide to contributing to the Civitai.com Project!"
-image: "https://education.civitai.com/wp-content/uploads/2025/02/localdev_anim.webp"
+image: "/wp-content/uploads/2025/02/localdev_anim.webp"
 seo:
   title: "Civitai's Guide to Local Civitai Development - Civitai Education"
   description: "Civitai guide to contributing to the Civitai.com Project! Are you a developer who wants to volunteer some time? Help us out!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/02/localdev_anim.webp"
+  ogImage: "/wp-content/uploads/2025/02/localdev_anim.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-local-civitai-development/"
 ---
 
@@ -77,7 +77,7 @@ Before you begin, make sure you have the necessary tools installed:
 
 <div class="column" style="flex-basis:66.66%">
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-191435-1024x626.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-191435-1024x626.webp)
 
 </div>
 
@@ -95,7 +95,7 @@ Using Github (Desktop, or Command Line, whichever your preference), clone the [C
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-191412.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-191412.webp)
 
 </div>
 
@@ -123,7 +123,7 @@ For other IDEs, you may need to open the `**.devcontainer/devcontainer.json**`�
 
 <div class="column" style="flex-basis:66.66%">
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-193812.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-193812.webp)
 
 </div>
 
@@ -137,22 +137,22 @@ After **reopening in Container**, several things will happen;
 -   Npm packages will be installed
 -   Docker containers will be configured and spun up;
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-194057-1024x754.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-194057-1024x754.webp)
 
 -   Additional database migrations will occur
 -   Dummy seed data will be inserted;
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-194113-1024x344.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-194113-1024x344.webp)
 
 -   Metrics and meilisearch will be populated;
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-194122-1024x351.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-194122-1024x351.webp)
 
 -   Prisma will initialize
 
 Open a new terminal and run `**make run**` or `**npm run dev**` to start the server;
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-195503-1024x159.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-195503-1024x159.webp)
 
 #### Final Configuration
 
@@ -160,7 +160,7 @@ Edit the `**.env.development**` file
 
 _Most_ default values are configured to work out of the box, except the S3 upload key and secret. To generate those, navigate to the minio web interface at [http://localhost:9000](http://localhost:9000/) with the default username and password `**minioadmin**`, then navigate to the “Access Keys” tab. Click “Create Access Key” and copy the generated key and secret into the `**.env**` file.
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-200811-1024x492.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-200811-1024x492.webp)
 
 Set `**WEBHOOK_TOKEN**` to a random string of your choice. This will be used to authenticate requests to the webhook endpoint.
 
@@ -172,19 +172,19 @@ Add a random string of your choice to the email properties to allow user registr
 
 **`EMAIL_FROM`** (Valid email format needed)
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-201054-1024x270.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-201054-1024x270.webp)
 
 #### It’s Alive! {#it-s-alive}
 
 Congratulations, your very own local Civitai.com, running at **localhost:3000**
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-195818-1024x751.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-195818-1024x751.webp)
 
 #### Signing In
 
 Account creation will run emails through maildev, which can be accessed at [http://localhost:1080](http://localhost:1080/)
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-13-201426-1024x297.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-13-201426-1024x297.webp)
 
 #### Altering Your User
 
@@ -233,6 +233,6 @@ Certain systems will not function in a local environment, including;
 
 -   After certain updates on the main branch, you may be required to run **`npm install`** to update packages and dependencies. Give that a go if you’re seeing build errors, such as the following, when trying to launch the site;
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-20-121334.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-20-121334.webp)
 
 -   You will have to add `**NEXT_PUBLIC_SIGNALS_ENDPOINT=localhost:3000**` to the `env.development` file.

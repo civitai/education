@@ -13,10 +13,10 @@ tags:
 author: "civitai"
 wpId: 6977
 excerpt: "We’ve just launched Hunyuan and Wan 2.1 for on-site video generation – both with LoRA support for more customizable results. Try them out and bring your prompts to life in a whole new way!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
 seo:
   title: "Hunyuan & Wan2.1 Generation! - Civitai Education"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "https://education.civitai.com/hunyuan-wan2-1-generation/"
 ---
 

@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2171
 excerpt: "What is “Generative AI”, and how does Stable Diffusion fit into it? How do I start making AI assisted Art? Learn how to get started with Civitai.com’s Beginner’s Guide!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/intro_anim.webp"
+image: "/wp-content/uploads/2023/09/intro_anim.webp"
 seo:
   title: "Start Making Generative AI Art - Civitai.com's 100% Beginner's Guide"
   description: "Start Making Generative AI Art art quickly and effectively with our concise beginner's guide, focusing on practical tools and techniques."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/intro_anim.webp"
+  ogImage: "/wp-content/uploads/2023/09/intro_anim.webp"
   canonical: "https://education.civitai.com/start-making-ai-art-with-civitai/"
 ---
 
@@ -61,7 +61,7 @@ Civitai.com entered the scene in November 2022 as a place for AI Creators to sha
 
 <div class="column">
 
-![No-to-AI Generated Images Logo](http://education.civitai.com//wp-content/uploads/2023/09/notoai-971x1024.jpg)
+![No-to-AI Generated Images Logo](/wp-content/uploads/2023/09/notoai-971x1024.webp)
 
 </div>
 
@@ -111,27 +111,27 @@ Don’t panic! [Civitai.com](https://www.civitai.com) has one of the [best on-si
 
 Check out some of our user-generated images, made on-site at [Civitai.com](https://www.civitai.com)!
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/C74273FA020FC790FCCFD27111900F6ACF6EDCB9610EB5EC3B1F8165CB7A0A64-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/C74273FA020FC790FCCFD27111900F6ACF6EDCB9610EB5EC3B1F8165CB7A0A64-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/A3CE92431BCB25784E23FD3F193038A7E6348ABE5B580C5F918A45BFDF222549-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/A3CE92431BCB25784E23FD3F193038A7E6348ABE5B580C5F918A45BFDF222549-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/23A0FB2A01E317435B7230A636151C162866EEB32ABD98040799169E1E764A01-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/23A0FB2A01E317435B7230A636151C162866EEB32ABD98040799169E1E764A01-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/4D5527A9A7CEFA894E75A9ADE3C1647891566F422653ABB00E7FAC4EAE3A5D8F-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/4D5527A9A7CEFA894E75A9ADE3C1647891566F422653ABB00E7FAC4EAE3A5D8F-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/EBD5C9DFA9910E5B700D5717FBD05ADC8A4D6CB609E53066BE25AF1CB63EF978-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/EBD5C9DFA9910E5B700D5717FBD05ADC8A4D6CB609E53066BE25AF1CB63EF978-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/93E5880A0D2DAD0FB366DA6FBB82D7E77ECABB63E4217828CAAFAF116162CCA7-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/93E5880A0D2DAD0FB366DA6FBB82D7E77ECABB63E4217828CAAFAF116162CCA7-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/54A11F4D391760BCDD16371EDCDA771B0CDA0AE90A9F342DCAF2EBDCCA210F90-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/54A11F4D391760BCDD16371EDCDA771B0CDA0AE90A9F342DCAF2EBDCCA210F90-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/DF46E14D96F277CC3613340A631EF229B81301AFAB65C44F188A9053E42882AB-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/DF46E14D96F277CC3613340A631EF229B81301AFAB65C44F188A9053E42882AB-701x1024.webp)
 
-![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](http://education.civitai.com/wp-content/uploads/2023/09/36FK65VV7NSW4CVGX0NE47B780-701x1024.jpeg)
+![Start Making Generative AI Art with Civitai! This image was made using Civitai's on-site Image Generator](/wp-content/uploads/2023/09/36FK65VV7NSW4CVGX0NE47B780-701x1024.webp)
 
 Unlike all the other web-based services out there, we have direct access to the largest repository of Models and additional resources with which to build your images. Getting started with the Civitai Generator is extremely simple, [we have a detailed guide to walk you through the process](/using-civitai-the-on-site-image-generator/), and a [Discord Community](https://discord.gg/civitai) of almost 100,000 AI art enthusiasts, eager to share their image prompting knowledge, tips and tricks!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-07-20-002957-1024x479.png" alt="An example of the Civitai Image Generator in use! You too can start making Generative AI art just like this with the Civitai Generator!" width="1024" height="479" loading="lazy"><figcaption><em>An example of the <a href="https://civitai.com/generate">Civitai Image Generator</a> in use</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/Screenshot-2024-07-20-002957-1024x479.webp" alt="An example of the Civitai Image Generator in use! You too can start making Generative AI art just like this with the Civitai Generator!" width="1024" height="479" loading="lazy"><figcaption><em>An example of the <a href="https://civitai.com/generate">Civitai Image Generator</a> in use</em></figcaption></figure>
 
 ### To run on your own PC – Local Interfaces {#to-run-on-your-own-pc-local-interfaces}
 
@@ -187,9 +187,9 @@ Custom models, models “trained” with new images to produce stunning styles a
 
 **You are here!** Civitai is the _leading_ model repository for Stable Diffusion checkpoints, and other related Generative AI tools. There are tens of thousands of models to choose from, across many categories; something for everyone!
 
-![Start Making Generative AI Art - Choose from hundreds of thousands of resources on the Civitai Generator](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-07-20-105957-1-1024x369.png)
+![Start Making Generative AI Art - Choose from hundreds of thousands of resources on the Civitai Generator](/wp-content/uploads/2023/09/Screenshot-2024-07-20-105957-1-1024x369.webp)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-07-20-105840-1024x371.png" alt="Start Making Generative AI Art - Choose from hundreds of thousands of resources on the Civitai Generator" width="1024" height="371" loading="lazy"><figcaption>Start Making<em> Generative AI Art – Choose from hundreds of thousands of resources on the Civitai Generator</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/Screenshot-2024-07-20-105840-1024x371.webp" alt="Start Making Generative AI Art - Choose from hundreds of thousands of resources on the Civitai Generator" width="1024" height="371" loading="lazy"><figcaption>Start Making<em> Generative AI Art – Choose from hundreds of thousands of resources on the Civitai Generator</em></figcaption></figure>
 
 ## Other Generative AI Services? {#heading-79}
 

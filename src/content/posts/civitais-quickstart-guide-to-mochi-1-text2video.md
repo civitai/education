@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 5662
 excerpt: "Civitai’s Guide to getting started with Mochi 1 text2video!"
-image: "https://education.civitai.com/wp-content/uploads/2024/11/text2video.png"
+image: "/wp-content/uploads/2024/11/text2video.png"
 seo:
   title: "Civitai's Quickstart Guide to Mochi 1 text2video! - Civitai Education"
   description: "Civitai's Guide to getting started with Mochi 1 text2video! Start generating great videos on your local PC now!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/11/text2video.png"
+  ogImage: "/wp-content/uploads/2024/11/text2video.png"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-mochi-1-text2video/"
 ---
 
@@ -36,7 +36,7 @@ Mochi 1 preview, by creators [Genmo](https://www.genmo.ai/), is an open source, 
 
 This model dramatically closes the gap between closed and open video generation systems, and it’s released under the permissive Apache 2.0 license.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/11/mochi_rank-1024x562.png" alt="" width="1024" height="562" loading="lazy"><figcaption><em>Genmo’s Mochi 1 ranked at #2, based upon ELO scoring, HuggingFace <a href="https://huggingface.co/spaces/ArtificialAnalysis/Video-Generation-Arena-Leaderboard" target="_blank" rel="noreferrer noopener">Video Generation Arena Leaderboard</a></em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/11/mochi_rank-1024x562.webp" alt="" width="1024" height="562" loading="lazy"><figcaption><em>Genmo’s Mochi 1 ranked at #2, based upon ELO scoring, HuggingFace <a href="https://huggingface.co/spaces/ArtificialAnalysis/Video-Generation-Arena-Leaderboard" target="_blank" rel="noreferrer noopener">Video Generation Arena Leaderboard</a></em></figcaption></figure>
 
 Even better, we can now run it _**locally**_ on mid-tier consumer GPUs\*! A huge development from launch, when it required 3 x H100 GPUs to output results!
 
@@ -110,9 +110,9 @@ Getting started in ComfyUI is as simple as;
 
 #### Sample Workflow
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/workflow-1024x425.png)
+![](/wp-content/uploads/2024/11/workflow-1024x425.webp)
 
-[Mochi Basic Workflow for ComfyUI](http://education.civitai.com//wp-content/uploads/2024/11/Mochi_basic.zip)
+[Mochi Basic Workflow for ComfyUI](/wp-content/uploads/2024/11/Mochi_basic.zip)
 
 #### Low VRAM Options
 

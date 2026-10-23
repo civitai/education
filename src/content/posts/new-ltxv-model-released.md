@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 6834
 excerpt: "New LTXV version 0.9.5 released! Exceptional new features for text and image-to-image!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
 seo:
   title: "New LTXV Model Released! - Civitai Education"
   description: "New LTXV version 0.9.5 released! Exceptional new features for text and image-to-image! Check out our updated Guide!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "http://education.civitai.com/new-ltxv-model-released/"
 ---
 

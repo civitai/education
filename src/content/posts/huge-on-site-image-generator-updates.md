@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 4553
 excerpt: "Civitai Image Generator – now with img2img, ADetailer, Hires fix and upscaling!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/output_00069_.png"
+image: "/wp-content/uploads/2023/09/output_00069_.png"
 seo:
   title: "Huge on-site Image Generator Updates! - Civitai Education"
   description: "Civitai Image Generator - now with img2img, ADetailer, Hires fix and upscaling! Get into the Civitai Generator and start creating, now!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/output_00069_.png"
+  ogImage: "/wp-content/uploads/2023/09/output_00069_.png"
   canonical: "https://education.civitai.com/huge-on-site-image-generator-updates/"
 ---
 

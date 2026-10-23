@@ -8,7 +8,7 @@ wpId: 1143
 excerpt: "How to reach Civitai: support tickets, support@civitai.com, hello@civitai.com and Discord."
 seo:
   title: "Contact Us - Civitai Education"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/07/Screenshot-2024-07-19-150901.png"
+  ogImage: "/wp-content/uploads/2024/07/Screenshot-2024-07-19-150901.webp"
   canonical: "https://education.civitai.com/contact-us/"
 ---
 

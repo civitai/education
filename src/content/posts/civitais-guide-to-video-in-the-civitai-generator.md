@@ -16,11 +16,11 @@ tags:
 author: "civitai"
 wpId: 5642
 excerpt: "Civitai’s Guide to generating video content on the Civitai Generator!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
 seo:
   title: "Civitai's Guide to Video in the Civitai Generator! - Civitai Education"
   description: "Civitai's Guide to generating videos on the Civitai Image Generator! Generate beautiful text2video and img2video now!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-video-in-the-civitai-generator/"
 ---
 
@@ -166,13 +166,13 @@ Haiper.ai offer a range of helpful resources to ensure you get the most out of t
 
 <div class="column">
 
-[![](http://education.civitai.com//wp-content/uploads/2024/11/haipercharacter-1024x576.avif)](https://haiper.ai/blog/character-prompting)
+[![](/wp-content/uploads/2024/11/haipercharacter-1024x576.avif)](https://haiper.ai/blog/character-prompting)
 
 </div>
 
 <div class="column">
 
-[![](http://education.civitai.com//wp-content/uploads/2024/11/haiper101-1024x576.avif)](https://haiper.ai/blog/prompting-101)
+[![](/wp-content/uploads/2024/11/haiper101-1024x576.avif)](https://haiper.ai/blog/prompting-101)
 
 </div>
 
@@ -303,7 +303,7 @@ The image will be loaded into the la Image to Video interface, where a prompt ca
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2024/11/Screenshot-2025-08-27-184246.png)
+![](/wp-content/uploads/2024/11/Screenshot-2025-08-27-184246.webp)
 
 </div>
 
@@ -311,7 +311,7 @@ The image will be loaded into the la Image to Video interface, where a prompt ca
 
 There are multiple video tools with a capacity for **image to video** – when an image is loaded into the interface, you can select which you’d prefer to use from the dropdown list;
 
-![](http://education.civitai.com/wp-content/uploads/2024/11/Screenshot-2025-08-27-183853.png)
+![](/wp-content/uploads/2024/11/Screenshot-2025-08-27-183853.webp)
 
 ## Bring Your Own Image – Img2Video From Any Image! {#bring-your-own-image-img2video-from-any-image}
 
@@ -333,7 +333,7 @@ Note that when using BYOI, non-AI generated images, or AI images which we can’
 
 -   Terms of Service. While generating videos, you must adhere to Civitai’s standard [Terms of Service](https://civitai.com/safety). Additionally, please ensure you follow the Terms of Service specific to the tool you’re using for video generation.
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/bad.png)
+![](/wp-content/uploads/2024/11/bad.webp)
 
 -   Results. Video generation can be unpredictable – getting the perfect output may take a few tries, as each result can vary, widely. Please note that we cannot refund generations that _complete successfully_ but don’t meet your expectations.
 

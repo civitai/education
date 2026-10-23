@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 3041
 excerpt: "Civitai Guide to the Civitai Creators Program"
-image: "https://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00077_.png"
+image: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00077_.png"
 seo:
   title: "Civitai's Guide to the Civitai Creators Program - Civitai Education"
   description: "What was formerly Creator Clubs has evolved, via excellent community feedback, into the Civitai Creators Program."
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00077_.png"
+  ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00077_.png"
   canonical: "http://education.civitai.com/civitais-guide-to-clubs/"
 ---
 
@@ -36,7 +36,7 @@ seo:
 
 What was formerly **`Creator Clubs`** has evolved, via excellent community feedback, into the [Civitai Creators Program](https://civitai.com/creators-program).
 
-[![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-085811.png)](https://civitai.com/creators-program)
+[![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-085811.webp)](https://civitai.com/creators-program)
 
 ## How do I join the Creators Program
 

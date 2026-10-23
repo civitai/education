@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 2865
 excerpt: "Civitai guide to getting started with SDXL Turbo."
-image: "https://education.civitai.com/wp-content/uploads/2023/11/sdxl_turbo_gif.gif"
+image: "/wp-content/uploads/2023/11/sdxl_turbo_gif.webp"
 seo:
   title: "Quickstart Guide to SD(XL) Turbo - Civitai Education"
   description: "SDXL Turbo is a newly released (11/28/23) \"distilled\" version of SDXL 1.0, trained for, per Stability AI, \"real-time synthesis\"."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/11/sdxl_turbo_gif.gif"
+  ogImage: "/wp-content/uploads/2023/11/sdxl_turbo_gif.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-sdxl-turbo/"
 ---
 
@@ -48,13 +48,13 @@ More exciting than Stability’s base model are the developments coming from the
 
 <div class="column">
 
-![SDXL image quality comparison](http://education.civitai.com//wp-content/uploads/2023/11/image-1024x610.png)
+![SDXL image quality comparison](/wp-content/uploads/2023/11/image-1024x610.webp)
 
 </div>
 
 <div class="column">
 
-![sdxl prompt alignment comparison](http://education.civitai.com//wp-content/uploads/2023/11/image-1-1024x610.png)
+![sdxl prompt alignment comparison](/wp-content/uploads/2023/11/image-1-1024x610.webp)
 
 </div>
 
@@ -88,17 +88,17 @@ The following workflow is an extremely basic txt2img workflow, set up for SDXL T
 
 Note: if using **Automatic1111**, install the **AnimateDiff extension** which will add the LCM sampler.
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/SDXL_Turbo_Fast-1024x659.png)
+![](/wp-content/uploads/2023/11/SDXL_Turbo_Fast-1024x659.webp)
 
-[SDXL\_Turbo\_Fast](http://education.civitai.com//wp-content/uploads/2023/11/SDXL_Turbo_Fast.zip)
+[SDXL\_Turbo\_Fast](/wp-content/uploads/2023/11/SDXL_Turbo_Fast.zip)
 
 We can use Turbo in a variety of _**super-entertaining**_ ways, including incorporating [Creator ToyXYZ’s Webcam Capture nodes](https://github.com/toyxyz/ComfyUI_toyxyz_test_nodes/tree/main), to overpaint ourselves in near real-time;
 
 <div data-embed="videopress" data-src="https://videopress.com/embed/AECnIYo7?cover=1&amp;autoPlay=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="800" data-height="487"><figcaption><em>Webcam Capture + SDXL Turbo (RTX 4090)</em></figcaption></div>
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/Turbo-Webcam-1024x695.png)
+![](/wp-content/uploads/2023/12/Turbo-Webcam-1024x695.webp)
 
-[SDXL Turbo Webcam](http://education.civitai.com//wp-content/uploads/2023/11/SD-Turbo-Webcam.zip)
+[SDXL Turbo Webcam](/wp-content/uploads/2023/11/SD-Turbo-Webcam.zip)
 
 ## Output Examples
 
@@ -108,7 +108,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/1.png)
+![](/wp-content/uploads/2023/11/1.png)
 
 </div>
 
@@ -129,7 +129,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/2.png)
+![](/wp-content/uploads/2023/11/2.png)
 
 </div>
 
@@ -150,7 +150,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/4.png)
+![](/wp-content/uploads/2023/11/4.png)
 
 </div>
 
@@ -171,7 +171,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/5.png)
+![](/wp-content/uploads/2023/11/5.png)
 
 </div>
 
@@ -192,7 +192,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/6.png)
+![](/wp-content/uploads/2023/11/6.png)
 
 </div>
 
@@ -213,7 +213,7 @@ Below are a number of images generated using the SDXL Turbo base model, and [Tur
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/7.png)
+![](/wp-content/uploads/2023/11/7.png)
 
 </div>
 

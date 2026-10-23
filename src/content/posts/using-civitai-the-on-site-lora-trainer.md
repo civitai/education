@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 1619
 excerpt: "Explaining Civitai’s on-site LoRA training service! Train SD1.5, SDXL, and Flux LoRAs for use on Civitai.com or your own PC!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/lora_trainer_anim.webp"
+image: "/wp-content/uploads/2023/09/lora_trainer_anim.webp"
 seo:
   title: "Civitai's LoRA Trainer: Simplifying Model Training for All"
   description: "Discover how to effortlessly train your own LoRA models using our on-site LoRA Trainer, currently available in beta for Civitai Supporters."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/lora_trainer_anim.webp"
+  ogImage: "/wp-content/uploads/2023/09/lora_trainer_anim.webp"
   canonical: "https://education.civitai.com/using-civitai-the-on-site-lora-trainer/"
 ---
 
@@ -63,13 +63,13 @@ Note that LoRA training jobs with very high **Epochs** and **Repeats** will requ
 
 To access the trainer, click on the **blue Create icon** at the top right of the screen, as if you were going to upload new Content – you’ll see an option to **Train a model**.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-29-114953.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-29-114953.webp)
 
 ### Step 1 – Choosing a model type {#step-1-choosing-a-model-type}
 
 From here, the **Training Wizard** begins, starting with the initial page – the **Model Type Selection**;
 
-![](http://education.civitai.com/wp-content/uploads/2023/09/Screenshot-2025-05-15-175452.png)
+![](/wp-content/uploads/2023/09/Screenshot-2025-05-15-175452.webp)
 
 Choosing a model type pre-sets some of the advanced training settings. The model types provide an easy way to set up the configuration for people who’re new to training, but experienced LoRA trainers can tweak these settings before training starts.
 
@@ -79,17 +79,17 @@ Give your model a **Name**, then click **Next** to move onto the second step.
 
 Now we have to provide our images on which we want to train. There are **_four_** options to add training data images! We can use a combination of all four methods to popular our training data images.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-94.png)
+![](/wp-content/uploads/2023/09/image-94.webp)
 
 **Option 1 – Import from Generator**
 **Import from Generator** allows us to select from images previously created in the Civitai Generator, but not yet posted to Civitai. It will show the images grouped by date/time, much like they are in the **Queue** tab of the Generator.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2025-01-09-002720-1024x908.png)
+![](/wp-content/uploads/2023/09/Screenshot-2025-01-09-002720-1024x908.webp)
 
 **Option 2- Add from Profile**
 The second option, **Add from Profile**, allows us to upload images we’ve posted to our Civitai user Profile. Images uploaded to posts which have not yet been published will also show in this view. The images are grouped by month and year.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2025-01-09-003142-1024x373.png)
+![](/wp-content/uploads/2023/09/Screenshot-2025-01-09-003142-1024x373.webp)
 
 **Option 3 – Re-use a Dataset**
 
@@ -99,7 +99,7 @@ We have provided a number of Filters (top right) to help categorize the datasets
 
 Multiple datasets can be imported, with the images and captions from both being appended to any existing images imported via any of the other methods.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2025-01-09-003411-1024x453.png)
+![](/wp-content/uploads/2023/09/Screenshot-2025-01-09-003411-1024x453.webp)
 
 **Option 4** – Dragging and dropping (or clicking and selecting from the windows dialog) a **zip file of images** and corresponding **caption.txt files**, or even just loose images, into the upload box.
 
@@ -114,11 +114,11 @@ A directory should contain an **image file with a name that matches the caption 
 | Pair One | 1.png | 1.txt |
 | Pair Two | 2.png | 2.txt |
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-08-195134.png" alt="" width="634" height="412" loading="lazy"><figcaption><em>Example image/.txt file pairs</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-08-195134.png" alt="" width="634" height="412" loading="lazy"><figcaption><em>Example image/.txt file pairs</em></figcaption></figure>
 
 Windows users can select the images and text files (or images if intending to use the Auto-Captioning feature), right click, and select “**Compress to ZIP fil**e” to prepare a dataset for upload.
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-08-195017.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-08-195017.webp)
 
 When you zip this data up, you should _**only select**_ your image/caption file pairs. Do not include the parent folder when preparing the zip file.
 
@@ -126,7 +126,7 @@ When you zip this data up, you should _**only select**_ your image/caption fil
 
 Before uploading any images to the LoRA trainer, we ask that you read and confirm an acknowledgement;
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/agree.png)
+![](/wp-content/uploads/2023/09/agree.webp)
 
 By uploading training data to Civitai, you’re confirming that **if your training data set contains images of a real-world person**, **you either are the person depicted in the data set, or you have obtained explicit consent to use images of the person in the data set** to train your LoRA.
 
@@ -138,7 +138,7 @@ For images, we accept any of the following image file extensions: `**.png**, **
 
 For caption files, we only accept `**.txt**` file extensions.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-224400.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-224400.webp)
 
 #### Captioning & Managing Image Captions {#captioning-managing-image-captions}
 
@@ -146,11 +146,11 @@ You’ll then have the ability to edit your captions manually, or use our **Auto
 
 There are two types of Captioning available for LoRA training on Civitai; **Tag based**, and **Caption based**.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-223425.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-223425.webp)
 
 Captions are an important component of training a successful model. You _can_ train models without them (see examples below); however, your model will often be more flexible and better overall when you do provide them. To train **captionless**, leave the boxes below each image blank.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-224316.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-224316.webp)
 
 Auto Tagging, (or Auto-Captioning) is performed via the purple **Auto Label** button above the Training Data images. This feature can be an invaluable time-saver when you have many images and don’t want to manually enter captions for every image!
 
@@ -188,9 +188,9 @@ Clicking the **Auto Label** button will open a window, with the following option
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-224646.png" alt="" width="449" height="743" loading="lazy"><figcaption><em>Label Type – Tag Auto Labeling Window</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/Screenshot-2024-09-10-224646.webp" alt="" width="449" height="743" loading="lazy"><figcaption><em>Label Type – Tag Auto Labeling Window</em></figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-224959.png" alt="" width="436" height="602" loading="lazy"><figcaption><em>Label Type – Caption Auto Labeling Window</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/Screenshot-2024-09-10-224959.webp" alt="" width="436" height="602" loading="lazy"><figcaption><em>Label Type – Caption Auto Labeling Window</em></figcaption></figure>
 
 </div>
 
@@ -202,13 +202,13 @@ After captioning is completed (either manually or via the Auto-tagger) there are
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-225336.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-225336.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-225531.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-225531.webp)
 
 </div>
 
@@ -216,13 +216,13 @@ After captioning is completed (either manually or via the Auto-tagger) there are
 
 Selecting a caption will show all the images to which it is applied, and also provide options for removing, or replacing the caption with a different value, via the **Actions** button;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-225555.png" alt="" width="696" height="774" loading="lazy"><figcaption><em>Tag replacement and removal Actions</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/Screenshot-2024-09-10-225555.webp" alt="" width="696" height="774" loading="lazy"><figcaption><em>Tag replacement and removal Actions</em></figcaption></figure>
 
 #### Saving Captioned Data sets {#data-ownership-dataset-sharing}
 
 Before moving on to Step 3, it’s a good idea to save your captioned images to your local computer! You can do this from the teal colored **Download** button, above the images;
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-231051.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-231051.webp)
 
 Clicking **Download** will initiate a download of a .zip file containing the image files and associated .txt files containing the captions.
 
@@ -236,7 +236,7 @@ Checking the box for “**I want to share my dataset**” will make the uploaded
 
 Click **Next** to continue.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-30.png)
+![](/wp-content/uploads/2023/09/image-30.webp)
 
 ### Step 3 – Review settings and Submit {#step-3-review-settings-and-submit}
 
@@ -255,27 +255,27 @@ Some models require the **AI-Toolkit** training engine (Qwen, ZImage, Flux2 Klei
 
 There’s also an option to train against a base model of your choice! Note that this incurs and additional Buzz cost due to extra processing required for us to load that Checkpoint into a worker GPU, which ties it up for the duration of the training run.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-11-02-004113.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-11-02-004113.webp)
 
 Note that when choosing **Flux Dev** with Tag-style captions, you’ll receive a warning, suggesting that Flux works best with Natural Language Captions, and vice versa – SD1.5 and SDXL models will display a warning when the data set is labelled with Natural Language Captions.
 
 This warning is purely informational and you can disregard it and proceed without making any changes to your captioning, should you wish.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-231653.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-231653.webp)
 
 Advanced users, or anyone who loves the thrill of adventure into the unknown, can expand the **Training Parameters** under **Advanced Settings** and go wild!
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-231831.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-231831.webp)
 
 We _have_ limited some of the settings – you won’t be able to train with every single option currently available in the underlying training engines (**Kohya**, **AI-Toolkit**, or **Musubi** depending on your chosen base model), but we’re regularly adding in new options and values.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-231848.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-231848.webp)
 
 #### Rapid Flux Training
 
 We’re offering **Rapid Flux Training** – LoRAs trained in _under 5 minutes_! To enable this, simply check the **Rapid Training** toggle after selecting Flux Dev as the Base model;
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-12-172216.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-12-172216.webp)
 
 Rapid Training comes with a number of caveats! Check out our [Flux Guide for the latest information](/quickstart-guide-to-flux-1/#rapid-flux-training)!
 
@@ -283,7 +283,7 @@ Rapid Training comes with a number of caveats! Check out our [Flux Guide for the
 
 Under Advanced Settings there’s also an option to supply **Sample Image Prompts**. By default, the sample images for each Epoch are generated from the captions supplied during Step 2, but if you’d like to supply your own prompts to get a better idea of how the LoRA training is progressing, three fields are provided for custom prompts (three images per Epoch).
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-08-124531.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-08-124531.webp)
 
 #### Multi-Training
 
@@ -291,21 +291,21 @@ There’s also an option to activate Multi-Training – a super useful feature a
 
 To activate Multi-Training, toggle the option at the top of the Training page;
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/Screenshot-2024-06-20-195457.png)
+![](/wp-content/uploads/2024/06/Screenshot-2024-06-20-195457.webp)
 
 You can then add new training runs (or duplicate the settings of the current run) using the buttons which appear;
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/Screenshot-2024-06-21-011819.png)
+![](/wp-content/uploads/2024/06/Screenshot-2024-06-21-011819.webp)
 
 Selecting each training run allows you to edit the base models, and advanced settings, for that particular run;
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/Screenshot-2024-06-21-012203.png)
+![](/wp-content/uploads/2024/06/Screenshot-2024-06-21-012203.webp)
 
 One thing to note is that each training run will show a distinct **Estimated Wait Time**, **ETA** and **Buzz Cost**, and the **High Priority** (skip the queue option) toggle – which is set on a per-run basis.
 
 Below that, in the yellow button, you’ll see the **total Buzz required for the combined training**.
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/Screenshot-2024-06-21-013736.png)
+![](/wp-content/uploads/2024/06/Screenshot-2024-06-21-013736.webp)
 
 Click **Submit** to begin training!
 
@@ -315,17 +315,17 @@ Now for the hard part – waiting while it bakes! After clicking Submit you’ll
 
 Any issues with the uploaded training images will be highlighted under “Missing Info”.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/training-1024x123.png" alt="" width="1024" height="123" loading="lazy"><figcaption><em>The Training tab, showing a list of all your LoRA train jobs</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/training-1024x123.webp" alt="" width="1024" height="123" loading="lazy"><figcaption><em>The Training tab, showing a list of all your LoRA train jobs</em></figcaption></figure>
 
 There’s no need to sit mashing **F5** until the LoRA completes – you’ll receive an email when it’s ready to test, or, if you’d like, _**you can monitor the status in real-time**_, and see the Epochs appear as they’re available – just click on the LoRA name in the training tab.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-35.png)
+![](/wp-content/uploads/2023/09/image-35.webp)
 
 ### Step 5 – Testing {#step-5-testing}
 
 Clicking the link in the email, or the LoRA Name from the training tab to be taken to your results – your Epochs will be listed, with sample images generated for each based on the Sample Image Prompts you supplied during Step 3.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-10-232205.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-10-232205.webp)
 
 **Note** that you won’t receive every single Epoch requested! LoRA training uses huge volumes of storage space, and because we train hundreds of models each day, it’s just not practical for us to store them all. We _will_ train to the Epoch specified in the Advanced Settings, but in the review screen, _**you’ll only be presented with a maximum of 20 Epochs to download.**_
 
@@ -368,19 +368,19 @@ Below are some example images, trained using the on-site Trainer;
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01968-3603276048-666x1024.png)
+![](/wp-content/uploads/2023/09/01968-3603276048-666x1024.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01917-3493033644-666x1024.png)
+![](/wp-content/uploads/2023/09/01917-3493033644-666x1024.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01945-3144414261-666x1024.png)
+![](/wp-content/uploads/2023/09/01945-3144414261-666x1024.webp)
 
 </div>
 
@@ -392,19 +392,19 @@ Big Stompy Robots – SDXL – 15 _uncaptioned_ images of mecha/big robots
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01345-1323227527-1024x666.png)
+![](/wp-content/uploads/2023/09/01345-1323227527-1024x666.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01340-3409368041-1024x666.png)
+![](/wp-content/uploads/2023/09/01340-3409368041-1024x666.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/01343-3892268453-1024x666.png)
+![](/wp-content/uploads/2023/09/01343-3892268453-1024x666.webp)
 
 </div>
 

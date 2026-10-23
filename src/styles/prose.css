@@ -223,7 +223,7 @@
   padding-block: 8px;
   border-bottom-color: var(--border-strong);
   color: var(--text-dim);
-  font-size: 11px;
+  font-size: var(--fs-micro);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;

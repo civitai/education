@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4456
 excerpt: "It’s here! We’ve collected everything you need to know in our Quickstart guide to Stable Diffusion 3! Check it out now!"
-image: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_quick.png"
+image: "/wp-content/uploads/2024/06/sd3_quick.webp"
 seo:
   title: "Stable Diffusion 3 Weights Released! - Civitai Education"
   description: "It's here! We've collected everything you need to know in our Quickstart guide to Stable Diffusion 3! Check it out now!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_quick.png"
+  ogImage: "/wp-content/uploads/2024/06/sd3_quick.webp"
   canonical: "https://education.civitai.com/stable-diffusion-3-weights-released/"
 ---
 

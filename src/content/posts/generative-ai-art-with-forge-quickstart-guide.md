@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3906
 excerpt: "Civitai guide to getting started with Forge."
-image: "https://education.civitai.com/wp-content/uploads/2024/03/MarkuryFLUX_01331_.png"
+image: "/wp-content/uploads/2024/03/MarkuryFLUX_01331_.png"
 seo:
   title: "Generative AI Art with Forge - Quickstart Guide - Civitai Education"
   description: "Learn how to use lightweight Automatic1111 fork \"Forge\", from the creator of ControlNet, to generate your Stable Diffusion images!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/03/MarkuryFLUX_01331_.png"
+  ogImage: "/wp-content/uploads/2024/03/MarkuryFLUX_01331_.png"
   canonical: "https://education.civitai.com/generative-ai-art-with-forge-quickstart-guide/"
 ---
 
@@ -58,7 +58,7 @@ And the claims are true!
 
 Forge also integrates many advanced extensions and features, including **Self-Attention Guidance**, **Kohya High Res Fix**, **FreeU**, **StyleAlign**, **Hypertile**, **Stable Video Diffusion**, and **Z123**.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-15-102942.png" alt="Civitai - Forge Extensions" width="698" height="502" loading="lazy"><figcaption><em>Integrated features</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-15-102942.webp" alt="Civitai - Forge Extensions" width="698" height="502" loading="lazy"><figcaption><em>Integrated features</em></figcaption></figure>
 
 ## How can I use Forge?
 
@@ -68,7 +68,7 @@ On Windows, [click here to download the zipped package!](https://github.com/llly
 
 Once you have downloaded and extracted the zipped package, you’ll see the following files;
 
-![Civitai - Forge Installation](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-15-114921.png)
+![Civitai - Forge Installation](/wp-content/uploads/2024/03/Screenshot-2024-03-15-114921.webp)
 
 It’s important to first run **`update.bat`** – this ensures the latest files are pulled down for install.
 
@@ -76,7 +76,7 @@ After running **`update.bat`**, run **`run.bat`** to install and launch!
 
 On subsequent launches, you’ll need to find **`webui-user.bat`** to launch the Forge Interface.
 
-![Civitai - Forge Launch](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-15-121830.png)
+![Civitai - Forge Launch](/wp-content/uploads/2024/03/Screenshot-2024-03-15-121830.png)
 
 ## Architecture {#requirements-limitations}
 
@@ -96,7 +96,7 @@ Thanks to a **Unet Patcher**, _many_ advanced features are implemented in Forge 
 
 Via ControlNet and the IP Adapter Preprocessor, we can supply two images, and mask them together to provide a single unified image! We’ll expand upon this section in future to show exactly how to do this!
 
-![Civitai - Forge IP Adapter Example](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-15-140842.png)
+![Civitai - Forge IP Adapter Example](/wp-content/uploads/2024/03/Screenshot-2024-03-15-140842.webp)
 
 #### New Samplers
 

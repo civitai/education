@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 5182
 excerpt: "We’re excited to announce Civitai.green, a version of Civitai designed to make the site accessible to everyone. Civitai.green offers the same incredible content and tools you love, but with additional filtering to ensure a completely PG experience!"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/00240.png"
+image: "/wp-content/uploads/2024/08/00240.webp"
 seo:
   title: "Announcing Civitai Green! - Civitai Education"
   description: "To better serve our diverse community, we have launched Civitai Green - a PG view into Civitai, with all the same great functionality!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/08/00240-1024x701.png"
+  ogImage: "/wp-content/uploads/2024/08/00240-1024x701.webp"
   canonical: "http://education.civitai.com/announcing-civitai-green/"
 ---
 

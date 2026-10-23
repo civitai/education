@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 4766
 excerpt: "Civitai’s Guide to Early Access"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/cropped_1_EA1.png"
+image: "/wp-content/uploads/2024/08/cropped_1_EA1.webp"
 seo:
   title: "Civitai's Guide to Early Access! - Civitai Education"
   description: "Early Access is a significant step in helping the creator community monetize resources. Civitai's Guide to Early Access explains what it is, and how it's being used."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/cropped_1_EA1.png"
+  ogImage: "/wp-content/uploads/2024/08/cropped_1_EA1.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-early-access/"
 ---
 
@@ -47,15 +47,15 @@ A resource can be in EA in three different ways:
 
 -   **Downloading**: The price the creator has designated must be paid before the option to download a model can be unlocked.
 
-![Civitai's Guide to Early Access - Download Price Settings](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-202751.png)
+![Civitai's Guide to Early Access - Download Price Settings](/wp-content/uploads/2024/08/Screenshot-2024-08-15-202751.webp)
 
 -   **Generating**: The price the creator has designated must be paid before the option to generate with a model on-site can be unlocked.
 
-![Civitai's Guide to Early Access! - Generation Price Settings](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-202910.png)
+![Civitai's Guide to Early Access! - Generation Price Settings](/wp-content/uploads/2024/08/Screenshot-2024-08-15-202910.webp)
 
 -   **Donation Goal**: Like Kickstarter, the creator has set a goal number to reach that, when hit, will bring the resource out of EA. If the goal isn’t hit, the resource will still come out of EA once the time has elapsed.
 
-![Civitai's Guide to Early Access! - Donation Goal Settings](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-203025.png)
+![Civitai's Guide to Early Access! - Donation Goal Settings](/wp-content/uploads/2024/08/Screenshot-2024-08-15-203025.webp)
 
 A resource isn’t limited to utilizing just one method of EA; all three EA options _could_ be enabled at once.
 
@@ -73,7 +73,7 @@ When a resource has a value set for **Generation** or **Download**, the value re
 
 <div class="column">
 
-![Civitai's Guide to Early Access! - Generation and Download Price Enabled](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-211248.png)
+![Civitai's Guide to Early Access! - Generation and Download Price Enabled](/wp-content/uploads/2024/08/Screenshot-2024-08-15-211248.webp)
 
 </div>
 
@@ -91,7 +91,7 @@ The time at which the LoRA will unlock (regardless of the Donation Goal progress
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-211310.png)
+![](/wp-content/uploads/2024/08/Screenshot-2024-08-15-211310.webp)
 
 </div>
 
@@ -107,7 +107,7 @@ If Generation and Download Early Access values have been set, attempting to Gene
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-15-211303.png)
+![](/wp-content/uploads/2024/08/Screenshot-2024-08-15-211303.webp)
 
 </div>
 

@@ -66,7 +66,7 @@ const canonical = Astro.props.canonical || absolute(path);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={SITE.title} />
-    {image && <meta property="og:image" content={image} />}
+    {image && <meta property="og:image" content={absolute(image)} />}
     {published && <meta property="article:published_time" content={published.toISOString()} />}
     {modified && <meta property="article:modified_time" content={modified.toISOString()} />}
     <meta name="twitter:card" content="summary_large_image" />

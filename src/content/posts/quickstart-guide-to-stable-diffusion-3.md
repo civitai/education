@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4422
 excerpt: "Stable Diffusion 3 is a groundbreaking new text-to-image model from Stability AI."
-image: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_quick.png"
+image: "/wp-content/uploads/2024/06/sd3_quick.webp"
 seo:
   title: "Quickstart Guide to Stable Diffusion 3 - Civitai Education"
   description: "Stable Diffusion 3 is a text-to-image model released by Stability AI in June of 2024 offering unparallelled image fidelity!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_quick.png"
+  ogImage: "/wp-content/uploads/2024/06/sd3_quick.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-stable-diffusion-3/"
 ---
 
@@ -45,7 +45,7 @@ Stable Diffusion 3 (SD3) is a text-to-image model, released by Stability AI on *
 
 You can read our [Pre-Release Overview here](/stable-diffusion-3-pre-release-overview/).
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/06/mmdit-1024x701.png" alt="" width="1024" height="701" loading="lazy"><figcaption><em>SD3 Architecture</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/06/mmdit-1024x701.webp" alt="" width="1024" height="701" loading="lazy"><figcaption><em>SD3 Architecture</em></figcaption></figure>
 
 For more technical details, please refer to the [Research paper](https://stability.ai/news/stable-diffusion-3-research-paper).
 
@@ -94,13 +94,13 @@ You can download pre-made ComfyUI workflows [here](https://civitai.com/models/49
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/497255?modelVersionId=568256"><img src="http://education.civitai.com//wp-content/uploads/2024/06/workflow_simple-1024x313.png" alt="" width="1024" height="313" loading="lazy"></a><figcaption><em>Simple txt2img Workflow</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/497255?modelVersionId=568256"><img src="/wp-content/uploads/2024/06/workflow_simple-1024x313.webp" alt="" width="1024" height="313" loading="lazy"></a><figcaption><em>Simple txt2img Workflow</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><a href="https://civitai.com/models/497255?modelVersionId=568256"><img src="http://education.civitai.com//wp-content/uploads/2024/06/workflow_multi-1024x352.png" alt="" width="1024" height="352" loading="lazy"></a><figcaption><em>Multi-Prompt Workflow</em></figcaption></figure>
+<figure><a href="https://civitai.com/models/497255?modelVersionId=568256"><img src="/wp-content/uploads/2024/06/workflow_multi-1024x352.webp" alt="" width="1024" height="352" loading="lazy"></a><figcaption><em>Multi-Prompt Workflow</em></figcaption></figure>
 
 </div>
 

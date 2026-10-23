@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 6084
 excerpt: "Civitai’s Guide to getting started with Large Language Models (LLMs)!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+image: "/wp-content/uploads/2025/03/network_anim.webp"
 seo:
   title: "Civitai's Quickstart Guide to Large Language Models! - Civitai Education"
   description: "Civitai's Guide to getting started with Large Language Models!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+  ogImage: "/wp-content/uploads/2025/03/network_anim.webp"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-large-language-models/"
 ---
 
@@ -106,7 +106,7 @@ DeepSeek’s appeal doesn’t stop there. It has official [Android](https://play
 
 A great way to dive into DeepSeek R1 locally is through **[LM Studio](https://lmstudio.ai/)** ([details below](#lm-studio)!). It’s an excellent tool that supports a range of quantized models, making it possible to run DeepSeek R1 even on smaller GPUs with ease.
 
-![](http://education.civitai.com/wp-content/uploads/2025/01/Screenshot-2025-01-28-115406.png)
+![](/wp-content/uploads/2025/01/Screenshot-2025-01-28-115406.webp)
 
 -   **[ChatGPT](https://chatgpt.com/) (Generative Pre-trained Transformer)**: Developed by OpenAI, GPT models are renowned for their advanced language processing capabilities, excelling in tasks like text generation, translation, and summarization. The latest iteration, GPT-4o, offers enhanced reasoning, understanding, and advanced voice features.
 
@@ -130,7 +130,7 @@ A great way to dive into DeepSeek R1 locally is through **[LM Studio](https://lm
 
 With so many LLMs out there, figuring out which one suits your needs can be a bit of a challenge. That’s where the [Chatbot Arena](https://lmarena.ai/?leaderboard) comes in. Developed by researchers at **UC Berkeley’s SkyLab**, it’s an open-source platform that lets users pit two anonymous LLM models against each other by inputting a prompt and comparing their responses. Users then vote for the one they prefer, and these votes contribute to a live leaderboard ranking various models.
 
-![](http://education.civitai.com//wp-content/uploads/2025/01/Screenshot-2025-01-01-155706-1024x330.png)
+![](/wp-content/uploads/2025/01/Screenshot-2025-01-01-155706-1024x330.webp)
 
 ## Running LLMs Locally {#mochi-in-civitai-s-generator}
 

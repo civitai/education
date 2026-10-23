@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5219
 excerpt: "In this video, DotSimulate shows us how to utilize and build out a real time audio reactive workflow in touch designer. This is using Stream Diffusion, a Touch Designer implementation of Stable Diffusion that allows for instant feedback!"
-image: "https://education.civitai.com/wp-content/uploads/2024/09/DOTSIMULATE.png"
+image: "/wp-content/uploads/2024/09/DOTSIMULATE.webp"
 seo:
   title: "Real Time AI Generations in Touch Designer ft. DotSimulate! - Civitai Education"
   description: "In this video, DotSimulate shows us how to utilize and build out a real time audio reactive workflow in touch designer using Stream Diffusion."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/09/DOTSIMULATE.png"
+  ogImage: "/wp-content/uploads/2024/09/DOTSIMULATE.webp"
   canonical: "https://education.civitai.com/real-time-ai-generations-in-touch-designer-ft-dotsimulate/"
 ---
 

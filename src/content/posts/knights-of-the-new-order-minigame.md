@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 7073
 excerpt: "Civitai’s Guide to the Knights of the New Order image rating game – now open to all users!"
-image: "https://education.civitai.com/wp-content/uploads/2025/05/RatingIMage.png"
+image: "/wp-content/uploads/2025/05/RatingIMage.webp"
 seo:
   title: "Knights of the New Order Minigame - Civitai Education"
   description: "Rate images and help keep the realm pure! Earn Buzz, and climb from humble Acolyte to elite Templar in our expanded Image Rating Game."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/05/RatingIMage.png"
+  ogImage: "/wp-content/uploads/2025/05/RatingIMage.webp"
   canonical: "https://education.civitai.com/knights-of-the-new-order-minigame/"
 ---
 
@@ -66,9 +66,9 @@ The direct URL for Knights of New is;
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-06-06-191302.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-06-06-191302.webp)
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-06-06-191221-1.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-06-06-191221-1.webp)
 
 </div>
 
@@ -95,7 +95,7 @@ _**Beware**: five incorrect ratings at the same level will earn you a Smite – 
 
 <div class="column" style="flex-basis:33.33%">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Acolyte.png)
+![](/wp-content/uploads/2025/05/Acolyte.webp)
 
 </div>
 
@@ -119,7 +119,7 @@ Upon reaching Level 20, you will be **Knighted**. With that honor comes responsi
 
 <div class="column" style="flex-basis:33.33%">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Knight.png)
+![](/wp-content/uploads/2025/05/Knight.webp)
 
 </div>
 
@@ -142,7 +142,7 @@ Each week, the 12 Knights with the highest **Fervor** (accuracy in rating) are n
 
 <div class="column" style="flex-basis:33.33%">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Templar.png)
+![](/wp-content/uploads/2025/05/Templar.webp)
 
 </div>
 

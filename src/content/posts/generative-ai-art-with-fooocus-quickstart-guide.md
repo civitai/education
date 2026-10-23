@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2945
 excerpt: "Civitai guide to getting started with easy-to-use interface Fooocus."
-image: "https://education.civitai.com/wp-content/uploads/2023/12/image-8-1.png"
+image: "/wp-content/uploads/2023/12/image-8-1.webp"
 seo:
   title: "Generative AI Art with Fooocus - Quickstart Guide - Civitai Education"
   description: "Create Generative AI art easily with the Fooocus interface for Stable Diffusion! Start making beautiful images in seconds!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/12/image-8-1-768x768.png"
+  ogImage: "/wp-content/uploads/2023/12/image-8-1-768x768.webp"
   canonical: "https://education.civitai.com/generative-ai-art-with-fooocus-quickstart-guide/"
 ---
 
@@ -37,7 +37,7 @@ If you’re a beginner, or looking to get back to basics, you should be super ex
 
 The following image generations are not cherry picked; they’re based on prompts selected at random from the Civitai community;
 
-<div data-embed="gallery"><img src="https://i2.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-5-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-5.png" width="2048" height="2048" loading="lazy"><img src="https://i2.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-4-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-4.png" width="2048" height="2048" loading="lazy"><img src="https://i1.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-7-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-7.png" width="2048" height="2048" loading="lazy"><img src="https://i0.wp.com/education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-24-32_3266-1024x341.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-24-32_3266.png" width="1728" height="576" loading="lazy"><img src="https://i0.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-8-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-8.png" width="2048" height="2048" loading="lazy"><img src="https://i1.wp.com/education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-14-11_4878.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-14-11_4878.png" width="1024" height="1024" loading="lazy"><img src="https://i0.wp.com/education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-46-21_9376-1024x341.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/2023-12-13_10-46-21_9376.png" width="1728" height="576" loading="lazy"><img src="https://i1.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-13-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-13.png" width="2048" height="2048" loading="lazy"><img src="https://i2.wp.com/education.civitai.com/wp-content/uploads/2023/12/image-11-1024x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/image-11.png" width="2048" height="2048" loading="lazy"><img src="https://i2.wp.com/education.civitai.com/wp-content/uploads/2023/12/2023-12-13_09-31-07_9265-1024x796.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/2023-12-13_09-31-07_9265.png" width="2304" height="1792" loading="lazy"><img src="https://i2.wp.com/education.civitai.com/wp-content/uploads/2023/12/2023-12-13_03-01-47_1215-796x1024.png?ssl=1" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2023/12/2023-12-13_03-01-47_1215.png" width="896" height="1152" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2023/12/image-5-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-5.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/image-4-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-4.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/image-7-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-7.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/2023-12-13_10-24-32_3266-1024x341.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/2023-12-13_10-24-32_3266.webp" width="1728" height="576" loading="lazy"><img src="/wp-content/uploads/2023/12/image-8-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-8.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/2023-12-13_10-14-11_4878.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/2023-12-13_10-14-11_4878.webp" width="1024" height="1024" loading="lazy"><img src="/wp-content/uploads/2023/12/2023-12-13_10-46-21_9376-1024x341.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/2023-12-13_10-46-21_9376.webp" width="1728" height="576" loading="lazy"><img src="/wp-content/uploads/2023/12/image-13-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-13.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/image-11-1024x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/image-11.webp" width="2048" height="2048" loading="lazy"><img src="/wp-content/uploads/2023/12/2023-12-13_09-31-07_9265-1024x796.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/2023-12-13_09-31-07_9265.webp" width="2304" height="1792" loading="lazy"><img src="/wp-content/uploads/2023/12/2023-12-13_03-01-47_1215-796x1024.webp" alt="" data-orig-file="/wp-content/uploads/2023/12/2023-12-13_03-01-47_1215.webp" width="896" height="1152" loading="lazy"></div>
 
 ## How can I use Fooocus?
 
@@ -69,7 +69,7 @@ Model and LoRA selections can be made by checking the “**Advanced**” checkbo
 
 <div class="column" style="flex-basis:33.33%">
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-135537.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-135537.webp)
 
 </div>
 
@@ -98,43 +98,43 @@ Fooocus is aimed at beginner users, perhaps coming from other image generation s
 
 Fooocus has _excellent_ inpainting, img2img, and Faceswap capabilities, powered by proprietary Fooocus models/engines, accessible from the “**Input Image**” checkbox below the prompt box.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-145946-1024x294.png" alt="" width="1024" height="294" loading="lazy"><figcaption><em>Input Image Options</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/01/Screenshot-2024-01-17-145946-1024x294.webp" alt="" width="1024" height="294" loading="lazy"><figcaption><em>Input Image Options</em></figcaption></figure>
 
 The four `input image` boxes are a mix of an; “_IP-Adapter, and a precomputed negative embedding from Fooocus team, an attention hacking algorithm from Fooocus team, and an adaptive balancing/weighting algorithm from Fooocus team._” per the Fooocus documentation. So what do they actually do? Here are some visual examples of what’s possible;
 
 ### Single Image Upload – No Prompt {#single-image-upload-no-prompt}
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-160521-1024x839.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-160521-1024x839.webp)
 
 Attempts to “replicate” certain concepts of an input image, no prompt required…
 
 ### Single Image Upload – With a Prompt {#single-image-upload-with-a-prompt}
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-160625-1024x842.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-160625-1024x842.webp)
 
 But if a prompt _is_ supplied, attempts to replicate the input image along with the additional context of the prompt.
 
 ### Multiple Images – No Prompt {#multiple-images-no-prompt}
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-161547-1024x842.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-161547-1024x842.webp)
 
 Supplying two images results in an image blend.
 
 ### Multiple Images – With a Prompt {#multiple-images-with-a-prompt}
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-161736-1024x841.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-161736-1024x841.webp)
 
 Two images, plus a prompt, creates a blend of all three.
 
 ### Face Swapping
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-192757-1024x962.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-192757-1024x962.webp)
 
 By checking the **`Advanced`** options below the input images and switching to `**FaceSwap**`, we can swap faces from an input image into our generations. It’s not flawless, but it’s passable in many cases. You may need to adjust the **`Weight`** slider to get better results.
 
 ### PyraCanny
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-195625-1024x942.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-195625-1024x942.webp)
 
 Canny is a method of edge detection which users of [ControlNet](/civitai-guide-to-controlnet/) will be familiar with. Fooocus implements Canny in a unique way, based on the principles set forth in [this research paper](https://www.sciencedirect.com/science/article/abs/pii/S1047320312000831).
 
@@ -142,7 +142,7 @@ Essentially, it’s looking for edges and hard lines in a source image, allowing
 
 ### CPDS
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-17-194232-1024x938.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-17-194232-1024x938.webp)
 
 CPDS is similar to PyraCanny. It’s also similar to the `**depth**` ControlNet preprocessor, but is based upon [this research paper – Contrast Preserving Decolorization](https://www.cse.cuhk.edu.hk/leojia/projects/color2gray/index.html). Note that the implementation _doesn’t include_ the decolorization part.
 
@@ -152,13 +152,13 @@ Fooocus has excellent promptless inpainting and outpainting, powered by an inter
 
 ### Outpainting
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-18-013359-1024x937.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-18-013359-1024x937.webp)
 
 Outpainting allows us to supply an input image, select an `**Outpaint Direction**` in which to extend the canvas, and “fill” that space.
 
 ### Inpainting
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-18-021257-1001x1024.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-18-021257-1001x1024.webp)
 
 Inpainting on the other hand, is the process of selecting a particular object in an input image, and replacing it with another prompted concept. Here, we’re replacing the woman in the image with a fearsome orc, while retaining the rest of the image.
 
@@ -168,15 +168,15 @@ If you don’t have a graphics card you can also run Fooocus via [Google Colab](
 
 ## Fooocus Example Portrait Gallery
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/2023-12-14_10-18-57_2698-796x1024.png)
+![](/wp-content/uploads/2024/01/2023-12-14_10-18-57_2698-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/2023-12-14_11-17-14_2033-796x1024.png)
+![](/wp-content/uploads/2023/12/2023-12-14_11-17-14_2033-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/2024-01-16_12-59-38_8081-796x1024.png)
+![](/wp-content/uploads/2023/12/2024-01-16_12-59-38_8081-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/2024-01-15_20-35-56_4334-796x1024.png)
+![](/wp-content/uploads/2023/12/2024-01-15_20-35-56_4334-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/12/2024-01-10_09-42-23_3966-1024x796.png)
+![](/wp-content/uploads/2023/12/2024-01-10_09-42-23_3966-1024x796.webp)
 
 ## Requirements & Limitations {#requirements-limitations}
 

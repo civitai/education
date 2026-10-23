@@ -9,10 +9,10 @@ tags: []
 author: "civitai"
 wpId: 6927
 excerpt: "After careful consideration, we’ve decided to roll back the recent Checkpoint Coverage update. Despite our best efforts and upgrades, we can’t support it at this time without impacting overall site stability and image generation reliability. We deeply apologize for all the disruption and we appreciate your patience and understanding."
-image: "https://education.civitai.com/wp-content/uploads/2025/03/63145105.png"
+image: "/wp-content/uploads/2025/03/63145105.png"
 seo:
   title: "Rollback! - Civitai Education"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/63145105.png"
+  ogImage: "/wp-content/uploads/2025/03/63145105.png"
   canonical: "https://education.civitai.com/rollback/"
 ---
 

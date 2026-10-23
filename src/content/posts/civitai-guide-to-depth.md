@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 2336
 excerpt: "What are Depth maps, and what can we do with them to enhance our art? Learn the basics in our Getting Started Guide!"
-image: "https://education.civitai.com/wp-content/uploads/2023/10/depthmap-0007-concat_depth.png"
+image: "/wp-content/uploads/2023/10/depthmap-0007-concat_depth.webp"
 seo:
   title: "Civitai Guide to Depth! - Civitai Education"
   description: "Our comprehensive Beginner's guide to Depth Maps will walk you through everything you need to know to get started with Depth Maps for AI Art!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/10/depthmap-0007-concat_depth.png"
+  ogImage: "/wp-content/uploads/2023/10/depthmap-0007-concat_depth.webp"
   canonical: "https://education.civitai.com/civitai-guide-to-depth/"
 ---
 
@@ -39,13 +39,13 @@ Some of the features showcased in this guide aren’t truly 100% depth map relat
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/00319-4062251475-1-819x1024.png" alt="An AI Generated Image of Boba Tea on a windowsill." width="819" height="1024" loading="lazy"><figcaption>An image…</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/00319-4062251475-1-819x1024.webp" alt="An AI Generated Image of Boba Tea on a windowsill." width="819" height="1024" loading="lazy"><figcaption>An image…</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthmap-0000-1-819x1024.png" alt="A depth map, computed from an image of Boba Tea on a windowsill." width="819" height="1024" loading="lazy"><figcaption>and computed depth map.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthmap-0000-1-819x1024.webp" alt="A depth map, computed from an image of Boba Tea on a windowsill." width="819" height="1024" loading="lazy"><figcaption>and computed depth map.</figcaption></figure>
 
 </div>
 
@@ -74,7 +74,7 @@ There are two ways to interact with the Depth Extension in Automatic1111. If we 
 
 If we would like to generate depth maps _at the same time_ as generating images, we can invoke the extension from the **`Scripts`** dropdown.
 
-![Depth Extension - Script](http://education.civitai.com//wp-content/uploads/2023/10/scripts.png)
+![Depth Extension - Script](/wp-content/uploads/2023/10/scripts.webp)
 
 ### The Depth Tab
 
@@ -82,7 +82,7 @@ The **`Depth`** tab can appear intimidating at first glance! There are a lot of 
 
 At the top of the **`Depth`** tab there’s a space to load an image. We can use _any_ image – it doesn’t have to be AI generated, it could be a photograph – anything works!
 
-![The Depth Extension](http://education.civitai.com//wp-content/uploads/2023/10/depth-1024x899.png)
+![The Depth Extension](/wp-content/uploads/2023/10/depth-1024x899.webp)
 
 ### Options
 
@@ -114,19 +114,19 @@ Below are some examples of the results of various configuration options, in prac
 
 ### Combine input and depthmap into one image
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthmap-0007-concat_depth-1024x788.png" alt="" width="1024" height="788" loading="lazy"><figcaption>The depth mask output appended to the input image</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthmap-0007-concat_depth-1024x788.webp" alt="" width="1024" height="788" loading="lazy"><figcaption>The depth mask output appended to the input image</figcaption></figure>
 
 ### Generate stereoscopic image(s) – Side by Side {#generate-stereoscopic-image-s-side-by-side}
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthmap-0010-left-right-1024x788.png" alt="" width="1024" height="788" loading="lazy"><figcaption>Two slightly diverged images, appended side by side, for use with the “cross-eyed” magic eye technique, or a headset/viewer capable of rendering stereo side-by-side images in 3D.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthmap-0010-left-right-1024x788.webp" alt="" width="1024" height="788" loading="lazy"><figcaption>Two slightly diverged images, appended side by side, for use with the “cross-eyed” magic eye technique, or a headset/viewer capable of rendering stereo side-by-side images in 3D.</figcaption></figure>
 
 ### Generate stereoscopic image(s) – Anaglyph {#generate-stereoscopic-image-s-anaglyph}
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthmap-0011-red-cyan-anaglyph-666x1024.png" alt="" width="666" height="1024" loading="lazy"><figcaption>A red/cyan anaglyph image, for use with 3D glasses.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthmap-0011-red-cyan-anaglyph-666x1024.webp" alt="" width="666" height="1024" loading="lazy"><figcaption>A red/cyan anaglyph image, for use with 3D glasses.</figcaption></figure>
 
 ### Generate NormalMap
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthmap-0015-normalmap-666x1024.png" alt="" width="666" height="1024" loading="lazy"><figcaption>A Normal Map, generated from the input image.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthmap-0015-normalmap-666x1024.webp" alt="" width="666" height="1024" loading="lazy"><figcaption>A Normal Map, generated from the input image.</figcaption></figure>
 
 ### Remove Background
 
@@ -134,19 +134,19 @@ Below are some examples of the results of various configuration options, in prac
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/u2net-666x1024.png" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <strong><code>u2net</code> </strong>model</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/u2net-666x1024.webp" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <strong><code>u2net</code> </strong>model</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/sil-666x1024.png" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <strong><code>Silueta</code> </strong>model</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/sil-666x1024.webp" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <strong><code>Silueta</code> </strong>model</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/anime-666x1024.png" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <code><strong>isnet-anime</strong></code> model</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/anime-666x1024.webp" alt="" width="666" height="1024" loading="lazy"><figcaption>Background removal with the <code><strong>isnet-anime</strong></code> model</figcaption></figure>
 
 </div>
 
@@ -172,7 +172,7 @@ So what can we **_actually_** do with various depth maps, normal maps, side-by-s
 
 Once we’ve generated a 3D Inpainted `**.ply**` mesh, we can generate video with custom camera parameters and movement;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/inpainted_mesh_video.png" alt="" width="711" height="713" loading="lazy"><figcaption>Generate Video Subtab</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/inpainted_mesh_video.webp" alt="" width="711" height="713" loading="lazy"><figcaption>Generate Video Subtab</figcaption></figure>
 
 | Option | Explanation |
 | --- | --- |
@@ -208,7 +208,7 @@ The website [Depth Player](https://depthplayer.ugocapeto.com/) (**external link*
 
 It’s not a “_true_” 3D model which can be entirely rotated – we’re generating depth from a _**2D**_ image by displacing a a plane mesh. `**.obj**` files are ubiquitous and can be imported into many 3D applications.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/depthplayer-1024x756.png" alt="" width="1024" height="756" loading="lazy"><figcaption>The Depth Player interface, clicking and dragging on the image allows the model to be rotated, somewhat.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/depthplayer-1024x756.webp" alt="" width="1024" height="756" loading="lazy"><figcaption>The Depth Player interface, clicking and dragging on the image allows the model to be rotated, somewhat.</figcaption></figure>
 
 ### Visualize on a 2D Display
 
@@ -220,13 +220,13 @@ Images will be instantly viewable in the interactive viewer, displaying subtle m
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/depthy_1.gif)
+![](/wp-content/uploads/2023/10/depthy_1.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/depthy_2.gif)
+![](/wp-content/uploads/2023/10/depthy_2.webp)
 
 </div>
 
@@ -240,7 +240,7 @@ For a much more immersive experience, SBS images can be loaded onto devices such
 
 Note that you, as a viewer, will not experience the effect of depth from the example video!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/oculus_demo_img-1024x788.png" alt="" width="1024" height="788" loading="lazy"><figcaption>Side-by-Side Stereo Image, generated with Automatic1111, SD 1.5, and the Depth Extension</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/oculus_demo_img-1024x788.webp" alt="" width="1024" height="788" loading="lazy"><figcaption>Side-by-Side Stereo Image, generated with Automatic1111, SD 1.5, and the Depth Extension</figcaption></figure>
 
 <div data-embed="videopress" data-src="https://videopress.com/embed/ivbBV6cW?cover=1&amp;autoPlay=1&amp;controls=1&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;playsinline=0&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="800" data-height="800"></div>
 
@@ -248,7 +248,7 @@ Note that you, as a viewer, will not experience the effect of depth from the exa
 
 The generated `**.obj**` and `**.ply**` files can be imported into 3D applications, such as [Blender](https://www.blender.org/) (**external link**), for additional manipulation.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/mesh_blender-1024x878.png" alt="" width="1024" height="878" loading="lazy"><figcaption>3D Inpainted Mesh, imported to Blender, simple lighting and texture applied.</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/mesh_blender-1024x878.webp" alt="" width="1024" height="878" loading="lazy"><figcaption>3D Inpainted Mesh, imported to Blender, simple lighting and texture applied.</figcaption></figure>
 
 ### Visualize with 3D Glasses
 
@@ -256,4 +256,4 @@ Anaglyph (red/cyan) outputs can be viewed with [cheap 3D glasses](https://a.co/d
 
 Anaglyph outputs from the Depth extension were used as training images in the creation of the experimental [LoRA-3D, txt2img Anaglyph Generator for SD 1.5](https://civitai.com/models/6289/lora-3d-anaglyph-image-generator).
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/image-1-1024x760.png" alt="" width="1024" height="760" loading="lazy"><figcaption>TheAlly’s Experimental Anaglyph generating LoRA</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/image-1-1024x760.webp" alt="" width="1024" height="760" loading="lazy"><figcaption>TheAlly’s Experimental Anaglyph generating LoRA</figcaption></figure>

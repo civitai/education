@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 1738
 excerpt: "We’ve launched the Civitai on-site LoRA trainer for all Civitai Supporters! Don’t have the hardware to train locally? Don’t want the hassle of figuring out all the crazy advanced options? Supply your training images and let our wizard take over! Guide to getting started here!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/output_00105_.png"
+image: "/wp-content/uploads/2023/09/output_00105_.png"
 seo:
   title: "Civitai LoRA Trainer Live! - Civitai Education"
   description: "We've launched the Civitai on-site LoRA trainer for all Civitai Supporters! Supply your training images and let our wizard take over!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/output_00105_.png"
+  ogImage: "/wp-content/uploads/2023/09/output_00105_.png"
   canonical: "https://education.civitai.com/civitai-lora-trainer-live/"
 ---
 

@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3954
 excerpt: "Civitai guide to the Civitai Vault"
-image: "https://education.civitai.com/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
+image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
 seo:
   title: "Civitai's Guide to Vault - Civitai Education"
   description: "Civitai's guide to the Civitai Vault system. Civitai Vault is your secure, cloud-based storage solution for your AI models."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
+  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-vault/"
 ---
 
@@ -32,7 +32,7 @@ Free up valuable disk space and have peace of mind knowing your models are alway
 
 Note that we’re in the first iteration of Civitai Vault, and have _many_ exciting featured planned. Currently, the core functionality is in place, and we’re going to begin adding in fantastic ways to integrate Vault into your Generative AI workflows very soon!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-29-173340-1024x231.png" alt="" width="1024" height="231" loading="lazy"><figcaption><em>Civitai Vault Model List</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-29-173340-1024x231.webp" alt="" width="1024" height="231" loading="lazy"><figcaption><em>Civitai Vault Model List</em></figcaption></figure>
 
 ## How do I gain Vault access?
 
@@ -51,35 +51,35 @@ You can read more about the Membership Tiers in our [Guide To Civitai’s Member
 
 Using Vault is incredibly simple! You can access your Vault from the link in the main Profile Pic menu;
 
-![](http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-034624.png)
+![](/wp-content/uploads/2024/04/Screenshot-2024-04-12-034624.webp)
 
 #### Adding Resources to your Vault
 
 If you see a model you like while browsing Civitai you can hit the **Add to Vault** button to begin the upload process. You can track the progress of the upload from within Vault, and once complete, that model is now stored safely and securely, forever!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-11-022948.png" alt="" width="450" height="127" loading="lazy"><figcaption><em>Add to Vault icon</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-11-022948.webp" alt="" width="450" height="127" loading="lazy"><figcaption><em>Add to Vault icon</em></figcaption></figure>
 
 #### Organizing Vaulted Resources
 
 There are many **filtering** and **sorting** options to find your content within Vault, and a Search function, which looks at filename and creator name.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-100422-1024x182.png" alt="" width="1024" height="182" loading="lazy"><figcaption><em>The Civitai Vault Interface</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-100422-1024x182.webp" alt="" width="1024" height="182" loading="lazy"><figcaption><em>The Civitai Vault Interface</em></figcaption></figure>
 
 We can also add **Notes** to our Vaulted items to help us remember why we added them, or leave ourselves usage tips!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-105849-1024x206.png" alt="" width="1024" height="206" loading="lazy"><figcaption><em>A selected resource – enabling the <strong>Add notes</strong> button.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-105849-1024x206.webp" alt="" width="1024" height="206" loading="lazy"><figcaption><em>A selected resource – enabling the <strong>Add notes</strong> button.</em></figcaption></figure>
 
 <div class="columns">
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-105859.png" alt="" width="312" height="252" loading="lazy"><figcaption><em>Add notes dialogue box</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-105859.webp" alt="" width="312" height="252" loading="lazy"><figcaption><em>Add notes dialogue box</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-105918.png" alt="" width="447" height="116" loading="lazy"><figcaption><em>A resource note</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-105918.webp" alt="" width="447" height="116" loading="lazy"><figcaption><em>A resource note</em></figcaption></figure>
 
 </div>
 
@@ -93,7 +93,7 @@ There are a number of options available when downloading Vaulted items;
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-110442.png" alt="" width="340" height="307" loading="lazy"><figcaption><em>Download options</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-110442.webp" alt="" width="340" height="307" loading="lazy"><figcaption><em>Download options</em></figcaption></figure>
 
 </div>
 
@@ -113,9 +113,9 @@ There are a number of options available when downloading Vaulted items;
 
 We’re started to integrate Vault with [Civitai Link v2](/civitais-guide-to-link-v2/), the new Desktop version of **Link**, which now allows downloading files from your Vault, removing files from your Vault, and even pushing local files to your Vault;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-114502-1024x366.png" alt="" width="1024" height="366" loading="lazy"><figcaption><em>Civitai Link v2, overlaid on the Civitai Vault</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-114502-1024x366.webp" alt="" width="1024" height="366" loading="lazy"><figcaption><em>Civitai Link v2, overlaid on the Civitai Vault</em></figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-12-114519-1024x250.png" alt="" width="1024" height="250" loading="lazy"><figcaption><em>Pushing local files into your Vault</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/04/Screenshot-2024-04-12-114519-1024x250.webp" alt="" width="1024" height="250" loading="lazy"><figcaption><em>Pushing local files into your Vault</em></figcaption></figure>
 
 ## FAQ & Notes {#requirements-limitations}
 

@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 6746
 excerpt: "Civitai’s Guide to Earning with the Creator Program!"
-image: "https://education.civitai.com/wp-content/uploads/2025/02/ComfyUI_01480_.png"
+image: "/wp-content/uploads/2025/02/ComfyUI_01480_.png"
 seo:
   title: "Civitai's Guide to Earning with the Creator Program! - Civitai Education"
   description: "Civitai’s Guide to the Creator Program; find out how you can earn real payouts for your contributions to the site!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/02/ComfyUI_01480_.png"
+  ogImage: "/wp-content/uploads/2025/02/ComfyUI_01480_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-earning-with-the-creator-program/"
 ---
 
@@ -38,7 +38,7 @@ As we continued to refine our business model, introduce paid features, and optim
 
 Rather than abandoning creator compensation, we’ve evolved the program into a more sustainable model – one that ties creator earnings directly to platform growth. This new system allows us to support more creators while ensuring Civitai remains viable for the long run!
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-26-224014-1024x414.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-26-224014-1024x414.webp)
 
 ## How do I Join, and Who’s Eligible to Earn? {#how-do-i-join-and-who-s-eligible-to-earn}
 
@@ -50,7 +50,7 @@ There are two requirements which must be met before you’re eligible to partici
 
 When those requirements are satisfied, you’ll be given the “green light” to join, on the [Buzz](https://civitai.com/user/buzz-dashboard) [Da](https://civitai.com/user/buzz-dashboard)[shboard](https://civitai.com/user/buzz-dashboard);
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-26-220453-1024x161.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-26-220453-1024x161.webp)
 
 ## The Compensation Pool
 
@@ -70,7 +70,7 @@ We display an estimated value of your total Buzz based on the assumption that a 
 
 This initial estimate is intended to be a guide and may not be representative of the actual worth of your Buzz.
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-26-221634-1024x338.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-26-221634-1024x338.webp)
 
 ## How it Works
 
@@ -80,7 +80,7 @@ These phases determine how Buzz is ultimately converted into earnings.
 
 ### **Banking Phase**
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-28-155916-1024x403.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-28-155916-1024x403.webp)
 
 **Timeframe:** Begins at the start of the month and lasts until **3 days before the end of the month (UTC).**
 
@@ -98,7 +98,7 @@ This phase allows creators to **secure a share of the Pool**– but its value is
 
 ### **Extraction Phase**
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-28-155829-1024x386.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-28-155829-1024x386.webp)
 
 **Timeframe:** Starts **3 days before the end of the month** and ends **1 hour before the month ends (UTC).**
 
@@ -147,7 +147,7 @@ Note that Buzz Extraction is all or nothing. You can’t extract just a portion 
 
 To ensure fair distribution of rewards, each creator has a **Banking Cap** that limits how much Buzz they can Bank in a given month. This cap is determined by their [M](https://civitai.com/pricing)[embe](https://civitai.com/pricing)[rship Tier](https://civitai.com/pricing):
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-25-152648.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-25-152648.webp)
 
 ### **What is the Peak Earning Month?**
 
@@ -182,7 +182,7 @@ Instructions for setting up your account will be provided within the withdrawal 
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/02/Screenshot-2025-02-28-160021.png)
+![](/wp-content/uploads/2025/02/Screenshot-2025-02-28-160021.webp)
 
 </div>
 

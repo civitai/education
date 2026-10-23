@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4747
 excerpt: "This comprehensive guide covers everything you need to know to start generating stunning images with this groundbreaking new model."
-image: "https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
+image: "/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
 seo:
   title: "Quickstart Guide to Flux! - Civitai Education"
   description: "Civitai's Quickstart Guide to Flux! This guide covers everything you need to know to start generating stunning images with this new model."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
+  ogImage: "/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
   canonical: "https://education.civitai.com/quickstart-guide-to-flux/"
 ---
 

@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 5570
 excerpt: "Stable Diffusion 3.5 has arrived! Is it any better than its predecessor? Find out now!"
-image: "https://education.civitai.com/wp-content/uploads/2024/10/sd35_square.png"
+image: "/wp-content/uploads/2024/10/sd35_square.webp"
 seo:
   title: "Stable Diffusion 3.5 is Here! - Civitai Education"
   description: "Stable Diffusion 3.5 has arrived! Is it any better than its predecessor? Check out our Quickstart Guide to Stable Diffusion 3.5 and find out!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/10/sd35_square.png"
+  ogImage: "/wp-content/uploads/2024/10/sd35_square.webp"
   canonical: "https://education.civitai.com/stable-diffusion-3-5-is-here/"
 ---
 

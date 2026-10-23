@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4939
 excerpt: "There are many types of Resource available for use on Civitai. This Guide breaks it all down in a clear and beginner friendly way!"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/output_00036_.png"
+image: "/wp-content/uploads/2024/08/output_00036_.png"
 seo:
   title: "Resource Types - Civitai Education"
   description: "There are many types of Resource available for use on Civitai. This Guide breaks it all down in a clear and beginner friendly way!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/output_00036_.png"
+  ogImage: "/wp-content/uploads/2024/08/output_00036_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-resource-types/"
 ---
 
@@ -30,7 +30,7 @@ In this guide, we’ll break down each type of resource available, explaining wh
 
 In the world of Stable Diffusion and text-to-image models, a **Diffusion Model** (Model) acts as the ‘brains’ behind the image generation process. At its core, a diffusion model is a sophisticated neural network trained on vast amounts of data, learning to generate images from text prompts through a process of refining random noise into a coherent picture. This model understands the intricate relationships between words and visual elements, allowing it to transform your ideas into detailed and often stunning images.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-20-231711-1024x371.png" alt="Civitai - Resource Types - Models" width="1024" height="371" loading="lazy"><figcaption><em>An example of Models hosted on Civitai.com</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-20-231711-1024x371.webp" alt="Civitai - Resource Types - Models" width="1024" height="371" loading="lazy"><figcaption><em>An example of Models hosted on Civitai.com</em></figcaption></figure>
 
 Models come in various versions, such as Stable Diffusion 1.5, Stable Diffusion XL, [Flux](/quickstart-guide-to-flux-1/), and more. They can be either open-source or closed-source, and some are designed as ‘general purpose,’ capable of generating a wide range of image content. Others are more specialized, focusing on particular artistic styles or specific concepts.
 

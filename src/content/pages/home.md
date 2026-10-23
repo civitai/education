@@ -9,61 +9,61 @@ excerpt: "Welcome to the Civitai.com Education Hub! The best resource for Stable
 seo:
   title: "Home - Civitai Education"
   description: "Welcome to the Civitai.com Education Hub! The best resource for Stable Diffusion and Generative AI Learning!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/07/5000x5000_banner.png"
+  ogImage: "/wp-content/uploads/2023/07/5000x5000_banner.webp"
   canonical: "https://education.civitai.com/"
 ---
 
 ## Civitai Education Hub
 
-![](https://education.civitai.com/wp-content/uploads/2023/09/lora_trainer_anim.webp)
+![](/wp-content/uploads/2023/09/lora_trainer_anim.webp)
 
 #### [Using Civitai – The On-Site LoRA Trainer](/using-civitai-the-on-site-lora-trainer/ "Using Civitai – The On-Site LoRA Trainer")
 
-![](https://education.civitai.com/wp-content/uploads/2023/10/LTXV_00087.webp)
+![](/wp-content/uploads/2023/10/LTXV_00087.webp)
 
 #### [Civitai’s Prompt-Crafting Guide: Part 1 – Basics](/civitais-prompt-crafting-guide-part-1-basics/ "Civitai’s Prompt-Crafting Guide: Part 1 – Basics")
 
-![](https://education.civitai.com/wp-content/uploads/2023/09/intro_anim.webp)
+![](/wp-content/uploads/2023/09/intro_anim.webp)
 
 #### [Start Making Generative AI Art – Civitai.com’s 100% Beginner’s Guide](/start-making-ai-art-with-civitai/ "Start Making Generative AI Art – Civitai.com’s 100% Beginner’s Guide")
 
-![](https://education.civitai.com/wp-content/uploads/2025/03/image-gen_anim.webp)
+![](/wp-content/uploads/2025/03/image-gen_anim.webp)
 
 #### [Using Civitai – The On-Site Image Generator](/using-civitai-the-on-site-image-generator/ "Using Civitai – The On-Site Image Generator")
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/Edu1.png)](/category/civitai/)
+[![](/wp-content/uploads/2023/08/Edu1.webp)](/category/civitai/)
 
 #### [Civitai](/category/civitai/)
 
-[![](https://education.civitai.com/wp-content/uploads/2024/03/Beginner.png)](/category/beginner-guides/)
+[![](/wp-content/uploads/2024/03/Beginner.webp)](/category/beginner-guides/)
 
 #### [Beginner](/category/beginner-guides/)
 
-[![](https://education.civitai.com/wp-content/uploads/2024/04/ytguides.png)](/category/guides/)
+[![](/wp-content/uploads/2024/04/ytguides.webp)](/category/guides/)
 
 #### [GUIDES](/category/guides/)
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/glossary.png)](/category/glossary/)
+[![](/wp-content/uploads/2023/08/glossary.webp)](/category/glossary/)
 
 #### [Glossary](/category/glossary/)
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/prompting.png)](/category/prompting/)
+[![](/wp-content/uploads/2023/08/prompting.webp)](/category/prompting/)
 
 #### [Prompting](/category/prompting/)
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/Training.png)](/category/training/)
+[![](/wp-content/uploads/2023/08/Training.webp)](/category/training/)
 
 #### [Training](/category/training/)
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/XL.png)](/category/sdxl/)
+[![](/wp-content/uploads/2023/08/XL.webp)](/category/sdxl/)
 
 #### [SDXL](/category/sdxl/)
 
-[![](https://education.civitai.com/wp-content/uploads/2023/08/video.png)](/category/video/)
+[![](/wp-content/uploads/2023/08/video.webp)](/category/video/)
 
 #### [ANIMATION](/category/video/)
 
-[![](https://education.civitai.com/wp-content/uploads/2024/03/wiki.png)](https://wiki.civitai.com/wiki/Main_Page)
+[![](/wp-content/uploads/2024/03/wiki.webp)](https://wiki.civitai.com/wiki/Main_Page)
 
 #### [WIKI](https://wiki.civitai.com/wiki/Main_Page)
 
@@ -79,7 +79,7 @@ Check out the latest Education Hub updates below!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg)
+![](/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg)
 
 ](/build-an-ai-influencer-with-civitai-com/)
 
@@ -93,7 +93,7 @@ Creating an AI Influencer with Civitai: A Step-by-Step Guide to viral success!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/08/announcement.png)
+![](/wp-content/uploads/2025/08/announcement.webp)
 
 ](/civitais-guide-to-buybuzz-io/)
 
@@ -107,7 +107,7 @@ Buzz Gift Cards for Civitai Memberships are now available!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/buzz_crypto_update.png)
+![](/wp-content/uploads/2025/05/buzz_crypto_update.webp)
 
 ](/civitais-guide-to-purchasing-buzz-with-crypto/)
 
@@ -121,7 +121,7 @@ Updated! Civitai’s Guide to using Cryptocurrency to purchase Buzz!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/RatingIMage.png)
+![](/wp-content/uploads/2025/05/RatingIMage.webp)
 
 ](/knights-of-the-new-order-minigame/)
 
@@ -139,7 +139,7 @@ Official Civitai-authored content. Solid guides for those looking to take their 
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg)
+![](/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg)
 
 ](/build-an-ai-influencer-with-civitai-com/)
 
@@ -153,7 +153,7 @@ Creating an AI Influencer with Civitai: A Step-by-Step Guide to viral success!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/buzz_crypto_update.png)
+![](/wp-content/uploads/2025/05/buzz_crypto_update.webp)
 
 ](/civitais-guide-to-purchasing-buzz-with-crypto/)
 
@@ -167,7 +167,7 @@ Updated! Civitai’s Guide to using Cryptocurrency to purchase Buzz!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/RatingIMage.png)
+![](/wp-content/uploads/2025/05/RatingIMage.webp)
 
 ](/knights-of-the-new-order-minigame/)
 
@@ -181,7 +181,7 @@ Civitai’s Guide to the Knights of the New Order image rating game – now open
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/GPT_API.png)
+![](/wp-content/uploads/2025/05/GPT_API.webp)
 
 ](/civitais-guide-to-gpt-image-1/)
 
@@ -195,7 +195,7 @@ Civitai’s Guide to GPT Image 1 – OpenAI’s latest image generation model!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp)
+![](/wp-content/uploads/2025/03/ComfyUI_00041_.webp)
 
 ](/civitais-guide-to-video-gen-prompting/)
 
@@ -209,7 +209,7 @@ Civitai’s Guide to Video Gen Prompting! This guide will help you create more c
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp)
+![](/wp-content/uploads/2025/03/ComfyUI_00041_.webp)
 
 ](/hunyuan-wan2-1-generation/)
 
@@ -223,7 +223,7 @@ We’ve just launched Hunyuan and Wan 2.1 for on-site video generation – both 
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2025/03/coverage_anim.webp)
+![](/wp-content/uploads/2025/03/coverage_anim.webp)
 
 ](/civitais-guide-to-checkpoint-coverage-featured-models-and-the-auction-system/)
 
@@ -271,7 +271,7 @@ Prefer to watch? Follow our comprehensive Video Guides!
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/1_SAM2.png)
+![](/wp-content/uploads/2024/09/1_SAM2.webp)
 
 ](/easy-alpha-mattes-rotoscoping-in-comfyui-using-sam2/)
 
@@ -285,7 +285,7 @@ This tutorial will teach you how to easily extract detailed alpha mattes from vi
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/CERSPENSE.png)
+![](/wp-content/uploads/2024/09/CERSPENSE.webp)
 
 ](/audio-reactive-ai-animation-masterclass-ft-cerspense/)
 
@@ -299,7 +299,7 @@ In this very special Twitch stream, Cerspense walks us through his entire workfl
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/FILL-v2.png)
+![](/wp-content/uploads/2024/09/FILL-v2.webp)
 
 ](/vfx-nodes-in-comfyui-ft-machine-delusions/)
 
@@ -313,7 +313,7 @@ In this Guest Creator Stream, Machine Delusions, debuts his brand new set of VFX
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/DOTSIMULATE.png)
+![](/wp-content/uploads/2024/09/DOTSIMULATE.webp)
 
 ](/real-time-ai-generations-in-touch-designer-ft-dotsimulate/)
 
@@ -327,7 +327,7 @@ In this video, DotSimulate shows us how to utilize and build out a real time aud
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/MORPH-STREAM.png)
+![](/wp-content/uploads/2024/09/MORPH-STREAM.webp)
 
 ](/amazing-ai-animations-using-morph/)
 
@@ -341,7 +341,7 @@ In this video, we walk through the popular workflow by IPIV called MORPH. This w
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/PURZ.png)
+![](/wp-content/uploads/2024/09/PURZ.webp)
 
 ](/make-insane-ai-logo-animations-using-masks-ft-purz/)
 
@@ -355,7 +355,7 @@ In this video, Purz teaches you how to make crazy animations using AnimateDiff a
 
 [
 
-![](https://education.civitai.com/wp-content/uploads/2024/09/NATE_ANYNODE.png)
+![](/wp-content/uploads/2024/09/NATE_ANYNODE.webp)
 
 ](/comfyui-node-that-creates-any-node-for-you-ft-nate-creator-of-anynode/)
 

@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 6393
 excerpt: "Trained for a fraction of the cost of OpenAI’s models Large Language Models, DeepSeek R1 has exploded onto the scene, sending shockwaves through the tech world. Find out how to get started in our Intro to LLMs!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+image: "/wp-content/uploads/2025/03/network_anim.webp"
 seo:
   title: "DeepSeek LLM Shock! - Civitai Education"
   description: "DeepSeek R1 has exploded onto the scene, sending shockwaves through the tech world. Find out the latest in our Guide to LLMs!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2025/03/network_anim.webp"
+  ogImage: "/wp-content/uploads/2025/03/network_anim.webp"
   canonical: "http://education.civitai.com/deepseek-llm-shock/"
 ---
 

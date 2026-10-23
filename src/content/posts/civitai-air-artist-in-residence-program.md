@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 3373
 excerpt: "We’re thrilled to announce the launch of Civitai AiR, our groundbreaking Artist-in-Residence Program"
-image: "https://education.civitai.com/wp-content/uploads/2024/02/4-c2x.png"
+image: "/wp-content/uploads/2024/02/4-c2x.webp"
 seo:
   title: "Civitai AiR - Artist-in-Residence Program - Civitai Education"
   description: "We're thrilled to announce the launch of Civitai AiR, our groundbreaking Artist-in-Residence Program. Apply now!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/02/4-c2x.png"
+  ogImage: "/wp-content/uploads/2024/02/4-c2x.webp"
   canonical: "http://education.civitai.com/civitai-air-artist-in-residence-program/"
 ---
 

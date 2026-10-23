@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4015
 excerpt: "Learn about Civitai’s new image Rating game! A bit of fun which will help us design better content tagging solutions!"
-image: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00029_.png"
+image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00029_.png"
 seo:
   title: "Civitai's Guide to The Rating Game - Civitai Education"
   description: "Learn about Civitai's new image Rating game - Civitai Rater! A bit of fun, which helps us design better content tagging solutions!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00029_.png"
+  ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00029_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-the-rating-game/"
 ---
 
@@ -36,25 +36,25 @@ With the release of the new [Content Level](/civitais-guide-to-content-levels/) 
 
 We’re working on improving our content moderation system, and we’d love if you could help improve our data! Think [mechanical turk](https://www.mturk.com/), but for Civitai! We’ll use the data collected to help us make better content decisions in future.
 
-<figure><a href="https://civitai.com/research/rater"><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193024-1024x738.png" alt="" width="1024" height="738" loading="lazy"></a><figcaption><em>The Rater</em></figcaption></figure>
+<figure><a href="https://civitai.com/research/rater"><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-193024-1024x738.webp" alt="" width="1024" height="738" loading="lazy"></a><figcaption><em>The Rater</em></figcaption></figure>
 
 ## _Why_ would I play Civitai Rater?
 
 Out of the goodness of your heart, and a desire to help Civitai succeed! We’re not giving out Buzz ? for this, but you can be **_immortalized_** on the [Image Rater Leaderboard](https://civitai.com/leaderboard/rater), and earn a Badge!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193923.png" alt="" width="644" height="530" loading="lazy"><figcaption><em>Top Image Raters!</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-193923.webp" alt="" width="644" height="530" loading="lazy"><figcaption><em>Top Image Raters!</em></figcaption></figure>
 
 ## _How_ do I play Civitai Rater? {#how-do-i-set-these-ratings}
 
 It’s extremely simple; the goal is to rate the images displayed, using the following as a guide;
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193058.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-26-193058.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193103.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-26-193103.webp)
 
 To achieve this, there are a set of Content Level buttons below the image, allowing you to select the appropriate rating for the image;
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193041.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-26-193041.webp)
 
 Pretty straightforward! The following buttons might need a little extra explanation;
 
@@ -72,9 +72,9 @@ We do have a system in place to rate your accuracy to avoid anyone trying to int
 
 Every few images you’ll be shown a **_Control Image_** – an image we know the rating of – and your rating will be compared to that known rating. They’re generally images which are easy to make determinations on. If you get the rating wrong, you’ll be given a **strike**. You can make up to three strikes before it’s game over and your Level is reset to 0!
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-26-193028.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-26-193028.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-27-152707.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-27-152707.webp)
 
 ## I need more help!
 

@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 7032
 excerpt: "Civitai’s Guide to GPT Image 1 – OpenAI’s latest image generation model!"
-image: "https://education.civitai.com/wp-content/uploads/2025/05/GPT_API.png"
+image: "/wp-content/uploads/2025/05/GPT_API.webp"
 seo:
   title: "Civitai's Guide to GPT Image 1 - Civitai Education"
   description: "This guide will help you get the most out of your GPT Image 1 Generations! Try the model out today on Civitai.com!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/05/GPT_API.png"
+  ogImage: "/wp-content/uploads/2025/05/GPT_API.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-gpt-image-1/"
 ---
 
@@ -62,7 +62,7 @@ streets + parked cars + buildings -> street sign -> witches. Characters must be 
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/dyda_4a.webp)
+![](/wp-content/uploads/2025/05/dyda_4a.webp)
 
 </div>
 
@@ -91,7 +91,7 @@ _A chalkboard café menu on a brick wall listing drinks like ‘Espresso’, ‘
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/58c2f227-07fc-47ed-8c62-c9d72be73723-0-683x1024.png)
+![](/wp-content/uploads/2025/05/58c2f227-07fc-47ed-8c62-c9d72be73723-0-683x1024.webp)
 
 </div>
 
@@ -107,7 +107,7 @@ The model demonstrates exceptional prompt adherence and conceptual understanding
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/4e336f8c-4a5b-4269-80d2-fee9f8de95f0-0-683x1024.png)
+![](/wp-content/uploads/2025/05/4e336f8c-4a5b-4269-80d2-fee9f8de95f0-0-683x1024.webp)
 
 </div>
 
@@ -125,7 +125,7 @@ _A young woman in a flowing white sundress, standing on a grassy hillside as the
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/1e6eded3-a163-4ee0-85f3-366214cd8ba7-0-683x1024.png)
+![](/wp-content/uploads/2025/05/1e6eded3-a163-4ee0-85f3-366214cd8ba7-0-683x1024.webp)
 
 </div>
 
@@ -145,7 +145,7 @@ _A weathered standing stone covered in moss, standing alone in a forest clearing
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/59a04ef9-6942-4186-a76d-34e6f9b24b1f-0-1024x683.png)
+![](/wp-content/uploads/2025/05/59a04ef9-6942-4186-a76d-34e6f9b24b1f-0-1024x683.webp)
 
 </div>
 
@@ -161,7 +161,7 @@ Pass the resulting image back into the Generator with the Image To Image context
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-05-06-133707.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-05-06-133707.webp)
 
 </div>
 
@@ -177,7 +177,7 @@ _make it a snowy wintery scene_
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/8219c6e1-1dc9-44d5-8933-672798df0404-0-1024x683.png)
+![](/wp-content/uploads/2025/05/8219c6e1-1dc9-44d5-8933-672798df0404-0-1024x683.webp)
 
 </div>
 
@@ -187,7 +187,7 @@ _make it a snowy wintery scene_
 
 #### Quality {#transparency}
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-05-08-164513.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-05-08-164513.webp)
 
 We offer High, Medium, and Low, quality outputs which affect cost, speed of generation, and of course, image fidelity.
 
@@ -195,19 +195,19 @@ We offer High, Medium, and Low, quality outputs which affect cost, speed of gene
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2025/05/high-683x1024.png" alt="" width="683" height="1024" loading="lazy"><figcaption><em>High quality – 375 Buzz</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2025/05/high-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>High quality – 375 Buzz</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2025/05/medium-683x1024.png" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Medium Quality – 100 Buzz</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2025/05/medium-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Medium Quality – 100 Buzz</em></figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2025/05/low-683x1024.png" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Low Quality – 25 Buzz</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2025/05/low-683x1024.webp" alt="" width="683" height="1024" loading="lazy"><figcaption><em>Low Quality – 25 Buzz</em></figcaption></figure>
 
 </div>
 
@@ -219,7 +219,7 @@ GPT Image 1 includes built-in transparent background support, accessible directl
 
 This transparency is handled directly by the GPT Image 1 model itself and is distinct from Civitai’s own post-generation background removal tools, offering cleaner results with fewer artifacts right from the start.
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-05-06-152021.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-05-06-152021.webp)
 
 <div class="columns">
 
@@ -231,7 +231,7 @@ _A cute cartoon knight sticker, thick lines, white outline_
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/62d72368-0686-4c13-8087-d43782f0eff5-0-683x1024.png)
+![](/wp-content/uploads/2025/05/62d72368-0686-4c13-8087-d43782f0eff5-0-683x1024.webp)
 
 </div>
 
@@ -253,7 +253,7 @@ Our Upscale workflow is fully compatible with GPT Image 1 outputs, allowing user
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2025-05-06-140400.png)
+![](/wp-content/uploads/2025/05/Screenshot-2025-05-06-140400.webp)
 
 </div>
 
@@ -269,7 +269,7 @@ Below are some examples generated on-site, showcasing how static GPT Image 1 cre
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/1e6eded3-a163-4ee0-85f3-366214cd8ba7-0-2-683x1024.png)
+![](/wp-content/uploads/2025/05/1e6eded3-a163-4ee0-85f3-366214cd8ba7-0-2-683x1024.webp)
 
 </div>
 
@@ -285,7 +285,7 @@ Below are some examples generated on-site, showcasing how static GPT Image 1 cre
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/b27c8302-d353-4e8e-9d41-e7eadfb9f338-0-683x1024.jpg)
+![](/wp-content/uploads/2025/05/b27c8302-d353-4e8e-9d41-e7eadfb9f338-0-683x1024.webp)
 
 </div>
 
@@ -301,7 +301,7 @@ Below are some examples generated on-site, showcasing how static GPT Image 1 cre
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/abeda64e-a5a5-408f-9a3a-8148534b49ff-0-1024x683.jpg)
+![](/wp-content/uploads/2025/05/abeda64e-a5a5-408f-9a3a-8148534b49ff-0-1024x683.webp)
 
 </div>
 

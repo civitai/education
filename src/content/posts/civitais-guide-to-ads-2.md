@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 5127
 excerpt: "Civitai’s Guide to Ads and Generation Buzz!"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/return_of_the_ads-1.png"
+image: "/wp-content/uploads/2024/08/return_of_the_ads-1.webp"
 seo:
   title: "Civitai's Guide to Ads and Generation Buzz - Civitai Education"
   description: "Ads on Civitai can now serve offset our cost of generation so we can offer more free generations to users per day!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/return_of_the_ads-1.png"
+  ogImage: "/wp-content/uploads/2024/08/return_of_the_ads-1.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-ads-2/"
 ---
 
@@ -64,7 +64,7 @@ We’ve taken the time to address the concerns we previously had with ads. Thank
 
 Ads offer a way to supplement free Buzz for users who can’t afford a subscription. **If you do have a membership, you can still earn Blue Buzz by enabling ads in your Account Settings**.
 
-![Enabling Ad Content from the Account Settings](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-27-155939.png)
+![Enabling Ad Content from the Account Settings](/wp-content/uploads/2024/08/Screenshot-2024-08-27-155939.webp)
 
 When you’re browsing the site without an ad blocker or a Safe For Work filter, you’ll earn “**Blue Buzz**” at a rate of ?**0.25 per ad viewed**. This special Buzz can only be used in the onsite generator at present, but will be expanded to cover more site services very soon!
 
@@ -78,11 +78,11 @@ There are a number of conditions that **must be met before ads will display**;
 
 -   You must be viewing **PG** or **PG 13** content. Selecting **R** or higher will preclude ads from displaying.
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-28-103820.png)
+![](/wp-content/uploads/2024/08/Screenshot-2024-08-28-103820.webp)
 
 -   If you’re a [paying Me](https://civitai.com/pricing)[mber](https://civitai.com/pricing), you’ll have to **opt-in** to view ad content, from the Account Settings menu;
 
-![](http://education.civitai.com//wp-content/uploads/2024/08/Toggle-Ad-Content-from-the-Account-Settings.png)
+![](/wp-content/uploads/2024/08/Toggle-Ad-Content-from-the-Account-Settings.webp)
 
 -   Free users, and users who are not logged in, do not have the ability to toggle off Ad Content.
 
@@ -90,25 +90,25 @@ Ads are presented in a number of locations;
 
 -   The Image Feed
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-28-105435.png" alt="" width="1005" height="647" loading="lazy"><figcaption><em>Ad showing in the Image Feed</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-28-105435.webp" alt="" width="1005" height="647" loading="lazy"><figcaption><em>Ad showing in the Image Feed</em></figcaption></figure>
 
 -   The Model Feed
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-28-105134-1024x186.png" alt="" width="1024" height="186" loading="lazy"><figcaption><em>Ad showing in the Model Feed</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-28-105134-1024x186.webp" alt="" width="1024" height="186" loading="lazy"><figcaption><em>Ad showing in the Model Feed</em></figcaption></figure>
 
 -   Beneath the Generation Information pane on images opened full-size
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-28-105732.png" alt="" width="432" height="538" loading="lazy"><figcaption><em>Ad placeholder, below the Generation data pane on a full-sized image view.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-28-105732.webp" alt="" width="432" height="538" loading="lazy"><figcaption><em>Ad placeholder, below the Generation data pane on a full-sized image view.</em></figcaption></figure>
 
 -   Below the User panel on Models
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-28-110516.png" alt="" width="419" height="549" loading="lazy"><figcaption><em>Ad placeholder, below the User panel on Model cards</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-28-110516.webp" alt="" width="419" height="549" loading="lazy"><figcaption><em>Ad placeholder, below the User panel on Model cards</em></figcaption></figure>
 
 ## Generator Buzz – Blue Buzz – Bluzz! {#generator-buzz}
 
 When you browse ads, you’ll now earn “Blue Buzz,” a special type of Buzz that can only be used in the Image Generator. This Buzz still compensates creators but cannot be traded between users. By default, the generator will use your Blue Buzz first before tapping into your regular purchased and earned Buzz.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/08/Screenshot-2024-08-27-161335.png" alt="Generator Buzz" width="589" height="107" loading="lazy"><figcaption><em>The Generation pane, primed to use Generation Buzz</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/08/Screenshot-2024-08-27-161335.webp" alt="Generator Buzz" width="589" height="107" loading="lazy"><figcaption><em>The Generation pane, primed to use Generation Buzz</em></figcaption></figure>
 
 Blue Buzz will be refunded when images fail to generate, the same as when paying with regular purchased Buzz.
 

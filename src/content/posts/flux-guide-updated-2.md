@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5879
 excerpt: "We’ve updated our Quickstart Guide to Flux with exciting new features! Learn about Flux Pro 1.1 Ultra and Flux Pro 1.1 Ultra Raw, plus explore the newly released Flux Tools – Inpainting! IP Adapter! ControlNet!"
-image: "https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
+image: "/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
 seo:
   title: "Flux Guide Updated! - Civitai Education"
   description: "We've updated our Quickstart Guide to Flux with exciting new features! Learn about Flux Pro 1.1 Ultra and Flux Pro 1.1 Ultra Raw."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
+  ogImage: "/wp-content/uploads/2024/08/MarkuryFLUX_00096_.png"
   canonical: "https://education.civitai.com/flux-guide-updated-2/"
 ---
 

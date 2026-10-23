@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4233
 excerpt: "In this video we will install Easy Diffusion 3.0 on both PC & MacOS as well as Automatic1111 on Windows 10/11."
-image: "https://education.civitai.com/wp-content/uploads/2024/04/Screenshot-2024-04-23-160244.png"
+image: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160244.webp"
 seo:
   title: "#2 Installations - Easy Diffusion & Automatic 1111 - Civitai Education"
   description: "In this video we will install Easy Diffusion 3.0 on both PC & MacOS as well as Automatic1111 on Windows 10/11"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/04/Screenshot-2024-04-23-160244.png"
+  ogImage: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160244.webp"
   canonical: "https://education.civitai.com/2-installations-easy-diffusion-automatic-1111/"
 ---
 

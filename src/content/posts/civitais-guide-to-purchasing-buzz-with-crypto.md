@@ -13,10 +13,10 @@ tags:
 author: "civitai"
 wpId: 7118
 excerpt: "Updated! Civitai’s Guide to using Cryptocurrency to purchase Buzz!"
-image: "https://education.civitai.com/wp-content/uploads/2025/05/buzz_crypto_update.png"
+image: "/wp-content/uploads/2025/05/buzz_crypto_update.webp"
 seo:
   title: "Civitai's Guide to Purchasing Buzz with Crypto - Civitai Education"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/05/buzz_crypto_update.png"
+  ogImage: "/wp-content/uploads/2025/05/buzz_crypto_update.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-purchasing-buzz-with-crypto/"
 ---
 
@@ -68,7 +68,7 @@ We’ll assume you’ve purchased some crypto, and have it ready to transfer in 
 
 Head to the [Buzz purchase page on Civitai](https://civitai.com/purchase/buzz) to begin, either from the link, or from the “Buy Buzz” option, from the Profile Picture Menu.
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/image-1.png)
+![](/wp-content/uploads/2025/05/image-1.webp)
 
 You’ll be presented with a QR code, and a number of **Currencies**.
 
@@ -84,13 +84,13 @@ Note how the Deposit Address changes based on the currency selected. Some curren
 
 <div class="column">
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2026-03-12-161339.png)
+![](/wp-content/uploads/2025/05/Screenshot-2026-03-12-161339.webp)
 
 </div>
 
 <div class="column">
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2026-03-12-161354.png)
+![](/wp-content/uploads/2025/05/Screenshot-2026-03-12-161354.webp)
 
 </div>
 
@@ -108,17 +108,17 @@ It’s as easy as sending any amount of crypto (above the minimum!) to the corre
 
 We’re going to send $10 USD worth of Bitcoin, from Coinbase.com, to our Civitai BTC address. How this is accomplished varies by app – but there will most likely be a “Send crypto” option.
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2026-03-12-141547.png)
+![](/wp-content/uploads/2025/05/Screenshot-2026-03-12-141547.webp)
 
 We paste in our Civitai Bitcoin Deposit address, or, if on mobile, scan the QR code to copy the address to clipboard;
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/image-2.png)
+![](/wp-content/uploads/2025/05/image-2.webp)
 
 And make our payment!
 
 Additionally – and _this is extremely important_ – if sending Bitcoin (BTC) you **MUST** use the Bitcoin network. Sending with Base, Solana, or any other networks will result in a failed payment and the loss of your crypto!
 
-![](http://education.civitai.com/wp-content/uploads/2025/05/btc_bitcoin_network-300x297.png)
+![](/wp-content/uploads/2025/05/btc_bitcoin_network-300x297.webp)
 
 <div class="columns">
 
@@ -134,7 +134,7 @@ This particular transaction took ~20 minutes to complete.
 
 <div class="column">
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/Screenshot-2026-03-12-141641.png)
+![](/wp-content/uploads/2025/05/Screenshot-2026-03-12-141641.webp)
 
 </div>
 
@@ -144,11 +144,11 @@ This particular transaction took ~20 minutes to complete.
 
 Head back to the [https://civitai.com/purchase/buzz](https://civitai.com/purchase/buzz) page, or the Buy Buzz modal window from the main Profile Picture Menu, and wait for your incoming deposit!
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/image-3.png)
+![](/wp-content/uploads/2025/05/image-3.webp)
 
 After a few minutes (or hours, depending on your currency and network!), you’ll hopefully see the deposit arrive;
 
-![](https://education.civitai.com/wp-content/uploads/2025/05/image-4.png)
+![](/wp-content/uploads/2025/05/image-4.webp)
 
 And we’re done! The Buzz is instantly available in your account! Easy!
 

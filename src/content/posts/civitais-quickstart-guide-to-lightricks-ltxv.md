@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 5885
 excerpt: "Civitai’s Guide to getting started with Lightricks Video Generation!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
 seo:
   title: "Civitai's Quickstart Guide to Lightricks LTXV! - Civitai Education"
   description: "Civitai's Guide to getting started with Lightricks Video Generation!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-lightricks-ltxv/"
 ---
 
@@ -192,37 +192,37 @@ Unfortunately, the new model requires new Workflows! We’ve put together some s
 
 **To download the workflows below, you may have to right click and “Save link as…”**
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Text-to-Video-1024x347.png" alt="" width="1024" height="347" loading="lazy"><figcaption>Simple Text-to-Video with a Positive/Negative Prompt</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Text-to-Video-1024x347.webp" alt="" width="1024" height="347" loading="lazy"><figcaption>Simple Text-to-Video with a Positive/Negative Prompt</figcaption></figure>
 
-[LTXV 0.9.5 Simple Text-to-Video](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Text-to-Video.zip)
+[LTXV 0.9.5 Simple Text-to-Video](/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Text-to-Video.zip)
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Image-to-Video-1024x437.png" alt="" width="1024" height="437" loading="lazy"><figcaption>Simple Image-to-Video with Positive/Negative Prompt Conditioning/Guidance</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Image-to-Video-1024x437.webp" alt="" width="1024" height="437" loading="lazy"><figcaption>Simple Image-to-Video with Positive/Negative Prompt Conditioning/Guidance</figcaption></figure>
 
-[LTXV 0.9.5 Simple Image-to-Video](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Image-to-Video.zip)
+[LTXV 0.9.5 Simple Image-to-Video](/wp-content/uploads/2024/11/LTXV-0.9.5-Simple-Image-to-Video.zip)
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Advanced-Image-to-Video-1024x482.png" alt="" width="1024" height="482" loading="lazy"><figcaption>Advanced Image-to-Video with auto-prompt Gen, very good results!</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/11/LTXV-0.9.5-Advanced-Image-to-Video-1024x482.webp" alt="" width="1024" height="482" loading="lazy"><figcaption>Advanced Image-to-Video with auto-prompt Gen, very good results!</figcaption></figure>
 
-[LTXV 0.9.5 Advanced Image-to-Video](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-0.9.5-Advanced-Image-to-Video.zip)
+[LTXV 0.9.5 Advanced Image-to-Video](/wp-content/uploads/2024/11/LTXV-0.9.5-Advanced-Image-to-Video.zip)
 
 #### Sample Workflows (Model version 0.9.1 & older) {#sample-workflows-model-version-0-9-1-older}
 
 Simple text2video workflow. Note; requires Video Combine node, part of the [Video Helper Suite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/workflow-2-1024x474.png)
+![](/wp-content/uploads/2024/11/workflow-2-1024x474.webp)
 
-[LTXV – text2video](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-text2video.zip)
+[LTXV – text2video](/wp-content/uploads/2024/11/LTXV-text2video.zip)
 
 Simple img2video workflow. Note; requires Video Combine node, part of the [Video Helper Suite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/workflow_img2video-1024x499.png)
+![](/wp-content/uploads/2024/11/workflow_img2video-1024x499.webp)
 
-[LTXV – img2video](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-img2video.zip)
+[LTXV – img2video](/wp-content/uploads/2024/11/LTXV-img2video.zip)
 
 It turns out that LTXV doesn’t particularly like “clean”, high-resolution input images, and can often produce videos with no motion when those are passed in. To combat this, it helps to add some compression to the input image prior to it being passed in to LTXV. The following workflow automates that process, resulting in far fewer “no motion” outputs;
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/workflow-3-1024x740.png)
+![](/wp-content/uploads/2024/11/workflow-3-1024x740.webp)
 
-[LTXV img2video – V2](http://education.civitai.com/wp-content/uploads/2024/11/LTXV-img2video-V2.zip)
+[LTXV img2video – V2](/wp-content/uploads/2024/11/LTXV-img2video-V2.zip)
 
 ### ComfyUI Advanced Workflows (Model version 0.9.1, & older) {#comfyui-advanced-workflows-model-version-0-9-1-older}
 
@@ -254,19 +254,19 @@ Interestingly, the latest **2b 0.9.1** model is a whopping _4 gigabytes_ _smalle
 
 The best way to install the [LTXV custom](https://github.com/Lightricks/ComfyUI-LTXVideo) [n](https://github.com/Lightricks/ComfyUI-LTXVideo)[odes](https://github.com/Lightricks/ComfyUI-LTXVideo) is from the ComfyUI Manager;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/11/Screenshot-2024-12-19-153716-1024x189.png" alt="" width="1024" height="189" loading="lazy"><figcaption><em>Search for LTXV in the ComfyUI Manager</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/11/Screenshot-2024-12-19-153716-1024x189.webp" alt="" width="1024" height="189" loading="lazy"><figcaption><em>Search for LTXV in the ComfyUI Manager</em></figcaption></figure>
 
 Once all the required node-dependencies are installed – use the ComfyUI manager to resolve any missing node warnings – you can simply add a short prompt (text-to-video), or drop an initial image (image-to-video), and the generation process can begin!
 
 The following Workflows are official Lightricks creations, which have been re-organized and grouped for clarity, but otherwise unedited. If you’d prefer to use the originals, they can be found [here (text-to-video)](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/assets/ltxvideo-t2v.json) and [here (ima](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/assets/ltxvideo-i2v.json)[ge-t](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/assets/ltxvideo-i2v.json)[o-video)](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/assets/ltxvideo-i2v.json).
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/Advanced-LTXV-Img2Video-1024x415.png)
+![](/wp-content/uploads/2024/11/Advanced-LTXV-Img2Video-1024x415.webp)
 
-[Advanced LTXV Img2Video](http://education.civitai.com/wp-content/uploads/2024/11/Advanced-LTXV-Img2Video.zip)
+[Advanced LTXV Img2Video](/wp-content/uploads/2024/11/Advanced-LTXV-Img2Video.zip)
 
-![](http://education.civitai.com//wp-content/uploads/2024/11/Advanced-LTXV-txt2Video-1024x502.png)
+![](/wp-content/uploads/2024/11/Advanced-LTXV-txt2Video-1024x502.webp)
 
-[Advanced LTXV Text2Video](http://education.civitai.com/wp-content/uploads/2024/11/Advanced-LTXV-Text2Video.zip)
+[Advanced LTXV Text2Video](/wp-content/uploads/2024/11/Advanced-LTXV-Text2Video.zip)
 
 ### Prompting
 

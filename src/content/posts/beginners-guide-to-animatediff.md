@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 2080
 excerpt: "Civitai guide to getting started with AnimateDiff! Everything you need to know to getting started adding stunning animation to your images!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/00047-1828030299.gif"
+image: "/wp-content/uploads/2023/09/00047-1828030299.webp"
 seo:
   title: "Beginner's Guide to AnimateDiff: Add Motion to Stable Diffusion"
   description: "Explore the fundamentals of AnimateDiff with our Beginner's Guide and learn how to add captivating motion to Stable Diffusion generations."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/00047-1828030299.gif"
+  ogImage: "/wp-content/uploads/2023/09/00047-1828030299.webp"
   canonical: "https://education.civitai.com/beginners-guide-to-animatediff/"
 ---
 
@@ -40,25 +40,25 @@ There’s also a **video2video** implementation which works in conjunction with 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/00030-3069168298.gif)
+![](/wp-content/uploads/2023/09/00030-3069168298.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/00002-3844614465-666x1024.gif)
+![](/wp-content/uploads/2023/09/00002-3844614465-666x1024.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/00062-3616096135.gif)
+![](/wp-content/uploads/2023/09/00062-3616096135.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image.gif)
+![](/wp-content/uploads/2023/09/image.gif)
 
 </div>
 
@@ -141,7 +141,7 @@ The following LoRA **will only work with the V1.5 v2 Motion Module**, above.
 
 If you’d like to test AnimateDiff on some pre-defined models, it can be accessed via [this HuggingFace space](https://huggingface.co/spaces/guoyww/AnimateDiff). Note that it’s slow, there’s a queue, but it can output **512×768** images.
 
-[![](http://education.civitai.com//wp-content/uploads/2023/09/image-91-1024x210.png)](https://huggingface.co/spaces/guoyww/AnimateDiff)
+[![](/wp-content/uploads/2023/09/image-91-1024x210.webp)](https://huggingface.co/spaces/guoyww/AnimateDiff)
 
 ### Google Colab
 
@@ -153,7 +153,7 @@ There are three **AnimateDiff** workbooks authored by [@camenduru](https://githu
 
 They are _meant_ to be runnable on the Free Colab tier – but I hit **13.6GB VRAM** usage while running, so keep an eye on that virtual GPU!
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-83-1024x595.png)
+![](/wp-content/uploads/2023/09/image-83-1024x595.webp)
 
 Note that both the Command Line and Gradio Colab interfaces are limited to **24 frames** at **512×512** to try to keep below the Free-tier threshold.
 
@@ -163,13 +163,13 @@ Note that both the Command Line and Gradio Colab interfaces are limited to **24 
 
 When using the headless Colab, you can edit the prompts by editing these (or creating your own) **.yaml** files. Outputs will appear in the **animatediff/samples/modelname/sample** directory.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-85.png)
+![](/wp-content/uploads/2023/09/image-85.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-84.png)
+![](/wp-content/uploads/2023/09/image-84.webp)
 
 </div>
 
@@ -181,15 +181,15 @@ The best implementation of AnimateDiff for WebUI is currently [Continue-Revoluti
 
 Installing is as simple as heading to the **Extensions** \> **Available** tab, clicking “**Load From**“, then searching for “**animatediff**“.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-86-1024x423.png)
+![](/wp-content/uploads/2023/09/image-86-1024x423.webp)
 
 You’ll then need to download one of the available **Motion Modules** to be able to inject motion into your generations. Head to [Civitai](https://www.civitai.com) and filter the models page to “**Motion**” – or download from the direct links in the table above.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/image-88.png" alt="" width="671" height="241" loading="lazy"><figcaption>Motion Modules should be placed in the <code><strong>WebUI\stable-diffusion-webui\extensions\sd-webui-animatediff\model</strong></code> directory</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/image-88.webp" alt="" width="671" height="241" loading="lazy"><figcaption>Motion Modules should be placed in the <code><strong>WebUI\stable-diffusion-webui\extensions\sd-webui-animatediff\model</strong></code> directory</figcaption></figure>
 
 It’s now as simple as opening the **AnimateDiff** drawer from the **left accordion menu** in WebUI, selecting a Motion module, **enabling the extension**, and generating as normal (at **512×512**, or **512×768**, no hires. fix)!
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/animate_update-1024x586.png)
+![](/wp-content/uploads/2023/09/animate_update-1024x586.webp)
 
 #### Auto1111 Advanced Usage
 
@@ -201,13 +201,13 @@ A number of additional settings were recently added to the Auto1111 Extension, a
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/rollleft2.gif)
+![](/wp-content/uploads/2023/09/rollleft2.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/rollright2.gif)
+![](/wp-content/uploads/2023/09/rollright2.webp)
 
 </div>
 
@@ -221,11 +221,11 @@ There are a couple of problems with the current implementation of AnimateDiff in
 
 -   ~~**VAE doesn’t seem to be applied**, and **the more frames generated, the darker and more washed out our colors are**.~~ This doesn’t seem to affect the example images on the main AnimateDiff repo – **Appears to be fixed**! Enjoy beautiful colorful outputs!
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/00001-3856861301.gif)
+![](/wp-content/uploads/2023/11/00001-3856861301.webp)
 
 -   Many generations seem to have trouble unloading the Motion modules, leaving generation “stuck” at **~98% completion** and **GPU at 100% load**. The only fix I’ve found is to close and re-start WebUI.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-90-1024x104.png)
+![](/wp-content/uploads/2023/09/image-90-1024x104.webp)
 
 -   You can generate with _**any**_ SD 1.5 model, but some will turn out more muted and show less movement than others. I’ve had good results with the [Beaut](https://civitai.com/models/101888/beautyfool)[yF](https://civitai.com/models/101888/beautyfool)[ool](https://civitai.com/models/101888/beautyfool), [Aniv](https://civitai.com/models/107842/aniverse)[er](https://civitai.com/models/107842/aniverse)[se](https://civitai.com/models/107842/aniverse) & [HelloYoung25d](https://civitai.com/models/134442/helloyoung25d) models.
 
@@ -233,7 +233,7 @@ There are a couple of problems with the current implementation of AnimateDiff in
 
 For a full, comprehensive guide on installing ComfyUI and getting started with AnimateDiff in Comfy, we recommend Creator [Inner\_Reflections\_AI’s](https://civitai.com/user/Inner_Reflections_AI) **Community Guide** – **[ComfyUI AnimateDiff Guide/Workflows Including Prompt Scheduling](https://civitai.com/articles/2379/guide-comfyui-animatediff-guideworkflows-including-prompt-scheduling-an-inner-reflections-guide)** which includes some great **ComfyUI workflows** for every type of AnimateDiff process.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/11/animatediff_gif_inner_reflections_AI.gif" alt="" width="600" height="338" loading="lazy"><figcaption><em>AnimateDiff created by Inner_Reflections_AI, using video2video ComfyUI workflow</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/11/animatediff_gif_inner_reflections_AI.webp" alt="" width="600" height="338" loading="lazy"><figcaption><em>AnimateDiff created by Inner_Reflections_AI, using video2video ComfyUI workflow</em></figcaption></figure>
 
 #### ComfyUI Custom Nodes
 
@@ -243,23 +243,23 @@ Two of the most popular repos are;
 
 -   [ArtVe](https://github.com/ArtVentureX)[ntur](https://github.com/ArtVentureX)[eX](https://github.com/ArtVentureX)‘s [com](https://github.com/ArtVentureX/comfyui-animatediff)[fyui](https://github.com/ArtVentureX/comfyui-animatediff)[\-animatediff implementation](https://github.com/ArtVentureX/comfyui-animatediff).
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/255335486-a88e2141-c55f-4bdb-b6ca-9155b6639114-1024x550.png" alt="" width="1024" height="550" loading="lazy"><figcaption>Example txt2img flow from ArtVentureX’s ComfyUI nodes</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/255335486-a88e2141-c55f-4bdb-b6ca-9155b6639114-1024x550.webp" alt="" width="1024" height="550" loading="lazy"><figcaption>Example txt2img flow from ArtVentureX’s ComfyUI nodes</figcaption></figure>
 
 -   [Kosinkadink](https://github.com/Kosinkadink)‘s [comfyui-animatediff-ev](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved)[olv](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved)[ed implementation](https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved). Adds some extra features to ArtVentureX’s implementation.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/266359996-2e6be92e-8f0b-428c-b7b4-84589ebd701e-1024x494.png" alt="" width="1024" height="494" loading="lazy"><figcaption>Example txt2img flow from Kosinkadink’s ComfyUI nodes</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/266359996-2e6be92e-8f0b-428c-b7b4-84589ebd701e-1024x494.webp" alt="" width="1024" height="494" loading="lazy"><figcaption>Example txt2img flow from Kosinkadink’s ComfyUI nodes</figcaption></figure>
 
 <div class="columns">
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/265203419-4f03d03d-839b-484d-b612-8add086a6b8b.gif" alt="" width="768" height="768" loading="lazy"><figcaption>txt2img with latent upscale, Kosinkadink’s Comfy UI nodes</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/265203419-4f03d03d-839b-484d-b612-8add086a6b8b.webp" alt="" width="768" height="768" loading="lazy"><figcaption>txt2img with latent upscale, Kosinkadink’s Comfy UI nodes</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/09/265029636-4ca8abd2-0b48-41d6-9eea-ed1467a68f5f.gif" alt="" width="768" height="768" loading="lazy"><figcaption>txt2img with ControlNet-Stabilized Latent Upscale, Kosinkadink’s ComfyUI nodes</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/09/265029636-4ca8abd2-0b48-41d6-9eea-ed1467a68f5f.webp" alt="" width="768" height="768" loading="lazy"><figcaption>txt2img with ControlNet-Stabilized Latent Upscale, Kosinkadink’s ComfyUI nodes</figcaption></figure>
 
 </div>
 
@@ -279,9 +279,9 @@ Simple **AnimateDiff txt2video** workflow, requiring the following custom nodes;
 
 Note that upscaling is VRAM intensive.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/workflow-1024x713.png)
+![](/wp-content/uploads/2024/01/workflow-1024x713.webp)
 
-[Civitai\_AnimateDiff\_with\_Motion\_LoRA\_and\_Video\_Upscale](http://education.civitai.com//wp-content/uploads/2023/09/Civitai_AnimateDiff_with_Motion_LoRA_and_Video_Upscale-1.zip)
+[Civitai\_AnimateDiff\_with\_Motion\_LoRA\_and\_Video\_Upscale](/wp-content/uploads/2023/09/Civitai_AnimateDiff_with_Motion_LoRA_and_Video_Upscale-1.zip)
 
 #### AnimateDiff with Motion LoRA, SD LoRA, Upscaling, and Prompt Scheduling
 
@@ -295,9 +295,9 @@ Note that upscaling is VRAM intensive.
 
 Note that upscaling is VRAM intensive.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/workflow-1-1024x725.png)
+![](/wp-content/uploads/2024/01/workflow-1-1024x725.webp)
 
-[Civitai\_AnimateDiff\_Motion\_Prompt\_Scheduling](http://education.civitai.com//wp-content/uploads/2023/09/Civitai_AnimateDiff_Motion_Prompt_Scheduling-1.zip)
+[Civitai\_AnimateDiff\_Motion\_Prompt\_Scheduling](/wp-content/uploads/2023/09/Civitai_AnimateDiff_Motion_Prompt_Scheduling-1.zip)
 
 ## The Future
 

@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 4055
 excerpt: "Civitai guide to the Civitai Membership Tiers"
-image: "https://education.civitai.com/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
+image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
 seo:
   title: "Civitai's Guide to Membership Tiers - Civitai Education"
   description: "We're excited to share significant updates to Civitai's Membership model, designed with our community's growth and sustainability in mind!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
+  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
   canonical: "https://education.civitai.com/civitais-guide-to-membership-tiers/"
 ---
 
@@ -40,7 +40,7 @@ A note on the **Free** tier! There’s absolutely _no requirement_ to buy a Civi
 
 The new Civitai’s Membership model forms four **Membership Tiers**; **Free**, **Bronze**, **Silver**, and **Gold** – each with their own fantastic rewards, benefits, and perks.
 
-![](http://education.civitai.com/wp-content/uploads/2024/04/Screenshot-2025-02-20-003129-1024x720.png)
+![](/wp-content/uploads/2024/04/Screenshot-2025-02-20-003129-1024x720.webp)
 
 The following table explores the benefits in more detail;
 
@@ -73,7 +73,7 @@ The following table explores the benefits in more detail;
 -   **How do I Manage my Membership?**
     If you’d like to Manage your Membership, head to your Account Settings from the Profile Picture Menu in the top right of the screen, and scroll down to the **Membership** section;
 
-![](http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-02-145430.png)
+![](/wp-content/uploads/2024/04/Screenshot-2024-04-02-145430.webp)
 
 ## The Future
 

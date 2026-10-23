@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 5529
 excerpt: "Civitai’s Guide to getting started with Stability AI’s new SD 3.5 suite of models."
-image: "https://education.civitai.com/wp-content/uploads/2024/10/sd35_square.png"
+image: "/wp-content/uploads/2024/10/sd35_square.webp"
 seo:
   title: "Getting Started with Stable Diffusion 3.5 - Civitai Education"
   description: "Civitai's Guide to getting started with Stability AI's new SD 3.5 suite of models; Stable Diffusion Large, Large Turbo, and Medium."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/10/sd35_square.png"
+  ogImage: "/wp-content/uploads/2024/10/sd35_square.webp"
   canonical: "https://education.civitai.com/getting-started-with-stable-diffusion-3-5/"
 ---
 
@@ -36,11 +36,11 @@ Due to this change, we’ve had to remove **SD 3.5** and derivative models from 
 
 Stable Diffusion 3 is back! After the lacklustre, [m](https://civitai.com/models/512461/sd3-experience-girl-lying-on-grass)[uch](https://civitai.com/models/512461/sd3-experience-girl-lying-on-grass) [derided](https://civitai.com/models/512461/sd3-experience-girl-lying-on-grass), launch of Stable Diffusion 3, Stability have made sweeping architecture and training changes to their latest line of models, the 3.5 suite, now released under an updated, more permissive [Community License](https://stability.ai/community-license-agreement), with enhancements to image fidelity, prompt adherence & controllability, and text rendering.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/diverse_sd3.5-1024x334.jpg" alt="" width="1024" height="334" loading="lazy"><figcaption><em>SD 3.5 Large output examples, from Stability AI</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/diverse_sd3.5-1024x334.webp" alt="" width="1024" height="334" loading="lazy"><figcaption><em>SD 3.5 Large output examples, from Stability AI</em></figcaption></figure>
 
 Civitai generated test images (prompts borrowed from community uploads), using SD 3.5 Large;
 
-<div data-embed="gallery"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00004_.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00004_.png" width="1024" height="1024" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00014_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00014_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00012_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00012_.png" width="832" height="1216" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00001_.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00001_.png" width="1024" height="1024" loading="lazy"><img src="https://i0.wp.com/education.civitai.com//wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00007_-701x1024.png" alt="" data-orig-file="https://education.civitai.com/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00007_.png" width="832" height="1216" loading="lazy"></div>
+<div data-embed="gallery"><img src="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00004_.png" alt="" data-orig-file="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00004_.png" width="1024" height="1024" loading="lazy"><img src="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00014_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00014_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00012_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00012_.png" width="832" height="1216" loading="lazy"><img src="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00001_.png" alt="" data-orig-file="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00001_.png" width="1024" height="1024" loading="lazy"><img src="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00007_-701x1024.webp" alt="" data-orig-file="/wp-content/uploads/2024/10/ComfyUI_temp_jkzon_00007_.png" width="832" height="1216" loading="lazy"></div>
 
 ## What’s New? {#what-s-new}
 
@@ -60,7 +60,7 @@ And with the revised license terms, comes;
 
 According to Stability AI’s own ELO scoring, the models lead the market in prompt adherence and rival much larger models in image quality – edging out Flux.1 Dev;
 
-![](http://education.civitai.com//wp-content/uploads/2024/10/chart1-1024x527.jpg)
+![](/wp-content/uploads/2024/10/chart1-1024x527.webp)
 
 ## Using on Civitai’s Image Generator {#using-on-civitai-s-image-generator}
 
@@ -69,7 +69,7 @@ SD 3.5 Large and Turbo are available for use on the [Image Generator](/using-civ
 -   [SD 3.5 Larg](https://civitai.com/models/878387/stable-diffusion-35-large)[e](https://civitai.com/models/878387/stable-diffusion-35-large)
 -   [SD 3.5 Turbo](https://civitai.com/models/878645/stable-diffusion-35-large-turbo)
 
-![](http://education.civitai.com//wp-content/uploads/2024/10/Screenshot-2024-10-28-215013-1024x539.png)
+![](/wp-content/uploads/2024/10/Screenshot-2024-10-28-215013-1024x539.webp)
 
 <div class="columns">
 
@@ -81,7 +81,7 @@ We’re still adjusting settings for the best quality images, and the pricing mo
 
 <div class="column" style="flex-basis:66.66%">
 
-![](http://education.civitai.com//wp-content/uploads/2024/10/Screenshot-2024-10-28-215120.png)
+![](/wp-content/uploads/2024/10/Screenshot-2024-10-28-215120.webp)
 
 </div>
 
@@ -121,27 +121,27 @@ To be placed within the **\\ComfyUI\\models\\clip** directory.
 
 We’ve put together a quick and extremely unscientific comparison of **Large**, **Large Turbo**, **Medium**, and the closest competitor, **Flux Dev**. These images share the same prompts and settings (steps, cfg, and sampler adjusted for Large Turbo) and are _slightly_ cherry-picked – taking the best of 5 generations for each model;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/3-1024x374.png" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 1</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/3-1024x374.webp" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 1</figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/2-1024x374.png" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 2</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/2-1024x374.webp" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 2</figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/1-1024x374.png" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 3</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/1-1024x374.webp" alt="" width="1024" height="374" loading="lazy"><figcaption>Example 3</figcaption></figure>
 
 ## Workflows
 
 We’ve provided a couple of simple ComfyUI text2img workflows, based upon the official Stability AI SD 3.5 workflows, edited for clarity and ease of use;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/workflow_example-1024x439.png" alt="" width="1024" height="439" loading="lazy"><figcaption>SD 3.5 Medium, Basic Workflow</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/workflow_example-1024x439.webp" alt="" width="1024" height="439" loading="lazy"><figcaption>SD 3.5 Medium, Basic Workflow</figcaption></figure>
 
-[SD3.5\_Medium Civitai\_Workflow](http://education.civitai.com//wp-content/uploads/2024/10/SD35_medium_workflow.zip)
+[SD3.5\_Medium Civitai\_Workflow](/wp-content/uploads/2024/10/SD35_medium_workflow.zip)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/workflow_image_civitai-1024x439.png" alt="" width="1024" height="439" loading="lazy"><figcaption><em>SD 3.5 Large, Basic Workflow</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/workflow_image_civitai-1024x439.webp" alt="" width="1024" height="439" loading="lazy"><figcaption><em>SD 3.5 Large, Basic Workflow</em></figcaption></figure>
 
-[SD3.5\_Civitai\_Workflow](http://education.civitai.com//wp-content/uploads/2024/10/SD3.5_Civitai_Workflow.zip)
+[SD3.5\_Civitai\_Workflow](/wp-content/uploads/2024/10/SD3.5_Civitai_Workflow.zip)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/10/turbo_workflow_image_civitai-1024x439.png" alt="" width="1024" height="439" loading="lazy"><figcaption><em>SD 3.5 Large Turbo, Basic Workflow</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/10/turbo_workflow_image_civitai-1024x439.webp" alt="" width="1024" height="439" loading="lazy"><figcaption><em>SD 3.5 Large Turbo, Basic Workflow</em></figcaption></figure>
 
-[SD3.5L\_Turbo\_example\_workflow](http://education.civitai.com//wp-content/uploads/2024/10/SD3.5L_Turbo_example_workflow.zip)
+[SD3.5L\_Turbo\_example\_workflow](/wp-content/uploads/2024/10/SD3.5L_Turbo_example_workflow.zip)
 
 ## License Considerations
 

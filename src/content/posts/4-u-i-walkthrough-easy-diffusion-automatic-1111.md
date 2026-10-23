@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4241
 excerpt: "In this video we will walk through the basic functions you need to be aware of and how to navigate the user interfaces of both Easy Diffusion and Automatic1111"
-image: "https://education.civitai.com/wp-content/uploads/2024/04/Screenshot-2024-04-23-160716.png"
+image: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160716.webp"
 seo:
   title: "#4 UI Walkthrough - Easy Diffusion & Automatic 1111 - Civitai Education"
   description: "In this video we will walk through the basic functions you need to be aware of and how to navigate the user interfaces!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/04/Screenshot-2024-04-23-160716.png"
+  ogImage: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160716.webp"
   canonical: "https://education.civitai.com/4-u-i-walkthrough-easy-diffusion-automatic-1111/"
 ---
 

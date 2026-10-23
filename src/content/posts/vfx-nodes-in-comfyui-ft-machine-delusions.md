@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5222
 excerpt: "In this Guest Creator Stream, Machine Delusions, debuts his brand new set of VFX nodes for ComfyUI called FIL Nodes!"
-image: "https://education.civitai.com/wp-content/uploads/2024/09/FILL-v2.png"
+image: "/wp-content/uploads/2024/09/FILL-v2.webp"
 seo:
   title: "VFX Nodes in ComfyUI ft. Machine Delusions - Civitai Education"
   description: "In this Guest Creator Stream, Machine Delusions, debuts his brand new set of VFX nodes for ComfyUI called FIL Nodes!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/09/FILL-v2.png"
+  ogImage: "/wp-content/uploads/2024/09/FILL-v2.webp"
   canonical: "http://education.civitai.com/vfx-nodes-in-comfyui-ft-machine-delusions/"
 ---
 

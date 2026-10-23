@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5193
 excerpt: "In this video we will walk through the basic functions you need to be aware of and how to navigate the user interfaces of both Easy Diffusion and Automatic1111"
-image: "https://education.civitai.com/wp-content/uploads/2024/09/SYNTAXDIFFUSION.png"
+image: "/wp-content/uploads/2024/09/SYNTAXDIFFUSION.webp"
 seo:
   title: "Animating Anything w/ Live Portrait ft. SyntaxDiffusion - Civitai Education"
   description: "In this Civitai Creator Session, SyntaxDiffusion joins us to take a first look at Live Portrait; a group of nodes for ComfyUI."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/09/SYNTAXDIFFUSION.png"
+  ogImage: "/wp-content/uploads/2024/09/SYNTAXDIFFUSION.webp"
   canonical: "https://education.civitai.com/animating-anything-w-live-portrait-ft-syntaxdiffusion/"
 ---
 

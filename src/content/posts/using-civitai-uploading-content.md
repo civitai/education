@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1533
 excerpt: "How to Get Started with Civitai! This guide focuses on Uploading Content, Posting Images and Writing Articles!"
-image: "https://education.civitai.com/wp-content/uploads/2023/09/output_00187_.png"
+image: "/wp-content/uploads/2023/09/output_00187_.png"
 seo:
   title: "How to Upload and Share Generative AI Images on Civitai"
   description: "Dive into our guide to find out how you can seamlessly upload and share your generative art through Civitai.com."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/09/output_00187_.png"
+  ogImage: "/wp-content/uploads/2023/09/output_00187_.png"
   canonical: "https://education.civitai.com/using-civitai-uploading-content/"
 ---
 
@@ -44,7 +44,7 @@ We’ve tried to make the interfaces for adding your content as simple as possib
 
 Uploading any content starts with the **Blue Create** button at the top right of the menu, details below!
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-100908-1024x291.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-100908-1024x291.webp)
 
 ### Upload a model
 
@@ -76,7 +76,7 @@ We then need to set the Model Permissions. These options are split into two sect
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-71-658x1024.png)
+![](/wp-content/uploads/2023/08/image-71-658x1024.webp)
 
 </div>
 
@@ -96,7 +96,7 @@ We then need to set the Model Permissions. These options are split into two sect
 
 Lastly, and extremely importantly, if your model depicts a **real person**, or a character played by a real person, you must review the last section carefully.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/Screenshot-2024-09-20-232357.png)
+![](/wp-content/uploads/2023/09/Screenshot-2024-09-20-232357.webp)
 
 If your model was trained on real imagery of a living, or deceased, person, or depicts a character portrayed by a real-life actor or actress (e.g. Tom Cruise, or Tom Cruise as Maverick), you _MUST_ check the “**Yes**” box.
 
@@ -116,7 +116,7 @@ First we add a name for our version. This defaults to **v1.0**.
 
 We then specify our **Early Access** preferences. Early access puts the model version into a release queue only visible to [Civitai Supporter Tier Members](https://civitai.com/pricing) for the specified number of days. This allows for feedback to be collected prior to a full release to all Civitai members.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image.png)
+![](/wp-content/uploads/2023/09/image.png)
 
 We then select a **Base Model** and **Base Model Type**. These help categorize the model.
 
@@ -124,23 +124,23 @@ We then select a **Base Model** and **Base Model Type**. These help categorize t
 
 **Trigger Words** may be required on some types of model to make it function. Specify them here. If your model does not need Trigger Words, toggle the “**This version doesn’t require any trigger words**” switch, and this entry will no longer be required.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-1.png)
+![](/wp-content/uploads/2023/09/image-1.webp)
 
 The next block details the **Training Parameters.** While this is _not required_ data, many users appreciate knowing how the resource was trained, and the recommended settings to produce good results.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-2.png)
+![](/wp-content/uploads/2023/09/image-2.webp)
 
 #### Step 3 – Upload files {#step-3-upload-files}
 
 We can now upload our Resource files! In this step, simply drag and drop (or click the box to open the Windows file-select dialogue) your files onto the page. Accepted filetypes are **.ckpt**, **.pt**, **.safetensors**, **.bin**, **.zip**, **.yaml**, **.yml**, **.onnx**
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-3.png)
+![](/wp-content/uploads/2023/09/image-3.webp)
 
 Different File Type choices will be shown _depending on the type of content uploaded_. In this example we’ve uploaded **Training Data images** in **.zip** format. Select the appropriate **File Type** from the list and click “**Start Upload**” to begin transferring your files to the Civitai servers.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-4.png)
+![](/wp-content/uploads/2023/09/image-4.webp)
 
-<figure class="alignright"><img src="http://education.civitai.com//wp-content/uploads/2023/09/image-5.png" alt="" width="345" height="289" loading="lazy"></figure>
+<figure class="alignright"><img src="/wp-content/uploads/2023/09/image-5.webp" alt="" width="345" height="289" loading="lazy"></figure>
 
 Note that when uploading large files **_you can continue to the next steps of the Upload Wizard without interrupting the upload process_**.
 
@@ -166,7 +166,7 @@ Before you can post your image Post (and publish your resource) you must select 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-8.png)
+![](/wp-content/uploads/2023/09/image-8.webp)
 
 </div>
 
@@ -176,9 +176,9 @@ Before you can post your image Post (and publish your resource) you must select 
 
 When your uploaded resource has all the required constituent parts (**a valid model card**, **version**, **uploaded files**, and **Post**) you can move the movel out of **Drafts** into the **Public** realm, where it will be visible to the community and available for download. You can publish the model immediately, or schedule for a future timed release.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-9.png)
+![](/wp-content/uploads/2023/09/image-9.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-10.png)
+![](/wp-content/uploads/2023/09/image-10.webp)
 
 ### Post images
 
@@ -186,7 +186,7 @@ Maybe you’ve created some exceptional images you’d like to share with the co
 
 Accepted image file types are **.png**, **.jpeg**, **.mp4**, and **.webm**
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-101319.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-101319.webp)
 
 <div class="columns">
 
@@ -208,7 +208,7 @@ Lastly, **Publish** will make your image live/visible in the Image Feed! Head ov
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-12-855x1024.png)
+![](/wp-content/uploads/2023/09/image-12-855x1024.webp)
 
 </div>
 
@@ -216,7 +216,7 @@ Lastly, **Publish** will make your image live/visible in the Image Feed! Head ov
 
 ### Write Articles
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-25-101407.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-25-101407.webp)
 
 The third way to interact with the Community is via [Articles](https://civitai.com/articles) – long (or short) format text (and images), perfect for tutorials, guides, news updates and showcases – we’ve provided a number of **Categories** for all manner of content types.
 
@@ -226,4 +226,4 @@ You can optionally **Tag** your article, and upload **Attachments** (any filetyp
 
 You can save your new **Article** as a **Draft** at any time, and come back to editing it later, until you’re ready to post. To find **Draft** articles, navigate to your Profile, select **Articles** from the top menu, then “**Draft**” on the left **Published/Draft toggle menu**.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-14.png)
+![](/wp-content/uploads/2023/09/image-14.webp)

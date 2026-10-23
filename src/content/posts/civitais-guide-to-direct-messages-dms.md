@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3316
 excerpt: "Civitai Guide to Direct Messages (DMs)!"
-image: "https://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
+image: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
 seo:
   title: "Civitai's Guide to Direct Messages (DMs)! - Civitai Education"
   description: "Civitai Direct Messages (DMs) allow our community members to connect and interact on a more personal level."
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
+  ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
   canonical: "http://education.civitai.com/civitais-guide-to-direct-messages-dms/"
 ---
 
@@ -43,21 +43,21 @@ The system will also be leveraged by the Civitai Community Managers and Moderato
 
 The Direct Message system is launched from the **chat icon** in the top right of the page.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-153707.png" alt="" width="540" height="112" loading="lazy"><figcaption><em>Launch the Main Chat Interface from the</em> <strong>Chat Icon</strong></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/01/Screenshot-2024-01-26-153707.webp" alt="" width="540" height="112" loading="lazy"><figcaption><em>Launch the Main Chat Interface from the</em> <strong>Chat Icon</strong></figcaption></figure>
 
 The Main Chat Interface will appear in the bottom left corner of the screen (or fullscreen on mobile)
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/02/Screenshot-2024-02-11-155740.png" alt="" width="804" height="706" loading="lazy"><figcaption><em>Chat Interface</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/02/Screenshot-2024-02-11-155740.webp" alt="" width="804" height="706" loading="lazy"><figcaption><em>Chat Interface</em></figcaption></figure>
 
 ### Other ways to Initiate Chats
 
 Chats can also be initiated from the **green Chat button** on a User’s profile;
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-183226.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-26-183226.webp)
 
 And from the same button on model pages;
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-185020.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-26-185020.webp)
 
 ## Sending Direct Messages {#planned-features}
 
@@ -65,11 +65,11 @@ There are a number of ways to initiate a Chat with another Civitai member.
 
 To do so from the main Chat Interface, select the **New Chat +**, then enter a name into the Select users search.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/search_user.png)
+![](/wp-content/uploads/2024/01/search_user.webp)
 
 Selecting a user from the Search list and clicking **Start Chat**, will initiate a **Chat Request**;
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-26-171252.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-26-171252.webp)
 
 -   Up to 10 users (including you – so 9 + 1) can be added to a **Group Chat**, by adding multiple usernames from the **Select users** list.
 
@@ -89,21 +89,21 @@ Conversations are categorized into three distinct tabs;
 
 On-site Civitai links are shown as **clickable hyperlinks**. For security, any external link will not appear as a hyperlink.
 
-![](http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-06-130133.png)
+![](/wp-content/uploads/2024/04/Screenshot-2024-04-06-130133.webp)
 
 Additionally, Civitai Model and Image links are automatically expanded/unfurled when pasted into the Chat;
 
-![](http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-06-130052.png)
+![](/wp-content/uploads/2024/04/Screenshot-2024-04-06-130052.webp)
 
 ## Notifications {#notifications-2}
 
 By default, new **New Chat Notifications** will appear as a red dot on the **Chat Icon**, top right of the page. Chat Notifications can be disabled on a per-chat basis from the cogwheel/gear icon.
 
-![](http://education.civitai.com//wp-content/uploads/2024/02/Screenshot-2024-02-11-155921.png)
+![](/wp-content/uploads/2024/02/Screenshot-2024-02-11-155921.webp)
 
 Additionally, new chat messages will trigger an alert sound. This can be disabled – _globally_ (for all chats) – from the wrench icon. Chats can be marked as read from this same menu.
 
-![](http://education.civitai.com//wp-content/uploads/2024/02/Screenshot-2024-02-11-155929.png)
+![](/wp-content/uploads/2024/02/Screenshot-2024-02-11-155929.webp)
 
 ## Safety & Privacy
 
@@ -113,7 +113,7 @@ We’ve implemented a number of safety features to ensure your experience with D
 
 -   The Direct Message system **can be toggled off** entirely from the User Account Settings, if you do not wish to send nor receive any messages.
 
-![](http://education.civitai.com//wp-content/uploads/2024/04/Screenshot-2024-04-06-125554.png)
+![](/wp-content/uploads/2024/04/Screenshot-2024-04-06-125554.webp)
 
 -   If you no longer wish to chat with someone, you can **leave** the chat from the cogwheel menu. The chat will be moved to the **Archived** tab and you will no longer receive messages, or message notifications from that user. Note: Archived chats can be re-joined at any time, should you wish.
 
@@ -129,7 +129,7 @@ We’ve implemented a number of safety features to ensure your experience with D
 
 Chats can be reported from the **cogwheel/gear icon** at the top of the **Chat Pane**. Initiating a report will open the report window, allowing you to specify the nature of the report. Reported chats will enter a moderation queue for action by a moderator.
 
-![](http://education.civitai.com//wp-content/uploads/2024/01/Screenshot-2024-01-31-020459.png)
+![](/wp-content/uploads/2024/01/Screenshot-2024-01-31-020459.webp)
 
 ## Planned Features & Known Bugs
 

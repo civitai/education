@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1225
 excerpt: "Last Update Version Changes 8/17/2023 1.0 First version! This document will be kept up to date with SDXL 1.0 Training Developments ?? This guide will provide; What is SDXL 1.0? SDXL 1.0 is a groundbreaking new model from Stability AI, with a base image size of 1024×1024 – providing a huge leap in image quality/fidelity […]"
-image: "https://education.civitai.com/wp-content/uploads/2023/07/Splash_final_crop.png"
+image: "/wp-content/uploads/2023/07/Splash_final_crop.webp"
 seo:
   title: "Essential Guide to Training SDXL 1.0 Models"
   description: "Learn the essentials of training SDXL 1.0 models and discover tips for enhanced image quality and fidelity in generative AI."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/07/Splash_final_crop-1024x576.png"
+  ogImage: "/wp-content/uploads/2023/07/Splash_final_crop-1024x576.webp"
   canonical: "https://education.civitai.com/sdxl-1-0-training-overview/"
 ---
 
@@ -95,7 +95,7 @@ Each “**step**” is officially called a “**cell**”. A **notebook is a lis
 
 an example of a cell;
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-2-1024x167.png)
+![](/wp-content/uploads/2023/08/image-2-1024x167.webp)
 
 To execute code in a cell, mouse over the **\[ \]** to the left of the cell and click the circular arrow “run” button.
 
@@ -105,7 +105,7 @@ The code in the cell will execute, and in this case, will print out the result i
 
 After execution, you’ll see a _**green checkmark**_ to show the code within that particular cell has finished running successfully;
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-3-1024x318.png)
+![](/wp-content/uploads/2023/08/image-3-1024x318.webp)
 
 Some cells will perform multiple tasks, including downloading additional files, or installing dependencies. Note that these downloads and installs _are not affecting your local PC_ – they’re running “_inside_” the virtual notebook to which you’re connected, via Colab.
 
@@ -119,7 +119,7 @@ Since Colab Notebooks are just lists of Python instructions, **we can copy them 
 
 If you save a local copy in Google Drive to make changes, you can also view the Revision history by going to **File > Revision History**
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-4-1024x970.png)
+![](/wp-content/uploads/2023/08/image-4-1024x970.webp)
 
 ### Sessions
 
@@ -133,9 +133,9 @@ Once connected, you can view (and control) your active sessions from the “**Ma
 
 When you’re finished using the notebook, it’s best to either select “**Disconnect and delete runtime**”, or click the trashcan icon from the Active Sessions display.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-5-1024x947.png)
+![](/wp-content/uploads/2023/08/image-5-1024x947.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-6-1024x263.png)
+![](/wp-content/uploads/2023/08/image-6-1024x263.webp)
 
 ### Google Drive Integration
 
@@ -143,13 +143,13 @@ Sometimes Colab notebooks require us to **upload files** from our local PCs, or 
 
 Depending on the notebook you’re using, the creator might have implemented code to connect to your Google Drive as part of the Colab workflow;
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-7-1024x281.png)
+![](/wp-content/uploads/2023/08/image-7-1024x281.webp)
 
 Or you might have to connect manually using the Folder icon on the left of the Colab page, and the Mount Drive icon. This will open a dialogue asking for confirmation to allow the connection between Colab and Google Drive.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-8-1024x674.png)
+![](/wp-content/uploads/2023/08/image-8-1024x674.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-9-1024x386.png)
+![](/wp-content/uploads/2023/08/image-9-1024x386.webp)
 
 Please be aware that connecting your Google Drive to a Colab without fully understanding what it does is a risky business! Please be careful of what the Colab is doing before agreeing to connect, as _once connected the Colab has full control over all your files_!
 
@@ -157,7 +157,7 @@ Please be aware that connecting your Google Drive to a Colab without fully under
 
 For this guide we’ve put together and captioned 15 images of everyone’s favorite Star Trek character, Jar Jar Binks. We have not cropped the images – they’re various dimensions.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-10-1024x360.png)
+![](/wp-content/uploads/2023/08/image-10-1024x360.webp)
 
 The captioning is basic;
 
@@ -167,7 +167,7 @@ The captioning is basic;
 
 Training images and captions can be downloaded here;
 
-[67\_JJBinks](http://education.civitai.com//wp-content/uploads/2023/08/67_JJBinks.zip)
+[67\_JJBinks](/wp-content/uploads/2023/08/67_JJBinks.zip)
 
 ## Training with Colab
 
@@ -177,7 +177,7 @@ Johnson’s Colab is extremely straightforward – work your way down from the t
 
 Note that you _WILL_ need a [Colab Pro](https://colab.research.google.com/signup) account ($10 USD per month subscription) to run this workbook – it _WILL NOT_ work with pay-as-you-go credits, due to the high RAM requirements.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-11-1024x464.png)
+![](/wp-content/uploads/2023/08/image-11-1024x464.webp)
 
 <div class="columns">
 
@@ -197,7 +197,7 @@ If you have a batch of 2, it will train _**two steps (images) at once**_! If you
 
 <div class="column">
 
-<figure class="alignright"><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-12-727x1024.png" alt="" width="727" height="1024" loading="lazy"></figure>
+<figure class="alignright"><img src="/wp-content/uploads/2023/08/image-12-727x1024.webp" alt="" width="727" height="1024" loading="lazy"></figure>
 
 </div>
 
@@ -205,19 +205,19 @@ If you have a batch of 2, it will train _**two steps (images) at once**_! If you
 
 Connected to a Tesla V100 Colab Pro Runtime, with Johnson’s default LoRA settings, our 2000 step LoRA took ~1 hour.
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-13-1024x187.png)
+![](/wp-content/uploads/2023/08/image-13-1024x187.webp)
 
 ## Local Training with Kohya Trainer
 
 We’re using the popular [kohya\_ss GUI](https://github.com/bmaltais/kohya_ss) (release v21.8.5), ([Windows installation instructions](https://github.com/bmaltais/kohya_ss#windows)). If you’ve used an older version of Kohya Trainer in the past, you’ll have to update, as there are SDXL Model specific settings which we need to be able to train against SDXL. Remember to set your SDXL Model path and check the SDXL Model box!
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-14-1024x223.png)
+![](/wp-content/uploads/2023/08/image-14-1024x223.webp)
 
 We’ve listed our recommended settings below which you can manually transpose into the Kohya settings page, or you can pre-populate Kohya with our settings by loading the .json (below) into the Configuration file section at the top of the Trainer interface;
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-15-1024x154.png)
+![](/wp-content/uploads/2023/08/image-15-1024x154.webp)
 
-[SDXLSettings](http://education.civitai.com//wp-content/uploads/2023/08/SDXLSettings.zip)
+[SDXLSettings](/wp-content/uploads/2023/08/SDXLSettings.zip)
 
 Note that after loading our .json settings you will need to go back to set your folder paths, and SDXL model source directory to your own local paths.
 
@@ -272,35 +272,19 @@ In testing, we’ve found these, and similar settings, result in _extremely high
 
 ## LoRA Result (Local Kohya)
 
-[JJBinksColab](http://education.civitai.com//wp-content/uploads/2023/08/JJBinksColab.zip)
+[JJBinksColab](/wp-content/uploads/2023/08/JJBinksColab.zip)
 
 <div class="columns">
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-16-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Jar Jar Binks eating spaghetti</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/08/image-16-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Jar Jar Binks eating spaghetti</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-17-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Line drawn Jar Jar Binks</figcaption></figure>
-
-</div>
-
-</div>
-
-<div class="columns">
-
-<div class="column">
-
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-18-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Court Justice Jar Jar Binks</figcaption></figure>
-
-</div>
-
-<div class="column">
-
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-19-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Toddler Jar Jar Binks</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/08/image-17-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Line drawn Jar Jar Binks</figcaption></figure>
 
 </div>
 
@@ -310,40 +294,56 @@ In testing, we’ve found these, and similar settings, result in _extremely high
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-20-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Fantasy Panther Jar Jar Binks</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/08/image-18-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Court Justice Jar Jar Binks</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/08/image-21-797x1024.png" alt="" width="797" height="1024" loading="lazy"><figcaption>Jar Jar Binks’ 8th Birthday</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/08/image-19-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Toddler Jar Jar Binks</figcaption></figure>
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-22-1024x583.png)
+<div class="columns">
+
+<div class="column">
+
+<figure><img src="/wp-content/uploads/2023/08/image-20-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Fantasy Panther Jar Jar Binks</figcaption></figure>
+
+</div>
+
+<div class="column">
+
+<figure><img src="/wp-content/uploads/2023/08/image-21-797x1024.webp" alt="" width="797" height="1024" loading="lazy"><figcaption>Jar Jar Binks’ 8th Birthday</figcaption></figure>
+
+</div>
+
+</div>
+
+![](/wp-content/uploads/2023/08/image-22-1024x583.webp)
 
 ## LoRA Result (Johnson’s Fork Colab) {#lora-result-johnson-s-fork-colab}
 
-[JJBinksColab](http://education.civitai.com//wp-content/uploads/2023/08/JJBinksColab.zip)
+[JJBinksColab](/wp-content/uploads/2023/08/JJBinksColab.zip)
 
 <div class="columns">
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-24-1024x1024.png)
+![](/wp-content/uploads/2023/08/image-24-1024x1024.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-25-1024x1024.png)
+![](/wp-content/uploads/2023/08/image-25-1024x1024.webp)
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-26-1024x583.png)
+![](/wp-content/uploads/2023/08/image-26-1024x583.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2023/08/image-27-1024x583.png)
+![](/wp-content/uploads/2023/08/image-27-1024x583.webp)

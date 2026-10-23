@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2790
 excerpt: "Civitai guide to getting started with Stable Video Diffusion! Everything you need to know to getting started turning your images into video!"
-image: "https://education.civitai.com/wp-content/uploads/2023/11/ComfyUI_00507_.webp"
+image: "/wp-content/uploads/2023/11/ComfyUI_00507_.webp"
 seo:
   title: "Quickstart Guide to Stable Video Diffusion - Civitai Education"
   description: "Quickstart guide to Stable Video Diffusion (SVD) in ComfyUI. Turn your still images into moving animations easily with Stable Video Diffusion"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/11/ComfyUI_00507_.webp"
+  ogImage: "/wp-content/uploads/2023/11/ComfyUI_00507_.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-stable-video-diffusion/"
 ---
 
@@ -88,15 +88,15 @@ After **updating your ComfyUI installation**, you’ll see new nodes for **Video
 
 You can download ComfyUI workflows for **img2vide**o and **txt2video** below, but keep in mind you’ll need to have an **updated ComfyUI**, and also may be missing additional [nodes for Video](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite). I recommend using the [ComfyUI Manager](https://civitai.com/models/71980/comfyui-manager) to identify and download missing nodes!
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/SVD_img2img-929x1024.png)
+![](/wp-content/uploads/2023/11/SVD_img2img-929x1024.webp)
 
-[SVD\_img2video](http://education.civitai.com//wp-content/uploads/2023/11/SVD_img2video.zip)
+[SVD\_img2video](/wp-content/uploads/2023/11/SVD_img2video.zip)
 
-[SVD with Film Interpolation](http://education.civitai.com//wp-content/uploads/2023/11/SVD-with-Film-Interpolation.zip)
+[SVD with Film Interpolation](/wp-content/uploads/2023/11/SVD-with-Film-Interpolation.zip)
 
-![](http://education.civitai.com//wp-content/uploads/2023/11/SVD_txt2img-1-1024x519.png)
+![](/wp-content/uploads/2023/11/SVD_txt2img-1-1024x519.webp)
 
-[SVD\_txt2video](http://education.civitai.com//wp-content/uploads/2023/11/SVD_txt2video.zip)
+[SVD\_txt2video](/wp-content/uploads/2023/11/SVD_txt2video.zip)
 
 ## Suggested Settings
 

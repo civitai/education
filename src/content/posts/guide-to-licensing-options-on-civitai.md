@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 3811
 excerpt: "Civitai Guide to Model Licensing"
-image: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
+image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
 seo:
   title: "Guide to Civitai Model Licensing Options - Civitai Education"
   description: "The Civitai Guide to Model Licensing is an overview of what Licensing means, and how it applies, to resources on Civitai."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
+  ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
   canonical: "https://education.civitai.com/guide-to-licensing-options-on-civitai/"
 ---
 
@@ -33,7 +33,7 @@ Any permissions can be added, as long as they don’t contradict the core tenant
 
 Upon model upload, you’ll see the following license permissions;
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-07-0121224.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-07-0121224.webp)
 
 Permission set here define guidelines for what users can do with your resource. Uncheck any option you’re not comfortable with.
 
@@ -47,7 +47,7 @@ Permission set here define guidelines for what users can do with your resource. 
 
 Permission set here define guidelines for what users can do with your resource. Uncheck any option you’re not comfortable with. By default. these will all be set to **allow**.
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-07-012122g4.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-07-012122g4.webp)
 
 -   **Sell generated images**: Allow users to sell the outputs of this model for monetary gain.
 
@@ -61,11 +61,11 @@ Permission set here define guidelines for what users can do with your resource. 
 
 Upon unchecking any of the above permissions, your resource will change. Icons will be added to the resource Information Block denoting your choices;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/l1.png" alt="" width="426" height="202" loading="lazy"><figcaption><em>Mouse-over the icons to show explanatory tooltips</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/l1.webp" alt="" width="426" height="202" loading="lazy"><figcaption><em>Mouse-over the icons to show explanatory tooltips</em></figcaption></figure>
 
 If your resource utilizes either SD 1.5 or SDXL as a Base, a new license with your desired permissions will be generated and added to your model page;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/03/l2.png" alt="" width="426" height="202" loading="lazy"><figcaption><em>Click on the License name to view the new License and Addendum for your model</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/03/l2.webp" alt="" width="426" height="202" loading="lazy"><figcaption><em>Click on the License name to view the new License and Addendum for your model</em></figcaption></figure>
 
 Models that don’t utilize the Open RAIL License, or an Open RAIL variant, will _not_ have an addendum license generated, instead these permissions act as good-faith call outs about what the creator does or does not wish to have done with their model.
 

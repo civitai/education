@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4337
 excerpt: "Stable Diffusion 3 is a groundbreaking new text-to-image model from Stability AI."
-image: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_pre-1.png"
+image: "/wp-content/uploads/2024/06/sd3_pre-1.webp"
 seo:
   title: "Stable Diffusion 3 Pre-Release Overview - Civitai Education"
   description: "Stable Diffusion 3 is a groundbreaking new text-to-image model from Stability AI, releasing June 12th for local generation."
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/06/sd3_pre-1.png"
+  ogImage: "/wp-content/uploads/2024/06/sd3_pre-1.webp"
   canonical: "https://education.civitai.com/stable-diffusion-3-pre-release-overview/"
 ---
 
@@ -84,7 +84,7 @@ It has a native output of **1 MP**.
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/06/2b-native-res-796x1024.jpg" alt="" width="796" height="1024" loading="lazy"><figcaption>Via <a href="https://x.com/Lykon4072/status/1797703714180051130">Lyk</a><a href="https://x.com/Lykon4072/status/1797703714180051130" target="_blank" rel="noreferrer noopener">o</a><a href="https://x.com/Lykon4072/status/1797703714180051130">n</a>, X</figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/06/2b-native-res-796x1024.webp" alt="" width="796" height="1024" loading="lazy"><figcaption>Via <a href="https://x.com/Lykon4072/status/1797703714180051130">Lyk</a><a href="https://x.com/Lykon4072/status/1797703714180051130" target="_blank" rel="noreferrer noopener">o</a><a href="https://x.com/Lykon4072/status/1797703714180051130">n</a>, X</figcaption></figure>
 
 </div>
 
@@ -98,17 +98,17 @@ It has a native output of **1 MP**.
 
 2B Model sample images, generated at native resolution, single generation (no upscale, or further tweaks). [Source](https://x.com/Lykon4072/status/1796317998036238380).
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_1-796x1024.jpg)
+![](/wp-content/uploads/2024/06/2b_1-796x1024.jpg)
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_6-1024x585.jpg)
+![](/wp-content/uploads/2024/06/2b_6-1024x585.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_5-1024x585.jpg)
+![](/wp-content/uploads/2024/06/2b_5-1024x585.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_4-796x1024.jpg)
+![](/wp-content/uploads/2024/06/2b_4-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_3-796x1024.jpg)
+![](/wp-content/uploads/2024/06/2b_3-796x1024.webp)
 
-![](http://education.civitai.com//wp-content/uploads/2024/06/2b_2-796x1024.jpg)
+![](/wp-content/uploads/2024/06/2b_2-796x1024.webp)
 
 ### Where do we get it?
 

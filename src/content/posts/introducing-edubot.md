@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5074
 excerpt: "Introducing EduBot, your go-to resource for all things Generative AI! Built to be the ultimate educational resource, EduBot is trained on the entire Education Hub, the Civitai Wiki, and a number of advanced Generative AI learning resources."
-image: "https://education.civitai.com/wp-content/uploads/2024/08/welcome_edubot-1.png"
+image: "/wp-content/uploads/2024/08/welcome_edubot-1.webp"
 seo:
   title: "Introducing: EduBot! - Civitai Education"
   description: "Introducing EduBot, your go-to resource for all things Generative AI! Built to be the ultimate educational resource!"
-  ogImage: "http://education.civitai.com/wp-content/uploads/2024/08/welcome_edubot-1.png"
+  ogImage: "/wp-content/uploads/2024/08/welcome_edubot-1.webp"
   canonical: "http://education.civitai.com/introducing-edubot/"
 ---
 

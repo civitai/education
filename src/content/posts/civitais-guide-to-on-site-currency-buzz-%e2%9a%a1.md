@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 2481
 excerpt: "Civitai Guide to Buzz – the Civitai Currency"
-image: "https://education.civitai.com/wp-content/uploads/2023/10/ComfyUI_temp_jeilr_00006_.png"
+image: "/wp-content/uploads/2023/10/ComfyUI_temp_jeilr_00006_.png"
 seo:
   title: "Guide to Buzz - the Civitai On-Site Currency! - Civitai Education"
   description: "Buzz is the Civitai.com on-site currency! Buzz can be used in a number of ways on Civitai, from tipping fellow creators to generating images!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/10/ComfyUI_temp_jeilr_00006_.png"
+  ogImage: "/wp-content/uploads/2023/10/ComfyUI_temp_jeilr_00006_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-on-site-currency-buzz-⚡/"
 ---
 
@@ -57,7 +57,7 @@ There are a number of avenues to obtain Buzz! While direct purchase provides imm
 
 -   **Engage** on [Civitai.com](https:\\www.civitai.com)! Free Blue Buzz is awarded by reacting to images, reviews, and comments, and also when other Civitans add your content to collections, or post images to models you’ve uploaded.
 
-<figure><img src="http://education.civitai.com/wp-content/uploads/2023/10/Screenshot-2025-02-03-232953-1024x636.png" alt="" width="1024" height="636" loading="lazy"><figcaption><em>Earn Free Blue Buzz by engaging with other Civitans! Note that in this example, the user has a <a href="https://civitai.green/pricing">Civ</a><a href="https://civitai.green/pricing" target="_blank" rel="noreferrer noopener">itai M</a><a href="https://civitai.green/pricing">embership</a>, granting enhanced Buzz rewards via the Rewards Multiplier!</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/Screenshot-2025-02-03-232953-1024x636.webp" alt="" width="1024" height="636" loading="lazy"><figcaption><em>Earn Free Blue Buzz by engaging with other Civitans! Note that in this example, the user has a <a href="https://civitai.green/pricing">Civ</a><a href="https://civitai.green/pricing" target="_blank" rel="noreferrer noopener">itai M</a><a href="https://civitai.green/pricing">embership</a>, granting enhanced Buzz rewards via the Rewards Multiplier!</em></figcaption></figure>
 
 -   **Tips** & **transfers**! If other Civitans like your content, they can send a tip! The tip system can also be used to share or transfer Buzz between users.
 
@@ -67,7 +67,7 @@ There are a number of avenues to obtain Buzz! While direct purchase provides imm
 
 -   **Creator Compensation** – When resources you’ve uploaded are used by others in the Image Generator, you’ll receive a cut of the generation cost! See your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard) for more information;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/Screenshot-2024-09-12-194614-1024x488.png" alt="" width="1024" height="488" loading="lazy"><figcaption><em>An example of Creator Compensation earnings, from Resources being used in the on-site Generator.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/Screenshot-2024-09-12-194614-1024x488.webp" alt="" width="1024" height="488" loading="lazy"><figcaption><em>An example of Creator Compensation earnings, from Resources being used in the on-site Generator.</em></figcaption></figure>
 
 -   **Begging**! Submit your begging images to the [Buzz Beggar’s](https://civitai.com/collections/3870938) [Bo](https://civitai.com/collections/3870938)[ard](https://civitai.com/collections/3870938) and you might be tipped by a generous Buzz Benefactor!
 
@@ -79,7 +79,7 @@ There are a number of avenues to obtain Buzz! While direct purchase provides imm
 
 Should you wish to buy Buzz, it can be purchased from the [Buy Buzz](https://civitai.com/purchase/buzz) button in the main profile-picture menu, at the top right of the screen, or via a number of other links around the site, including on the Buzz Dashboard.
 
-![](https://education.civitai.com/wp-content/uploads/2023/10/Screenshot-2026-03-12-174957.png)
+![](/wp-content/uploads/2023/10/Screenshot-2026-03-12-174957.webp)
 
 ### What can I do with Buzz?
 
@@ -124,7 +124,7 @@ These visual cues will help you quickly identify which type of Buzz you’re wor
 
 All types of Buzz can be used to generate images and train LoRAs on-site, but **Blue Buzz can only be used for these functions**, and _cannot be traded between Civitai accounts_.
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/Screenshot-2024-09-12-163458.png" alt="" width="797" height="161" loading="lazy"><figcaption><em>An example of <strong>Blue Buzz</strong> being used to cover Image Generation Costs. Note the Blue Buzz balance in the left corner.</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/Screenshot-2024-09-12-163458.webp" alt="" width="797" height="161" loading="lazy"><figcaption><em>An example of <strong>Blue Buzz</strong> being used to cover Image Generation Costs. Note the Blue Buzz balance in the left corner.</em></figcaption></figure>
 
 ## The Buzz Interface
 
@@ -134,7 +134,7 @@ You can keep track of your on-site currency balance from the **Buzz Dashboard** 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2023/10/Screenshot-2024-10-10-230031.png)
+![](/wp-content/uploads/2023/10/Screenshot-2024-10-10-230031.webp)
 
 </div>
 
@@ -150,7 +150,7 @@ Selecting the **Buy More Buzz** option opens the payment processor options, allo
 
 The **My Buzz Dashboard** page shows your current Buzz Balance, Recent **Blue, Green** and **Yellow Transactions**, a chart with your credits and debits, and will list a number of avenues to earn (and spend!) your Buzz balance.
 
-![](http://education.civitai.com/wp-content/uploads/2023/10/Screenshot-2025-10-21-163003-1024x776.png)
+![](/wp-content/uploads/2023/10/Screenshot-2025-10-21-163003-1024x776.webp)
 
 ## Buzz, at-a-glance
 

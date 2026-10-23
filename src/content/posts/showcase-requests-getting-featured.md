@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5424
 excerpt: "Civitai’s Guide to getting your content showcased on the Civitai.com homepage!"
-image: "https://education.civitai.com/wp-content/uploads/2024/09/ComfyUI_02415_.png"
+image: "/wp-content/uploads/2024/09/ComfyUI_02415_.png"
 seo:
   title: "Showcase Requests - Getting Featured! - Civitai Education"
   description: "Civitai's Guide to getting your content showcased on the Civitai.com homepage! Get your Images, Models and Articles noticed!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/09/ComfyUI_02415_.png"
+  ogImage: "/wp-content/uploads/2024/09/ComfyUI_02415_.png"
   canonical: "https://education.civitai.com/showcase-requests-getting-featured/"
 ---
 
@@ -31,7 +31,7 @@ The first is through pure chance – what we call being “organically” featur
 
 If you’ve got a new model release you want to promote or an image you’re exceptionally proud of, you can submit a request to showcase your work! By spending some Yellow [Bu](//civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/)[zz](/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/), you can make sure your creation gets the visibility it deserves.
 
-![](http://education.civitai.com//wp-content/uploads/2024/09/Screenshot-2024-09-23-205756-1-1024x399.png)
+![](/wp-content/uploads/2024/09/Screenshot-2024-09-23-205756-1-1024x399.webp)
 
 ## What can be Featured?
 
@@ -57,7 +57,7 @@ By following these guidelines, you can ensure that your request stands the best 
 
 If you have a piece of content you’d like to be featured, head to your [Buzz dashboard](https://civitai.com/user/buzz-dashboard) and look for the **Get Showcased** button;
 
-![](http://education.civitai.com//wp-content/uploads/2024/09/Screenshot-2024-09-25-195355.png)
+![](/wp-content/uploads/2024/09/Screenshot-2024-09-25-195355.webp)
 
 The form which appears takes three values;
 
@@ -67,7 +67,7 @@ The form which appears takes three values;
 
 -   **Any additional comments** – Anything you’d like us to be aware of, related to featuring your images!
 
-![](http://education.civitai.com//wp-content/uploads/2024/09/Screenshot-2024-09-25-144102.png)
+![](/wp-content/uploads/2024/09/Screenshot-2024-09-25-144102.webp)
 
 ### Approvals
 

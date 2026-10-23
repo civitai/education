@@ -15,11 +15,11 @@ tags:
 author: "civitai"
 wpId: 2456
 excerpt: "Level up your prompting for SD with our Beginner to Advanced Guide! Part 1 covers the theory and basic knowledge required to craft good prompts!"
-image: "https://education.civitai.com/wp-content/uploads/2023/10/LTXV_00087.webp"
+image: "/wp-content/uploads/2023/10/LTXV_00087.webp"
 seo:
   title: "Civitai's Prompt-Crafting Guide: Part 1 - Basics - Civitai Education"
   description: "Learn how to leverage Generative AI to create fascinating image, text, audio, and & video with Civitai's comprehensive prompt-crafting guide!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2023/10/LTXV_00087.webp"
+  ogImage: "/wp-content/uploads/2023/10/LTXV_00087.webp"
   canonical: "https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/"
 ---
 
@@ -46,7 +46,7 @@ score\_9, score\_8\_up, score\_7\_up, score\_6\_up, cinematic film still of **\\
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2023/10/KSXDQXB2NV3XWQHX0XE2AHV550-706x1024.jpg)
+![](/wp-content/uploads/2023/10/KSXDQXB2NV3XWQHX0XE2AHV550-706x1024.webp)
 
 </div>
 
@@ -108,7 +108,7 @@ The **subject** is the focal-point of our image – the main object we want to d
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00612-3009849316-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00612-3009849316-819x1024.webp)
 
 </div>
 
@@ -128,7 +128,7 @@ The **medium** refers to the materials or tools an artist uses to create their w
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00614-1812854249-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00614-1812854249-819x1024.webp)
 
 </div>
 
@@ -148,7 +148,7 @@ Medium: **watercolor painting**
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00619-3747245534-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00619-3747245534-819x1024.webp)
 
 </div>
 
@@ -168,7 +168,7 @@ Style: **impressionist background**
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00030-462140481-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00030-462140481-819x1024.webp)
 
 </div>
 
@@ -190,7 +190,7 @@ Similarly, **lighting** plays a huge part in any artwork, and we can control man
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00621-4215824835-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00621-4215824835-819x1024.webp)
 
 </div>
 
@@ -206,7 +206,7 @@ Color: **rainbow hue**
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00623-1155870332-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00623-1155870332-819x1024.webp)
 
 </div>
 
@@ -244,7 +244,7 @@ The final prompt, and result;
 
 <div class="column">
 
-![Civitai Prompt Example Image](http://education.civitai.com//wp-content/uploads/2023/10/00625-164544498-819x1024.png)
+![Civitai Prompt Example Image](/wp-content/uploads/2023/10/00625-164544498-819x1024.webp)
 
 </div>
 
@@ -264,13 +264,13 @@ The **Negative prompt** allow us to control what we _don’t_ want to see in our
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/00615-2529674575-819x1024.png" alt="Civitai Prompt Example Image" width="819" height="1024" loading="lazy"><figcaption>No negative prompt</figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/00615-2529674575-819x1024.webp" alt="Civitai Prompt Example Image" width="819" height="1024" loading="lazy"><figcaption>No negative prompt</figcaption></figure>
 
 </div>
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2023/10/00624-509685098-819x1024.png" alt="Civitai Prompt Example Image" width="819" height="1024" loading="lazy"><figcaption>Negative prompt: <strong>smile, teeth, open mouth</strong></figcaption></figure>
+<figure><img src="/wp-content/uploads/2023/10/00624-509685098-819x1024.webp" alt="Civitai Prompt Example Image" width="819" height="1024" loading="lazy"><figcaption>Negative prompt: <strong>smile, teeth, open mouth</strong></figcaption></figure>
 
 </div>
 

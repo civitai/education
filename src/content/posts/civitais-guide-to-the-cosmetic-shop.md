@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4252
 excerpt: "Civitai guide to the Civitai Cosmetic Shop"
-image: "https://education.civitai.com/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_.png"
+image: "/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_.png"
 seo:
   title: "Civitai's Guide to the Cosmetic Shop - Civitai Education"
   description: "The Civitai Cosmetic Shop is a fun way to elevate the aesthetics of your profile, ensuring you stand out from the crowd of other Creators!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_.png"
+  ogImage: "/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-the-cosmetic-shop/"
 ---
 
@@ -42,25 +42,25 @@ Profile backgrounds are visible on your mini-profile card, displayed on Models, 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-021617.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-021617.webp)
 
 </div>
 
 </div>
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-021528-1024x810.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-021528-1024x810.webp)
 
 ### **Avatar Decorations** {#avatar-decorationsxxxxxx}
 
 Make your Profile Pic pop with these animated frames! Avatar decorations are visible most places your Profile Picture is shown, apart from the very smallest instances, where the effect would be lost entirely.
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-021824-1024x766.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-021824-1024x766.webp)
 
 ### **Content Frame Decorations** {#content-frame-decorationsmake-your-model-image-or-article-stand-out-in-the-crowd-by-dressing-it-up-with-a-content-frame-decoration-note-that-content-frame-decorations-are-considered-equipables-they-can-only-be-applied-to-one-piece-of-content-at-a-time}
 
 Make your model, image, or article stand out in the crowd by dressing it up with a Content Frame Decoration.
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-09-193440-1024x987.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-09-193440-1024x987.webp)
 
 <div class="columns">
 
@@ -72,7 +72,7 @@ Make your model, image, or article stand out in the crowd by dressing it up with
 
 <div class="column">
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-09-194612.png" alt="" width="309" height="455" loading="lazy"><figcaption><em>Frame Decoration example</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/05/Screenshot-2024-05-09-194612.webp" alt="" width="309" height="455" loading="lazy"><figcaption><em>Frame Decoration example</em></figcaption></figure>
 
 </div>
 
@@ -90,7 +90,7 @@ Showcase your support and preferences with our themed badges in the Badges secti
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-022131.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-022131.webp)
 
 </div>
 
@@ -102,13 +102,13 @@ Explore our exclusive Creator Club Badges section, where you can find badges uni
 
 These badges are not only a way to personalize your profile but also a meaningful gesture to help sustain our wonderful creative community!
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-022300-1024x964.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-022300-1024x964.webp)
 
 ## How do I buy Cosmetics?
 
 You can purchase all Profile Cosmetics from the Shop – [https://civitai.com/shop](https://civitai.com/shop) – accessible from the Top Menu;
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-123930.png" alt="" width="862" height="102" loading="lazy"><figcaption><em>The Civitai Cosmetic Shop Link</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/05/Screenshot-2024-05-10-123930.webp" alt="" width="862" height="102" loading="lazy"><figcaption><em>The Civitai Cosmetic Shop Link</em></figcaption></figure>
 
 All Cosmetics cost Buzz ? to purchase; the exact amount varies based on type, and exclusivity.
 
@@ -124,7 +124,7 @@ Hitting the Preview button on a Cosmetic within the Shop will provide a preview 
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-125319.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-125319.webp)
 
 </div>
 
@@ -138,7 +138,7 @@ Purchased Cosmetics can be applied a number of ways – read on to find out how!
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-125348.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-125348.webp)
 
 </div>
 
@@ -162,7 +162,7 @@ We’ve streamlined the process of applying Cosmetic items by integrating it int
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-023352.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-023352.webp)
 
 </div>
 
@@ -178,13 +178,13 @@ You can also access the **Profile Customization** options via the link on your P
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-023917.png)
+![](/wp-content/uploads/2024/05/Screenshot-2024-05-10-023917.webp)
 
 </div>
 
 </div>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-10-023407.png" alt="" width="686" height="307" loading="lazy"><figcaption><em>The Profile Customization Screen</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/05/Screenshot-2024-05-10-023407.webp" alt="" width="686" height="307" loading="lazy"><figcaption><em>The Profile Customization Screen</em></figcaption></figure>
 
 ## FAQ & Notes {#requirements-limitations}
 
@@ -198,9 +198,9 @@ You can also access the **Profile Customization** options via the link on your P
 
 -   The store will be refreshed with new content often, but not on any set schedule. Use the notification bell feature to be alerted to new content drops!
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-09-190428-1024x211.png" alt="" width="1024" height="211" loading="lazy"><figcaption><em>Click the notification bell in the top right to be alerted to new items in the shop</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/05/Screenshot-2024-05-09-190428-1024x211.webp" alt="" width="1024" height="211" loading="lazy"><figcaption><em>Click the notification bell in the top right to be alerted to new items in the shop</em></figcaption></figure>
 
-<figure><img src="http://education.civitai.com//wp-content/uploads/2024/05/Screenshot-2024-05-09-170731-1024x784.png" alt="" width="1024" height="784" loading="lazy"><figcaption><em>An example of new cosmetic items dropping!</em></figcaption></figure>
+<figure><img src="/wp-content/uploads/2024/05/Screenshot-2024-05-09-170731-1024x784.webp" alt="" width="1024" height="784" loading="lazy"><figcaption><em>An example of new cosmetic items dropping!</em></figcaption></figure>
 
 ## The Future
 

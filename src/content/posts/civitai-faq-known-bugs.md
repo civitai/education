@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4089
 excerpt: "Here we’ll answer some common questions which often appear via Featurebase Bug reporting, Discord, and the CivBot."
-image: "https://education.civitai.com/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
+image: "/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
 seo:
   title: "Civitai FAQ & Known Bugs - Civitai Education"
   description: "A comprehensive list of Civitai FAQ & Known Bugs to help users get the most from Civitai.com! Frequently updated!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
+  ogImage: "/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
   canonical: "https://education.civitai.com/civitai-faq-known-bugs/"
 ---
 
@@ -37,7 +37,7 @@ In the Civitai FAQ & Known Bugs article we’ll answer some common questions whi
 
 The best place to find out what’s happening is the [Updates feed](https://civitai.com/changelog). This page is the go-to source for all feature releases, bug fixes, known issues
 
-![](http://education.civitai.com/wp-content/uploads/2024/07/Screenshot-2025-05-13-103941-1024x514.png)
+![](/wp-content/uploads/2024/07/Screenshot-2025-05-13-103941-1024x514.webp)
 
 <div class="columns">
 
@@ -49,7 +49,7 @@ Click the **Updates** button to find out the latest information on the biggest i
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2024/07/Screenshot-2025-05-13-104130.png)
+![](/wp-content/uploads/2024/07/Screenshot-2025-05-13-104130.webp)
 
 </div>
 
@@ -72,7 +72,7 @@ If you experience a failure while training with the Civitai LoRA trainer, don’
 
 Note that if you see a status of “Paused”, that means our safety scanners have flagged your training data for review by a human moderator. That process should take no longer than 48 hours at most, and your training will resume shortly after being reviewed.
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-92.png)
+![](/wp-content/uploads/2023/09/image-92.webp)
 
 ### Where do I go to train models?
 
@@ -86,13 +86,13 @@ The Civitai on-site LoRA Trainer has an excellent built-in image captioning tool
 
 <div class="column">
 
-![](http://education.civitai.com//wp-content/uploads/2024/07/Screenshot-2024-11-26-180703.png)
+![](/wp-content/uploads/2024/07/Screenshot-2024-11-26-180703.webp)
 
 </div>
 
 <div class="column">
 
-![](http://education.civitai.com/wp-content/uploads/2024/07/Screenshot-2025-02-03-234713.png)
+![](/wp-content/uploads/2024/07/Screenshot-2025-02-03-234713.webp)
 
 </div>
 
@@ -108,7 +108,7 @@ You can check out any image on **Civitai.com** to read the prompt/metadata – m
 
 You can also search inside prompts using the search bar at the top of the page, and the “image” filter!
 
-![](http://education.civitai.com//wp-content/uploads/2023/09/image-93-1024x480.png)
+![](/wp-content/uploads/2023/09/image-93-1024x480.webp)
 
 ### Why does the Image Generator now cost Buzz!?
 
@@ -182,7 +182,7 @@ When your question isn’t adequately addressed by CivBot and you need more help
 
 There are **Post Images**, and **Post Videos** options in the blue “**Create**” menu, in the top right of the site menu bar;
 
-![](http://education.civitai.com//wp-content/uploads/2024/03/Screenshot-2024-03-27-112749.png)
+![](/wp-content/uploads/2024/03/Screenshot-2024-03-27-112749.webp)
 
 ### Is there a Civitai App?
 
@@ -200,4 +200,4 @@ Yes! You can buy Civitai branded merch at [https://shop.civitai.com](https://sho
 
 Sort of! CivBot can now make model (resource) recommendations! Simply ask him for model recommendations on a particular theme or topic;
 
-![](http://education.civitai.com//wp-content/uploads/2024/07/Screenshot-2024-07-26-112542.png)
+![](/wp-content/uploads/2024/07/Screenshot-2024-07-26-112542.webp)

@@ -9,11 +9,11 @@ tags: []
 author: "civitai"
 wpId: 6884
 excerpt: "We’ve updated our Worker code and upgraded ComfyUI and CUDA, both of which impact image generation. If your results aren’t as expected, read on!"
-image: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00104_.png"
+image: "/wp-content/uploads/2025/03/ComfyUI_00104_.png"
 seo:
   title: "Bad Generations? - Civitai Education"
   description: "We've updated our Worker code and upgraded ComfyUI and CUDA, both of which impact image generation. Find out more!"
-  ogImage: "https://education.civitai.com/wp-content/uploads/2025/03/ComfyUI_00104_.png"
+  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00104_.png"
   canonical: "https://education.civitai.com/bad-generations/"
 ---
 
@@ -71,4 +71,4 @@ If you’ve read the [Prompting Guide](/civitais-prompt-crafting-guide-part-1-ba
 
 Be sure to include Job IDs for the affected images. These can be copied to the clipboard from the hexagonal “i” icon on the Generator Image Queue;
 
-![](http://education.civitai.com/wp-content/uploads/2025/03/Screenshot-2025-03-13-185443.png)
+![](/wp-content/uploads/2025/03/Screenshot-2025-03-13-185443.webp)

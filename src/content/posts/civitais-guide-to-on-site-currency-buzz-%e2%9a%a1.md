@@ -19,6 +19,9 @@ seo:
   description: "Buzz is the Civitai.com on-site currency! Buzz can be used in a number of ways on Civitai, from tipping fellow creators to generating images!"
   ogImage: "/wp-content/uploads/2023/10/ComfyUI_temp_jeilr_00006_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-on-site-currency-buzz-⚡/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "buzz-colors-blue-yellow-and-green"
 ---
 
 | **Last Updated** | **Changes** |

@@ -51,7 +51,7 @@ Open a comic to see its overview page: the description, the chapter list, and co
 2. Read. A control in the reader's header switches between **Page view** and **Scroll view**. Use whichever you like.
 3. To move to another chapter: in Scroll view use **Next Chapter** at the bottom. In Page view use the arrows at the edges of the page, the arrow keys, or the chapter dropdown in the header. Narrow screens, including phones, always use Scroll view. Page view is the default on a computer.
 
-The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a three-dot menu with Copy link, Download CBZ, Download PDF and Report. The download icon needs download access, which the creator's setting, owners and moderators have. The Page view and Scroll view switch is shown as icons and not on phones.
+The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a three-dot menu with Copy link, Download CBZ, Download PDF and Report. The download icon needs download access, which the creator's setting, owners and moderators have. The Page view and Scroll view switch is two icons with those tooltips, and it is not shown on phones. The comments button is a speech-bubble icon.
 
 ### Follow, tip and comment {#follow-tip-comment}
 
@@ -59,7 +59,7 @@ On a comic's overview page:
 
 - **Follow.** When you are signed in, the bell button has the tooltip "Get notified of new chapters". Press it again (tooltip "Unfollow comic") to stop.
 - **Tip.** The lightning-bolt badge, which shows the total Buzz tipped, is where you send Buzz to the creator. It shows when you are signed in and it is not your own comic. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
-- **Share** is a copy-link icon and a share icon that opens a post on X. A flag icon reports the comic (signed in, not your own comic). Both are on the same page. Chapters also have a comment thread.
+- **Share** is a copy-link icon and a share icon that opens a post on X. A flag icon reports the comic (signed in, not your own comic). Both are on the comic's overview page. Chapters also have a comment thread.
 
 ### Early access chapters {#early-access-chapters}
 
@@ -67,7 +67,7 @@ A creator can put a chapter in **early access**. It costs Buzz to read for a set
 
 ## Make a comic {#make-a-comic}
 
-You need to be signed in. Choose **Create a Comic** in the site's create menu (the menu entry is hidden for muted accounts), or go to [civitai.com/comics/create](https://civitai.com/comics/create).
+On a computer, hover over **Create** in the site header and choose **Create a Comic**. On a phone, go straight to [civitai.com/comics/create](https://civitai.com/comics/create). If you are signed out, you are sent to log in first.
 
 ### Create the project {#create-the-project}
 
@@ -107,7 +107,7 @@ A new project starts with a draft **Chapter 1**. Choose **Add Chapter** for more
 - **Bulk Add.** Add several panels at once, each with its own prompt.
 - **Import.** Choose images from your generator history to use as panels.
 
-The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
+Panels are paid with Blue Buzz or your site's color (see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/)). If you have no Buzz, the button opens a purchase window. The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
 
 You can reorder panels by dragging them. On a wide screen, hover a panel card to show its three-dot menu, which has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "images ready, click to choose". Open it and choose **Confirm Selection**.
 
@@ -131,7 +131,7 @@ A draft chapter needs at least one panel before it can be published. Until then,
 3. Optional: turn on **Enable Early Access** (below).
 4. Confirm with **Publish** or **Schedule**.
 
-A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm, unless a reader has already bought early access to it. A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
+A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm. If any reader has bought early access to the chapter, Civitai refuses with "This chapter cannot be unpublished because readers have purchased early access to it." A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
 
 ### Early access for your chapters {#early-access-for-creators}
 
@@ -146,7 +146,7 @@ Creator Score is a number Civitai calculates from your activity and how others e
 
 ### Content and moderation {#content-and-moderation}
 
-- Some generation models make safe-for-work images only. Mature images can't be published on civitai.com. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
+- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red". On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
 - A chapter can be hidden from readers while a panel waits for moderator review, or if it is flagged as a Terms of Service violation. The chapter list shows a **Review** or **TOS** badge, and the tooltip explains which. A chapter waiting for review publishes automatically when it clears.
 
 ## Worked example
@@ -163,14 +163,14 @@ Your project stays private until you publish a chapter. After that, readers can 
 
 ## Troubleshooting
 
-- **I don't see Create a Comic.** The create menu entry shows only when you are signed in and your account is not muted.
+- **I can't find Create a Comic.** On a computer, hover over the Create button in the header. On a phone, open civitai.com/comics/create directly. If the Create button is grayed out, your account is muted.
 - **Smart Create is missing.** It appears once your project has at least one reference and it has finished saving. Add a reference first.
 - **Publish is disabled.** The chapter has no panels yet. Add at least one.
 - **"Early access ... unlocks at a Creator Score of 10,000."** You are below the minimum. The dialog shows your score.
 - **My chapter is hidden from readers.** Check the **Review** or **TOS** badge on the chapter. Review clears on its own, while a TOS flag means you should remove the offending content or contact support.
 - **My upload was blocked as mature.** If the image is classified as mature and its generation data can't be verified, add the prompt, sampler, steps and other generation details to the image, then try again.
 - **Panel generation is queued or unavailable.** The dialog says whether your queue is full or generation is down. Wait and try again.
-- **A panel shows Failed.** A failed generation is refunded automatically. Use **Regenerate** in the panel's three-dot menu to try again. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
+- **A panel shows Failed.** When the generation itself fails, is canceled or expires, the card says "Buzz has been refunded". Press **Regenerate** on the card to try again. If the card instead says the image failed to download or upload, check your Buzz balance before retrying. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
 
 ## I need more help
 

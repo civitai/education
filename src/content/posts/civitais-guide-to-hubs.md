@@ -69,7 +69,7 @@ Every hub page has a sidebar with:
 - **Followed Hubs**, hubs made by other people that you follow. This section only appears once you follow one.
 - **Sources for this hub**, the list of sources feeding the hub you are looking at.
 
-The sidebar also lets you switch a source off just for yourself while you look at a hub. This does not change the hub for anyone else.
+The sidebar also lets you switch a source off just for yourself while you look at a hub. Click the **Sources for this hub** heading to open the list (it starts closed on your own hubs). The switch lasts until you reload the page, and it does not change the hub for anyone else.
 
 On a narrow screen the sidebar collapses into a **My hubs** button that opens it as a drawer.
 
@@ -122,7 +122,7 @@ In the **Sources** section, use the search box. It has one tab for each kind of 
 - **Bookmarked**, the models you have bookmarked.
 - **Tags**. Search for a tag by name, such as mecha, portraits or landscapes.
 
-You can also paste a link to a creator or model page into the search box. The match appears as a row, and you click the row to add it. Links only work for models that are published and not private.
+You can also paste a link to a creator or model page into the search box. The match appears as a row, and you click the row to add it. Links work for creator pages and for published, non-private models (your own private models work too).
 
 The box clears after each add, so repeat the search for every source. With an empty search, the Creators tab shows only a short preview of the people you follow. Type a name to find a particular one.
 
@@ -161,8 +161,8 @@ Say you want one feed that combines everything tagged mecha with the work of two
 2. Name the hub "Mecha and two favorites". Leave sharing off.
 3. In **Sources**, open the **Tags** tab and search for "mecha". Click the row to add the tag.
 4. Open the **Creators** tab. Type the first creator's name in the search box and click their row. Repeat for the second. The tab only searches people you follow. For anyone else, paste a link to their profile.
-5. Under **Keep something out**, add the tag you want to avoid.
-6. Press **Save**. The hub opens as a feed of images tagged mecha, plus everything the two creators post, minus the kept-out tag. Use the sort menu in the bar at the top of the feed to choose Most Reactions, and the filters button to pick a time period. Those choices are saved to the hub.
+5. Press **Keep something out**, then search for the tag you want to avoid and click it.
+6. Press **Save**. The hub opens as a feed of images tagged mecha, plus everything the two creators post, minus the kept-out tag. Use the sort menu and the filters button at the top right of the page (on a phone, in the row under the header) to choose Most Reactions and a time period. Those choices are saved to the hub.
 
 Because sources add together, you get mecha images from anyone, not only from those two creators.
 
@@ -174,7 +174,7 @@ Because sources add together, you get mecha images from anyone, not only from th
 | You cannot find the starting templates | Opening Hubs goes straight to your hub once you have one. Use `civitai.com/hubs?all`. |
 | You cannot add more sources | A hub holds up to 50 sources and up to 20 keep-out entries ("Hub is full" or "Never-show list is full"). Remove one first. |
 | "Already in this hub" | The source is already a source of the hub, or it is on the hub's never-show list. Remove it from that list first if you want it as a source. |
-| A link you pasted does nothing | Links only work for creators and for models that are published and not private. Try searching by name instead. |
+| A link you pasted does nothing | Links work for creator pages and for published, non-private models. Try searching by name instead. |
 | The new hub button is disabled | You have 20 hubs, which is the limit. Delete one to make another. |
 | A hub you followed is gone | The owner made it private or deleted it. It returns if they share it again. |
 | You cannot follow another hub | You can follow up to 50 hubs. Private hubs you followed still count toward the 50, because the follow is kept. |

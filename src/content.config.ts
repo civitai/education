@@ -41,6 +41,14 @@ const posts = defineCollection({
         note: z.string().optional(),
       })
       .optional(),
+    /**
+     * Short kebab-case keys for the features and models this guide explains (`creator-studio`,
+     * `krea-3`). The weekly review matches what changed on Civitai against these to find guides
+     * that may now be wrong.
+     */
+    covers: z.array(z.string()).optional(),
+    /** The last day someone checked every claim in the guide against Civitai. */
+    reviewed: z.coerce.date().optional(),
     /** WordPress post id, for ?p= redirects. Only on posts that came from WordPress. */
     wpId: z.number().optional(),
     seo,

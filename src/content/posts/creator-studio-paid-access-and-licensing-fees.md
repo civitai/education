@@ -11,6 +11,14 @@ tags:
   - "licensing"
   - "guide"
 author: "civitai"
+covers:
+  - "creator-studio"
+  - "early-access"
+  - "paid-access"
+  - "licensing-fees"
+  - "pricing-slots"
+  - "donation-goals"
+reviewed: "2026-10-26"
 excerpt: "How to set early access, permanent paid access and per-generation licensing fees on your models, and how the Buzz you earn reaches you."
 image: "/images/guides/creator-studio-paid-access-and-licensing-fees/creator-studio-landing.webp"
 seo:

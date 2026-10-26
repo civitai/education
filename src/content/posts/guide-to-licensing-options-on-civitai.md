@@ -10,6 +10,11 @@ tags:
   - "licensing"
 author: "civitai"
 wpId: 3811
+covers:
+  - "model-permissions"
+  - "commercial-use-settings"
+  - "licensing-fees"
+reviewed: "2026-10-26"
 excerpt: "What the permission checkboxes on a model upload do, how they appear on the model page, and how they differ from licensing fees."
 image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
 seo:

@@ -8,6 +8,12 @@ categories:
 tags:
   - "buzz"
   - "guide"
+covers:
+  - "buzz-blue"
+  - "buzz-yellow"
+  - "buzz-green"
+  - "buzz-spend-order"
+reviewed: "2026-10-26"
 excerpt: "What Blue, Yellow and Green Buzz are, how you earn or buy each one, what each can pay for, and which one is spent first."
 image: "/images/guides/buzz-colors/buzz-colors-cover.webp"
 seo:

@@ -118,7 +118,7 @@ Use an edit model when you have a picture and want to change one thing. The [Ima
 - **Kling** (V2.5 Turbo about 600; check the cost button for other versions). A high-end text-to-video and image-to-video model from Kuaishou.
 - **Wan** (about 101 for Wan 2.2, 650 for Wan 2.7 and 3.0, 1,000 for Wan 2.5). A family of video models from Alibaba that turn a prompt or still image into short, realistic clips.
 
-Video prices change with length, resolution and audio, so compare them with the cost button on the exact settings you want. The [video guide](/civitais-guide-to-video-in-the-civitai-generator/) covers settings for several video models, including Veo, Kling, LTX Video 2 and Wan up to 2.5, but not the newest ones.
+Video prices change with length, resolution and audio, so compare them with the cost button on the exact settings you want. The [video engines guide](/video-engines-on-civitai-in-2026/) compares every video engine in the generator, with lengths, audio and prices.
 
 ## Models built for speed {#speed}
 
@@ -163,7 +163,7 @@ Test cheap, then pay for the model you want only when the idea works.
 
 - [Using Civitai: The On-Site Image Generator](/using-civitai-the-on-site-image-generator/)
 - [Image Editing Models on Civitai](/image-editing-models-on-civitai/)
-- [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/)
+- [Video Engines on Civitai in 2026](/video-engines-on-civitai-in-2026/)
 - [Model Loading: Coverage, Boost and Featured Models](/model-loading-coverage-boost-and-featured-models/)
 - [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/)
 - Civitai's list of model families is at civitai.com/ecosystems.

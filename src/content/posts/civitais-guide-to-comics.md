@@ -47,23 +47,23 @@ Open a comic to see its overview page: the description, the chapter list, and co
 
 ## Read a comic {#read-comics}
 
-1. Open the comic and choose a chapter. A chapter marked **Early access** is locked, see [Early access chapters](#early-access-chapters).
+1. Open the comic and choose **Start Reading**, or pick a chapter from the list. A chapter with a lock badge and a Buzz price is in early access and is locked, see [Early access chapters](#early-access-chapters).
 2. Read. A control in the reader's header switches between **Page view** and **Scroll view**. Use whichever you like.
-3. To move to another chapter: in Scroll view use **Next Chapter** at the bottom. In Page view use the arrows at the edges of the page, the arrow keys, or the chapter dropdown in the header. Phones always use Scroll view.
+3. To move to another chapter: in Scroll view use **Next Chapter** at the bottom. In Page view use the arrows at the edges of the page, the arrow keys, or the chapter dropdown in the header. Narrow screens, including phones, always use Scroll view. Page view is the default on a computer.
 
-The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a "More actions" menu as Copy link, Report, Download PDF and Download CBZ. The Page view and Scroll view switch is shown as icons and not on phones.
+The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a three-dot menu with Copy link, Download CBZ, Download PDF and Report. The download icon needs download access, which the creator's setting, owners and moderators have. The Page view and Scroll view switch is shown as icons and not on phones.
 
 ### Follow, tip and comment {#follow-tip-comment}
 
 On a comic's overview page:
 
 - **Follow.** When you are signed in, the bell button has the tooltip "Get notified of new chapters". Press it again (tooltip "Unfollow comic") to stop.
-- **Tip.** The tip button, shown when you are signed in and it is not your own comic, sends Buzz to the creator. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
-- **Share** and a flag icon for **Report** (signed in, not your own comic) are on the same page. Chapters also have a comment thread.
+- **Tip.** The lightning-bolt badge, which shows the total Buzz tipped, is where you send Buzz to the creator. It shows when you are signed in and it is not your own comic. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
+- **Share** is a copy-link icon and a share icon that opens a post on X. A flag icon reports the comic (signed in, not your own comic). Both are on the same page. Chapters also have a comment thread.
 
 ### Early access chapters {#early-access-chapters}
 
-A creator can put a chapter in **early access**. It costs Buzz to read until a countdown ends, and then it becomes free for everyone. A locked chapter shows "This chapter is in early access" and how many days remain until it is free. Choose **Unlock for N Buzz**. The Buzz you pay goes to the comic's creator. You pay in the Buzz of the site you are on: Green on civitai.com, Yellow on civitai.red. You can't buy your own chapter, and you pay once per chapter.
+A creator can put a chapter in **early access**. It costs Buzz to read for a set number of days, and then it becomes free for everyone. In the chapter list it shows a lock badge with the price and "Early access · free in N days". Opening it shows "This chapter is in early access. It will become free in N days." You need to be signed in with enough Buzz to unlock it. Choose **Unlock for N Buzz**. The Buzz you pay goes to the comic's creator. You pay in the Buzz of the site you are on: Green on civitai.com, Yellow on civitai.red. You can't buy your own chapter, and you pay once per chapter.
 
 ## Make a comic {#make-a-comic}
 
@@ -79,7 +79,7 @@ The **Create Comic Project** page asks for:
 - **Hero Banner** (optional): a wide 16:9 image for the overview page. Upload one, pick one from the generator or generate one.
 - **Cover** (optional): a portrait image for the browse cards. The same three options apply.
 
-The comic is saved as a draft and stays private to you until you publish a chapter. You can change all of this later. After you create it, you land on the project page. On a first visit, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
+The comic is saved as a draft and stays private to you until you publish a chapter. You can change these later in Project Settings (upload an image or pick one from the generator). After you create it, you land on the project page. On a first visit in a browser, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
 
 **Project Settings** (the gear icon) holds more choices:
 
@@ -109,7 +109,7 @@ A new project starts with a draft **Chapter 1**. Choose **Add Chapter** for more
 
 The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
 
-You can reorder panels by dragging them, and the three-dot menu on a panel card has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "images ready, click to choose". Open it and choose **Confirm Selection**.
+You can reorder panels by dragging them. On a wide screen, hover a panel card to show its three-dot menu, which has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "images ready, click to choose". Open it and choose **Confirm Selection**.
 
 ### Smart Create: let AI plan a chapter {#smart-create}
 
@@ -131,7 +131,7 @@ A draft chapter needs at least one panel before it can be published. Until then,
 3. Optional: turn on **Enable Early Access** (below).
 4. Confirm with **Publish** or **Schedule**.
 
-A published chapter can be unpublished from the same button, unless a reader has already bought early access to it. A scheduled chapter can be canceled. New chapters notify the people who follow your comic.
+A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm, unless a reader has already bought early access to it. A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
 
 ### Early access for your chapters {#early-access-for-creators}
 
@@ -142,7 +142,7 @@ Early access lets you charge Buzz for a chapter for a limited time.
 - **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. The publish dialog shows the maximum days for your score. If you are at your limit of chapters in early access, you see a message when you confirm.
 - After publishing, you can lower the price and the period (the period counts from the original publish date), switch early access off, or switch it on in **Chapter Settings**. You can't raise either. The gear icon in the chapter's status badge (**Edit Early Access**) shows while early access is active.
 
-Creator Score is a number Civitai calculates from your activity and how others engage with your work.
+Creator Score is a number Civitai calculates from your activity and how others engage with your work. It is shown on your account page.
 
 ### Content and moderation {#content-and-moderation}
 
@@ -167,11 +167,10 @@ Your project stays private until you publish a chapter. After that, readers can 
 - **Smart Create is missing.** It appears once your project has at least one reference and it has finished saving. Add a reference first.
 - **Publish is disabled.** The chapter has no panels yet. Add at least one.
 - **"Early access ... unlocks at a Creator Score of 10,000."** You are below the minimum. The dialog shows your score.
-- **"Early access timeframe exceeds your current limit of N days."** Choose a shorter period, up to the limit your score allows.
 - **My chapter is hidden from readers.** Check the **Review** or **TOS** badge on the chapter. Review clears on its own, while a TOS flag means you should remove the offending content or contact support.
 - **My upload was blocked as mature.** If the image is classified as mature and its generation data can't be verified, add the prompt, sampler, steps and other generation details to the image, then try again.
 - **Panel generation is queued or unavailable.** The dialog says whether your queue is full or generation is down. Wait and try again.
-- **I paid for a generation that failed because of the Beta.** Refunds are not issued for Beta-related issues, so keep an eye on the cost shown before you confirm.
+- **A panel shows Failed.** A failed generation is refunded automatically. Use **Regenerate** in the panel's three-dot menu to try again. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
 
 ## I need more help
 

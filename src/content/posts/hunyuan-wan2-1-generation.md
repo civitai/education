@@ -20,6 +20,7 @@ seo:
   canonical: "https://education.civitai.com/hunyuan-wan2-1-generation/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "video-engines-on-civitai-in-2026"
 ---
 
 We’ve just launched **Hunyuan** and **Wan 2.1** for on-site video generation – both with **LoRA support** for more customizable results. Try them out and bring your prompts to life in a whole new way!

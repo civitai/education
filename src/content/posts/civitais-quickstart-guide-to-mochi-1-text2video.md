@@ -21,6 +21,7 @@ seo:
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-mochi-1-text2video/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "video-engines-on-civitai-in-2026"
 ---
 
 | **Last Updated** | **Changes** |

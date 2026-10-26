@@ -20,6 +20,7 @@ seo:
   canonical: "https://education.civitai.com/quickstart-guide-to-stable-video-diffusion/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "video-engines-on-civitai-in-2026"
 ---
 
 | **Last Updated** | **Changes** |

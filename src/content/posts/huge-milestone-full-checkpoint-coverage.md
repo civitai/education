@@ -17,6 +17,7 @@ seo:
   canonical: "https://education.civitai.com/huge-milestone-full-checkpoint-coverage/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "model-loading-coverage-boost-and-featured-models"
 ---
 
 We’ve expanded our resources, optimized our systems, and are now supporting _all_ _Checkpoints for image generation_. This is a huge milestone for us, and we’re excited to finally make it a reality!

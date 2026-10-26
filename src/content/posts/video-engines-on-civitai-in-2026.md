@@ -28,7 +28,7 @@ seo:
 
 The Civitai generator can make video from text, from an image, from a first and last frame, or from a set of reference images. Each of those jobs is open to a different set of engines, and the engines differ in clip length, resolution, audio and price.
 
-This guide is the comparison. It lists the current video engines in the generator and tells you what each one accepts and what it costs, so you can pick one before you spend Buzz. For how to open the generator, how Image to Video starts from an existing image, and the Bring Your Own Image upload, read [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/). That guide also has the Buzz refund and content-policy notes for engines that run through outside providers, and they apply here too.
+This guide is the comparison. It lists the current video engines in the generator and tells you what each one accepts and what it costs, so you can pick one before you spend Buzz. For how to open the generator, how Image to Video starts from an existing image, and the Bring Your Own Image upload, read [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/). That guide also has the Buzz refund notes for denied requests and content-policy notes for engines that run through outside providers, and they apply here too.
 
 Prices in this guide are what the generator's price check returned on October 26, 2026, in Buzz, for the generation itself at the length and resolution named in each row. Extras such as prompt enhancement add a little. Video prices change often and move with every setting. **The cost button next to Generate is the source of truth.** For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 
@@ -41,7 +41,7 @@ Prices in this guide are what the generator's price check returned on October 26
 | Sound that comes with the clip | For example Veo 3, Kling V3, Seedance, Vidu Q3 or Q4, Flux 3 Video, LTX 2.3 or 2.5 | Each makes audio; see [the audio column](#engines-at-a-glance) |
 | A clip longer than 10 seconds | Wan 3.0 (30 s), Seedance v2.5 (30 s), Flux 3 Video (20 s), LTX 2.3 and 2.5 (20 s), Vidu Q3 and Q4 (16 s), or Kling V3, MiniMax H3, Grok, HappyHorse and Wan 2.7 (15 s) | See [the length column](#engines-at-a-glance) |
 | A video that starts on one image and ends on another | Wan 2.7, Wan 3.0, Kling V3, Vidu Q1 or Q3, MiniMax H3, LTX, Flux 3 Video | These take an optional last frame |
-| A video that keeps a character or object from your pictures | For example Seedance, Kling V3, Vidu, HappyHorse, Wan 2.7, MiniMax H3, Veo 3 or LTX 2.3 and 2.5 | These take reference images |
+| A video that keeps a character or object from your pictures | For example Seedance, Kling V3, Vidu, HappyHorse, Wan 2.7, MiniMax H3 or Veo 3 | These take reference images |
 | An existing video changed by a prompt | Wan 2.7, HappyHorse v1.0, Grok v1.0 | The Edit Video workflow |
 | The highest resolution | Vidu Q4 (up to 4K, from an image) | The other engines go up to 1080p |
 
@@ -53,7 +53,7 @@ In the generator you choose a **workflow**, and the base model selector's defaul
 | --- | --- | --- |
 | **Create Video** (Text to Video) | A prompt | Veo 3, Vidu Q1 and Q3, MiniMax H3, Kling, Grok, Seedance, HappyHorse, Flux 3 Video, LTX, Wan 2.2 and newer |
 | **Image to Video** | A start image and a prompt describing the motion. Some engines add an optional last frame | Every engine above, and Vidu Q4 |
-| **Reference to Video** | Several images the clip should draw on | Vidu (Q1 and Q4), Veo 3, Kling V3, LTX 2.3 and 2.5, Wan 2.7, HappyHorse, MiniMax H3, Grok v1.5, Seedance |
+| **Reference to Video** | Several images the clip should draw on (LTX takes one) | Vidu (Q1 and Q4), Veo 3, Kling V3, LTX 2.3 and 2.5, Wan 2.7, HappyHorse, MiniMax H3, Grok v1.5, Seedance |
 | **Keyframes to Video** | Images placed at chosen moments in the clip | Flux 3 Video Max only |
 | **Edit Video** | A source video and a prompt | Wan 2.7, HappyHorse v1.0, Grok v1.0 |
 
@@ -65,7 +65,7 @@ Two more video tools work on a clip you already have: **Upscale** (raise a clip'
 
 ## Engines at a glance {#engines-at-a-glance}
 
-Length and resolution are the maximums the generator's form offers. Audio means the form has a **Generate audio** checkbox to make sound with the clip. Audio, Turbo, Draft Mode, Enhance prompt, Movement Amplitude and Seed are under the collapsed **Advanced** section of the form. Mode, Resolution, Duration and Reasoning are outside it.
+Length and resolution are the maximums the generator's form offers. Audio means the form has a **Generate audio** checkbox to make sound with the clip. Audio, Turbo, Draft Mode, Enhance prompt, Movement Amplitude and Seed are under the **Advanced** section of the form (it may be collapsed if you closed it before). Mode, Resolution, Duration and Reasoning are outside it.
 
 | Engine | Versions | Longest clip | Highest resolution | Audio |
 | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ Per-engine details follow, in the order of the table.
 Google's Veo 3, at API version 3.1. Pick **Fast Mode** or **Standard** in the Model field. It takes text, one start image, or up to 3 reference images.
 
 - **Length:** 4, 6 or 8 seconds. Reference to Video is fixed at 8 seconds.
-- **Shape:** 16:9, 1:1 or 9:16 on text prompts. From an image, the clip follows the image, and the form asks for a 16:9 or 9:16 source.
+- **Shape:** 16:9, 1:1 or 9:16 on text prompts. From an image, the clip follows the image, and the image is cropped to 16:9 or 9:16.
 - **Audio:** the **Generate audio** checkbox is off by default.
 - **Cost:** about 670 Buzz for 4 seconds on Fast Mode, 1,340 for 8 seconds, and 1,000 and 2,000 with audio. Standard is about 1,117 for 4 seconds and 2,234 for 8, and 1,666 and 3,333 with audio.
 - **Note:** the live video guide says Veo 3 is a PG-only model. A prompt with profanity or sexually explicit language returns a generic PG clip, with no refund.
@@ -96,7 +96,7 @@ Google's Veo 3, at API version 3.1. Pick **Fast Mode** or **Standard** in the Mo
 
 Vidu has three versions, and they differ a lot.
 
-- **Q1:** text, start image with an optional last frame, or up to 7 references. It has a **Style** choice (General or Anime) on text prompts, a **Movement amplitude** choice (Auto, Small, Medium, Large) and a prompt enhancer. Ratios are 16:9, 1:1 and 9:16. About 600 Buzz.
+- **Q1:** text, start image with an optional last frame, or up to 7 references. It has a **Style** choice (General or Anime) on text prompts, a **Movement Amplitude** choice (Auto, Small, Medium, Large) and a prompt enhancer. Ratios are 16:9, 1:1 and 9:16. About 600 Buzz.
 - **Q3:** adds a resolution choice (360p, 540p, 720p, 1080p), five ratios (16:9, 1:1, 9:16, 4:3, 3:4), a length slider from 1 to 16 seconds, a **Draft Mode** checkbox and an audio checkbox. It takes text, a start image with an optional last frame, but not references. About 1,000 Buzz at 720p for 5 seconds.
 - **Q4:** works from images only. It takes one start frame, or up to 15 references. Resolutions run 540p, 720p, 1080p, 2K and 4K. Image to Video lasts 3 to 16 seconds and always makes audio. Reference to Video lasts 1 to 16 seconds and has an audio checkbox. About 618 Buzz at 720p for 5 seconds.
 
@@ -149,12 +149,12 @@ Flux 3 Video has **v3.0** and **v3.0 Max**. Both run 720p or 1080p, take text or
 
 LTX is the low-cost family. The version selector offers **2.0**, **2.3** and **2.5**, plus **Sulphur 2**, a community fine-tune on the LTX 2.3 pipeline. Each has a Dev and Distilled variant. Distilled hides the CFG and steps settings and costs less. The default is 2.3 Dev. All versions take LoRAs from the resource picker.
 
-- **2.3 and 2.5:** 720p or 1080p, 3 to 20 seconds at 720p and 3 to 15 at 1080p, five ratios (16:9, 3:2, 1:1, 2:3, 9:16), text, a start image with an optional end image, and references. Audio is on by default. These two are the only engines with a **Quantity** setting, so one run can make more than one clip: free accounts get 1, and members get 2 to 4 depending on tier. About 58 Buzz for Dev and 40 for Distilled at 720p for 5 seconds.
+- **2.3 and 2.5:** 720p or 1080p, 3 to 20 seconds at 720p and 3 to 15 at 1080p, five ratios (16:9, 3:2, 1:1, 2:3, 9:16), text, a start image with an optional end image, and one reference image. Audio is on by default. These two are the only engines with a **Quantity** setting, so one run can make more than one clip: free accounts get 1, and members get 2 to 4 depending on tier. About 58 Buzz for Dev and 40 for Distilled at 720p for 5 seconds.
 - **2.0:** an older, smaller-format build: clips of 3, 5 or 7 seconds at a size near 480p. About 200 Buzz at default settings.
 
 ## Wan {#wan}
 
-Wan is Alibaba's video family. The generator offers these versions:
+Wan is Alibaba's video family. These are the versions covered here:
 
 | Version | Resolution | Length | What it adds | About Buzz |
 | --- | --- | --- | --- | --- |
@@ -168,7 +168,7 @@ References and Edit Video are limited to 10 seconds on Wan 2.7.
 
 ## Sound in your clips {#sound-in-your-clips}
 
-Engines with a **Generate audio** checkbox can make sound from your prompt, such as sound effects. Describe the sound in the same prompt, for example: *"A kettle whistles on a stove, then a hand lifts it off. Sound of steam, then quiet kitchen noise."* For music and sound effects made on their own, see [Audio and Music on Civitai](/audio-and-music-on-civitai/).
+Engines with a **Generate audio** checkbox can make sound from your prompt, such as sound effects, speech or music, depending on the engine. Describe the sound in the same prompt, for example: *"A kettle whistles on a stove, then a hand lifts it off. Sound of steam, then quiet kitchen noise."* For music and sound effects made on their own, see [Audio and Music on Civitai](/audio-and-music-on-civitai/).
 
 Audio changes the price on some engines: Veo 3 adds about half again (670 to 1,000 Buzz on Fast Mode for 4 seconds), and Kling V3 about a third (1,095 to 1,460). On the other engines, watch the cost button when you tick the checkbox.
 
@@ -205,7 +205,7 @@ Earlier Education guides covered **Mochi**, **Hunyuan Video**, **Wan 2.1** and *
 - **Reference to Video changed my Kling version.** On Kling it exists only on V3, so the generator switches you to V3. Other engines limit it by version too: Vidu Q3 and Grok v1.0 don't have it.
 - **The clip is shorter or smaller than I set.** Each engine has its own limits, and switching engines can change your length or resolution. Check the settings after you change engine.
 - **The cost is higher than the table.** Length, resolution, version, mode, audio and extras such as the prompt enhancer all move it. The cost button is the number that counts.
-- **A generation failed or was rejected by the provider.** The live video guide explains refunds for failed jobs and the content rules of provider-hosted engines.
+- **A generation failed or was rejected by the provider.** The live video guide explains what happens to your Buzz when a provider denies a request, and the content rules of provider-hosted engines. Veo 3 and Grok requests are not refunded in some cases (see their notes above).
 
 ## I need more help! {#i-need-more-help}
 

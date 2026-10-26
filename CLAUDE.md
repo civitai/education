@@ -5,6 +5,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Static Astro site for education.civitai.com, migrated from WordPress. README.md covers authoring
 (front matter, embeds, heading anchors, pages) — read it before adding content.
 
+**Every PR that adds or rewrites an article needs a content review before it merges**: run the
+`content-review` skill (`.claude/skills/content-review/`) in a separate subagent that did not write the
+article, and put its PASS verdict in the PR body. No PASS, no merge.
+
 ## Commands
 
 ```sh

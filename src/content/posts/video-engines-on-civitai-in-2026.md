@@ -30,7 +30,7 @@ The Civitai generator can make video from text, from an image, from a first and 
 
 This guide is the comparison. It lists the current video engines in the generator and tells you what each one accepts and what it costs, so you can pick one before you spend Buzz. For how to open the generator, how Image to Video starts from an existing image, and the Bring Your Own Image upload, read [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/). That guide also has the Buzz refund notes for denied requests and content-policy notes for engines that run through outside providers, and they apply here too.
 
-Prices in this guide are what the generator's price check returned on October 26, 2026, in Buzz, for the generation itself at the length and resolution named in each row. Extras such as prompt enhancement add a little. Video prices change often and move with every setting. **The cost button next to Generate is the source of truth.** For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
+Prices in this guide are what the generator's price check returned on October 26, 2026, in Buzz, for the generation itself at the length and resolution named in each row. Extras such as prompt enhancement add to the price. Video prices change often and move with every setting. **The cost button next to Generate is the source of truth.** For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 
 ## Pick an engine {#pick-an-engine}
 
@@ -84,7 +84,7 @@ Per-engine details follow, in the order of the table.
 
 ## Veo 3 {#veo-3}
 
-Google's Veo 3, at API version 3.1. Pick **Fast Mode** or **Standard** in the Model field. It takes text, one start image, or up to 3 reference images.
+Google's Veo 3, at API version 3.1. Pick **Fast Mode** or **Standard** in the version dropdown under Model. It takes text, one start image, or up to 3 reference images.
 
 - **Length:** 4, 6 or 8 seconds. Reference to Video is fixed at 8 seconds.
 - **Shape:** 16:9, 1:1 or 9:16 on text prompts. From an image, the clip follows the image, and the image is cropped to 16:9 or 9:16.
@@ -102,7 +102,7 @@ Vidu has three versions, and they differ a lot.
 
 ## MiniMax H3 {#minimax-h3}
 
-MiniMax H3 is the default video engine in the generator, and the one the **Animate** button on an image uses. The Model field offers four builds:
+MiniMax H3 is the default video engine in the generator, and the one the **Animate** button on an image uses. The version dropdown under Model offers four builds:
 
 | Build | What is different | About Buzz for 6 s |
 | --- | --- | --- |
@@ -121,7 +121,7 @@ Kling has two lines. The older one is **V1.6, V2 and V2.5 Turbo** (V2.5 Turbo is
 
 ## Grok {#grok}
 
-Grok's video engine has two versions, **v1.0** and **v1.5**. Clips run 6 to 15 seconds at 480p or 720p, and v1.5 adds 1080p. Ratios are 16:9, 3:2, 4:3, 1:1, 3:4, 2:3 and 9:16. It takes text, one start image, or up to 7 references on v1.5, and v1.0 supports **Edit Video**. About 1,092 Buzz for v1.5 at 720p for 6 seconds. The generator warns that if xAI deems a request a violation of its terms, the generation is still charged.
+Grok's video engine has two versions, **v1.0** and **v1.5**. Clips run 6 to 15 seconds at 480p or 720p, and v1.5 adds 1080p (not in Reference to Video). Ratios are 16:9, 3:2, 4:3, 1:1, 3:4, 2:3 and 9:16. It takes text, one start image, or up to 7 references on v1.5, and v1.0 supports **Edit Video**. About 1,092 Buzz for v1.5 at 720p for 6 seconds. The generator warns that if xAI deems a request a violation of its terms, the generation is still charged.
 
 ## Seedance {#seedance}
 
@@ -161,7 +161,7 @@ Wan is Alibaba's video family. These are the versions covered here:
 | **2.2** | 480p, 720p | 3 or 5 s | Takes up to 2 LoRAs; shift and CFG settings | 101 at defaults |
 | **2.2 5B** | 580p, 720p | No length setting | Smaller model; steps slider; optional FILM or RIFE smoothing | 143 at defaults |
 | **2.5** | 480p, 720p, 1080p | 5 or 10 s | Text and start image | 1,000 for 5 s and 2,000 for 10 s at 720p |
-| **2.7** | 720p, 1080p | 2 to 15 s | First and last frame, up to 5 references, Edit Video, prompt enhancer | 650 at 720p for 5 s |
+| **2.7** | 720p, 1080p | 2 to 15 s | First and last frame, up to 5 references, Edit Video, prompt enhancer (not in Reference or Edit) | 650 at 720p for 5 s |
 | **3.0** | 480p, 720p, 1080p | 2 to 30 s | First and last frame, prompt enhancer, and a **Prime** checkbox for faster generation at a higher cost | 650 at 720p for 5 s |
 
 References and Edit Video are limited to 10 seconds on Wan 2.7.
@@ -187,7 +187,7 @@ Goal: a 5 second clip of a lantern on a pier at dusk, made from a still image.
 
 1. Open the generator from the **Create** button and choose the **Image to Video** workflow.
 2. Drop the image in the image area. A PNG, JPG or WebP works. (See the live guide for upload details.)
-3. For the draft, pick **LTX 2.3** and the **Distilled** variant. Set 720p and 5 seconds. Write the motion, not the picture: *"The lantern flame flickers. The camera pushes in slowly. Water ripples below."* The cost button should show about 40 Buzz.
+3. For the draft, pick **LTX 2.3**, then choose the **Distilled** variant in the Variant dropdown under Version. Set 720p and 5 seconds. Write the motion, not the picture: *"The lantern flame flickers. The camera pushes in slowly. Water ripples below."* The cost button should show about 40 Buzz.
 4. Generate and watch the clip. If the motion is right, keep the prompt. If it isn't, change one thing (the camera move, or how strong the flicker is) and run it again. Each draft costs little.
 5. For the final, switch to **Wan 2.7** at 720p and 5 seconds, which should read about 650 Buzz, or to **Kling V3** if you want audio. Keep the prompt that worked.
 6. Compare the two clips. If you need the clip to end on a second image, Wan 2.7 takes an optional last frame in the same Image to Video form. Add the end image there.

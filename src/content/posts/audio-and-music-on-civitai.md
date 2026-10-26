@@ -56,13 +56,13 @@ Everything except Sonilo has two modes, **Simple** and **Custom**. Simple takes 
 
 This is a pick by cost and length, not by sound quality, which you should judge by ear:
 
-- **ACE Audio** for the lowest-cost tries. Songs run up to 190 seconds.
+- **ACE Audio** for low-cost tries (on the XL Turbo version, it was the cheapest we checked). Songs run up to 190 seconds.
 - **MiniMax Music 3** or **YuE2** when you want a longer song, up to 300 and 360 seconds.
 - **Sonilo** for music from a prompt alone, with no lyrics to write, and for sound effects. It is the priciest at 60 seconds of music, so try ideas on ACE first.
 
 ## ACE Audio {#ace-audio}
 
-ACE Audio is the default music engine and has the lowest price of those listed in the table. The version picker offers **XL Turbo** (the default), **Turbo**, **XL SFT**, **XL Base** and **Base**. The Turbo versions are the fast ones. The Base and SFT versions run more steps.
+ACE Audio is the default music engine. On the default XL Turbo version it was the cheapest option we checked. The version picker offers **XL Turbo** (the default), **Turbo**, **XL SFT**, **XL Base** and **Base**. The Turbo versions are the fast ones. The Base and SFT versions run more steps.
 
 - **Simple mode:** type one prompt, "Describe the song you want to generate". A chat model writes the lyrics, a music description, a tempo and a key, and ACE makes the song.
 - **Custom mode:** you fill in these fields:
@@ -71,7 +71,7 @@ ACE Audio is the default music engine and has the lowest price of those listed i
   - **BPM:** 40 to 200, 120 by default.
   - **Instrumental Weight** and **Vocal Weight:** each from 0 to 1, 0.5 by default.
 - **Duration (seconds):** 1 to 190.
-- **Cover image:** tick **Generate cover image** ("Auto-generate an album cover using AI") and the generator also makes cover art from your description. Or upload a square (1:1) **Cover image** of your own. The cover is an extra step, so it adds to the price.
+- **Cover image:** tick **Generate cover image** ("Auto-generate an album cover using AI") and the generator also makes cover art from your description. Or upload a square (1:1) **Cover image** of your own (the upload box hides while the checkbox is ticked). The cover is an extra step, so it adds to the price.
 - **Advanced:** CFG Scale, Steps and Seed. In Custom mode the generator holds CFG and steps at the right values for the version you picked (CFG 1 and 8 steps on Turbo versions, CFG 4 and 50 steps on Base and SFT versions), so changing them does nothing there.
 
 ## MiniMax Music 3 {#minimax-music-3}
@@ -86,7 +86,7 @@ MiniMax Music 3 makes longer songs, from 30 seconds up to 5 minutes. It has one 
 
 YuE2 makes songs up to 6 minutes long. It has one version, v2, and a default of 120 seconds. The length setting is labeled **Maximum duration (seconds)**, a cap rather than an exact length.
 
-- **Simple mode:** one prompt. A chat model drafts the lyrics and style.
+- **Simple mode:** one prompt. A chat model drafts the lyrics and style, and the song always uses Melody + chords planning.
 - **Custom mode:** **Music Description**, **Lyrics**, a **Steps** slider (1 to 100, 32 by default) and **Score planning**. Score planning guides the song with a musical score. **Melody + chords** plans the tune and the chord progression, **Melody only** plans just the tune, and **Off** skips the score. You can paste an **ABC score** of your own to skip the automatic composing. The app notes that automatic planning adds time and cost.
 
 ## Sonilo {#sonilo}
@@ -144,19 +144,19 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 
 1. Open [civitai.com/training-studio](https://civitai.com/training-studio). You need to be signed in, and training costs Buzz. In the media picker choose **Audio**.
 2. Choose a type. For audio the types are **Style** and **Concept**. (Character is for images and video, and Effect is for video.)
-3. Choose the **ACE-Step** card, then a version: **1.5 (3.5B)** (the default), **XL Base (4B)** or **XL SFT (4B)**. The app describes ACE-Step as the way to "teach it a genre or an artist's sound from a few tracks".
+3. Choose the **ACE-Step** card (the recommended audio card), then a version: **1.5 (3.5B)** (the default), **XL Base (4B)** or **XL SFT (4B)**. The app describes ACE-Step as the way to "teach it a genre or an artist's sound from a few tracks".
 4. Add audio files. The Studio accepts **MP3, WAV, FLAC, OGG and M4A**. Each tile has a player so you can hear a clip while you label it.
 5. Label every clip. You can't continue until every clip has a label. Audio models use **captions**: a text description of the sound. **Auto-label** can write these for you, and you can edit them by hand. The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
 6. The Studio recommends at least **15 clips** for a Style or Concept LoRA. This is a recommendation, not a hard stop. "A few tracks" is the Studio's own wording, and the Data step warns below 15 clips.
-7. Review the settings and start. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
+7. Review the settings and start. For audio, the samples are short clips, so write sample prompts as music descriptions in the style you trained, not as images. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
 
-Audio runs default to 5 epochs. When the run finishes, you can listen to the sample from each epoch, then **download** or **publish** the one you like. The Create Music form has no LoRA picker, and the run page may also show a **Generate** button on audio epochs, so today download or publish the result rather than expecting to load it in Create Music. See the Studio guide for how epochs, samples and publishing work.
+Audio runs default to 5 epochs. When the run finishes, you can listen to the sample from each epoch, then **download** or **publish** the one you like. The Create Music form has no LoRA picker, and the run page may show a **Generate** button on each epoch. That button is for the general generator, so do not expect it to load the LoRA in Create Music. Today, download or publish the result. Generating from unpublished results can also require a membership. See the Studio guide for how epochs, samples and publishing work.
 
 ## Troubleshooting {#troubleshooting}
 
 - **Generate is disabled or says a field is required.** In Custom mode, ACE needs a Music Description. MiniMax Music 3 and YuE2 need a Music Description and Lyrics. Simple mode needs only the prompt.
 - **My CFG and Steps changes did nothing.** On ACE in Custom mode the generator keeps them at the values for the version you picked. Switch versions to change the behavior.
-- **The track is shorter than I set.** The YuE2 and MiniMax Music 3 lengths are maximums, not exact lengths. Each engine also has its own range, so a number that works on ACE may be out of range on MiniMax Music 3, which starts at 30 seconds.
+- **The track is shorter than I set.** The YuE2 and MiniMax Music 3 lengths are maximums, not exact lengths. Each engine also has its own range, so a number that works on ACE is clamped to MiniMax Music 3's range of 30 to 300 seconds.
 - **The cost is higher than the table.** Simple mode runs an extra drafting step, a generated cover is an extra step, and YuE2's automatic score planning adds cost.
 - **A training clip won't continue.** Every clip needs a label. Use Auto-label or write one, then continue.
 - **My training run failed.** A failed run is refunded automatically. See the Studio guide's troubleshooting.

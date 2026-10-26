@@ -68,7 +68,7 @@ Your entry has to meet the rules of the challenge:
 
 - **Created after the challenge started.** An image made before the start is rejected ("Created before challenge").
 - **Allowed content rating.** An image outside the challenge's allowed ratings is rejected ("NSFW restricted").
-- **Required model.** If the challenge lists eligible models, the image's generation data must show at least one of them. Ineligible images are grayed out in the picker with a red badge: "Created before challenge", "NSFW restricted", "Wrong model" or "Model not detected". Hover the badge for the reason. "Wrong model" means no detected resource matches, including images with no model data. "Model not detected" means the model was only credited by hand and never detected, which is typical of off-site images. Generate on Civitai with the featured model to be safe.
+- **Required model.** If the challenge lists eligible models, the image's generation data must show at least one of them. Ineligible images are grayed out in the picker with a red badge: "Created before challenge", "NSFW restricted", "Wrong model" or "Model not detected". The badge names the reason, and hovering "Model not detected" shows a hint. The picker's From Generator tab shows only "NSFW restricted" and "Wrong model", because generator images are new. "Wrong model" means no detected resource matches, including images with no model data. "Model not detected" means the model was only credited by hand and never detected, which is typical of off-site images. Generate on Civitai with the featured model to be safe.
 - **Within your entry limit.** The limit is shown on the challenge page and in the dialog.
 - **Not your own challenge.** You can't submit to a challenge you created.
 
@@ -88,7 +88,7 @@ Completed challenges show the judge's commentary and final verdict on the challe
 ## Prizes {#prizes}
 
 - **Placement prizes.** The top three entries win Buzz, and the **Prizes** section on each challenge shows the amount for each place. Winners also earn challenge points.
-- **Participation prize.** Some Civitai challenges give a small Buzz prize to everyone who submits enough valid entries. The Overview section shows the requirement, for example "Min 10 entries to qualify". Participation prizes are paid directly in Blue Buzz. Winners receive their placement prize instead. Challenges created by members do not have a participation prize.
+- **Participation prize.** Some Civitai challenges give a small Buzz prize to everyone who submits enough valid entries. The Overview section shows the requirement, for example "Min 10 entries to qualify". Participation prizes are paid directly in Blue Buzz. Participation prizes are paid once you reach the requirement. The final payout at the end skips that challenge's winners. Challenges created by members do not have a participation prize.
 - **Claiming a placement prize.** Placement prizes are not paid straight into your balance. When you win, you get a notification and a **Claim prize** button on [civitai.com/prizes](https://civitai.com/prizes). On civitai.com you receive Green Buzz. On civitai.red you choose Green or Yellow. A prize you don't claim is paid automatically as Green Buzz after 30 days. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/). Prizes from Community Challenges are claimed the same way, so you receive the color you pick when claiming, not necessarily the color of the challenge.
 
 Check each challenge's own page for its prize amounts, since they can change.
@@ -132,7 +132,7 @@ Open **Create Challenge** on the challenges page, or go to [civitai.com/challeng
 **Schedule**
 
 - Times are rounded down to the hour.
-- It must start at least 3 hours from now and at most 30 days from now.
+- After rounding down, it must start at least 3 hours from now and at most 30 days from now.
 - It must run between 24 hours and 30 days.
 - It shows in the feed from 7 days before it starts. It is scanned before it becomes visible, and you cannot receive entries until the scan passes and the challenge goes Active.
 

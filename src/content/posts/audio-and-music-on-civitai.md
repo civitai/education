@@ -57,7 +57,7 @@ Everything except Sonilo has two modes, **Simple** and **Custom**. Simple takes 
 This is a pick by cost and length, not by sound quality, which you should judge by ear:
 
 - **ACE Audio** for low-cost tries (on the XL Turbo version, it was the cheapest we checked). Songs run up to 190 seconds.
-- **MiniMax Music 3** or **YuE2** when you want a longer song, up to 300 and 360 seconds.
+- **MiniMax Music 3** or **YuE2** when you want a longer song, up to 300 and 360 seconds. (Sonilo music also runs to 360 seconds.)
 - **Sonilo** for music from a prompt alone, with no lyrics to write, and for sound effects. It is the priciest at 60 seconds of music, so try ideas on ACE first.
 
 ## ACE Audio {#ace-audio}
@@ -71,8 +71,8 @@ ACE Audio is the default music engine. On the default XL Turbo version it was th
   - **BPM:** 40 to 200, 120 by default.
   - **Instrumental Weight** and **Vocal Weight:** each from 0 to 1, 0.5 by default.
 - **Duration (seconds):** 1 to 190.
-- **Cover image:** tick **Generate cover image** ("Auto-generate an album cover using AI") and the generator also makes cover art from your description. Or upload a square (1:1) **Cover image** of your own (the upload box hides while the checkbox is ticked). The cover is an extra step, so it adds to the price.
-- **Advanced:** CFG Scale, Steps and Seed. In Custom mode the generator holds CFG and steps at the right values for the version you picked (CFG 1 and 8 steps on Turbo versions, CFG 4 and 50 steps on Base and SFT versions), so changing them does nothing there.
+- **Cover image** (ACE Audio is the only engine with cover art): tick **Generate cover image** ("Auto-generate an album cover using AI") and the generator also makes cover art from your description. Or upload a square (1:1) **Cover image** of your own (the upload box hides while the checkbox is ticked). The cover is an extra step, so it adds to the price.
+- **Advanced:** CFG Scale, Steps and Seed. (All engines except Sonilo have a Seed in Advanced.) In Custom mode the generator holds CFG and steps at the right values for the version you picked (CFG 1 and 8 steps on Turbo versions, CFG 4 and 50 steps on Base and SFT versions), so changing them does nothing there.
 
 ## MiniMax Music 3 {#minimax-music-3}
 
@@ -148,13 +148,13 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 4. Add audio files. The Studio accepts **MP3, WAV, FLAC, OGG and M4A**. Each tile has a player so you can hear a clip while you label it.
 5. Label every clip. You can't continue until every clip has a label. Audio models use **captions**: a text description of the sound. **Auto-label** can write these for you, and you can edit them by hand. The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
 6. The Studio recommends at least **15 clips** for a Style or Concept LoRA. This is a recommendation, not a hard stop. "A few tracks" is the Studio's own wording, and the Data step warns below 15 clips.
-7. Review the settings and start. For audio, the samples are short clips, so write sample prompts as music descriptions in the style you trained, not as images. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
+7. Review the settings and start. For audio, the samples are audio clips, so write sample prompts as music descriptions in the style you trained, not as images. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
 
 Audio runs default to 5 epochs. When the run finishes, you can listen to the sample from each epoch, then **download** or **publish** the one you like. The Create Music form has no LoRA picker, and the run page may show a **Generate** button on each epoch. That button is for the general generator, so do not expect it to load the LoRA in Create Music. Today, download or publish the result. Generating from unpublished results can also require a membership. See the Studio guide for how epochs, samples and publishing work.
 
 ## Troubleshooting {#troubleshooting}
 
-- **Generate is disabled or says a field is required.** In Custom mode, ACE needs a Music Description. MiniMax Music 3 and YuE2 need a Music Description and Lyrics. Simple mode needs only the prompt.
+- **Generate shows a message that a field is required.** In Custom mode, ACE needs a Music Description. MiniMax Music 3 and YuE2 need a Music Description and Lyrics. Simple mode needs only the prompt.
 - **My CFG and Steps changes did nothing.** On ACE in Custom mode the generator keeps them at the values for the version you picked. Switch versions to change the behavior.
 - **The track is shorter than I set.** The YuE2 and MiniMax Music 3 lengths are maximums, not exact lengths. Each engine also has its own range, so a number that works on ACE is clamped to MiniMax Music 3's range of 30 to 300 seconds.
 - **The cost is higher than the table.** Simple mode runs an extra drafting step, a generated cover is an extra step, and YuE2's automatic score planning adds cost.

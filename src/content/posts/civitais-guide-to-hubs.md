@@ -19,7 +19,7 @@ seo:
 | --- | --- |
 | 10/26/2026 | First version |
 
-The main image feed on Civitai shows you a lot. A **hub** shows you a slice of it that you chose. You pick the creators, models and tags you care about, and the hub becomes an image feed that contains only their work. New images appear in it as they are posted, and you never have to add them by hand.
+The main image feed on Civitai shows you a lot. A **hub** shows you a slice of it that you chose. You pick the creators, models and tags you care about, and the hub becomes an image feed that contains their work. New images appear in it as they are posted, and you never have to add them by hand.
 
 This guide covers what a hub is, how to find and follow other people's hubs, and how to make, edit and share your own.
 
@@ -39,13 +39,15 @@ You can add these kinds of sources:
 | A model | Images made with that model, or with one specific version of it |
 | A tag | Images carrying that tag |
 
-You can also add sources in bulk from your own account: all the creators you follow, all the models you have published, or all the models you have bookmarked. In the source search box, leave the search empty and an **Add** button appears at the top of the **Creators**, **My models** and **Bookmarked** tabs. It stops when the hub reaches its limit of 50 sources.
+You can also add sources in bulk from your own account: all the creators you follow, all the models you have published, or all the models you have bookmarked. In the source search box, leave the search empty and a button such as **Add 12** appears (the number is how many it will add) at the top of the **Creators**, **My models** and **Bookmarked** tabs. It stops when the hub reaches its limit of 50 sources.
 
 A hub also has things you can switch on to shape the feed:
 
 - **A keep-out list.** You can name creators, models and tags to leave out of the hub.
-- **Content levels.** A hub can have its own content level limit. For example, you can keep a hub to PG images only. With no limit set, each viewer's own browsing settings decide what they see. If a hub's limit is higher than the levels a viewer has turned on, the viewer sees an empty message with an **Adjust your browsing level** button.
+- **Content levels.** A hub can have its own content level limit, so you can keep it to PG images only. This setting only appears on versions of Civitai that allow mature content, so you may not see it on civitai.com. With no limit set, each viewer's own browsing settings decide what they see. If a hub's limit is higher than the levels a viewer has turned on, the viewer sees an explanation instead of images. A button called **Adjust your browsing level** appears only if the viewer's account can turn on more levels.
 - **Sorting and filtering.** The feed sorts and filters like the normal image feed: most reactions, newest, time period, tools and so on. On your own hub, the sort and filters you choose are saved to the hub. On someone else's hub, your changes are only for you and do not touch theirs.
+
+A hub shows images that match **any** of its sources. Adding a source widens the feed and never narrows it. Only the keep-out list and the content level limit remove things.
 
 Collections cannot be hub sources yet.
 
@@ -56,7 +58,7 @@ Open **Hubs** from the main navigation on civitai.com, or go straight to [civita
 Once you are signed in and have made a hub, opening Hubs skips the Hubs page:
 
 - If you have one hub, it opens that hub.
-- If you have several, it opens the one you looked at last.
+- If you have several, it usually opens the one you looked at last. If it cannot tell, you land on the Hubs page.
 - To see the Hubs page with its starting points anyway, add `?all` to the address: `civitai.com/hubs?all`.
 
 A shared hub link opens for signed-out visitors too. Following or duplicating a hub needs you to sign in.
@@ -67,13 +69,15 @@ Every hub page has a sidebar with:
 - **Followed Hubs**, hubs made by other people that you follow. This section only appears once you follow one.
 - **Sources for this hub**, the list of sources feeding the hub you are looking at.
 
+The sidebar also lets you switch a source off just for yourself while you look at a hub. This does not change the hub for anyone else.
+
 On a narrow screen the sidebar collapses into a **My hubs** button that opens it as a drawer.
 
 To open someone else's hub, use the link they share with you.
 
 ## Follow a hub {#follow-a-hub}
 
-Open a shared hub and press the bookmark icon at the top right, next to the hub's title. Its tooltip reads **Follow**, and changes to **Following** once it is saved. Press it again to unfollow. You can also unfollow from the sidebar: hover over a followed hub and use the trash icon (**Unfollow**). The bookmark icon does not appear on your own hubs.
+Open a shared hub and press the bookmark icon on the title row, at the right. Its tooltip reads **Follow**, and changes to **Following** once it is saved. Press it again to unfollow. You can also unfollow from the sidebar: hover over a followed hub and use the trash icon that appears (it is labeled **Unfollow**). The bookmark icon does not appear on your own hubs.
 
 - Followed hubs appear under **Followed Hubs** in the sidebar.
 - You can follow up to 50 hubs. Following does not use any of your own 20 hubs.
@@ -93,7 +97,9 @@ Open the Hubs page and look under **Start with one of these** (it reads **Start 
 - **Creators I follow.** The people you already follow, gathered into one feed you can sort and prune.
 - **Something else.** Name a hub and fill it with the creators, models and tags you choose, starting empty.
 
-You can also press **New hub** on the Hubs page, or the plus button in the sidebar.
+You can also press **New hub** on the Hubs page, or the plus button in the sidebar. Each of these opens a **New hub** window, not a new page.
+
+Templates may not fill every item. If a template could not fit everything, the window says how many of your items it used.
 
 ### Fill in the hub {#fill-in-the-hub}
 
@@ -104,7 +110,7 @@ The hub form has these fields:
 | **Name** | Up to 60 characters. An example is "Anime creators I follow". |
 | **Description** | Up to 300 characters, answering "What goes in this hub?" |
 | **Anyone with the link can view this hub** | Off by default. See sharing below. |
-| **Content levels** | An optional limit on the content levels the hub shows. This only appears if your account can view mature content. |
+| **Content levels** | An optional limit on the content levels the hub shows. This field only appears on versions of Civitai that allow mature content, so it may not be there on civitai.com. |
 | **Sources** | The creators, models and tags in the hub. |
 
 ### Add sources {#add-sources}
@@ -116,7 +122,9 @@ In the **Sources** section, use the search box. It has one tab for each kind of 
 - **Bookmarked**, the models you have bookmarked.
 - **Tags**. Search for a tag by name, such as mecha, portraits or landscapes.
 
-You can also paste a link to a creator or model page, and the hub adds it.
+You can also paste a link to a creator or model page into the search box. The match appears as a row, and you click the row to add it. Links only work for models that are published and not private.
+
+The box clears after each add, so repeat the search for every source. With an empty search, the Creators tab shows only a short preview of the people you follow. Type a name to find a particular one.
 
 To use one version of a model only, paste the link to that version's page, or a model link that includes the version, into the source search box. Adding a model from its page adds the whole model.
 
@@ -124,7 +132,7 @@ To leave something out, use **Keep something out** under the sources. The sectio
 
 ### Add something to a hub from its own page {#add-from-page}
 
-You do not have to open the hub to add to it. On a model page, open the three dots menu and choose **Add to hub**. On a creator's profile, the menu has the same **Add to hub** item. A window opens where you pick which hub it goes in, or name a new one and add it there.
+You do not have to open the hub to add to it. On a model page, open the three dots menu and choose **Add to hub**. On a creator's profile, the menu has the same **Add to hub** item. In the window that opens, tick a hub to add the source right away, or type a name and press **Create** to start a new hub with it. Press **Done** when you finish.
 
 ## Edit, share, copy and delete {#manage}
 
@@ -139,34 +147,37 @@ These two items appear on your own hubs only. On someone else's shared hub, the 
 
 A hub is **private** when you make it. Only you can see it.
 
-- Press the share icon at the top right of the hub (tooltip: **Share**), or turn on **Anyone with the link can view this hub** in the form. Civitai asks you to confirm with **Turn on sharing**.
-- After that, anyone you give the link to can open it, follow it and copy it.
+- Press the share icon on the title row (tooltip: **Share**), or turn on **Anyone with the link can view this hub** in the form. Civitai asks you to confirm with **Turn on sharing**.
+- After that, the link is copied for you, and anyone you give it to can open the hub, follow it and copy it. On a hub that is already shared, the share icon opens the usual share menu.
 - To stop sharing, turn the same setting off in **Edit hub**. **Every link you handed out stops working**, and the hub disappears from the lists of people who followed it.
 
 The hub list marks each of your hubs as **Shared** or **Private**.
 
 ## A worked example {#worked-example}
 
-Say you want a feed of mecha art, kept to PG, from two creators you like.
+Say you want one feed that combines everything tagged mecha with the work of two creators you like. You will also keep out one tag you do not want.
 
-1. Open `civitai.com/hubs` and choose **Start empty** under **Something else**.
-2. Name the hub "Mecha, PG only". Leave sharing off.
-3. If your account can view mature content, set **Content levels** to PG.
-4. In **Sources**, open the **Tags** tab and search for "mecha". Add the tag.
-5. Open the **Creators** tab and add the two creators from the list of people you follow.
-6. Save. The hub opens as a feed of images that match those sources. Sort it by most reactions and pick a time period. Those choices are saved to the hub.
+1. Open `civitai.com/hubs` and choose **Start empty** under **Something else**. A **New hub** window opens.
+2. Name the hub "Mecha and two favorites". Leave sharing off.
+3. In **Sources**, open the **Tags** tab and search for "mecha". Click the row to add the tag.
+4. Open the **Creators** tab. Type the first creator's name in the search box and click their row. Repeat for the second. The tab only searches people you follow. For anyone else, paste a link to their profile.
+5. Under **Keep something out**, add the tag you want to avoid.
+6. Press **Save**. The hub opens as a feed of images tagged mecha, plus everything the two creators post, minus the kept-out tag. Use the sort menu in the bar at the top of the feed to choose Most Reactions, and the filters button to pick a time period. Those choices are saved to the hub.
 
-Later, when you notice a creator in that feed whose work you do not want, add them under **Keep something out**.
+Because sources add together, you get mecha images from anyone, not only from those two creators.
 
 ## If something looks wrong {#troubleshooting}
 
 | What you see | Why, and what to do |
 | --- | --- |
-| The feed is empty | The hub's content level limit may be above the levels your account shows. Use **Adjust your browsing level**, or check that the hub has sources. |
+| The feed is empty | Check that the hub has sources. If the hub has a content level limit above the levels your account shows, you see an explanation instead of images. If you see an **Adjust your browsing level** button, use it. If not, that limit cannot be changed from here. |
 | You cannot find the starting templates | Opening Hubs goes straight to your hub once you have one. Use `civitai.com/hubs?all`. |
-| You cannot add more sources | A hub holds up to 50 sources, and up to 20 keep-out entries. Remove one first. |
-| A source is already in the hub | Each source can be in a hub once. |
-| A hub you followed is gone | The owner made it private. It returns if they share it again. |
+| You cannot add more sources | A hub holds up to 50 sources and up to 20 keep-out entries ("Hub is full" or "Never-show list is full"). Remove one first. |
+| "Already in this hub" | The source is already a source of the hub, or it is on the hub's never-show list. Remove it from that list first if you want it as a source. |
+| A link you pasted does nothing | Links only work for creators and for models that are published and not private. Try searching by name instead. |
+| The new hub button is disabled | You have 20 hubs, which is the limit. Delete one to make another. |
+| A hub you followed is gone | The owner made it private or deleted it. It returns if they share it again. |
+| You cannot follow another hub | You can follow up to 50 hubs. Private hubs you followed still count toward the 50, because the follow is kept. |
 
 ## Questions {#questions}
 

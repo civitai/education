@@ -45,7 +45,7 @@ A model is **covered** when the generator is able to run it. Coverage is about w
 | Community checkpoints | The model is published, it is built on a model family the generator supports, it is a standard checkpoint type (not an inpainting or other special type), it has a scanned SafeTensor model file, its license allows on-site generation, and it has not been blocked from generation |
 | LoRAs, embeddings, VAEs and similar | They match a supported model family and file format, and the same license and creator settings allow generation |
 
-Models that have been taken down or archived, and models flagged as depicting a real person, are never covered. Some model families (Flux.2 and HiDream, for example) use only the checkpoint Civitai lists for them. Community checkpoints built on those families cannot be generated with, A bid on one can still win a featured spot, but winning does not make it generatable.
+Models that have been taken down or archived, and models flagged as depicting a real person, are never covered. Some model families (Flux.2 and HiDream, for example) use only the checkpoint Civitai lists for them. Community checkpoints built on those families cannot be generated with. A bid on one can still win a featured spot, but winning does not make it generatable.
 
 If a resource is not covered, the generator refuses the job with this message: **"Some of your resources are not available for generation"**, followed by the resource name.
 
@@ -57,14 +57,14 @@ The generator tells you the state of each model in several places:
 
 - **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no dot, though a card's details show a **Generation** row with the current state. Turn on **Loaded only**, under Generator in the picker filters, to show only models marked loaded. Free accounts do not see community checkpoints that are not loaded in the picker at all.
 - **Model page.** A green dot on the version strip marks loaded versions.
-- **Create button.** The corner badge on a model page says **Recently loaded** or **Not recently loaded**, which tells you whether pressing it is likely to start now. The button and badge appear on a free account only for models it can generate with.
+- **Create button.** The corner badge on a model page says **Recently loaded** or **Not recently loaded** (outside-provider models say **No download needed**), which tells you whether pressing it is likely to start now. The button and badge appear on a free account only for models it can generate with.
 - **Added resources in the generator.** Each row shows one of these labels: **Loaded**, **No download needed** (outside provider), **Not loaded**, **Queued to download**, or **Downloading** with a percentage.
 
 :::note
 These marks can trail reality by a short time. The labels in the generator itself are read live, but the dots in the picker and on model pages are stored values.
 :::
 
-While your job waits, the pending image shows a panel with the **lane**, your position in the line, the speed and an estimated time for the slowest download. The job sits in your normal generation queue the whole time. Cancelling it also removes its downloads from the line.
+While your job waits, the pending image shows a panel with the **lane**, your position in the line, the speed and an estimated time for the slowest download. The job sits in your normal generation queue the whole time. Canceling it also removes its downloads from the line.
 
 ### Members and free accounts {#members}
 

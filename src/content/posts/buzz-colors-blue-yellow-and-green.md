@@ -45,7 +45,7 @@ Blue Buzz is the free color. It is meant to let anyone create without paying.
 **How you get it**
 
 - New accounts are granted Blue Buzz during onboarding, as a gift for on-site generation (100 Buzz at the time of writing).
-- Daily and community rewards. The list changes over time, and the current one is on your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard) under Rewards. Examples are reacting to content, making your first post of the day, following new creators, giving feedback on generator results, and getting reactions on your own work.
+- Daily and community rewards. The list changes over time, and the current one is on your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard) select Blue at the top, then open "Ways to earn Blue Buzz". Examples are reacting to content, making your first post of the day, following new creators, giving feedback on generator results, and getting reactions on your own work.
 - Daily rewards reset at midnight UTC.
 - Memberships multiply Blue Buzz rewards. The membership page lists 1.5x for Bronze, 2.5x for Silver and 4x for Gold on daily rewards.
 - Bonus Blue Buzz on large purchases. A Buzz purchase of 250,000 Buzz or more adds bonus Blue Buzz, and the bonus grows at higher amounts. It does not stack with the membership purchase bonus: the larger of the two applies.
@@ -71,8 +71,8 @@ Green Buzz is the paid color for civitai.com. It covers PG and PG-13 content.
 **How you get it**
 
 - **Membership.** Each paid tier delivers Green Buzz every month: Bronze ($10) gives 10,000, Silver ($25) gives 25,000 and Gold ($50) gives 50,000. Memberships also add a bonus on Buzz you buy (5%, 10% and 20%). See the [membership page](https://civitai.com/pricing).
-- **Buying Buzz** at [civitai.com/purchase/buzz](https://civitai.com/purchase/buzz), by card. You can also reach it from your Buzz balance in the site header. The page asks you to confirm that Green Buzz can't generate mature content and that the purchase is non-refundable. Your membership's purchase bonus (5%, 10% or 20%) applies.
-- **Tips** from other creators. The [Buzz Beggars Board](https://civitai.com/collections/3870938) is a collection where people post images hoping to be tipped.
+- **Buying Buzz** at [civitai.com/purchase/buzz](https://civitai.com/purchase/buzz), by card. You can also reach it from your Buzz balance in the site header. When you click "Pay with Card", a dialog asks you to confirm that Green Buzz is for safe-for-work content and that the purchase is non-refundable. The minimum card purchase is $5. Your membership's purchase bonus (5%, 10% or 20%) applies.
+- **Tips** from other creators. The [Beggars Board](https://civitai.com/collections/3870938) is a collection where people post images hoping to be tipped.
 - **Creator earnings** when others use your resources, if you are in the Creator Program. The program needs an active Bronze, Silver or Gold membership and a Creator Score of 40,000 or more.
 
 **What it buys**
@@ -120,7 +120,7 @@ If you want to keep your paid Buzz for tips and early access, pay for generation
 
 ## Green Buzz and PG-13 content
 
-civitai.com shows PG and PG-13 content only. Green Buzz follows the same line: it covers safe-for-work generation and can't be used to generate content rated R, X or XXX. For mature work, use civitai.red with Yellow Buzz. The Green purchase page asks you to acknowledge this, and Green purchases are non-refundable, so decide which site you need before you buy.
+civitai.com shows PG and PG-13 content only to signed-in members (signed-out visitors see PG). Green Buzz follows the same line: it covers safe-for-work generation and can't be used to generate content rated R, X or XXX. For mature work, use civitai.red with Yellow Buzz. The Green purchase dialog asks you to acknowledge this, and Green purchases are non-refundable, so decide which site you need before you buy.
 
 ## Worked example
 
@@ -139,13 +139,13 @@ Spending Blue first on generation keeps your paid Buzz free for tips and early a
 - **Card, for Green Buzz.** On civitai.com, Buy Buzz takes a card payment and credits Green Buzz. Buy Buzz on civitai.red is crypto only.
 - **Membership.** A civitai.com membership is a subscription that delivers Green Buzz each month. You can still gift a membership from the membership page.
 - **Gift codes** for Buzz can no longer be bought.
-- **Perks membership.** civitai.red also offers one month of membership perks for earned Buzz. It has no monthly Buzz, no bonus Buzz and no Creator Program, and it doesn't renew on its own.
+- **Perks membership.** civitai.red also offers one month of membership perks, paid in Buzz (Blue Buzz can't be used). It has no monthly Buzz, no bonus Buzz and no Creator Program, and it doesn't renew on its own.
 
 Prices and packages change, so check the Buy Buzz page for the current options.
 
 ## Checking your balance
 
-Sign in and open your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard). It shows each color on its own, your recent transactions for each, and the current Blue Buzz rewards, with a progress bar for each daily reward. Your balance is also in the site header. In the generator, the "Pay with" menu shows the balance of each color you can spend.
+Sign in and open your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard). It shows each color on its own, your recent transactions for each, and, when you select Blue at the top, a "Ways to earn Blue Buzz" list of current rewards with a progress bar for each daily reward. Your balance is also in the site header. In the generator, the "Pay with" menu shows the balance of each color you can spend.
 
 ## Quick reference
 
@@ -164,7 +164,7 @@ Sign in and open your [Buzz Dashboard](https://civitai.com/user/buzz-dashboard).
 - **A generation on civitai.red was blocked when paid with Blue Buzz.** Blue Buzz is safe for work only. A result rated mature is blocked. Pay with Yellow Buzz instead, or become a member.
 - **The generator says Yellow Buzz can't be used on civitai.com.** Switch to Green Buzz, or go to civitai.red where Yellow is spent.
 - **You can't tip with Blue Buzz.** Tips use your site's color only. Use Green on civitai.com or Yellow on civitai.red.
-- **A reward is missing.** Daily rewards have a cap and reset at midnight UTC. The Rewards section of the Buzz Dashboard shows what you have earned today.
+- **A reward is missing.** Daily rewards have a cap and reset at midnight UTC. Select Blue at the top of the Buzz Dashboard and open "Ways to earn Blue Buzz" to see what you have earned today.
 
 ## Problems with your Buzz?
 

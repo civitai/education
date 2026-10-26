@@ -38,9 +38,9 @@ Prices in this guide are about what one default image or clip cost on October 26
 
 | I want | Try first | Then | Costs about |
 | --- | --- | --- | --- |
-| A photorealistic image | Flux.2 | Krea 2, Flux.1, a photoreal SDXL checkpoint | 3 to 40 Buzz |
+| A photorealistic image | Flux.2 | Krea 2, Flux.1, a photoreal SDXL checkpoint | 3 to 40 Buzz, more for Krea 2 Raw and the larger tiers |
 | Anime or illustration | Illustrious | Anima, NoobAI, Pony | About 3 to 11 Buzz |
-| Readable text in the image | Z-Image Turbo | Flux.2, Qwen, GPT Image, Seedream | 4 to 135 Buzz |
+| Readable text in the image | Z-Image Turbo | Qwen, Flux.2, GPT Image, Seedream | 4 to 135 Buzz |
 | To edit my own picture | See the [editing guide](/image-editing-models-on-civitai/) | | 13 to 135 Buzz (8 for GPT Image at low quality) |
 | A video clip | LTX Video 2.5 (cheapest), Veo 3.1 (with sound) | Kling, Seedance, Wan | 40 to 1,500 Buzz |
 | Few steps | Z-Image Turbo | Flux.2 Klein 4B, Krea 2 Turbo | 4 to 12 Buzz |
@@ -49,13 +49,13 @@ Prices in this guide are about what one default image or clip cost on October 26
 
 ## What a model costs {#costs}
 
-Costs are for one image at 1:1 with default settings, or one default clip with audio off. Each row is the price we saw on October 26, 2026.
+Costs are for one image at 1:1 with default settings, or one default clip with audio off, except where a quality or size is named. Each row is the price we saw on October 26, 2026.
 
 | Band | Image models | About Buzz |
 | --- | --- | --- |
 | Under 20 | SDXL, Illustrious and Pony V7 (3), Flux.2 Klein 4B (4), Z-Image Turbo (4), GPT Image 2.5 at low quality (8), Anima (11), Flux.1 Dev (12), Krea 2 Turbo (12), Muse Image (13), GPT Image 2.5 at medium (18) | 3 to 18 |
 | 20 to 60 | Qwen (23), HiDream (30), Flux.2 Dev (40), Ideogram (42), Nano Banana V2.1 at 1K (44), Krea 3 at 1K (45), Seedream v5.0 Lite (52) | 23 to 52 |
-| 60 to 150 | Flux.3 at 1K (63), GPT Image 2.5 at high quality (69), Seedream v5.0 Pro (135) | 63 to 135 |
+| 60 to 150 | Flux.3 at 1K (63), GPT Image 2.5 at high quality (69), Seedream v5.0 Pro at 2K (135) | 63 to 135 |
 
 | Band | Video models | About Buzz |
 | --- | --- | --- |
@@ -69,15 +69,15 @@ Clip lengths differ, and length changes the price. Treat video prices as a rough
 
 Some models run on Civitai's own GPUs. Others are partner models that Civitai calls through the partner's service. The difference decides two things you may care about:
 
-- **Your own LoRAs and community checkpoints.** These work with the models on Civitai's GPUs: SD 1.x, the SDXL family (SDXL, Illustrious, NoobAI, Pony), Pony V7, Anima, Flux.1, Chroma, HiDream, Qwen, Z-Image, Flux.2 Klein and Flux.3 Klein. Partner models like GPT Image, Nano Banana, Seedream, Krea 3, Flux.3 and Muse Image take no LoRAs. A few others, including Flux.2 Dev and Krea 2 Raw and Turbo, do accept them.
+- **Your own LoRAs and community checkpoints.** These work with the models on Civitai's GPUs (SD 1.x, the SDXL family (SDXL, Illustrious, NoobAI, Pony), Pony V7, Anima, Flux.1, Chroma, HiDream, Qwen, Z-Image, Flux.2 Klein and Flux.3 Klein), and with Flux.2 Dev and Krea 2 Raw and Turbo. Partner models like GPT Image, Nano Banana, Seedream, Krea 3, Flux.3 and Muse Image take no LoRAs.
 - **Cost.** The cheapest image options, at 3 to 4 Buzz, all run on Civitai's GPUs.
 
-The base model selector filters LoRAs to the ones that match the model you picked. If you pick a community checkpoint that is not loaded yet, a free account may be refused and a download may add a wait. See [Model Loading: Coverage, Boost and Featured Models](/model-loading-coverage-boost-and-featured-models/).
+The LoRA picker shows LoRAs that match the model you picked. If you pick a community checkpoint that is not loaded yet, a free account may be refused and a download may add a wait. See [Model Loading: Coverage, Boost and Featured Models](/model-loading-coverage-boost-and-featured-models/).
 
 ## Photorealistic images {#photoreal}
 
 - **Flux.2** (Dev about 40 Buzz; Klein 4B, the smallest Flux.2 build, about 4). Civitai's ecosystem page describes Flux.2 as sharper in prompt adherence, in-image text and photorealism than the original Flux.1. **Flux.1** (about 12) is the older version and costs less than Flux.2 Dev.
-- **Krea 2** (Turbo about 12). Civitai's ecosystem page describes it as built for sharp photorealism and dependable prompt adherence. Turbo is the cheap, few-step build. The larger hosted Krea 2 tiers cost more, so check the cost button.
+- **Krea 2** (Turbo about 12). Civitai's ecosystem page describes it as built for sharp photorealism and dependable prompt adherence. Civitai's page says Raw is the generator's default Krea 2 checkpoint, so pick Turbo yourself for the low price. Raw and the larger hosted tiers cost more, so check the cost button.
 - **A photoreal SDXL checkpoint** (about 3). The SDXL family (SDXL, Pony, Illustrious, NoobAI) has some of the largest libraries of community checkpoints and LoRAs on Civitai (Civitai's Illustrious page lists over 200,000 LoRAs), so you will find many photoreal styles there. Search the Models page for a checkpoint made for realism, then generate with it.
 
 Civitai describes both Flux.2 and Krea 2 as strong on prompt adherence, so start with one of them when you have a plain prompt. Pick an SDXL checkpoint when you want a specific look, or need to run a LoRA at the lowest cost.
@@ -93,7 +93,7 @@ These families prompt differently. Illustrious, NoobAI and Pony respond to tag l
 
 ## Readable text inside the image {#text}
 
-- **Z-Image Turbo** (about 4). Civitai's ecosystem page lists legible in-image text, in Chinese and English, as a strength of the Z-Image family. It is tied with Flux.2 Klein 4B as the cheapest of the models Civitai lists as strong at in-image text, which is why it is the first pick.
+- **Z-Image Turbo** (about 4). Civitai's ecosystem page lists legible in-image text, in Chinese and English, as a strength of the Z-Image family. It is our first pick because it is among the cheapest options and Civitai lists its text as a strength.
 - **Qwen** (about 23). Listed on Civitai for unusually legible in-image text.
 - **GPT Image 2.5** (about 18 at medium, 69 at high). In our editing test every model spelled OPEN LATE correctly, GPT Image included. We did not test text in new images.
 - **Seedream** (about 52 for v5.0 Lite, 135 for Pro). Built for fine-grained typography and high resolution, per Civitai's page.
@@ -118,15 +118,16 @@ Use an edit model when you have a picture and want to change one thing. The [Ima
 - **Kling** (V2.5 Turbo about 600; check the cost button for other versions). A high-end text-to-video and image-to-video model from Kuaishou.
 - **Wan** (about 101 for Wan 2.2, 650 for Wan 2.7 and 3.0, 1,000 for Wan 2.5). A family of video models from Alibaba that turn a prompt or still image into short, realistic clips.
 
-Video prices change with length, resolution and audio, so compare them with the cost button on the exact settings you want. The [video guide](/civitais-guide-to-video-in-the-civitai-generator/) covers the settings for several video models, though not every current one.
+Video prices change with length, resolution and audio, so compare them with the cost button on the exact settings you want. The [video guide](/civitais-guide-to-video-in-the-civitai-generator/) covers settings for several video models, including Veo, Kling, LTX Video 2 and Wan up to 2.5, but not the newest ones.
 
 ## Models built for speed {#speed}
 
 We have not timed these, so this is a guide to which models are built to need few steps, not a measurement.
 
-- **Z-Image Turbo** and **Flux.2 Klein 4B** (about 4 each). Turbo and distilled models need fewer steps to finish an image.
+- **Z-Image Turbo** (about 4). Civitai's Z-Image page says Turbo renders in just a handful of steps.
+- **Flux.2 Klein 4B** (about 4). Civitai's Flux.2 page calls the Klein line its fastest Flux.2 line.
 - **Krea 2 Turbo** (about 12). Civitai describes it as an 8-step distilled build of Krea 2 Raw.
-- **LTX Video 2.5 distilled** (about 40). The cheaper of the two LTX builds, and the one tuned for fewer steps.
+- **LTX Video 2.5** (about 40 for the distilled build). Civitai describes LTX as tuned for speed.
 
 ## The lowest cost {#cost}
 
@@ -141,14 +142,14 @@ You want a poster for a coffee shop with the words OPEN LATE, and you want to sp
 1. Open the generator and choose **Z-Image Turbo** in the base model selector. The cost button shows about 4 Buzz.
 2. Write the prompt with the words in quotation marks: a poster of a neon coffee cup in a dark window, with the text "OPEN LATE".
 3. Generate. If the text is wrong, run it again, because text can change from one run to the next.
-4. When the layout is right, switch the selector to **GPT Image 2.5** and run the same prompt. At medium quality it shows about 18 Buzz. At high quality it shows about 69.
+4. When the layout is right, switch the selector to **GPT Image 2.5** and run the same prompt. Set the quality to Medium and it shows about 18 Buzz. At high quality, the default, it shows about 69.
 5. Keep whichever result you prefer. You spent about 4 Buzz to find the layout, and the higher price only once.
 
 Test cheap, then pay for the model you want only when the idea works.
 
 ## Troubleshooting {#troubleshooting}
 
-**The model I want is missing from the selector.** Models are added and retired often. Check the cost button and the selector again later, or see the [changelog](https://civitai.com/changelog) for recent additions.
+**The model I want is missing from the selector.** The list first shows models that fit your current workflow. Search by name, or open the **All** tab if you see one, to find others. Picking one may switch the workflow. Models are also added and retired often. Check the cost button and the selector again later, or see the [changelog](https://civitai.com/changelog) for recent additions.
 
 **My LoRA does not show up.** LoRAs only show for models they were trained for. A LoRA for SDXL does not appear when Flux.1 is selected, and most partner models do not take LoRAs at all.
 

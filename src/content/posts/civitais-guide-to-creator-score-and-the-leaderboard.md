@@ -71,7 +71,7 @@ Creator Score gates a growing list of features. This table is a selection of the
 | 1,000 | Higher comment limits and higher reaction limits. Up to 60 posts a day, up from 20. Up to 5 articles a day, up from 3 |
 | 5,000 | Up to 150 posts a day. Up to 10 articles a day |
 | 10,000 | Up to 20 articles a day. Charging for access to your model versions, with a licensing fee or paid access. This is also the first rung of the Early Access ladder, which grows with your score. See [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/) |
-| 40,000 | Joining the Creator Program. See [Civitai's Guide to Earning with the Creator Program](/civitais-guide-to-earning-with-the-creator-program/) |
+| 40,000 | Joining the Creator Program, which uses a slightly different total than the one on your account page, so check its own guide. See [Civitai's Guide to Earning with the Creator Program](/civitais-guide-to-earning-with-the-creator-program/) |
 
 Notes:
 
@@ -93,7 +93,7 @@ Avoid posting content that breaks the rules. Removed images take points away.
 
 ## The leaderboards {#the-leaderboards}
 
-The leaderboards rank creators. You do not need to sign in to look at them. Open [civitai.com/leaderboard/overall](https://civitai.com/leaderboard/overall), or choose **Leaderboard** (the crown icon) in the site menu.
+The leaderboards rank creators. You do not need to sign in to look at them. Open [civitai.com/leaderboard/overall](https://civitai.com/leaderboard/overall), or choose **Leaderboard** (the crown icon) in the site navigation.
 
 Each leaderboard is a category with its own rules. Some of the ones you can pick from the list:
 

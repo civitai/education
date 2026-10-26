@@ -37,29 +37,29 @@ The Comic Creator is a Beta feature. Civitai says it has a limited feature set, 
 
 ## Find a comic {#find-a-comic}
 
-- **The Comics page.** Choose **Comics** in the site's top navigation, or go to [civitai.com/comics](https://civitai.com/comics). A row of genres sits at the top. Pick one, or choose All to see everything.
+- **The Comics page.** Choose **Comics** in the site's top navigation (that is its default place, and it can be moved), or go to [civitai.com/comics](https://civitai.com/comics). A row of genres sits at the top. Pick one, or choose All to see everything.
 - **Search.** Use the site search and switch to Comics, or go to [civitai.com/search/comics](https://civitai.com/search/comics).
 - **A creator's profile.** A profile has a Comics tab that lists that person's comics.
 
 The genres are Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Romance, Sci Fi, Slice Of Life, Thriller and Other. They appear in capitals on the buttons.
 
-Open a comic to see its overview page: the description, the chapter list, and counts for unique readers, total chapter reads, followers and Buzz tipped.
+Open a comic to see its overview page: the description, the chapter list, and counts for unique readers, total chapter reads, followers and Buzz tipped (each count shows once it is above zero).
 
 ## Read a comic {#read-comics}
 
 1. Open the comic and choose a chapter. A chapter marked **Early access** is locked, see [Early access chapters](#early-access-chapters).
 2. Read. A control in the reader's header switches between **Page view** and **Scroll view**. Use whichever you like.
-3. Use the chapter navigation at the bottom to move to the next chapter.
+3. To move to another chapter: in Scroll view use **Next Chapter** at the bottom. In Page view use the arrows at the edges of the page, the arrow keys, or the chapter dropdown in the header. Phones always use Scroll view.
 
-The reader's header also has a button that shows or hides the comments. **Copy link**, **Report comic** and, when the creator allows it, **Download PDF** and **Download CBZ** are icon buttons on a computer and sit in a menu on a phone. The Page view and Scroll view switch is not shown on phones.
+The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a "More actions" menu as Copy link, Report, Download PDF and Download CBZ. The Page view and Scroll view switch is shown as icons and not on phones.
 
 ### Follow, tip and comment {#follow-tip-comment}
 
 On a comic's overview page:
 
-- **Follow.** When you are signed in, the bell button reads "Get notified of new chapters". Press it again ("Unfollow comic") to stop.
+- **Follow.** When you are signed in, the bell button has the tooltip "Get notified of new chapters". Press it again (tooltip "Unfollow comic") to stop.
 - **Tip.** The tip button, shown when you are signed in and it is not your own comic, sends Buzz to the creator. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
-- **Share and Report** are on the same page. Chapters also have a comment thread.
+- **Share** and a flag icon for **Report** (signed in, not your own comic) are on the same page. Chapters also have a comment thread.
 
 ### Early access chapters {#early-access-chapters}
 
@@ -67,7 +67,7 @@ A creator can put a chapter in **early access**. It costs Buzz to read until a c
 
 ## Make a comic {#make-a-comic}
 
-You need to be signed in with an account that is not muted. Choose **Create a Comic** in the site's create menu, or go to [civitai.com/comics/create](https://civitai.com/comics/create).
+You need to be signed in. Choose **Create a Comic** in the site's create menu (the menu entry is hidden for muted accounts), or go to [civitai.com/comics/create](https://civitai.com/comics/create).
 
 ### Create the project {#create-the-project}
 
@@ -91,7 +91,7 @@ The comic is saved as a draft and stays private to you until you publish a chapt
 
 A **reference** is a set of images of a character, location, item or style that the generator uses so it stays the same from panel to panel.
 
-1. In the **References** sidebar, choose the **+** button (it reads **Add Reference** while the list is empty). The download icon, "Import from other projects", brings in references you made elsewhere.
+1. In the **References** sidebar, choose the **+** icon, or the **Add Reference** button shown while the list is empty. This opens the Add Reference page, and saving returns you to the project. The download icon, "Import from other projects", brings in references you made elsewhere.
 2. Upload 1 to 10 images. The page tips: a clear, front-facing view, the same subject in every image, different angles, consistent lighting and high resolution.
 3. Enter a **Reference name**, for example "Maya", and pick a **Reference type**: Character, Location, Style or Item.
 4. Choose **Add Reference**. Creating a reference is free.
@@ -109,7 +109,7 @@ A new project starts with a draft **Chapter 1**. Choose **Add Chapter** for more
 
 The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
 
-You can reorder panels by dragging them, and the three-dot menu on a panel card has View Details, Iterative Edit, Change Image, Regenerate, Duplicate and Insert after.
+You can reorder panels by dragging them, and the three-dot menu on a panel card has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "images ready, click to choose". Open it and choose **Confirm Selection**.
 
 ### Smart Create: let AI plan a chapter {#smart-create}
 
@@ -139,23 +139,23 @@ Early access lets you charge Buzz for a chapter for a limited time.
 
 - **Buzz Price:** 100 to 10,000 Buzz.
 - **Early Access Period:** how long the chapter stays locked. After it, the chapter is free.
-- **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. The dialog tells you the limit that applies to you.
-- After publishing, you can only lower the price and the period. Use the gear icon in the chapter's status badge (**Edit Early Access**, shown while early access is active) or open **Chapter Settings**.
+- **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. The publish dialog shows the maximum days for your score. If you are at your limit of chapters in early access, you see a message when you confirm.
+- After publishing, you can lower the price and the period (the period counts from the original publish date), switch early access off, or switch it on in **Chapter Settings**. You can't raise either. The gear icon in the chapter's status badge (**Edit Early Access**) shows while early access is active.
 
 Creator Score is a number Civitai calculates from your activity and how others engage with your work.
 
 ### Content and moderation {#content-and-moderation}
 
-- Some generation models make safe-for-work images only. On civitai.com there is no way to publish mature images. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings).
+- Some generation models make safe-for-work images only. Mature images can't be published on civitai.com. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
 - A chapter can be hidden from readers while a panel waits for moderator review, or if it is flagged as a Terms of Service violation. The chapter list shows a **Review** or **TOS** badge, and the tooltip explains which. A chapter waiting for review publishes automatically when it clears.
 
 ## Worked example
 
 You want to publish a short comic about two cats on a rooftop.
 
-1. Go to civitai.com/comics/create. Name it "Rooftop Cats", pick the Comedy genre, add a one-line description and a cover, then choose **Create Project**.
+1. Go to civitai.com/comics/create. Name it "Rooftop Cats", pick the Comedy genre, add a one-line description (you can also upload or generate a cover), then choose **Create Project**.
 2. In **References**, choose **Add Reference** (the **+** button once you have some). Upload three images of your main cat from different angles. Name it "Whiskers", choose type **Character** and save.
-3. Your new project already has a draft **Chapter 1**. Open it and choose the **+** tile at the end of the panel grid. On the **Generate** tab, write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. Pick the better image.
+3. Your new project already has a draft **Chapter 1**. Open it and choose the **+** tile at the end of the panel grid. On the **Generate** tab, write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. When the panel says "2 images ready", open it, pick the better image and choose **Confirm Selection**.
 4. Add two more panels the same way, changing the scene each time.
 5. Press **Preview** to read it through, then **Publish**, choose **Publish now** and confirm.
 
@@ -163,11 +163,11 @@ Your project stays private until you publish a chapter. After that, readers can 
 
 ## Troubleshooting
 
-- **I don't see Create a Comic.** The create option shows only when you are signed in and your account is not muted.
+- **I don't see Create a Comic.** The create menu entry shows only when you are signed in and your account is not muted.
 - **Smart Create is missing.** It appears once your project has at least one reference and it has finished saving. Add a reference first.
 - **Publish is disabled.** The chapter has no panels yet. Add at least one.
 - **"Early access ... unlocks at a Creator Score of 10,000."** You are below the minimum. The dialog shows your score.
-- **"Early access timeframe exceeds your current limit."** Choose a shorter period, up to the limit your score allows.
+- **"Early access timeframe exceeds your current limit of N days."** Choose a shorter period, up to the limit your score allows.
 - **My chapter is hidden from readers.** Check the **Review** or **TOS** badge on the chapter. Review clears on its own, while a TOS flag means you should remove the offending content or contact support.
 - **My upload was blocked as mature.** If the image is classified as mature and its generation data can't be verified, add the prompt, sampler, steps and other generation details to the image, then try again.
 - **Panel generation is queued or unavailable.** The dialog says whether your queue is full or generation is down. Wait and try again.

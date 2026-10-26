@@ -41,11 +41,11 @@ A model is **covered** when the generator is able to run it. Coverage is about w
 | Resource | Covered when |
 | --- | --- |
 | The default checkpoint for each model family in the generator | Always |
-| Checkpoints served by an outside provider (most video and many image models) | The model is published. Nothing is downloaded. |
-| Community checkpoints | The model is published, it is built on a model family the generator supports, it has a scanned standard model file, its license allows on-site generation, and the creator has not turned generation off |
+| Checkpoints served by an outside provider (for example many video models) | The model is published. Nothing is downloaded. |
+| Community checkpoints | The model is published, it is built on a model family the generator supports, it has a scanned SafeTensor model file, its license allows on-site generation, and it has not been blocked from generation |
 | LoRAs, embeddings, VAEs and similar | They match a supported model family and file format, and the same license and creator settings allow generation |
 
-Models that have been taken down or archived are never covered. Some model families are locked to their own listed checkpoints. Community checkpoints for those can be generated with only if they won a Featured Checkpoints auction.
+Models that have been taken down or archived, and models flagged as depicting a real person, are never covered. Some model families are locked to their own listed checkpoints. Community checkpoints built on those families cannot be generated with, and cannot be entered in the Featured Checkpoints auction.
 
 If a resource is not covered, the generator refuses the job with this message: **"Some of your resources are not available for generation"**, followed by the resource name.
 
@@ -55,7 +55,7 @@ When you generate with a covered model that is not loaded, the job is accepted a
 
 The generator tells you the state of each model in several places:
 
-- **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no mark. Turn on **Loaded only** in the picker filters to hide the rest.
+- **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no mark. Members can turn on **Loaded only** in the picker filters to hide everything that would wait on a download. Free accounts do not see community checkpoints that are not loaded in the picker at all.
 - **Model page.** A green dot on the version strip marks loaded versions.
 - **Create button.** The corner badge on a model page says **Recently loaded** or **Not recently loaded**, which tells you whether pressing it is likely to start now.
 - **Added resources in the generator.** Each row shows one of these labels: **Loaded**, **No download needed** (outside provider), **Not loaded**, **Queued to download**, or **Downloading** with a percentage.
@@ -73,14 +73,14 @@ Not everyone can start a download. This is the rule today:
 | Checkpoint | Free account | Paid member |
 | --- | --- | --- |
 | Already loaded | Yes | Yes |
-| Not loaded, and a model family default, a Featured Checkpoints auction winner, or one of the weekly top-earning checkpoints | Yes | Yes |
+| Not loaded, and a model family default, an outside-provider model, a Featured Checkpoints auction winner (while the win lasts), or one of the 20 checkpoints that earned the most for their creators in the current auction week | Yes | Yes |
 | Not loaded, and an ordinary community checkpoint | **No**, until someone has loaded it | Yes |
 | LoRAs, embeddings and other non-checkpoint resources | Yes | Yes |
 
 A free account that tries to generate with a community checkpoint that is not loaded gets the "not available for generation" message above. The same checkpoint works as soon as it is loaded, whoever loaded it. Paying for a membership lifts the restriction. See [Civitai's Guide to Membership Tiers](/civitais-guide-to-membership-tiers/) for what each tier includes.
 
 :::caution
-Model cards in the Models feed can still show a **Create** button on a community checkpoint that is not loaded. A free account only learns it is refused after pressing Generate. Check the green dot, or use **Loaded only**, to avoid this.
+For a free account, the generator's picker and a model's own page already leave out community checkpoints that are not loaded. Model cards in the Models feed can still show a **Create** button on one, and pressing Generate then fails with the message above. To avoid this, start from a loaded model.
 :::
 
 ## The three download lanes {#lanes}
@@ -99,10 +99,10 @@ A position inside a lane never moves backwards, but a faster lane can still go a
 
 **Boost** moves a waiting generation's downloads into the Express lane, which has no speed cap. Use it when the estimate is long and you want the job to start sooner.
 
-- **One price per generation.** Boost covers every download the job is waiting on, the checkpoint and any LoRAs together. The price depends on how much needs downloading and is shown on the button. This guide does not quote a number because it changes with the size of the model.
+- **One price per generation.** Boost covers every download the job is waiting on, the checkpoint and any LoRAs together. The price is shown on the button before you pay. This guide does not quote a number because it can change.
 - **Before you generate.** When the generator sees that a download is needed, an alert at the bottom of the form shows how many resources need to be loaded, how long it will take, and a **Boost download** switch with its price. On phones the offer appears as a confirmation when you press Generate, with **Boost** and **Continue without boosting**.
 - **After you generate.** The waiting panel offers **Boost this download** with a comparison of the usual wait and the boosted wait.
-- **Only when it helps.** The offer appears only when the boosted time is visibly shorter than the normal time. Times under about 2 minutes are shown as 2 minutes.
+- **Only when it helps.** The offer appears only when the boosted time is visibly shorter than the normal time. Times under about 2 minutes are shown as 2 minutes. A job that is waiting only on a small LoRA gets no offer, because the offer needs a checkpoint-sized download.
 - **No refund.** The boost fee is not refunded if you cancel the generation.
 - **Price changes.** If the price changes between when you see it and when you press the button, nothing is charged and you are asked to press Boost again at the new price.
 - **Payment.** Boost is paid in Buzz. For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
@@ -113,7 +113,7 @@ Auctions decide which resources are **featured**. A member no longer needs an au
 
 Winning gives a resource **visibility**. It appears in the **Featured** tab of the resource picker in the generator. Safe-for-work winners also have a chance to appear on the front page.
 
-There is a separate auction for **Featured Checkpoints** and one for each ecosystem's additional resources such as LoRAs. Each auction page shows its slots, the minimum bid and the time left.
+There is a separate auction for **Featured Checkpoints** and one for each ecosystem's additional resources such as LoRAs. Each auction page shows its **Spots**, the minimum Buzz (**Min**) and the time left (**Ends In**).
 
 ### How to bid {#how-to-bid}
 
@@ -121,17 +121,17 @@ There is a separate auction for **Featured Checkpoints** and one for each ecosys
 2. Choose an auction.
 3. Pick the model with the model picker.
 4. Enter a Buzz amount in **Place Bid**, or use the quick buttons: **1st** (enough to take the top spot), **Last** (enough to take the final spot) and **+10k** (adds 10,000 Buzz).
-5. To bid again every period, turn on **Make this recurring until** and pick an end date.
+5. To bid again every period, turn on **Make this recurring until**. Leave the date empty to repeat with no end, or pick an end date.
 6. Press **Bid**.
 
 Adding a bid to a model you already bid on increases your total. Track and cancel bids under **My Bids**. A bid you delete before the auction ends is refunded. Bids on models that do not win are refunded when the auction closes. So are bids on a model version that is not published by then. A winning bid is spent.
 
 ## Worked example {#worked-example}
 
-You want to generate with a community checkpoint you found on the Models page.
+You are a paid member and you want to generate with a community checkpoint you found on the Models page.
 
 1. Open the model and check for the green dot on its version strip. There is none, so it is not loaded.
-2. Open the generator and add the checkpoint. The row says **Not loaded**. On a free account, pressing Generate now fails with "not available for generation". You need a membership, or you wait until someone else has loaded the model. The rest of this example is for a member.
+2. Open the generator and add the checkpoint. The row says **Not loaded**. (A free account would not see this checkpoint in the picker. If it started from a Create button in the Models feed, pressing Generate would fail with "not available for generation" until someone has loaded the model.)
 3. Before you press Generate, the alert at the bottom of the form says the download would take about 10 minutes, with a **Boost download** switch showing a price. You leave it off and press Generate.
 4. The pending image shows **Waiting on downloads** in the Priority lane, with your position in line.
 5. After a few minutes you decide to speed things up. You press **Boost this download**. The panel shows the Express lane.
@@ -141,7 +141,7 @@ You want to generate with a community checkpoint you found on the Models page.
 
 **"Some of your resources are not available for generation."** The resource is not covered, or you are on a free account and the checkpoint is a community checkpoint that is not loaded. Try another version, pick a loaded model, or check [membership](/civitais-guide-to-membership-tiers/).
 
-**There is no Boost button.** Boost is only offered when it would visibly shorten the wait. If the model is already in the Express lane, or the estimate is short, nothing is offered.
+**There is no Boost button.** Boost is only offered when it would visibly shorten the wait. If the download is already in the Express lane, the estimate is short, or the job waits only on a small LoRA, nothing is offered.
 
 **The estimate says nothing or shows a dash.** A download that has just started has no reliable estimate yet. It appears after a short time.
 

@@ -20,6 +20,7 @@ seo:
   canonical: "https://education.civitai.com/buzz-beggars-board/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "buzz-colors-blue-yellow-and-green"
 ---
 
 Short on Buzz? Consider posting to the new [Buzz Beggars’ bo](https://civitai.com/collections/3870938)[ard](https://civitai.com/collections/3870938)!

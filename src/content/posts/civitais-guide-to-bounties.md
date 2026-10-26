@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 2581
 excerpt: "Civitai Guide to Bounties!"
-image: "/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
+image: "/images/guides/civitais-guide-to-bounties/cover.webp"
 seo:
   title: "Civitai's Guide to Bounties! - Civitai Education"
   description: "Bounties are challenges created by our users each carrying a specific Buzz reward! If you need something created, you can post a Bounty!"
-  ogImage: "/wp-content/uploads/2023/10/ComfyUI_temp_gzpsu_00007_.png"
+  ogImage: "/images/guides/civitais-guide-to-bounties/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-bounties/"
 ---
 

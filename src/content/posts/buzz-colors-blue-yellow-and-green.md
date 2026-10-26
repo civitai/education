@@ -15,11 +15,11 @@ covers:
   - "buzz-spend-order"
 reviewed: "2026-10-26"
 excerpt: "What Blue, Yellow and Green Buzz are, how you earn or buy each one, what each can pay for, and which one is spent first."
-image: "/images/guides/buzz-colors/buzz-colors-cover.webp"
+image: "/images/guides/buzz-colors/cover.webp"
 seo:
   title: "Buzz Colors: Blue, Yellow and Green - Civitai Education"
   description: "Buzz comes in three colors. Learn how to get Blue, Yellow and Green Buzz, what each one buys, and which one is spent first."
-  ogImage: "/images/guides/buzz-colors/buzz-colors-cover.webp"
+  ogImage: "/images/guides/buzz-colors/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

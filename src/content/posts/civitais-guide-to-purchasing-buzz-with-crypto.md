@@ -13,10 +13,10 @@ tags:
 author: "civitai"
 wpId: 7118
 excerpt: "Updated! Civitai’s Guide to using Cryptocurrency to purchase Buzz!"
-image: "/wp-content/uploads/2025/05/buzz_crypto_update.webp"
+image: "/images/guides/civitais-guide-to-purchasing-buzz-with-crypto/cover.webp"
 seo:
   title: "Civitai's Guide to Purchasing Buzz with Crypto - Civitai Education"
-  ogImage: "/wp-content/uploads/2025/05/buzz_crypto_update.webp"
+  ogImage: "/images/guides/civitais-guide-to-purchasing-buzz-with-crypto/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-purchasing-buzz-with-crypto/"
 ---
 

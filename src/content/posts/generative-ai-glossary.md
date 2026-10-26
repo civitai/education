@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 6
 excerpt: "Generative AI is a rapidly developing technology with a dizzying number of obscure technical terms, company names, product names, slang words, etc. This Glossary was created to bring together as many of these terms as possible in a single, searchable, list."
-image: "/wp-content/uploads/2023/07/output_00067_.png"
+image: "/images/guides/generative-ai-glossary/cover.webp"
 seo:
   title: "Generative AI Glossary - Civitai Education"
   description: "The Generative AI Glossary was created to bring together as many terms as possible in a single, searchable, list."
-  ogImage: "/wp-content/uploads/2023/07/output_00067_.png"
+  ogImage: "/images/guides/generative-ai-glossary/cover.webp"
   canonical: "https://education.civitai.com/generative-ai-glossary/"
 ---
 

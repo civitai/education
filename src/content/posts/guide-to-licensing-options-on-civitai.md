@@ -16,11 +16,11 @@ covers:
   - "licensing-fees"
 reviewed: "2026-10-26"
 excerpt: "What the permission checkboxes on a model upload do, how they appear on the model page, and how they differ from licensing fees."
-image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
+image: "/images/guides/guide-to-licensing-options-on-civitai/cover.webp"
 seo:
   title: "Guide to Civitai Model Licensing Options - Civitai Education"
   description: "The Civitai Guide to Model Licensing is an overview of what Licensing means, and how it applies, to resources on Civitai."
-  ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
+  ogImage: "/images/guides/guide-to-licensing-options-on-civitai/cover.webp"
   canonical: "https://education.civitai.com/guide-to-licensing-options-on-civitai/"
 ---
 

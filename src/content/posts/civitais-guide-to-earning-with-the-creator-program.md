@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 6746
 excerpt: "Civitai’s Guide to Earning with the Creator Program!"
-image: "/wp-content/uploads/2025/02/ComfyUI_01480_.png"
+image: "/images/guides/civitais-guide-to-earning-with-the-creator-program/cover.webp"
 seo:
   title: "Civitai's Guide to Earning with the Creator Program! - Civitai Education"
   description: "Civitai’s Guide to the Creator Program; find out how you can earn real payouts for your contributions to the site!"
-  ogImage: "/wp-content/uploads/2025/02/ComfyUI_01480_.png"
+  ogImage: "/images/guides/civitais-guide-to-earning-with-the-creator-program/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-earning-with-the-creator-program/"
 ---
 

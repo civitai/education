@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5207
 excerpt: "In this special Guest Creator Session, Yvann.Mp4 joins us to give us some secret sauce around compositing in ComfyUI and building in Automation at the same time!"
-image: "/wp-content/uploads/2024/09/YVANNMP4.webp"
+image: "/images/guides/compositing-w-automation-in-comfyui-ft-yvann-mp4/cover.webp"
 seo:
   title: "Compositing w/ AUTOMATION in ComfyUI ft. Yvann.Mp4 - Civitai Education"
   description: "In this special Guest Creator Session, Yvann.Mp4 joins us to give us some secret sauce around compositing in ComfyUI!"
-  ogImage: "/wp-content/uploads/2024/09/YVANNMP4.webp"
+  ogImage: "/images/guides/compositing-w-automation-in-comfyui-ft-yvann-mp4/cover.webp"
   canonical: "https://education.civitai.com/compositing-w-automation-in-comfyui-ft-yvann-mp4/"
 ---
 

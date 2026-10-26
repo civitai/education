@@ -23,11 +23,11 @@ covers:
   - "flux-3"
 reviewed: "2026-10-26"
 excerpt: "The main image editing models in the Civitai generator, including GPT Image 2.5 and Krea 3: what each is best at, what it costs in Buzz, how many reference images it takes, and the same three edits run on every model."
-image: "/images/guides/image-editing-models/image-editing-cover.webp"
+image: "/images/guides/image-editing-models-on-civitai/cover.webp"
 seo:
   title: "Image Editing Models on Civitai - Civitai Education"
   description: "Compare GPT Image 2.5, Krea 3, Krea 2, Nano Banana, Seedream, Qwen Image Edit, Muse Image and Flux.3 for editing images in the Civitai generator, with Buzz costs and side-by-side results."
-  ogImage: "/images/guides/image-editing-models/image-editing-cover.webp"
+  ogImage: "/images/guides/image-editing-models-on-civitai/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

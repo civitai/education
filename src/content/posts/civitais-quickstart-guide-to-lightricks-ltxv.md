@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 5885
 excerpt: "Civitai’s Guide to getting started with Lightricks Video Generation!"
-image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/images/guides/civitais-quickstart-guide-to-lightricks-ltxv/cover.webp"
 seo:
   title: "Civitai's Quickstart Guide to Lightricks LTXV! - Civitai Education"
   description: "Civitai's Guide to getting started with Lightricks Video Generation!"
-  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/images/guides/civitais-quickstart-guide-to-lightricks-ltxv/cover.webp"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-lightricks-ltxv/"
 ---
 

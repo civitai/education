@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3970
 excerpt: "Learn about Civitai’s new Content Classification System – a five level system designed to categorize content into five easy to understand levels!"
-image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
+image: "/images/guides/civitais-guide-to-content-levels/cover.webp"
 seo:
   title: "Civitai's Guide to the Content Classification System - Civitai Education"
   description: "Learn about Civitai's new Content Classification System - a five level system designed to categorize content into five levels!"
-  ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00039_.png"
+  ogImage: "/images/guides/civitais-guide-to-content-levels/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-content-levels/"
 ---
 

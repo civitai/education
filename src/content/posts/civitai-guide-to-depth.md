@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 2336
 excerpt: "What are Depth maps, and what can we do with them to enhance our art? Learn the basics in our Getting Started Guide!"
-image: "/wp-content/uploads/2023/10/depthmap-0007-concat_depth.webp"
+image: "/images/guides/civitai-guide-to-depth/cover.webp"
 seo:
   title: "Civitai Guide to Depth! - Civitai Education"
   description: "Our comprehensive Beginner's guide to Depth Maps will walk you through everything you need to know to get started with Depth Maps for AI Art!"
-  ogImage: "/wp-content/uploads/2023/10/depthmap-0007-concat_depth.webp"
+  ogImage: "/images/guides/civitai-guide-to-depth/cover.webp"
   canonical: "https://education.civitai.com/civitai-guide-to-depth/"
 ---
 

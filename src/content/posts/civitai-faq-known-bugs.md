@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4089
 excerpt: "Here we’ll answer some common questions which often appear via Featurebase Bug reporting, Discord, and the CivBot."
-image: "/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
+image: "/images/guides/civitai-faq-known-bugs/cover.webp"
 seo:
   title: "Civitai FAQ & Known Bugs - Civitai Education"
   description: "A comprehensive list of Civitai FAQ & Known Bugs to help users get the most from Civitai.com! Frequently updated!"
-  ogImage: "/wp-content/uploads/2024/07/MarkuryFLUX_01318_.png"
+  ogImage: "/images/guides/civitai-faq-known-bugs/cover.webp"
   canonical: "https://education.civitai.com/civitai-faq-known-bugs/"
 ---
 

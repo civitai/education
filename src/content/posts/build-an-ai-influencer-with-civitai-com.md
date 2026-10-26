@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 7504
 excerpt: "Creating an AI Influencer with Civitai: A Step-by-Step Guide to viral success!"
-image: "/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg"
+image: "/images/guides/build-an-ai-influencer-with-civitai-com/cover.webp"
 seo:
   title: "Build an AI Influencer with Civitai.com - Civitai Education"
   description: "From model to muse - create your own AI influencer with Civitai! Learn how to build a face, personality, and brand that can go viral online."
-  ogImage: "/wp-content/uploads/2025/11/ff2e6f18-6c5b-408c-b0ba-d67756dd0bc1-scaled.jpg"
+  ogImage: "/images/guides/build-an-ai-influencer-with-civitai-com/cover.webp"
   canonical: "https://education.civitai.com/build-an-ai-influencer-with-civitai-com/"
 ---
 

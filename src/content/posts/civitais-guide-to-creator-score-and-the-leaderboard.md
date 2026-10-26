@@ -15,6 +15,7 @@ covers:
   - "leaderboards"
 reviewed: "2026-10-26"
 excerpt: "What Creator Score is, where to see yours, what it unlocks, and how the Civitai leaderboards rank creators."
+image: "/images/guides/civitais-guide-to-creator-score-and-the-leaderboard/cover.webp"
 seo:
   title: "Civitai's Guide to Creator Score and the Leaderboard - Civitai Education"
   description: "Learn what Creator Score measures, where to find it, which features it unlocks, and how the Civitai leaderboards work."

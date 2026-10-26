@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3954
 excerpt: "Civitai guide to the Civitai Vault"
-image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
+image: "/images/guides/civitais-guide-to-vault/cover.webp"
 seo:
   title: "Civitai's Guide to Vault - Civitai Education"
   description: "Civitai's guide to the Civitai Vault system. Civitai Vault is your secure, cloud-based storage solution for your AI models."
-  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_.png"
+  ogImage: "/images/guides/civitais-guide-to-vault/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-vault/"
 ---
 

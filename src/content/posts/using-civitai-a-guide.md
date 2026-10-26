@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1413
 excerpt: "How to Get Started with Civitai! This guide focuses on the Basics – Creating & Configuring an account, navigating the Home Page, & Discovering content."
-image: "/wp-content/uploads/2025/03/beginner_guide_anim.webp"
+image: "/images/guides/using-civitai-a-guide/cover.webp"
 seo:
   title: "Beginner's Guide to Using Civitai, the Largest Generative AI Hub"
   description: "Learn how to navigate the world of generative AI with Civitai, the largest platform for discovering, creating, and sharing generative art."
-  ogImage: "/wp-content/uploads/2025/03/beginner_guide_anim.webp"
+  ogImage: "/images/guides/using-civitai-a-guide/cover.webp"
   canonical: "https://education.civitai.com/using-civitai-a-guide/"
 ---
 

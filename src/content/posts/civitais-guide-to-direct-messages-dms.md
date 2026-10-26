@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 3316
 excerpt: "Civitai Guide to Direct Messages (DMs)!"
-image: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
+image: "/images/guides/civitais-guide-to-direct-messages-dms/cover.webp"
 seo:
   title: "Civitai's Guide to Direct Messages (DMs)! - Civitai Education"
   description: "Civitai Direct Messages (DMs) allow our community members to connect and interact on a more personal level."
-  ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00055_.png"
+  ogImage: "/images/guides/civitais-guide-to-direct-messages-dms/cover.webp"
   canonical: "http://education.civitai.com/civitais-guide-to-direct-messages-dms/"
 ---
 

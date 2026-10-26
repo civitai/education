@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 5127
 excerpt: "Civitai’s Guide to Ads and Generation Buzz!"
-image: "/wp-content/uploads/2024/08/return_of_the_ads-1.webp"
+image: "/images/guides/civitais-guide-to-ads-2/cover.webp"
 seo:
   title: "Civitai's Guide to Ads and Generation Buzz - Civitai Education"
   description: "Ads on Civitai can now serve offset our cost of generation so we can offer more free generations to users per day!"
-  ogImage: "/wp-content/uploads/2024/08/return_of_the_ads-1.webp"
+  ogImage: "/images/guides/civitais-guide-to-ads-2/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-ads-2/"
 ---
 

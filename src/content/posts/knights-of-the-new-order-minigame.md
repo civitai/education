@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 7073
 excerpt: "Civitai’s Guide to the Knights of the New Order image rating game – now open to all users!"
-image: "/wp-content/uploads/2025/05/RatingIMage.webp"
+image: "/images/guides/knights-of-the-new-order-minigame/cover.webp"
 seo:
   title: "Knights of the New Order Minigame - Civitai Education"
   description: "Rate images and help keep the realm pure! Earn Buzz, and climb from humble Acolyte to elite Templar in our expanded Image Rating Game."
-  ogImage: "/wp-content/uploads/2025/05/RatingIMage.webp"
+  ogImage: "/images/guides/knights-of-the-new-order-minigame/cover.webp"
   canonical: "https://education.civitai.com/knights-of-the-new-order-minigame/"
 ---
 

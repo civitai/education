@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 2992
 excerpt: "Civitai Guide to CivBot!"
-image: "/wp-content/uploads/2023/12/Civbot.webp"
+image: "/images/guides/civitais-guide-to-civbot/cover.webp"
 seo:
   title: "Civitai's Guide to CivBot! - Civitai Education"
   description: "Learn how to use CivBot, Civitai's helpful and intelligent AI companion, in our comprehensive Civitai's Guide to CivBot!"
-  ogImage: "/wp-content/uploads/2023/12/Civbot.webp"
+  ogImage: "/images/guides/civitais-guide-to-civbot/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-civbot/"
 ---
 

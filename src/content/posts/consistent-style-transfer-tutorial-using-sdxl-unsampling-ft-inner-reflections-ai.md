@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5200
 excerpt: "In this special Civitai Creator Session, Inner Reflections AI joins us to give us a brand new workflow on how to utilize SDXL to get masterful style transfers in a new vid2vid workflow!"
-image: "/wp-content/uploads/2024/09/INNER-REFLECTIONS.webp"
+image: "/images/guides/consistent-style-transfer-tutorial-using-sdxl-unsampling-ft-inner-reflections-ai/cover.webp"
 seo:
   title: "Consistent STYLE TRANSFER Tutorial Using SDXL & Unsampling! ft. Inner Reflections AI - Civitai Education"
   description: "In this special Session, Inner Reflections AI joins us to give us a new workflow on how to utilize SDXL to get masterful style transfers!"
-  ogImage: "/wp-content/uploads/2024/09/INNER-REFLECTIONS.webp"
+  ogImage: "/images/guides/consistent-style-transfer-tutorial-using-sdxl-unsampling-ft-inner-reflections-ai/cover.webp"
   canonical: "https://education.civitai.com/consistent-style-transfer-tutorial-using-sdxl-unsampling-ft-inner-reflections-ai/"
 ---
 

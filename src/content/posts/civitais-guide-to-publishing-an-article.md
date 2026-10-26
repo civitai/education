@@ -16,6 +16,7 @@ covers:
   - "image-scanning"
 reviewed: "2026-10-26"
 excerpt: "Write, save, schedule, publish and edit an article on Civitai: the editor, the cover image, categories and tags, image scanning, and daily limits."
+image: "/images/guides/civitais-guide-to-publishing-an-article/cover.webp"
 seo:
   title: "Civitai's Guide to Publishing an Article - Civitai Education"
   description: "How to write and publish an article on Civitai: the editor fields, cover image, maturity level, scheduling, image scanning, editing, unpublishing and limits."

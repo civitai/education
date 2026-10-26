@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 1743
 excerpt: "What is ControlNet? How do I install it, and where do I find the Models? Follow our ControlNet Basics guide to get started!"
-image: "/wp-content/uploads/2023/09/02291-1199898909.png"
+image: "/images/guides/civitai-guide-to-controlnet/cover.webp"
 seo:
   title: "The Ultimate Guide to ControlNet (Part 1)"
   description: "Delve into the essentials of ControlNet and explore core capabilities like subject pose replication, style transfer, and image manipulation."
-  ogImage: "/wp-content/uploads/2023/09/02291-1199898909.png"
+  ogImage: "/images/guides/civitai-guide-to-controlnet/cover.webp"
   canonical: "https://education.civitai.com/civitai-guide-to-controlnet/"
 ---
 

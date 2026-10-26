@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 187
 excerpt: "SDXL 1.0 is a groundbreaking new text-to-image model from Stability AI."
-image: "/wp-content/uploads/2023/07/Splash_final_crop.webp"
+image: "/images/guides/sdxl-1-0/cover.webp"
 seo:
   title: "SDXL 1.0 Overview: A Remarkable Leap for Generative AI Imagery"
   description: "Learn more about SDXL 1.0, a model transforming text-to-image synthesis with unprecedented resolution, depth, and quality."
-  ogImage: "/wp-content/uploads/2023/07/Splash_final_crop-1024x576.webp"
+  ogImage: "/images/guides/sdxl-1-0/cover.webp"
   canonical: "https://education.civitai.com/sdxl-1-0/"
 ---
 

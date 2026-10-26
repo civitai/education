@@ -236,9 +236,10 @@ Now suppose one entrant has the two best entries. They receive the 1st prize of 
 - **My older image is grayed out.** Only media created after the Crucible started can be entered. Make a new one.
 - **"Entries are closed."** The Crucible stops taking entries shortly before its end so entries have time to be judged. Look for another Active Crucible.
 - **"You've submitted all your entries. Good luck!"** You used all your entries. A withdrawn entry frees a slot, but the next one is charged again.
-- **A card in My Images is grayed out with a red X badge.** Hover the badge. A "Content level" row such as "PG-13 content (requires PG)" means the rating is outside what the Crucible allows. The content level badges are at the top of the Crucible's page.
+- **A card in My Images is grayed out with a red X badge.** Hover the badge. A line such as "PG-13 content (requires PG)" means the rating is outside what the Crucible allows. The content level badges are at the top of the Crucible's page.
 - **A red warning triangle shows on the submit button ("Insufficient Buzz. Click to buy more").** Entry fees use Green Buzz on civitai.com or Yellow Buzz on civitai.red. Blue Buzz can't be used. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/).
 - **A Crucible won't open on civitai.com.** A Crucible that allows content above PG-13 does not open on civitai.com. Open it on civitai.red.
+- **I can't enter, judge or follow.** Muted accounts can browse and see prizes but can't enter, judge, follow or create.
 - **My entry is the wrong type.** Match it to the "Images only" or "Videos only" badge in the dialog header.
 - **My entry placed, but I did not get a prize.** Check that you claimed it at [civitai.com/prizes](https://civitai.com/prizes), and remember that each creator is paid for one entry only.
 

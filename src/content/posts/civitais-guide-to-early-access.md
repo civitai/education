@@ -23,6 +23,8 @@ seo:
 | --- | --- |
 | 8/15/2024 | First Version |
 
+*For the current rules, limits and setup steps, see [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/).*
+
 ## What is Early Access?
 
 Early Access (EA for short) is a significant step in helping the creator community monetize in a way that’s fair to the open-source ecosystem.

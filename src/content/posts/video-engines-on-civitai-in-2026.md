@@ -38,10 +38,10 @@ Prices in this guide are what the generator's price check returned on October 26
 | --- | --- | --- |
 | The cheapest way to test an idea | LTX 2.3 or 2.5 Distilled | About 40 Buzz for a 5 second 720p clip |
 | A cheap clip from a still image | MiniMax H3 (Comfy build, with Turbo on) | About 150 Buzz for 6 seconds |
-| Sound that comes with the clip | Veo 3, Kling V3, Seedance, Flux 3 Video, LTX 2.3 or 2.5 | Each has a Generate audio switch |
-| A clip longer than 10 seconds | Wan 3.0 (30 s), Seedance v2.5 (30 s), Flux 3 Video (20 s), LTX 2.3 and 2.5 (20 s), or Kling V3, MiniMax H3 and Grok (15 s) | See [the length column](#engines-at-a-glance) |
+| Sound that comes with the clip | For example Veo 3, Kling V3, Seedance, Vidu Q3 or Q4, Flux 3 Video, LTX 2.3 or 2.5 | Each makes audio; see [the audio column](#engines-at-a-glance) |
+| A clip longer than 10 seconds | Wan 3.0 (30 s), Seedance v2.5 (30 s), Flux 3 Video (20 s), LTX 2.3 and 2.5 (20 s), Vidu Q3 and Q4 (16 s), or Kling V3, MiniMax H3, Grok, HappyHorse and Wan 2.7 (15 s) | See [the length column](#engines-at-a-glance) |
 | A video that starts on one image and ends on another | Wan 2.7, Wan 3.0, Kling V3, Vidu, MiniMax H3, LTX, Flux 3 Video | These take a first and a last frame |
-| A video that keeps a character or object from your pictures | Seedance, Kling V3, Vidu, HappyHorse, Wan 2.7, MiniMax H3 | These take reference images |
+| A video that keeps a character or object from your pictures | For example Seedance, Kling V3, Vidu, HappyHorse, Wan 2.7, MiniMax H3, Veo 3 or LTX 2.3 and 2.5 | These take reference images |
 | An existing video changed by a prompt | Wan 2.7, HappyHorse v1.0, Grok v1.0 | The Edit Video workflow |
 | The highest resolution | Vidu Q4 (up to 4K, from an image) | Other engines top out at 1080p |
 
@@ -58,7 +58,7 @@ In the generator you choose a **workflow**, and the base model selector then sho
 | **Keyframes to Video** | Images placed at chosen moments in the clip | Flux 3 Video Max only |
 | **Edit Video** | A source video and a prompt | Wan 2.7, HappyHorse v1.0, Grok v1.0 |
 
-If you pick an engine that doesn't support the workflow you are on, the generator moves you to one that does. Check the engine name and the version before you press Generate.
+If you pick an engine that doesn't support the workflow you are on, the generator may switch you to a version or engine that does, as it does for Kling V3 and Flux 3 Video Max.  Check the engine name and the version before you press Generate.
 
 Three more video tools sit beside these: **Upscale** (raise a clip's resolution), **Interpolate** (smooth a clip by adding frames) and **Control Preprocessor**. They work on a clip you already have.
 
@@ -72,7 +72,7 @@ Length and resolution are the maximums the generator's form offers. Audio means 
 | Vidu | Q1, Q3, Q4 | 16 s (Q3, Q4) | 1080p (Q3), 4K (Q4) | Q3 switch; Q4 always on from an image |
 | MiniMax H3 | Comfy, Api, Max by Fal, HeyGen | 15 s | 1080p (Max) | No switch |
 | Kling | V1.6, V2, V2.5 Turbo, V3 | 15 s (V3) | Not set on the form | V3 switch |
-| Grok | v1.0, v1.5 | 15 s | 1080p (v1.5) | No switch |
+| Grok | v1.0, v1.5 | 15 s | 1080p (v1.5, not in Reference to Video) | No switch |
 | Seedance | v2 mini, v2 fast, v2, v2.5 | 30 s (v2.5), 15 s others | 1080p (v2 only), 720p others | Switch |
 | HappyHorse | v1.0, v1.1 | 15 s | 1080p | No switch |
 | Flux 3 Video | v3.0, v3.0 Max | 20 s | 1080p | Switch (off on v3.0, on by default on Max) |
@@ -89,7 +89,7 @@ Google's Veo 3, at API version 3.1. Pick **Fast Mode** or **Standard** in the ve
 - **Shape:** 16:9, 1:1 or 9:16 on text prompts. From an image, the clip follows the image, and the form asks for a 16:9 or 9:16 source.
 - **Audio:** the **Generate audio** switch is off by default.
 - **Cost:** about 670 Buzz for 4 seconds on Fast Mode, 1,340 for 8 seconds, and 1,000 and 2,000 with audio. Standard is about 1,117 for 4 seconds and 2,234 for 8, and 1,666 and 3,333 with audio.
-- **Note:** the live video guide says Veo 3 is a PG-only model and that a prompt it rejects returns a generic clip with no refund.
+- **Note:** the live video guide says Veo 3 is a PG-only model. A prompt with profanity or sexually explicit language returns a generic PG clip, with no refund.
 
 ## Vidu {#vidu}
 
@@ -120,7 +120,7 @@ Kling has two lines. The older one is **V1.6, V2 and V2.5 Turbo** (V2.5 Turbo is
 
 ## Grok {#grok}
 
-Grok's video engine has two versions, **v1.0** and **v1.5**. (A v2.0 appears in the version list but makes images only.) Clips run 6 to 15 seconds at 480p or 720p, and v1.5 adds 1080p. Ratios are 16:9, 3:2, 4:3, 1:1, 3:4, 2:3 and 9:16. It takes text, one start image, or up to 7 references on v1.5, and v1.0 supports **Edit Video**. About 1,092 Buzz for v1.5 at 720p for 6 seconds.
+Grok's video engine has two versions, **v1.0** and **v1.5**. Clips run 6 to 15 seconds at 480p or 720p, and v1.5 adds 1080p. Ratios are 16:9, 3:2, 4:3, 1:1, 3:4, 2:3 and 9:16. It takes text, one start image, or up to 7 references on v1.5, and v1.0 supports **Edit Video**. About 1,092 Buzz for v1.5 at 720p for 6 seconds.
 
 ## Seedance {#seedance}
 
@@ -146,14 +146,14 @@ Flux 3 Video has **v3.0** and **v3.0 Max**. Both run 720p or 1080p, take text or
 
 ## LTX {#ltx}
 
-LTX is the low-cost family. The version picker offers **2.0**, **2.3** and **2.5**, and each has a Dev (full quality) and Distilled (faster) variant. The default is 2.3 Dev. All versions take LoRAs from the resource picker.
+LTX is the low-cost family. The version picker offers **2.0**, **2.3** and **2.5**, and each has a Dev and Distilled variant. Distilled hides the CFG and steps settings and costs less. The default is 2.3 Dev. All versions take LoRAs from the resource picker.
 
 - **2.3 and 2.5:** 720p or 1080p, 3 to 20 seconds at 720p and 3 to 15 at 1080p, five ratios (16:9, 3:2, 1:1, 2:3, 9:16), text, a start image with an optional end image, and references. Audio is on by default. These two are the only engines with a **Quantity** setting, so one run can make more than one clip. About 58 Buzz for Dev and 40 for Distilled at 720p for 5 seconds.
 - **2.0:** an older, smaller-format build: clips of 3, 5 or 7 seconds at a size near 480p. About 200 Buzz at default settings.
 
 ## Wan {#wan}
 
-Wan is Alibaba's open video family. The generator offers these versions:
+Wan is Alibaba's video family. The generator offers these versions:
 
 | Version | Resolution | Length | What it adds | About Buzz |
 | --- | --- | --- | --- | --- |
@@ -167,9 +167,9 @@ References and Edit Video are limited to 10 seconds on Wan 2.7.
 
 ## Sound in your clips {#sound-in-your-clips}
 
-Engines with an audio switch can make sound from your prompt, such as sound effects and, on some engines, speech or music. Describe the sound in the same prompt, for example: *"A kettle whistles on a stove, then a hand lifts it off. Sound of steam, then quiet kitchen noise."* The generator does not offer separate text-to-speech. For music made on its own, see the audio guide that goes with this one.
+Engines with an audio switch can make sound from your prompt, such as sound effects. Describe the sound in the same prompt, for example: *"A kettle whistles on a stove, then a hand lifts it off. Sound of steam, then quiet kitchen noise."* For music and sound effects made on their own, see [Audio and Music on Civitai](/audio-and-music-on-civitai/).
 
-Audio changes the price on some engines: Veo 3 adds about half again (670 to 1,000 Buzz on Fast Mode for 4 seconds), and Kling V3 about a third (1,095 to 1,460). The price check did not show a difference on Seedance, Vidu Q3, Flux 3 Video or LTX. Watch the cost button when you flip the switch rather than trusting this table.
+Audio changes the price on some engines: Veo 3 adds about half again (670 to 1,000 Buzz on Fast Mode for 4 seconds), and Kling V3 about a third (1,095 to 1,460). On the other engines, watch the cost button when you flip the switch.
 
 ## Spending less Buzz {#spending-less-buzz}
 
@@ -193,7 +193,7 @@ Goal: a 5 second clip of a lantern on a pier at dusk, made from a still image.
 
 ## Engines that are no longer offered {#older-engines}
 
-Earlier Education guides covered **Mochi**, **Hunyuan Video**, **Wan 2.1** and **Stable Video Diffusion**. They are not part of the generator's working video list today. Hunyuan may still appear in a model picker but its generations fail, and Wan 2.1 may fail too. If you want the same kind of result, **Wan 2.2** and newer, **LTX** and **MiniMax H3** (Comfy) cover that ground, and they take video LoRAs where noted above.
+Earlier Education guides covered **Mochi**, **Hunyuan Video**, **Wan 2.1** and **Stable Video Diffusion**. They are not offered in the generator's video list today. If you want the same kind of result, **Wan 2.2** and newer, **LTX** and **MiniMax H3** (Comfy) cover that ground, and they take video LoRAs where noted above.
 
 ## Troubleshooting {#troubleshooting}
 

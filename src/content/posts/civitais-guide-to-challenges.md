@@ -54,7 +54,7 @@ Open [civitai.com/challenges](https://civitai.com/challenges). From top to botto
 
 Open a challenge to see its page. The **Overview** section lists when it starts and ends, the maximum entries per person, how entries are reviewed and the allowed content ratings. The prizes are in a separate **Prizes** section and, when a challenge lists them, the scoring categories in **Judging**. Always read them. Rules differ from one challenge to the next.
 
-You can also turn on notifications with the bell icon in a challenge's header when you are signed in. Its label reads "Notify me when this starts" before it begins and "Notify me before this ends" while it runs, and "Stop notifying me" once it is on.
+You can also turn on notifications with the bell icon in a challenge's header when you are signed in. Its tooltip reads "Notify me when this starts" before it begins and "Notify me before this ends" while it runs, and "Stop notifying me" once it is on.
 
 ## Enter a Challenge {#enter-a-challenge}
 

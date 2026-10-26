@@ -67,17 +67,17 @@ You choose the engine from the engine picker in the form. The prices below come 
 
 | Engine | Modes | About how much | What it offers |
 | --- | --- | --- | --- |
-| **PolyGen (Meshy)** | Text to 3D, Image to 3D | 1,041 Buzz | The most controls: polycount, topology, symmetry, texture prompt, animation. |
-| **Tripo** | Image to 3D | 391 Buzz | Textured models from one image, with a face limit and a texture quality choice. |
-| **Hunyuan3D** | Image to 3D | 161 Buzz | The cheapest way to try an image. |
+| **PolyGen (Meshy)** | Text to 3D, Image to 3D | About 1,041 Buzz | The most controls: polycount, topology, symmetry, texture prompt, animation. |
+| **Tripo** | Image to 3D | About 391 Buzz | Textured models from one image, with a face limit and a texture quality choice. |
+| **Hunyuan3D** | Image to 3D | About 161 Buzz | The cheapest way to try an image. |
 
-The PolyGen figure is for Full mode, which is the default for Text to 3D. The Hunyuan3D figure is for version v2.1.
+The PolyGen figure is the estimate for the default settings, and Preview and Full showed the same estimate. The Hunyuan3D figure is for version v2.1.
 
 ### Settings by engine {#settings}
 
 | Setting | Engine | Options | Default |
 | --- | --- | --- | --- |
-| Mode (Text to 3D only) | PolyGen | Preview, Full. Preview is faster and cheaper. Full gives a higher-quality mesh. | Full |
+| Mode (Text to 3D only) | PolyGen | Preview, Full. Preview is faster. Full gives a higher-quality mesh. Check the cost button for each. | Full |
 | Prompt | PolyGen (text) | Up to 600 characters | |
 | Enhance prompt | PolyGen (text) | Lets Meshy add descriptive detail | Off |
 | Starting image | All (Image to 3D) | One image | |
@@ -105,7 +105,7 @@ Under **Advanced**, PolyGen also has **Remesh**, **Enable PBR textures**, a **Te
 ### Tips for a good start {#tips}
 
 - For image to 3D, use one clear picture of one object, from the front or three-quarters, with a plain background.
-- Start cheap. Run Hunyuan3D or a Preview-mode PolyGen first, then spend on a Full run once the idea works.
+- Start cheap. Try Hunyuan3D first, or a Preview-mode PolyGen run to check the shape, and check the cost button before each run.
 - Name what you want in the prompt: the object, its style, its material. "A low-poly fantasy treasure chest" gives the model more to work with than "a chest".
 
 ## From generation to a published model {#publishing}
@@ -145,7 +145,7 @@ You want a treasure chest for a game prototype.
 1. Open the generator and pick **3D Models**, then **Text to 3D**. PolyGen (Meshy) is the engine.
 2. Type the prompt "A low-poly fantasy treasure chest" and set Mode to **Preview** for a first look at the shape.
 3. Check the cost button, then click Generate.
-4. When the result is ready, click the cube button on the queue card to spin it. If the shape is right, change Mode to **Full**, open **Advanced**, write the Texture prompt "Weathered oak with bronze fittings", and run again. A Full run costs more.
+4. When the result is ready, click the cube button on the queue card to spin it. If the shape is right, change Mode to **Full**, open **Advanced**, write the Texture prompt "Weathered oak with bronze fittings", and run again. Check the cost button first.
 5. Click **Post**. On the Edit page, name it "Weathered Treasure Chest", add a description, choose a license that allows what you plan to do, add tags such as "chest" and "game asset", and click **Save**.
 6. Switch **Published** on. Share the link or save it to a collection.
 

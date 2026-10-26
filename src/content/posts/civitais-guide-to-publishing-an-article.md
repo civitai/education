@@ -9,6 +9,12 @@ tags:
   - "articles"
   - "guide"
 author: "civitai"
+covers:
+  - "articles"
+  - "article-editor"
+  - "article-scheduling"
+  - "image-scanning"
+reviewed: "2026-10-26"
 excerpt: "Write, save, schedule, publish and edit an article on Civitai: the editor, the cover image, categories and tags, image scanning, and daily limits."
 seo:
   title: "Civitai's Guide to Publishing an Article - Civitai Education"

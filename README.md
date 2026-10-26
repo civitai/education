@@ -53,8 +53,22 @@ is `.claude/skills/content-review/SKILL.md`; the PR body carries the reviewer's 
    ```
 
    Optional fields: `modified` (last updated date), `author` (default `civitai`), `draft: true`
-   (left out of the build), and `seo` with `title`, `description` and `ogImage` overrides. The
-   schema is in `src/content.config.ts`.
+   (left out of the build), `covers`, `reviewed` (below), and `seo` with `title`, `description` and
+   `ogImage` overrides. The schema is in `src/content.config.ts`.
+
+   Guides about a Civitai feature or model should also declare what they cover and when they were
+   last checked:
+
+   ```yaml
+   covers:                 # short kebab-case keys, one per feature or model the guide explains
+     - "creator-studio"
+     - "early-access"
+   reviewed: "2026-10-26"  # the day every claim was last checked against Civitai
+   ```
+
+   The weekly review matches changes on Civitai against `covers`, and lists any guide whose
+   `reviewed` date is more than 90 days old. Set `reviewed` whenever you check or update a guide,
+   and reuse an existing key (`grep -rh '^  - ' src/content/posts` shows them) before inventing one.
 3. Categories and tags are slugs. Existing ones, with their display names, are in
    `src/data/taxonomies.json`; a new slug works too and shows under its slug until it is added there.
 4. Run `pnpm dev` and open the post. The table of contents is generated from the `##` and `###`

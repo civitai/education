@@ -11,6 +11,17 @@ tags:
   - "gpt-image"
   - "krea"
   - "guide"
+covers:
+  - "image-editing"
+  - "gpt-image-2-5"
+  - "krea-3"
+  - "krea-2"
+  - "nano-banana"
+  - "seedream"
+  - "qwen-image-edit"
+  - "muse-image"
+  - "flux-3"
+reviewed: "2026-10-26"
 excerpt: "The main image editing models in the Civitai generator, including GPT Image 2.5 and Krea 3: what each is best at, what it costs in Buzz, how many reference images it takes, and the same three edits run on every model."
 image: "/images/guides/image-editing-models/image-editing-cover.webp"
 seo:

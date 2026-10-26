@@ -10,6 +10,10 @@ tags:
   - "leaderboard"
   - "guide"
 author: "civitai"
+covers:
+  - "creator-score"
+  - "leaderboards"
+reviewed: "2026-10-26"
 excerpt: "What Creator Score is, where to see yours, what it unlocks, and how the Civitai leaderboards rank creators."
 seo:
   title: "Civitai's Guide to Creator Score and the Leaderboard - Civitai Education"

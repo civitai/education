@@ -9,6 +9,9 @@ tags:
   - "hubs"
   - "guide"
 author: "civitai"
+covers:
+  - "hubs"
+reviewed: "2026-10-26"
 excerpt: "Hubs are image feeds you build from the creators, models and tags you pick. Learn how to find, follow, make and share one."
 seo:
   title: "Civitai's Guide to Hubs - Civitai Education"

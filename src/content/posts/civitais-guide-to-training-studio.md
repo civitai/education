@@ -10,6 +10,13 @@ tags:
   - "lora-training"
 author: "civitai"
 image: "/images/guides/civitais-guide-to-training-studio/cover.webp"
+covers:
+  - "training-studio"
+  - "lora-training"
+  - "training-base-models"
+  - "auto-label"
+  - "buzz-training-cost"
+reviewed: "2026-10-26"
 excerpt: "Train a LoRA on Civitai with Training Studio: pick a base model, label your data, set steps, pay with Buzz, then watch each epoch arrive and publish the best one."
 seo:
   title: "Civitai's Guide to Training Studio - Civitai Education"

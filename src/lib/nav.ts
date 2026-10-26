@@ -11,7 +11,7 @@ const PRIMARY_ORDER = ['training', 'quickstart-guides', 'beginner-guides', 'prom
 export const START_HERE = [
   'using-civitai-a-guide',
   'using-civitai-the-on-site-image-generator',
-  'using-civitai-the-on-site-lora-trainer',
+  'civitais-guide-to-training-studio',
 ];
 
 /** Topic chips in the header (and the phone front page), in display order. */

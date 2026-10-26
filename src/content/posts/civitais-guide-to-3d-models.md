@@ -11,11 +11,11 @@ tags:
   - "guide"
 author: "civitai"
 excerpt: "How to browse, view, download and share 3D models on Civitai, and how to generate your own with PolyGen (Meshy), Tripo and Hunyuan3D."
-image: "/images/guides/3d-models/3d-models-cover.webp"
+image: "/images/guides/civitais-guide-to-3d-models/cover.webp"
 seo:
   title: "Civitai's Guide to 3D Models - Civitai Education"
   description: "Browse, view and download 3D models on Civitai, generate your own from text or an image, then publish, license and share them."
-  ogImage: "/images/guides/3d-models/3d-models-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-3d-models/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

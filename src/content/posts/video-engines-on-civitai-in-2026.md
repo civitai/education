@@ -13,11 +13,11 @@ tags:
   - "img2video"
   - "guide"
 excerpt: "The video engines in the Civitai generator today: what each one accepts (text, image, first and last frame, references), how long and how sharp its clips can be, which can make audio, and what a clip costs in Buzz."
-image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/images/guides/video-engines-on-civitai-in-2026/cover.webp"
 seo:
   title: "Video Engines on Civitai in 2026 - Civitai Education"
   description: "Compare Veo 3, Vidu, MiniMax H3, Kling, Grok, Seedance, HappyHorse, Flux 3 Video, LTX and Wan in the Civitai generator, with durations, resolutions, audio support and Buzz costs."
-  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/images/guides/video-engines-on-civitai-in-2026/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

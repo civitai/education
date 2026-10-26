@@ -41,7 +41,7 @@ The form changes with the engine. The next section compares them.
 
 ## The engines at a glance {#the-engines-at-a-glance}
 
-Prices are what the generator's price check returned on October 26, 2026, in Buzz, at default settings and the length shown. Your price can differ, because the simple mode and the cover image add steps, so **the cost button is the source of truth**. For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
+Prices are what the generator's price check returned on October 26, 2026, in Buzz, for the generation itself in Custom mode, with no cover image, at the length shown. Simple mode and a generated cover add steps, so your price can be higher, and **the cost button, which shows the total, is the source of truth**. For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 
 | Engine | Makes | Length you can set | Lyrics | About Buzz |
 | --- | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ Write a prompt of up to 2,000 characters. There is no Simple or Custom mode, no 
 
 - **Name the genre and the feel first.** "Warm neo-soul with Rhodes chords and brushed drums" tells the engine more than "a nice song".
 - **List instruments and mood.** The Music Description field exists for this.
-- **Mark the structure in lyrics.** Put `[Verse]`, `[Chorus]` and `[Bridge]` on their own lines. 
+- **Mark the structure in lyrics.** Put `[Verse]`, `[Chorus]` and `[Bridge]` on their own lines.
 - **For a sound effect, describe the source and the space.** "A wooden door creaks open in a stone hallway" gives more to work from than "door sound".
 - **Match the length to the lyrics.** A 30 second track may not fit three verses and two choruses. If the lyrics are long, give the engine more seconds.
 
@@ -138,7 +138,6 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 4. Set the length to 8 seconds (the default). The cost button should show about 19 Buzz.
 5. Generate. If the sound is too short or too long for your scene, change the length and run again.
 
-
 ## Train your own audio LoRA {#train-your-own}
 
 **Training Studio** can train a LoRA on ACE-Step, so you can teach a model a genre, a sound or a style from your own tracks. Audio training is open to everyone. The full tour of the Studio, including payment, results and the classic trainer, is in [Civitai's Guide to Training Studio](/civitais-guide-to-training-studio/). This section covers what is specific to audio.
@@ -147,11 +146,11 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 2. Choose a type. For audio the types are **Style** and **Concept**. (Character is for images and video, and Effect is for video.)
 3. Choose the **ACE-Step** card, then a version: **1.5 (3.5B)** (the default), **XL Base (4B)** or **XL SFT (4B)**. The app describes ACE-Step as the way to "teach it a genre or an artist's sound from a few tracks".
 4. Add audio files. The Studio accepts **MP3, WAV, FLAC, OGG and M4A**. Each tile has a player so you can hear a clip while you label it.
-5. Label every clip. Audio models use **captions**: a text description of the sound. **Auto-label** can write these for you, and you can edit them by hand. The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
+5. Label every clip. You can't continue until every clip has a label. Audio models use **captions**: a text description of the sound. **Auto-label** can write these for you, and you can edit them by hand. The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
 6. The Studio recommends at least **15 clips** for a Style or Concept LoRA. This is a recommendation, not a hard stop. "A few tracks" is the Studio's own wording, and the Data step warns below 15 clips.
-7. Review the settings and start. The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
+7. Review the settings and start. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
 
-Audio runs default to 5 epochs. When the run finishes, you can listen to the sample from each epoch, then **download** or **publish** the one you like. The Create Music form has no LoRA picker. See the Studio guide for how epochs, samples and publishing work.
+Audio runs default to 5 epochs. When the run finishes, you can listen to the sample from each epoch, then **download** or **publish** the one you like. The Create Music form has no LoRA picker, and the run page may also show a **Generate** button on audio epochs, so today download or publish the result rather than expecting to load it in Create Music. See the Studio guide for how epochs, samples and publishing work.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -159,7 +158,9 @@ Audio runs default to 5 epochs. When the run finishes, you can listen to the sam
 - **My CFG and Steps changes did nothing.** On ACE in Custom mode the generator keeps them at the values for the version you picked. Switch versions to change the behavior.
 - **The track is shorter than I set.** The YuE2 and MiniMax Music 3 lengths are maximums, not exact lengths. Each engine also has its own range, so a number that works on ACE may be out of range on MiniMax Music 3, which starts at 30 seconds.
 - **The cost is higher than the table.** Simple mode runs an extra drafting step, a generated cover is an extra step, and YuE2's automatic score planning adds cost.
-- **I wanted a spoken voice.** Text-to-speech isn't offered. Some video engines can generate speech with a clip; see the [video engines guide](/video-engines-on-civitai-in-2026/).
+- **A training clip won't continue.** Every clip needs a label. Use Auto-label or write one, then continue.
+- **My training run failed.** A failed run is refunded automatically. See the Studio guide's troubleshooting.
+- **I wanted a spoken voice.** Text-to-speech isn't offered. Some video engines can generate sound with a clip; see the [video engines guide](/video-engines-on-civitai-in-2026/).
 
 ## I need more help! {#i-need-more-help}
 

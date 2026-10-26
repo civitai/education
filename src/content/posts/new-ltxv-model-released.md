@@ -20,6 +20,9 @@ seo:
   description: "New LTXV version 0.9.5 released! Exceptional new features for text and image-to-image! Check out our updated Guide!"
   ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "http://education.civitai.com/new-ltxv-model-released/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-quickstart-guide-to-lightricks-ltxv"
 ---
 
 On March 6th 2025, LTXV Version 0.9.5 released with a whole range of cool new features – including higher quality outputs, less artifacting, longer generations, and keyframe controls for image-to-video!

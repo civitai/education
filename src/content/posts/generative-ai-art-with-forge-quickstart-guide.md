@@ -18,6 +18,8 @@ seo:
   description: "Learn how to use lightweight Automatic1111 fork \"Forge\", from the creator of ControlNet, to generate your Stable Diffusion images!"
   ogImage: "/wp-content/uploads/2024/03/MarkuryFLUX_01331_.png"
   canonical: "https://education.civitai.com/generative-ai-art-with-forge-quickstart-guide/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

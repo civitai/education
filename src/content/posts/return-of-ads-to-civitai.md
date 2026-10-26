@@ -17,6 +17,9 @@ seo:
   description: "Ads can now serve this purpose; offsetting our cost of generation so we can offer more free generations to users per day"
   ogImage: "/wp-content/uploads/2024/08/SquareBuzz.webp"
   canonical: "https://education.civitai.com/return-of-ads-to-civitai/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-ads-2"
 ---
 
 **Site ads are back**. Let’s talk about what they are, why we’re doing this, and how we’ve changed them since last time.

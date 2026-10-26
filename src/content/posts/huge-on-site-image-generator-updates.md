@@ -17,6 +17,9 @@ seo:
   description: "Civitai Image Generator - now with img2img, ADetailer, Hires fix and upscaling! Get into the Civitai Generator and start creating, now!"
   ogImage: "/wp-content/uploads/2023/09/output_00069_.png"
   canonical: "https://education.civitai.com/huge-on-site-image-generator-updates/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "using-civitai-the-on-site-image-generator"
 ---
 
 Last week we released a huge update to the Civitai on-site Image Generator, bringing much awaited features including **Upscaling**, **Hires fix**, **ADetailer** (**face fix**), and **image-to-image**! [Check out our full Guide to the Civitai Image Generator for details](//using-civitai-the-on-site-image-generator/)!

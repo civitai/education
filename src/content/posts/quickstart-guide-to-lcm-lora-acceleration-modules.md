@@ -18,6 +18,8 @@ seo:
   description: "Learn how to leverage the new LCM LoRA for fast Stable Diffusion inference! Boost generation speeds on both SDXL and SD 1.5!"
   ogImage: "/wp-content/uploads/2023/11/workflow.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-lcm-lora-acceleration-modules/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

@@ -62,6 +62,27 @@ is `.claude/skills/content-review/SKILL.md`; the PR body carries the reviewer's 
 
 Use `.mdx` instead of `.md` if a post needs components.
 
+## Retiring old content
+
+Two ways to take a post off the shelf:
+
+- **Deprecate** it when the page is still worth reading but out of date. Add to its front matter:
+
+  ```yaml
+  deprecated:
+    date: "2026-10-26"
+    replacedBy: "newer-guide-slug"   # optional: the banner links there; must be a post's slug
+    note: "One line for the banner." # optional: replaces the default text
+  ```
+
+  The post keeps its URL and its sitemap entry and shows an "out of date" banner. It leaves the
+  home page, the category, tag and author archives, the feeds, search and "Up next". Code that lists
+  posts for readers uses `getListedPosts()`; `getPosts()` is for routes and sitemaps.
+- **Retire** it when the URL should go away: delete its file, and add it to `RETIRED` in
+  `scripts/export-wp.mjs` and to the "Retired posts" block of `public/_redirects` (slug and the post
+  its URL now 301s to). Point its id in `src/data/wp-ids.json` at the same target. If that empties a
+  tag, category or archive page that WordPress served, redirect that too; `pnpm check:urls` finds them.
+
 ### Embeds
 
 Videos and other rich blocks use a placeholder `div` that `src/lib/rehype-embeds.mjs` turns into

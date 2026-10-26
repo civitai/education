@@ -29,11 +29,12 @@ const pageTitle = page === 1 ? title : `${title} - Page ${page} of ${total}`;
 const isCategory = base.startsWith('/category/');
 const count = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
 const crumb = kind ? `${kind}: ${heading}` : heading;
+// An archive whose posts are all deprecated keeps its URL but lists nothing; search engines skip it.
 // /page/N/ continues the front page's listing; its first page is the posts page.
 const firstPage = base === '/' ? `/${SITE.postsPageSlug}/` : base;
 ---
 
-<BaseLayout title={pageTitle} description={description} path={path} feed={feed}>
+<BaseLayout title={pageTitle} description={description} path={path} feed={feed} noindex={posts.length === 0}>
   <div class="archive">
     {isCategory && <CategoryChips class="home-chips" />}
     <header class="archive-head">
@@ -59,6 +60,13 @@ const firstPage = base === '/' ? `/${SITE.postsPageSlug}/` : base;
         {total > 1 && <span>· Page {page} of {total}</span>}
       </p>
     </header>
+    {
+      posts.length === 0 && (
+        <p class="archive-empty">
+          The guides here are out of date and no longer listed. <a href="/">Browse current guides</a> or <a href="/search/">search</a>.
+        </p>
+      )
+    }
     <ul class="story-grid archive-grid">
       {
         paginate(posts, page).map((post, i) => (

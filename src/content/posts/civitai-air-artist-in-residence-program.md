@@ -19,6 +19,8 @@ seo:
   description: "We're thrilled to announce the launch of Civitai AiR, our groundbreaking Artist-in-Residence Program. Apply now!"
   ogImage: "/wp-content/uploads/2024/02/4-c2x.webp"
   canonical: "http://education.civitai.com/civitai-air-artist-in-residence-program/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 The Civitai AiR program has been suspended pending a re-launch! Watch this space!

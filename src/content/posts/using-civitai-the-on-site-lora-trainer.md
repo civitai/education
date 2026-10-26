@@ -19,6 +19,8 @@ seo:
   description: "Discover how to effortlessly train your own LoRA models using our on-site LoRA Trainer, currently available in beta for Civitai Supporters."
   ogImage: "/wp-content/uploads/2023/09/lora_trainer_anim.webp"
   canonical: "https://education.civitai.com/using-civitai-the-on-site-lora-trainer/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

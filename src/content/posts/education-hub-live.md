@@ -16,6 +16,8 @@ seo:
   description: "Our brand new Education Hub is now live, designed specifically to fuel your passion and creativity! Check it out!"
   ogImage: "/wp-content/uploads/2023/08/00929-36543644.png"
   canonical: "https://education.civitai.com/education-hub-live/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 **Introducing the Civitai Education Hub: Your Gateway to Generative AI Mastery!**

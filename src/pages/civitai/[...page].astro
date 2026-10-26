@@ -1,21 +1,22 @@
 ---
 // The WordPress "posts page" (/civitai/, see SITE.postsPageSlug): every post, newest first.
-// Routes: /civitai/ and /civitai/page/N/.
+// Routes: /civitai/ and /civitai/page/N/; a page past the listed posts (see archive()) redirects to /civitai/.
 import Archive from '../../components/Archive.astro';
 import { SITE } from '../../lib/site';
-import { extraPages, getPage, getPosts } from '../../lib/content';
+import { archive, getPage, getPosts } from '../../lib/content';
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
+  const { posts, extra, last } = archive(await getPosts());
   const page = await getPage(SITE.postsPageSlug);
   const title = page?.data.title || 'All posts';
   return [
-    { params: { page: undefined }, props: { page: 1, posts, title } },
-    ...extraPages(posts.length).map((n) => ({ params: { page: `page/${n}` }, props: { page: n, posts, title } })),
+    { params: { page: undefined }, props: { page: 1, posts, title, last } },
+    ...extra.map((n) => ({ params: { page: `page/${n}` }, props: { page: n, posts, title, last } })),
   ];
 }
 
-const { page, posts, title } = Astro.props;
+const { page, posts, title, last } = Astro.props;
+if (page > last) return Astro.redirect(`/${SITE.postsPageSlug}/`);
 ---
 
 <Archive title={title} heading="Every guide" base={`/${SITE.postsPageSlug}/`} page={page} posts={posts} feed="/feed/" />

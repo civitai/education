@@ -18,6 +18,9 @@ seo:
   description: "In this video we will walk through the basic functions you need to be aware of and how to navigate the user interfaces!"
   ogImage: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160716.webp"
   canonical: "https://education.civitai.com/4-u-i-walkthrough-easy-diffusion-automatic-1111/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "using-civitai-the-on-site-image-generator"
 ---
 
 <div data-embed="youtube" data-src="https://www.youtube.com/embed/0tDAMgZK1F4?list=PLlVSBOQWxoKntlHmA3eLvODWb7uCttbfK" data-title="Civitai Beginners Guide To AI Art // #4 U.I Walkthrough // Easy Diffusion 3.0 &amp; Automatic 1111" data-width="800" data-height="450"></div>

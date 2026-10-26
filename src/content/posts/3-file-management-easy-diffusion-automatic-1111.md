@@ -18,6 +18,9 @@ seo:
   description: "In this video we will walk through all of the most important file and asset types you will need to download and install to generate AI images"
   ogImage: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-160533.webp"
   canonical: "https://education.civitai.com/3-file-management-easy-diffusion-automatic-1111/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-resource-types"
 ---
 
 <div data-embed="youtube" data-src="https://www.youtube.com/embed/q_buOpLmHkg?list=PLlVSBOQWxoKntlHmA3eLvODWb7uCttbfK" data-title="Civitai Beginners Guide To AI Art // #3 File Management // Easy Diffusion 3.0 &amp; Automatic 1111" data-width="800" data-height="450"></div>

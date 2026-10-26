@@ -14,6 +14,8 @@ seo:
   title: "Rollback! - Civitai Education"
   ogImage: "/wp-content/uploads/2025/03/63145105.png"
   canonical: "https://education.civitai.com/rollback/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 On March 11th, we [launched one of the most ambitious updates in Civitai’s history: Full Checkpoint Coverage](https://civitai.com/articles/12309). We went from supporting **200** hand-picked models to opening the floodgates to over **_25,000_**. This was a monumental step forward, made possible by months of preparation – scaling up our datacenter compute, overhauling our software and middleware, and implementing major infrastructure changes. We knew it wouldn’t be an easy transition, but we believed in the vision and did everything we could to ensure a smooth rollout.

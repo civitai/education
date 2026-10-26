@@ -19,6 +19,8 @@ seo:
   description: "Stable Diffusion 3 is a text-to-image model released by Stability AI in June of 2024 offering unparallelled image fidelity!"
   ogImage: "/wp-content/uploads/2024/06/sd3_quick.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-stable-diffusion-3/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

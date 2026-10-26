@@ -20,6 +20,9 @@ seo:
   description: "What was formerly Creator Clubs has evolved, via excellent community feedback, into the Civitai Creators Program."
   ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00077_.png"
   canonical: "http://education.civitai.com/civitais-guide-to-clubs/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-earning-with-the-creator-program"
 ---
 
 | **Last Updated** | **Changes** |

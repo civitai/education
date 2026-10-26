@@ -1,0 +1,30 @@
+---
+// Top of a deprecated post (front matter `deprecated`): says it is out of date and where to go instead.
+import Icon from './icons/Icon.astro';
+import type { Post } from '../lib/content';
+
+interface Props {
+  deprecated: NonNullable<Post['data']['deprecated']>;
+  /** The replacedBy post, looked up by the page. */
+  replacement?: Post;
+}
+const { deprecated, replacement } = Astro.props;
+---
+
+<aside class="deprecated" role="note" aria-label="Out of date" data-pagefind-ignore>
+  <Icon name="alert-triangle" size={20} class="deprecated-icon" />
+  <div>
+    <p class="deprecated-title">This guide is out of date</p>
+    <p class="deprecated-text">
+      {deprecated.note || 'Civitai has changed since it was written, so some steps or screens may no longer match.'}
+      {
+        replacement && (
+          <>
+            {' '}
+            Read <a href={`/${replacement.id}/`}>{replacement.data.title}</a> instead.
+          </>
+        )
+      }
+    </p>
+  </div>
+</aside>

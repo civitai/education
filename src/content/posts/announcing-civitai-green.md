@@ -18,6 +18,8 @@ seo:
   description: "To better serve our diverse community, we have launched Civitai Green - a PG view into Civitai, with all the same great functionality!"
   ogImage: "/wp-content/uploads/2024/08/00240-1024x701.webp"
   canonical: "http://education.civitai.com/announcing-civitai-green/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 Civitai has long been recognized as a vibrant hub for AI enthusiasts, artists, and developers. Our platform has always been about fostering creativity and enabling individuals to push the boundaries of what’s possible with AI. To better serve our diverse community, we are in the process of restructuring the platform into two distinct sections:

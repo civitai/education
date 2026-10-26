@@ -19,6 +19,9 @@ seo:
   description: "Learn about Civitai's new image Rating game - Civitai Rater! A bit of fun, which helps us design better content tagging solutions!"
   ogImage: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00029_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-the-rating-game/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "knights-of-the-new-order-minigame"
 ---
 
 | **Last Updated** | **Changes** |

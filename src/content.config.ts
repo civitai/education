@@ -27,6 +27,20 @@ const posts = defineCollection({
     image: z.string().optional(),
     sticky: z.boolean().optional(),
     draft: z.boolean().optional(),
+    /**
+     * Out of date but kept at its URL: the page renders a banner and stays in the sitemaps, but is
+     * left out of every listing, feed and search (see getListedPosts in src/lib/content.ts).
+     */
+    deprecated: z
+      .object({
+        /** When it was marked out of date. */
+        date: z.coerce.date(),
+        /** Slug of the post that replaces it; the banner links there. */
+        replacedBy: z.string().optional(),
+        /** One line for the banner, after "This guide is out of date." */
+        note: z.string().optional(),
+      })
+      .optional(),
     /** WordPress post id, for ?p= redirects. Only on posts that came from WordPress. */
     wpId: z.number().optional(),
     seo,

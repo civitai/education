@@ -18,6 +18,8 @@ seo:
   description: "Create Generative AI art easily with the Fooocus interface for Stable Diffusion! Start making beautiful images in seconds!"
   ogImage: "/wp-content/uploads/2023/12/image-8-1-768x768.webp"
   canonical: "https://education.civitai.com/generative-ai-art-with-fooocus-quickstart-guide/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

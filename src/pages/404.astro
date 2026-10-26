@@ -2,10 +2,10 @@
 // Served by nginx for any unknown path (error_page 404), so the status stays 404.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/icons/Icon.astro';
-import { getPosts, postPath } from '../lib/content';
+import { getListedPosts, postPath } from '../lib/content';
 import { START_HERE } from '../lib/nav';
 
-const posts = await getPosts();
+const posts = await getListedPosts();
 const popular = START_HERE.flatMap((slug) => posts.find((p) => p.id === slug) ?? []);
 ---
 

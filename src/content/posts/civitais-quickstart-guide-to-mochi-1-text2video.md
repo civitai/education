@@ -19,6 +19,8 @@ seo:
   description: "Civitai's Guide to getting started with Mochi 1 text2video! Start generating great videos on your local PC now!"
   ogImage: "/wp-content/uploads/2024/11/text2video.png"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-mochi-1-text2video/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

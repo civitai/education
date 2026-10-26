@@ -18,6 +18,9 @@ seo:
   description: "Buzz Gift Card and Membership Codes are now available for purchase!"
   ogImage: "/wp-content/uploads/2025/08/announcement.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-buybuzz-io/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-purchasing-buzz-with-crypto"
 ---
 
 | **Last Updated** | **Changes** |

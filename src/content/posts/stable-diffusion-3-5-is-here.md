@@ -19,6 +19,8 @@ seo:
   description: "Stable Diffusion 3.5 has arrived! Is it any better than its predecessor? Check out our Quickstart Guide to Stable Diffusion 3.5 and find out!"
   ogImage: "/wp-content/uploads/2024/10/sd35_square.webp"
   canonical: "https://education.civitai.com/stable-diffusion-3-5-is-here/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 Stable Diffusion 3.5 has arrived, a little unexpectedly! The burning question is; is it any better than the disastrously received Stable Diffusion 3?

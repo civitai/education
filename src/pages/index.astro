@@ -11,11 +11,11 @@ import PostCard from '../components/PostCard.astro';
 import Icon from '../components/icons/Icon.astro';
 import taxonomies from '../data/taxonomies.json';
 import { SITE } from '../lib/site';
-import { coverOf, getPage, getPosts, postPath, termName } from '../lib/content';
+import { coverOf, getPage, getListedPosts, postPath, termName } from '../lib/content';
 import { START_HERE, entryDeck, getHomeTopics, getLeadPost, primaryCategory, readingMinutes } from '../lib/nav';
 
 const home = await getPage(SITE.frontPageSlug);
-const posts = await getPosts();
+const posts = await getListedPosts();
 const lead = await getLeadPost();
 // Eight render; screens under 1920px show six (base.css), phones three.
 const latest = posts.filter((p) => p.id !== lead?.id).slice(0, 8);

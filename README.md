@@ -27,6 +27,10 @@ at `…/page/N/`, feeds at `…/feed/` and the Yoast sitemap file names.
 
 ## Adding a post
 
+New and rewritten articles get an independent content review before they merge: accuracy (every claim
+checked against civitai.com), quality against our best guides, images, links and voice. The checklist
+is `.claude/skills/content-review/SKILL.md`; the PR body carries the reviewer's verdict.
+
 1. Create `src/content/posts/<slug>.md`. The slug is the URL: `my-new-guide` is served at
    `/my-new-guide/`. It must not clash with another post or page, or with `category`, `tag`,
    `author`, `page`, `feed`, `search` or `civitai`; the build fails if it does.

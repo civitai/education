@@ -35,7 +35,7 @@ There are three kinds:
 | --- | --- | --- | --- |
 | **Daily Challenges** | Civitai | None | Set by Civitai for each challenge |
 | **Featured events** | Civitai | None | Set by Civitai for each event |
-| **Community Challenges** | Members | Set by the creator | The creator's seed plus the entry fees |
+| **Community Challenges** | Members (and some from Civitai staff) | Set by the creator | The creator's seed plus the entry fees |
 
 :::note
 Contest announcements on this site are news posts. They are not how-tos and they go out of date. The challenges page is where the live rules, prizes and deadlines are.
@@ -50,9 +50,9 @@ Open [civitai.com/challenges](https://civitai.com/challenges). From top to botto
 - **Daily Challenges**. Each day's challenge features a specific AI model. The small info icon next to the title opens "How Challenges Work". **Previous winners** links to the [winners page](https://civitai.com/challenges/winners).
 - **Community Challenges**, with sort and status filters and a **Create Challenge** button.
 
-Open a challenge to see its page. The details table lists when it starts and ends, the maximum entries per person, the allowed content ratings, how entries are reviewed and the prizes. Always read this table. Rules differ from one challenge to the next.
+Open a challenge to see its page. The details table lists when it starts and ends, the maximum entries per person, how entries are reviewed and the allowed content ratings. The prizes are in a separate **Prizes** section. Always read both. Rules differ from one challenge to the next.
 
-You can also choose to be notified about a challenge from its page, so you hear when it starts.
+You can also turn on notifications from a challenge's page. The toggle reads "Notify me when this starts" before it begins and "Notify me before this ends" while it runs.
 
 ## Enter a Challenge {#enter-a-challenge}
 
@@ -60,7 +60,7 @@ You can also choose to be notified about a challenge from its page, so you hear 
 2. Press **Submit** (or **Submit Entries**).
 3. In the **Submit Challenge Entry** dialog, choose images from one of three tabs: **My Images**, **From Generator** or **Upload New**. The dialog title shows how many entries you have used ("Your Entries: 2 / 5") and the allowed ratings.
 4. If a **Category** list appears, pick one for each submission.
-5. If the challenge has an entry fee, the button shows the total and you confirm the payment. Then choose **Submit**.
+5. If the challenge has an entry fee, the **Submit** button shows the total Buzz and the footer breaks it down. Choosing it pays and submits your entries.
 
 Your entry has to meet the rules of the challenge:
 
@@ -70,7 +70,7 @@ Your entry has to meet the rules of the challenge:
 - **Within your entry limit.** The limit is shown on the challenge page and in the dialog.
 - **Not your own challenge.** You can't submit to a challenge you created.
 
-If you recently won a daily or featured challenge, a blue banner says you are on a **winner cooldown**. You can still submit, but your entries are not eligible for prizes until the date shown. This does not apply to Community Challenges.
+If you recently won a challenge of the same kind, a blue banner says you are on a **winner cooldown** until the date shown. A daily win affects daily challenges, and an event tracks its own wins. You can still submit, but your entries are skipped when the top three are picked. Cooldown does not apply to Community Challenges.
 
 ## How judging works {#how-judging-works}
 
@@ -85,9 +85,9 @@ A reviewed entry gets a comment from the judge, so you can see why it scored the
 
 ## Prizes {#prizes}
 
-- **Placement prizes.** The top three entries win Buzz, and the details table on each challenge shows the amount for each place. Winners also earn challenge points.
-- **Participation prize.** Some challenges give a small Buzz prize to everyone who submits enough valid entries. The details table shows the requirement, for example "Min 10 entries to qualify". Participation prizes are paid in Blue Buzz.
-- **Where Buzz goes.** Prizes on Daily Challenges and featured events are paid by Civitai. For a Community Challenge, the prize currency matches the site it was created on: Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
+- **Placement prizes.** The top three entries win Buzz, and the **Prizes** section on each challenge shows the amount for each place. Winners also earn challenge points.
+- **Participation prize.** Some Civitai challenges give a small Buzz prize to everyone who submits enough valid entries. The details table shows the requirement, for example "Min 10 entries to qualify". Participation prizes are paid directly in Blue Buzz. Community Challenges do not have one.
+- **Claiming a placement prize.** Placement prizes are not paid straight into your balance. When you win, you get a notification and a **Claim prize** button on [civitai.com/prizes](https://civitai.com/prizes). On civitai.com you receive Green Buzz. On civitai.red you choose Green or Yellow. A prize you don't claim is paid automatically as Green Buzz after 30 days. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 
 Check each challenge's own page for its prize amounts, since they can change.
 
@@ -100,17 +100,17 @@ Any member who meets the requirements can run a challenge. The creator picks the
 It works like any other challenge, with an entry fee and a few differences:
 
 - The fee is charged on each submitted entry. Of each fee, 25 Buzz covers the AI judging and platform costs. The rest goes into the prize pool.
-- The judging cost is not refunded. If the challenge is cancelled, the prize-pool portion of your fee is returned.
+- The judging cost is not refunded. If the challenge is canceled, the prize-pool portion of your fee is returned, and the creator gets the initial prize back.
 - You can only enter once the challenge is Active. If you try early, you will see "Challenge is starting shortly, please try again in a few minutes".
 - Every entry is judged.
-- A Community Challenge appears on the site that matches its currency: Green Buzz challenges on civitai.com and Yellow Buzz challenges on civitai.red.
+- The fee is charged in the challenge's Buzz color, Green or Yellow. Green challenges are safe for work and show on civitai.com. Yellow challenges show on civitai.red.
 
 The prize pool is the creator's initial prize plus the entry fee minus 25 for each paid entry. The challenge page shows the projected split of the current pool while it runs.
 
 ### Who can create one {#who-can-create}
 
 - A creator score of at least 5,000.
-- An account in good standing: not banned, not muted, and without active strikes.
+- An account in good standing: not banned, not muted, and without active strikes serious enough to mute you.
 - No more than 5 Community Challenges created in any 24 hours.
 - A limit on challenges that are Scheduled or Active at once, by membership: Free 1, Bronze 2, Silver 3, Gold 5. See [Civitai's Guide to Membership Tiers](/civitais-guide-to-membership-tiers/).
 
@@ -139,7 +139,7 @@ Open **Create Challenge** on the challenges page, or go to [civitai.com/challeng
 - **Entry Fee**: from 50 to 100,000 Buzz. Of each fee, 25 Buzz is not added to the prize pool.
 - **Initial Prize** (optional): Buzz you seed the pool with, up to 10,000,000. It is charged to you when you create the challenge.
 - **Prize split**: the percentages for 1st, 2nd and 3rd place. They must total 100% (the default is 50, 30, 20).
-- On civitai.com the challenge uses Green Buzz and is safe for work only. On civitai.red it uses Yellow Buzz and can allow more ratings.
+- **Buzz color**: choose Green or Yellow. The form starts on your site's color. Green challenges are safe for work only and show on civitai.com. Yellow challenges show on civitai.red. Entry fees, the initial prize and the pool all use that color, and the color can't change once an initial prize has been charged.
 
 **Entry requirements**
 
@@ -151,7 +151,7 @@ Open **Create Challenge** on the challenges page, or go to [civitai.com/challeng
 - **Assigned Judge**: choose an AI judge persona from the list.
 - **Categories**: scoring categories with weights that must total 100%. You choose up to 4. Theme is required, and you can add up to three more from the category library (for example Creativity, Aesthetic, Technical Quality, Humor or Cinematics). The form starts with Theme 50, Wittiness 15, Humor 15 and Aesthetic 20.
 
-After you submit, a moderation scan runs and your challenge goes live when it passes. You can follow it under **Your Challenges** > **Created**. Once a challenge is active, editing is limited.
+After you submit, a moderation scan runs and your challenge goes live when it passes. You can follow it under **Your Challenges** > **Created**. You can edit a challenge only while it is Scheduled and has no entries. Once it is Active it is locked.
 
 ## Worked example
 
@@ -177,7 +177,8 @@ You are an entrant: you submit three entries at 200 Buzz each, 600 Buzz in all. 
 - **"Wrong model" or "Model not detected".** Generate with the challenge's model on Civitai using the **Generate** button on the challenge page.
 - **"NSFW restricted".** The image's rating is outside what the challenge allows. See the allowed ratings in the details table.
 - **My entry was not reviewed on a Daily Challenge.** Daily Challenges review a random selection. Challenges with an entry fee review every entry.
-- **My entries won't win a prize.** If you won a recent challenge you are on a winner cooldown. The banner on the challenge page shows when it ends.
+- **My entries won't place.** If you won a recent challenge of the same kind you are on a winner cooldown. The banner on the challenge page shows when it ends.
+- **I won but have no Buzz.** Placement prizes must be claimed at [civitai.com/prizes](https://civitai.com/prizes). Unclaimed prizes are paid as Green Buzz after 30 days.
 - **I can't create a challenge.** The create page lists the requirements you do not meet yet: creator score, account standing, the daily limit or your membership's limit on running challenges.
 - **Challenge starting shortly.** A Community Challenge accepts entries only once it is Active. Try again in a few minutes.
 

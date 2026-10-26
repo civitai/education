@@ -35,10 +35,10 @@ You need to be signed in. A few things can stop you from writing an article:
 
 There are two ways to begin:
 
-1. Open the **Create** menu in the top navigation and choose **Write an Article**.
+1. Hover over the **Create** button in the top navigation, and choose **Write an Article**. Do not click the button, because a click opens the image generator.
 2. On your own profile, open the Articles tab. If you have no published articles yet, a **Write an Article** button is shown there.
 
-Either one takes you to the editor at `civitai.com/articles/create`. The Create menu's extra options may not be reachable on a small screen, so on a phone use your profile. After you save or publish, the editor takes you to the article's page.
+Either one takes you to the editor at `civitai.com/articles/create`. On narrow screens, such as phones, the Create dropdown is turned off and tapping Create opens the generator, so use the profile route there. After you save or publish, the editor takes you to the article's page.
 
 ## The editor, field by field {#the-editor}
 
@@ -86,7 +86,7 @@ The buttons at the top of the settings column (at the bottom on a phone) change 
 | **Schedule** | Publishes the article for you at a time you pick. |
 | **Reschedule** and the **Cancel schedule** link | Change the time of a scheduled article, or return it to a plain draft. |
 | **Publish now** | Shown on a scheduled article. Publishes immediately and cancels the schedule. |
-| **Save** | Shown on a published article. Saves your edits to it. A published article has no Save Draft or Schedule button. |
+| **Save** | Shown on a published article. Saves your edits to it. A published or unpublished article has no Save Draft or Schedule button. |
 
 Until you publish, your article is a draft. Only you can see it. You can find your drafts on your own profile. Open the Articles tab (`civitai.com/user/<your username>/articles`) and use the toggle to switch from **Published** to **Draft**. Articles you have unpublished are listed under Draft too.
 
@@ -125,14 +125,15 @@ An article that a moderator unpublished for breaking the Terms of Service cannot
 
 Say you want to publish a short guide on captioning images for a LoRA.
 
-1. Open the **Create** menu and choose **Write an Article**.
+1. Hover over **Create** and choose **Write an Article**.
 2. Title: "How to caption a small LoRA dataset". It is well under the 100-character limit.
 3. Write the content. Use headings for each stage, and embed two example images.
 4. Cover Image: upload an image at about 850 x 400 pixels.
 5. Category: pick the one closest to a how-to guide. Tags: add a few that describe the topic, such as the model type you train.
 6. Maturity Level: leave it at the default if the article is safe for work. The final rating can still go up if your images or text call for it.
-7. Press **Save Draft** and read it through. When you are happy, press **Schedule** and choose a time tomorrow morning, or press **Publish** to go live now.
-8. Because the article has new images, a window explains they need scanning. Press **Continue**. The article moves to Processing, and publishes when the scan finishes. You get a notification.
+7. Press **Save Draft**. You land on the article page. Open the three dots menu and choose **Edit** to go back to the editor.
+8. When you are happy, press **Schedule** and choose a time tomorrow morning, or press **Publish** to go live now.
+9. If you pressed **Publish** and the article has new images, a window explains they need scanning. Press **Continue**. The article moves to Processing, and publishes when the scan finishes. You get a notification. A scheduled article skips this window, but its images still have to pass scanning before it can go live.
 
 ## Tips for a good article {#tips}
 

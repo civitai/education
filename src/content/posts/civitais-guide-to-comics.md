@@ -43,6 +43,8 @@ The Comic Creator is a Beta feature. Civitai says it has a limited feature set, 
 
 The genres are Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Romance, Sci Fi, Slice Of Life, Thriller and Other. They appear in capitals on the buttons.
 
+Comics with mature chapters can only be opened on civitai.red.
+
 Open a comic to see its overview page: the description, the chapter list, and counts for unique readers, total chapter reads, followers and Buzz tipped (each count shows once it is above zero).
 
 ## Read a comic {#read-comics}
@@ -79,7 +81,7 @@ The **Create Comic Project** page asks for:
 - **Hero Banner** (optional): a wide 16:9 image for the overview page. Upload one, pick one from the generator or generate one.
 - **Cover** (optional): a portrait image for the browse cards. The same three options apply.
 
-The comic is saved as a draft and stays private to you until you publish a chapter. You can change these later in Project Settings (upload an image or pick one from the generator). After you create it, you land on the project page. On a first visit in a browser, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
+The comic is saved as a draft and stays private to you until you publish a chapter. Drafts appear on your profile's Comics page (**My Comics**, with a **New Project** button), where you can reopen them. You can change these later in Project Settings (upload an image or pick one from the generator). After you create it, you land on the project page. On a first visit in a browser, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
 
 **Project Settings** (the gear icon) holds more choices:
 
@@ -104,12 +106,12 @@ A new project starts with a draft **Chapter 1**. Choose **Add Chapter** for more
 
 - **Generate.** Describe the scene ("Describe the scene... Use @Name to include references"), choose the Generation Model, the aspect ratio (portrait 3:4 works best for most panels) and the number of images per generation (1 to 4), then generate. Generate more than one image to pick the best one.
 - **Enhance.** Turn an existing image into a comic panel, with an optional prompt for changes.
-- **Bulk Add.** Add several panels at once, each with its own prompt.
+- **Bulk Add.** Add several panels at once from prompts or images.
 - **Import.** Choose images from your generator history to use as panels.
 
 Panels are paid with Blue Buzz or your site's color (see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/)). If you have no Buzz, the button opens a purchase window. The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
 
-You can reorder panels by dragging them. On a wide screen, hover a panel card to show its three-dot menu, which has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "images ready, click to choose". Open it and choose **Confirm Selection**.
+You can reorder panels by dragging them. On a wide screen, hover a panel card to show its three-dot menu, which has options such as View Details, Iterative Edit, Change Image, Regenerate, Duplicate, Insert after and Delete. Some appear only when they apply, for example Change Image needs more than one candidate image. When you generate more than one image, the card says "N images ready" and "Click to choose". Open it and choose **Confirm Selection**.
 
 ### Smart Create: let AI plan a chapter {#smart-create}
 
@@ -131,7 +133,7 @@ A draft chapter needs at least one panel before it can be published. Until then,
 3. Optional: turn on **Enable Early Access** (below).
 4. Confirm with **Publish** or **Schedule**.
 
-A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm. The chapter goes back to draft and is no longer visible to readers. If any reader has bought early access to the chapter, Civitai refuses with "This chapter cannot be unpublished because readers have purchased early access to it." A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
+A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm. The chapter goes back to draft and is no longer visible to readers. If any reader has bought early access to the chapter, Civitai refuses with "This chapter cannot be unpublished because readers have purchased early access to it."  New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
 
 ### Early access for your chapters {#early-access-for-creators}
 
@@ -146,7 +148,7 @@ Creator Score is a number Civitai calculates from your activity and how others e
 
 ### Content and moderation {#content-and-moderation}
 
-- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red". On civitai.red, a mature panel you generated is held until you press **Unlock**, which costs Yellow Buzz. Some are capped at a lower rating and can't be unlocked. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
+- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red" and an **Unlock on civitai.red** button. A panel capped at a lower rating shows "limited to a lower rating" instead, on either site. On civitai.red, a mature panel you generated is held until you press **Unlock**, which costs Yellow Buzz (mature content must be turned on in your account settings). In the image picker the button reads **Unlock with yellow Buzz**. Some are capped at a lower rating and can't be unlocked. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
 - A chapter can be hidden from readers while a panel waits for moderator review, or if it is flagged as a Terms of Service violation. The chapter list shows a **Review** or **TOS** badge, and the tooltip explains which. A chapter waiting for review publishes automatically when it clears.
 
 ## Worked example
@@ -164,6 +166,7 @@ Your project stays private until you publish a chapter. After that, readers can 
 ## Troubleshooting
 
 - **I can't find Create a Comic.** On a computer, hover over the Create button in the header. On a phone, open civitai.com/comics/create directly. If the Create button is grayed out, your account is muted.
+- **I can't find my project.** Open your profile's Comics page. Drafts are listed under **My Comics**, and only you can see them.
 - **Smart Create is missing.** It appears once your project has at least one reference and it has finished saving. Add a reference first.
 - **Publish is disabled.** The chapter has no panels yet. Add at least one.
 - **"Early access ... unlocks at a Creator Score of 10,000."** You are below the minimum. The dialog shows your score.

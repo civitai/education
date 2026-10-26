@@ -19,6 +19,7 @@ seo:
   canonical: "https://education.civitai.com/rapid-flux-training-on-sale/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "civitais-guide-to-training-studio"
 ---
 
 Train a Flux LoRA in under 5 minutes with our new Rapid Training option in the Civitai LoRA Trainer – **now 50% off for a limited time to celebrate the launch**!

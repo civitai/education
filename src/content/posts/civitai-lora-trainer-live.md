@@ -19,6 +19,7 @@ seo:
   canonical: "https://education.civitai.com/civitai-lora-trainer-live/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "civitais-guide-to-training-studio"
 ---
 
 We’ve launched the Civitai on-site LoRA trainer for all Civitai [Supporters](https://civitai.com/pricing)! Don’t have the hardware to train locally? Don’t want the hassle of figuring out all the crazy advanced options? Supply your training images and let our wizard take over!

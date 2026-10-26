@@ -20,6 +20,7 @@ seo:
   canonical: "https://education.civitai.com/sdxl-1-0-training-overview/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "civitais-guide-to-training-studio"
 ---
 
 | Last Update | Version | Changes |

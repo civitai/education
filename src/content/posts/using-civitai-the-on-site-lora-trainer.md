@@ -21,6 +21,7 @@ seo:
   canonical: "https://education.civitai.com/using-civitai-the-on-site-lora-trainer/"
 deprecated:
   date: "2026-10-26"
+  replacedBy: "civitais-guide-to-training-studio"
 ---
 
 | **Last Updated** | **Changes** |

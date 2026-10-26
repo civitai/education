@@ -20,6 +20,9 @@ seo:
   description: "This guide will help you get the most out of your GPT Image 1 Generations! Try the model out today on Civitai.com!"
   ogImage: "/wp-content/uploads/2025/05/GPT_API.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-gpt-image-1/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "image-editing-models-on-civitai"
 ---
 
 | **Last Updated** | **Changes** |

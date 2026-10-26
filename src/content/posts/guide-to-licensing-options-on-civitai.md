@@ -10,7 +10,7 @@ tags:
   - "licensing"
 author: "civitai"
 wpId: 3811
-excerpt: "Civitai Guide to Model Licensing"
+excerpt: "What the permission checkboxes on a model upload do, how they appear on the model page, and how they differ from licensing fees."
 image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
 seo:
   title: "Guide to Civitai Model Licensing Options - Civitai Education"
@@ -63,9 +63,9 @@ Some options depend on others. Selecting **Sell this model** also selects, and l
 
 ## License display on the model page
 
-When you restrict something, icons on the model page show your choices. Hover over an icon to see what it means. The badges cover commercial use, generation services, and whether credit is required.
+Icons on the model page show your choices, green for allowed and red for restricted. Hover over an icon to see what it means. The icons cover commercial use, generation services, whether credit is required, and merges.
 
-If your model uses SD 1.5 or SDXL 1.0 as its base and you restricted any permission, the model page shows an **Addendum** link beside the base model license. Click it to read the license and addendum generated for your model.
+If your model uses SD 1.5 or SDXL 1.0 as its base, the model page shows an **Addendum** link beside the base model license. Click it to read the license and addendum generated for your model.
 
 ## Models on other base models {#other-base-models}
 

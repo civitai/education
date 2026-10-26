@@ -18,6 +18,9 @@ seo:
   description: "The Civitai Cosmetic Shop is a fun way to elevate the aesthetics of your profile, ensuring you stand out from the crowd of other Creators!"
   ogImage: "/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_.png"
   canonical: "https://education.civitai.com/civitais-guide-to-the-cosmetic-shop/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-the-creator-shop-and-stickers"
 ---
 
 | **Last Updated** | **Changes** |

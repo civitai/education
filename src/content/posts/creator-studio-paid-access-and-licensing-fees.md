@@ -84,7 +84,7 @@ Early Access puts a new version behind a purchase for a set number of days. When
 Rules that matter:
 
 - **You start it before the first publish.** A timed window can only be started on a version that has never been published. After that, Creator Studio shows "Early access can't be started after a version is published." Plan the window when you create the version, not after the release.
-- **How long it can be.** You choose from 3, 5, 7, 9, 12, 15 or 30 days. The longest window you can choose grows with your creator score:
+- **How long it can be.** On civitai.com you choose from 3, 5, 7, 9, 12, 15 or 30 days. In Creator Studio you type the number of days, up to your maximum. The longest window you can choose grows with your creator score:
 
 | Creator score | Longest window | Versions in Early Access at once |
 | --- | --- | --- |
@@ -148,11 +148,11 @@ A licensing fee is a small amount of Buzz you earn each time someone generates w
 ### Setting a fee in Creator Studio {#setting-a-fee}
 
 1. Open **Monetization**, then **Models**, and select the version.
-2. In the side panel, find the licensing fee field, which reads "⚡ per" and then a number of "generations".
-3. Enter the Buzz amount and choose the number of generations from the list. Use the suggested value if you are unsure.
-4. Save. The first time you charge for a version you also tick the rights affirmation.
+2. In the side panel, find the section titled **Licensing fee**, above **Early & paid access**. Its field reads "⚡ per" and then a number of "generations".
+3. Enter the Buzz amount and choose the number of generations from the list. If you are unsure, click **Use this** next to the "Suggested" line to fill in the suggested value.
+4. Select **Save fee**. The first time you charge for a version, tick the rights confirmation first. This section saves separately from Early & paid access.
 
-On civitai.com the same setting is the **Fee per generation** field in the version edit form.
+On civitai.com, turn on **Charge a fee to generate with this version** in the version edit form, then fill in **Fee per generation**.
 
 ### The fee ratio {#fee-ratio}
 
@@ -170,13 +170,13 @@ Some examples:
 Limits and defaults:
 
 - **The ceiling is 100 Buzz per generation** for image models and 500 Buzz per generation for video models. It is the same for every creator, whatever your membership.
-- **A suggested starting value** is offered for a new version: 1 Buzz per 10 generations for most model types, and 1 Buzz per generation for checkpoints. Video models start at five times those values. Creator Studio shows it as a "Suggested" link you can click to use. The version edit form on civitai.com fills it in for you.
+- **A suggested starting value** is offered for a new version: 1 Buzz per 10 generations for most model types, and 1 Buzz per generation for checkpoints. Video models start at five times those values. Creator Studio shows it as a "Suggested" line with a **Use this** link. The version edit form on civitai.com fills it in for you.
 - **The smallest fee is 1 Buzz per 100 generations.** Anything that rounds to less is refused.
 - **The ceiling only blocks raises.** A fee you set earlier that is above the current ceiling keeps working, and unrelated edits do not lower it.
 
 ### Fees inherited from the base model {#inherited-fees}
 
-Some base models carry a licensing fee of their own. If your version is a fine-tune of one of them, the version edit form on civitai.com asks you to pick the parent in a field called **Fine-tuned from**. The help text there says the parent's fee applies to generations made with your model.
+Some base models carry a licensing fee of their own. If your version is a fine-tune of one of them, the version edit form on civitai.com asks you to pick the parent in a field called **Fine-tuned from**, with a default already selected. The help text there says the parent's fee applies to generations made with your model.
 
 Two things follow:
 
@@ -189,8 +189,8 @@ The picker only lists parents that have been registered for this, and only appea
 
 You publish a LoRA and set a fee of 1 Buzz per 10 generations, plus Paid Access at 100 Buzz.
 
-- Someone buys access: you receive 100 Buzz.
-- People generate with your LoRA 25 times in a day. The fee is 0.1 Buzz per generation, so you earn 2.5 Buzz from the fee.
+- Someone buys access at 100 Buzz: you receive 100 Buzz, in the kind of Buzz they paid with.
+- People generate with your LoRA 25 times in a day. The fee is 0.1 Buzz per generation, so the fee adds up to about 2.5 Buzz.
 - The version used one pricing slot, because it carries a price. Editing either price later uses none.
 - On those generations you earn the fee instead of tips and creator compensation.
 
@@ -249,7 +249,7 @@ Points to know:
 | "Early access isn't available for your account yet" | Your creator score is below 10,000, or you have used this month's pricing slots. The message under it says which. |
 | You can't choose Paid Access | Your creator score is below 10,000, or you have used this month's pricing slots. Free up a slot by clearing a price you no longer need, or wait for the month to turn. |
 | The usage control picker is a banner, not a choice | The version is set to a mode that is not editable here. |
-| Paid access is blocked for a version | Check the base model license and whether the model is flagged as depicting a real person. |
+| Paid access is blocked for a version | Check the base model license, whether the model is flagged as depicting a real person, and whether the model is private. Private models can still carry a fee. |
 
 ## I need more help {#help}
 

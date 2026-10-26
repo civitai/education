@@ -78,15 +78,15 @@ You can enter any Crucible that is Active, has not closed its entries, and is no
 
 1. Open the Crucible's page and choose **Submit Entry**.
 2. In the dialog, pick your entry from one of three tabs:
-   - **My Images** (or **My Videos**): media you made on Civitai after this Crucible started. Older media is greyed out. Hover a card to see why.
+   - **My Images** (or **My Videos**): media you made on Civitai after this Crucible started. Older media is grayed out. Hover the small badge in a card's corner to see why.
    - **From Generator**: pick results from your generator history.
    - **Upload New**: drag a file in, or click to browse.
 3. Check the button at the bottom. If the entry costs Buzz, the button shows the amount and the line under it reads, for example, "First entry free, then 100 Buzz per entry".
 4. Choose the **Submit N Entry** (or **Entries**) button. If there is a fee, the Buzz amount is on the button. The fee is charged and your entry appears in the Crucible.
 
-**Which Buzz pays.** You pay in Green Buzz on civitai.com and Yellow Buzz on civitai.red. Blue Buzz can't pay an entry fee. If your balance is short, the submit button shows "Insufficient Buzz" and offers to buy more.
+**Which Buzz pays.** You pay in Green Buzz on civitai.com and Yellow Buzz on civitai.red. Blue Buzz can't pay an entry fee. If your balance is short, a red warning triangle appears beside the Buzz amount on the submit button. Hover it to see "Insufficient Buzz. Click to buy more." Choosing the button then opens the purchase window.
 
-**Rules your entry has to meet.** The entry must be your own, it must be the right type (image or video), its content rating must be within the Crucible's allowed levels, and it can't be an image already submitted to that Crucible. If the Crucible requires models or base models, the entry's generation data has to match. It must have been created after the Crucible started, so older images and videos can't be entered. Entries that fail a rule are greyed out in My Images, and hovering one shows why. The image also has to finish Civitai's safety check first. If you see "This image is still being checked. Try again once it finishes.", wait and try again.
+**Rules your entry has to meet.** The entry must be your own, it must be the right type (image or video), its content rating must be within the Crucible's allowed levels, and it can't be an image already submitted to that Crucible. If the Crucible requires models or base models, the entry's generation data has to match. It must have been created after the Crucible started, so older images and videos can't be entered. Entries that fail a rule are grayed out in My Images. Hover the red X badge in the card's corner and an "Invalid Entry" card lists each check. The image also has to finish Civitai's safety check first. A new upload shows a yellow badge until then, and its hover card says "Selectable once the content scan finishes". Wait a moment and it unlocks.
 
 **Judging is blind.** While a Crucible runs, judges don't see who made an entry, and other people's entries don't open to show the prompt or resources. Media you add from inside the entry dialog stays off your profile, feeds and search until the Crucible ends. After it ends, entries are revealed with their creators.
 
@@ -96,7 +96,7 @@ You can enter any Crucible that is Active, has not closed its entries, and is no
 
 ### How placement works
 
-You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. An entry needs about 75% of the average entry's votes to place, so an entry posted in the last stretch can't win without being judged. The Rules panel shows this, and the late-entry warning shows the number. After the timer runs out, a background job finalizes the Crucible: entries are ranked and prizes are set. Until then the badge reads "Ended".
+You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. An entry needs up to about 75% of the average entry's votes to place. A late entry's bar is lower, scaled to the time it was live, but never below 25 votes. The Rules panel shows the 75% figure, and the late-entry warning shows the number for a new entry. After the timer runs out, a background job finalizes the Crucible: entries are ranked and prizes are set. Until then the badge reads "Ended".
 
 ## Judge Crucibles {#judge-crucibles}
 
@@ -116,7 +116,7 @@ Things to know:
 - You can't vote on your own entries.
 - Every judge's vote counts the same.
 
-Judging is not paid in Buzz. It decides who wins, and it builds your judging stats, which show as "Votes Cast" in your record on the Crucibles page.
+Judging is not paid in Buzz. It decides who wins, and it builds your judging stats, which show as "Votes Cast" in your record on the Crucibles page once you have entered at least one Crucible.
 
 ## Prizes {#prizes}
 
@@ -147,7 +147,7 @@ If a Crucible has no entries, or none of the entries can place, no prizes are pa
 
 ## Create a Crucible {#create-a-crucible}
 
-You create a Crucible from [civitai.com/crucibles](https://civitai.com/crucibles) with **Create Crucible** (or go to [civitai.com/crucibles/create](https://civitai.com/crucibles/create)). A "Requirements to create a crucible" dialog lists each requirement with a check or an X, and you can't continue until all are checked. Creator score updates once a day.
+You create a Crucible from [civitai.com/crucibles](https://civitai.com/crucibles) with **Create Crucible** (or go to [civitai.com/crucibles/create](https://civitai.com/crucibles/create)). If you don't meet them all, a "Requirements to create a crucible" dialog lists each requirement with a check or an X, and you can't continue. Creator score updates once a day.
 
 ### Who can create one
 
@@ -186,7 +186,7 @@ The creator has four steps: **Basic Info**, **Entry Rules**, **Prizes** and **Re
 - **Seed the Prize Pool**: add your own Buzz on top of the entry fees, up to 10,000,000 and no more than your balance.
 - The prize split, shown as a chart. The default is 50/30/20. To change it, choose **Customize Distribution**, which costs 500 Buzz.
 
-**Review** shows everything you set, the schedule, and the total cost. Choose **Create Crucible** to finish.
+**Review** shows everything you set and the estimated schedule. A **Cost Breakdown** panel beside every step lists Duration, Prize Customization, Resource Requirements, Seeded Prize Pool and the Total Cost. On the Review step, choose **Create Crucible** to finish.
 
 ### What it costs {#what-it-costs}
 
@@ -231,13 +231,13 @@ Now suppose one entrant has the two best entries. They receive the 1st prize of 
 - **Create Crucible or Start Judging is missing.** Both only show when you are signed in. Start Judging is also hidden for muted accounts and for accounts that have not verified their email.
 - **"Judging needs a Creator Score of 500."** This heading appears where you would judge. Judging has a minimum creator score. Keep creating and engaging on Civitai and try again later.
 - **"Requirements to create a crucible."** This dialog appears when you can't create yet. Creating has a higher bar than judging. It lists each requirement with a check or an X, for example "Have a Creator Score of at least 5,000".
-- **My older image is greyed out.** Only media created after the Crucible started can be entered. Make a new one.
+- **My older image is grayed out.** Only media created after the Crucible started can be entered. Make a new one.
 - **"Entries are closed."** The Crucible stops taking entries shortly before its end so entries have time to be judged. Look for another Active Crucible.
 - **"You've submitted all your entries. Good luck!"** You used all your entries. A withdrawn entry frees a slot, but the next one is charged again.
-- **A card in My Images is greyed out with "Content level mismatch".** Your entry's rating is outside what the Crucible allows. Check the content level badges at the top of the Crucible's page.
-- **The submit button says "Insufficient Buzz".** Entry fees use Green Buzz on civitai.com or Yellow Buzz on civitai.red. Blue Buzz can't be used. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/).
+- **A card in My Images is grayed out with a red X badge.** Hover the badge. A "Content level" row such as "PG-13 content (requires PG)" means the rating is outside what the Crucible allows. The content level badges are at the top of the Crucible's page.
+- **A red warning triangle shows on the submit button ("Insufficient Buzz. Click to buy more").** Entry fees use Green Buzz on civitai.com or Yellow Buzz on civitai.red. Blue Buzz can't be used. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/).
 - **A Crucible won't open on civitai.com.** A Crucible that allows content above PG-13 does not open on civitai.com. Open it on civitai.red.
-- **"This crucible only accepts image (or video) entries."** Match your entry to the Crucible's content type.
+- **My entry is the wrong type.** Match it to the "Images only" or "Videos only" badge in the dialog header.
 - **My entry placed, but I did not get a prize.** Check that you claimed it at [civitai.com/prizes](https://civitai.com/prizes), and remember that each creator is paid for one entry only.
 
 ## I need more help

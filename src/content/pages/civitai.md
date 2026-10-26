@@ -142,11 +142,11 @@ Here we'll answer some common questions which often appear via Featurebase Bug r
 
 ![](/wp-content/uploads/2024/05/ComfyUI_temp_zbjfr_00014_-300x300.webp)
 
-## [Civitai’s Guide to the Cosmetic Shop](/civitais-guide-to-the-cosmetic-shop/ "Civitai’s Guide to the Cosmetic Shop")
+## [Civitai's Guide to the Creator Shop and Stickers](/civitais-guide-to-the-creator-shop-and-stickers/ "Civitai's Guide to the Creator Shop and Stickers")
 
-Civitai guide to the Civitai Cosmetic Shop
+How to buy and sell cosmetics, stickers and packs in the Civitai shops
 
-[Read More >](/civitais-guide-to-the-cosmetic-shop/)
+[Read More >](/civitais-guide-to-the-creator-shop-and-stickers/)
 
 ![](/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00023_-300x300.webp)
 

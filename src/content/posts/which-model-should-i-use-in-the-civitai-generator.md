@@ -28,7 +28,7 @@ seo:
 
 The generator offers dozens of models, and it adds more often. You do not need to know them all. Start with what you want to make, find it in the table below, and try the first pick. If it is not right, try the second.
 
-You switch models with the base model selector in the generator form. It shows the model you are using now, and selecting it opens a dialog titled **Select Base Model** with the list. Open the generator from the **Create** button. For the basics of writing a prompt and generating, see [Using Civitai: The On-Site Image Generator](/using-civitai-the-on-site-image-generator/).
+You switch models with the base model selector in the generator form. It shows the model you are using now, and selecting it opens the list of models. On a phone the list is a full-screen **Select Base Model** dialog. Use the search box to find a model by name. Open the generator from the **Create** button. For the basics of writing a prompt and generating, see [Using Civitai: The On-Site Image Generator](/using-civitai-the-on-site-image-generator/).
 
 :::note
 Prices in this guide are about what one default image or clip cost on October 26, 2026. They change, and your price can differ. **The cost button next to Generate is the source of truth.** For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
@@ -40,8 +40,8 @@ Prices in this guide are about what one default image or clip cost on October 26
 | --- | --- | --- | --- |
 | A photorealistic image | Flux.2 | Krea 2, Flux.1, a photoreal SDXL checkpoint | 3 to 40 Buzz |
 | Anime or illustration | Illustrious | Anima, NoobAI, Pony | 3 to 11 Buzz |
-| Readable text in the image | Z-Image Turbo | Qwen, GPT Image, Seedream | 4 to 135 Buzz |
-| To edit my own picture | See the [editing guide](/image-editing-models-on-civitai/) | | 13 to 135 Buzz |
+| Readable text in the image | Z-Image Turbo | Flux.2, Qwen, GPT Image, Seedream | 4 to 135 Buzz |
+| To edit my own picture | See the [editing guide](/image-editing-models-on-civitai/) | | 13 to 135 Buzz (8 for GPT Image at low quality) |
 | A video clip | LTX Video 2.5 (cheapest), Veo 3.1 (with sound) | Kling, Seedance, Wan | 40 to 1,500 Buzz |
 | Few steps, quick results | Z-Image Turbo | Flux.2 Klein 4B, Krea 2 Turbo | 4 to 12 Buzz |
 | The lowest cost | SDXL, Illustrious or Pony V7 | Z-Image Turbo, Flux.2 Klein 4B | 3 to 4 Buzz |
@@ -76,15 +76,15 @@ The base model selector filters LoRAs to the ones that match the model you picke
 
 ## Photorealistic images {#photoreal}
 
-- **Flux.2** (about 40 Buzz). Civitai's ecosystem page describes Flux.2 as sharper in prompt adherence, in-image text and photorealism than the original Flux.1. **Flux.1** (about 12) is the older, cheaper version.
+- **Flux.2** (Dev about 40 Buzz; Klein 4B, the small fast build, about 4). Civitai's ecosystem page describes Flux.2 as sharper in prompt adherence, in-image text and photorealism than the original Flux.1. **Flux.1** (about 12) is the older, cheaper version.
 - **Krea 2** (Turbo about 12). Civitai's ecosystem page describes it as built for sharp photorealism and dependable prompt adherence. Turbo is the cheap, few-step build.
-- **A photoreal SDXL checkpoint** (about 3). The SDXL family (SDXL, Pony, Illustrious, NoobAI) has the largest library of community checkpoints and LoRAs on Civitai, so you will find many photoreal styles there. Search the Models page for a checkpoint made for realism, then generate with it.
+- **A photoreal SDXL checkpoint** (about 3). The SDXL family (SDXL, Pony, Illustrious, NoobAI) has some of the largest libraries of community checkpoints and LoRAs on Civitai (Civitai's Illustrious page lists over 200,000 LoRAs), so you will find many photoreal styles there. Search the Models page for a checkpoint made for realism, then generate with it.
 
 Civitai describes both Flux.2 and Krea 2 as strong on prompt adherence, so start with one of them when you have a plain prompt. Pick an SDXL checkpoint when you want a specific look, or need to run a LoRA at the lowest cost.
 
 ## Anime and illustration {#anime}
 
-- **Illustrious** (about 3). Civitai's ecosystem page describes it as an SDXL-based model built for anime and illustration, with a large library of community checkpoints.
+- **Illustrious** (about 3). Civitai's ecosystem page describes it as an SDXL-based model built for anime and illustration, with a large library of LoRAs.
 - **Anima** (about 11). An open-weight anime and illustration model, described on Civitai as built for clean linework, expressive characters and vivid color from a prompt.
 - **NoobAI** (SDXL-based, so check the cost button). An Illustrious-based checkpoint family trained on a large booru dataset, with deep character knowledge and strong tag-based prompting.
 - **Pony** (SDXL-based, so check the cost button). Tag-based prompting with the `score_` system, aimed at characters and stylized art. **Pony V7** (about 3) is the newer model, built on the AuraFlow architecture instead of SDXL.
@@ -93,7 +93,7 @@ These families prompt differently. Illustrious, NoobAI and Pony respond to tag l
 
 ## Readable text inside the image {#text}
 
-- **Z-Image Turbo** (about 4). Civitai's ecosystem page lists legible in-image text, in Chinese and English, as a strength of the Z-Image family. It is the cheapest option here.
+- **Z-Image Turbo** (about 4). Civitai's ecosystem page lists legible in-image text, in Chinese and English, as a strength of the Z-Image family. It is the cheapest of the models Civitai lists as strong at in-image text, which is why it is the first pick.
 - **Qwen** (about 23). Listed on Civitai for unusually legible in-image text.
 - **GPT Image 2.5** (about 18 at medium, 69 at high). In our editing test every model spelled OPEN LATE correctly, GPT Image included. We did not test text in new images.
 - **Seedream** (about 52 for v5.0 Lite, 135 for Pro). Built for fine-grained typography and high resolution, per Civitai's page.
@@ -104,7 +104,7 @@ Put the exact words in quotation marks in your prompt, and keep them short. Shor
 
 Use an edit model when you have a picture and want to change one thing. The [Image Editing Models on Civitai](/image-editing-models-on-civitai/) guide compares eight of them on the same three edits, with prices. In short:
 
-- **Nano Banana** keeps a person or pet looking like themselves.
+- **Nano Banana**: Civitai describes it as built to keep a person's or pet's likeness across edits.
 - **Krea 3** kept the rest of the scene intact in our tests, as several other models did.
 - **Muse Image** (about 13) is the lowest fixed price. GPT Image 2.5 at low quality is about 8.
 - **Flux.3** takes up to 10 reference images.
@@ -115,7 +115,7 @@ Use an edit model when you have a picture and want to change one thing. The [Ima
 - **Veo 3.1** (about 670 Fast, 1,117 Standard, for 4 seconds). Google's model. Its headline feature is native audio: dialogue, sound effects and music generated with the picture.
 - **Seedance** (about 490 to 1,500, by version). ByteDance's model. It generates audio with the clip, including dialogue and lip sync.
 - **Happy Horse** (about 910). Also generates matching sound with the clip.
-- **Kling** (about 600). A high-end text-to-video and image-to-video model from Kuaishou.
+- **Kling** (V2.5 Turbo about 600; check the cost button for other versions). A high-end text-to-video and image-to-video model from Kuaishou.
 - **Wan** (about 101 for Wan 2.2, 650 for Wan 2.7 and 3.0). A family of video models from Alibaba that turn a prompt or still image into short, realistic clips.
 
 Video prices change with length, resolution and audio, so compare them with the cost button on the exact settings you want. The [video guide](/civitais-guide-to-video-in-the-civitai-generator/) covers the settings for each video model.
@@ -126,7 +126,7 @@ We have not timed these, so this is a guide to which models are built to need fe
 
 - **Z-Image Turbo** and **Flux.2 Klein 4B** (about 4 each). Turbo and distilled models need fewer steps to finish an image.
 - **Krea 2 Turbo** (about 12). Civitai describes it as an 8-step distilled build of Krea 2 Raw.
-- **SDXL Lightning and Turbo checkpoints.** Community checkpoints built for few steps. Check the cost button for the price.
+- **SDXL Lightning and Turbo checkpoints.** Community-made checkpoints built for few steps. Check the cost button for the price.
 - **LTX Video 2.5 distilled** (about 40). The cheaper of the two LTX builds, and the one tuned for fewer steps.
 
 ## The lowest cost {#cost}

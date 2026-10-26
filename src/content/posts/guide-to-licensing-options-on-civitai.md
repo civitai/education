@@ -37,7 +37,7 @@ Many other base models are used on Civitai today. Those have their own licenses,
 "Licensing" on Civitai can mean two things:
 
 - **Permissions** (this guide): what other people are allowed to do with your model, set when you upload it.
-- **Licensing fees**: a small amount of Buzz you earn each time someone generates with your model on Civitai.
+- **Licensing fees**: a per-generation fee, paid in Buzz, that you earn when someone generates with your model on Civitai.
 
 Fees, early access and paid access are covered in [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/).
 
@@ -63,7 +63,7 @@ Some options depend on others. Selecting **Sell this model** also selects, and l
 
 ## License display on the model page
 
-Icons on the model page show your choices, green for allowed and red for restricted. Hover over an icon to see what it means. The icons cover commercial use, generation services, whether credit is required, and merges.
+Icons on the model page show your choices, green for allowed and red for restricted. Hover over an icon to see what it means. The icons cover commercial use, generation services, whether credit is required, merges, merge sales, and whether merges can use different permissions.
 
 If your model uses SD 1.5 or SDXL 1.0 as its base, the model page shows an **Addendum** link beside the base model license. Click it to read the license and addendum generated for your model.
 

@@ -6,8 +6,7 @@ categories:
   - "civitai"
   - "guides"
 tags:
-  - "generator"
-  - "models"
+  - "generative-ai"
   - "buzz"
   - "guide"
 excerpt: "Which checkpoints you can generate with, what happens when a model is not loaded yet, what the Boost button buys, and what winning an auction does today."
@@ -24,7 +23,7 @@ seo:
 
 ## What this guide covers
 
-Civitai hosts hundreds of thousands of models, but the generator can only run a model that is **loaded** on its machines. A model that is not loaded has to be downloaded there first. This guide explains how that works now:
+Civitai hosts a very large catalog of models, but the generator can only run a model that is **loaded** on its machines. A model that is not loaded has to be downloaded there first. This guide explains how that works now:
 
 - which models you can pick ([coverage](#coverage))
 - what happens when you pick one that is not loaded ([loading](#loading))
@@ -32,7 +31,7 @@ Civitai hosts hundreds of thousands of models, but the generator can only run a 
 - what winning a Featured auction does ([auctions](#auctions))
 
 :::note
-This replaces the March 2025 "full checkpoint coverage" system. That version tied access to a weekly top-200 auction and a popularity gauge. Neither decides what you can generate with anymore.
+This replaces the March 2025 "full checkpoint coverage" system. That version tied access to a weekly top-200 auction and a popularity gauge. Now any covered checkpoint can be loaded on demand. Auctions still matter for free accounts in one way, explained in [Members and free accounts](#members).
 :::
 
 ## Coverage: which models you can generate with {#coverage}
@@ -41,12 +40,12 @@ A model is **covered** when the generator is able to run it. Coverage is about w
 
 | Resource | Covered when |
 | --- | --- |
-| Checkpoints made by Civitai or listed as a default for an ecosystem | Always |
-| Checkpoints served by an outside provider (most video and many image models) | Always. Nothing is downloaded. |
-| Community checkpoints | The model is published, its ecosystem is supported by the generator, and it has a scanned SafeTensor weight file |
-| LoRAs, embeddings, VAEs and similar | They match a supported ecosystem and file format |
+| The default checkpoint for each model family in the generator | Always |
+| Checkpoints served by an outside provider (most video and many image models) | The model is published. Nothing is downloaded. |
+| Community checkpoints | The model is published, it is built on a model family the generator supports, it has a scanned standard model file, its license allows on-site generation, and the creator has not turned generation off |
+| LoRAs, embeddings, VAEs and similar | They match a supported model family and file format, and the same license and creator settings allow generation |
 
-Models that have been taken down or archived are never covered. Some ecosystems are locked to their own listed checkpoints, so community checkpoints for those cannot be generated with at all.
+Models that have been taken down or archived are never covered. Some model families are locked to their own listed checkpoints. Community checkpoints for those can be generated with only if they won a Featured Checkpoints auction.
 
 If a resource is not covered, the generator refuses the job with this message: **"Some of your resources are not available for generation"**, followed by the resource name.
 
@@ -58,7 +57,7 @@ The generator tells you the state of each model in several places:
 
 - **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no mark. Turn on **Loaded only** in the picker filters to hide the rest.
 - **Model page.** A green dot on the version strip marks loaded versions.
-- **Create button.** The corner badge says whether pressing it starts now.
+- **Create button.** The corner badge on a model page says **Recently loaded** or **Not recently loaded**, which tells you whether pressing it is likely to start now.
 - **Added resources in the generator.** Each row shows one of these labels: **Loaded**, **No download needed** (outside provider), **Not loaded**, **Queued to download**, or **Downloading** with a percentage.
 
 :::note
@@ -74,14 +73,14 @@ Not everyone can start a download. This is the rule today:
 | Checkpoint | Free account | Paid member |
 | --- | --- | --- |
 | Already loaded | Yes | Yes |
-| Not loaded, and listed by Civitai or an auction winner | Yes | Yes |
+| Not loaded, and a model family default, a Featured Checkpoints auction winner, or one of the weekly top-earning checkpoints | Yes | Yes |
 | Not loaded, and an ordinary community checkpoint | **No**, until someone has loaded it | Yes |
 | LoRAs, embeddings and other non-checkpoint resources | Yes | Yes |
 
 A free account that tries to generate with a community checkpoint that is not loaded gets the "not available for generation" message above. The same checkpoint works as soon as it is loaded, whoever loaded it. Paying for a membership lifts the restriction. See [Civitai's Guide to Membership Tiers](/civitais-guide-to-membership-tiers/) for what each tier includes.
 
 :::caution
-The model page can still show a **Create** button on a community checkpoint that is not loaded. A free account only learns it is refused after pressing Generate. Check the green dot, or use **Loaded only**, to avoid this.
+Model cards in the Models feed can still show a **Create** button on a community checkpoint that is not loaded. A free account only learns it is refused after pressing Generate. Check the green dot, or use **Loaded only**, to avoid this.
 :::
 
 ## The three download lanes {#lanes}
@@ -106,16 +105,13 @@ A position inside a lane never moves backwards, but a faster lane can still go a
 - **Only when it helps.** The offer appears only when the boosted time is visibly shorter than the normal time. Times under about 2 minutes are shown as 2 minutes.
 - **No refund.** The boost fee is not refunded if you cancel the generation.
 - **Price changes.** If the price changes between when you see it and when you press the button, nothing is charged and you are asked to press Boost again at the new price.
-- **Payment.** Boost is paid from your Buzz balance. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/) for how the colors work.
+- **Payment.** Boost is paid in Buzz. For how Buzz colors work, see [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 
 ## Featured models and auctions {#auctions}
 
-Auctions decide which resources are **featured**. They no longer decide what you can generate with.
+Auctions decide which resources are **featured**. A member no longer needs an auction win to generate with a checkpoint. For a free account, winning the Featured Checkpoints auction still lets the checkpoint be loaded (see [Members and free accounts](#members)).
 
-Winning gives a resource:
-
-- **Visibility.** It appears in the **Featured** tab of the resource picker in the generator. Safe-for-work winners also have a chance to appear on the front page.
-- **Download priority.** A winning checkpoint is marked for priority when the generator has to download it.
+Winning gives a resource **visibility**. It appears in the **Featured** tab of the resource picker in the generator. Safe-for-work winners also have a chance to appear on the front page.
 
 There is a separate auction for **Featured Checkpoints** and one for each ecosystem's additional resources such as LoRAs. Each auction page shows its slots, the minimum bid and the time left.
 
@@ -124,11 +120,11 @@ There is a separate auction for **Featured Checkpoints** and one for each ecosys
 1. Open the **Auctions** link in the profile menu at the top right. You need to be signed in.
 2. Choose an auction.
 3. Pick the model with the model picker.
-4. Enter a Buzz amount in **Place Bid**, or use the quick buttons: **1st** (enough to take the top spot), **Last** (enough to take the final spot) and **+10,000**.
+4. Enter a Buzz amount in **Place Bid**, or use the quick buttons: **1st** (enough to take the top spot), **Last** (enough to take the final spot) and **+10k** (adds 10,000 Buzz).
 5. To bid again every period, turn on **Make this recurring until** and pick an end date.
 6. Press **Bid**.
 
-Adding a bid to a model you already bid on increases your total. Track and cancel bids under **My Bids**. A bid you delete before the auction ends is refunded. Bids on models that do not win are refunded when the auction closes. A winning bid is spent.
+Adding a bid to a model you already bid on increases your total. Track and cancel bids under **My Bids**. A bid you delete before the auction ends is refunded. Bids on models that do not win are refunded when the auction closes. So are bids on a model version that is not published by then. A winning bid is spent.
 
 ## Worked example {#worked-example}
 
@@ -137,9 +133,9 @@ You want to generate with a community checkpoint you found on the Models page.
 1. Open the model and check for the green dot on its version strip. There is none, so it is not loaded.
 2. Open the generator and add the checkpoint. The row says **Not loaded**. On a free account, pressing Generate now fails with "not available for generation". You need a membership, or you wait until someone else has loaded the model. The rest of this example is for a member.
 3. Before you press Generate, the alert at the bottom of the form says the download would take about 10 minutes, with a **Boost download** switch showing a price. You leave it off and press Generate.
-4. The pending image shows **Waiting on downloads** in the Standard lane (or Priority, for a member), with your position in line.
+4. The pending image shows **Waiting on downloads** in the Priority lane, with your position in line.
 5. After a few minutes you decide to speed things up. You press **Boost this download**. The panel shows the Express lane.
-6. When the download finishes, the generation runs. The next time anyone uses that checkpoint, it shows **Loaded** and starts right away.
+6. When the download finishes, the generation runs. While it stays loaded, the next person who uses that checkpoint sees **Loaded** and starts right away.
 
 ## Troubleshooting {#troubleshooting}
 

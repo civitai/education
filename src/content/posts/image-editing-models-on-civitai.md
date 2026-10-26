@@ -10,7 +10,7 @@ tags:
   - "gpt-image"
   - "krea"
   - "guide"
-excerpt: "The image editing models in the Civitai generator, including GPT Image 2.5 and Krea 3: what each is best at, what it costs in Buzz, how many reference images it takes, and the same three edits run on every model."
+excerpt: "The main image editing models in the Civitai generator, including GPT Image 2.5 and Krea 3: what each is best at, what it costs in Buzz, how many reference images it takes, and the same three edits run on every model."
 image: "/images/guides/image-editing-models/image-editing-cover.webp"
 seo:
   title: "Image Editing Models on Civitai - Civitai Education"
@@ -36,10 +36,10 @@ Three things differ from model to model, and they decide which one you reach for
 - **How many reference images it accepts.**
 - **What it costs in Buzz.**
 
-This guide covers each model, then shows the same three edits run on all of them.
+This guide covers the main edit models, then shows the same three edits run on all of them. The generator's model picker lists others too, and the list changes as models are added.
 
 :::note
-The generator has no mask or inpainting brush. To change one region, describe it in the prompt ("the sign on the left"). None of these edit models take a mask. The generator does have a **Sketch Edit** tool, on the reference image tile, for drawing on your image to point at what you mean. Its own notice says results vary by model and that Nano Banana works best with sketch annotations.
+The generator has no mask or inpainting brush. To change one region, describe it in the prompt ("the sign on the left"). None of these edit models take a mask, and the Image to Image workflow has no mask brush. The generator does have a **Sketch Edit** tool, on the reference image tile, for drawing on your image to point at what you mean. Its own notice says results vary by model and that Nano Banana works best with sketch annotations.
 :::
 
 ## The models at a glance
@@ -117,7 +117,7 @@ Muse Image is Meta's image model, hosted on Civitai. It has a single version wit
 - **Inputs:** 1 to 4 reference images.
 - **Best at:** the lowest price per edit.
 - **Cost:** about 13 Buzz, the lowest of the models here.
-- **In our test:** it followed all three single-image edits at the lowest price.
+- **In our test:** it followed all three edits at the lowest price.
 
 ## Flux.3
 

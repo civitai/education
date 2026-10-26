@@ -51,7 +51,7 @@ Open a comic to see its overview page: the description, the chapter list, and co
 2. Read. A control in the reader's header switches between **Page view** and **Scroll view**. Use whichever you like.
 3. To move to another chapter: in Scroll view use **Next Chapter** at the bottom. In Page view use the arrows at the edges of the page, the arrow keys, or the chapter dropdown in the header. Narrow screens, including phones, always use Scroll view. Page view is the default on a computer.
 
-The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers only) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a three-dot menu with Copy link, Download CBZ, Download PDF and Report. The download icon needs download access, which the creator's setting, owners and moderators have. The Page view and Scroll view switch is two icons with those tooltips, and it is not shown on phones. The comments button is a speech-bubble icon.
+The reader's header also has a button that shows or hides the comments. On a computer, **Copy link**, **Report comic** (signed-in readers other than the owner) and a download icon are icon buttons. The download icon appears when the creator allows downloads, and opens a "Download as" menu with PDF and CBZ. On a phone they sit in a three-dot menu with Copy link, Download CBZ, Download PDF and Report. The download icon needs download access, which the creator's setting, owners and moderators have. The Page view and Scroll view switch is two icons with those tooltips, and it is not shown on phones. The comments button is a speech-bubble icon.
 
 ### Follow, tip and comment {#follow-tip-comment}
 
@@ -131,7 +131,7 @@ A draft chapter needs at least one panel before it can be published. Until then,
 3. Optional: turn on **Enable Early Access** (below).
 4. Confirm with **Publish** or **Schedule**.
 
-A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm. If any reader has bought early access to the chapter, Civitai refuses with "This chapter cannot be unpublished because readers have purchased early access to it." A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
+A published chapter can be unpublished from the same button, which reads **Unpublish** (**Cancel Schedule** for a scheduled chapter) and asks you to confirm. The chapter goes back to draft and is no longer visible to readers. If any reader has bought early access to the chapter, Civitai refuses with "This chapter cannot be unpublished because readers have purchased early access to it." A scheduled chapter can be canceled. New chapters notify the people who follow your comic. After a non-scheduled publish, a "Chapter published!" message appears and the live chapter opens in a new tab, unless your browser blocks the popup. Panels you just generated may show the orange **Review** badge for a short while until their scan finishes.
 
 ### Early access for your chapters {#early-access-for-creators}
 
@@ -139,14 +139,14 @@ Early access lets you charge Buzz for a chapter for a limited time.
 
 - **Buzz Price:** 100 to 10,000 Buzz.
 - **Early Access Period:** how long the chapter stays locked. After it, the chapter is free.
-- **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. The publish dialog shows the maximum days for your score. If you are at your limit of chapters in early access, you see a message when you confirm.
+- **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. When your score limits the days, the publish dialog shows "Up to N days at your current score". If you are at your limit of chapters in early access, you see a message when you confirm.
 - After publishing, you can lower the price and the period (the period counts from the original publish date), switch early access off, or switch it on in **Chapter Settings**. You can't raise either. The gear icon in the chapter's status badge (**Edit Early Access**) shows while early access is active.
 
 Creator Score is a number Civitai calculates from your activity and how others engage with your work. It is shown on your account page.
 
 ### Content and moderation {#content-and-moderation}
 
-- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red". On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
+- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red". On civitai.red, a mature panel you generated is held until you press **Unlock**, which costs Yellow Buzz. Some are capped at a lower rating and can't be unlocked. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
 - A chapter can be hidden from readers while a panel waits for moderator review, or if it is flagged as a Terms of Service violation. The chapter list shows a **Review** or **TOS** badge, and the tooltip explains which. A chapter waiting for review publishes automatically when it clears.
 
 ## Worked example
@@ -170,7 +170,7 @@ Your project stays private until you publish a chapter. After that, readers can 
 - **My chapter is hidden from readers.** Check the **Review** or **TOS** badge on the chapter. Review clears on its own, while a TOS flag means you should remove the offending content or contact support.
 - **My upload was blocked as mature.** If the image is classified as mature and its generation data can't be verified, add the prompt, sampler, steps and other generation details to the image, then try again.
 - **Panel generation is queued or unavailable.** The dialog says whether your queue is full or generation is down. Wait and try again.
-- **A panel shows Failed.** When the generation itself fails, is canceled or expires, the card says "Buzz has been refunded". Press **Regenerate** on the card to try again. If the card instead says the image failed to download or upload, check your Buzz balance before retrying. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
+- **A panel shows Failed.** Press **Regenerate** on the card to try again. A failed card always shows "Buzz has been refunded", and that is reliable when the message says the generation failed, was canceled or expired. If the message says the images failed to download or the upload failed, check your Buzz balance before pressing Regenerate. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
 
 ## I need more help
 

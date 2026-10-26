@@ -137,7 +137,7 @@ A leaderboard can be turned off for a while if there is a problem with it. The p
 ## Questions {#questions}
 
 **Does being on a leaderboard raise my Creator Score?**
-This guide has no evidence that it does. The two systems are separate.
+Not that the app shows. Each leaderboard publishes its own scoring rule, and Creator Score is not part of any of them.
 
 **Why did my score change overnight?**
 The score updates once a day. Check whether anything of yours was removed, or whether people unfollowed you or took back reactions.

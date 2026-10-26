@@ -27,8 +27,8 @@ This guide covers how to start an article, what each field in the editor does, h
 
 You need to be signed in. A few things can stop you from writing an article:
 
-- **Account age.** An account must be at least 24 hours old before it can publish an article.
-- **Daily limit.** You can publish up to 3 articles a day. The limit rises with your Creator Score: 5 a day at 1,000, 10 a day at 5,000 and 20 a day at 10,000.
+- **New accounts.** An account created today cannot create articles yet. Try again tomorrow.
+- **Daily limit.** You can create up to 3 new articles a day. A new draft counts when you first save it. Publishing or editing an article you already saved does not count. The limit rises with your Creator Score: 5 a day at 1,000, 10 a day at 5,000 and 20 a day at 10,000.
 - **Muted accounts.** If your account is muted, the Write an Article option is not shown.
 
 ## Start an article {#start-an-article}
@@ -36,9 +36,9 @@ You need to be signed in. A few things can stop you from writing an article:
 There are two ways to begin:
 
 1. Open the **Create** menu in the top navigation and choose **Write an Article**.
-2. On the Articles page, press **Write an Article**. This button shows when the page has nothing to list, such as on an empty feed.
+2. On your own profile, open the Articles tab. If you have no published articles yet, a **Write an Article** button is shown there.
 
-Either one takes you to the editor at `civitai.com/articles/create`.
+Either one takes you to the editor at `civitai.com/articles/create`. The Create menu's extra options may not be reachable on a small screen, so on a phone use your profile. After you save or publish, the editor takes you to the article's page.
 
 ## The editor, field by field {#the-editor}
 
@@ -53,7 +53,7 @@ An article with no content cannot be saved.
 
 ### Cover Image {#cover-image}
 
-The cover image is required. The editor suggests a size of 850 by 400 pixels. The cover appears on the article's card in feeds and at the top of the article.
+The editor asks for a cover image and will not save without one. The suggested resolution is 850 x 400 pixels. The cover appears on the article's card in feeds and at the top of the article.
 
 ### Category and tags {#category-and-tags}
 
@@ -77,18 +77,18 @@ Attachments are extra files for readers, such as training data or files too larg
 
 ## Save, schedule or publish {#save-schedule-publish}
 
-The buttons at the top of the settings column change with the state of your article.
+The buttons at the top of the settings column (at the bottom on a phone) change with the state of your article.
 
 | Button | What it does |
 | --- | --- |
 | **Save Draft** | Saves your work without making it public. Use it as often as you like. |
 | **Publish** | Makes the article public, or starts publishing if images still need scanning. |
 | **Schedule** | Publishes the article for you at a time you pick. |
-| **Reschedule** and **Cancel schedule** | Change the time of a scheduled article, or return it to a plain draft. |
+| **Reschedule** and the **Cancel schedule** link | Change the time of a scheduled article, or return it to a plain draft. |
 | **Publish now** | Shown on a scheduled article. Publishes immediately and cancels the schedule. |
-| **Save** | Shown on a published article. Saves your edits to it. |
+| **Save** | Shown on a published article. Saves your edits to it. A published article has no Save Draft or Schedule button. |
 
-Until you publish, your article is a draft. Only you can see it. You can find your drafts on your own profile: open your articles page, and use the toggle to switch from published articles to drafts.
+Until you publish, your article is a draft. Only you can see it. You can find your drafts on your own profile. Open the Articles tab (`civitai.com/user/<your username>/articles`) and use the toggle to switch from **Published** to **Draft**. Articles you have unpublished are listed under Draft too.
 
 ### Scheduling {#scheduling}
 
@@ -105,9 +105,9 @@ An article that has already been published once cannot be scheduled.
 
 Images you embed in the article are scanned for content safety before the article goes public.
 
-- If your article has new images, pressing **Publish** shows a window that says how many images need scanning. Press **Continue**.
+- If your article has new images, pressing **Publish** shows a window that says how many images need scanning. Press **Continue**. Scheduling skips this window.
 - The article's status changes to **Processing**. Scanning can take some time. When it finishes, the article publishes automatically, and you get a notification.
-- If an image is blocked for a policy violation, or fails to scan, the **Publish** button says so: "Cannot publish: 1 image(s) blocked (policy violation)." Remove or replace those images, and try again.
+- If an image is blocked for a policy violation, or fails to scan, the **Publish** button is disabled. Hover over it to see the reason, for example "Cannot publish: 1 image(s) blocked (policy violation). Please remove or replace these images." A scan failure reads "1 image(s) failed to scan". Remove or replace those images, and try again.
 - Images that were already scanned in an earlier save are not scanned again.
 
 ## After you publish {#after-you-publish}
@@ -115,11 +115,24 @@ Images you embed in the article are scanned for content safety before the articl
 Open your article, and use the three dots menu at the top.
 
 - **Edit** opens the editor at `civitai.com/articles/<id>/edit`. Change what you need and press **Save**. If you add new images, they are scanned first.
-- **Unpublish** takes the article out of public view. You choose a reason from a list. You can publish it again later, and it keeps its original publish date.
+- **Unpublish** is on the article's own page. It takes the article out of public view right away, with no confirmation, and moves it to your drafts. Open it with **Edit** and press **Publish** to bring it back. It keeps its original publish date.
 - **Delete** removes the article. You are asked to confirm, because deleting cannot be reverted.
 - **Report article** is for other people's articles.
 
 An article that a moderator unpublished for breaking the Terms of Service cannot be republished. If you think that was a mistake, contact support.
+
+## A worked example {#worked-example}
+
+Say you want to publish a short guide on captioning images for a LoRA.
+
+1. Open the **Create** menu and choose **Write an Article**.
+2. Title: "How to caption a small LoRA dataset". It is well under the 100-character limit.
+3. Write the content. Use headings for each stage, and embed two example images.
+4. Cover Image: upload an image at about 850 x 400 pixels.
+5. Category: pick the one closest to a how-to guide. Tags: add a few that describe the topic, such as the model type you train.
+6. Maturity Level: leave it at the default if the article is safe for work. The final rating can still go up if your images or text call for it.
+7. Press **Save Draft** and read it through. When you are happy, press **Schedule** and choose a time tomorrow morning, or press **Publish** to go live now.
+8. Because the article has new images, a window explains they need scanning. Press **Continue**. The article moves to Processing, and publishes when the scan finishes. You get a notification.
 
 ## Tips for a good article {#tips}
 
@@ -133,11 +146,11 @@ An article that a moderator unpublished for breaking the Terms of Service cannot
 
 | What you see | Why, and what to do |
 | --- | --- |
-| "You need to wait 24 hours after creating your account to create articles." | Your account is under a day old. Try again tomorrow. |
-| The publish or save is refused as "doing that too much" | You reached your daily article limit. It rises with your Creator Score. |
-| The Publish button is disabled, with a message about blocked images | An embedded image was blocked or could not be scanned. Remove or replace it. |
+| "You need to wait 24 hours after creating your account to create articles." | Your account was created today. Try again tomorrow. |
+| "Failed to save article" with "You're doing that too much..." on the first save of a new article | You reached your daily limit for new articles. It rises with your Creator Score. |
+| The Publish button is disabled | Hover over it. An embedded image may have been blocked or could not be scanned. Remove or replace it. |
 | The article is stuck on Processing | Scanning is still running. It publishes on its own when it ends. |
-| You cannot find the Schedule button | Scheduling is only for articles that have never been published. |
+| You cannot find the Schedule button | Scheduling is only for articles that have never been published. A published article shows only Save. |
 | You cannot republish an unpublished article | An article unpublished for a Terms of Service violation cannot be changed. Contact support. |
 
 ## I need more help {#help}

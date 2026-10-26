@@ -129,7 +129,7 @@ The Data step states which one it is using (“Auto-labeled as captions · free�
 
 ### Auto-label {#auto-label}
 
-Auto-labeling is free. Tags come from a tagging model and captions come from an image captioner. It has two modes:
+Auto-labeling is free. Tags come from a tagging model and captions come from an image captioner. Each account can auto-label up to 1,200 files a day; past that, the Studio says you’ve reached today’s limit, and it resets at midnight UTC. It has two modes:
 
 - **Automatic** labels new uploads as they arrive.
 - **Manual** labels only when you ask. A button labeled **Auto-label N** (N is how many files are unlabeled) appears above the file grid, and clicking it labels them. Manual helps when you want to write labels yourself.

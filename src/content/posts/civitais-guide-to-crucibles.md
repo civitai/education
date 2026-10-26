@@ -84,7 +84,7 @@ You can enter any Crucible that is Active, has not closed its entries, and is no
 3. Check the button at the bottom. If the entry costs Buzz, the button shows the amount and the line under it reads, for example, "First entry free, then 100 Buzz per entry".
 4. Choose the **Submit N Entry** (or **Entries**) button. If there is a fee, the Buzz amount is on the button. The fee is charged and your entry appears in the Crucible.
 
-**Which Buzz pays.** You pay in Green Buzz on civitai.com and Yellow Buzz on civitai.red. Blue Buzz can't pay an entry fee. If your balance is short, a red warning triangle appears beside the Buzz amount on the submit button. Hover it to see "Insufficient Buzz. Click to buy more." Choosing the button then opens the purchase window.
+**Which Buzz pays.** You pay in Green Buzz on civitai.com and Yellow Buzz on civitai.red. Blue Buzz can't pay an entry fee. If your balance is short, a red warning triangle appears beside the Buzz amount on the submit button. Hover it to see the tooltip "Insufficient Buzz. Click to buy more". Choosing the button then opens the purchase window.
 
 **Rules your entry has to meet.** The entry must be your own, it must be the right type (image or video), its content rating must be within the Crucible's allowed levels, and it can't be an image already submitted to that Crucible. If the Crucible requires models or base models, the entry's generation data has to match. It must have been created after the Crucible started, so older images and videos can't be entered. Entries that fail a rule are grayed out in My Images. Hover the red X badge in the card's corner and an "Invalid Entry" card lists each check. The image also has to finish Civitai's safety check first. A new upload shows a yellow badge until then, and its hover card says "Selectable once the content scan finishes". Wait a moment and it unlocks.
 
@@ -96,7 +96,7 @@ You can enter any Crucible that is Active, has not closed its entries, and is no
 
 ### How placement works
 
-You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. An entry needs up to about 75% of the average entry's votes to place. A late entry's bar is lower, scaled to the time it was live, but never below 25 votes. The Rules panel shows the 75% figure, and the late-entry warning shows the number for a new entry. After the timer runs out, a background job finalizes the Crucible: entries are ranked and prizes are set. Until then the badge reads "Ended".
+You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. An entry needs up to about 75% of the average entry's votes to place. A late entry's bar is lower, scaled to the time it was live, but never below 25 votes (or the full 75% bar, if that is lower). The Rules panel shows the 75% figure, and the late-entry warning shows the number for a new entry. After the timer runs out, a background job finalizes the Crucible: entries are ranked and prizes are set. Until then the badge reads "Ended".
 
 ## Judge Crucibles {#judge-crucibles}
 
@@ -104,7 +104,7 @@ Judging is how winners are chosen, and anyone who qualifies can do it.
 
 **To qualify**, you need a creator score of at least 500. Creator score is a number Civitai calculates from your activity and how others engage with your work. If you are below the minimum, the judging page says so.
 
-1. On [civitai.com/crucibles](https://civitai.com/crucibles), choose **Start Judging**. This takes you to a Crucible that needs votes. You can also open an Active Crucible and start judging from its page.
+1. On [civitai.com/crucibles](https://civitai.com/crucibles), choose **Start Judging**. This takes you to a Crucible that needs votes. You can also open an Active Crucible and choose **Start Judging Now** on its page.
 2. You see two entries side by side. Pick the one you think is better by clicking it, or press **1** for the left or **2** for the right (the arrow keys work too).
 3. Another pair loads. Keep going for as long as you like.
 
@@ -139,7 +139,9 @@ Each creator can win one prize. If one person's entries take 1st and 2nd, they g
 When a Crucible ends and you won, you get a notification and a "You have a prize to claim!" banner on the Crucible's page.
 
 1. Choose **Claim prize**, or open **Prizes** in your account menu ([civitai.com/prizes](https://civitai.com/prizes)).
-2. Claim it. On civitai.com the prize is paid in Green Buzz. On civitai.red you choose between Green and Yellow Buzz.
+2. On the prize page, choose **Claim prize** again. On civitai.com the prize is paid in Green Buzz. On civitai.red a "Choose which Buzz to receive" selector offers Green Buzz and Yellow Buzz.
+
+Prize amounts on a Crucible's page are drawn with the Yellow Buzz icon on both sites. On civitai.com the payout still arrives as Green Buzz.
 
 If you do not claim a prize within 30 days, it is claimed for you and paid in Green Buzz.
 
@@ -186,7 +188,7 @@ The creator has four steps: **Basic Info**, **Entry Rules**, **Prizes** and **Re
 - **Seed the Prize Pool**: add your own Buzz on top of the entry fees, up to 10,000,000 and no more than your balance.
 - The prize split, shown as a chart. The default is 50/30/20. To change it, choose **Customize Distribution**, which costs 500 Buzz.
 
-**Review** shows everything you set and the estimated schedule. A **Cost Breakdown** panel beside every step lists Duration, Prize Customization, Resource Requirements, Seeded Prize Pool and the Total Cost. On the Review step, choose **Create Crucible** to finish.
+**Review** shows everything you set and the estimated schedule. A **Cost Breakdown** panel beside every step lists Duration, Prize Customization, Entry Limit, Resource Requirements, Seeded Prize Pool and the Total Cost. On the Review step, choose **Create Crucible** to finish.
 
 ### What it costs {#what-it-costs}
 
@@ -228,7 +230,7 @@ Now suppose one entrant has the two best entries. They receive the 1st prize of 
 
 ## Troubleshooting
 
-- **Create Crucible or Start Judging is missing.** Both only show when you are signed in. Start Judging is also hidden for muted accounts and for accounts that have not verified their email.
+- **Create Crucible or Start Judging is missing.** Both only show when you are signed in. Start Judging is also hidden for muted accounts and for accounts that have not verified their email. A muted account still sees Create Crucible, but the page opens as Not Found.
 - **"Judging needs a Creator Score of 500."** This heading appears where you would judge. Judging has a minimum creator score. Keep creating and engaging on Civitai and try again later.
 - **"Requirements to create a crucible."** This dialog appears when you can't create yet. Creating has a higher bar than judging. It lists each requirement with a check or an X, for example "Have a Creator Score of at least 5,000".
 - **My older image is grayed out.** Only media created after the Crucible started can be entered. Make a new one.

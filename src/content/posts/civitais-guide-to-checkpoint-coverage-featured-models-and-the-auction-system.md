@@ -17,6 +17,9 @@ seo:
   description: "Civitai guide to Checkpoint Coverage and Featured Models! Find out what we're doing to enable all Checkpoints for use in the Generator!"
   ogImage: "/wp-content/uploads/2025/03/coverage_anim.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-checkpoint-coverage-featured-models-and-the-auction-system/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "model-loading-coverage-boost-and-featured-models"
 ---
 
 | **Last Updated** | **Changes** |

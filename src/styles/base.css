@@ -587,6 +587,41 @@ iframe {
   grid-column: main;
   min-width: 0;
 }
+/* Deprecated posts (DeprecatedNotice.astro): a warning-tinted note above the hero, in the reading column. */
+.article-head .deprecated {
+  grid-column: main;
+  margin-top: var(--sp-6);
+}
+.deprecated {
+  display: flex;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  border: 1px solid color-mix(in srgb, var(--c-warn) 40%, transparent);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--c-warn) 10%, var(--bg));
+  color: var(--text);
+  line-height: 1.5;
+}
+.deprecated + .hero {
+  padding-top: var(--sp-5);
+}
+.deprecated-icon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--c-warn);
+}
+.deprecated p {
+  margin: 0;
+}
+.deprecated-title {
+  color: color-mix(in srgb, var(--c-warn) 70%, var(--heading));
+  font-weight: 700;
+}
+.deprecated-text a {
+  color: var(--link);
+  font-weight: 600;
+  text-decoration: underline;
+}
 .article-main {
   grid-column: main;
   grid-row: 1;
@@ -1666,6 +1701,14 @@ iframe {
   color: var(--text);
   font-size: 1.125rem;
   line-height: 1.55;
+}
+.archive-empty {
+  margin: 0 0 var(--sp-7);
+  color: var(--text);
+}
+.archive-empty a {
+  color: var(--link);
+  text-decoration: underline;
 }
 .archive-count {
   display: flex;

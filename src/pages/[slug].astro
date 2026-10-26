@@ -9,7 +9,8 @@ import TableOfContents from '../components/TableOfContents.astro';
 import MobileContents from '../components/MobileContents.astro';
 import FollowAlong from '../components/FollowAlong.astro';
 import UpNext from '../components/UpNext.astro';
-import { getSlugEntries, termName } from '../lib/content';
+import DeprecatedNotice from '../components/DeprecatedNotice.astro';
+import { getPosts, getSlugEntries, termName } from '../lib/content';
 import { TOC_MIN, entryDeck, primaryCategory, readingMinutes, tocItems } from '../lib/nav';
 import taxonomies from '../data/taxonomies.json';
 
@@ -29,6 +30,9 @@ const deck = post ? entryDeck(post.data.excerpt, entry.body) : undefined;
 // Pages (about, contact) are a title and a column; only posts get contents, the aside and up next.
 const toc = post ? tocItems(headings) : [];
 const hasToc = toc.length >= TOC_MIN;
+// A deprecated post keeps its page but is left out of search: no data-pagefind-body, no index entry.
+const deprecated = post?.data.deprecated;
+const replacement = deprecated?.replacedBy ? (await getPosts()).find((p) => p.id === deprecated.replacedBy) : undefined;
 ---
 
 <BaseLayout
@@ -40,9 +44,10 @@ const hasToc = toc.length >= TOC_MIN;
   published={post ? post.data.date : undefined}
   modified={post ? modified : undefined}
 >
-  <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body>
+  <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body={deprecated ? undefined : ''}>
     {hasToc && <MobileContents items={toc} />}
     <div class="article-shell article-head">
+      {deprecated && <DeprecatedNotice deprecated={deprecated} replacement={replacement} />}
       <ArticleHero
         title={data.title}
         deck={deck}

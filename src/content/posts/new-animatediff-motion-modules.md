@@ -18,6 +18,9 @@ seo:
   description: "We've added the ability to upload, and filter for, AnimateDiff Motion models, on Civitai.com! Check them out now!"
   ogImage: "/wp-content/uploads/2023/09/00030-3069168298.webp"
   canonical: "https://education.civitai.com/new-animatediff-motion-modules/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "beginners-guide-to-animatediff"
 ---
 
 We’ve added the ability to upload, and filter for [AnimateDiff](https://github.com/guoyww/AnimateDiff/) Motion models, on [Civitai.com](https://www.civitai.com)! AnimateDiff is an extension which can inject a few frames of motion into generated images, and can produce some great results! Community trained models are starting to appear, and we’ve uploaded a [few of the best](https://civitai.com/models/144354/temporaldiff-motion-module)!

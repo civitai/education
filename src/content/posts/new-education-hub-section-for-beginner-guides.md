@@ -18,6 +18,8 @@ seo:
   description: "New Education Hub section for Beginner's Guides now available! Start your journey into Generative AI art here!"
   ogImage: "/wp-content/uploads/2024/03/Beginner.webp"
   canonical: "http://education.civitai.com/new-education-hub-section-for-beginner-guides/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 We’ve updated the Education Hub to make it easier to find content aimed at absolute beginners – newcomers to the scene who want to make their own AI art, but have no clue how to get started!

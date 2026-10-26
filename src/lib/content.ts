@@ -12,14 +12,32 @@ const RESERVED = new Set(['category', 'tag', 'author', 'page', 'feed', 'search',
 
 let postsCache: Post[] | undefined;
 
-/** Published posts, newest first. */
+/**
+ * Published posts, newest first, deprecated ones included: everything that has a URL. Routes and
+ * sitemaps use this; anything that lists posts for readers uses getListedPosts.
+ */
 export async function getPosts(): Promise<Post[]> {
   if (!postsCache) {
     const posts = await getCollection('posts', (p) => !p.data.draft);
     posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+    const slugs = new Set(posts.map((p) => p.id));
+    for (const p of posts) {
+      const to = p.data.deprecated?.replacedBy;
+      if (to !== undefined && (to === p.id || !slugs.has(to))) throw new Error(`${p.id}: deprecated.replacedBy "${to}" is not another post's slug`);
+    }
     postsCache = posts;
   }
   return postsCache;
+}
+
+export const isListed = (p: Post) => !p.data.deprecated;
+
+/**
+ * Posts readers are offered: the home page, archives, feeds, search and up next. Deprecated posts
+ * keep their page and sitemap entry but are left out of these.
+ */
+export async function getListedPosts(): Promise<Post[]> {
+  return (await getPosts()).filter(isListed);
 }
 
 /** Pages rendered at their own path (not the front page or the posts page, which are generated). */
@@ -49,9 +67,10 @@ export async function getSlugEntries(): Promise<Array<{ slug: string; post?: Pos
   return [...out.values()];
 }
 
+// Every term on any post has an archive (so its URL keeps working); `count` is its listed posts only.
 function terms(kind: 'categories' | 'tags', posts: Post[]): Term[] {
   const counts = new Map<string, number>();
-  for (const p of posts) for (const s of p.data[kind]) counts.set(s, (counts.get(s) || 0) + 1);
+  for (const p of posts) for (const s of p.data[kind]) counts.set(s, (counts.get(s) || 0) + (isListed(p) ? 1 : 0));
   const known = new Map((taxonomies[kind] as Array<{ slug: string; name: string; description?: string }>).map((t) => [t.slug, t]));
   return [...counts.entries()]
     .map(([slug, count]) => ({ slug, count, name: known.get(slug)?.name || slug, description: known.get(slug)?.description || undefined }))
@@ -70,7 +89,7 @@ export async function getTags(): Promise<Term[]> {
 export async function getAuthors(): Promise<Term[]> {
   const posts = await getPosts();
   const counts = new Map<string, number>();
-  for (const p of posts) counts.set(p.data.author, (counts.get(p.data.author) || 0) + 1);
+  for (const p of posts) counts.set(p.data.author, (counts.get(p.data.author) || 0) + (isListed(p) ? 1 : 0));
   const known = new Map(taxonomies.authors.map((a) => [a.slug, a]));
   return [...counts.entries()].map(([slug, count]) => ({ slug, count, name: known.get(slug)?.name || slug, description: known.get(slug)?.description || undefined }));
 }
@@ -89,6 +108,17 @@ export function paginate<T>(items: T[], page: number): T[] {
 /** getStaticPaths entries for /…/page/N/ (N >= 2; page 1 is the archive root). */
 export function extraPages(total: number): number[] {
   return Array.from({ length: pageCount(total) - 1 }, (_, i) => i + 2);
+}
+
+/**
+ * An archive of `posts` (deprecated included): the listed posts it shows, and its /page/N/ numbers.
+ * The page numbers follow every post, so a page that deprecations emptied still exists (old links
+ * keep working); `last` is the final page with listings, and the archive pages send later ones to
+ * their first page.
+ */
+export function archive(posts: Post[]): { posts: Post[]; extra: number[]; last: number } {
+  const listed = posts.filter(isListed);
+  return { posts: listed, extra: extraPages(posts.length), last: pageCount(listed.length) };
 }
 
 export const postPath = (p: Post) => `/${p.id}/`;

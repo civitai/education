@@ -1,5 +1,5 @@
 import type { MarkdownHeading } from 'astro';
-import { getCategories, getPosts, type Post, type Term } from './content';
+import { getCategories, getListedPosts, type Post, type Term } from './content';
 
 /** Front-page topic order. */
 const CATEGORY_ORDER = ['beginner-guides', 'quickstart-guides', 'guides', 'training', 'prompting', 'video', 'news'];
@@ -38,7 +38,7 @@ export function activeChip(path: string): string | undefined {
  * rest alphabetically, so a phone reaches every archive, not only the header chips.
  */
 export async function getMenuTopics(): Promise<{ main: MenuTopic[]; more: MenuTopic[] }> {
-  const categories = (await getCategories()).filter((t) => t.slug !== 'uncategorized');
+  const categories = (await getCategories()).filter((t) => t.slug !== 'uncategorized' && t.count > 0);
   const href = (t: Term) => `/category/${t.slug}/`;
   const main = CHIPS.flatMap((c) => {
     const term = categories.find((t) => c.href === href(t));
@@ -54,7 +54,7 @@ export type MenuTopic = Term & { href: string };
 
 /** The front page's lead story: the newest post (sticky only reorders the posts page). */
 export async function getLeadPost(): Promise<Post | undefined> {
-  return (await getPosts())[0];
+  return (await getListedPosts())[0];
 }
 
 /**
@@ -129,8 +129,8 @@ export function tocItems(headings: MarkdownHeading[]): TocItem[] {
     });
 }
 
-/** The newest posts in a category other than `post`, and how many posts the category has. */
+/** The newest listed posts in a category other than `post`, and how many listed posts the category has. */
 export async function getUpNext(post: Post, category: string, limit = 3): Promise<{ posts: Post[]; total: number }> {
-  const inCategory = (await getPosts()).filter((p) => p.data.categories.includes(category));
+  const inCategory = (await getListedPosts()).filter((p) => p.data.categories.includes(category));
   return { posts: inCategory.filter((p) => p.id !== post.id).slice(0, limit), total: inCategory.length };
 }

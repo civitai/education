@@ -17,6 +17,8 @@ seo:
   description: "Now’s your chance to conjure up some Halloween sorcery and show off your LoRA training and generation talents in our Great Halloween Contest!"
   ogImage: "/wp-content/uploads/2024/10/MarkuryFLUX_03788_.png"
   canonical: "https://education.civitai.com/the-great-halloween-contest-running-now/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 ![](/wp-content/uploads/2024/10/halloweenarticle.webp)

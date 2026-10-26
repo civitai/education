@@ -17,6 +17,8 @@ seo:
   description: "Sale Extended! Train a Flux LoRA in under 5 minutes with our new Rapid Training option in the Civitai LoRA Trainer!"
   ogImage: "/wp-content/uploads/2024/09/ComfyUI_01829_.png"
   canonical: "http://education.civitai.com/rapid-flux-training-sale-extended/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 _We had such a great reception to our Flux Rapid Training option we’ve extended the sale – now at 40% reduced Buzz cost for a further week!_

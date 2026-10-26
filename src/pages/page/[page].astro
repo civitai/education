@@ -1,15 +1,16 @@
 ---
-// /page/N/: older posts on the front page.
+// /page/N/: older posts on the front page. A page past the listed posts (see archive()) redirects home.
 import Archive from '../../components/Archive.astro';
 import { SITE } from '../../lib/site';
-import { extraPages, getPosts } from '../../lib/content';
+import { archive, getPosts } from '../../lib/content';
 
 export async function getStaticPaths() {
-  const posts = await getPosts();
-  return extraPages(posts.length).map((n) => ({ params: { page: String(n) }, props: { page: n, posts } }));
+  const { posts, extra, last } = archive(await getPosts());
+  return extra.map((n) => ({ params: { page: String(n) }, props: { page: n, posts, last } }));
 }
 
-const { page, posts } = Astro.props;
+const { page, posts, last } = Astro.props;
+if (page > last) return Astro.redirect('/');
 ---
 
 <Archive title={SITE.title} heading="Every guide" base="/" page={page} posts={posts} feed="/feed/" />

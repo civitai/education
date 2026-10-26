@@ -18,6 +18,9 @@ seo:
   description: "Part one of our two-part ControlNet guide is live! We're touching on what ControlNet actually IS, options, and settings!"
   ogImage: "/wp-content/uploads/2023/09/download-4.webp"
   canonical: "https://education.civitai.com/controlnet-basics-guide/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitai-guide-to-controlnet"
 ---
 
 **Part one** of our two-part [ControlNet guide is live](//civitai-guide-to-controlnet/)! We’re touching on what ControlNet actually _**IS**_, how we install it, where we get the models which power it, and explore some of the Preprocessors, options, and settings!

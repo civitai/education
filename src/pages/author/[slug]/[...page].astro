@@ -1,21 +1,22 @@
 ---
-// /author/<slug>/ and /author/<slug>/page/N/.
+// /author/<slug>/ and /author/<slug>/page/N/. A page past the listed posts (see archive()) redirects to the first.
 import Archive from '../../../components/Archive.astro';
-import { extraPages, getAuthors, getPosts } from '../../../lib/content';
+import { archive, getAuthors, getPosts } from '../../../lib/content';
 
 export async function getStaticPaths() {
   const all = await getPosts();
   return (await getAuthors()).flatMap((term) => {
-    const posts = all.filter((p) => p.data.author === term.slug);
+    const { posts, extra, last } = archive(all.filter((p) => p.data.author === term.slug));
     return [
-      { params: { slug: term.slug, page: undefined }, props: { term, posts, page: 1 } },
-      ...extraPages(posts.length).map((n) => ({ params: { slug: term.slug, page: `page/${n}` }, props: { term, posts, page: n } })),
+      { params: { slug: term.slug, page: undefined }, props: { term, posts, page: 1, last } },
+      ...extra.map((n) => ({ params: { slug: term.slug, page: `page/${n}` }, props: { term, posts, page: n, last } })),
     ];
   });
 }
 
-const { term, posts, page } = Astro.props;
+const { term, posts, page, last } = Astro.props;
 const base = `/author/${term.slug}/`;
+if (page > last) return Astro.redirect(base);
 ---
 
 <Archive title={term.name} heading={term.name} kind="Author" description={term.description} base={base} page={page} posts={posts} feed={`${base}feed/`} />

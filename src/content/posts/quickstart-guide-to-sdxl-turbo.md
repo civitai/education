@@ -20,6 +20,8 @@ seo:
   description: "SDXL Turbo is a newly released (11/28/23) \"distilled\" version of SDXL 1.0, trained for, per Stability AI, \"real-time synthesis\"."
   ogImage: "/wp-content/uploads/2023/11/sdxl_turbo_gif.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-sdxl-turbo/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

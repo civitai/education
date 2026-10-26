@@ -17,6 +17,9 @@ seo:
   description: "Announcing the launch of Civitai's Community Development Team aimed at bringing together our talented community and our own developers!"
   ogImage: "/wp-content/uploads/2024/10/UncleSamSquare.webp"
   canonical: "https://education.civitai.com/calling-all-developers-civbot-wants-you/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-local-civitai-development"
 ---
 
 We are thrilled to announce the launch of Civitai’s new **Community Development Team**, aimed at bringing together our talented community and our internal Civitai developers. This initiative seeks to actively involve the community in building out features, fixing issues, and helping shape the future of the platform.

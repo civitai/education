@@ -15,6 +15,8 @@ seo:
   description: "We've expanded our resources and optimized our systems, and are now supporting all Checkpoints for image generation!"
   ogImage: "/wp-content/uploads/2025/03/coverage_anim.webp"
   canonical: "https://education.civitai.com/huge-milestone-full-checkpoint-coverage/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 We’ve expanded our resources, optimized our systems, and are now supporting _all_ _Checkpoints for image generation_. This is a huge milestone for us, and we’re excited to finally make it a reality!

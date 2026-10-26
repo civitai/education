@@ -18,6 +18,8 @@ seo:
   description: "We’re excited to share that the Education Hub has been successfully moved to a new server! Stay tuned for updates!"
   ogImage: "/wp-content/uploads/2025/03/servers_anim.webp"
   canonical: "https://education.civitai.com/new-server/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 We’re excited to share that the Education Hub has been successfully moved to a new server! While this transition allows for better performance and future scalability, you may notice a _few_ broken images or links as we review and finalize everything.

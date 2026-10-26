@@ -18,6 +18,8 @@ seo:
   description: "Quickstart guide to Stable Video Diffusion (SVD) in ComfyUI. Turn your still images into moving animations easily with Stable Video Diffusion"
   ogImage: "/wp-content/uploads/2023/11/ComfyUI_00507_.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-stable-video-diffusion/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | **Last Updated** | **Changes** |

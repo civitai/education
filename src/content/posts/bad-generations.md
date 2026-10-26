@@ -15,6 +15,9 @@ seo:
   description: "We've updated our Worker code and upgraded ComfyUI and CUDA, both of which impact image generation. Find out more!"
   ogImage: "/wp-content/uploads/2025/03/ComfyUI_00104_.png"
   canonical: "https://education.civitai.com/bad-generations/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-prompt-crafting-guide-part-1-basics"
 ---
 
 | **Last Updated** | **Changes** |

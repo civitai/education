@@ -18,6 +18,8 @@ seo:
   title: "Hunyuan & Wan2.1 Generation! - Civitai Education"
   ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
   canonical: "https://education.civitai.com/hunyuan-wan2-1-generation/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 We’ve just launched **Hunyuan** and **Wan 2.1** for on-site video generation – both with **LoRA support** for more customizable results. Try them out and bring your prompts to life in a whole new way!

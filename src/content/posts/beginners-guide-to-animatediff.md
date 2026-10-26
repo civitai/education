@@ -17,6 +17,9 @@ seo:
   description: "Explore the fundamentals of AnimateDiff with our Beginner's Guide and learn how to add captivating motion to Stable Diffusion generations."
   ogImage: "/wp-content/uploads/2023/09/00047-1828030299.webp"
   canonical: "https://education.civitai.com/beginners-guide-to-animatediff/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "civitais-guide-to-video-in-the-civitai-generator"
 ---
 
 | **Last Updated** | **Changes** |

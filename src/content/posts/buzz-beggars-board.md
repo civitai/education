@@ -18,6 +18,8 @@ seo:
   description: "Short on Buzz? Consider posting to the Buzz Beggars' Board to earn some from some wealthy Buzz Benefactors!"
   ogImage: "/wp-content/uploads/2024/08/1YW7GKEW77K7019MXP7Z1H33S0.webp"
   canonical: "https://education.civitai.com/buzz-beggars-board/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 Short on Buzz? Consider posting to the new [Buzz Beggars’ bo](https://civitai.com/collections/3870938)[ard](https://civitai.com/collections/3870938)!

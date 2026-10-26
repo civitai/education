@@ -17,6 +17,8 @@ seo:
   description: "Introducing EduBot, your go-to resource for all things Generative AI! Built to be the ultimate educational resource!"
   ogImage: "/wp-content/uploads/2024/08/welcome_edubot-1.webp"
   canonical: "http://education.civitai.com/introducing-edubot/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 Introducing **EduBot**, your go-to resource for all things Generative AI! Built to be the ultimate educational resource, EduBot is trained on the entire Education Hub, the Civitai Wiki, and a number of advanced Generative AI learning resources.

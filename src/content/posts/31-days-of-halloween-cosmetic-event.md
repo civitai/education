@@ -18,6 +18,8 @@ seo:
   description: "Each day leading up to Halloween, we’re unveiling brand-new, limited-edition cosmetics that’ll send shivers down your spine."
   ogImage: "/wp-content/uploads/2024/10/halloween_1.webp"
   canonical: "https://education.civitai.com/31-days-of-halloween-cosmetic-event/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 Celebrate the spookiest month of the year with us! Each day, we’ll unveil a new set of Halloween-themed cosmetics. But hurry – each set is available only on the day of its release or until supplies vanish!

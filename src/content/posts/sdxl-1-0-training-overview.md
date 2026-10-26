@@ -18,6 +18,8 @@ seo:
   description: "Learn the essentials of training SDXL 1.0 models and discover tips for enhanced image quality and fidelity in generative AI."
   ogImage: "/wp-content/uploads/2023/07/Splash_final_crop-1024x576.webp"
   canonical: "https://education.civitai.com/sdxl-1-0-training-overview/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 | Last Update | Version | Changes |

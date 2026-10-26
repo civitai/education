@@ -17,6 +17,8 @@ seo:
   description: "We're excited to announce the launch of our new Changelog, where we'll keep you informed about all the major changes made to Civitai.com!"
   ogImage: "/wp-content/uploads/2024/08/changelog_image-e1724772939812.webp"
   canonical: "http://education.civitai.com/changelog/"
+deprecated:
+  date: "2026-10-26"
 ---
 
 We’re excited to announce the launch of our new Changelog, where we’ll keep you informed about all the major additions, fixes, and changes made to [Civitai.com](https://www.civitai.com)!

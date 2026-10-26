@@ -18,6 +18,9 @@ seo:
   description: "Civitai's Guide to getting started with Stability AI's new SD 3.5 suite of models; Stable Diffusion Large, Large Turbo, and Medium."
   ogImage: "/wp-content/uploads/2024/10/sd35_square.webp"
   canonical: "https://education.civitai.com/getting-started-with-stable-diffusion-3-5/"
+deprecated:
+  date: "2026-10-26"
+  replacedBy: "quickstart-guide-to-flux-1"
 ---
 
 | **Last Updated** | **Changes** |

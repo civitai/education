@@ -12,7 +12,9 @@
 //   public/_redirects             Cloudflare Pages redirects (empty archives, legacy feeds, ...)
 //
 // Re-runnable: files it wrote before that no longer exist in WordPress are removed. Files without a
-// `wpId` in their front matter (hand-written posts) are never touched.
+// `wpId` in their front matter (hand-written posts) are never touched. Editorial decisions made here
+// survive a re-export: RETIRED posts are skipped and redirected, and a post's `deprecated` block is
+// carried over from its existing file.
 //
 // Media is NOT downloaded: every image, video and file URL is kept exactly as WordPress serves it,
 // so a later step can rewrite them in one pass.
@@ -36,6 +38,20 @@ const DATA_DIR = path.join(ROOT, 'src/data');
 
 // Test page, not content.
 const DROP_PAGES = new Set(['civchan-test-page']);
+// Posts taken off the site: slug -> the post its URL (and its ?p= shortlink) 301s to.
+const RETIRED = {
+  'check-out-our-stable-diffusion-pre-release-overview-article-for-the-latest-info': 'stable-diffusion-3-pre-release-overview',
+  'flux-guide-updated': 'quickstart-guide-to-flux-1',
+  'flux-guide-updated-2': 'quickstart-guide-to-flux-1',
+  'quickstart-guide-to-flux': 'quickstart-guide-to-flux-1',
+  'stable-diffusion-3-weights-released': 'quickstart-guide-to-stable-diffusion-3',
+};
+// Archive pages WordPress served that retiring posts emptied: path -> where it 301s.
+const RETIRED_PAGES = {
+  '/page/11/': '/',
+  '/civitai/page/11/': '/civitai/',
+  '/author/civitai/page/11/': '/author/civitai/',
+};
 // WordPress reading settings (not exposed by the public API): the static front page, and the page
 // that lists posts. Their paths are fixed by WordPress, not by their slug.
 const FRONT_PAGE_SLUG = 'home';
@@ -491,6 +507,13 @@ async function writeIfChanged(file, content) {
   return true;
 }
 
+/** The `deprecated:` front matter block of an existing post file, verbatim, if it has one. */
+async function deprecatedBlock(file) {
+  const text = await fs.readFile(file, 'utf8').catch(() => '');
+  const head = text.match(/^---\n([\s\S]*?)\n---/)?.[1] || '';
+  return head.match(/^deprecated:\n(?:  .*(?:\n|$))+/m)?.[0].trimEnd();
+}
+
 async function pruneExported(dir, keep) {
   const removed = [];
   for (const name of await fs.readdir(dir).catch(() => [])) {
@@ -533,6 +556,10 @@ async function main() {
       skipped.push(`${p.slug} (password-protected)`);
       continue;
     }
+    if (RETIRED[p.slug]) {
+      wpIds[p.id] = `/${RETIRED[p.slug]}/`;
+      continue;
+    }
     const cats = p.categories.map((id) => catById.get(id)?.slug).filter(Boolean);
     const tgs = p.tags.map((id) => tagById.get(id)?.slug).filter(Boolean);
     const author = userById.get(p.author)?.slug || 'civitai';
@@ -555,7 +582,9 @@ async function main() {
     });
     const name = `${p.slug}.md`;
     keepPosts.add(name);
-    if (await writeIfChanged(path.join(POSTS_DIR, name), `${fm}\n\n${htmlToMarkdown(p.content.rendered)}\n`)) changed++;
+    const kept = await deprecatedBlock(path.join(POSTS_DIR, name));
+    const head = kept ? fm.replace(/\n---$/, `\n${kept}\n---`) : fm;
+    if (await writeIfChanged(path.join(POSTS_DIR, name), `${head}\n\n${htmlToMarkdown(p.content.rendered)}\n`)) changed++;
     wpIds[p.id] = `/${p.slug}/`;
   }
 
@@ -624,6 +653,10 @@ async function main() {
     '# Removed content',
     ...[...DROP_PAGES].map((s) => `/${s}/ / 301`),
     ...protectedSlugs.map((s) => `/${s}/ / 301`),
+    '',
+    '# Retired posts',
+    ...Object.entries(RETIRED).map(([from, to]) => `/${from}/ /${to}/ 301`),
+    ...Object.entries(RETIRED_PAGES).map(([from, to]) => `${from} ${to} 301`),
     '',
     '# Empty archives (WordPress serves an empty listing; we send people home)',
     ...emptyCats.flatMap((s) => [`/category/${s}/ / 301`, `/category/${s}/feed/ / 301`]),

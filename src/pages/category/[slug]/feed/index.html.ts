@@ -1,7 +1,7 @@
 // /category/<slug>/feed/ (see src/lib/feed.ts for why the file is index.html).
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { feedResponse } from '../../../../lib/feed';
-import { getCategories, getPosts, type Term } from '../../../../lib/content';
+import { getCategories, getListedPosts, type Term } from '../../../../lib/content';
 import { SITE } from '../../../../lib/site';
 
 export const getStaticPaths = (async () => {
@@ -11,6 +11,6 @@ export const getStaticPaths = (async () => {
 
 export const GET: APIRoute = async ({ props }) => {
   const term = props.term as Term;
-  const posts = (await getPosts()).filter((p) => p.data.categories.includes(term.slug));
+  const posts = (await getListedPosts()).filter((p) => p.data.categories.includes(term.slug));
   return feedResponse({ title: `${SITE.title} » ${term.name} Category Feed`, description: term.description || SITE.description, path: `/category/${term.slug}/`, posts });
 };

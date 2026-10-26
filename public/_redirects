@@ -11,6 +11,16 @@
 /civitai-moderation-guide-2/ / 301
 /badge-creation-guide/ / 301
 
+# Retired posts
+/check-out-our-stable-diffusion-pre-release-overview-article-for-the-latest-info/ /stable-diffusion-3-pre-release-overview/ 301
+/flux-guide-updated/ /quickstart-guide-to-flux-1/ 301
+/flux-guide-updated-2/ /quickstart-guide-to-flux-1/ 301
+/quickstart-guide-to-flux/ /quickstart-guide-to-flux-1/ 301
+/stable-diffusion-3-weights-released/ /quickstart-guide-to-stable-diffusion-3/ 301
+/page/11/ / 301
+/civitai/page/11/ /civitai/ 301
+/author/civitai/page/11/ /author/civitai/ 301
+
 # Empty archives (WordPress serves an empty listing; we send people home)
 /category/audio/ / 301
 /category/audio/feed/ / 301
@@ -54,6 +64,8 @@
 /tag/scd/feed/ / 301
 /tag/sdxl0-9/ / 301
 /tag/sdxl0-9/feed/ / 301
+/tag/update/ / 301
+/tag/update/feed/ / 301
 /tag/vid2vid/ / 301
 /tag/vid2vid/feed/ / 301
 /author/2ffactoragency/ / 301

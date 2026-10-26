@@ -40,7 +40,7 @@ Three things differ from model to model, and they decide which one you reach for
 This guide covers the main edit models, then shows the same three edits run on all of them. The generator's model picker lists others too, and the list changes as models are added.
 
 :::note
-The generator has no mask or inpainting brush. To change one region, describe it in the prompt ("the sign on the left"). None of these edit models take a mask, and the Image to Image workflow has no mask brush. The generator does have a **Sketch Edit** tool, on the reference image tile, for drawing on your image to point at what you mean. Its own notice says results vary by model and that Nano Banana works best with sketch annotations.
+The generator has no mask or inpainting brush, and none of these edit models take a mask. To change one region, describe it in the prompt ("the sign on the left"). The generator does have a **Sketch Edit** tool, on the reference image tile, for drawing on your image to point at what you mean. Its own notice says results vary by model and that Nano Banana works best with sketch annotations.
 :::
 
 ## The models at a glance
@@ -50,7 +50,7 @@ Costs are about what one 1:1 image cost at the time of writing, with one referen
 | Model | Reference images | About Buzz per image | Pick it for |
 | --- | --- | --- | --- |
 | GPT Image 2.5 (Flare, Sunburst) | up to 7 | 69 at high quality, 18 medium, 8 low | Plain-language instructions and readable text |
-| Krea 3 | up to 6 | 45 at 1K | Edits that keep the scene (it did in all three of our tests) |
+| Krea 3 | up to 6 | 45 at 1K | Edits that keep the scene intact |
 | Krea 2 | up to 4 | 16 (Turbo) to 60 (Raw) | Low-cost edits, with one to four references |
 | Nano Banana | up to 7 | 44 (V2.1 at 1K) | Keeping a person or pet looking like themselves |
 | Seedream | up to 7 | 135 (v5.0 Pro), 52 (v5.0 Lite) | High-resolution output and typography |
@@ -74,7 +74,7 @@ Krea 3 is Krea's image model, listed after Krea 2 in the Krea group of the base 
 - **Inputs:** 1 to 6 reference images. The output size follows your references, so there is no aspect ratio choice when editing.
 - **Cost:** about 45 Buzz at 1K. 2K costs more, about 105 Buzz, plus about 45 for each extra reference image. You also choose the **Thinking** mode, Instant or Medium. At 1K the two cost the same in our pricing check; at 2K Medium costs more.
 - **Best at:** in our test, keeping the scene intact while changing the one thing we named.
-- **In our test:** it followed all three edits, kept the scene and framing of the original in all three tests, though several other models did too, and in the two-image test put the mug beside the pot on the table without changing the room.
+- **In our test:** it followed all three edits and kept the original scene and framing, as several other models did. In the two-image test it put the mug beside the pot on the table without changing the room.
 
 ## Krea 2
 
@@ -204,7 +204,7 @@ The **Remix** button on an image gives you three options:
 - **Animate** ("Turn this image into a video"). It opens the generator ready to turn the image into a clip. Animate uses MiniMax H3, so check the cost button for its price. For generating video in general, see [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/).
 - **Reuse prompt & resources.** It copies the image's prompt and settings so you can start a new generation from them.
 
-The Remix button is on an image, on its card and on its page. Remix picks the model for you from the image's rating. Safe images go to **Nano Banana V2 Lite** (about 44 Buzz when we checked). Images with a higher rating go to **Qwen Image Edit 2511** instead. You can change the model in the generator afterward. Images of real people, images that may depict a minor, and blocked images cannot be remixed.
+The Remix button is on an image, on its card and on its page. **Edit image** picks the model for you from the image's rating. Safe images go to **Nano Banana V2 Lite** (about 44 Buzz when we checked). Images with a higher rating go to **Qwen Image Edit 2511** instead. You can change the model in the generator afterward. Images of real people, images that may depict a minor, and blocked images cannot be remixed.
 
 ## Tips for better edits
 

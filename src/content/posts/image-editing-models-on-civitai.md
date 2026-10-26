@@ -29,7 +29,7 @@ seo:
 
 An edit model takes one or more of your own images plus a written instruction, and returns a new image that changes only what you asked for. You describe the change ("make the mug matte black"), not the whole picture.
 
-In the Civitai generator this is the **Image to Image** workflow, described in the app as "Generate or edit using reference images". Open the generator from the **Create** button, choose the **Image to Image** workflow, and pick one of the models below in the model selector. Add your image or images in the reference image area, write the instruction and generate. The [image generator guide](/using-civitai-the-on-site-image-generator/) covers the rest of the form. The cost on the Generate button updates as you change settings. The same models also create images from text alone, so a model you know from text-to-image may already be able to edit.
+In the Civitai generator this is the **Image to Image** workflow, described in the app as "Generate or edit using reference images". Open the generator from the **Create** button, choose the **Image to Image** workflow, and pick one of the models below in the base model selector. Add your image or images in the reference image area, write the instruction and generate. The [image generator guide](/using-civitai-the-on-site-image-generator/) covers the rest of the form. The cost on the Generate button updates as you change settings. The same models also create images from text alone, so a model you know from text-to-image may already be able to edit.
 
 Three things differ from model to model, and they decide which one you reach for:
 
@@ -50,7 +50,7 @@ Costs are about what one 1:1 image cost at the time of writing, with one referen
 | Model | Reference images | About Buzz per image | Pick it for |
 | --- | --- | --- | --- |
 | GPT Image 2.5 (Flare, Sunburst) | up to 7 | 69 at high quality, 18 medium, 8 low | Plain-language instructions and readable text |
-| Krea 3 | up to 6 | 45 at 1K | Single-image edits that keep the scene (in our test) |
+| Krea 3 | up to 6 | 45 at 1K | Edits that keep the scene (it did in all three of our tests) |
 | Krea 2 | up to 4 | 16 (Turbo) to 60 (Raw) | Low-cost edits, with one to four references |
 | Nano Banana | up to 7 | 44 (V2.1 at 1K) | Keeping a person or pet looking like themselves |
 | Seedream | up to 7 | 135 (v5.0 Pro), 52 (v5.0 Lite) | High-resolution output and typography |
@@ -69,12 +69,12 @@ GPT Image is OpenAI's image model family, hosted on Civitai. Version 2.5 comes i
 
 ## Krea 3
 
-Krea 3 is Krea's image model, listed after Krea 2 in the model picker.
+Krea 3 is Krea's image model, listed after Krea 2 in the Krea group of the base model picker.
 
 - **Inputs:** 1 to 6 reference images. The output size follows your references, so there is no aspect ratio choice when editing.
 - **Cost:** about 45 Buzz at 1K. 2K costs more, about 105 Buzz, plus about 45 for each extra reference image. You also choose the **Thinking** mode, Instant or Medium. At 1K the two cost the same in our pricing check; at 2K Medium costs more.
 - **Best at:** in our test, keeping the scene intact while changing the one thing we named.
-- **In our test:** it followed all three edits, kept the framing of the original, and in the two-image test put the mug beside the pot on the table without changing the room.
+- **In our test:** it followed all three edits, kept the scene and framing of the original in all three tests, though several other models did too, and in the two-image test put the mug beside the pot on the table without changing the room.
 
 ## Krea 2
 
@@ -101,11 +101,11 @@ Seedream is ByteDance's model, built for high-resolution output and legible text
 - **Inputs:** up to 7 reference images.
 - **Best at:** legible text and high-resolution output. 4K is available only on v4.5 and v5.0 Lite.
 - **Cost:** about 135 Buzz for v5.0 Pro at 2K and about 52 for v5.0 Lite.
-- **In our test:** the single-image edits worked, though its mug looked slightly glossy rather than clearly matte. On the two-image test the mug came out oversized and the pot was gone.
+- **In our test:** the single-image edits worked, though its mug had a slightly textured finish. On the two-image test the mug came out oversized and the pot was gone.
 
 ## Qwen Image Edit
 
-Qwen Image Edit is the editing build of Alibaba's open-weight Qwen-Image. Civitai's Qwen page lists adding and removing objects, style transfer, and editing text while keeping the original font, size and style. It runs on Civitai's own hardware.
+Qwen Image Edit is the editing build of Alibaba's open-weight Qwen-Image. Civitai's Qwen page lists adding and removing objects, style transfer, and editing text while keeping the original font, size and style. It is hosted on Civitai.
 
 - **Inputs:** up to 3 reference images.
 - **Best at:** open-weight edits, including changing text in an image (per Civitai's Qwen page).
@@ -119,7 +119,7 @@ Muse Image is Meta's image model, hosted on Civitai. It has a single version wit
 - **Inputs:** 1 to 4 reference images.
 - **Best at:** the lowest fixed price per edit.
 - **Cost:** about 13 Buzz, the lowest fixed price here. GPT Image 2.5 at low quality is about 8.
-- **In our test:** it followed all three edits at the lowest fixed price.
+- **In our test:** it followed all three edits at the lowest fixed price. Its mug in Edit 1 read gray rather than black.
 
 ## Flux.3
 
@@ -196,7 +196,7 @@ Sources: the white mug and the reading room. Prompt: *Place the mug from the fir
 
 Krea 3, Nano Banana V2.1, GPT Image 2.5 Sunburst, Muse Image and Flux.3 put the mug on the round table beside the pot and kept the room. GPT Image 2.5 Flare placed the mug correctly but reframed the shot tighter. In the Seedream v5.0 Pro result the mug is oversized and the pot is gone, and in the Qwen Image Edit result the mug is on the table where the pot was. Krea 2 did not keep the scene: it made a new shot with a large mug on a foreground table.
 
-## Remix: edit or animate any image
+## Remix: edit or animate an image
 
 The **Remix** button on an image gives you three options:
 
@@ -204,12 +204,12 @@ The **Remix** button on an image gives you three options:
 - **Animate** ("Turn this image into a video"). It opens the generator ready to turn the image into a clip. Animate uses MiniMax H3, so check the cost button for its price. For generating video in general, see [Civitai's Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/).
 - **Reuse prompt & resources.** It copies the image's prompt and settings so you can start a new generation from them.
 
-The Remix button is on an image, on its card and on its page. Remix picks the model for you from the image's rating. Safe images go to **Nano Banana V2 Lite** (about 44 Buzz when we checked). Images with a higher rating go to **Qwen Image Edit 2511**, because the hosted providers refuse them. Animate uses **MiniMax H3**, so check the cost button for its price before you generate. You can change the model in the generator afterward. Images of real people, images that may depict a minor, and blocked images cannot be remixed.
+The Remix button is on an image, on its card and on its page. Remix picks the model for you from the image's rating. Safe images go to **Nano Banana V2 Lite** (about 44 Buzz when we checked). Images with a higher rating go to **Qwen Image Edit 2511** instead. You can change the model in the generator afterward. Images of real people, images that may depict a minor, and blocked images cannot be remixed.
 
 ## Tips for better edits
 
 - **Describe the change, not the picture.** "Make the mug matte black" works better than a full description of the scene.
-- **Say what to keep.** "Keep the table, window light and framing the same" costs nothing and helped every model in our test.
+- **Say what to keep.** "Keep the table, window light and framing the same" costs nothing, and we included it in both single-image test prompts.
 - **Quote text.** Put exact words in quotation marks and keep them short.
 - **Edit in steps.** Several small edits, feeding each result back in, are easier to control than one large one.
 - **Use the cheap models to draft.** Try an idea on Muse Image, Krea 2 or GPT Image at low quality, then run the final on a stronger model.
@@ -219,6 +219,6 @@ The Remix button is on an image, on its card and on its page. Remix picks the mo
 
 - **The result changed things you did not ask for.** Add what to keep to the prompt, or try another model. In our text test the GPT Image builds added strokes, and Flux.3 shrank the text.
 - **An object disappeared or grew.** In the two-image test the pot disappeared in the Seedream and Qwen Image Edit results, and the mug grew in Seedream's. Try Krea 3 or Nano Banana, or edit in two steps.
-- **The finish is off.** In Edit 1 the Seedream and Muse mugs read slightly glossy or gray rather than clearly matte black. Name the finish again ("flat, non-reflective matte black"), or try another model.
+- **The finish is off.** In Edit 1 the Muse mug reads gray rather than clearly black, and the Seedream mug has a slightly textured finish. Name the finish again ("flat, non-reflective matte black"), or try another model.
 - **The cost is higher than the table says.** Check the settings: resolution, quality, steps and the number of reference images all change the price.
 - **A model is missing from the picker.** The list changes as models are added or retired. The generator's picker is the current list.

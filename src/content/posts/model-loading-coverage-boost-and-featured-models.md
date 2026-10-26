@@ -45,7 +45,7 @@ A model is **covered** when the generator is able to run it. Coverage is about w
 | Community checkpoints | The model is published, it is built on a model family the generator supports, it is a standard checkpoint type (not an inpainting or other special type), it has a scanned SafeTensor model file, its license allows on-site generation, and it has not been blocked from generation |
 | LoRAs, embeddings, VAEs and similar | They match a supported model family and file format, and the same license and creator settings allow generation |
 
-Models that have been taken down or archived, and models flagged as depicting a real person, are never covered. Some model families (Flux.2 and HiDream, for example) use only the checkpoint Civitai lists for them. Community checkpoints built on those families cannot be generated with, and cannot be entered in the Featured Checkpoints auction.
+Models that have been taken down or archived, and models flagged as depicting a real person, are never covered. Some model families (Flux.2 and HiDream, for example) use only the checkpoint Civitai lists for them. Community checkpoints built on those families cannot be generated with, A bid on one can still win a featured spot, but winning does not make it generatable.
 
 If a resource is not covered, the generator refuses the job with this message: **"Some of your resources are not available for generation"**, followed by the resource name.
 
@@ -55,7 +55,7 @@ When you generate with a covered model that is not loaded, the job is accepted a
 
 The generator tells you the state of each model in several places:
 
-- **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no mark. You can turn on **Loaded only** in the picker filters to hide everything that would wait on a download. Free accounts do not see community checkpoints that are not loaded in the picker at all.
+- **Resource picker.** A green dot marks models that are loaded. Models that are not loaded have no dot, though a card's details show a **Generation** row with the current state. Turn on **Loaded only**, under Generator in the picker filters, to show only models marked loaded. Free accounts do not see community checkpoints that are not loaded in the picker at all.
 - **Model page.** A green dot on the version strip marks loaded versions.
 - **Create button.** The corner badge on a model page says **Recently loaded** or **Not recently loaded**, which tells you whether pressing it is likely to start now. The button and badge appear on a free account only for models it can generate with.
 - **Added resources in the generator.** Each row shows one of these labels: **Loaded**, **No download needed** (outside provider), **Not loaded**, **Queued to download**, or **Downloading** with a percentage.
@@ -73,7 +73,7 @@ Not everyone can start a download. This is the rule today:
 | Checkpoint | Free account | Paid member |
 | --- | --- | --- |
 | Already loaded | Yes | Yes |
-| Not loaded, and a model family default, an outside-provider model, a Featured Checkpoints auction winner (while the win lasts), or one of the 20 checkpoints that earned the most for their creators in since the last Featured Checkpoints auction | Yes | Yes |
+| Not loaded, and a model family default, an outside-provider model, a Featured Checkpoints auction winner (while the win lasts), or one of the 20 checkpoints that earned the most for their creators since the most recent Featured Checkpoints auction | Yes | Yes |
 | Not loaded, and an ordinary community checkpoint | **No**, until someone has loaded it | Yes |
 | LoRAs, embeddings and other non-checkpoint resources | Yes | Yes |
 
@@ -85,7 +85,7 @@ For a free account, the generator's picker leaves out community checkpoints that
 
 ## The three download lanes {#lanes}
 
-Downloads wait in one of three lanes. Each lane has reserved bandwidth, so the slowest lane keeps moving. Select the info icon next to the lane in the queue panel to see the explainer.
+Downloads wait in one of three lanes. Each lane has reserved bandwidth, so the slowest lane keeps moving. Select the info icon in the queue panel (it sits next to the Boost button while Boost is offered) to see the explainer.
 
 | Lane | Who gets it | Cost |
 | --- | --- | --- |

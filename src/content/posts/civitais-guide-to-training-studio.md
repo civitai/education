@@ -62,13 +62,13 @@ The Studio shows three steps in its header, and the results are a page of their 
 2. Choose a **type**: **Character**, **Style**, **Concept** or **Effect**. Effect is for video.
 3. The Studio suggests a base model for that type (for image LoRAs, ZImage Turbo). Take the suggestion or pick another card.
 
-The type matters in two ways. It picks the suggested model, and it sets the exposure target that the Review step uses to judge your step count (see [Step 3](#step-3-review-and-start)). It does not change any other setting.
+The type matters in three ways. It picks the suggested model, it sets the dataset size the Data step recommends, and it sets the exposure target that the Review step uses to judge your step count (see [Step 3](#step-3-review-and-start)). It does not change any training setting. For video, the suggested model may differ from the image one. Take it or pick another card.
 
 ### Base models {#base-models}
 
 Each card is a model family, and some have several versions. The newest version is selected by default. A card shows a short description and a “from” price. Only the featured cards show at first, so click **Show N more models** to see the rest, including SD 1.5, SDXL, Pony and Flux.1. Above the cards, the Studio tells you whether the model you picked trains on **tags** or on **captions**, because one dataset uses one or the other.
 
-These are among the models you can train at the time of writing. Other models are limited to testers while they are rolled out, so you may read about cards you cannot see yet:
+These are among the models you can train at the time of writing. The picker may show models not listed here, and some cards are limited to testers while they are rolled out:
 
 | Model | Media | Labels | Good for |
 | --- | --- | --- | --- |
@@ -337,7 +337,7 @@ Runs are listed for 30 days. Download or publish what you want to keep.
 | Problem | What to do |
 | --- | --- |
 | **Continue to review is disabled** | Every file needs a label. Use the **Unlabeled** filter, then re-run auto-label or type a label by hand. |
-| **A file failed to upload** | Check the type is accepted, then use the **Retry** button on the failed tile. A **Failed** filter lists these files. |
+| **A file failed to upload** | Check the type is accepted, then use the **Retry** button on the failed tile. A **Failed** filter lists these files. Files blocked by the upload scan cannot be retried, so remove them. |
 | **Auto-label returned nothing for a file** | Open it in the label editor and re-run, or write the label yourself. |
 | **Start is disabled and the price shows a dash** | A run could not be priced. Check that Steps is filled in and between 1 and 10,000, or wait a moment and try again if the quote failed. |
 | **I was charged Yellow, not Blue or Green** | Your dataset has mature files and you have no paid membership. See [Paying with Buzz](#paying-with-buzz). |

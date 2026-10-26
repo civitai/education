@@ -58,7 +58,7 @@ The Studio shows three steps in its header, and the results are a page of their 
 
 ## Step 1: Choose a type and a base model {#step-1-choose-a-type-and-a-base-model}
 
-1. Choose the kind of media you are training. The picker offers **Image**, **Video** and **Audio**; this guide covers image and video. Audio models may not be offered to every account.
+1. Choose the kind of media you are training. The picker offers **Image**, **Video** and **Audio**; this guide covers image and video. For audio, see [Audio and Music on Civitai](/audio-and-music-on-civitai/#train-your-own).
 2. Choose a **type**: **Character**, **Style**, **Concept** or **Effect**. Effect is for video.
 3. The Studio suggests a base model for that type (for image LoRAs, ZImage Turbo). Take the suggestion or pick another card.
 

@@ -146,7 +146,7 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 2. Choose a type. For audio the types are **Style** and **Concept**. (Character is for images and video, and Effect is for video.)
 3. Choose the **ACE-Step** card (the recommended audio card), then a version: **1.5 (3.5B)** (the default), **XL Base (4B)** or **XL SFT (4B)**. The app describes ACE-Step as the way to "teach it a genre or an artist's sound from a few tracks".
 4. Add audio files. The Studio accepts **MP3, WAV, FLAC, OGG and M4A**. Each tile has a player so you can hear a clip while you label it.
-5. Label every clip. You can't continue until every clip has a label. Audio models use **captions**: a text description of the sound. **Auto-label** can write these for you, and you can edit them by hand. The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
+5. Label every clip. You can't continue until every clip has a label. Audio models use **captions**: a text description of the sound. When Auto-label is available it can write these for you; otherwise write each caption by hand (or include matching `.txt` files). The Studio guide explains [Auto-label](/civitais-guide-to-training-studio/#auto-label).
 6. The Studio recommends at least **15 clips** for a Style or Concept LoRA. This is a recommendation, not a hard stop. "A few tracks" is the Studio's own wording, and the Data step warns below 15 clips.
 7. Review the settings and start. For audio, the samples are audio clips, so write sample prompts as music descriptions in the style you trained, not as images. The Studio guide covers [sample prompts](/civitais-guide-to-training-studio/#sample-prompts), the [trigger word](/civitais-guide-to-training-studio/#trigger-word) and the [price quote](/civitais-guide-to-training-studio/#price-and-start). The Studio shows a price quote for your exact settings before you start. A run that fails is refunded automatically.
 
@@ -158,7 +158,7 @@ Audio runs default to 5 epochs. When the run finishes, you can listen to the sam
 - **My CFG and Steps changes did nothing.** On ACE in Custom mode the generator keeps them at the values for the version you picked. Switch versions to change the behavior.
 - **The track is shorter than I set.** The YuE2 and MiniMax Music 3 lengths are maximums, not exact lengths. Each engine also has its own range, so a number that works on ACE is clamped to MiniMax Music 3's range of 30 to 300 seconds.
 - **The cost is higher than the table.** Simple mode runs an extra drafting step, a generated cover is an extra step, and YuE2's automatic score planning adds cost.
-- **A training clip won't continue.** Every clip needs a label. Use Auto-label or write one, then continue.
+- **A training clip won't continue.** Every clip needs a label. Write one, or use Auto-label when it's available, then continue.
 - **My training run failed.** A failed run is refunded automatically. See the Studio guide's troubleshooting.
 - **I wanted a spoken voice.** Text-to-speech isn't offered. Some video engines can generate sound with a clip; see the [video engines guide](/video-engines-on-civitai-in-2026/).
 

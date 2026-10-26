@@ -49,7 +49,7 @@ Prices in this guide are about what one default image or clip cost on October 26
 
 ## What a model costs {#costs}
 
-Costs are for one image at 1:1 with default settings, or one default clip with audio off, except where a quality or size is named. Each row is the price we saw on October 26, 2026.
+Costs are for one image at 1:1 with default settings, or one default clip with audio off, except where a quality or size is named. Each row is the price we saw on October 26, 2026. Veo and Seedance prices here are with audio off. Turning audio on costs more.
 
 | Band | Image models | About Buzz |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ Clip lengths differ, and length changes the price. Treat video prices as a rough
 
 Some models run on Civitai's own GPUs. Others are partner models that Civitai calls through the partner's service. The difference decides two things you may care about:
 
-- **Your own LoRAs and community checkpoints.** These work with the models on Civitai's GPUs (SD 1.x, the SDXL family (SDXL, Illustrious, NoobAI, Pony), Pony V7, Anima, Flux.1, Chroma, HiDream, Qwen, Z-Image, Flux.2 Klein and Flux.3 Klein), and with Flux.2 Dev and Krea 2 Raw and Turbo. Partner models like GPT Image, Nano Banana, Seedream, Krea 3, Flux.3 and Muse Image take no LoRAs.
+- **Your own LoRAs and community checkpoints.** These work with many of the models on Civitai's GPUs (including SD 1.x, the SDXL family (SDXL, Illustrious, NoobAI, Pony), Pony V7, Anima, Flux.1, Chroma, HiDream, Qwen, Z-Image, Flux.2 Klein and Flux.3 Klein), and with Flux.2 Dev and Krea 2 Raw and Turbo. Partner models like GPT Image, Nano Banana, Seedream, Krea 3, Flux.3 and Muse Image take no LoRAs.
 - **Cost.** The cheapest image options, at 3 to 4 Buzz, all run on Civitai's GPUs.
 
 The LoRA picker shows LoRAs that match the model you picked. If you pick a community checkpoint that is not loaded yet, a free account may be refused and a download may add a wait. See [Model Loading: Coverage, Boost and Featured Models](/model-loading-coverage-boost-and-featured-models/).
@@ -122,7 +122,7 @@ Video prices change with length, resolution and audio, so compare them with the 
 
 ## Models built for speed {#speed}
 
-We have not timed these, so this is a guide to which models are built to need few steps, not a measurement.
+We have not timed these, so this is a guide to models that Civitai describes as fast or as needing few steps, not a measurement.
 
 - **Z-Image Turbo** (about 4). Civitai's Z-Image page says Turbo renders in just a handful of steps.
 - **Flux.2 Klein 4B** (about 4). Civitai's Flux.2 page calls the Klein line its fastest Flux.2 line.
@@ -142,7 +142,7 @@ You want a poster for a coffee shop with the words OPEN LATE, and you want to sp
 1. Open the generator and choose **Z-Image Turbo** in the base model selector. The cost button shows about 4 Buzz.
 2. Write the prompt with the words in quotation marks: a poster of a neon coffee cup in a dark window, with the text "OPEN LATE".
 3. Generate. If the text is wrong, run it again, because text can change from one run to the next.
-4. When the layout is right, switch the selector to **GPT Image 2.5** and run the same prompt. Set the quality to Medium and it shows about 18 Buzz. At high quality, the default, it shows about 69.
+4. When the layout is right, switch the selector to **GPT Image** and choose a 2.5 build (Flare) in the version picker, then run the same prompt. Set the quality to Medium and it shows about 18 Buzz. At high quality, the default, it shows about 69.
 5. Keep whichever result you prefer. You spent about 4 Buzz to find the layout, and the higher price only once.
 
 Test cheap, then pay for the model you want only when the idea works.

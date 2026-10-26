@@ -41,7 +41,7 @@ The Comic Creator is a Beta feature. Civitai says it has a limited feature set, 
 - **Search.** Use the site search and switch to Comics, or go to [civitai.com/search/comics](https://civitai.com/search/comics).
 - **A creator's profile.** A profile has a Comics tab that lists that person's comics.
 
-The genres are Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Romance, Sci-Fi, Slice of Life, Thriller and Other.
+The genres are Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Romance, Sci Fi, Slice Of Life, Thriller and Other. They appear in capitals on the buttons.
 
 Open a comic to see its overview page: the description, the chapter list, and counts for unique readers, total chapter reads, followers and Buzz tipped.
 
@@ -51,14 +51,14 @@ Open a comic to see its overview page: the description, the chapter list, and co
 2. Read. A control in the reader's header switches between **Page view** and **Scroll view**. Use whichever you like.
 3. Use the chapter navigation at the bottom to move to the next chapter.
 
-The reader's header also has a button that shows or hides the comments, and a menu with **Copy link**, **Report** and, when the creator allows it, **Download PDF** and **Download CBZ**.
+The reader's header also has a button that shows or hides the comments. **Copy link**, **Report comic** and, when the creator allows it, **Download PDF** and **Download CBZ** are icon buttons on a computer and sit in a menu on a phone. The Page view and Scroll view switch is not shown on phones.
 
 ### Follow, tip and comment {#follow-tip-comment}
 
 On a comic's overview page:
 
-- **Follow.** The bell button reads "Get notified of new chapters". Press it again ("Unfollow comic") to stop.
-- **Tip.** The tip button sends Buzz to the creator. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
+- **Follow.** When you are signed in, the bell button reads "Get notified of new chapters". Press it again ("Unfollow comic") to stop.
+- **Tip.** The tip button, shown when you are signed in and it is not your own comic, sends Buzz to the creator. Tips come from Green Buzz on civitai.com and Yellow Buzz on civitai.red. See [Buzz Colors: Blue, Yellow and Green](/buzz-colors-blue-yellow-and-green/).
 - **Share and Report** are on the same page. Chapters also have a comment thread.
 
 ### Early access chapters {#early-access-chapters}
@@ -79,7 +79,7 @@ The **Create Comic Project** page asks for:
 - **Hero Banner** (optional): a wide 16:9 image for the overview page. Upload one, pick one from the generator or generate one.
 - **Cover** (optional): a portrait image for the browse cards. The same three options apply.
 
-You can change all of this later. After you create it, you land on the project page. On a first visit, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
+The comic is saved as a draft and stays private to you until you publish a chapter. You can change all of this later. After you create it, you land on the project page. On a first visit, a "Welcome to Comic Creator (Beta)!" dialog explains the Beta.
 
 **Project Settings** (the gear icon) holds more choices:
 
@@ -91,7 +91,7 @@ You can change all of this later. After you create it, you land on the project p
 
 A **reference** is a set of images of a character, location, item or style that the generator uses so it stays the same from panel to panel.
 
-1. In the **References** sidebar, choose **Add Reference**. (**Import** brings in references from your other projects.)
+1. In the **References** sidebar, choose the **+** button (it reads **Add Reference** while the list is empty). The download icon, "Import from other projects", brings in references you made elsewhere.
 2. Upload 1 to 10 images. The page tips: a clear, front-facing view, the same subject in every image, different angles, consistent lighting and high resolution.
 3. Enter a **Reference name**, for example "Maya", and pick a **Reference type**: Character, Location, Style or Item.
 4. Choose **Add Reference**. Creating a reference is free.
@@ -100,7 +100,7 @@ Later, type **@** and the name, such as "@Maya on a rooftop", in a prompt to inc
 
 ### Chapters and panels {#chapters-and-panels}
 
-Choose **Add Chapter** to start a chapter. Your chapters are listed in the sidebar, and each shows its status (Draft, Scheduled, Published or Early Access), its panel count, and a gear icon for chapter settings. Open a chapter and choose the plus button at the end of the panel grid to add a panel. The **Create Panel** dialog has four tabs:
+A new project starts with a draft **Chapter 1**. Choose **Add Chapter** for more. Your chapters are listed in the sidebar. Each shows a colored dot (hover it for Draft, Scheduled, Published or Early Access), its panel count and a gear icon for chapter settings. Open a chapter and choose the large **+** tile at the end of the panel grid to add a panel. The **Create Panel** dialog has four tabs:
 
 - **Generate.** Describe the scene ("Describe the scene... Use @Name to include references"), choose the Generation Model, the aspect ratio (portrait 3:4 works best for most panels) and the number of images per generation (1 to 4), then generate. Generate more than one image to pick the best one.
 - **Enhance.** Turn an existing image into a comic panel, with an optional prompt for changes.
@@ -109,14 +109,14 @@ Choose **Add Chapter** to start a chapter. Your chapters are listed in the sideb
 
 The generate button shows what the action costs before you confirm. Costs depend on the model and the number of images. If the dialog says your generation queue is full or that generation is unavailable, wait for jobs to finish or try again later.
 
-You can reorder panels by dragging them, and a panel card has options to regenerate, duplicate, insert after and edit.
+You can reorder panels by dragging them, and the three-dot menu on a panel card has View Details, Iterative Edit, Change Image, Regenerate, Duplicate and Insert after.
 
 ### Smart Create: let AI plan a chapter {#smart-create}
 
-If your project has at least one reference, a **Smart Create** button appears under your chapter list.
+If your project has at least one finished reference, a **Smart Create** button appears under your chapter list.
 
 1. Enter a **Chapter name** and describe the story or scene. Use @Name to bring in characters.
-2. Set the **Number of panels** (up to 20 per chapter), or leave it empty to let the AI decide.
+2. Set the **Number of panels** (2 to 20 per chapter), or leave it empty to let the AI decide.
 3. Choose **Plan Panels**. The AI writes a prompt for each panel.
 4. On the review step ("N panels planned") edit any prompt, pick the Generation Model and choose **Create Chapter**.
 
@@ -131,7 +131,7 @@ A draft chapter needs at least one panel before it can be published. Until then,
 3. Optional: turn on **Enable Early Access** (below).
 4. Confirm with **Publish** or **Schedule**.
 
-A published chapter can be unpublished from the same button, and a scheduled one can be cancelled. New chapters notify the people who follow your comic.
+A published chapter can be unpublished from the same button, unless a reader has already bought early access to it. A scheduled chapter can be canceled. New chapters notify the people who follow your comic.
 
 ### Early access for your chapters {#early-access-for-creators}
 
@@ -140,7 +140,7 @@ Early access lets you charge Buzz for a chapter for a limited time.
 - **Buzz Price:** 100 to 10,000 Buzz.
 - **Early Access Period:** how long the chapter stays locked. After it, the chapter is free.
 - **Requirements:** early access unlocks at a Creator Score of 10,000. Your score also limits how many days you can pick and how many chapters can be in early access at once. At 10,000 the limit is 3 days and 1 chapter. At 65,000 it is 5 days and 2 chapters, and it rises with your score from there. The dialog tells you the limit that applies to you.
-- To change it later, open the chapter and choose **Edit Early Access**, or open its **Chapter Settings**.
+- After publishing, you can only lower the price and the period. Use the gear icon in the chapter's status badge (**Edit Early Access**, shown while early access is active) or open **Chapter Settings**.
 
 Creator Score is a number Civitai calculates from your activity and how others engage with your work.
 
@@ -154,17 +154,17 @@ Creator Score is a number Civitai calculates from your activity and how others e
 You want to publish a short comic about two cats on a rooftop.
 
 1. Go to civitai.com/comics/create. Name it "Rooftop Cats", pick the Comedy genre, add a one-line description and a cover, then choose **Create Project**.
-2. In **References**, choose **Add Reference**. Upload three images of your main cat from different angles. Name it "Whiskers", choose type **Character** and save.
-3. Choose **Add Chapter**. Open the chapter and choose the plus button. On the **Generate** tab, write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. Pick the better image.
+2. In **References**, choose **Add Reference** (the **+** button once you have some). Upload three images of your main cat from different angles. Name it "Whiskers", choose type **Character** and save.
+3. Your new project already has a draft **Chapter 1**. Open it and choose the **+** tile at the end of the panel grid. On the **Generate** tab, write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. Pick the better image.
 4. Add two more panels the same way, changing the scene each time.
 5. Press **Preview** to read it through, then **Publish**, choose **Publish now** and confirm.
 
-Readers can now find "Rooftop Cats" under the Comedy genre and follow it for new chapters. To release chapter 2 early for Buzz, use **Enable Early Access** in its publish dialog if your Creator Score allows it.
+Your project stays private until you publish a chapter. After that, readers can find "Rooftop Cats" under the Comedy genre and follow it for new chapters, though it can take a short while to show up in browse and search. To put a later chapter in early access for Buzz, use **Enable Early Access** in its publish dialog if your Creator Score allows it.
 
 ## Troubleshooting
 
 - **I don't see Create a Comic.** The create option shows only when you are signed in and your account is not muted.
-- **Smart Create is missing.** It appears once your project has at least one reference. Add a reference first.
+- **Smart Create is missing.** It appears once your project has at least one reference and it has finished saving. Add a reference first.
 - **Publish is disabled.** The chapter has no panels yet. Add at least one.
 - **"Early access ... unlocks at a Creator Score of 10,000."** You are below the minimum. The dialog shows your score.
 - **"Early access timeframe exceeds your current limit."** Choose a shorter period, up to the limit your score allows.

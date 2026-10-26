@@ -47,6 +47,8 @@ Once you are signed in, the sidebar has these sections:
 | Analytics | Overview, Models, Base models, Engagement, Content, Audience and Storage |
 | Settings | Payout status, membership and defaults |
 
+If you see a **member** badge next to Monetization and you are not in the Creator Program, you can still set prices. The badge is only a hint. Cashing out earnings is a different step, covered under [How you earn](#how-you-earn).
+
 You can also set the same options one version at a time from the version's edit page on civitai.com. Creator Studio is the faster route once you have more than a few models, because you can filter your catalog, see which versions already carry a price, and change several at once.
 
 :::note
@@ -113,7 +115,7 @@ Paid Access never ends. Buyers always pay to unlock the version.
 3. Find your model. You can search by name and filter by model type, base model, or "Has early / paid access".
 4. Select the version. The side panel has a section called **Early & paid access**.
 5. Choose the mode: **Early Access** (timed) or **Paid Access** (permanent). Early Access shows a field for the number of days.
-6. Fill in **Price for access**, in Buzz.
+6. Fill in **Price for access**, in Buzz. The lowest access price is 100 Buzz. There is no upper limit.
 7. Choose how generation works for buyers (see the next section).
 8. Save with **Save early access** or **Save paid access**. To remove a gate, use **Turn off early access** or **Turn off paid access**.
 
@@ -126,22 +128,31 @@ On civitai.com the same choices are in the version edit form, under **Charge for
 A gate covers the download and on-site generation. For generation you pick one of three options:
 
 - **Same as the access price.** One price unlocks both.
-- **A cheaper generation-only price.** Buyers who only want to generate pay less. It cannot be higher than the access price.
+- **A cheaper generation-only price.** Buyers who only want to generate pay less. It must be at least 50 Buzz and cannot be higher than the access price.
 - **Free for everyone.** Anyone can generate on-site without buying. Only the download is gated.
 
-You can also set **Free preview generations**, a number of test generations people get before they have to buy. Leave it empty or set 0 for none.
+You can also set **Free preview generations**, a number of test generations people get before they have to buy. It starts at 10 and can go up to 1,000. Leave it empty or set 0 for none.
 
 **Also accept Blue Buzz** lets buyers pay the same price with Blue Buzz. You are paid in Blue Buzz for those purchases. Blue Buzz can be spent on generation but cannot be withdrawn or converted to cash.
 
 ### Donation goals {#donation-goals}
 
-On a timed window you can turn on **Let the community unlock this early**. You set a goal amount in Buzz. If purchases and donations reach the goal before the window ends, Early Access ends and the version becomes free. Purchases count toward the goal.
+On a timed window you can turn on **Let the community unlock this early**. You set a goal amount in Buzz. If purchases and donations reach the goal before the window ends, Early Access ends and the version becomes free. Purchases made with Yellow or Green Buzz count toward the goal. Blue Buzz purchases do not.
 
 A goal can only be created once. After it is set, Creator Studio shows it but cannot change it. A permanent gate has no goal.
 
 ## Licensing fees {#licensing-fees}
 
 A licensing fee is a small amount of Buzz you earn each time someone generates with your version on Civitai. It does not lock anything. It is added to the cost of the generation.
+
+### Setting a fee in Creator Studio {#setting-a-fee}
+
+1. Open **Monetization**, then **Models**, and select the version.
+2. In the side panel, find the licensing fee field, which reads "⚡ per" and then a number of "generations".
+3. Enter the Buzz amount and choose the number of generations from the list. Use the suggested value if you are unsure.
+4. Save. The first time you charge for a version you also tick the rights affirmation.
+
+On civitai.com the same setting is the **Fee per generation** field in the version edit form.
 
 ### The fee ratio {#fee-ratio}
 
@@ -159,7 +170,8 @@ Some examples:
 Limits and defaults:
 
 - **The ceiling is 100 Buzz per generation** for image models and 500 Buzz per generation for video models. It is the same for every creator, whatever your membership.
-- **A suggested starting value** is filled in for a new version: 1 Buzz per 10 generations for most model types, and 1 Buzz per generation for checkpoints. Video models start at five times those values.
+- **A suggested starting value** is offered for a new version: 1 Buzz per 10 generations for most model types, and 1 Buzz per generation for checkpoints. Video models start at five times those values. Creator Studio shows it as a "Suggested" link you can click to use. The version edit form on civitai.com fills it in for you.
+- **The smallest fee is 1 Buzz per 100 generations.** Anything that rounds to less is refused.
 - **The ceiling only blocks raises.** A fee you set earlier that is above the current ceiling keeps working, and unrelated edits do not lower it.
 
 ### Fees inherited from the base model {#inherited-fees}
@@ -172,6 +184,17 @@ Two things follow:
 - **The parent's share goes to the parent's creator.** It is not yours, and it does not stop you earning your own fee.
 
 The picker only lists parents that have been registered for this, and only appears for versions where it applies. If you see no **Fine-tuned from** field, there is nothing to inherit.
+
+### A worked example {#worked-example}
+
+You publish a LoRA and set a fee of 1 Buzz per 10 generations, plus Paid Access at 100 Buzz.
+
+- Someone buys access: you receive 100 Buzz.
+- People generate with your LoRA 25 times in a day. The fee is 0.1 Buzz per generation, so you earn 2.5 Buzz from the fee.
+- The version used one pricing slot, because it carries a price. Editing either price later uses none.
+- On those generations you earn the fee instead of tips and creator compensation.
+
+The fee is charged per generation, so what you earn depends on use.
 
 ## How many prices you can set: pricing slots {#pricing-slots}
 
@@ -214,7 +237,7 @@ The **Earnings** page shows the same money by source. The Generation Tips column
 
 Points to know:
 
-- **You receive the full purchase price.** When someone buys access, the Buzz they spend is paid to you, in the same kind of Buzz they paid with.
+- **You receive the price the buyer pays.** When someone buys access, the Buzz they spend is paid to you, after any sale discount, in the same kind of Buzz they paid with.
 - **A fee replaces tips and compensation on those generations.** If your version charges a licensing fee, a generation with it earns you the fee instead of tips and creator compensation. A fee you inherit from a base model goes to the parent's creator and does not switch yours off.
 - **Cashing out is a separate step.** Yellow Buzz you have earned can be banked in the Creator Program and withdrawn as money. See [Civitai's Guide to Earning with the Creator Program](/civitais-guide-to-earning-with-the-creator-program/) for the requirements, the banking caps and the payout process. Creator Studio's Settings page shows your payout status.
 
@@ -223,8 +246,8 @@ Points to know:
 | What you see | Why, and what to do |
 | --- | --- |
 | "Early access can't be started after a version is published" | Timed windows must start before the first publish. Use Paid Access, or plan the window for your next version. |
-| "Early access isn't available for your account yet" | Your creator score is below 10,000. It unlocks as your score grows. |
-| You can't choose Paid Access | You have used this month's pricing slots. Free up a slot by clearing a price you no longer need, or wait for the month to turn. |
+| "Early access isn't available for your account yet" | Your creator score is below 10,000, or you have used this month's pricing slots. The message under it says which. |
+| You can't choose Paid Access | Your creator score is below 10,000, or you have used this month's pricing slots. Free up a slot by clearing a price you no longer need, or wait for the month to turn. |
 | The usage control picker is a banner, not a choice | The version is set to a mode that is not editable here. |
 | Paid access is blocked for a version | Check the base model license and whether the model is flagged as depicting a real person. |
 

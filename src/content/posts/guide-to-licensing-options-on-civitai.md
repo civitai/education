@@ -2,7 +2,7 @@
 title: "Guide to Civitai Model Licensing Options"
 slug: "guide-to-licensing-options-on-civitai"
 date: "2024-03-07T14:26:23Z"
-modified: "2024-08-20T04:33:26Z"
+modified: "2026-10-26T21:00:00Z"
 categories:
   - "civitai"
 tags:
@@ -10,7 +10,7 @@ tags:
   - "licensing"
 author: "civitai"
 wpId: 3811
-excerpt: "Civitai Guide to Model Licensing"
+excerpt: "What the permission checkboxes on a model upload do, how they appear on the model page, and how they differ from licensing fees."
 image: "/wp-content/uploads/2024/03/ComfyUI_temp_zcusp_00048_.png"
 seo:
   title: "Guide to Civitai Model Licensing Options - Civitai Education"
@@ -22,61 +22,68 @@ seo:
 | **Last Updated** | **Changes** |
 | --- | --- |
 | 3/6/2024 | First version published |
+| 10/26/2026 | Updated permission names, the Commercial Use options, base model rules and the Addendum link. Added a section on licensing fees. Removed outdated screenshots. |
 
 ## Civitai Model Licensing; What is it, when does it apply, and what does it affect?
 
-The vast majority of resources shared on Civitai are either **Stable Diffusion 1.5 (SD 1.5)** Or **Stable Diffusion XL (SDXL)** these resources were created with the [CreativeML Open RAIL-M](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE) and [Open Rail++](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md) licenses respectively, which allow addendums, as determined by the user.
+When you upload a model you set permissions that say what other people may do with it. This guide covers those permissions, what they change on your model page, and how they differ from licensing **fees**, which are a separate feature.
 
-Any permissions can be added, as long as they don’t contradict the core tenants of the Open Rail license.
+Models built on **Stable Diffusion 1.5 (SD 1.5)** or **Stable Diffusion XL (SDXL 1.0)** were released under the [CreativeML Open RAIL-M](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE) and [Open RAIL++](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md) licenses. Those licenses allow addendums, so Civitai generates one from the permissions you pick, as long as it does not contradict the core terms of the Open RAIL license.
+
+Many other base models are used on Civitai today. Those have their own licenses, and Civitai does not generate an addendum for them. See [Models on other base models](#other-base-models).
+
+## Licensing fees are a different thing {#licensing-fees}
+
+"Licensing" on Civitai can mean two things:
+
+- **Permissions** (this guide): what other people are allowed to do with your model, set when you upload it.
+- **Licensing fees**: a per-generation fee, paid in Buzz, that you earn when someone generates with your model on Civitai.
+
+Fees, early access and paid access are covered in [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/).
 
 ## User Permissions Settings
 
-Upon model upload, you’ll see the following license permissions;
+On the upload form, under **When using this model, I give permission for users to:**, you will see these checkboxes. Uncheck any option you are not comfortable with.
 
-![](/wp-content/uploads/2024/03/Screenshot-2024-03-07-0121224.webp)
-
-Permission set here define guidelines for what users can do with your resource. Uncheck any option you’re not comfortable with.
-
--   **Use without crediting me:** Allow users to produce and share outputs without crediting the creator of the model; they can claim it as their own, if they so wish.
-
--   **Share Merges of this model:** Allow users to merge, finetune or train using this resource, or out-puts from this resource.
-
--   **Use different permissions on merges:** If merging _is_ allowed (based on the previous checkbox), define whether users are required to keep the same permissions you’ve set here on their newly created model.
+- **Use without crediting me:** Allow users to produce and share outputs without crediting the creator of the model.
+- **Share merges of this model:** Allow users to merge, finetune or train using this resource, or outputs from this resource.
+- **Use different permissions on merges:** Shown when merging is allowed. It lets people who merge your model set their own permissions instead of keeping yours.
 
 ## Commercial Use Settings
 
-Permission set here define guidelines for what users can do with your resource. Uncheck any option you’re not comfortable with. By default. these will all be set to **allow**.
+Next to those, **Commercial Use** has more checkboxes. By default all of them are selected, which allows everything. Uncheck any option you want to restrict.
 
-![](/wp-content/uploads/2024/03/Screenshot-2024-03-07-012122g4.webp)
+- **Sell generated images:** Allow users to sell the outputs of this model.
+- **Use on Civitai generation service:** Allow users to generate with this resource on Civitai's on-site Generator.
+- **Use on other generation services:** Allow other sites that offer generation to provide this model to their users.
+- **Sell this model:** Allow users to sell this model.
+- **Sell merges using this model:** Allow users to sell merges made with this model.
 
--   **Sell generated images**: Allow users to sell the outputs of this model for monetary gain.
+Some options depend on others. Selecting **Sell this model** also selects, and locks, both generation service options. Selecting **Use on other generation services** also selects, and locks, **Use on Civitai generation service**.
 
--   **Use On Civitai Generation Services**: Allow users to generate with this resource on Civitai’s on-site Generator, or “create” function.
+## License display on the model page
 
--   **Use on other generation services**: Allow other sites that offer generation services to provide this model to their users.
+Icons on the model page show your choices, green for allowed and red for restricted. Hover over an icon to see what it means. The icons cover commercial use, generation services, whether credit is required, merges, merge sales, and whether merges can use different permissions.
 
--   **Sell this model or merges**: Allow users to sell this model or any merges created with it.
+If your model uses SD 1.5 or SDXL 1.0 as its base, the model page shows an **Addendum** link beside the base model license. Click it to read the license and addendum generated for your model.
 
-## License display on Model Card
+## Models on other base models {#other-base-models}
 
-Upon unchecking any of the above permissions, your resource will change. Icons will be added to the resource Information Block denoting your choices;
+Models on other base models do not get a generated addendum. For those, your permissions work as a clear statement of what you want, and the base model's own license still applies.
 
-<figure><img src="/wp-content/uploads/2024/03/l1.webp" alt="" width="426" height="202" loading="lazy"><figcaption><em>Mouse-over the icons to show explanatory tooltips</em></figcaption></figure>
+Two rules come from the base model:
 
-If your resource utilizes either SD 1.5 or SDXL as a Base, a new license with your desired permissions will be generated and added to your model page;
-
-<figure><img src="/wp-content/uploads/2024/03/l2.webp" alt="" width="426" height="202" loading="lazy"><figcaption><em>Click on the License name to view the new License and Addendum for your model</em></figcaption></figure>
-
-Models that don’t utilize the Open RAIL License, or an Open RAIL variant, will _not_ have an addendum license generated, instead these permissions act as good-faith call outs about what the creator does or does not wish to have done with their model.
+- **Non-commercial base models.** If a base model is licensed for non-commercial use only, a version built on it cannot carry licensing fees or paid early access, and commercial use is disabled. The version form shows a warning when this applies.
+- **Mature content.** A model marked as NSFW cannot use a base model whose license does not allow it. The form shows a License Restriction Violation message that names the restricted base models.
 
 ## Frequently Asked Questions
 
 ### **I have evidence that someone has broken the terms of the addendum license on my resource! What do I do?**
 
--   If the breach has occured on Civitai.com _**report it**!_ We take licensing seriously and will act to protect your work.
+-   If the breach has occurred on Civitai.com, _**report it**!_ We take licensing seriously and will act to protect your work.
 
 -   If the breach is on another platform (not Civitai.com), contact a lawyer and discuss what your options are.
 
 ## I need more help!
 
-If you have questions about the Licensing system which aren’t answered on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).
+If you have questions about the Licensing system which aren't answered on this page, please reach out to a Community Manager at [support@civitai.com](mailto:support@civitai.com), or via the [Civitai Support portal](https://civitai.com/support).

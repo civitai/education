@@ -29,6 +29,8 @@ A **Crucible** is a head-to-head competition. People enter an image or a video, 
 
 Each Crucible has its own theme, entry fee, entry limit and schedule, set by whoever created it. The list is at [civitai.com/crucibles](https://civitai.com/crucibles), and you can browse it without signing in. You need an account to enter, judge or create one. The Crucibles link is also in the site menu.
 
+By the end of this guide you will know how to find a Crucible, enter and judge one, claim a prize, and set one up yourself.
+
 There are three ways to take part:
 
 - [Enter](#enter-a-crucible) your best work and compete for the prize pool.
@@ -45,30 +47,34 @@ Open [civitai.com/crucibles](https://civitai.com/crucibles). The page is titled 
 
 - **Sort** by Prize Pool, Ending Soon, Newest or Most Entries.
 - **Filter** with the filter button. "Content type" is All, Images or Videos. "Status" is Active, Upcoming or Completed.
-- Each card shows the status badge (Upcoming, Active, Ending soon, Completed), the time left, and the prize pool.
+- Each card shows a status badge (Upcoming, Active, Ending soon, Ended, Completed or Cancelled), the time left, and the prize pool. "Ended" means the timer ran out and the results are still being finalized.
 
 Open a card to see the Crucible's page. It shows the description, the **Rules** panel, the prize breakdown, the entries and, once the Crucible is over, the final podium. If a Crucible has not started yet, you can follow it from its page to be notified when it starts and before it ends.
 
 ### Read the rules before you enter
 
-The Rules panel on a Crucible's page lists what that Crucible requires. These are the settings to look for:
+A Crucible's page spreads its rules over a few places. The **Rules** panel lists the entry rules. The fee, the content type and the content ratings are shown elsewhere on the page.
 
-| Setting | What it means |
-| --- | --- |
-| Entry fee | Buzz you pay for each entry. It goes into the prize pool. |
-| Entry limit | The most entries one person can make (1 to 20). |
-| Free entries | How many of your first entries skip the fee. A free entry adds nothing to the prize pool. |
-| Content type | Images or videos. You can't mix them. |
-| Allowed content levels | The content ratings your entry may have. |
-| Required resources and base models | Your entry must be made with one of the listed models. If none are listed, any model works. |
-| Maximum clip length | Videos only. Longer clips are rejected. |
-| Entries close | Entries stop shortly before the end, so every entry has time to be judged. |
+| What to check | Where on the page | What it means |
+| --- | --- | --- |
+| Entry fee | The prize breakdown and your entries panel | Buzz you pay for each entry. It goes into the prize pool. |
+| Content type and allowed content levels | The badges at the top | Images or videos, and the ratings your entry may have. |
+| Required models | A separate panel that lists eligible models | Your entry must be made with one of them. If there is no list, any model works. |
+| Entries Per Person | Rules panel | The most entries one person can make (1 to 20). |
+| Free Entries | Rules panel | How many of your first entries skip the fee. A free entry adds nothing to the prize pool. |
+| Base Model | Rules panel | Entries must be made with a checkpoint of that base model. |
+| Total Entry Cap | Rules panel | The most entries the Crucible accepts from everyone. |
+| Entries Close | Rules panel | When entries stop, shortly before the end, so every entry has time to be judged. |
+| Max Clip Length | Rules panel (videos) | Longer clips are rejected. |
+| Watch Before Voting | Rules panel (videos) | How long judges must watch each clip before voting. |
+| Minimum Votes | Rules panel | The votes an entry needs to place. |
+| Ties | Rules panel | The earlier entry ranks higher. |
 
-Every Crucible also has the same last rule: each creator can win at most one prize. If you place more than once, your best entry counts and the next creator moves up.
+The panel always ends with "One Prize Per Creator": each creator can win at most one prize. If you place more than once, your best entry counts and the next creator moves up.
 
 ## Enter a Crucible {#enter-a-crucible}
 
-You can enter any Crucible that is Active, has not closed its entries, and is not your own. You can't enter a Crucible you created.
+You can enter any Crucible that is Active, has not closed its entries, and is not your own. You can't enter a Crucible you created, although you can still judge it.
 
 1. Open the Crucible's page and choose **Submit Entry**.
 2. In the dialog, pick your entry from one of three tabs:
@@ -84,19 +90,19 @@ You can enter any Crucible that is Active, has not closed its entries, and is no
 
 **Judging is blind.** While a Crucible runs, judges don't see who made an entry, and other people's entries don't open to show the prompt or resources. Media you add from inside the entry dialog stays off your profile, feeds and search until the Crucible ends. After it ends, entries are revealed with their creators.
 
-**Late entries.** A late entry has less time to collect votes. Near the end, the dialog warns you that an entry needs a certain number of votes to place and win a prize, and a new one may not get them. The Crucible's creator sets when this warning starts and when entries close.
+**Late entries.** A late entry has less time to collect votes. Near the end, the dialog warns you that an entry needs a certain number of votes to place and win a prize, and a new one may not get them. The Crucible's creator sets when this warning starts and when entries close. A cutoff of 0% means entries stay open to the very end.
 
-**Taking an entry back.** You can withdraw an entry while the Crucible is running. Withdrawing frees the slot but does not refund the fee, and entering again in that slot is charged again.
+**Taking an entry back.** While the Crucible is running, use the red trash icon on your own entry card. The dialog is titled "Remove your entry" and has the buttons "Keep it" and "Remove entry". Removing frees the slot but does not refund the fee, and entering again in that slot costs the full fee again.
 
 ### How placement works
 
-You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. The bar is based on how many votes the average entry received, so an entry posted in the last stretch can't win without being judged. When the Crucible ends, entries are ranked and prizes are set.
+You can't see scores or positions while a Crucible is running, other than for your own entry. This keeps a live ranking from steering the judges. An entry must also collect enough votes to place. The bar is based on how many votes the average entry received, so an entry posted in the last stretch can't win without being judged. After the timer runs out, a background job finalizes the Crucible: entries are ranked and prizes are set. Until then the badge reads "Ended".
 
 ## Judge Crucibles {#judge-crucibles}
 
 Judging is how winners are chosen, and anyone who qualifies can do it.
 
-**To qualify**, you need a creator score of at least 500. If you are below that, the judging page says so.
+**To qualify**, you need a creator score of at least 500. Creator score is a number Civitai calculates from your activity and how others engage with your work. If you are below the minimum, the judging page says so.
 
 1. On [civitai.com/crucibles](https://civitai.com/crucibles), choose **Start Judging**. This takes you to a Crucible that needs votes. You can also open an Active Crucible and start judging from its page.
 2. You see two entries side by side. Pick the one you think is better by clicking it, or press **1** for the left or **2** for the right (the arrow keys work too).
@@ -146,7 +152,7 @@ You create a Crucible from [civitai.com/crucibles](https://civitai.com/crucibles
 ### Who can create one
 
 - A creator score of at least 5,000.
-- An account in good standing: not banned, not muted, and without active strikes.
+- An account in good standing: not banned, not muted, and without active strikes serious enough to mute you.
 - No more than 5 new Crucibles in any 24 hours.
 - A limit on Crucibles running at once, by membership: Free 1, Bronze 2, Silver 3, Gold 5. A Crucible counts while it is Upcoming or Active. See [Civitai's Guide to Membership Tiers](/civitais-guide-to-membership-tiers/).
 
@@ -197,8 +203,9 @@ The creator pays in Green Buzz on civitai.com and Yellow Buzz on civitai.red. Th
 ### After you create it
 
 - A new Crucible is reviewed automatically before it is visible. If the review blocks it, or the review is still not done a day after it should have started, the Crucible is cancelled and your Buzz is refunded.
-- **Before it starts**, you can edit anything and you can cancel it. A cancel refunds the creation fee and the seed, and refunds every entry fee.
-- **After it starts**, you can edit only the name, description, cover image and banner. Only a moderator can cancel it.
+- **If you set a Start Date**, the Crucible is Upcoming until then. In that window you can edit anything and you can cancel it. A cancel refunds the creation fee and the seed.
+- **If you leave Start Date empty**, the Crucible starts right away and that window never exists.
+- **After it starts**, you can edit only the name, description, cover image and banner. Only a moderator can cancel a running Crucible, and in that case every entry fee is refunded.
 - You can't enter your own Crucible.
 
 ## Worked example
@@ -225,9 +232,9 @@ Now suppose one entrant has the two best entries. They receive the 1st prize of 
 - **"You need a creator score of at least 5,000" when creating.** Creating has a higher bar than judging. The create page lists each requirement and whether you meet it.
 - **"Entries are closed."** The Crucible stops taking entries shortly before its end so entries have time to be judged. Look for another Active Crucible.
 - **"You have reached the maximum of N entries."** You used all your entries. A withdrawn entry frees a slot, but the next one is charged again.
-- **"This image does not meet the content level requirements."** Your entry's rating is outside what the Crucible allows. Check "Allowed Content Levels" in the Rules panel.
-- **"You need N Buzz to enter this crucible."** Entry fees use Green Buzz on civitai.com or Yellow Buzz on civitai.red. Blue Buzz can't be used. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/).
-- **"Enter this crucible on civitai.red."** The Crucible allows content above PG-13, so it can only be entered on civitai.red.
+- **"This image does not meet the content level requirements."** Your entry's rating is outside what the Crucible allows. Check the content level badges at the top of the Crucible's page.
+- **"You need N green (or yellow) Buzz to enter this crucible."** Entry fees use Green Buzz on civitai.com or Yellow Buzz on civitai.red. Blue Buzz can't be used. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/).
+- **A Crucible won't open on civitai.com.** A Crucible that allows content above PG-13 does not open on civitai.com. Open it on civitai.red.
 - **"This crucible only accepts image (or video) entries."** Match your entry to the Crucible's content type.
 - **My entry placed, but I did not get a prize.** Check that you claimed it at [civitai.com/prizes](https://civitai.com/prizes), and remember that each creator is paid for one entry only.
 

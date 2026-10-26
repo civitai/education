@@ -152,7 +152,7 @@ A licensing fee is a small amount of Buzz you earn each time someone generates w
 3. Enter the Buzz amount and choose the number of generations from the list. If you are unsure, click **Use this** next to the "Suggested" line to fill in the suggested value.
 4. Select **Save fee**. The first time you charge for a version, tick the rights confirmation first. This section saves separately from Early & paid access.
 
-On civitai.com, turn on **Charge a fee to generate with this version** in the version edit form, then fill in **Fee per generation**.
+On civitai.com, open the version edit form. Turn on **I want to monetize this version** and confirm the rights statement. Then turn on **Charge a fee to generate with this version**, and set the fee under **Fee per generation** (a Buzz amount, then the number of generations).
 
 ### The fee ratio {#fee-ratio}
 
@@ -192,7 +192,7 @@ You publish a LoRA and set a fee of 1 Buzz per 10 generations, plus Paid Access 
 - Someone buys access at 100 Buzz: you receive 100 Buzz, in the kind of Buzz they paid with.
 - People generate with your LoRA 25 times in a day. The fee is 0.1 Buzz per generation, so the fee adds up to about 2.5 Buzz.
 - The version used one pricing slot, because it carries a price. Editing either price later uses none.
-- On those generations you earn the fee instead of tips and creator compensation.
+- On those generations you earn the fee instead of creator compensation.
 
 The fee is charged per generation, so what you earn depends on use.
 
@@ -238,7 +238,7 @@ The **Earnings** page shows the same money by source. The Generation Tips column
 Points to know:
 
 - **You receive the price the buyer pays.** When someone buys access, the Buzz they spend is paid to you, after any sale discount, in the same kind of Buzz they paid with.
-- **A fee replaces tips and compensation on those generations.** If your version charges a licensing fee, a generation with it earns you the fee instead of tips and creator compensation. A fee you inherit from a base model goes to the parent's creator and does not switch yours off.
+- **A fee replaces creator compensation on those generations.** If your version charges a licensing fee, a generation with it earns you the fee instead of creator compensation. A fee you inherit from a base model goes to the parent's creator and does not switch yours off.
 - **Cashing out is a separate step.** Yellow Buzz you have earned can be banked in the Creator Program and withdrawn as money. See [Civitai's Guide to Earning with the Creator Program](/civitais-guide-to-earning-with-the-creator-program/) for the requirements, the banking caps and the payout process. Creator Studio's Settings page shows your payout status.
 
 ## Troubleshooting {#troubleshooting}
@@ -246,9 +246,9 @@ Points to know:
 | What you see | Why, and what to do |
 | --- | --- |
 | "Early access can't be started after a version is published" | Timed windows must start before the first publish. Use Paid Access, or plan the window for your next version. |
-| "Early access isn't available for your account yet" | Your creator score is below 10,000, or you have used this month's pricing slots. The message under it says which. |
+| "Early access isn't available for your account yet" | Your creator score is below 10,000. The sentence after it says whether paid access is blocked by your score or by this month's pricing limit. |
 | You can't choose Paid Access | Your creator score is below 10,000, or you have used this month's pricing slots. Free up a slot by clearing a price you no longer need, or wait for the month to turn. |
-| The usage control picker is a banner, not a choice | The version is set to a mode that is not editable here. |
+| "Paid access isn't available for this version" | The version is set to API-only generation. It has no download or on-site generation mode to sell. |
 | Paid access is blocked for a version | Check the base model license, whether the model is flagged as depicting a real person, and whether the model is private. Private models can still carry a fee. |
 
 ## I need more help {#help}

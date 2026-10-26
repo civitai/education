@@ -25,7 +25,7 @@ Two different things on Civitai measure creators, and they are easy to mix up:
 - **Creator Score** is a number on your account. It grows when people use, react to and follow your work, and it decides which features you can use.
 - **Leaderboards** are public rankings. They compare creators over a recent window of time, in many categories.
 
-This guide explains both. They are separate systems: the leaderboards do not use your Creator Score, and your Creator Score is not a rank.
+This guide explains both. As far as the app and its public pages show, they are separate systems: the leaderboards publish their own scoring rules, none of which mention Creator Score, and your Creator Score is not a rank.
 
 ## What Creator Score is {#what-creator-score-is}
 
@@ -64,21 +64,19 @@ You can also open the page directly at [civitai.com/user/account](https://civita
 
 ## What a higher score unlocks {#what-it-unlocks}
 
-Creator Score gates a growing list of features. The numbers below are the thresholds in the Civitai app today. They can change, so check the in-app message if you are blocked.
+Creator Score gates a growing list of features. This table is a selection of the ones you can use today. The numbers are the thresholds in the Civitai app today. They can change, so check the in-app message if you are blocked.
 
 | Score | What it unlocks |
 | --- | --- |
-| 500 | Judging crucibles |
-| 1,000 | Higher comment limits and higher reaction limits |
-| 1,000, 5,000 | More posts per day: 60 a day at 1,000, 150 a day at 5,000, up from 20 |
-| 1,000, 5,000, 10,000 | More articles per day: 5, 10 and 20, up from 3 |
-| 10,000 | Charging for access to your model versions, with a licensing fee or paid access. This is also the first rung of the Early Access ladder, which grows with your score. See [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/) |
+| 1,000 | Higher comment limits and higher reaction limits. Up to 60 posts a day, up from 20. Up to 5 articles a day, up from 3 |
+| 5,000 | Up to 150 posts a day. Up to 10 articles a day |
+| 10,000 | Up to 20 articles a day. Charging for access to your model versions, with a licensing fee or paid access. This is also the first rung of the Early Access ladder, which grows with your score. See [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/) |
 | 40,000 | Joining the Creator Program. See [Civitai's Guide to Earning with the Creator Program](/civitais-guide-to-earning-with-the-creator-program/) |
 
 Notes:
 
 - **Members post more.** Civitai members get double the daily posts of the score tier they are in.
-- **New accounts wait to publish articles.** An account needs to be 24 hours old before it can publish an article, whatever its score.
+- **New accounts wait to publish articles.** If your account was created today, you cannot publish an article yet, whatever its score. The message in the app says to wait 24 hours.
 - **Membership is a separate thing.** Your membership tier changes how many new prices you can set each month. It does not change your Creator Score.
 
 ## How to grow your score {#how-to-grow-your-score}
@@ -95,14 +93,14 @@ Avoid posting content that breaks the rules. Removed images take points away.
 
 ## The leaderboards {#the-leaderboards}
 
-The leaderboards rank creators. You do not need to sign in to look at them. Open [civitai.com/leaderboard](https://civitai.com/leaderboard/overall). When you are signed in, the leaderboard is also in the account menu.
+The leaderboards rank creators. You do not need to sign in to look at them. Open [civitai.com/leaderboard/overall](https://civitai.com/leaderboard/overall), or choose **Leaderboard** (the crown icon) in the site menu.
 
 Each leaderboard is a category with its own rules. Some of the ones you can pick from the list:
 
 | Leaderboard | Who ranks |
 | --- | --- |
 | Creators | Top model creators, based on downloads, likes and generations |
-| Creators (90 Days) | The same ranking over a longer window |
+| Creators (90 Days) | The same ranking over 90 days. The page marks it experimental and temporary |
 | New Creators | New creators with fewer than 1,000 followers whose first model came out in the last 90 days |
 | Creators by base model or type | The same model ranking, limited to one base model, such as Flux, SDXL or Pony, or one type of resource, such as styles, characters or clothing |
 | Master Generators | Creators of the most popular safe-for-work images, plus a video version |
@@ -113,13 +111,13 @@ Each leaderboard is a category with its own rules. Some of the ones you can pick
 | Daily Challenges | People with the most challenge points |
 | Buzz Daddies | People who gave the most Buzz through generation tips |
 
-The list also has boards for crucibles and stickers, and a Cosmetic Collectors board. The list changes over time, so use the list on the page.
+The list also has boards for other activities, such as Cosmetic Collectors. The list changes over time, so use the list on the page.
 
 ### How a leaderboard ranks you {#how-a-leaderboard-ranks-you}
 
 Each leaderboard says how it ranks, in its own words. Press the info icon next to the description to read the rule. For example:
 
-- The **Creators** leaderboard scores models with a formula built from downloads divided by 10, likes times 3, and generations divided by 100, with a square root applied. Only models without mature cover images count, entries after the first 120 have diminishing returns, and only models published in the last 30 days are counted.
+- The **Creators** leaderboard scores models with a formula built from downloads divided by 10, likes times 3, and generations divided by 100, with a square root applied. Only models without mature cover images count, the board applies diminishing returns up to 120 entries, and only models published in the last 30 days are counted.
 - The **Writers** leaderboard looks at articles published in the last 30 days, using views, reactions and bookmarks.
 - The **Guardians** leaderboard gives points for reports that moderators act on, and takes points away for reports that moderators do not act on.
 
@@ -130,7 +128,9 @@ Most boards cover the last 30 days. A few use a different window, and the info i
 Most leaderboards have two views, selected by a toggle:
 
 - **Season** is the current ranking. This is the one the formula above describes.
-- **Legacy** is an all-time view. It adds up the places you have held over the whole history of the board, with points for each day: 1,000 points for first place (Diamond), 800 for the top 3 (Gold), 600 for the top 10 (Silver) and 400 for the top 100 (Bronze).
+- **Legacy** is an all-time view, and a few boards, such as Knights of New Order, do not have one. It adds up the places you have held over the whole history of the board, with points for each day: 1,000 points for first place (Diamond), 800 for the top 3 (Gold), 600 for the top 10 (Silver) and 400 for the top 100 (Bronze).
+
+For example, a creator who holds first place for 3 days and a top 10 place for 2 days earns 3 x 1,000 + 2 x 600 = 4,200 Legacy points.
 
 A leaderboard can be turned off for a while if there is a problem with it. The page tells you when that happens.
 
@@ -146,7 +146,7 @@ The score updates once a day. Check whether anything of yours was removed, or wh
 No. The weights are not published.
 
 **I can't do something that needs a certain score.**
-The message you see names the score you need. Look at your total under **Account standing**.
+Most of the messages you see name the score you need. Look at your total under **Account standing**.
 
 ## I need more help {#help}
 

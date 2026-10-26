@@ -69,7 +69,7 @@ A creator can put a chapter in **early access**. It costs Buzz to read for a set
 
 ## Make a comic {#make-a-comic}
 
-On a computer, hover over **Create** in the site header and choose **Create a Comic**. On a phone, go straight to [civitai.com/comics/create](https://civitai.com/comics/create). If you are signed out, you are sent to log in first.
+On a computer, hover over **Create** in the site header and choose **Create a Comic**. On a phone, open your account menu and choose **Create a Comic** in the Create group, or go to [civitai.com/comics/create](https://civitai.com/comics/create). If you are signed out, you are sent to log in first.
 
 ### Create the project {#create-the-project}
 
@@ -148,7 +148,7 @@ Creator Score is a number Civitai calculates from your activity and how others e
 
 ### Content and moderation {#content-and-moderation}
 
-- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be viewed or published. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red" and an **Unlock on civitai.red** button. A panel capped at a lower rating shows "limited to a lower rating" instead, on either site. On civitai.red, a mature panel you generated is held until you press **Unlock**, which costs Yellow Buzz (mature content must be turned on in your account settings). In the image picker the button reads **Unlock with yellow Buzz**. Some are capped at a lower rating and can't be unlocked. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
+- Some generation models make safe-for-work images only. On civitai.com, mature panels can't be generated or viewed. A generated panel that comes back mature shows "This generation can only be viewed on civitai.red" and an **Unlock on civitai.red** button. A panel capped at a lower rating shows "limited to a lower rating" instead, on either site. On civitai.red, a mature panel you generated is held until you press **Unlock**, which costs Yellow Buzz (mature content must be turned on in your account settings). In the window that opens from an "N images ready" card, the button reads **Unlock with yellow Buzz** (on civitai.com it reads **Open on civitai.red**). Some are capped at a lower rating and can't be unlocked. On civitai.red, uploaded or imported images can be mature, but if an image is classified as mature and Civitai can't verify that it was AI-generated, it is blocked from publishing until you add its generation details (prompt, sampler, steps and other settings). The panel card shows a yellow "Add Metadata" badge, and the panel's detail view has **Add generation details**.
 - A chapter can be hidden from readers while a panel waits for moderator review, or if it is flagged as a Terms of Service violation. The chapter list shows a **Review** or **TOS** badge, and the tooltip explains which. A chapter waiting for review publishes automatically when it clears.
 
 ## Worked example
@@ -157,7 +157,7 @@ You want to publish a short comic about two cats on a rooftop.
 
 1. Go to civitai.com/comics/create. Name it "Rooftop Cats", pick the Comedy genre, add a one-line description (you can also upload or generate a cover), then choose **Create Project**.
 2. In **References**, choose **Add Reference** (the **+** button once you have some). Upload three images of your main cat from different angles. Name it "Whiskers", choose type **Character** and save.
-3. Your new project already has a draft **Chapter 1**. Open it and choose the **+** tile at the end of the panel grid. On the **Generate** tab, write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. When the panel says "2 images ready", open it, pick the better image and choose **Confirm Selection**.
+3. Your new project already has a draft **Chapter 1**. Open it and choose the **+** tile at the end of the panel grid. On the **Generate** tab, wait for the reference to finish saving, then write "@Whiskers on a rooftop at sunset, looking at the city lights". Keep the portrait aspect ratio, set images per generation to 2, check the cost on the button and generate. When the panel says "2 images ready", open it, pick the better image and choose **Confirm Selection**.
 4. Add two more panels the same way, changing the scene each time.
 5. Press **Preview** to read it through, then **Publish**, choose **Publish now** and confirm.
 
@@ -173,7 +173,7 @@ Your project stays private until you publish a chapter. After that, readers can 
 - **My chapter is hidden from readers.** Check the **Review** or **TOS** badge on the chapter. Review clears on its own, while a TOS flag means you should remove the offending content or contact support.
 - **My upload was blocked as mature.** If the image is classified as mature and its generation data can't be verified, add the prompt, sampler, steps and other generation details to the image, then try again.
 - **Panel generation is queued or unavailable.** The dialog says whether your queue is full or generation is down. Wait and try again.
-- **A panel shows Failed.** Press **Regenerate** on the card to try again. A failed card always shows "Buzz has been refunded", and that is reliable when the message says the generation failed, was canceled or expired. If the message says the images failed to download or the upload failed, check your Buzz balance before pressing Regenerate. Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
+- **A panel shows Failed.** Press **Regenerate** on the card to try again. A failed card always shows "Buzz has been refunded", and that is reliable when the message says the generation failed, was canceled or expired. If the message says the images failed to download or the upload failed, check your Buzz balance before pressing Regenerate. Do the same for any other message, such as "Generation is no longer available". Refunds are not issued for other Beta-related issues, so check the cost shown before you confirm.
 
 ## I need more help
 

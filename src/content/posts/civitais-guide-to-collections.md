@@ -10,11 +10,11 @@ tags:
   - "guide"
 author: "civitai"
 excerpt: "How to save things into collections, create and share your own, follow other people's, and let other people add to yours."
-image: "/images/guides/collections/collections-cover.webp"
+image: "/images/guides/civitais-guide-to-collections/cover.webp"
 seo:
   title: "Civitai's Guide to Collections - Civitai Education"
   description: "Create, share, follow and contribute to collections on Civitai. Privacy options, collection types, collaborators, the review queue and common problems."
-  ogImage: "/images/guides/collections/collections-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-collections/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

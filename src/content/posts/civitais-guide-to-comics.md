@@ -9,11 +9,11 @@ tags:
   - "comics"
   - "guide"
 excerpt: "How to find, read and follow comics on Civitai, and how to make and publish your own comic with the Comic Creator, including references, panels and early access."
-image: "/images/guides/comics/comics-cover.webp"
+image: "/images/guides/civitais-guide-to-comics/cover.webp"
 seo:
   title: "Civitai's Guide to Comics - Civitai Education"
   description: "Learn how to browse and read AI comics on Civitai, follow your favorites, and create and publish your own comic with the Comic Creator."
-  ogImage: "/images/guides/comics/comics-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-comics/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

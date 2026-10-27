@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5390
 excerpt: "This tutorial will teach you how to easily extract detailed alpha mattes from videos in ComfyUI without the need to rotoscope in an external program. You can use these alpha mattes for all types of effects and workflows both in and out of ComfyUI."
-image: "/wp-content/uploads/2024/09/1_SAM2.webp"
+image: "/images/guides/easy-alpha-mattes-rotoscoping-in-comfyui-using-sam2/cover.webp"
 seo:
   title: "EASY ALPHA MATTES & ROTOSCOPING IN COMFYUI USING SAM2 - Civitai Education"
   description: "This tutorial will teach you how to easily extract alpha mattes from videos in ComfyUI without the need to rotoscope in an external program."
-  ogImage: "/wp-content/uploads/2024/09/1_SAM2.webp"
+  ogImage: "/images/guides/easy-alpha-mattes-rotoscoping-in-comfyui-using-sam2/cover.webp"
   canonical: "https://education.civitai.com/easy-alpha-mattes-rotoscoping-in-comfyui-using-sam2/"
 ---
 

@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1533
 excerpt: "How to Get Started with Civitai! This guide focuses on Uploading Content, Posting Images and Writing Articles!"
-image: "/wp-content/uploads/2023/09/output_00187_.png"
+image: "/images/guides/using-civitai-uploading-content/cover.webp"
 seo:
   title: "How to Upload and Share Generative AI Images on Civitai"
   description: "Dive into our guide to find out how you can seamlessly upload and share your generative art through Civitai.com."
-  ogImage: "/wp-content/uploads/2023/09/output_00187_.png"
+  ogImage: "/images/guides/using-civitai-uploading-content/cover.webp"
   canonical: "https://education.civitai.com/using-civitai-uploading-content/"
 ---
 

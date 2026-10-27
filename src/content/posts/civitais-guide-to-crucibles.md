@@ -10,11 +10,11 @@ tags:
   - "buzz"
   - "guide"
 excerpt: "How to enter a Crucible, judge head-to-head matchups, claim a Buzz prize, and create a Crucible of your own, with the costs and limits for each."
-image: "/images/guides/crucibles/crucibles-cover.webp"
+image: "/images/guides/civitais-guide-to-crucibles/cover.webp"
 seo:
   title: "Civitai's Guide to Crucibles - Civitai Education"
   description: "Crucibles are head-to-head image and video competitions where the community picks the winners. Learn how to enter, judge, claim prizes and create your own."
-  ogImage: "/images/guides/crucibles/crucibles-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-crucibles/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

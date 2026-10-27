@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 6084
 excerpt: "Civitai’s Guide to getting started with Large Language Models (LLMs)!"
-image: "/wp-content/uploads/2025/03/network_anim.webp"
+image: "/images/guides/civitais-quickstart-guide-to-large-language-models/cover.webp"
 seo:
   title: "Civitai's Quickstart Guide to Large Language Models! - Civitai Education"
   description: "Civitai's Guide to getting started with Large Language Models!"
-  ogImage: "/wp-content/uploads/2025/03/network_anim.webp"
+  ogImage: "/images/guides/civitais-quickstart-guide-to-large-language-models/cover.webp"
   canonical: "https://education.civitai.com/civitais-quickstart-guide-to-large-language-models/"
 ---
 

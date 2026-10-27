@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5424
 excerpt: "Civitai’s Guide to getting your content showcased on the Civitai.com homepage!"
-image: "/wp-content/uploads/2024/09/ComfyUI_02415_.png"
+image: "/images/guides/showcase-requests-getting-featured/cover.webp"
 seo:
   title: "Showcase Requests - Getting Featured! - Civitai Education"
   description: "Civitai's Guide to getting your content showcased on the Civitai.com homepage! Get your Images, Models and Articles noticed!"
-  ogImage: "/wp-content/uploads/2024/09/ComfyUI_02415_.png"
+  ogImage: "/images/guides/showcase-requests-getting-featured/cover.webp"
   canonical: "https://education.civitai.com/showcase-requests-getting-featured/"
 ---
 

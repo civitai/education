@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4939
 excerpt: "There are many types of Resource available for use on Civitai. This Guide breaks it all down in a clear and beginner friendly way!"
-image: "/wp-content/uploads/2024/08/output_00036_.png"
+image: "/images/guides/civitais-guide-to-resource-types/cover.webp"
 seo:
   title: "Resource Types - Civitai Education"
   description: "There are many types of Resource available for use on Civitai. This Guide breaks it all down in a clear and beginner friendly way!"
-  ogImage: "/wp-content/uploads/2024/08/output_00036_.png"
+  ogImage: "/images/guides/civitais-guide-to-resource-types/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-resource-types/"
 ---
 

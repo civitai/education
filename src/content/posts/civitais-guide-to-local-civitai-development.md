@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 6644
 excerpt: "Civitai guide to contributing to the Civitai.com Project!"
-image: "/wp-content/uploads/2025/02/localdev_anim.webp"
+image: "/images/guides/civitais-guide-to-local-civitai-development/cover.webp"
 seo:
   title: "Civitai's Guide to Local Civitai Development - Civitai Education"
   description: "Civitai guide to contributing to the Civitai.com Project! Are you a developer who wants to volunteer some time? Help us out!"
-  ogImage: "/wp-content/uploads/2025/02/localdev_anim.webp"
+  ogImage: "/images/guides/civitais-guide-to-local-civitai-development/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-local-civitai-development/"
 ---
 

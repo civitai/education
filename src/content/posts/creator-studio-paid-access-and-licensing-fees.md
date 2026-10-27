@@ -20,11 +20,11 @@ covers:
   - "donation-goals"
 reviewed: "2026-10-26"
 excerpt: "How to set early access, permanent paid access and per-generation licensing fees on your models, and how the Buzz you earn reaches you."
-image: "/images/guides/creator-studio-paid-access-and-licensing-fees/creator-studio-landing.webp"
+image: "/images/guides/creator-studio-paid-access-and-licensing-fees/cover.webp"
 seo:
   title: "Creator Studio, Paid Access and Licensing Fees - Civitai Education"
   description: "Set early access, permanent paid access and licensing fees on your Civitai models, understand the limits, and see where your earnings show up."
-  ogImage: "/images/guides/creator-studio-paid-access-and-licensing-fees/creator-studio-landing.webp"
+  ogImage: "/images/guides/creator-studio-paid-access-and-licensing-fees/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

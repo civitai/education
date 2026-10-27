@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 3189
 excerpt: "Civitai Guide to the Upscaling Images!"
-image: "/wp-content/uploads/2024/01/Screenshot-2024-01-19-103923.webp"
+image: "/images/guides/civitais-guide-to-image-upscaling/cover.webp"
 seo:
   title: "Civitai's Guide to Image Upscaling! - Civitai Education"
   description: "Explore methods, processes and workflows to upscale your Stable Diffusion images! Take your SD Generations to new levels!"
-  ogImage: "/wp-content/uploads/2024/01/Screenshot-2024-01-19-103923.webp"
+  ogImage: "/images/guides/civitais-guide-to-image-upscaling/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-image-upscaling/"
 ---
 

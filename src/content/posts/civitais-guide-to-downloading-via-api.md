@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 3297
 excerpt: "Civitai Guide to downloading resources with the Civitai API"
-image: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
+image: "/images/guides/civitais-guide-to-downloading-via-api/cover.webp"
 seo:
   title: "Civitai's Guide to Downloading via API - Civitai Education"
   description: "Documentation describing the use of the Civitai API to download resources, and common frequently asked API questions for wget, curl"
-  ogImage: "/wp-content/uploads/2024/01/ComfyUI_temp_zcusp_00061_.png"
+  ogImage: "/images/guides/civitais-guide-to-downloading-via-api/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-downloading-via-api/"
 ---
 

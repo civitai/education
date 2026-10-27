@@ -16,11 +16,11 @@ tags:
 author: "civitai"
 wpId: 5642
 excerpt: "Civitai’s Guide to generating video content on the Civitai Generator!"
-image: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+image: "/images/guides/civitais-guide-to-video-in-the-civitai-generator/cover.webp"
 seo:
   title: "Civitai's Guide to Video in the Civitai Generator! - Civitai Education"
   description: "Civitai's Guide to generating videos on the Civitai Image Generator! Generate beautiful text2video and img2video now!"
-  ogImage: "/wp-content/uploads/2025/03/ComfyUI_00041_.webp"
+  ogImage: "/images/guides/civitais-guide-to-video-in-the-civitai-generator/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-video-in-the-civitai-generator/"
 ---
 

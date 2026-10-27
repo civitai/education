@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 2171
 excerpt: "What is “Generative AI”, and how does Stable Diffusion fit into it? How do I start making AI assisted Art? Learn how to get started with Civitai.com’s Beginner’s Guide!"
-image: "/wp-content/uploads/2023/09/intro_anim.webp"
+image: "/images/guides/start-making-ai-art-with-civitai/cover.webp"
 seo:
   title: "Start Making Generative AI Art - Civitai.com's 100% Beginner's Guide"
   description: "Start Making Generative AI Art art quickly and effectively with our concise beginner's guide, focusing on practical tools and techniques."
-  ogImage: "/wp-content/uploads/2023/09/intro_anim.webp"
+  ogImage: "/images/guides/start-making-ai-art-with-civitai/cover.webp"
   canonical: "https://education.civitai.com/start-making-ai-art-with-civitai/"
 ---
 

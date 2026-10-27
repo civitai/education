@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 4766
 excerpt: "Civitai’s Guide to Early Access"
-image: "/wp-content/uploads/2024/08/cropped_1_EA1.webp"
+image: "/images/guides/civitais-guide-to-early-access/cover.webp"
 seo:
   title: "Civitai's Guide to Early Access! - Civitai Education"
   description: "Early Access is a significant step in helping the creator community monetize resources. Civitai's Guide to Early Access explains what it is, and how it's being used."
-  ogImage: "/wp-content/uploads/2024/08/cropped_1_EA1.webp"
+  ogImage: "/images/guides/civitais-guide-to-early-access/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-early-access/"
 ---
 

@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4652
 excerpt: "Our Quickstart Guide to Flux.1 will help you understand what the model is, what it can do, and how to start using it!"
-image: "/wp-content/uploads/2024/08/fluxoncivit.png"
+image: "/images/guides/quickstart-guide-to-flux-1/cover.webp"
 seo:
   title: "Quickstart Guide to Flux.1 - Civitai Education"
   description: "Updated! Our Quickstart Guide to Flux.1 will help you understand what the model is, what it can do, and how to start using it!"
-  ogImage: "/wp-content/uploads/2024/08/fluxoncivit.png"
+  ogImage: "/images/guides/quickstart-guide-to-flux-1/cover.webp"
   canonical: "https://education.civitai.com/quickstart-guide-to-flux-1/"
 ---
 

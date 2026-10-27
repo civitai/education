@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5213
 excerpt: "In this video, Purz teaches you how to make crazy animations using AnimateDiff and Masks!"
-image: "/wp-content/uploads/2024/09/PURZ.webp"
+image: "/images/guides/make-insane-ai-logo-animations-using-masks-ft-purz/cover.webp"
 seo:
   title: "MAKE INSANE AI LOGO ANIMATIONS USING MASKS ft. PURZ - Civitai Education"
   description: "In this video, Purz teaches you how to make crazy animations using AnimateDiff and Masks!"
-  ogImage: "/wp-content/uploads/2024/09/PURZ.webp"
+  ogImage: "/images/guides/make-insane-ai-logo-animations-using-masks-ft-purz/cover.webp"
   canonical: "https://education.civitai.com/make-insane-ai-logo-animations-using-masks-ft-purz/"
 ---
 

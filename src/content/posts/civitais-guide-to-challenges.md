@@ -10,11 +10,11 @@ tags:
   - "buzz"
   - "guide"
 excerpt: "How to find and enter Civitai Challenges, how the AI judge scores entries, how prizes are paid, and how to run a Community Challenge of your own."
-image: "/images/guides/challenges/challenges-cover.webp"
+image: "/images/guides/civitais-guide-to-challenges/cover.webp"
 seo:
   title: "Civitai's Guide to Challenges - Civitai Education"
   description: "Challenges are themed AI art contests with Buzz prizes. Learn how to enter, how entries are judged and how to create a Community Challenge."
-  ogImage: "/images/guides/challenges/challenges-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-challenges/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

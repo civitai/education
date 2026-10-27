@@ -13,11 +13,11 @@ tags:
 author: "civitai"
 wpId: 4217
 excerpt: "In this video we will preface our upcoming series by discussing Core Concepts and Terms that you will encounter during your time generating AI images and videos."
-image: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-145941.webp"
+image: "/images/guides/1-core-concepts/cover.webp"
 seo:
   title: "#1 Core Concepts - Civitai Education"
   description: "In this video we will preface our upcoming series by discussing Core Concepts and Terms that you will encounter during your time generating!"
-  ogImage: "/wp-content/uploads/2024/04/Screenshot-2024-04-23-145941.webp"
+  ogImage: "/images/guides/1-core-concepts/cover.webp"
   canonical: "https://education.civitai.com/1-core-concepts/"
 ---
 

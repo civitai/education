@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 1372
 excerpt: "LoRA Training with Kohya (or other scripts) is full of confusing terminology – find some answers to what everything is here!"
-image: "/wp-content/uploads/2023/08/output_00061_.png"
+image: "/images/guides/lora-training-glossary/cover.webp"
 seo:
   title: "LoRA Training Glossary"
   description: "Explore our comprehensive LoRA Training Glossary for a clear understanding of Stable Diffusion and generative AI terms."
-  ogImage: "/wp-content/uploads/2023/08/output_00061_.png"
+  ogImage: "/images/guides/lora-training-glossary/cover.webp"
   canonical: "https://education.civitai.com/lora-training-glossary/"
 ---
 

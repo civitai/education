@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 1614
 excerpt: "Explaining the Civitai on-site Image Generation Service! Get started making your own AI art – no PC required!"
-image: "/wp-content/uploads/2025/03/image-gen_anim.webp"
+image: "/images/guides/using-civitai-the-on-site-image-generator/cover.webp"
 seo:
   title: "Create AI Art for Free With the Civitai Image Generator"
   description: "Learn to create AI-generated art with the Civitai Image Generator! Explore the app and use thousands of models to bring your vision to life."
-  ogImage: "/wp-content/uploads/2025/03/image-gen_anim.webp"
+  ogImage: "/images/guides/using-civitai-the-on-site-image-generator/cover.webp"
   canonical: "https://education.civitai.com/using-civitai-the-on-site-image-generator/"
 ---
 

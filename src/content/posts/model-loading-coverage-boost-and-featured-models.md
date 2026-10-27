@@ -10,11 +10,11 @@ tags:
   - "buzz"
   - "guide"
 excerpt: "Which checkpoints you can generate with, what happens when a model is not loaded yet, what the Boost button buys, and what winning an auction does today."
-image: "/wp-content/uploads/2025/03/coverage_anim.webp"
+image: "/images/guides/model-loading-coverage-boost-and-featured-models/cover.webp"
 seo:
   title: "Model Loading: Coverage, Boost and Featured Models - Civitai Education"
   description: "How the on-site generator loads models: which checkpoints are covered, why a job can wait on a download, what the Boost button costs and does, and how Featured auctions work."
-  ogImage: "/wp-content/uploads/2025/03/coverage_anim.webp"
+  ogImage: "/images/guides/model-loading-coverage-boost-and-featured-models/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

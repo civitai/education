@@ -19,11 +19,11 @@ covers:
   - "buzz-memberships"
 reviewed: "2026-10-26"
 excerpt: "What Bronze, Silver and Gold memberships cost, what each one gives you every month, and how a membership connects to Buzz and the Creator Program."
-image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.webp"
+image: "/images/guides/civitais-guide-to-membership-tiers/cover.webp"
 seo:
   title: "Civitai's Guide to Membership Tiers - Civitai Education"
   description: "What Bronze, Silver and Gold memberships cost, what each one gives you every month, and how a membership connects to Buzz and the Creator Program."
-  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.webp"
+  ogImage: "/images/guides/civitais-guide-to-membership-tiers/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-membership-tiers/"
 ---
 

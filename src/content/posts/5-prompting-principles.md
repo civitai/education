@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4334
 excerpt: "In Part 5 of our Beginner Guide to AI Art, we invited long standing community member, Pookienumnums, to come and help us out! In this part of the series Pookie breaks down the basic principles of prompting for us and gives us tips for success!"
-image: "/wp-content/uploads/2024/06/Screenshot-2024-06-04-235757.webp"
+image: "/images/guides/5-prompting-principles/cover.webp"
 seo:
   title: "#5 Prompting Principles - Civitai Education"
   description: "In Part 5 of our Beginner Guide to AI Art, we invited long standing community member, Pookienumnums, to come and help us out!"
-  ogImage: "/wp-content/uploads/2024/06/Screenshot-2024-06-04-235757.webp"
+  ogImage: "/images/guides/5-prompting-principles/cover.webp"
   canonical: "https://education.civitai.com/5-prompting-principles/"
 ---
 

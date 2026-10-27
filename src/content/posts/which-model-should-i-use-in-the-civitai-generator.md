@@ -11,11 +11,11 @@ tags:
   - "buzz"
   - "guide"
 excerpt: "Pick a model for photorealism, anime, text in images, editing, video, speed or low cost, with a one-line reason for each and what it costs in Buzz."
-image: "/images/guides/which-model/which-model-cover.webp"
+image: "/images/guides/which-model-should-i-use-in-the-civitai-generator/cover.webp"
 seo:
   title: "Which Model Should I Use in the Civitai Generator? - Civitai Education"
   description: "A decision guide for the Civitai generator: which model to pick for photorealism, anime, text in images, editing, video, speed or low cost, with Buzz cost bands."
-  ogImage: "/images/guides/which-model/which-model-cover.webp"
+  ogImage: "/images/guides/which-model-should-i-use-in-the-civitai-generator/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

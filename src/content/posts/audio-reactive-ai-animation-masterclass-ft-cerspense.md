@@ -11,11 +11,11 @@ tags:
 author: "civitai"
 wpId: 5225
 excerpt: "In this very special Twitch stream, Cerspense walks us through his entire workflow from start to finish and shows us how to create captivating audio reactive visuals using Knotch, Touch Designer, and AnimateDiff."
-image: "/wp-content/uploads/2024/09/CERSPENSE.webp"
+image: "/images/guides/audio-reactive-ai-animation-masterclass-ft-cerspense/cover.webp"
 seo:
   title: "Audio Reactive AI Animation Masterclass ft. Cerspense - Civitai Education"
   description: "In this very special Twitch stream Cerspense walks us through his entire workflow showing us how to create captivating audio reactive visuals!"
-  ogImage: "/wp-content/uploads/2024/09/CERSPENSE.webp"
+  ogImage: "/images/guides/audio-reactive-ai-animation-masterclass-ft-cerspense/cover.webp"
   canonical: "https://education.civitai.com/audio-reactive-ai-animation-masterclass-ft-cerspense/"
 ---
 

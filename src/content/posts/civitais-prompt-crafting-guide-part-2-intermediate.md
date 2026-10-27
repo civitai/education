@@ -14,11 +14,11 @@ tags:
 author: "civitai"
 wpId: 2631
 excerpt: "Level up your prompting for SD with our Beginner to Advanced Guide! Part 2 covers Intermediate techniques, token weighting and emphasis."
-image: "/wp-content/uploads/2023/10/output_00259_.png"
+image: "/images/guides/civitais-prompt-crafting-guide-part-2-intermediate/cover.webp"
 seo:
   title: "Civitai's Prompt-Crafting Guide: Part 2 - Intermediate - Civitai Education"
   description: "In this Prompt-Crafting Guide we're discussing an advanced technique that's essential for any Prompter: adding emphasis."
-  ogImage: "/wp-content/uploads/2023/10/output_00259_.png"
+  ogImage: "/images/guides/civitais-prompt-crafting-guide-part-2-intermediate/cover.webp"
   canonical: "https://education.civitai.com/civitais-prompt-crafting-guide-part-2-intermediate/"
 ---
 

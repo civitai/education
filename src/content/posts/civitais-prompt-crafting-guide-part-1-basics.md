@@ -15,11 +15,11 @@ tags:
 author: "civitai"
 wpId: 2456
 excerpt: "Level up your prompting for SD with our Beginner to Advanced Guide! Part 1 covers the theory and basic knowledge required to craft good prompts!"
-image: "/wp-content/uploads/2023/10/LTXV_00087.webp"
+image: "/images/guides/civitais-prompt-crafting-guide-part-1-basics/cover.webp"
 seo:
   title: "Civitai's Prompt-Crafting Guide: Part 1 - Basics - Civitai Education"
   description: "Learn how to leverage Generative AI to create fascinating image, text, audio, and & video with Civitai's comprehensive prompt-crafting guide!"
-  ogImage: "/wp-content/uploads/2023/10/LTXV_00087.webp"
+  ogImage: "/images/guides/civitais-prompt-crafting-guide-part-1-basics/cover.webp"
   canonical: "https://education.civitai.com/civitais-prompt-crafting-guide-part-1-basics/"
 ---
 

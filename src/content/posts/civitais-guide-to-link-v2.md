@@ -12,11 +12,11 @@ tags:
 author: "civitai"
 wpId: 4095
 excerpt: "Civitai guide to Civitai Link"
-image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00028_.png"
+image: "/images/guides/civitais-guide-to-link-v2/cover.webp"
 seo:
   title: "Civitai's Guide to Link v2 - Civitai Education"
   description: "Civitai Link v2 (or simply Link), is a Windows, MacOS, and Linux app allowing you to download resources from Civitai.com"
-  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00028_.png"
+  ogImage: "/images/guides/civitais-guide-to-link-v2/cover.webp"
   canonical: "http://education.civitai.com/civitais-guide-to-link-v2/"
 ---
 

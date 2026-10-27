@@ -13,11 +13,11 @@ tags:
   - "guide"
 author: "civitai"
 excerpt: "How to buy and sell cosmetics, stickers and packs in the Civitai shops, which Buzz colors pay for them, and how stickers work in comments, chat and on images."
-image: "/images/guides/creator-shop-and-stickers/creator-shop-cover.webp"
+image: "/images/guides/civitais-guide-to-the-creator-shop-and-stickers/cover.webp"
 seo:
   title: "Civitai's Guide to the Creator Shop and Stickers - Civitai Education"
   description: "Buy and sell badges, avatar frames, profile backgrounds, stickers and packs on Civitai. Prices, Buzz colors, review rules, and how stickers are used."
-  ogImage: "/images/guides/creator-shop-and-stickers/creator-shop-cover.webp"
+  ogImage: "/images/guides/civitais-guide-to-the-creator-shop-and-stickers/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |

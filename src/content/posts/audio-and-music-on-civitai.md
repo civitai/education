@@ -13,6 +13,7 @@ tags:
   - "ace-step"
   - "guide"
 excerpt: "How to make music and sound effects in the Civitai generator with ACE Audio, MiniMax Music 3, YuE2 and Sonilo: what each engine takes, how long a track can be, what it costs in Buzz, and how to train your own audio LoRA in Training Studio."
+image: "/images/guides/audio-and-music-on-civitai/cover.webp"
 seo:
   title: "Audio and Music on Civitai - Civitai Education"
   description: "Generate music and sound effects on Civitai with ACE Audio, MiniMax Music 3, YuE2 and Sonilo, and train an ACE-Step audio LoRA in Training Studio. Lengths, controls and Buzz costs."

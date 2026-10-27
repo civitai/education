@@ -2,7 +2,6 @@
 title: "Civitai’s Guide to Membership Tiers"
 slug: "civitais-guide-to-membership-tiers"
 date: "2024-04-03T22:48:10Z"
-modified: "2025-02-20T05:36:32Z"
 categories:
   - "civitai"
 tags:
@@ -12,69 +11,83 @@ tags:
   - "supporter"
   - "tiers"
 author: "civitai"
+modified: "2026-10-26T23:00:00Z"
 wpId: 4055
-excerpt: "Civitai guide to the Civitai Membership Tiers"
-image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
+covers:
+  - "memberships"
+  - "membership-tiers"
+  - "buzz-memberships"
+reviewed: "2026-10-26"
+excerpt: "What Bronze, Silver and Gold memberships cost, what each one gives you every month, and how a membership connects to Buzz and the Creator Program."
+image: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.webp"
 seo:
   title: "Civitai's Guide to Membership Tiers - Civitai Education"
-  description: "We're excited to share significant updates to Civitai's Membership model, designed with our community's growth and sustainability in mind!"
-  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.png"
+  description: "What Bronze, Silver and Gold memberships cost, what each one gives you every month, and how a membership connects to Buzz and the Creator Program."
+  ogImage: "/wp-content/uploads/2024/04/ComfyUI_temp_zbjfr_00031_-1.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-membership-tiers/"
 ---
 
-| **Last Updated** | **Changes** |
-| --- | --- |
-| 4/2/2023 | First Version |
+A Civitai membership is optional. Everything on Civitai works without one: you can upload, download, generate and earn Buzz for free. A membership adds a monthly Buzz grant, higher limits and a few perks on top.
 
-## Membership?
+This guide covers the three paid tiers as they appear on the [membership page](https://civitai.com/pricing).
 
-We’re excited to share significant updates to Civitai’s Membership model, designed with our community’s growth and sustainability in mind!
+## The three tiers {#tiers}
 
-Moving away from our original $5 supporter tier (which still exists, see below), we’re introducing a new tiered membership system: **Free**, **Bronze** ($10), **Silver** ($25), and **Gold** ($50).
+| | **Bronze** | **Silver** | **Gold** |
+| --- | --- | --- | --- |
+| Price | $10 a month | $25 a month | $50 a month |
+| Green Buzz each month | 10,000 | 25,000 | 50,000 |
+| Bonus Buzz on purchases | 5% | 10% | 20% |
+| Bonus Blue Buzz on daily rewards | 1.5x | 2.5x | 4x |
+| Private models | 3 | 10 | 100 |
+| Images per generator job | 8 | 10 | 12 |
+| Queued generator jobs | 8 | 10 | 10 |
+| Support | Priority | Premium | VIP |
+| Monthly badge | Unique badge | Unique badge | Unique animated badge |
+| Model versions you can monetize each month | 10 | 25 | Unlimited |
+| Enhanced Model Creator controls | No | No | Yes |
 
-Our goal with these changes is not just to sustain Civitai’s growth but to enhance the value we deliver to you, Civitans, across all interaction points with the platform. Whether you’re just starting out or you’re a seasoned creator, our new tiers are designed to offer more tailored resources, exciting new features ([Civitai Vault](https://civitai.com/product/vault), [Civitai Link](https://dev.civitai.com/product/link)), and community access to support your creative journey.
+All three tiers also include:
 
-A note on the **Free** tier! There’s absolutely _no requirement_ to buy a Civitai Membership, and everything that’s currently possible on the **Free** tier will still be possible after the new Memberships are implemented. You’ll still be able to upload resources, download resources, earn buzz, train LoRAs, and generate images – all the on-site actions you’re currently using will remain available.
+- High priority generation.
+- Ad-free browsing.
+- [Civitai Link](/civitais-guide-to-link-v2/), to sync resources to your machine.
+- Exclusive Discord channels.
+- Early access to new features.
+- Access to the [Creator Program](/civitais-guide-to-earning-with-the-creator-program/).
 
-## What are the Benefits?
+The page is the source of truth for the numbers. Tiers change over time, so check it before you subscribe.
 
-The new Civitai’s Membership model forms four **Membership Tiers**; **Free**, **Bronze**, **Silver**, and **Gold** – each with their own fantastic rewards, benefits, and perks.
+## How membership and Buzz fit together {#buzz}
 
-![](/wp-content/uploads/2024/04/Screenshot-2025-02-20-003129-1024x720.webp)
+A membership touches Buzz in three ways:
 
-The following table explores the benefits in more detail;
+1. **A monthly grant of Green Buzz.** Green Buzz is the color you buy or receive for civitai.com, where content is PG and PG-13. See [Buzz Colors](/buzz-colors-blue-yellow-and-green/) for what each color can pay for.
+2. **A bonus on Buzz you buy.** The percentage in the table is added when you purchase Buzz.
+3. **A multiplier on free rewards.** Daily rewards that pay Blue Buzz are multiplied by your tier.
 
-| Membership Benefit | Description |
-| --- | --- |
-| Buzz Per Month | Buzz per month is the amount of Buzz the tier will grant you, in a lump-sum payment, at the beginning of each period. |
-| Bonus Buzz on Purchases | Each tier has a “**bonus buzz multiplier**” which increases the amount of buzz you receive, if you buy extra buzz. Higher tiers receive more bonus Buzz. |
-| Rewards give n% more Buzz | When collecting Buzz from on-site actions; reacting to images, collecting images, posting new content, **higher tiers will receive more Buzz**, up to 300% at the Gold tier. |
-| \# of Private Models | We’re rolling out Private Generation! This allows you to train LoRAs on Civitai and keep them entirely private for your own use! |
-| Images per Job | The number of images which can be created concurrently, in the on-site Image Generator. |
-| Queued Jobs | The number of jobs (batches of images) which can be queued concurrently, in the on-site Image Generator. |
-| Civitai Vault Storage | The storage allowance, in gigabytes, for [Civitai Vault](https://civitai.com/product/vault). |
-| Support Tier | Get faster Civitai Support – our dedicated Support agents prioritize support tickets based on issue severity and Supporter Tier. |
-| Supporter Badge | The type of Supporter Badge delivered each month; static, or animated. |
-| Access to Civitai Link | Whether the Tier grants access to the new [Civitai Link](https://dev.civitai.com/product/link) application. |
-| Exclusive Discord Channels | Whether the Tier grants access to Exclusive [Discord](https://discord.gg/civitai) Channels. |
-| Early Access Content | Whether the Tier grants access to Beta/Early Access resources. |
-| Early Access to New Features | Whether the Tier grants access to Beta/Early Access features. |
+Unrestricted content creation now lives on civitai.red, which uses Yellow Buzz. The membership page says so at the top and links to that site. Your Blue Buzz works on both sites.
 
-## FAQ {#requirements-limitations}
+## Monetizing your models {#monetize}
 
--   **Can I upgrade my current subscription?**
-    Yes! From the [Membership page](https://civitai.com/pricing), you can upgrade, or downgrade, your current Tier. When downgrading, you’ll be presented with a feedback box.
+Each tier has a monthly allowance of model versions you can put a price on, either with a licensing fee or with paid access. Bronze allows 10 a month, Silver 25 and Gold unlimited. Changing a price you have already set is always free, so it does not use up your allowance. See [Creator Studio, Paid Access and Licensing Fees](/creator-studio-paid-access-and-licensing-fees/) for how to set prices.
 
--   **I’m a current Subscriber! What’s my Membership status now?**
-    If you’re a current Member on the $5 Tier, you’ll be “grandfathered” into the new Tier system and receive the same benefits you’ve enjoyed previously, plus a 5% Buzz Purchase and Reward multiplier
+## The Creator Program {#creator-program}
 
-    Current Supporters on the $5 tier will receive a 50% discount of **_any_** Tier for the first month of their new membership, and will receive a **_unique_** “Grandfather” Profile Badge if choosing to upgrade.
+An active Bronze, Silver or Gold membership is required to join the Creator Program, along with a minimum Creator Score. See the [Creator Program guide](/civitais-guide-to-earning-with-the-creator-program/) and the [Creator Score guide](/civitais-guide-to-creator-score-and-the-leaderboard/).
 
--   **How do I Manage my Membership?**
-    If you’d like to Manage your Membership, head to your Account Settings from the Profile Picture Menu in the top right of the screen, and scroll down to the **Membership** section;
+## Subscribe, gift or manage {#manage}
 
-![](/wp-content/uploads/2024/04/Screenshot-2024-04-02-145430.webp)
+- **Subscribe or change tier** on the [membership page](https://civitai.com/pricing). Each tier card has a **Subscribe** button and a **Gift this tier** button.
+- **Gift a membership** with **Gift this tier**. You choose the tier and 1, 3 or 6 months.
+- **Manage your membership** from your account settings, in the Membership & Billing section.
+- **Pay with Buzz instead.** The membership page links to a perks-only membership that you buy with Buzz rather than a card. It is not a paid subscription and it does not renew automatically. It does not include the monthly Buzz, the bonus Buzz on purchases or rewards, or the Creator Program. These memberships are only offered at certain times, and the page tells you when none are available.
 
-## The Future
+## Questions {#questions}
 
-We’ll continue to expand this guide with more information as the Membership Tier system evolves!
+**Do I need a membership to use Civitai?**
+No. Free accounts can upload, download, generate and earn Buzz.
+
+## I need more help {#help}
+
+If something about your membership looks wrong, contact Civitai support from the support link at the bottom of any page.

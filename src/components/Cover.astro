@@ -1,7 +1,6 @@
 ---
-// A post cover in a fixed frame. Covers come in several shapes (most square, many 16:9). The square
-// frame contains the image, never cropping it, over a blurred copy of itself that fills the rest;
-// the wide frame fills edge to edge and crops from the centre on cards, while the lead story and the
+// A post cover in a fixed frame. Covers are 16:9 with the subject centred, so the square frame
+// crops from the centre, and so does the wide frame on cards, while the lead story and the
 // article cover (base.css) drop the frame's ratio and show the whole image at its own shape.
 interface Props {
   src: string;

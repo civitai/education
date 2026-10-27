@@ -85,7 +85,7 @@ Krea 3 is Krea's image model, listed after Krea 2 in the Krea group of the base 
 - **Inputs:** 1 to 6 reference images. The output size follows your references, so there is no aspect ratio choice when editing.
 - **Cost:** about 45 Buzz at 1K. 2K costs more, about 105 Buzz, plus about 45 for each extra reference image. You also choose the **Thinking** mode, Instant or Medium. At 1K the two cost the same in our pricing check; at 2K Medium costs more.
 - **Best at:** in our test, keeping the scene intact while changing the one thing we named.
-- **In our test:** it followed all three edits and kept the original scene and framing, as several other models did. In the two-image test it put the mug beside the pot on the table without changing the room.
+- **In our test:** it followed all three edits and kept the original scene and framing, as several other models did. In the two-image test it put the mug beside the jar on the table without changing the room.
 
 ## Krea 2
 
@@ -112,7 +112,7 @@ Seedream is ByteDance's model, built for high-resolution output and legible text
 - **Inputs:** up to 7 reference images.
 - **Best at:** legible text and high-resolution output. 4K is available only on v4.5 and v5.0 Lite.
 - **Cost:** about 135 Buzz for v5.0 Pro at 2K and about 52 for v5.0 Lite.
-- **In our test:** the single-image edits worked, though its mug had a slightly textured finish. On the two-image test the mug came out oversized and the pot was gone.
+- **In our test:** the single-image edits worked, though its mug had a slightly textured finish. On the two-image test the mug came out oversized and the jar was gone.
 
 ## Qwen Image Edit
 
@@ -121,7 +121,7 @@ Qwen Image Edit is the editing build of Alibaba's open-weight Qwen-Image. Civita
 - **Inputs:** up to 3 reference images.
 - **Best at:** open-weight edits, including changing text in an image (per Civitai's Qwen page).
 - **Cost:** the 2511 version is about 50 Buzz at 25 steps with one image, 56 with two, and about 100 at 50 steps.
-- **In our test:** it followed the single-image edits. In the two-image test the mug took the place of the pot.
+- **In our test:** it followed the single-image edits. In the two-image test the mug took the place of the jar.
 
 ## Muse Image
 
@@ -153,7 +153,7 @@ Source: the white mug. Prompt: *Change the mug to matte black and place a small 
 
 ![The source image: a white ceramic mug on a wooden table by a window](/images/guides/image-editing-models/source-mug.webp)
 
-All nine kept the table, window and the small wooden jar and turned the mug black. They differ in where the lavender went and in how matte the mug looks.
+All nine kept the table, window and the small wooden pot and turned the mug black. They differ in where the lavender went and in how matte the mug looks.
 
 | GPT Image 2.5 Flare, about 69 Buzz | GPT Image 2.5 Sunburst, about 69 Buzz | Krea 3, about 45 Buzz |
 | --- | --- | --- |
@@ -189,9 +189,9 @@ Every model spelled the words correctly and left the shopfront alone. The differ
 
 ### Edit 3: combine two images
 
-Sources: the white mug and the reading room. Prompt: *Place the mug from the first image on the table in the second image, matching the lighting.* The reading room has a small round table with a lamp and a small dark pot on it.
+Sources: the white mug and the reading room. Prompt: *Place the mug from the first image on the table in the second image, matching the lighting.* The reading room has a small round table with a lamp and a small lidded jar on it.
 
-![The second source image: a reading room with bookshelves, two armchairs, and a small round table holding a lamp and a small dark pot](/images/guides/image-editing-models/source-room.webp)
+![The second source image: a reading room with bookshelves, two armchairs, and a small round table holding a lamp and a small lidded jar](/images/guides/image-editing-models/source-room.webp)
 
 | GPT Image 2.5 Flare, about 69 Buzz | GPT Image 2.5 Sunburst, about 69 Buzz | Krea 3, about 45 Buzz |
 | --- | --- | --- |
@@ -199,13 +199,13 @@ Sources: the white mug and the reading room. Prompt: *Place the mug from the fir
 
 | Krea 2 (Turbo), about 22 Buzz | Nano Banana V2.1, about 44 Buzz | Seedream v5.0 Pro, about 135 Buzz |
 | --- | --- | --- |
-| ![Krea 2 (Turbo): a new shot with a large mug on a foreground table](/images/guides/image-editing-models/ex3-krea2-turbo.webp) | ![Nano Banana V2.1: the mug placed in the reading room](/images/guides/image-editing-models/ex3-nano-banana-v21.webp) | ![Seedream v5.0 Pro: an oversized mug on the table with the pot missing](/images/guides/image-editing-models/ex3-seedream-v5-pro.webp) |
+| ![Krea 2 (Turbo): a new shot with a large mug on a foreground table](/images/guides/image-editing-models/ex3-krea2-turbo.webp) | ![Nano Banana V2.1: the mug placed in the reading room](/images/guides/image-editing-models/ex3-nano-banana-v21.webp) | ![Seedream v5.0 Pro: an oversized mug on the table with the jar missing](/images/guides/image-editing-models/ex3-seedream-v5-pro.webp) |
 
 | Qwen Image Edit 2511, about 56 Buzz | Muse Image, about 13 Buzz | Flux.3, about 63 Buzz |
 | --- | --- | --- |
 | ![Qwen Image Edit 2511: the mug placed in the reading room](/images/guides/image-editing-models/ex3-qwen-edit-2511.webp) | ![Muse Image: the mug placed in the reading room](/images/guides/image-editing-models/ex3-muse.webp) | ![Flux.3: the mug placed in the reading room](/images/guides/image-editing-models/ex3-flux3.webp) |
 
-Krea 3, Nano Banana V2.1, GPT Image 2.5 Sunburst, Muse Image and Flux.3 put the mug on the round table beside the pot and kept the room. GPT Image 2.5 Flare placed the mug correctly but reframed the shot tighter. In the Seedream v5.0 Pro result the mug is oversized and the pot is gone, and in the Qwen Image Edit result the mug is on the table where the pot was. Krea 2 did not keep the scene: it made a new shot with a large mug on a foreground table.
+Krea 3, Nano Banana V2.1, GPT Image 2.5 Sunburst, Muse Image and Flux.3 put the mug on the round table beside the jar and kept the room. GPT Image 2.5 Flare placed the mug correctly but reframed the shot tighter. In the Seedream v5.0 Pro result the mug is oversized and the jar is gone, and in the Qwen Image Edit result the mug is on the table where the jar was. Krea 2 did not keep the scene: it made a new shot with a large mug on a foreground table.
 
 ## Remix: edit or animate an image
 
@@ -229,7 +229,7 @@ The Remix button is on an image, on its card and on its page. **Edit image** pic
 ## Troubleshooting
 
 - **The result changed things you did not ask for.** Add what to keep to the prompt, or try another model. In our text test the GPT Image builds added strokes, and Flux.3 shrank the text.
-- **An object disappeared or grew.** In the two-image test the pot disappeared in the Seedream and Qwen Image Edit results, and the mug grew in Seedream's. Try Krea 3 or Nano Banana, or edit in two steps.
+- **An object disappeared or grew.** In the two-image test the jar disappeared in the Seedream and Qwen Image Edit results, and the mug grew in Seedream's. Try Krea 3 or Nano Banana, or edit in two steps.
 - **The finish is off.** In Edit 1 the Muse mug reads gray rather than clearly black, and the Seedream mug has a slightly textured finish. Name the finish again ("flat, non-reflective matte black"), or try another model.
 - **The cost is higher than the table says.** Check the settings: resolution, quality, steps and the number of reference images all change the price.
 - **A model is missing from the picker.** The list changes as models are added or retired. The generator's picker is the current list.

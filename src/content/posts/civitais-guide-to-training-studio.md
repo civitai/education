@@ -136,7 +136,7 @@ The Data step states which one it is using (“Auto-labeled as captions · free�
 
 ### Auto-label {#auto-label}
 
-Auto-labeling is free. Tags come from a tagging model and captions come from an image captioner. It has two modes:
+Auto-labeling is free. Tags come from a tagging model and captions come from an image captioner. Each account can auto-label up to 1,200 files a day; past that, the Studio says you’ve reached today’s limit, and it resets at midnight UTC. It has two modes:
 
 - **Automatic** labels new uploads as they arrive.
 - **Manual** labels only when you ask. A button labeled **Auto-label N** (N is how many files are unlabeled) appears above the file grid, and clicking it labels them. Manual helps when you want to write labels yourself.
@@ -274,7 +274,7 @@ You can also see details on the page: number of checkpoints, when it was created
 
 ### Generate, publish, download {#generate-publish-download}
 
-- **Generate** opens the generator with that epoch’s LoRA loaded. You can do this while the run is still training, as soon as an epoch has weights. Generating with an unpublished training result requires a Civitai membership, and the button tells you so if you do not have one.
+- **Generate** opens the generator with that epoch’s LoRA loaded, for image and video LoRAs. Audio LoRAs can’t be used in Create Music yet, so download or publish them instead. You can do this while the run is still training, as soon as an epoch has weights. Generating with an unpublished training result requires a Civitai membership, and the button tells you so if you do not have one.
 - **Publish a model page** creates a draft model page on Civitai from the checkpoint you pick, which you then finish there. It is available once a checkpoint has downloadable weights. If you already have a draft model page for the run, publishing picks up where you left off. Nothing is public until you publish.
 - **Download weights** saves one epoch’s file. You can also download every checkpoint’s weights or sample images as a zip, or the run’s settings as a `.json` file.
 

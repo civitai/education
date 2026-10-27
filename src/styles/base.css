@@ -1168,7 +1168,8 @@ iframe {
   }
 }
 
-/* Square post cover: contained over a blurred copy of itself, so any shape fills the square. */
+/* Square post cover: cropped from the centre (covers are centred icons). The blurred copy is only
+   seen where a frame below contains the image instead. */
 .cover {
   position: relative;
   display: block;
@@ -1190,7 +1191,7 @@ iframe {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Filled button: the page's main action (the Pro gradient is kept for the one civitai.com link). */

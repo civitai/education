@@ -28,14 +28,15 @@ seo:
 | 7/26/2024 | Updates to Known Bugs + CivBot Sections |
 | 5/13/2025 | New Updates Feed |
 | 4/1/2026 | Updated birthday section |
+| 10/29/2026 | Real-person likeness answer matches the Terms of Service; Known Bugs points to the Issues page; fixed the Discord link; merged the two DM questions |
 
 ## This FAQ
 
 In the Civitai FAQ & Known Bugs article we’ll answer some common questions which often appear via Our **[Ticket Portal](https://civitai.com/bugs)**, **[Discord](http://discord.gg/civitai)**, and the **[CivBot](/civitais-guide-to-civbot/)**.
 
-### Known Bugs! {#civitai-s-birthday}
+### Known Bugs! {#known-bugs}
 
-The best place to find out what’s happening is the [Updates feed](https://civitai.com/changelog). This page is the go-to source for all feature releases, bug fixes, known issues
+To see the bugs we already know about, and add your own report, go to the [Issues page](https://civitai.com/issues). For feature releases and bug fixes as they ship, see the [Updates feed](https://civitai.com/changelog).
 
 ![](/wp-content/uploads/2024/07/Screenshot-2025-05-13-103941-1024x514.webp)
 
@@ -55,9 +56,9 @@ Click the **Updates** button to find out the latest information on the biggest i
 
 </div>
 
-### Civitai’s Birthday!
+### Civitai’s Birthday! {#civitai-s-birthday}
 
-Civitai launched on **November 10, 2022** – and we’re now **3 years old**! Thank you to our incredible community for being part of this journey.
+Civitai launched on **November 10, 2022**, and turns **4 years old** on November 10, 2026! Thank you to our incredible community for being part of this journey.
 
 Read about our milestones along the way:
 
@@ -68,7 +69,7 @@ Read about our milestones along the way:
 
 We’re sorry your LoRA didn’t complete training on the Civitai LoRA Trainer! We actually have checks in place to detect failures and re-submit failed processes, but sometimes there are training processes which don’t complete!
 
-If you experience a failure while training with the Civitai LoRA trainer, don’t delete the failed run – contact the Community Managers via [Discord](https://dev.civitai.com/discord), or **support @ civitai.com** and we’ll look into it for you. Often, failed training runs can be re-queued.
+If you experience a failure while training with the Civitai LoRA trainer, don’t delete the failed run – contact the Community Managers via [Discord](https://discord.gg/civitai), or **support @ civitai.com** and we’ll look into it for you. Often, failed training runs can be re-queued.
 
 Note that if you see a status of “Paused”, that means our safety scanners have flagged your training data for review by a human moderator. That process should take no longer than 48 hours at most, and your training will resume shortly after being reviewed.
 
@@ -166,11 +167,9 @@ The little trash can icon can be used to remove trained models from your account
 
 ### Can I use a Celebrity LoRA on the Civitai Image Generator?
 
-Currently **no**, you _cannot_ generate likenesses of real-world people on the Civitai Image Generator. Any model intended to produce the likeness of a real-person, and marked as such, will not show in the Image Generator, currently. Similarly, prompting for Celebrity names should be avoided.
+**No.** Civitai’s [Terms of Service](https://civitai.com/content/tos#tos-prohibited-content) prohibit content that uses, reproduces, or is based on the likeness of real people, living or deceased, including public figures, celebrities, influencers and private individuals, in any context. That covers generating images, training models (including with the on-site trainer), and uploading models or images. Don’t prompt for real people’s names either.
 
-This restriction **_does not apply_** to the Civitai on-site LoRA trainer. You can still train likenesses of real-world people and Celebrities – after attesting that you have permission to do so.
-
-### Does Civitai have a DM (Direct Message) system?
+### Does Civitai have a DM (Direct Message) system? How can I send one? {#does-civitai-have-a-dm-direct-message-system}
 
 You can send Direct Messages to another user with the Civitai DM system, accessible from the Chat Icon in the top right of the page. For more information on the DM system, please see [http://education.civitai.com/civitais-guide-to-direct-messages-dms](/civitais-guide-to-direct-messages-dms)
 
@@ -187,10 +186,6 @@ There are **Post Images**, and **Post Videos** options in the blue “**Create**
 ### Is there a Civitai App?
 
 There is **not currently a dedicated mobile Android or iOS app for Civitai** – we’re only available online at Civitai.com!
-
-### How can I send a Direct Message?
-
-You can send Direct Messages to another user with the Civitai DM system, accessible from the Chat Icon in the top right of the page. For more information on the DM system, please see [http://education.civitai.com/civitais-guide-to-direct-messages-dms](/civitais-guide-to-direct-messages-dms)
 
 ### Does Civitai Have a Merchandize (Merch) Store?
 

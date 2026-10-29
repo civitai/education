@@ -42,7 +42,7 @@ This guide covers how to read a storyline, how to write the next chapter of some
 
 ### Find one {#find}
 
-- Open [civitai.com/storylines](https://civitai.com/storylines) to browse storylines. You can filter the list by **All**, **Ongoing**, **Complete** or **Open for continuations**.
+- Open [civitai.com/storylines](https://civitai.com/storylines) to browse storylines. You can filter the list by **All**, **Ongoing**, **Complete** or **Open for continuations**, and sort it by **Newest** or **Most chapters**.
 - Images that belong to a storyline show a small pill in the image feed with the storyline's title and the chapter number, such as "Lantern Road · Ch 2". Select it to open the image in storyline mode.
 - In image detail, an image that belongs to a storyline has a **Read the story** chip. Select it to enter storyline mode.
 - On a chapter's post page, the storyline pill has a menu with **Read from here in the viewer** and **Story page and map**.
@@ -52,7 +52,7 @@ This guide covers how to read a storyline, how to write the next chapter of some
 
 In storyline mode, the left and right controls in image detail walk through the images of the chapters on your path. They do not page the feed the way they usually do. A chip in the toolbar names the storyline and the chapter you are in.
 
-On the last image, the right arrow or the **What happens next** button opens the end of the chapter, where you choose how to continue. The left arrow closes it again. The arrows never move you into a chapter you have not chosen. Each way on shows its first image and the share of readers who took it. The first way on gets the large card. It is labeled **Keep reading** and has a **Read chapter** button. It is the creator's chapter if there is one. Continuations by the creator's endorsed collaborators come next, then everyone else's, ordered by how many readers took them. The other paths are listed under the **Other paths** heading.
+On the last image, the right arrow or the **What happens next** button opens the end of the chapter, where you choose how to continue. The left arrow closes it again. On a computer, when the chapter has only one way on, pressing the right arrow again continues into it. When the story branches, the arrows never move you into a chapter you have not chosen. Each way on shows its first image and the share of readers who took it. The first way on gets the large card. It is labeled **Keep reading** and has a **Read chapter** button. It is the creator's chapter if there is one. Continuations by the creator's endorsed collaborators come next, then everyone else's, ordered by how many readers took them. The other paths are listed under the **Other paths** heading.
 
 :::note
 If you are the first reader to reach a fork, you see **Be the first to choose**. Once readers have chosen, each way on shows its share.
@@ -152,10 +152,13 @@ You choose one of two settings, and you can change it later from the gear (**Man
 
 Select the gear (**Manage**) button on your storyline's page. Only the creator sees it.
 
-- **Story settings** and **Collaborators** are the two tabs of the window. Story settings also lets you edit the title and covers.
+- **Story settings** and **Collaborators** are the two tabs of the window. Story settings also lets you edit the title.
+- **Covers:** a **Card cover**, shown in the storyline list, and a **Banner** across the top of the storyline's page. Pick a picture from your chapters or your endorsed collaborators' chapters, or upload one. Without a banner, the page shows the card cover, blurred.
 - **Status:** **Ongoing** or **Complete**. Complete closes the storyline to new continuations.
 - **Who can continue** and **Maximum rating**, as above. Chapters rated above the maximum are hidden, and higher-rated continuations cannot be submitted.
 - **Collaborators:** **Endorse** a person by username. Their continuations skip review and are listed after the main path at the end of a chapter. Removing someone keeps their chapters in the story. It stops the auto-approval and moves their chapters out of the collaborators' group at the end of a chapter.
+
+To delete a storyline, open the **More options** (⋯) menu on its page and choose **Delete storyline**, then confirm. This removes the storyline, its chapter links and its discussion. Every chapter's post stays published as an ordinary post.
 
 ### Review continuations {#review}
 

@@ -19,7 +19,7 @@ seo:
 ---
 
 :::note
-Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines. Screenshots are still placeholders.
+Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines. The rejection screenshot in section 5 is a stand-in.
 :::
 
 You have an idea for a small tool: a prompt helper, a LoRA tester, a memory game for your followers. You don't write code. You can still build it. Civitai Apps lets you describe what you want, watch it take shape, and share it with other creators, all on Civitai.
@@ -55,16 +55,14 @@ You don't need to be a developer. The Build page says so: "describe what you wan
 ### Open the Build page
 Go to **Apps → Build**. On the left is the App Assistant panel with your chats. In the middle is the chat, with a message box at the bottom. Above the panel, the **app switcher** shows which of your apps is open. **My apps**, top right, lists every app you own.
 
-:::note
-Review copy: Screenshot: walkthrough 01-build-landing goes here.
-:::
+![The Build page: the App Assistant panel with your chats, the chat and message box, and the app switcher](/images/guides/build-an-app-on-civitai/01-build-landing.webp)
 
 ### Start a new app
 Click the app switcher and choose **New app**. The switcher then reads **No app open**, and the Assistant asks "what shall we make?" The cards under it, such as *Character card maker*, *LoRA tester*, *Daily prompt challenge* and *Buzz tracker*, are example ideas you can click.
 
-:::note
-Review copy: Screenshots: 02-app-switcher, 03-new-app goes here.
-:::
+![The app switcher open, with New app at the bottom](/images/guides/build-an-app-on-civitai/02-app-switcher.webp)
+
+![A new chat asking what to make, with example idea cards](/images/guides/build-an-app-on-civitai/03-new-app.webp)
 
 ### Describe your app in plain words
 Type what you want. No code is needed. Press Enter to send, or Shift+Enter for a new line. For the demo we typed:
@@ -73,41 +71,43 @@ Type what you want. No code is needed. Press Enter to send, or Shift+Enter for a
 
 A chip in the message box shows which AI model the chat uses. You can search it and switch, or leave the default.
 
-:::note
-Review copy: Screenshots: 04-model-picker, 05-describe-app goes here.
-:::
+![The model chip in the message box, open to pick a different AI model](/images/guides/build-an-app-on-civitai/04-model-picker.webp)
+
+![The memory game request typed into the message box](/images/guides/build-an-app-on-civitai/05-describe-app.webp)
 
 ### Watch it build
 The first reply is a **Feature checklist** built from your words, and building starts right away. There is no "Build it" button to press. The app gets a name and starts **Running**.
 
 A **live preview** opens on the right while the Assistant is still working, so you can watch the app take shape. The Assistant writes and checks the code; the Send button becomes **Stop** while it works. In our demo the first build took about five to six minutes.
 
-:::note
-Review copy: Screenshots: 06-first-reply, 07-mid-build, 08-preview-appears goes here.
-:::
+![The first reply: a feature checklist built from the request](/images/guides/build-an-app-on-civitai/06-first-reply.webp)
+
+![The Assistant mid-build, with the Send button turned into Stop](/images/guides/build-an-app-on-civitai/07-mid-build.webp)
+
+![The live preview of the app opening on the right while it builds](/images/guides/build-an-app-on-civitai/08-preview-appears.webp)
 
 ### It checks its own work
 When it finishes, every checklist item is ticked. The Assistant says it checked that the app renders in a test browser, ran its tests and the typecheck, and then summarizes what it built in plain words. You may see "A step didn't work": one of its internal steps failed and it recovered. You don't need to do anything; click it only if you're curious.
 
-:::note
-Review copy: Screenshot: 09-build-done goes here.
-:::
+![The finished build: every checklist item ticked and a plain-words summary](/images/guides/build-an-app-on-civitai/09-build-done.webp)
 
 ### Try it
 The preview is the real app, so you can play it right there.
 
-:::note
-Review copy: Screenshot: 10-playing goes here.
-:::
+![Playing Emoji Memory Match in the preview](/images/guides/build-an-app-on-civitai/10-playing.webp)
 
 ### Ask for changes in plain words
 Say what you want different. We typed: *Make the cards flip over with a smooth 3D animation when you click them.* The Assistant adds a checklist item, makes the change, re-checks everything and tells you what changed. The change took two to three minutes.
 
 **Then press Reload at the top of the preview.** The preview keeps showing the old version, with your half-played round, until you do. Anything saved inside the preview resets when it reloads.
 
-:::note
-Review copy: Screenshots: 11-ask-change, 12-change-done, 13-preview-reloaded, 14-updated-preview goes here.
-:::
+![Asking for a 3D card-flip animation in plain words](/images/guides/build-an-app-on-civitai/11-ask-change.webp)
+
+![The Assistant reporting the change is done](/images/guides/build-an-app-on-civitai/12-change-done.webp)
+
+![The Reload button at the top of the preview](/images/guides/build-an-app-on-civitai/13-preview-reloaded.webp)
+
+![The updated preview with the cards flipping in 3D](/images/guides/build-an-app-on-civitai/14-updated-preview.webp)
 
 ### What it costs
 Replies spend Buzz from your Civitai account once any free allowance is used up, about 1 per step, up to a daily limit. Making things, such as cover art, costs extra. A chip on the chat shows what you've used. Our whole demo chat (build, one change, and the submit step) came to about 96 Buzz, with no images generated. Chats are kept for 30 days.
@@ -120,9 +120,7 @@ Replies spend Buzz from your Civitai account once any free allowance is used up,
 
 These apply the same way to every account.
 
-:::note
-Review copy: Screenshot: 15-app-switcher goes here.
-:::
+![The app switcher showing each app and when it will be deleted if unused](/images/guides/build-an-app-on-civitai/15-app-switcher.webp)
 
 ## 4. Cover art
 
@@ -138,9 +136,11 @@ Two ways to get a cover:
 ### Submit for review
 In the same chat, ask: *Submit it for review so it can appear in the App Store.* The Assistant re-checks the app first, then shows a **Submit for review** card naming the app and version, for example "Emoji Memory Match 0.1.0". **Nothing is sent until you click the button.** Afterward the card reads: "Submitted Emoji Memory Match 0.1.0 for review. A moderator reviews it before it goes live in the App Store."
 
-:::note
-Review copy: Screenshots: 16-ask-submit, 17-submit-card, 18-submitted goes here.
-:::
+![Asking the Assistant to submit the app for review](/images/guides/build-an-app-on-civitai/16-ask-submit.webp)
+
+![The Submit for review card naming the app and version](/images/guides/build-an-app-on-civitai/17-submit-card.webp)
+
+![The card after submitting: a moderator reviews it before it goes live](/images/guides/build-an-app-on-civitai/18-submitted.webp)
 
 If you already have a submission waiting, you can't send a second one: withdraw the first on the Build page.
 
@@ -151,22 +151,28 @@ The Assistant can send your app to review, but it can't tell you how the review 
 - The **Publishing** tab shows whether the app is live in the store.
 - The **Details** tab holds the store listing: name, tagline, description, category and content rating. The Assistant fills in a name and basic tagline. The **Assets** step is for icon, cover and screenshots.
 
-:::note
-Review copy: Screenshots: 19-my-apps, 20-listing-history, 21-listing-publishing, 22-listing-details goes here.
-:::
+![My apps, with the app marked DRAFT](/images/guides/build-an-app-on-civitai/19-my-apps.webp)
+
+![The listing's History tab, with version 0.1.0 pending](/images/guides/build-an-app-on-civitai/20-listing-history.webp)
+
+![The listing's Publishing tab](/images/guides/build-an-app-on-civitai/21-listing-publishing.webp)
+
+![The listing's Details tab: name, tagline, description, category and rating](/images/guides/build-an-app-on-civitai/22-listing-details.webp)
 
 ### What needs fixing before it can go live
 A red warning icon on your app in My apps means "This listing cannot be published yet." Click it for the list. Items marked *required* block publishing; the rest are recommendations. A yellow icon on an approved app means "This listing has advisory notes", a list of suggestions such as "No screenshots (recommended, optional)".
 
-:::note
-Review copy: Screenshots: 23-needs-fixing, 24-advisory-notes goes here.
-:::
+![The red warning list of what blocks publishing](/images/guides/build-an-app-on-civitai/23-needs-fixing.webp)
+
+![The yellow advisory notes on an approved app](/images/guides/build-an-app-on-civitai/24-advisory-notes.webp)
 
 ### If a moderator doesn't approve it
 Lower on My apps, under **Submissions without a listing**, every past submission shows its result. A rejected one has a red **REJECTED** badge, with the moderator's reason in red underneath. Read it, fix what it says, and submit again.
 
+![A rejected submission with the moderator's reason underneath](/images/guides/build-an-app-on-civitai/25-rejected-feedback.webp)
+
 :::note
-Review copy: a real approve or reject screenshot goes here, once a moderator decides on Emoji Memory Match (walkthrough 25-rejected-feedback is a stand-in).
+Review copy: this rejection reason is a stand-in. The real approve or reject screenshot replaces it once a moderator decides on Emoji Memory Match.
 :::
 
 ### Choose who sees it

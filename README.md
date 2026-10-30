@@ -53,7 +53,8 @@ is `.claude/skills/content-review/SKILL.md`; the PR body carries the reviewer's 
    ```
 
    Optional fields: `modified` (last updated date), `author` (default `civitai`), `draft: true`
-   (left out of the build), `covers`, `reviewed` (below), and `seo` with `title`, `description` and
+   (left out of the build), `unlisted: true` (built at its URL for review, but kept out of every
+   listing, feed, search and sitemap, with a noindex tag; remove it to launch), `covers`, `reviewed` (below), and `seo` with `title`, `description` and
    `ogImage` overrides. The schema is in `src/content.config.ts`.
 
    Guides about a Civitai feature or model should also declare what they cover and when they were

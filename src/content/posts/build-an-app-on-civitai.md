@@ -32,7 +32,7 @@ This guide walks through the whole path, from asking for access to reading what 
 
 Apps are in the store for everyone. An App is a small program that runs inside Civitai. It can use Civitai's models, generate images and pay for it in Buzz, and sign people in with their Civitai account, with no hosting or login system for you to set up. Apps live in the App Store, where anyone can open one and run it.
 
-**The "Made with" card.** When someone publishes a post using an app, the post (and the image's detail page) shows a small **Made with** label and the app's store card underneath. It's a credit for the tool, not the author: the post is still by the person who made it. Click the card to open the app.
+**The "Made with" card.** When someone publishes a post using an app, the post (and the image's detail page) shows a small **Made with** label and the app's store card underneath. It's a credit for the tool, not the author: the post is still by the person who made it. Click the card to see the app in the store.
 
 ## 2. Getting access to build
 
@@ -76,7 +76,7 @@ Notice the middle sentence. We asked for the price and a confirm step, and the A
 ### Watch it build
 The first reply is a **Feature checklist** built from your words, one line per thing you asked for. Building starts right away. There is no "Build it" button to press. The app gets a name and starts **Running**.
 
-While it works, the Assistant runs **Subagents**: helper steps that read the app's files and tests before it writes code. Click one to see what it did. The Send button becomes **Stop** while it works.
+While it works, the Assistant shows each step it takes. The Send button becomes **Stop** while it works.
 
 A **live preview** opens on the right before the build finishes, so you can watch the app take shape. In our demo, the first build took about eight minutes.
 
@@ -132,7 +132,7 @@ The new **Download** button saves the image to your computer, and then reads **D
 ![Screenshot: downloaded](/images/guides/build-an-app-on-civitai/20-downloaded.webp)
 
 ### What it costs
-Replies spend Buzz from your Civitai account once any free allowance is used up, about 1 per step, up to a daily limit. Making things costs extra. A chip on the chat shows what you've used. In our demo the chat (build, one change and the submit step) used about 224 Buzz, and the three test images added 42, so about 266 Buzz in all. Your numbers will vary with how much you ask for. Chats are kept for 30 days.
+Replies spend Buzz from your Civitai account once any free allowance is used up, about 1 per step, up to a daily limit of 5,000 Buzz. Making things costs extra. A chip on the chat shows what you've used. In our demo the chat (build, one change and the submit step) used about 224 Buzz, and the three test images added 42, so about 266 Buzz in all. Your numbers will vary with how much you ask for. Chats are kept for 30 days.
 
 ### Limits: keep 3 apps, one runs at a time
 - You can keep **3 apps**, and **one runs at a time**. Opening a paused app, or sending it a message, starts it and pauses the one that was running.
@@ -150,7 +150,7 @@ Every listing needs an icon and a cover before it can be published; the editor s
 
 Two ways to get a cover:
 
-- **Upload your own** in the listing editor's **Assets** step. As a starting point, the CLI docs suggest a landscape image of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 1 MiB). The editor checks your file when you upload.
+- **Upload your own** on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a landscape image of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 1 MiB). The editor checks your file when you upload.
 - **Ask the App Assistant.** Tell it what the cover should show, in plain words, and it generates one on your Buzz and attaches it to your listing. It can't put text or logos on the cover. It needs an existing store listing for the app, so make the listing first. A new cover goes onto your draft and shows in the store once the listing is submitted and approved.
 
 ## 5. Getting listed, and review
@@ -170,8 +170,8 @@ If you already have a submission waiting, you can't send a second one: withdraw 
 The Assistant can send your app to review, but it can't tell you how the review is going. To check, use **My apps** (top right of the Build page). Your app appears with a store status such as **DRAFT**, meaning it isn't in the store yet.
 
 - Open the app's listing and choose the **History** tab. Each version shows its review status, for example "V0.1.0 · PENDING" while it waits for a moderator. **Withdraw** pulls a submission back.
-- The **Publishing** tab shows whether the app is live in the store.
-- The **Details** tab holds the store listing: name, tagline, description, category and content rating. The Assistant fills in a name and basic tagline. The **Assets** step is for icon, cover and screenshots.
+- The **Publishing** tab shows whether the app is live in the store. Only the app's owner sees this tab, not collaborators.
+- The **Details** tab holds the store listing: name, tagline, description, category and content rating. The Assistant fills in a name and basic tagline. The **Media** tab is for icon, cover and screenshots.
 
 ![Screenshot: my apps](/images/guides/build-an-app-on-civitai/25-my-apps.webp)
 
@@ -187,7 +187,7 @@ A red warning icon on your app in My apps means "This listing cannot be publishe
 ![Screenshot: advisory notes](/images/guides/build-an-app-on-civitai/30-advisory-notes.webp)
 
 ### If a moderator doesn't approve it
-Lower on My apps, under **Submissions without a listing**, every past submission shows its result. A rejected one has a red **REJECTED** badge, with the moderator's reason in red underneath. Read it, fix what it says, and submit again.
+If your app's first version is rejected, it appears on My apps under **Submissions without a listing**, with a red **REJECTED** badge and the moderator's reason. For an app that already has a listing, the rejected version and its reason are on the listing's **History** tab. Read the reason, fix what it says, and submit again.
 
 ![Screenshot: rejected feedback](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
 
@@ -196,7 +196,7 @@ Review copy: this rejection reason is a stand-in. The real approve or reject scr
 :::
 
 ### Choose who sees it
-Once approved, you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Which levels you can pick depends on where the listing is in review.
+On the **Publishing** tab you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Before approval you can pick Private or Moderators only; Testers and Everyone unlock once a moderator approves it.
 
 You stay in control. You can unpublish your app and republish it later. If a moderator removes an app, only a moderator can restore it.
 
@@ -217,7 +217,7 @@ Prefer to write code yourself, or hand the job to a coding agent? Everything the
 **CLI** (`civitai/cli`):
 
 ```bash
-npm install -g @civitai/cli      # or: brew install civitai/tap/civitai
+npm install -g @civitai/cli      # or, on macOS: brew install civitai/tap/civitai
 civitai login
 civitai app create my-app        # scaffold
 cd my-app && npm install && npm run dev:harness   # run locally against a mock host

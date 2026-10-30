@@ -150,7 +150,7 @@ Every listing needs an icon and a cover before it can be published; the editor s
 
 Two ways to get a cover:
 
-- **Upload your own** in the listing editor's **Assets** step. As a starting point, the CLI docs suggest a landscape image of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 2 MiB). The editor checks your file when you upload.
+- **Upload your own** in the listing editor's **Assets** step. As a starting point, the CLI docs suggest a landscape image of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 1 MiB). The editor checks your file when you upload.
 - **Ask the App Assistant.** Tell it what the cover should show, in plain words, and it generates one on your Buzz and attaches it to your listing. It can't put text or logos on the cover. It needs an existing store listing for the app, so make the listing first. A new cover goes onto your draft and shows in the store once the listing is submitted and approved.
 
 ## 5. Getting listed, and review

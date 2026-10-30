@@ -30,7 +30,12 @@ export async function getPosts(): Promise<Post[]> {
   return postsCache;
 }
 
-export const isListed = (p: Post) => !p.data.deprecated;
+export const isListed = (p: Post) => !p.data.deprecated && !p.data.unlisted;
+
+/** Posts the sitemaps name: every post with a URL except unlisted ones, which are not public yet. */
+export async function getSitemapPosts(): Promise<Post[]> {
+  return (await getPosts()).filter((p) => !p.data.unlisted);
+}
 
 /**
  * Posts readers are offered: the home page, archives, feeds, search and up next. Deprecated posts

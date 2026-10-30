@@ -30,12 +30,15 @@ const deck = post ? entryDeck(post.data.excerpt, entry.body) : undefined;
 // Pages (about, contact) are a title and a column; only posts get contents, the aside and up next.
 const toc = post ? tocItems(headings) : [];
 const hasToc = toc.length >= TOC_MIN;
-// A deprecated post keeps its page but is left out of search: no data-pagefind-body, no index entry.
+// A deprecated or unlisted post keeps its page but is left out of search: no data-pagefind-body,
+// no index entry. An unlisted one is not public yet, so search engines are told not to index it.
 const deprecated = post?.data.deprecated;
+const unlisted = Boolean(post?.data.unlisted);
 const replacement = deprecated?.replacedBy ? (await getPosts()).find((p) => p.id === deprecated.replacedBy) : undefined;
 ---
 
 <BaseLayout
+  noindex={unlisted}
   title={data.title}
   documentTitle={data.seo?.title}
   description={data.seo?.description || data.excerpt}
@@ -44,7 +47,7 @@ const replacement = deprecated?.replacedBy ? (await getPosts()).find((p) => p.id
   published={post ? post.data.date : undefined}
   modified={post ? modified : undefined}
 >
-  <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body={deprecated ? undefined : ''}>
+  <article class:list={['article', post ? 'is-post' : 'is-page', { 'has-toc': hasToc }]} data-pagefind-body={deprecated || unlisted ? undefined : ''}>
     {hasToc && <MobileContents items={toc} />}
     <div class="article-shell article-head">
       {deprecated && <DeprecatedNotice deprecated={deprecated} replacement={replacement} />}

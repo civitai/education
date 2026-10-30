@@ -28,6 +28,12 @@ const posts = defineCollection({
     sticky: z.boolean().optional(),
     draft: z.boolean().optional(),
     /**
+     * Built and reachable at its URL for review, but public nowhere: left out of every listing,
+     * feed, search and sitemap, and the page asks search engines not to index it. Remove it to
+     * launch the post.
+     */
+    unlisted: z.boolean().optional(),
+    /**
      * Out of date but kept at its URL: the page renders a banner and stays in the sitemaps, but is
      * left out of every listing, feed and search (see getListedPosts in src/lib/content.ts).
      */

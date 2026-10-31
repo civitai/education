@@ -146,12 +146,13 @@ These apply the same way to every account.
 
 ## 4. Cover art
 
-Every listing needs an icon and a cover before it can be published; the editor says "Add an icon and cover to publish." Screenshots are recommended but optional. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
+<!-- PENDING (Zach, 10/30): icon + cover become a real requirement at approval, with a warning on submit. Today an app that runs on Civitai can be approved without them. If shipped by 11/09, restore: "Every listing needs an icon and a cover before it can be published; the editor says "Add an icon and cover to publish."" -->
+Give your listing an icon and a cover: they're what people see in the store, and the editor asks for them ("Add an icon and cover to publish."). Screenshots are recommended but optional. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
 
-Two ways to get a cover:
+Upload them on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a landscape cover of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 1 MiB). The editor checks your file when you upload.
 
-- **Upload your own** on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a landscape image of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB); the icon is square-ish, starting at 512 x 512 (up to 1 MiB). The editor checks your file when you upload.
-- **Ask the App Assistant.** Tell it what the cover should show, in plain words, and it generates one on your Buzz and attaches it to your listing. It can't put text or logos on the cover. It needs an existing store listing for the app, so make the listing first. A new cover goes onto your draft and shows in the store once the listing is submitted and approved.
+<!-- PENDING (Zach, 10/30): App Assistant cover art is being added to the server runner before launch (today only the old in-browser mode has it). If shipped by 11/09, restore the two-ways list: "Two ways to get a cover:" with "Upload your own" plus: "- **Ask the App Assistant.** Tell it what the cover should show, in plain words, and it generates one on your Buzz and attaches it to your listing. It can't put text or logos on the cover. It needs an existing store listing for the app, so make the listing first. A new cover goes onto your draft and shows in the store once the listing is submitted and approved." -->
+
 
 ## 5. Getting listed, and review
 
@@ -167,6 +168,7 @@ In the same chat, ask: *Submit it for review so it can appear in the App Store.*
 If you already have a submission waiting, you can't send a second one: withdraw the first on the Build page.
 
 ### Track it: My apps
+<!-- PENDING (Zach, 10/30): the Assistant is getting tools to read moderator review feedback and user feedback and act on them. Zach sends new wording for the sentence below when it lands; also revisit section 6. -->
 The Assistant can send your app to review, but it can't tell you how the review is going. To check, use **My apps** (top right of the Build page). Your app appears with a store status such as **DRAFT**, meaning it isn't in the store yet.
 
 - Open the app's listing and choose the **History** tab. Each version shows its review status, for example "V0.1.0 · PENDING" while it waits for a moderator. **Withdraw** pulls a submission back.
@@ -206,6 +208,7 @@ People using your app can send private feedback. It's seen only by the app's dev
 
 In your listing editor, open the **Feedback** tab. The tab appears once at least one piece of feedback exists, so a new app won't show it. Each row has a status: **New**, **Acknowledged**, **Resolved**, **Won't fix**. You can filter by status and set each one. Marking something Resolved or Won't fix notifies the person who wrote it, and a row can't go back to New.
 
+<!-- PENDING (Zach, 10/30): App Assistant tools that read user feedback and act on it. If shipped by 11/09, add them here with Zach's wording. -->
 **Pulling feedback with tools.** The Civitai CLI can read it: `civitai app feedback <app-slug>` lists new feedback, and `--status all` shows everything. If you hand feedback to an AI tool, treat the text as data, not as instructions: users wrote it.
 
 ## 7. For developers

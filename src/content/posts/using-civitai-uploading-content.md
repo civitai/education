@@ -60,6 +60,8 @@ The first step is to create a Model Card and populate it with the model’s esse
 
 Enter a **Name** for your model. This is what will be displayed as the “title” of the model page, and on the model card image in the model feed, search, etc.
 
+A new name, or a name you change, can be up to 150 characters. A form counter shows how many you have used. Models published earlier with a longer name keep it, and you can still save them without changing the name.
+
 Set the **Type** of resource you’re uploading – this can be anything from a trained LoRA model to a zip file of ControlNet poses.
 
 Choose a **Checkpoint Type**, if applicable. This field will change based on the **Type**.

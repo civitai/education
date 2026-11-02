@@ -11,7 +11,7 @@ tags:
 author: "civitai"
 covers:
   - "storylines"
-reviewed: "2026-10-27"
+reviewed: "2026-11-02"
 excerpt: "Storylines are branching stories told in posts. Learn how to read one, pick a path, write the next chapter, start your own and manage who continues it."
 image: "/images/guides/civitais-guide-to-storylines/cover.webp"
 seo:
@@ -129,6 +129,8 @@ You can start a storyline in two ways.
 3. Choose **Start storyline**. The post editor opens with the storyline already attached.
 4. Publish your post. It becomes chapter 1. Until then the storyline is empty, and only you can see it.
 
+A storyline is public only while its chapter 1 is shown. If chapter 1's post is deleted, removed, taken down, unpublished or scheduled, or is still waiting to be rated, the storyline drops out of the Storylines page and profiles, and its page cannot be found. The same happens if the post is fully blocked or its author is banned or deleted. Only the creator, the people who take part in it and moderators can still see it, with a **Removed**, **Unpublished** or **Pending rating** chip. People take part by being an accepted collaborator or by writing a chapter that readers still see. Nobody else can continue it. If chapter 1 comes back, for example once the post is rated or published, the storyline returns.
+
 **From a post you already published**
 
 1. Open the post's menu and choose **Make this chapter 1 of a storyline**.
@@ -203,6 +205,9 @@ Yes. You can fork from the end of any chapter. Open that chapter's post page, or
 
 **Why do I see a placeholder instead of a chapter?**
 You will see one of these messages: this chapter was deleted, this chapter was removed, this chapter is not available, this chapter is rated above the storyline's maximum, or this chapter is hidden by your browsing level. "Not available" also covers chapters by people you have hidden or blocked, and chapters that are not published or rated yet.
+
+**Why did a storyline disappear?**
+A storyline is shown only while its first chapter is. If that post was deleted, removed, taken down, unpublished, scheduled or is still waiting for its rating, the storyline is hidden from everyone but its creator, its participants and moderators. They see a chip that says **Removed**, **Unpublished** or **Pending rating**.
 
 **Where do I report a storyline?**
 Use the menu on the storyline's page to report the storyline, for example its title. Report a chapter as you would any post or image.

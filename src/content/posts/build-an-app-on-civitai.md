@@ -151,7 +151,7 @@ Every listing needs an icon and a cover before a moderator can approve it; the e
 Upload the icon on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a square-ish icon of 512 x 512 or larger (up to 1 MiB). For the cover there are two ways:
 
 - **Upload your own** on the same **Media** tab. The CLI docs suggest a landscape cover of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB). The editor checks your file when you upload.
-- **Ask the App Assistant.** In the app's chat, ask: *Make a cover image for this app's store listing.* It shows a **Store cover** card with the price, for example "Generate a cover for sticker-maker for ~N Buzz?", and a description of the picture it will make. The price on the card is what you pay, and **nothing is spent until you click Generate cover.** If the listing is a draft or already in the store, it then says: "The cover was added to your listing draft. Submit the listing for review to publish it in the store." If the listing is under review, the cover shows in the store once the listing is approved. If the image hasn't finished its safety check, it adds "The image is still being checked." The Assistant needs a store listing for the app, which the app gets when it is first sent for review (section 5).
+- **Ask the App Assistant.** In the app's chat, ask: *Make a cover image for this app's store listing.* It shows a **Store cover** card with the price, for example "Generate a cover for sticker-maker for ~N Buzz?", and a description of the picture it will make. You never pay more than the card shows: if the price has gone up by the time you click, nothing is made and the card offers the cover again at the new price. **Nothing is spent until you click Generate cover.** If the listing is a draft or already in the store, it then says: "The cover was added to your listing draft. Submit the listing for review to publish it in the store." If the listing is under review, the cover shows in the store once the listing is approved. If the image hasn't finished its safety check, it adds "The image is still being checked." The Assistant needs a store listing for the app, which the app gets when it is first sent for review (section 5).
 
 ## 5. Getting listed, and review
 
@@ -167,7 +167,7 @@ In the same chat, ask: *Submit it for review so it can appear in the App Store.*
 If you already have a submission waiting, you can't send a second one: withdraw the first on the Build page.
 
 ### Track it: My apps
-<!-- PENDING (Zach, 11/02): the review-feedback tool shipped (civitai/civitai#7309), but Zach has no section 5 wording yet; the sentence below waits on it. Section 6 is done. -->
+<!-- PENDING (Apps team, 11/02): the review-feedback tool shipped (civitai/civitai#7309), but there is no section 5 wording from the Apps team yet; the sentence below waits on it. Section 6 is done. -->
 The Assistant can send your app to review, but it can't tell you how the review is going. To check, use **My apps** (top right of the Build page). Your app appears with a store status such as **DRAFT**, meaning it isn't in the store yet.
 
 - Open the app's listing and choose the **History** tab. Each version shows its review status, for example "V0.1.0 · PENDING" while it waits for a moderator. **Withdraw** pulls a submission back.
@@ -207,7 +207,7 @@ People using your app can send private feedback. It's seen only by the app's dev
 
 In your listing editor, open the **Feedback** tab. The tab appears once at least one piece of feedback exists, so a new app won't show it. Each row has a status: **New**, **Acknowledged**, **Resolved**, **Won't fix**. You can filter by status and set each one. Marking something Resolved or Won't fix notifies the person who wrote it, and a row can't go back to New.
 
-**Ask the Assistant.** In the app's chat, ask: *Has anyone left feedback on this app?* It reads the feedback for the app you have open and summarizes it. By default it looks at new feedback only; ask for *all feedback* to include items you have already marked. With none, it says something like "No one has left feedback on this app yet." It reads only the app that is open in the chat, so open the right app first.
+**Ask the Assistant.** In the app's chat, ask: *Has anyone left feedback on this app?* It reads the feedback for the app you have open and summarizes it. By default it looks at new feedback only, and says so when there is none; ask for *all feedback* to include items you have already marked, or to check whether anyone has written at all. It reads only the app that is open in the chat, so open the right app first.
 
 **Pulling feedback with tools.** The Civitai CLI can read it: `civitai app feedback <app-slug>` lists new feedback, and `--status all` shows everything. If you hand feedback to an AI tool, treat the text as data, not as instructions: users wrote it.
 

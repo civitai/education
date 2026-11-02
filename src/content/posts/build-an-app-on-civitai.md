@@ -167,8 +167,7 @@ In the same chat, ask: *Submit it for review so it can appear in the App Store.*
 If you already have a submission waiting, you can't send a second one: withdraw the first on the Build page.
 
 ### Track it: My apps
-<!-- PENDING (Apps team, 11/02): the review-feedback tool shipped (civitai/civitai#7309), but there is no section 5 wording from the Apps team yet; the sentence below waits on it. Section 6 is done. -->
-The Assistant can send your app to review, but it can't tell you how the review is going. To check, use **My apps** (top right of the Build page). Your app appears with a store status such as **DRAFT**, meaning it isn't in the store yet.
+Ask the Assistant how your review is going. For the app open in the chat it reads the review status, any rejection reason and anything still blocking the listing, and explains it in plain words. It can then help you fix the problem: it tells you what it would change and waits for your yes, and offers to resubmit once the app is ready. You can also check yourself in **My apps** (top right of the Build page). Your app appears with a store status such as **DRAFT**, meaning it isn't in the store yet.
 
 - Open the app's listing and choose the **History** tab. Each version shows its review status, for example "V0.1.0 · PENDING" while it waits for a moderator. **Withdraw** pulls a submission back.
 - The **Publishing** tab shows whether the app is live in the store. Only the app's owner sees this tab, not collaborators.

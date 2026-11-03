@@ -10,6 +10,7 @@ tags:
   - "guide"
 author: "civitai"
 excerpt: "Every model can have its own card for each site: a title, description and cover for civitai.com, and one for civitai.red."
+image: "/images/guides/site-specific-model-cards/cover.webp"
 covers:
   - "model-com-face"
 reviewed: "2026-11-03"

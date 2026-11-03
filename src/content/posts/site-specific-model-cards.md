@@ -50,14 +50,14 @@ While a model has its own civitai.com card, civitai.com does not show its versio
 ## Set it up {#set-it-up}
 
 1. Open the model form. For a model you already have, open the model page, choose the **⋮** button (**Model options**) at the top right of the title, then **Edit Model**. The page is headed **Editing model**. The civitai.com tab is in the same form in the first step of the upload wizard, but the cover picker only appears once the model exists.
-2. In the first box, **Title, description & cover**, you will see two tabs, **civitai.red** and **civitai.com**. The civitai.red tab holds your original title, description and cover.
-3. Open the **civitai.com** tab. Until you write something, it says civitai.com shows the same title and description as civitai.red, and the tab carries a **Same as .red** badge.
-4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a version written for you from your current text. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.
-5. Edit the **Title** and the **Description**. A line above each field checks the text as you type and tells you if it is not suitable for civitai.com. Leave the description empty if you want civitai.com to show none. The civitai.red description is never shown there instead.
+2. In the first box, **Title, description & cover**, you will see two tabs, **civitai.com** and **civitai.red**. The editor opens on the tab for the site you are on. The civitai.red tab holds your original title, description and cover.
+3. Open the **civitai.com** tab. Until you customize it, it says civitai.com shows the same card as civitai.red, and the tabs carry a **Same on both sites** badge.
+4. Choose **Customize for civitai.com** to start from a copy of your current text, or **Draft a civitai.com version** to have a version written for you from your current text. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.
+5. Edit the **Title** and the **Description**. A line above each field says it is checked for civitai.com as you type. It tells you if the text is not suitable for civitai.com. Leave the description empty if you want civitai.com to show none. The civitai.red description is never shown there instead.
 6. Pick a **Cover** for civitai.com. Only your own images rated PG or PG-13, published on this model, are offered. Click the picked image again to clear it. The picker appears once the model exists. If it says none of your images are rated PG or PG-13 yet, or asks you to publish a post with images on the model, do that first.
-7. Choose the blue **Save** button at the bottom of the page. You return to the model page. As soon as the tab holds your own text (after step 4), it shows an **Own content** badge instead of **Same as .red**.
+7. Choose the blue **Save** button at the bottom of the page. You return to the model page. As soon as the tab holds your own text (after step 4), the tab badges read **Custom for this site** instead of **Same on both sites**.
 
-To go back, choose **Use the civitai.red listing** in the civitai.com tab and confirm. The civitai.com title, description and cover are removed, and civitai.com shows the same card as civitai.red.
+To go back, choose **Use the same card on both sites** in the civitai.com tab and confirm in the **Use the same card on both sites?** dialog. The civitai.com title, description and cover are removed, and civitai.com shows the same card as civitai.red.
 
 ## Mature models {#mature-models}
 

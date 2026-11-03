@@ -53,7 +53,7 @@ While a model has its own civitai.com listing, civitai.com does not show its ver
 4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a clean rewrite made for you. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.
 5. Edit the **Title** and the **Description**. A line above each field checks the text as you type and tells you if it reads as too mature for civitai.com. Leave the description empty if you want civitai.com to show none. The civitai.red description is never shown there instead.
 6. Pick a **Cover** for civitai.com. Only your own images rated PG or PG-13, published on this model, are offered. Click the picked image again to clear it. The picker appears once the model exists. If it says none of your images are rated PG or PG-13 yet, or asks you to publish a post with images on the model, do that first.
-7. Save. While the tab holds your own text, it shows an **Own content** badge instead of **Same as .red**.
+7. Save the model to publish your changes. As soon as the tab holds your own text (after step 4), it shows an **Own content** badge instead of **Same as .red**.
 
 To go back, choose **Use the civitai.red listing** in the civitai.com tab and confirm. The civitai.com title, description and cover are removed, and civitai.com shows the same listing as civitai.red.
 

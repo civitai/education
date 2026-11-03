@@ -20,7 +20,14 @@ const out = a.out ?? (part ? 'out/test.mp4' : 'out/video.mp4');
 const crf = Number(a.crf ?? 22);
 
 const scenes = readJson('scenes.json').scenes;
-const missing = scenes.filter((s) => s.to > from && s.from < to && (!s.file || !existsSync(`public/${s.file}`)));
+const inRange = scenes.filter((s) => s.to > from && s.from < to);
+const gone = inRange.filter((s) => s.file && !existsSync(`public/${s.file}`));
+if (gone.length) {
+  console.error(`scenes.json points at files that are missing: ${gone.map((s) => `${s.id} (public/${s.file})`).join(', ')}`);
+  console.error('Regenerate them (gen.mjs --only <ids> --redo --go) or remove their "file" entry, then render again.');
+  process.exit(1);
+}
+const missing = inRange.filter((s) => !s.file);
 if (missing.length) console.log(`note: ${missing.length} scene(s) in this range have no image yet and render as placeholders: ${missing.map((s) => s.id).join(', ')}`);
 
 const conc = a.concurrency ? `--concurrency=${Number(a.concurrency)}` : '';

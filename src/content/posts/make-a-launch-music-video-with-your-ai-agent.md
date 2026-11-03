@@ -72,8 +72,8 @@ plan doesn't include it). Install it from a terminal, following
 - macOS or Linux: `curl -fsSL https://claude.ai/install.sh | bash`
 - Windows PowerShell: `irm https://claude.ai/install.ps1 | iex`
 
-**Codex** signs in with your ChatGPT account and is included on every ChatGPT plan, including Free (with
-lower limits). Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
+**Codex** signs in with your ChatGPT account and is included on every ChatGPT plan, including Free.
+Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
 
 - macOS or Linux: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
 - Windows PowerShell: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`

@@ -107,7 +107,7 @@ export async function waitFor(key, id, { timeoutMs = 15 * 60 * 1000, everyMs = 4
 
 /**
  * Which Buzz pays. Blue Buzz first (the free Buzz from daily rewards), then Green. Override with
- * "pay": ["green"] in scenes.json. Civitai picks the first listed type the account has enough of.
+ * "pay": ["green"] in scenes.json. The list is sent to Civitai in this order.
  */
 export const DEFAULT_PAY = ['blue', 'green'];
 

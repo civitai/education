@@ -22,12 +22,13 @@ excerpt: "Hand your AI coding agent (Claude Code or Codex) a Crucible song and a
 image: "/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp"
 seo:
   title: "Make a Launch Music Video with Your AI Agent - Civitai Education"
-  description: "Use Claude Code or Codex and a free skill to turn a Civitai Crucible song into a 1080p music video: scenes generated on Civitai, karaoke lyrics, about 75 Buzz."
+  description: "Use Claude Code or Codex and a free skill to turn a Civitai Crucible song into a 1080p music video: feature screenshots, scenes generated on Civitai, karaoke lyrics, about 240 Buzz with 3 moving clips."
   ogImage: "/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/03/2026 | Feature screenshots in the video, moving clips by default, and starting from a recreate kit. |
 | 11/03/2026 | First version. |
 
 :::note
@@ -36,14 +37,16 @@ Review copy for the music video Crucibles. This page is not listed anywhere and 
 
 When Civitai launches a feature, we write a song about it, and the community makes the music video in a
 Crucible. The best video becomes the official launch video. This guide shows how to make one with an AI
-coding agent doing the heavy lifting: you pick the look, your agent writes the scene prompts, generates
-the pictures on Civitai, times the lyrics to the song and renders the video.
+coding agent doing the heavy lifting: you pick the look, your agent reads the Crucible and the feature
+screenshots that come with the song, writes the scene prompts, generates the pictures and moving clips
+on Civitai, times the lyrics to the song and renders the video.
 
-**What you'll make:** a 1920x1080 mp4 of the whole song, with one generated scene per lyric line, slow
-camera moves and crossfades, a few optional moving clips, and karaoke lyrics that light up as they are
-sung. A full song with images only costs about 75 Buzz.
+**What you'll make:** a 1920x1080 mp4 of the whole song that cuts between two kinds of scene: the
+feature itself (its screenshots, framed, with the camera easing in on the part that matters) and pictures
+generated on Civitai, the key ones animated into short clips. Karaoke lyrics light up as they are sung.
+A full song costs about 240 Buzz with the default 3 clips, or about 45 Buzz with no clips.
 
-![A finished frame: a generated disco scene with two mascots, the title, and karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp)
+![A finished frame: a generated concert stage of toy mascots in party hats, the title, and karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp)
 
 You don't need to know how to code. You need to be comfortable pasting a few commands into a terminal
 and reading what your agent tells you.
@@ -57,7 +60,8 @@ and reading what your agent tells you.
 | **ffmpeg** | macOS: `brew install ffmpeg` (install [Homebrew](https://brew.sh) first if you don't have it). Windows: `winget install ffmpeg`. Linux: your package manager |
 | A **Civitai account with some Buzz** | The video's pictures are paid for in Buzz from your account |
 | A **Civitai API key** | Your account settings (step 1) |
-| **The song zip** from the Crucible | Linked from the Crucible page or its announcement article: an `.mp3` and a timed `.lrc` lyrics file |
+| **The song zip** for your Crucible | Attached to the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features), one per song: an `.mp3`, a timed `.lrc` lyrics file, and a `screenshots/` folder showing the feature |
+| Optional: a **recreate kit** | Some launches also publish the full project of an official example video, to remix (see "Start from a recreate kit") |
 
 Your agent checks Node and ffmpeg before it starts and helps you install whatever is missing. If it
 installs one of them for you, quit the agent and start it again in the same folder so it can see the new
@@ -184,7 +188,7 @@ the next step, which tells it where to download the skill.
 
 ## 3. Paste this to your agent
 
-Download the song zip from the Crucible, start your agent in your video folder (see "Install your agent"),
+Download your song's zip from the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features), start your agent in your video folder (see "Install your agent"),
 and paste this. Fill in the two lines in angle brackets. Tip: to get the zip's path, drag the zip file
 into the terminal window.
 
@@ -203,69 +207,112 @@ That's the whole setup. Your agent takes it from here, and checks in with you at
 runs a script ("Allow this command?"). That's normal: approve them. If you see one that would spend Buzz,
 check that you already agreed to the price.
 
+### Start from a recreate kit
+
+Some launches also publish a **recreate kit** for each official example video (for Hat Turf, three kits
+attached to the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features)). A kit is the whole project behind that video: its code, its
+characters in several poses, its card art, the song, and a README that explains how to change each
+part. If you have one, your agent can start from it and remix it, which gets you a polished video
+faster. Unzip the kit, start your agent in that folder, and paste:
+
+```text
+Help me remix this Civitai recreate kit into my own music video for the Crucible.
+Follow the skill at https://education.civitai.com/skills/civitai-music-video/SKILL.md
+(the full skill, with its scripts, is https://education.civitai.com/skills/civitai-music-video.zip),
+section "Two starting points", and the kit's own README.md.
+What I want to change: <for example: new characters, my own card art, a different story for the chorus>
+Show me the plan and the Buzz price before you generate anything.
+```
+
+Kit A is the stomp-clap song, B the J-pop and C the disco funk. Use the kit for the Crucible you are
+entering, or swap in that Crucible's song the way the kit's README describes: each Crucible needs its own
+song, as supplied. The community judges the entries, so make it your own take rather than the example
+re-rendered.
+
 ## 4. What your agent does
 
 You will see these steps go by. Each one ends with something for you to look at.
 
 1. **Checks your tools.** Node, ffmpeg, and your API key.
 2. **Sets up the project.** It copies a video template, installs it (about a minute), loads the song,
-   and reads the timed lyrics. It plans one scene per lyric line, plus a scene for any long instrumental
-   break. The 80-second Hat Turf stomp-clap take got 18 scenes.
-3. **Plans the look with you.** It asks about the style and any characters, then writes a picture prompt
-   for every lyric line. Read the list. This is where your video gets good: each picture should show what
-   its line means.
-4. **Prices, then generates.** It runs a price-only check (this spends nothing), tells you the Buzz, and
-   waits for your yes. It generates two scenes first so you can judge the look cheaply, then the rest.
-5. **Renders a 15-second preview** and a contact sheet, one image with a frame every second and a half,
+   and reads the timed lyrics and the feature screenshots. It plans one scene per lyric line, plus a
+   scene for any long instrumental break: the 89-second Hat Turf J-pop take got 18 scenes.
+3. **Matches the screenshots to the lyrics.** It reads the Crucible description (paste it in if it
+   asks) and the screenshots' notes, looks at each screenshot, and puts each one on the line it shows
+   best ("one press puts your cap on" gets the screenshot of placing a cap). If the song zip has no
+   screenshots, it tells you and makes every scene a generated picture.
+4. **Plans the pictures with you.** It asks about the style and any characters, then writes a picture
+   prompt for every other line and a motion prompt for the 3 pictures it will animate (chorus lines
+   first). Read the list. Each picture should show what its line means.
+5. **Prices, then generates.** It runs a price-only check (this spends nothing), tells you the Buzz, and
+   waits for your yes. It generates two pictures first so you can judge the look cheaply, then the rest,
+   then animates the chosen ones into 5-second clips.
+6. **Renders a 15-second preview** and a contact sheet, one image with a frame every second and a half,
    so you and the agent can catch problems before the full render.
-6. **Optional: moving clips.** It can animate a few key scenes (a chorus, the ending) into 5-second
-   clips. These cost much more than still images, so it prices each one first.
 7. **Renders the full video** to `out/video.mp4`: 1920x1080, 30 frames per second, with the song.
 
 ### A worked example
 
-We ran the skill on the disco take of the Hat Turf song, with the look "glossy 3D cartoon, retro disco
-party, warm neon lights, mirror ball sparkles, no text" and a fox mascot in a gold jacket. These are the
-first four lyric lines and the prompts the agent wrote for them:
+We ran the skill end to end on the J-pop take of the Hat Turf song, with its 9 feature screenshots, the
+look "glossy 3D cartoon, bright J-pop concert stage, pastel neon lights, sparkles, no text", and a cast of
+four round toy-like mascots in team party hats. The agent put 7 screenshots on the lines that describe the
+feature and wrote pictures for the rest. Some of the plan:
 
-| Lyric line | Prompt |
+| Lyric line | Scene |
 | --- | --- |
-| Round two, the party's spreading, every image is in play | a round toy-like fox mascot in a shiny gold jacket dances in the middle of a packed disco floor, the crowd of toy-like animal mascots wears yellow, blue, pink and green caps |
-| Yellow, blue, pink and green, go claim some turf today | four teams of round toy-like animal mascots in yellow, blue, pink and green caps race across a huge glowing dance floor split into four colored zones, seen from above at an angle |
-| Join Hat Turf, your work's in too, that's how the game is played | a round toy-like fox mascot in a shiny gold jacket holds up a sketchbook proudly while a teammate in a green cap gives a thumbs up, disco dance floor behind them |
-| One press puts your cap on, drag it into place | a round toy-like fox mascot in a shiny gold jacket presses a big glowing button, and a green cap pops out and flies onto a canvas on an easel |
+| Round two, the party's spreading, every image is in play | Picture: the four mascots jump on a big pastel concert stage, confetti and spotlights |
+| Join Hat Turf, your work's in too, that's how the game is played | Screenshot: the "Join the birthday turf war" invite, camera easing in on it |
+| One press puts your cap on, drag it into place | Screenshot: placing a cap on an image |
+| Take the turf, take the turf, stick your team's hat on | Picture, animated: the mascots run across a glowing gallery floor planting their hats |
+| Take the turf, take the turf, watch the badge flip to your side | Screenshot: the turf badge flipping |
+| A lock sits on the count, and nobody takes your loot | Screenshot: the locked badge |
 
-Those four images cost 16 Buzz. This is the contact sheet of the first 17 seconds:
+The whole video cost 247 Buzz: 11 pictures plus 2 redone (52) and 3 clips (195). This is a frame from a
+feature scene, with the ring highlighting the part the line is about:
 
-![Contact sheet of a 17-second preview: four generated disco scenes with karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/contact-sheet.webp)
+![A feature scene: the place-your-cap screenshot on a framed card, with a highlight ring and the lyric below](/images/guides/make-a-launch-music-video-with-your-ai-agent/feature-shot.webp)
 
-It is a first pass, and it shows what to look for. The default image model followed some prompts better
-than others: the second scene has the glowing floor but no mascots, and the button scene has no cap
-flying. Each is a one-line fix ("redo scene 2 with the mascots running across the floor") for about 4
-Buzz. The lyrics sit on a dark band at the bottom, and each word lights up in turn as it is sung:
+And this is the contact sheet of the first 45 seconds, alternating feature scenes and pictures:
+
+![Contact sheet of the first 45 seconds: feature screenshots and generated mascot scenes with karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/contact-sheet.webp)
+
+The screenshots in a song zip can be mockups of a feature that isn't released yet (the Hat Turf ones
+are), so the final feature may look different. The lyrics sit on a dark band at the bottom, and each word
+lights up in turn as it is sung (this one is from an earlier test on the disco take):
 
 ![The karaoke lyrics lighting up word by word over a scene with two mascots giving a thumbs up](/images/guides/make-a-launch-music-video-with-your-ai-agent/karaoke.webp)
 
-This frame is from a 5-second moving clip made from a still image in an earlier test, a marching band
-in team caps:
+This frame is from one of the 5-second moving clips, made from its picture:
 
-![A frame from an animated clip scene: a marching band in colorful uniforms](/images/guides/make-a-launch-music-video-with-your-ai-agent/frame-clip.webp)
+![A frame from an animated clip scene: cartoon figures in party hats dancing on a stage under colored spotlights](/images/guides/make-a-launch-music-video-with-your-ai-agent/frame-clip.webp)
 
 ## 5. What it costs
 
-Measured on our test runs with Civitai's default image model. Prices can change; your agent's price-only
-check is always the real number, and every spend is written to `buzz-log.json` in the project folder.
+Measured on our test runs with Civitai's default image model, and price-only checks of the clip engines.
+Prices can change; your agent's price-only check is always the real number, and every spend is written to
+`buzz-log.json` in the project folder.
 
 | What | Buzz |
 | --- | --- |
-| One scene image | about 4 |
-| A whole song with images only (about 18 scenes) | about 75 |
-| Redoing a scene you didn't like | about 4 |
-| One 5-second moving clip (480p) | about 65 |
-| A whole song plus 3 moving clips | about 270 |
+| One picture | about 4 |
+| One 5-second moving clip (480p, the default engine) | about 65 |
+| Feature screenshots | free |
+| A whole song with screenshots and 3 clips (the default) | about 240 |
+| The same with no clips | about 45 |
+| A whole song with no screenshots and 3 clips | about 270 |
+| Every picture animated (about 11 clips) | about 760 |
 
-The agent's scripts also refuse to spend more than 250 Buzz in one image run, or 150 on one clip, unless you
-tell them to.
+Why 3 clips: moving clips make the video feel alive, but each costs about 16 times as much as a picture.
+Three clips on the chorus and the ending, with the feature scenes and camera moves in between, keep a
+song around 240 Buzz. Ask your agent for more or fewer.
+
+Which engine: we priced a 5-second image-to-video clip on several engines. HeyGen's at 480p was the
+cheapest (about 65). The same engine at 768p was about 117; MiniMax H3 comfy (6 seconds), LTX 2 and
+Wan 2.2 5B were about 125 to 150; Wan 2.5 and Kling 2.5 Turbo were 500 or more. The skill uses the cheapest by default,
+and your agent can switch.
+
+The agent's scripts also refuse to spend more than 250 Buzz in one picture run or 300 in one batch of
+clips, unless you tell them to.
 
 ## 6. Make it better
 
@@ -276,7 +323,9 @@ tell them to.
 - **Mascots beat "cute kids".** Crucible entries must fit the content rating. In our tests, asking the
   default model for cute young characters sometimes gave teens in revealing outfits. Animal or toy-like
   mascots, or adults in everyday clothes, came out right, and your agent checks every image before using it.
-- **Spend clips on the chorus.** If you add moving clips, put them where the song lifts.
+- **Show the feature.** The screenshots are what make it a launch video. Ask for one on every line that
+  describes something you do in the feature, and for the camera to land on the button or badge that matters.
+- **Spend clips on the chorus.** Put moving clips where the song lifts.
 - **Ask for changes in plain words.** "Make scene 7 a night scene", "the lyrics are too small", "slow
   the camera down". Your agent edits the project and renders the preview again.
 - **Check the beginning and the end.** The title shows for the first few seconds; ask for an ending card
@@ -284,14 +333,21 @@ tell them to.
 
 ## 7. Enter the Crucible
 
-Before you enter, check the video against the Crucible's rules on its page. For the first round, the
-Hat Turf Crucibles, that means: use the song as supplied, start to finish, without remixing or replacing
-the audio; videos up to 2 minutes; content rated PG or PG-13; up to 2 entries per person, free to enter.
-They close Friday, November 6th; check the Crucible page for the exact closing time.
+The first round is Hat Turf: one Crucible per song, all on civitai.red.
+
+- [Stomp-clap anthem](https://civitai.red/crucibles/254)
+- [J-pop](https://civitai.red/crucibles/255)
+- [Disco funk](https://civitai.red/crucibles/256)
+
+Before you enter, check the video against the Crucible's rules on its page. For Hat Turf that means: use
+the song as supplied, start to finish, without remixing or replacing the audio; videos up to 2 minutes;
+content rated PG or PG-13; up to 2 entries per person, free to enter. They close Friday, November 6th;
+check the Crucible page for the exact closing time.
 
 Then:
 
-1. Open the Crucible's page. All Crucibles are listed at [civitai.com/crucibles](https://civitai.com/crucibles).
+1. Open the Crucible for your song (above). Other Crucibles are listed at
+   [civitai.com/crucibles](https://civitai.com/crucibles).
 2. Choose **Submit Entry** and open the **Upload New** tab.
 3. Drop in `out/video.mp4` from your project folder.
 4. Wait for the safety check to finish (the new upload shows a yellow badge until it does), then submit.

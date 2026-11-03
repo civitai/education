@@ -34,6 +34,12 @@ type Scene = {
   file?: string; // path under public/, e.g. "scenes/s01.jpg" or "clips/s01.mp4"
   clipSeconds?: number; // length of a video clip, so it can loop
   motion?: 'zoom-in' | 'zoom-out' | 'pan-left' | 'pan-right' | 'still';
+  // Feature screenshot scenes ("kind": "shot"): the screenshot is shown framed on a card, with the
+  // camera easing from the whole screen toward `focus` and an optional highlight ring there.
+  kind?: 'image' | 'shot';
+  focus?: { x: number; y: number; zoom?: number }; // x, y: 0..1 across the screenshot; zoom: 1 = whole card
+  highlight?: boolean;
+  label?: string; // optional caption chip above the card
 };
 
 type Settings = {
@@ -69,6 +75,66 @@ const isVideo = (f?: string) => !!f && /\.(mp4|webm|mov)$/i.test(f);
 
 // ---------- scenes ----------
 
+// A feature screenshot, framed: blurred copy behind, the screenshot on a rounded card that eases in,
+// then the camera moves from the whole card toward the focus point, with a pulsing ring there.
+const ShotLayer: React.FC<{ scene: Scene; index: number; t: number; opacity: number; k: number }> = ({ scene, index, t, opacity, k }) => {
+  const src = staticFile(scene.file!);
+  const fx = scene.focus?.x ?? 0.5;
+  const fy = scene.focus?.y ?? 0.5;
+  const zoom = scene.focus?.zoom ?? 1.25;
+  const enter = spring({ frame: Math.round((t - scene.from) * FPS), fps: FPS, config: { damping: 14, stiffness: 110 } });
+  const move = ease(clamp01((k - 0.15) / 0.7)); // hold the full view briefly, then move in
+  const z = 1 + (zoom - 1) * move;
+  // Card is 1400x788 (16:9). Zoom about the focus point, then slide it toward the card's center as far
+  // as the zoomed screenshot still covers the card (no empty edges).
+  const W = 1400;
+  const H = 788;
+  const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+  const dx = clamp((0.5 - fx) * W * move, -(1 - fx) * W * (z - 1), fx * W * (z - 1));
+  const dy = clamp((0.5 - fy) * H * move, -(1 - fy) * H * (z - 1), fy * H * (z - 1));
+  const tilt = (1 - enter) * 8;
+  const accent = S.palette[index % S.palette.length];
+  const ring = scene.highlight === false ? 0 : ramp(t, scene.from + 0.6, scene.from + 1.0);
+  const pulse = 0.5 + 0.5 * Math.sin((t - scene.from) * Math.PI * 2);
+  return (
+    <AbsoluteFill style={{ opacity, overflow: 'hidden', background: '#0b0b14' }}>
+      <Img src={src} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'blur(28px) brightness(0.45) saturate(1.3)', transform: 'scale(1.15)' }} />
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center', paddingBottom: 150 }}>
+        {scene.label ? (
+          <div
+            style={{
+              position: 'absolute', top: 40, padding: '10px 26px', borderRadius: 999, background: accent, color: '#0b0b14',
+              fontFamily, fontWeight: 700, fontSize: 40, opacity: ramp(t, scene.from + 0.2, scene.from + 0.5),
+            }}
+          >
+            {scene.label}
+          </div>
+        ) : null}
+        <div
+          style={{
+            position: 'relative', width: W, height: H, borderRadius: 28, overflow: 'hidden',
+            boxShadow: `0 40px 120px rgba(0,0,0,.65), 0 0 0 4px ${accent}`,
+            transform: `perspective(1600px) rotateX(${tilt}deg) scale(${0.85 + 0.15 * enter}) translateY(${(1 - enter) * 60}px)`,
+          }}
+        >
+          <div style={{ position: 'absolute', inset: 0, transform: `translate(${dx}px, ${dy}px) scale(${z})`, transformOrigin: `${fx * 100}% ${fy * 100}%` }}>
+            <Img src={src} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            {ring > 0 ? (
+              <div
+                style={{
+                  position: 'absolute', left: `${fx * 100}%`, top: `${fy * 100}%`, width: 220, height: 220, marginLeft: -110, marginTop: -110,
+                  borderRadius: '50%', border: `6px solid ${accent}`, opacity: ring * (0.55 + 0.45 * pulse),
+                  boxShadow: `0 0 40px ${accent}`, transform: `scale(${(0.9 + 0.15 * pulse) / z})`,
+                }}
+              />
+            ) : null}
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 const SceneLayer: React.FC<{ scene: Scene; index: number; t: number }> = ({ scene, index, t }) => {
   const len = Math.max(0.01, scene.to - scene.from);
   const k = clamp01((t - scene.from) / len); // 0..1 across the scene
@@ -76,6 +142,7 @@ const SceneLayer: React.FC<{ scene: Scene; index: number; t: number }> = ({ scen
   const fadeOut = index === SCENES.length - 1 ? 1 : 1 - ramp(t, scene.to - FADE / 2, scene.to + FADE / 2);
   const opacity = Math.min(fadeIn, fadeOut);
   if (opacity <= 0) return null;
+  if (scene.kind === 'shot' && scene.file) return <ShotLayer scene={scene} index={index} t={t} opacity={opacity} k={k} />;
 
   const motion = scene.motion ?? MOTIONS[index % MOTIONS.length];
   const pulse = 1 + 0.012 * beatPulse(t);

@@ -11,19 +11,36 @@
 // Settings at the top of scenes.json: "style" is added to every prompt, so all scenes share a look;
 // "model" is an optional checkpoint AIR (urn:air:...), left null for Civitai's default image model;
 // "width"/"height" are the image size; "pay" (optional) lists which Buzz to use, default blue then green.
-import { existsSync, renameSync, rmSync } from 'node:fs';
+import { existsSync, mkdirSync, renameSync, rmSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
 import { DEFAULT_PAY, apiKey, args, buzz, download, logBuzz, payInfo, readJson, submit, waitFor, whatIf, writeJson } from './lib.mjs';
 
 const a = args();
 const go = a.go === true;
 const maxBuzz = Number(a['max-buzz'] ?? 250);
-if (!existsSync('scenes.json')) {
-  console.error('scenes.json not found. Run this from the project folder that setup.mjs made.');
+// One-off mode, for any project (a recreate kit, for example): one image, saved where you say.
+//   node <skill>/scripts/gen.mjs --one "a castle made of candy" --out public/cards/c3.jpg --width 832 --height 1216 [--go]
+const one = typeof a.one === 'string';
+if (one && typeof a.out !== 'string') {
+  console.error('--one needs --out <file> (e.g. --out public/cards/new.jpg)');
   process.exit(1);
 }
-const doc = readJson('scenes.json');
+if (!one && !existsSync('scenes.json')) {
+  console.error('scenes.json not found. Run this from the project folder that setup.mjs made (or use --one).');
+  process.exit(1);
+}
+const doc = one
+  ? {
+      negativePrompt: 'text, letters, words, logo, watermark, signature, nsfw, nudity, revealing clothing, lingerie, swimsuit',
+      width: Number(a.width ?? 1344),
+      height: Number(a.height ?? 768),
+      scenes: [{ id: 'one', prompt: a.one }],
+    }
+  : readJson('scenes.json');
+if (one) a.redo = true;
 const only = a.only ? String(a.only).split(',').map((s) => s.trim()) : null;
-let todo = doc.scenes.filter((s) => (only ? only.includes(s.id) : true));
+// Feature screenshot scenes ("kind": "shot") are never generated.
+let todo = doc.scenes.filter((s) => s.kind !== 'shot' && (only ? only.includes(s.id) : true));
 if (!a.redo) todo = todo.filter((s) => !s.file || !existsSync(`public/${s.file}`));
 const noPrompt = todo.filter((s) => !s.prompt?.trim());
 if (noPrompt.length) console.log(`skipping ${noPrompt.length} scene(s) with no prompt: ${noPrompt.map((s) => s.id).join(', ')}`);
@@ -97,6 +114,12 @@ async function run() {
         console.log(`${st.name}: ${st.status ?? 'no output'}${img ? '' : ' (no image)'}`);
         continue;
       }
+      if (one) {
+        mkdirSync(dirname(resolve(a.out)), { recursive: true });
+        await download(img.url, a.out); // saved under the exact name given (the format may be jpg or png)
+        console.log(`saved ${a.out}`);
+        continue;
+      }
       const tmp = `public/scenes/${scene.id}.tmp`;
       const type = await download(img.url, tmp);
       const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
@@ -108,7 +131,7 @@ async function run() {
       delete scene.still;
       console.log(`${scene.id}: public/${file}`);
     }
-    writeJson('scenes.json', doc);
+    if (!one) writeJson('scenes.json', doc);
     const total = logBuzz({ what: 'images', workflow: wf.id, scenes: c.map((s) => s.id), status: done.status, buzz: billed });
     console.log(`workflow ${wf.id}: ${done.status}, billed ${billed} Buzz (project total ${total})`);
   }

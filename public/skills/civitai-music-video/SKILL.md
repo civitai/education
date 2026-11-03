@@ -76,7 +76,8 @@ not work in every command; use the full path in PowerShell: `$HOME\.claude\skill
 
 - **From scratch (the usual path):** the song zip only. Follow steps 1 to 9 below.
 - **From a recreate kit:** some launches also publish a kit for each house cut (for Hat Turf:
-  `hat-turf-a-kit.zip`, `hat-turf-b-kit.zip`, `hat-turf-c-kit.zip`, attached to the program article). A kit
+  `hat-turf-a-kit.zip`, `hat-turf-b-kit.zip`, `hat-turf-c-kit.zip`, attached to the program article at
+  https://civitai.com/articles/37938). A kit
   is the full Remotion project of an official example video: its source, characters in several poses, card
   art, the song and lyrics, and a `README.md` and `SCRIPT.md`. If the person has one, start from it and
   remix it instead of building from scratch:

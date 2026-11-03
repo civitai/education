@@ -60,7 +60,7 @@ and reading what your agent tells you.
 | **ffmpeg** | macOS: `brew install ffmpeg` (install [Homebrew](https://brew.sh) first if you don't have it). Windows: `winget install ffmpeg`. Linux: your package manager |
 | A **Civitai account with some Buzz** | The video's pictures are paid for in Buzz from your account |
 | A **Civitai API key** | Your account settings (step 1) |
-| **The song zip** from the Crucible | Linked from the Crucible page or its announcement article: an `.mp3`, a timed `.lrc` lyrics file, and a `screenshots/` folder showing the feature |
+| **The song zip** for your Crucible | Attached to the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features), one per song: an `.mp3`, a timed `.lrc` lyrics file, and a `screenshots/` folder showing the feature |
 | Optional: a **recreate kit** | Some launches also publish the full project of an official example video, to remix (see "Start from a recreate kit") |
 
 Your agent checks Node and ffmpeg before it starts and helps you install whatever is missing. If it
@@ -188,7 +188,7 @@ the next step, which tells it where to download the skill.
 
 ## 3. Paste this to your agent
 
-Download the song zip from the Crucible, start your agent in your video folder (see "Install your agent"),
+Download your song's zip from the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features), start your agent in your video folder (see "Install your agent"),
 and paste this. Fill in the two lines in angle brackets. Tip: to get the zip's path, drag the zip file
 into the terminal window.
 
@@ -210,7 +210,7 @@ check that you already agreed to the price.
 ### Start from a recreate kit
 
 Some launches also publish a **recreate kit** for each official example video (for Hat Turf, three kits
-attached to the program article). A kit is the whole project behind that video: its code, its
+attached to the [program article](https://civitai.com/articles/37938/make-the-launch-video-music-video-crucibles-for-new-features)). A kit is the whole project behind that video: its code, its
 characters in several poses, its card art, the song, and a README that explains how to change each
 part. If you have one, your agent can start from it and remix it, which gets you a polished video
 faster. Unzip the kit, start your agent in that folder, and paste:
@@ -330,14 +330,21 @@ clips, unless you tell them to.
 
 ## 7. Enter the Crucible
 
-Before you enter, check the video against the Crucible's rules on its page. For the first round, the
-Hat Turf Crucibles, that means: use the song as supplied, start to finish, without remixing or replacing
-the audio; videos up to 2 minutes; content rated PG or PG-13; up to 2 entries per person, free to enter.
-They close Friday, November 6th; check the Crucible page for the exact closing time.
+The first round is Hat Turf: one Crucible per song, all on civitai.red.
+
+- [Stomp-clap anthem](https://civitai.red/crucibles/254)
+- [J-pop](https://civitai.red/crucibles/255)
+- [Disco funk](https://civitai.red/crucibles/256)
+
+Before you enter, check the video against the Crucible's rules on its page. For Hat Turf that means: use
+the song as supplied, start to finish, without remixing or replacing the audio; videos up to 2 minutes;
+content rated PG or PG-13; up to 2 entries per person, free to enter. They close Friday, November 6th;
+check the Crucible page for the exact closing time.
 
 Then:
 
-1. Open the Crucible's page. All Crucibles are listed at [civitai.com/crucibles](https://civitai.com/crucibles).
+1. Open the Crucible for your song (above). Other Crucibles are listed at
+   [civitai.com/crucibles](https://civitai.com/crucibles).
 2. Choose **Submit Entry** and open the **Upload New** tab.
 3. Drop in `out/video.mp4` from your project folder.
 4. Wait for the safety check to finish (the new upload shows a yellow badge until it does), then submit.

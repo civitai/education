@@ -17,7 +17,7 @@ reviewed: "2026-11-03"
 unlisted: true
 ---
 
-Every model can have a card for each site. One is the card for **civitai.red**, and one is the card for **civitai.com**. Each has its own **title**, **description** and **cover**, so you can present your model to the audience of each site. It is still one model, with the same files, versions and downloads on both.
+Every model can have a card for each site, which is its listing on that site. One is the card for **civitai.red**, and one is the card for **civitai.com**. Each has its own **title**, **description** and **cover**, so you can present both faces of your model to the audience of each site. It is still one model. Its downloads, reviews, stats, versions and files are shared across both cards, so they stay together. To read the announcement, see [One Model, Two Storefronts: Site-Specific Listings for Your Models](https://civitai.com/articles/37940).
 
 ## What you get {#what-you-get}
 
@@ -63,7 +63,7 @@ To go back, choose **Use the same card on both sites** in the civitai.com tab an
 
 civitai.com shows only PG and PG-13 content. If a model is marked mature, it is not listed on civitai.com unless it has a civitai.com card. Setting up that card is how a mature model gets a listing there. The model stays mature, and civitai.red keeps its standing and its card.
 
-A mature model is listed on civitai.com once its civitai.com card is complete. That means:
+While a mature model has no civitai.com card, its badge reads **Only on civitai.red** on both tabs, instead of **Same on both sites**. A mature model is listed on civitai.com once its civitai.com card is complete. That means:
 
 - a civitai.com **title**, and
 - a civitai.com **cover**: one of your own images, rated PG or PG-13, that is scanned, not flagged, and sits on a published post on a published version of the model.

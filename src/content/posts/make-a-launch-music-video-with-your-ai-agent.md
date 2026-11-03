@@ -284,7 +284,7 @@ lights up in turn as it is sung (this one is from an earlier test on the disco t
 
 This frame is from one of the 5-second moving clips, made from its picture:
 
-![A frame from an animated clip scene: toy mascots in party hats dancing under stage lights](/images/guides/make-a-launch-music-video-with-your-ai-agent/frame-clip.webp)
+![A frame from an animated clip scene: cartoon figures in party hats dancing on a stage under colored spotlights](/images/guides/make-a-launch-music-video-with-your-ai-agent/frame-clip.webp)
 
 ## 5. What it costs
 
@@ -307,8 +307,8 @@ Three clips on the chorus and the ending, with the feature scenes and camera mov
 song around 240 Buzz. Ask your agent for more or fewer.
 
 Which engine: we priced a 5-second image-to-video clip on several engines. HeyGen's at 480p was the
-cheapest (about 65); others ranged from about 117 (the same engine at 768p) and about 125 to 150 (MiniMax
-H3 comfy for 6 seconds, LTX 2, Wan 2.2 5B) to 500 or more (Wan 2.5, Kling 2.5 Turbo). The skill uses the cheapest by default,
+cheapest (about 65). The same engine at 768p was about 117; MiniMax H3 comfy (6 seconds), LTX 2 and
+Wan 2.2 5B were about 125 to 150; Wan 2.5 and Kling 2.5 Turbo were 500 or more. The skill uses the cheapest by default,
 and your agent can switch.
 
 The agent's scripts also refuse to spend more than 250 Buzz in one picture run or 300 in one batch of

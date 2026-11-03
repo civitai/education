@@ -17,7 +17,7 @@ const a = args();
 const NEGATIVE = 'text, letters, words, logo, watermark, signature, nsfw, nudity, revealing clothing, lingerie, swimsuit';
 const dest = a._[0];
 if (!dest || (!a.zip && !(a.song && a.lrc))) {
-  console.error('usage: node setup.mjs <project-dir> --zip <song.zip>\n   or: node setup.mjs <project-dir> --song <song.mp3> --lrc <song.lrc> [--title "..."]');
+  console.error('usage: node setup.mjs <project-dir> --zip <song.zip>\n   or: node setup.mjs <project-dir> --song <song.mp3> --lrc <song.lrc> [--shots <folder>] [--title "..."]');
   process.exit(1);
 }
 for (const tool of ['ffmpeg', 'ffprobe']) {

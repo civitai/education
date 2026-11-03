@@ -91,11 +91,13 @@ not work in every command; use the full path in PowerShell: `$HOME\.claude\skill
   4. For new art, generate single images with this skill's one-off mode, which needs no `scenes.json`
      (run it from the kit folder, with the API key in `.env` there; size them the way the kit's README
      asks, e.g. portrait for card art):
-     `node SKILL_DIR/scripts/gen.mjs --one "<prompt>" --out public/cards/<name>.jpg --width 832 --height 1216`
+     `node SKILL_DIR/scripts/gen.mjs --one "<prompt>" --out public/cards/<name>.jpg --width 896 --height 1152`
      (price only; add `--go` to generate, about 4 Buzz).
   5. Use `render.mjs` and `sheet.mjs` only in projects made by `setup.mjs`; in a kit, render with the
      kit's own commands, and make a contact sheet with ffmpeg if you want one.
-  Entering the Crucible is the same (step 9). Remind the person that the community judges the
+  For Hat Turf, kit A is the stomp-clap song, B the J-pop and C the disco funk: use the kit for the
+  Crucible they are entering, or swap in that Crucible's song as the kit's README describes (each Crucible
+  needs its own song, as supplied). Entering the Crucible is the same (step 9). Remind the person that the community judges the
   entries, so the remix should be their own take, not the example re-rendered.
 
 ## 1. Check the tools
@@ -152,7 +154,8 @@ gets `file` (and `still`, once animated).
 A **feature scene** is `{ id, from, to, line, kind: "shot", file, focus, highlight }`: `file` is a
 screenshot under `public/`, `focus` is where the camera eases in (`x`, `y` from 0 to 1 across the
 screenshot, `zoom` from 1 for the whole screen to about 1.6), and `highlight` draws a pulsing ring at the
-focus point. An optional `label` adds a short caption chip above the card.
+focus point. An optional `label` adds a short caption chip above the card. `caption` (from the file
+name) is a note for you; it is not shown.
 
 ### About the lyrics file
 
@@ -328,7 +331,8 @@ prices can change, so the price-only run is the real number.
 | A full song with no screenshots: about 18 pictures and 3 clips | about 270 |
 | Every picture animated (about 11 clips) | about 760 |
 
-Other engines we priced for a 5-second clip (price-only, November 2026): `heygen` at 768p about 117,
+Other engines we priced for a 5-second clip (price-only, November 2026; `clip.mjs --engine <name>` uses
+that engine's default version, and its price-only run shows the real cost): `heygen` at 768p about 117,
 `ltx2` about 133 (about 80 for 3 seconds), `wan` v2.2-5b at 480p about 150, `minimax-h3-comfy` about 125
 for 6 seconds, `wan` v2.5 at 480p about 500, `kling` v2.5-turbo about 600.
 

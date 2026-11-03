@@ -22,7 +22,7 @@ excerpt: "Hand your AI coding agent (Claude Code or Codex) a Crucible song and a
 image: "/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp"
 seo:
   title: "Make a Launch Music Video with Your AI Agent - Civitai Education"
-  description: "Use Claude Code or Codex and a free skill to turn a Civitai Crucible song into a 1080p music video: scenes generated on Civitai, karaoke lyrics, about 75 Buzz."
+  description: "Use Claude Code or Codex and a free skill to turn a Civitai Crucible song into a 1080p music video: feature screenshots, scenes generated on Civitai, karaoke lyrics, about 240 Buzz with 3 moving clips."
   ogImage: "/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp"
 ---
 
@@ -224,7 +224,10 @@ What I want to change: <for example: new characters, my own card art, a differen
 Show me the plan and the Buzz price before you generate anything.
 ```
 
-The community judges the entries, so make it your own take rather than the example re-rendered.
+Kit A is the stomp-clap song, B the J-pop and C the disco funk. Use the kit for the Crucible you are
+entering, or swap in that Crucible's song the way the kit's README describes: each Crucible needs its own
+song, as supplied. The community judges the entries, so make it your own take rather than the example
+re-rendered.
 
 ## 4. What your agent does
 
@@ -275,7 +278,7 @@ And this is the contact sheet of the first 45 seconds, alternating feature scene
 
 The screenshots in a song zip can be mockups of a feature that isn't released yet (the Hat Turf ones
 are), so the final feature may look different. The lyrics sit on a dark band at the bottom, and each word
-lights up in turn as it is sung:
+lights up in turn as it is sung (this one is from an earlier test on the disco take):
 
 ![The karaoke lyrics lighting up word by word over a scene with two mascots giving a thumbs up](/images/guides/make-a-launch-music-video-with-your-ai-agent/karaoke.webp)
 

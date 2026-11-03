@@ -47,13 +47,13 @@ While a model has its own civitai.com listing, civitai.com does not show its ver
 
 ## Set it up {#set-it-up}
 
-1. Go to the form where you mark a resource as mature. For a new model, that is the first step of the upload wizard. For a model you already published, it is the model's edit page. The cover picker in step 6 only appears once the model exists.
-2. In the **Title, description & cover** box, you will see two tabs, **civitai.red** and **civitai.com**. The civitai.red tab holds your original title, description and cover.
+1. Open the form where you mark a resource as mature. For a model you already have, open the model page, choose the **⋮** button (**Model options**) at the top right of the title, then **Edit Model**. The page is headed **Editing model**. The civitai.com tab is in the same form in the first step of the upload wizard, but the cover picker in step 6 only appears once the model exists.
+2. In the first box, **Title, description & cover**, you will see two tabs, **civitai.red** and **civitai.com**. The civitai.red tab holds your original title, description and cover.
 3. Open the **civitai.com** tab. Until you write something, it says civitai.com shows the same title and description as civitai.red, and the tab carries a **Same as .red** badge.
 4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a clean rewrite made for you. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.
 5. Edit the **Title** and the **Description**. A line above each field checks the text as you type and tells you if it reads as too mature for civitai.com. Leave the description empty if you want civitai.com to show none. The civitai.red description is never shown there instead.
 6. Pick a **Cover** for civitai.com. Only your own images rated PG or PG-13, published on this model, are offered. Click the picked image again to clear it. The picker appears once the model exists. If it says none of your images are rated PG or PG-13 yet, or asks you to publish a post with images on the model, do that first.
-7. Save the model to publish your changes. As soon as the tab holds your own text (after step 4), it shows an **Own content** badge instead of **Same as .red**.
+7. Choose the blue **Save** button at the bottom of the page. You return to the model page. As soon as the tab holds your own text (after step 4), it shows an **Own content** badge instead of **Same as .red**.
 
 To go back, choose **Use the civitai.red listing** in the civitai.com tab and confirm. The civitai.com title, description and cover are removed, and civitai.com shows the same listing as civitai.red.
 
@@ -70,7 +70,7 @@ If the cover stops qualifying, for example the image or post is deleted, moderat
 
 ## Checks and review {#review}
 
-Civitai checks the civitai.com title and description with the same text scan that helps decide whether a model is mature. A title or description rated above PG-13 cannot be saved. You also cannot save while the check is unavailable, so try again a little later. No one has to approve your civitai.com listing before it goes up.
+Civitai checks the civitai.com title and description with the same text scan that helps decide whether a model is mature. Each field shows **Suitable for civitai.com**, or a line such as "This isn't suitable for civitai.com" with its rating and a short reason. The check runs again when you save. If a title or description is rated above PG-13, a red message says **Failed to save model** and that the civitai.com title or description can't be shown on civitai.com. Nothing is saved, so edit it and save again. If the check cannot run, you are asked to try saving again. No one has to approve your civitai.com listing before it goes up.
 
 ## Questions {#faq}
 
@@ -82,6 +82,9 @@ No. The model stays mature and keeps its standing on civitai.red.
 
 **Why is my mature model not on civitai.com yet?**
 It needs a civitai.com title and a qualifying PG or PG-13 cover. Check the civitai.com tab for both.
+
+**What do visitors on civitai.com see if the model has a civitai.com title but no cover?**
+The model does not appear there yet. A visitor who opens its page sees a note that mature content now lives on civitai.red. Add a qualifying cover to list it.
 
 **Why does the model not show up in the generator on civitai.com?**
 Version levels are not changed. Mature versions stay out of safe-for-work places such as the generator's resource picker on civitai.com.

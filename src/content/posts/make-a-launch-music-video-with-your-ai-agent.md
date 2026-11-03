@@ -79,8 +79,17 @@ lower limits). Install it following [OpenAI's Codex CLI page](https://learn.chat
 - Windows PowerShell: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`
   (or `npm install -g @openai/codex` if npm works in your terminal)
 
-To start either one: open a terminal, go to the folder you want to work in (`cd` followed by the folder),
-and type `claude` or `codex`. The first time, it asks you to sign in.
+To start either one, open a terminal (macOS: the Terminal app; Windows: search the Start menu for
+PowerShell; new to terminals? see [Anthropic's terminal guide](https://code.claude.com/docs/en/terminal-guide)),
+make a folder for your video and go into it, then start the agent:
+
+```bash
+mkdir hat-turf-video
+cd hat-turf-video
+claude        # or: codex
+```
+
+The first time, it asks you to sign in.
 
 ## 1. Get your Civitai API key
 
@@ -90,8 +99,8 @@ The API key lets the agent's scripts generate images on your account, paid with 
    (In the newer settings layout they are under **Security & Apps**.)
 2. In **API Keys**, choose **Add API key**.
 3. Give it a **Name** you will recognize, like "music video", and set **Permission preset** to
-   **AI Services**. That is enough to generate. The key can also see your profile and Buzz balance, but it can't post,
-   change settings or tip.
+   **AI Services**. That is enough to generate. The key can also read your profile, settings, email, Buzz balance and
+   generation history, but it can't post, change settings or tip.
 4. Choose **Save**, then copy the key with the copy button. Civitai shows it only once ("you won't be
    able to see it again"), so keep it somewhere safe until the agent asks for it.
 
@@ -175,7 +184,7 @@ the next step, which tells it where to download the skill.
 
 ## 3. Paste this to your agent
 
-Download the song zip from the Crucible, make an empty folder for your video, start your agent in it,
+Download the song zip from the Crucible, start your agent in your video folder (see "Install your agent"),
 and paste this. Fill in the two lines in angle brackets. Tip: to get the zip's path, drag the zip file
 into the terminal window.
 
@@ -201,7 +210,7 @@ You will see these steps go by. Each one ends with something for you to look at.
 1. **Checks your tools.** Node, ffmpeg, and your API key.
 2. **Sets up the project.** It copies a video template, installs it (about a minute), loads the song,
    and reads the timed lyrics. It plans one scene per lyric line, plus a scene for any long instrumental
-   break. An 80-second song gets about 18 scenes.
+   break. The 80-second Hat Turf stomp-clap take got 18 scenes.
 3. **Plans the look with you.** It asks about the style and any characters, then writes a picture prompt
    for every lyric line. Read the list. This is where your video gets good: each picture should show what
    its line means.

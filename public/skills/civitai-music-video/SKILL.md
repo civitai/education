@@ -124,7 +124,9 @@ Then:
 3. Repeat the character description word for word in every prompt where they appear.
 4. Set `title` (and `subtitle` if wanted) in `video.json`. Setup guesses the title from the `.lrc`; check it.
    The title shows for the first 3.5 seconds.
-   For an ending card, set `"outro": { "text": "Made on Civitai", "from": <seconds before the end> }`.
+   For an ending card, set `"outro": { "text": "Made on Civitai", "from": <song second it appears> }`, where `from`
+   is counted from the start of the song: for a card over the last 5 seconds use `duration` (in
+   `video.json`) minus 5, e.g. `"from": 75.68` for an 80.68-second song.
 5. Show the person the list of lines and prompts, and adjust before spending anything.
 
 Prompt tips (from test runs):

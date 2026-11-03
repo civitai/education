@@ -2,7 +2,7 @@
 //
 //   node <skill>/scripts/sheet.mjs                          # out/video.mp4, a frame every 3 s -> out/sheet.png
 //   node <skill>/scripts/sheet.mjs --video out/test.mp4 --every 1.5
-//   node <skill>/scripts/sheet.mjs --scenes                 # every generated scene image -> out/scenes.png
+//   node <skill>/scripts/sheet.mjs --scenes                 # every scene image (pictures, screenshots) -> out/scenes.png
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync } from 'node:fs';
 import { args, probeSeconds, readJson } from './lib.mjs';
@@ -16,8 +16,9 @@ const columns = (n) => (n < 4 ? n : (4 - (n % 4)) % 4 <= (3 - (n % 3)) % 3 ? 4 :
 
 if (a.scenes) {
   const files = readJson('scenes.json')
-    .scenes.filter((s) => s.file && !/\.(mp4|webm|mov)$/i.test(s.file) && existsSync(`public/${s.file}`))
-    .map((s) => `public/${s.file}`);
+    .scenes.map((s) => (/\.(mp4|webm|mov)$/i.test(s.file ?? '') ? s.still : s.file)) // animated scenes: their still
+    .filter((f) => f && existsSync(`public/${f}`))
+    .map((f) => `public/${f}`);
   if (!files.length) {
     console.log('no scene images yet.');
   } else {

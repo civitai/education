@@ -201,6 +201,10 @@ After enabling Mature and Explicit content, an “eye” icon will appear in the
 
 </div>
 
+#### civitai.com and civitai.red
+
+Civitai runs two sites. **civitai.com** shows only PG and PG-13 content. **civitai.red** is where mature content is available once you opt in, as above. What you see depends on your browsing level, so on civitai.red with no mature levels selected, you see the same civitai.com view. A creator can set up a separate model card for each site, with its own title, description and cover, so one model is presented to each site's audience. See [Site-Specific Model Cards](/site-specific-model-cards/).
+
 #### Notification Settings
 
 <div class="columns">

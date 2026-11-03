@@ -40,7 +40,7 @@ There are two key changes which are important to understand when using this new 
 
 -   **Only images have a Content Rating!** We don’t apply ratings to resources, articles or bounties _as such_\*. **This content is categorized based on the rating of the associated images.**
 
--   **\*Resources can be marked nsfw**! Resources intended to produce **_mature themes_** can be marked as such from the Model Edit menu. _**This will hide the model from PG and PG-13 feeds, regardless of the level of the associated images.**_
+-   **\*Resources can be marked nsfw**! Resources intended to produce **_mature themes_** can be marked as such from the Model Edit menu. _**This will hide the model from PG and PG-13 feeds, regardless of the level of the associated images.**_ That includes civitai.com, which shows only PG and PG-13. A mature model is listed there once you set up its civitai.com model card, with its own title, description and cover. See [Site-Specific Model Cards](/site-specific-model-cards/).
 
 <figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-132521.webp" alt="Content Classification System - Content intended to produce mature themes" width="697" height="167" loading="lazy"><figcaption><em>Check box for resources intended to produce mature themes</em></figcaption></figure>
 

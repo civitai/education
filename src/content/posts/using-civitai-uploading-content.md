@@ -108,6 +108,8 @@ When “No” is checked, you may select either (or neither) of the following bo
 
 By acknowledging this choice with the last checkbox and moving to the next step, you’re attesting that your choice is correct and appropriate, and affirming that you understand that **_you may forfeit your Civitai account should it later be found you answered untruthfully_**.
 
+**Mature models and civitai.com.** If you tick the box for content intended to produce mature themes, the model is hidden from civitai.com, which shows only PG and PG-13. You can still list it there by giving it a separate civitai.com title, description and cover in the model editor. See [Show a Mature Model on civitai.com](/show-a-mature-model-on-civitai-com/).
+
 #### Step 2 – Add version {#step-2-add-version}
 
 A model can have multiple versions included on the same card – some people release gradual updates to their work as a new Version, or “inpaint” versions of their models, etc. When we create a model card we explain what our model does, how it was made, and specify our monetization preferences.

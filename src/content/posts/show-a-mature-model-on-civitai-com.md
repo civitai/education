@@ -47,7 +47,7 @@ While a model has its own civitai.com listing, civitai.com does not show its ver
 
 ## Set it up {#set-it-up}
 
-1. Open the form where you mark a resource as mature. For a model you already have, open the model page, choose the **⋮** button (**Model options**) at the top right of the title, then **Edit Model**. The page is headed **Editing model**. The civitai.com tab is in the same form in the first step of the upload wizard, but the cover picker in step 6 only appears once the model exists.
+1. Open the form where you mark a resource as mature. For a model you already have, open the model page, choose the **⋮** button (**Model options**) at the top right of the title, then **Edit Model**. The page is headed **Editing model**. The civitai.com tab is in the same form in the first step of the upload wizard, but the cover picker only appears once the model exists.
 2. In the first box, **Title, description & cover**, you will see two tabs, **civitai.red** and **civitai.com**. The civitai.red tab holds your original title, description and cover.
 3. Open the **civitai.com** tab. Until you write something, it says civitai.com shows the same title and description as civitai.red, and the tab carries a **Same as .red** badge.
 4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a clean rewrite made for you. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.

@@ -19,7 +19,8 @@ plumbing.
 - **Node.js 18 or newer** (`node -v`).
 - **ffmpeg and ffprobe** on PATH (`ffmpeg -version`). If missing: macOS `brew install ffmpeg`,
   Windows `winget install ffmpeg` (then open a new terminal), Linux your package manager.
-- **A Civitai API key.** The person creates one at https://civitai.com/user/account, in the
+- **A Civitai API key.** The person creates one at https://civitai.com/user/account#api-keys (in the newer
+  settings layout: Security & Apps), in the
   "API Keys" section: **Add API key**, a name, **Permission preset: AI Services** (enough to generate;
   "Full Access" also works but can do far more on the account), **Save**, then copy the key (it is shown
   once). Generations are paid in Buzz from that account: Blue Buzz first, then Green (see "What it costs").
@@ -53,7 +54,8 @@ On Windows PowerShell use `curl.exe` (plain `curl` is a different command there)
 
 Below, `SKILL_DIR` means the folder that holds this `SKILL.md`: for Claude Code usually
 `~/.claude/skills/civitai-music-video`, for Codex `~/.agents/skills/civitai-music-video`. On Windows, `~` does
-not work in every command; use the full path, e.g. `$HOME.claudeskillscivitai-music-video` in PowerShell.
+not work in every command; use the full path in PowerShell: `$HOME\.claude\skills\civitai-music-video` (Claude Code) or
+`$HOME\.agents\skills\civitai-music-video` (Codex).
 
 ## 1. Check the tools
 
@@ -234,7 +236,7 @@ run is the real number.
 ## If something goes wrong
 
 - **`CIVITAI_API_KEY is not set`**: create `.env` in the project folder (step "The API key").
-- **401 or 403**: the key is wrong or was deleted. Make a new one at https://civitai.com/user/account.
+- **401 or 403**: the key is wrong or was deleted. Make a new one at https://civitai.com/user/account#api-keys with the AI Services preset.
 - **`not enough Buzz on this account`**: the price-only check found the balance too low and stopped before
   spending anything. The person adds Buzz on civitai.com, or you generate fewer scenes with `--limit`.
   To pay only with Green Buzz, add `"pay": ["green"]` to `scenes.json`.

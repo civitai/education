@@ -52,7 +52,7 @@ and reading what your agent tells you.
 
 | Thing | Where to get it |
 | --- | --- |
-| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Both need a paid plan |
+| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan; Codex works on any ChatGPT plan, including Free |
 | **Node.js** 18 or newer | [nodejs.org](https://nodejs.org) (the LTS download) |
 | **ffmpeg** | macOS: `brew install ffmpeg`. Windows: `winget install ffmpeg`. Linux: your package manager |
 | A **Civitai account with some Buzz** | The video's pictures are paid for in Buzz from your account |
@@ -63,16 +63,18 @@ Your agent checks Node and ffmpeg before it starts and helps you install whateve
 
 ### Install your agent
 
-**Claude Code** needs a Claude Pro, Max, Team or Enterprise plan, or an Anthropic Console account (the free
+**Claude Code** needs a Claude Pro, Max, Ultra, Team or Enterprise plan, or an Anthropic Console account (the free
 plan doesn't include it). Install it from a terminal, following
 [Anthropic's setup page](https://code.claude.com/docs/en/setup):
 
 - macOS or Linux: `curl -fsSL https://claude.ai/install.sh | bash`
 - Windows PowerShell: `irm https://claude.ai/install.ps1 | iex`
 
-**Codex** signs in with your ChatGPT account; check its page for which plans include it. Install it
-following [OpenAI's Codex CLI page](https://developers.openai.com/codex/cli) (macOS or Linux:
-`curl -fsSL https://chatgpt.com/codex/install.sh | sh`).
+**Codex** signs in with your ChatGPT account and is included on every ChatGPT plan, including Free (with
+lower limits). Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
+
+- macOS or Linux: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
+- Windows: `npm install -g @openai/codex` (npm comes with Node.js), or the Windows installer on that page
 
 To start either one: open a terminal, go to the folder you want to work in (`cd` followed by the folder),
 and type `claude` or `codex`. The first time, it asks you to sign in.
@@ -81,10 +83,12 @@ and type `claude` or `codex`. The first time, it asks you to sign in.
 
 The API key lets the agent's scripts generate images on your account, paid with your Buzz.
 
-1. Sign in on civitai.com and open your account settings: [civitai.com/user/account](https://civitai.com/user/account).
-2. Scroll to **API Keys** and choose **Add API key**.
+1. Sign in on civitai.com and open the API Keys settings: [civitai.com/user/account#api-keys](https://civitai.com/user/account#api-keys).
+   (In the newer settings layout they are under **Security & Apps**.)
+2. In **API Keys**, choose **Add API key**.
 3. Give it a **Name** you will recognize, like "music video", and set **Permission preset** to
-   **AI Services**. That is enough to generate, and the key can't do anything else on your account.
+   **AI Services**. That is enough to generate. The key can also see your profile and Buzz balance, but it can't post,
+   change settings or tip.
 4. Choose **Save**, then copy the key with the copy button. Civitai shows it only once ("you won't be
    able to see it again"), so keep it somewhere safe until the agent asks for it.
 
@@ -246,7 +250,8 @@ check is always the real number, and every spend is written to `buzz-log.json` i
 | One 5-second moving clip (480p) | about 65 |
 | A whole song plus 3 moving clips | about 270 |
 
-The agent's scripts also refuse to spend more than 250 Buzz in one run unless you tell them to.
+The agent's scripts also refuse to spend more than 250 Buzz in one image run, or 150 on one clip, unless you
+tell them to.
 
 ## 6. Make it better
 

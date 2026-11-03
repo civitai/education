@@ -17,8 +17,12 @@ plumbing.
 ## What you need before starting
 
 - **Node.js 18 or newer** (`node -v`).
-- **ffmpeg and ffprobe** on PATH (`ffmpeg -version`). If missing: macOS `brew install ffmpeg`,
-  Windows `winget install ffmpeg` (then open a new terminal), Linux your package manager.
+- **ffmpeg and ffprobe** on PATH (`ffmpeg -version`). If missing: macOS `brew install ffmpeg` (Homebrew
+  first, from https://brew.sh, if `brew` is missing), Windows `winget install ffmpeg`, Linux your package
+  manager.
+- **After installing Node or ffmpeg mid-session**, your own shell usually won't see it yet. Ask the person
+  to quit you and start again in the same folder (`claude --continue` for Claude Code, `codex resume` for
+  Codex), then carry on from where you were.
 - **A Civitai API key.** The person creates one at https://civitai.com/user/account#api-keys (in the newer
   settings layout: Security & Apps), in the
   "API Keys" section: **Add API key**, a name, **Permission preset: AI Services** (enough to generate;

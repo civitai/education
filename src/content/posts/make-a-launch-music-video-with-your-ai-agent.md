@@ -43,7 +43,7 @@ the pictures on Civitai, times the lyrics to the song and renders the video.
 camera moves and crossfades, a few optional moving clips, and karaoke lyrics that light up as they are
 sung. A full song with images only costs about 75 Buzz.
 
-![A finished frame: a generated disco scene with two fox mascots, the title, and karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp)
+![A finished frame: a generated disco scene with two mascots, the title, and karaoke lyrics](/images/guides/make-a-launch-music-video-with-your-ai-agent/cover.webp)
 
 You don't need to know how to code. You need to be comfortable pasting a few commands into a terminal
 and reading what your agent tells you.
@@ -54,12 +54,14 @@ and reading what your agent tells you.
 | --- | --- |
 | An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan; Codex works on any ChatGPT plan, including Free |
 | **Node.js** 18 or newer | [nodejs.org](https://nodejs.org) (the LTS download) |
-| **ffmpeg** | macOS: `brew install ffmpeg`. Windows: `winget install ffmpeg`. Linux: your package manager |
+| **ffmpeg** | macOS: `brew install ffmpeg` (install [Homebrew](https://brew.sh) first if you don't have it). Windows: `winget install ffmpeg`. Linux: your package manager |
 | A **Civitai account with some Buzz** | The video's pictures are paid for in Buzz from your account |
 | A **Civitai API key** | Your account settings (step 1) |
 | **The song zip** from the Crucible | Linked from the Crucible page or its announcement article: an `.mp3` and a timed `.lrc` lyrics file |
 
-Your agent checks Node and ffmpeg before it starts and helps you install whatever is missing.
+Your agent checks Node and ffmpeg before it starts and helps you install whatever is missing. If it
+installs one of them for you, quit the agent and start it again in the same folder so it can see the new
+program: `claude --continue` or `codex resume` picks up where you left off.
 
 ### Install your agent
 
@@ -74,7 +76,8 @@ plan doesn't include it). Install it from a terminal, following
 lower limits). Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
 
 - macOS or Linux: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
-- Windows: `npm install -g @openai/codex` (npm comes with Node.js), or the Windows installer on that page
+- Windows PowerShell: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`
+  (or `npm install -g @openai/codex` if npm works in your terminal)
 
 To start either one: open a terminal, go to the folder you want to work in (`cd` followed by the folder),
 and type `claude` or `codex`. The first time, it asks you to sign in.
@@ -97,12 +100,14 @@ when the video is done.
 
 **Giving the key to your agent.** The easiest way: paste it when your agent asks, and it saves it in a
 file named `.env` inside the video's project folder. To do it yourself instead, wait until the agent has
-made the project folder, then create `.env` inside that folder with one line:
+made the project folder (a new folder, usually `my-video`, inside the one you started in), then create
+`.env` inside that new folder with one line:
 `CIVITAI_API_KEY=your-key-here`. On Windows, check that Notepad didn't save it as `.env.txt`.
 
 **Which Buzz pays.** The scripts ask Civitai to charge Blue Buzz (the free Buzz from daily rewards)
-first, and Green Buzz when there isn't enough Blue. Every price check says which one it would use, and if your balance is
-too low it says so and spends nothing. [Buzz Colors](/buzz-colors-blue-yellow-and-green/) explains the
+first, and Green Buzz when there isn't enough Blue. Every price check covers the whole batch you asked
+for (up to 50 images at once), says which Buzz it would use, and if your balance is too low it says so
+and spends nothing. [Buzz Colors](/buzz-colors-blue-yellow-and-green/) explains the
 colors.
 
 ## 2. Install the skill
@@ -295,7 +300,7 @@ prizes in full.
 | A prompt is refused | It tripped a content check. Change the idea of the scene; don't try to word around it |
 | A scene looks wrong | Ask the agent to rewrite that one prompt and redo just that scene (about 4 Buzz) |
 | Lyrics early or late on a line | Ask the agent to nudge that line's timing in `lyrics.json` |
-| `ffmpeg` not found | Install it (see "What you need"), then open a new terminal |
+| `ffmpeg` not found | Install it (see "What you need"), then quit the agent and start it again in the same folder (`claude --continue` or `codex resume`) |
 | The file is too big to upload | Ask the agent to render again at a higher CRF (smaller file), such as 26 |
 | The computer is slow while rendering | Ask the agent to render with fewer CPU cores (`--concurrency 2`) |
 
@@ -311,7 +316,7 @@ scripts: `setup.mjs` makes the project, `gen.mjs` generates scene images, `clip.
 `render.mjs` renders, and `sheet.mjs` makes contact sheets. They talk to Civitai's generation API directly
 with your API key. Besides Node, ffmpeg and the skill itself, everything goes in the project folder.
 
-**Remotion's license.** The skill is free, and Remotion is free for individuals and small teams. Larger
+**Remotion's license.** The skill is free, and Remotion is free for individuals and companies of up to 3 people. Larger
 companies need a Remotion company license; see [Remotion's pricing page](https://www.remotion.dev/docs/license/pricing).
 
 **Civitai's MCP servers.** If your agent supports MCP, you can also connect Civitai's MCP server at

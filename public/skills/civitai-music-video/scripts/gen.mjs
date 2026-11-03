@@ -51,9 +51,9 @@ const step = (s) => ({
 
 const body = (c) => ({ allowMatureContent: false, currencies: doc.pay ?? DEFAULT_PAY, steps: c.map(step) });
 
-// Up to 10 scenes per workflow.
+// One workflow for up to 50 scenes (a whole song), so the balance check covers the whole run.
 const chunks = [];
-for (let i = 0; i < todo.length; i += 10) chunks.push(todo.slice(i, i + 10));
+for (let i = 0; i < todo.length; i += 50) chunks.push(todo.slice(i, i + 50));
 
 // Exit by returning: calling process.exit() right after a fetch can crash Node on Windows.
 async function run() {

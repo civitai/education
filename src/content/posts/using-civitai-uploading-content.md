@@ -108,7 +108,7 @@ When “No” is checked, you may select either (or neither) of the following bo
 
 By acknowledging this choice with the last checkbox and moving to the next step, you’re attesting that your choice is correct and appropriate, and affirming that you understand that **_you may forfeit your Civitai account should it later be found you answered untruthfully_**.
 
-**Mature models and civitai.com.** If you tick the box for content intended to produce mature themes, the model is hidden from civitai.com, which shows only PG and PG-13. You can still list it there by giving it a separate civitai.com title, description and cover in the model editor. See [Show a Mature Model on civitai.com](/show-a-mature-model-on-civitai-com/).
+**Model cards for civitai.com and civitai.red.** If you tick the box for content intended to produce mature themes, the model is hidden from civitai.com, which shows only PG and PG-13. Every model can have a card for each site, with its own title, description and cover, set in the model editor. A mature model is listed on civitai.com once its civitai.com card is set up. See [Site-Specific Model Cards](/site-specific-model-cards/).
 
 #### Step 2 – Add version {#step-2-add-version}
 

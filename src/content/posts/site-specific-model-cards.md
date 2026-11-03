@@ -23,6 +23,7 @@ Every model can have a card for each site. One is the card for **civitai.red**, 
 - On **civitai.com**, people see your civitai.com card.
 - On **civitai.red**, people who have mature content turned on see your civitai.red card.
 - Until you set up a civitai.com card, both sites show the same card.
+- Until you pick a civitai.com cover, civitai.com uses the model's usual cover.
 
 You set the two cards up in the model editor, in the **civitai.com** and **civitai.red** tabs. You do not upload a second model.
 

@@ -150,6 +150,20 @@ On the hosted site the image build cannot fetch Git LFS files, so `.dockerignore
 nginx serves them from a B2 copy (`nginx/default.conf`). A new video therefore also needs uploading to
 that bucket; ask an infra owner.
 
+## Agent skills
+
+Some guides ship a skill: a folder of instructions (`SKILL.md`) and scripts that a reader's AI agent
+follows. Each lives in `public/skills/<name>/` and is served as plain text at `/skills/<name>/...`
+(nginx gives these files a `text/plain` type), so an agent can read the raw `SKILL.md` URL. Each also
+ships as `public/skills/<name>.zip`. After changing a skill, rebuild the zips and commit them with it:
+
+```sh
+node scripts/zip-skills.mjs          # writes public/skills/<name>.zip
+node scripts/zip-skills.mjs --check  # exits 1 if a zip is out of date with its folder
+```
+
+`public/skills` is excluded from `pnpm check`, since skill code is type-checked in the reader's project.
+
 ## WordPress export
 
 `scripts/export-wp.mjs` reads the public WordPress REST API (read-only, no login) and writes:

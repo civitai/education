@@ -50,10 +50,10 @@ While a model has its own civitai.com listing, civitai.com does not show its ver
 1. Open your model in the model editor, the same place where you mark a resource as mature. (This step has not been checked against the live site yet.)
 2. In the **Title, description & cover** box, you will see two tabs, **civitai.red** and **civitai.com**. The civitai.red tab holds your original title, description and cover.
 3. Open the **civitai.com** tab. Until you write something, it says civitai.com shows the same title and description as civitai.red, and the tab carries a **Same as .red** badge.
-4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a clean rewrite made for you. The draft is only a suggestion. Nothing is saved until you save the model, and if you already have civitai.com text, you are asked before the draft replaces it.
+4. Choose **Write a civitai.com version** to start from a copy of your current text, or **Draft a civitai.com version** to have a clean rewrite made for you. The draft is only a suggestion. Nothing is saved until you save the model. If you already have different civitai.com text, you are asked before the draft replaces it.
 5. Edit the **Title** and the **Description**. A line above each field checks the text as you type and tells you if it reads as too mature for civitai.com. Leave the description empty if you want civitai.com to show none. The civitai.red description is never shown there instead.
-6. Pick a **Cover** for civitai.com. Only your own images rated PG or PG-13, published on this model, are offered. Click the picked image again to clear it. If none of your images qualify yet, the picker says so. Publish a post with a PG or PG-13 image on the model first.
-7. Save. The tab now shows an **Own content** badge.
+6. Pick a **Cover** for civitai.com. Only your own images rated PG or PG-13, published on this model, are offered. Click the picked image again to clear it. The picker appears once the model exists. If it says none of your images are rated PG or PG-13 yet, or asks you to publish a post with images on the model, do that first.
+7. Save. While the tab holds your own text, it shows an **Own content** badge instead of **Same as .red**.
 
 To go back, choose **Use the civitai.red listing** in the civitai.com tab and confirm. The civitai.com title, description and cover are removed, and civitai.com shows the same listing as civitai.red.
 
@@ -62,7 +62,7 @@ To go back, choose **Use the civitai.red listing** in the civitai.com tab and co
 A mature model shows on civitai.com once its civitai.com listing is complete. That means:
 
 - a civitai.com **title**, and
-- a civitai.com **cover**: one of your own images, rated PG or PG-13, that is scanned and sits on a published post on a published version of the model.
+- a civitai.com **cover**: one of your own images, rated PG or PG-13, that is scanned, not flagged, and sits on a published post on a published version of the model.
 
 The description is optional.
 

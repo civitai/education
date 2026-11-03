@@ -11,7 +11,7 @@
 // The what-if quote can be higher than the final bill; buzz-log.json records what was billed.
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, rmSync } from 'node:fs';
-import { apiKey, args, buzz, download, logBuzz, probeSeconds, readJson, round, submit, waitFor, whatIf, writeJson } from './lib.mjs';
+import { DEFAULT_PAY, apiKey, args, buzz, payInfo, download, logBuzz, probeSeconds, readJson, round, submit, waitFor, whatIf, writeJson } from './lib.mjs';
 
 const a = args();
 const [id, motion] = a._;
@@ -34,6 +34,7 @@ const firstFrame = `data:${mime};base64,` + readFileSync(`public/${still}`).toSt
 const prompt = `${motion}. Keep the look of the first frame. No text, no captions, no speech.`;
 const body = {
   allowMatureContent: false,
+  currencies: doc.pay ?? DEFAULT_PAY,
   steps: [
     {
       $type: 'videoGen',
@@ -52,8 +53,14 @@ const body = {
 
 // Exit by returning: calling process.exit() right after a fetch can crash Node on Windows.
 async function run() {
-  const quote = buzz(await whatIf(key, body));
-  console.log(`${id}: quoted ${quote} Buzz for a ${body.steps[0].input.duration}s ${body.steps[0].input.resolution} clip`);
+  const q = await whatIf(key, body);
+  const quote = buzz(q);
+  const pay = payInfo(q);
+  console.log(`${id}: quoted ${quote} Buzz for a ${body.steps[0].input.duration}s ${body.steps[0].input.resolution} clip, paid from: ${pay.insufficient ? 'not enough Buzz' : pay.from}`);
+  if (pay.insufficient) {
+    console.error(`not enough Buzz on this account for ${quote}. Nothing was spent.`);
+    return 1;
+  }
   if (a.go !== true) {
     console.log('price only. Add --go to generate.');
     return 0;

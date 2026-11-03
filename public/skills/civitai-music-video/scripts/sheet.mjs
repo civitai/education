@@ -35,7 +35,8 @@ if (a.scenes) {
 } else {
   const video = a.video ?? 'out/video.mp4';
   const every = Number(a.every ?? 3);
-  const n = Math.max(1, Math.floor(probeSeconds(video) / every - 0.01) + 1);
+  // ffmpeg samples the middle of each interval: every/2, every*1.5, ...
+  const n = Math.max(1, Math.floor((probeSeconds(video) - every / 2) / every) + 1);
   const cols = columns(n);
   const rows = Math.ceil(n / cols);
   const out = a.out ?? 'out/sheet.png';

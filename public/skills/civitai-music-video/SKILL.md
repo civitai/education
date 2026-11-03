@@ -20,19 +20,23 @@ plumbing.
 - **ffmpeg and ffprobe** on PATH (`ffmpeg -version`). If missing: macOS `brew install ffmpeg`,
   Windows `winget install ffmpeg` (then open a new terminal), Linux your package manager.
 - **A Civitai API key.** The person creates one at https://civitai.com/user/account, in the
-  "API Keys" section ("Add API key"). Generations are paid in Buzz from that account, so the account
-  needs some Buzz (see "What it costs").
+  "API Keys" section: **Add API key**, a name, **Permission preset: AI Services** (enough to generate;
+  "Full Access" also works but can do far more on the account), **Save**, then copy the key (it is shown
+  once). Generations are paid in Buzz from that account: Blue Buzz first, then Green (see "What it costs").
 - **The song zip** from the Crucible page or its linked article: an `.mp3` and an `.lrc` (there may also be a `.txt`; ignore it).
 
 ### The API key
 
-Ask the person to put the key in a file named `.env` in the project folder (after step 2 creates it), as
-one line: `CIVITAI_API_KEY=their-key`. Or they can set it in their shell (`export CIVITAI_API_KEY=...`
-on macOS/Linux, `$env:CIVITAI_API_KEY="..."` in PowerShell). The scripts read either.
+The scripts read the key from a file named `.env` in the project folder (the one step 2 creates), one
+line: `CIVITAI_API_KEY=their-key`, or from the `CIVITAI_API_KEY` environment variable.
+
+- Easiest: after step 2, ask the person to paste the key, write the `.env` file yourself, and do not repeat
+  the key back.
+- If they make the file themselves, it must be inside the project folder, named exactly `.env`. On Windows,
+  Notepad may save it as `.env.txt`; check with `dir` (or `ls -a`) and rename it if so.
 
 - Never print the key, echo it back, paste it into a prompt, or commit it. If the project is a git
   repo, add `.env` to `.gitignore`.
-- If they paste the key into the chat, write it to `.env` for them and do not repeat it.
 
 ## Get these skill files
 
@@ -47,8 +51,9 @@ unzip civitai-music-video.zip        # makes a civitai-music-video/ folder
 On Windows PowerShell use `curl.exe` (plain `curl` is a different command there) and
 `Expand-Archive civitai-music-video.zip .` instead of `unzip`.
 
-Below, `SKILL_DIR` means the folder that holds this `SKILL.md` (for Claude Code, usually
-`~/.claude/skills/civitai-music-video`).
+Below, `SKILL_DIR` means the folder that holds this `SKILL.md`: for Claude Code usually
+`~/.claude/skills/civitai-music-video`, for Codex `~/.agents/skills/civitai-music-video`. On Windows, `~` does
+not work in every command; use the full path, e.g. `$HOME.claudeskillscivitai-music-video` in PowerShell.
 
 ## 1. Check the tools
 
@@ -139,7 +144,8 @@ Always price first. This spends nothing:
 node SKILL_DIR/scripts/gen.mjs
 ```
 
-Tell the person the quote and get a yes before spending. Then generate a couple of scenes first so they
+Tell the person the quote and get a yes before spending. The quote also says which Buzz would pay
+(`paid from: blue` or `green`); if the balance is too low it says so and spends nothing. Then generate a couple of scenes first so they
 can judge the look cheaply:
 
 ```bash
@@ -229,7 +235,9 @@ run is the real number.
 
 - **`CIVITAI_API_KEY is not set`**: create `.env` in the project folder (step "The API key").
 - **401 or 403**: the key is wrong or was deleted. Make a new one at https://civitai.com/user/account.
-- **Not enough Buzz**: the account needs more Buzz. Nothing was charged for the failed request.
+- **`not enough Buzz on this account`**: the price-only check found the balance too low and stopped before
+  spending anything. The person adds Buzz on civitai.com, or you generate fewer scenes with `--limit`.
+  To pay only with Green Buzz, add `"pay": ["green"]` to `scenes.json`.
 - **A prompt or image is refused for content policy**: do not reword it to sneak past the check. Change
   the idea of the scene, or skip it.
 - **A step failed**: run the same command again; it only generates scenes that still have no image.
@@ -244,16 +252,20 @@ The scripts above only need the API key. If the agent supports MCP, two Civitai 
   Browsing needs no key.
 - `https://orchestration.civitai.com/mcp/v2`: the generation service itself, with price-only (`whatif`) runs.
 
-Claude Code:
+Browsing (search) needs no key, so connect it without one. Claude Code:
 
 ```bash
-claude mcp add --transport http civitai https://mcp.civitai.com/mcp --header "Authorization: Bearer $CIVITAI_API_KEY"
+claude mcp add --transport http civitai https://mcp.civitai.com/mcp
 ```
 
-Codex, in `~/.codex/config.toml` (with `CIVITAI_API_KEY` set in the environment Codex runs in):
+Codex, in `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.civitai]
 url = "https://mcp.civitai.com/mcp"
-bearer_token_env_var = "CIVITAI_API_KEY"
 ```
+
+Account actions (posting, for example) need the key as a bearer token: in Claude Code add
+`--header "Authorization: Bearer <key>"` to the command (this stores the key in Claude Code's config); in
+Codex add `bearer_token_env_var = "CIVITAI_API_KEY"` and set that variable where Codex runs. This skill
+needs neither.

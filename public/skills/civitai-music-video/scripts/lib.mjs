@@ -105,6 +105,18 @@ export async function waitFor(key, id, { timeoutMs = 15 * 60 * 1000, everyMs = 4
   }
 }
 
+/**
+ * Which Buzz pays. Blue Buzz first (the free Buzz from daily rewards), then Green. Override with
+ * "pay": ["green"] in scenes.json. Civitai picks the first listed type the account has enough of.
+ */
+export const DEFAULT_PAY = ['blue', 'green'];
+
+/** From a what-if: is the balance too low, and which Buzz type would be charged. */
+export const payInfo = (wf) => ({
+  insufficient: wf?.transactions?.insufficientBuzz === true,
+  from: [...new Set((wf?.transactions?.list ?? []).map((t) => t.accountType).filter(Boolean))].join(' + ') || 'unknown',
+});
+
 /** Total Buzz on a workflow or what-if response. */
 export const buzz = (wf) => Number(wf?.cost?.total ?? wf?.cost?.base ?? 0);
 

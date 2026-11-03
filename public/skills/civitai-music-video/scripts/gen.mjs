@@ -10,9 +10,9 @@
 // appended to buzz-log.json. A run refuses to spend more than --max-buzz (default 250) in one go.
 // Settings at the top of scenes.json: "style" is added to every prompt, so all scenes share a look;
 // "model" is an optional checkpoint AIR (urn:air:...), left null for Civitai's default image model;
-// "width"/"height" are the image size.
+// "width"/"height" are the image size; "pay" (optional) lists which Buzz to use, default blue then green.
 import { existsSync, renameSync, rmSync } from 'node:fs';
-import { apiKey, args, buzz, download, logBuzz, readJson, submit, waitFor, whatIf, writeJson } from './lib.mjs';
+import { DEFAULT_PAY, apiKey, args, buzz, download, logBuzz, payInfo, readJson, submit, waitFor, whatIf, writeJson } from './lib.mjs';
 
 const a = args();
 const go = a.go === true;
@@ -49,6 +49,8 @@ const step = (s) => ({
   },
 });
 
+const body = (c) => ({ allowMatureContent: false, currencies: doc.pay ?? DEFAULT_PAY, steps: c.map(step) });
+
 // Up to 10 scenes per workflow.
 const chunks = [];
 for (let i = 0; i < todo.length; i += 10) chunks.push(todo.slice(i, i + 10));
@@ -56,9 +58,21 @@ for (let i = 0; i < todo.length; i += 10) chunks.push(todo.slice(i, i + 10));
 // Exit by returning: calling process.exit() right after a fetch can crash Node on Windows.
 async function run() {
   let quote = 0;
-  for (const c of chunks) quote += buzz(await whatIf(key, { allowMatureContent: false, steps: c.map(step) }));
+  let short = false;
+  const from = new Set();
+  for (const c of chunks) {
+    const q = await whatIf(key, body(c));
+    quote += buzz(q);
+    const p = payInfo(q);
+    short ||= p.insufficient;
+    from.add(p.from);
+  }
   console.log(`${todo.length} image(s): ${todo.map((s) => s.id).join(', ')}`);
-  console.log(`quoted: ${quote} Buzz (about ${Math.round((quote / todo.length) * 10) / 10} per image)`);
+  console.log(`quoted: ${quote} Buzz (about ${Math.round((quote / todo.length) * 10) / 10} per image), paid from: ${short ? 'not enough Buzz' : [...from].join(', ')}`);
+  if (short) {
+    console.error(`not enough Buzz on this account for ${quote}. Nothing was spent. Add Buzz on civitai.com, or generate fewer with --limit.`);
+    return 1;
+  }
   if (!go) {
     console.log('price only. Add --go to generate.');
     return 0;
@@ -70,7 +84,7 @@ async function run() {
 
   let spent = 0;
   for (const c of chunks) {
-    const wf = await submit(key, { allowMatureContent: false, steps: c.map(step) });
+    const wf = await submit(key, body(c));
     console.log(`workflow ${wf.id} submitted (${c.length} image(s)), waiting...`);
     const done = await waitFor(key, wf.id);
     const billed = buzz(done);
@@ -91,6 +105,7 @@ async function run() {
       renameSync(tmp, `public/${file}`);
       scene.file = file;
       delete scene.clipSeconds;
+      delete scene.still;
       console.log(`${scene.id}: public/${file}`);
     }
     writeJson('scenes.json', doc);

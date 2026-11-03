@@ -91,7 +91,7 @@ const SceneLayer: React.FC<{ scene: Scene; index: number; t: number }> = ({ scen
 
   let media: React.ReactNode;
   if (!scene.file) {
-    // Not generated yet: a labelled placeholder, so the timing can be previewed before spending Buzz.
+    // Not generated yet: a labeled placeholder, so the timing can be previewed before spending Buzz.
     media = (
       <AbsoluteFill
         style={{

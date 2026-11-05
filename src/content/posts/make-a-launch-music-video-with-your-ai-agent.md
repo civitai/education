@@ -55,7 +55,7 @@ and reading what your agent tells you.
 
 | Thing | Where to get it |
 | --- | --- |
-| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan; Codex works on any ChatGPT plan, including Free |
+| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan; the Codex CLI needs ChatGPT Plus or higher |
 | **Node.js** 18 or newer | [nodejs.org](https://nodejs.org) (the LTS download) |
 | **ffmpeg** | macOS: `brew install ffmpeg` (install [Homebrew](https://brew.sh) first if you don't have it). Windows: `winget install ffmpeg`. Linux: your package manager |
 | A **Civitai account with some Buzz** | The video's pictures are paid for in Buzz from your account |
@@ -76,7 +76,7 @@ plan doesn't include it). Install it from a terminal, following
 - macOS or Linux: `curl -fsSL https://claude.ai/install.sh | bash`
 - Windows PowerShell: `irm https://claude.ai/install.ps1 | iex`
 
-**Codex** signs in with your ChatGPT account and is included on every ChatGPT plan, including Free.
+**Codex** signs in with your ChatGPT account. The Codex CLI this guide uses is included with ChatGPT Plus, Pro, Business and Enterprise/Edu; the Free and Go plans get the Codex desktop app only, per [OpenAI's pricing page](https://learn.chatgpt.com/docs/pricing).
 Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
 
 - macOS or Linux: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`

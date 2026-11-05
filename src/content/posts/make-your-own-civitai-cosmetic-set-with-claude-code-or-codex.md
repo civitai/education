@@ -19,6 +19,7 @@ covers:
   - "api-keys"
 reviewed: "2026-11-05"
 excerpt: "Hand your AI coding agent (Claude Code or Codex) an idea and a Civitai API key, and it generates a matching set of stickers, badges, avatar frames or a profile background on Civitai, cuts them out, and checks them against the Creator Shop's rules, ready to submit."
+image: "/images/guides/make-your-own-civitai-cosmetic-set-with-claude-code-or-codex/cover.webp"
 seo:
   title: "Make Your Own Civitai Cosmetic Set with Claude Code or Codex - Civitai Education"
   description: "Use Claude Code or Codex and a free skill to make Civitai stickers, badges, avatar frames and profile backgrounds: art generated on Civitai, transparent cut-outs, and the Creator Shop's checks run before you submit."

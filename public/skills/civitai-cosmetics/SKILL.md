@@ -23,7 +23,7 @@ plumbing.
 - **A Civitai API key.** The person creates one at https://civitai.com/user/account (in the newer settings
   layout: Security & Apps), in "API Keys": **Add API key**, a name, **Permission preset: AI Services**
   (enough to generate), **Save**, then copy it (it is shown once). Generation is paid in Buzz from that
-  account, Blue Buzz first, then Green.
+  account, in Blue or Green Buzz.
 - **To sell:** the Creator Shop is open to Creator Program members. Anyone can make the files; only a
   member can submit them.
 
@@ -52,7 +52,8 @@ PowerShell use the full path (`$HOME\.claude\skills\civitai-cosmetics`).
 
 ## The artwork rules
 
-These are the checks the Creator Shop's submit form runs. `check.mjs` runs the same ones.
+These are the checks the Creator Shop's submit form runs. `check.mjs` runs the same ones, except the
+loop-seam check for animations (`animate.mjs` never makes a blank frame, so its output can't fail it).
 
 | Type (`type` in set.json) | Size | Transparent | Animated |
 | --- | --- | --- | --- |

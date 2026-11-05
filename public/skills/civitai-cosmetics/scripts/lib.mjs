@@ -109,7 +109,7 @@ export async function waitFor(key, id, { timeoutMs = 15 * 60 * 1000, everyMs = 4
   }
 }
 
-/** Blue Buzz first (the free Buzz from daily rewards), then Green. Override with "pay" in set.json. */
+/** Which Buzz colors Civitai may charge: Blue (the free Buzz from daily rewards) or Green. Override with "pay" in set.json. */
 export const DEFAULT_PAY = ['blue', 'green'];
 
 export const payInfo = (wf) => ({

@@ -58,7 +58,7 @@ The submit form offers four cosmetic types:
 | **Badge** | A small badge on your profile |
 | **Avatar Frame** | Around your profile picture, static or animated |
 | **Profile Background** | Behind your mini-profile card, on your profile, and on model and image pages |
-| **Sticker** | In comments and chat, and placed on other people's images |
+| **Sticker** | In comments and chat |
 
 [Civitai's Guide to the Creator Shop and Stickers](/civitais-guide-to-the-creator-shop-and-stickers/#selling)
 covers the shop side in full: the submit form, fees, review, packs and payouts. This guide covers making
@@ -67,7 +67,7 @@ the art.
 ## The rules your art has to meet
 
 The submit form checks every file before you pay, and refuses one that fails. Your agent runs the same
-checks first.
+checks first (all but the loop check for animations, which the skill's own animations can't fail).
 
 | Type | Size | Transparent background | Can be animated |
 | --- | --- | --- | --- |
@@ -85,8 +85,8 @@ For every type:
   frame where the loop restarts.
 - **Duplicates** of artwork already submitted are refused.
 
-Civitai's [Creator Cosmetic Quality Standards](https://civitai.com/content/cosmetic-standards) add the
-design rules a reviewer checks:
+Civitai's [Creator Cosmetic Quality Standards](https://civitai.com/content/cosmetic-standards) and the
+submit form's design standards add the design rules a reviewer checks:
 
 - **Safe for work** everywhere, PG or PG-13, and **your own original design**: no characters, logos or
   symbols from brands or franchises you don't own, even redrawn.
@@ -104,7 +104,7 @@ The submit form links a starter template for badges and Avatar Frames under its 
 
 | Thing | Where to get it |
 | --- | --- |
-| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan; Codex works on any ChatGPT plan, including Free |
+| An AI coding agent: **Claude Code** or **Codex** | See "Install your agent" below. Claude Code needs a paid plan. Codex needs a ChatGPT plan that includes the Codex CLI (Plus or higher at the time of writing; see [OpenAI's Codex pricing](https://developers.openai.com/codex/pricing)) |
 | **Node.js** 18 or newer | [nodejs.org](https://nodejs.org) (the LTS download) |
 | A **Civitai account with some Buzz** | The art is generated on Civitai and paid for in Buzz from your account |
 | A **Civitai API key** | Your account settings (step 1) |
@@ -123,7 +123,7 @@ plan doesn't include it). Install it from a terminal, following
 - macOS or Linux: `curl -fsSL https://claude.ai/install.sh | bash`
 - Windows PowerShell: `irm https://claude.ai/install.ps1 | iex`
 
-**Codex** signs in with your ChatGPT account and is included on every ChatGPT plan, including Free.
+**Codex** signs in with your ChatGPT account.
 Install it following [OpenAI's Codex CLI page](https://learn.chatgpt.com/docs/codex/cli):
 
 - macOS or Linux: `curl -fsSL https://chatgpt.com/codex/install.sh | sh`
@@ -161,8 +161,8 @@ when you're done.
 your set's folder and keeps that file out of git. The skill's scripts send the key only to civitai.com
 addresses.
 
-**Which Buzz pays.** The scripts ask Civitai to charge Blue Buzz (the free Buzz from daily rewards)
-first, and Green Buzz when there isn't enough Blue. Every run is priced before it spends anything, and if
+**Which Buzz pays.** The scripts let Civitai charge Blue Buzz (the free Buzz from daily rewards) or
+Green Buzz; our test run was paid from Blue. Every run is priced before it spends anything, and if
 your balance is too low it says so and spends nothing. [Buzz Colors](/buzz-colors-blue-yellow-and-green/)
 explains the colors.
 

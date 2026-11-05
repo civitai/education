@@ -98,7 +98,7 @@ submit form's design standards add the design rules a reviewer checks:
 - **Stickers** must read at 22 px, the size they show inline in text, so a bold shape or face beats fine
   detail, and words are best left out.
 
-The submit form links a starter template for badges and Avatar Frames under its design standards.
+The submit form links a starter template for badges, Avatar Frames and profile backgrounds under its design standards.
 
 ## What you need
 
@@ -291,7 +291,9 @@ wing with a big friendly smile".
 ![Left: a generated owl sticker on a flat green screen. Right: the same owl cut out, with a white die-cut outline, on a dark background](/images/guides/make-your-own-civitai-cosmetic-set-with-claude-code-or-codex/before-after.webp)
 
 The contact sheet shows each item on a dark tile, a light tile, and at small size (22 px for stickers).
-No green rim on either background, and the owl still reads at chat size.
+No green rim on either background, and the owl still reads at chat size. One thing to fix before
+selling: the yawning owl came out with a lavender face where the others are cream, so it would be
+regenerated with the face color in the style line (see "Keep the character on-model" below).
 
 ![Contact sheet: three owl stickers and a hexagon owl badge, each on dark, on light, and small](/images/guides/make-your-own-civitai-cosmetic-set-with-claude-code-or-codex/contact-sheet.webp)
 

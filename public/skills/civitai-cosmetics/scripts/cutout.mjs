@@ -11,7 +11,7 @@
 // Per-item options in set.json: "tolerance" (default 70: how far from the background color a pixel
 // must be to stay; raise it if a haze of background is left, lower it if the art gets eaten),
 // "outline" (white die-cut outline in px at export size, e.g. 8 for stickers), "pad" (px of empty
-// margin, default 6; 0 for frames), "fill" (frames: stretch the art to the whole canvas),
+// margin, default 6; 0 for avatar frames), "fill" (stretch the art to the whole canvas),
 // "despill" (px band along edges where background tint is removed; 0 turns it off).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { SPECS, args, readJson } from './lib.mjs';
@@ -147,7 +147,7 @@ function cutout(it) {
   const box = alphaBox(keyed, 24);
   if (!box) return console.log(`${it.id}: nothing left after keying out rgb(${bg}); lower "tolerance"`);
   const art = crop(keyed, box);
-  const isFrame = it.type === 'avatar-decoration' || it.type === 'content-frame';
+  const isFrame = it.type === 'avatar-frame';
   const ol = Number(it.outline ?? 0);
   const pad = Number(it.pad ?? (isFrame ? 0 : 6)) + ol;
 

@@ -13,17 +13,12 @@ export const SPECS = {
   badge: {
     label: 'Badge', min: [144, 144], export: [256, 256], gen: [1024, 1024],
     transparent: true, animated: true,
-    brief: 'a hexagon badge: the hexagon is the base, elements may break out of it',
+    brief: 'a badge built on a pointy-top hexagon: the hexagon is the base, elements may break out of it',
   },
-  'avatar-decoration': {
-    label: 'Avatar decoration', min: [120, 120], export: [256, 256], gen: [1024, 1024],
+  'avatar-frame': {
+    label: 'Avatar frame', min: [120, 120], export: [256, 256], gen: [1024, 1024],
     transparent: true, animated: true,
-    brief: 'a frame drawn around a round avatar: keep at least half of the avatar visible, the center stays empty',
-  },
-  'content-frame': {
-    label: 'Content frame', min: [256, 256], export: [512, 512], gen: [1024, 1024],
-    transparent: true, animated: false,
-    brief: 'a square frame drawn over a post or image card: the center stays empty',
+    brief: 'a ring-shaped frame around a round avatar that fills the image edge to edge: the middle stays empty so at least half of the avatar shows',
   },
   'profile-background': {
     label: 'Profile background', min: [450, 144], export: [1350, 432], gen: [1600, 512],

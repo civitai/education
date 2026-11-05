@@ -5,7 +5,7 @@
 //            shine (a light sweep across the art: good for badges)
 //   --frames 24 --fps 12    defaults: a 2-second loop. The shop allows at most 150 frames and 30 fps.
 //
-// Content frames cannot be animated on Civitai, so this refuses them. The art is shrunk a little so
+// The art is shrunk a little so
 // the motion never leaves the canvas, and every frame has art in it, so the loop never blinks empty.
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';

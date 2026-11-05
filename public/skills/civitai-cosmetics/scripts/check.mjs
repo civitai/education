@@ -31,7 +31,7 @@ function checkFile(file, type) {
       let clear = 0;
       for (let i = 3; i < img.data.length; i += 4) if (img.data[i] < 16) clear++;
       transparent = clear / (width * height) > 0.02;
-      if (type === 'avatar-decoration') {
+      if (type === 'avatar-frame') {
         // Guideline from the cosmetic standards: at least half of the avatar stays visible.
         const r = Math.min(width, height) / 2;
         let inside = 0, open = 0;

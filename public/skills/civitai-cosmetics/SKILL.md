@@ -1,6 +1,6 @@
 ---
 name: civitai-cosmetics
-description: Make a set of Civitai cosmetics (stickers, badges, avatar decorations, content frames, profile backgrounds) with art generated on Civitai, cut out to a transparent background, sized and checked against the Creator Shop's artwork rules, ready for the person to submit. Paid with the user's Civitai API key. Use when someone wants to make Civitai stickers, a badge, an avatar frame, a profile background or a cosmetic set to sell in the Creator Shop.
+description: Make a set of Civitai cosmetics (stickers, badges, avatar frames, profile backgrounds) with art generated on Civitai, cut out to a transparent background, sized and checked against the Creator Shop's artwork rules, ready for the person to submit. Paid with the user's Civitai API key. Use when someone wants to make Civitai stickers, a badge, an avatar frame, a profile background or a cosmetic set to sell in the Creator Shop.
 ---
 
 # Civitai cosmetics
@@ -57,8 +57,7 @@ These are the checks the Creator Shop's submit form runs. `check.mjs` runs the s
 | Type (`type` in set.json) | Size | Transparent | Animated |
 | --- | --- | --- | --- |
 | Badge (`badge`) | at least 144x144, square | yes | yes |
-| Avatar decoration (`avatar-decoration`) | at least 120x120, square | yes | yes |
-| Content frame (`content-frame`) | at least 256x256, square | yes | no |
+| Avatar Frame (`avatar-frame`) | at least 120x120, square | yes | yes |
 | Profile background (`profile-background`) | at least 450x144, 25:8 | no | yes |
 | Sticker (`sticker`) | 320 to 512px on the long edge, at most 2:1 | yes | yes |
 
@@ -70,15 +69,18 @@ The shop's quality standards (https://civitai.com/content/cosmetic-standards) ad
 
 - Safe for work everywhere (PG / PG-13). Original designs only: no characters, logos or symbols from
   brands or franchises the person does not own, even redrawn.
-- **Badges** are built on a hexagon. Elements may break out of it, but the hexagon stays the base.
+- **Badges** are built on a hexagon (Civitai's starter template is a pointy-top hexagon). Elements may
+  break out of it, but the hexagon stays the base, at a consistent size across a set. The file itself
+  must still be square: the hexagon sits in the middle of a square canvas.
 - **Profile backgrounds** stay light on text: one large piece is fine, small readable text is not. They
   sit behind the creator card, so they should not compete with it.
-- **Avatar decorations** keep at least half of the avatar visible. They frame it; they do not cover it.
-  On the submit form the person can nudge the frame up to 20px per side (at a 96px avatar) to make it
-  stick out past the avatar.
+- **Avatar Frames** keep at least half of the avatar visible. They frame it; they do not cover it. The
+  image is drawn over the round avatar, edge to edge, so a ring that touches the canvas edge sits at the
+  avatar's rim. On the submit form, **Adjust fit** nudges the frame per side to make it stick out past
+  the avatar.
 
 Stickers show at 160px on a line of their own and at 22px inline in text, so they need a bold silhouette
-and one clear idea each.
+and one clear idea each, and no words or small text.
 
 ## 1. Check the tools and make the set folder
 
@@ -97,7 +99,7 @@ Ask what the set is for and who it is for. Agree on:
 - **One character or motif and one style line** that every item shares (`style` in set.json). Consistency
   is what makes a set feel like a set.
 - **The items:** for a sticker pack, 6 to 12 reactions people actually type in chat (yes, no, lol, thanks,
-  wow, sad, on it, gg). For a profile kit, one badge, one avatar decoration and one profile background in
+  wow, sad, on it, gg). For a profile kit, one badge, one Avatar Frame and one profile background in
   the same style.
 - **The key color** (`key`): the flat background the art is generated on and then cut out. `green` by
   default. If the art itself is green, use `magenta`; if it is green and pink, use `blue`. Per item, set
@@ -147,7 +149,7 @@ node SKILL_DIR/scripts/sheet.mjs      # sheet.png: each item on dark, on light, 
 `cutout.mjs` samples the background from the image border, keys it out with a soft edge, un-mixes edge
 pixels from the background color and removes leftover tint along the edges (the defringe step), trims,
 adds the optional white die-cut `outline`, and places the art on the type's export canvas: 256x256 for
-badges and avatar decorations, 512x512 for content frames, 1350x432 for profile backgrounds (cropped to
+badges and Avatar Frames, 1350x432 for profile backgrounds (cropped to
 25:8, no keying), and 512px on the long edge for stickers.
 
 Open `sheet.png` and look at it with the person. Fixes, per item in set.json:
@@ -155,7 +157,8 @@ Open `sheet.png` and look at it with the person. Fixes, per item in set.json:
 - A haze or speckles of background left: raise `"tolerance"` (default 70) to 90 or 110.
 - Thin parts of the art eaten away, or holes: lower `"tolerance"` to 50.
 - A colored rim on the light tile: raise `"despill"` (default about 4px on a 1024px image).
-- Too much empty margin, or a frame that should fill the canvas: `"pad": 0`, and `"fill": true` for frames.
+- Too much empty margin: `"pad": 0`. An Avatar Frame that is not round enough: `"fill": true` stretches it
+  to the whole square.
 
 Re-run `cutout.mjs`, `check.mjs` and `sheet.mjs` after each change. Everything must say PASS.
 
@@ -167,7 +170,7 @@ node SKILL_DIR/scripts/check.mjs
 ```
 
 Effects: `bob`, `pulse`, `wiggle`, `shine` (good for badges). `--frames 24 --fps 12` by default (a 2-second
-loop); the shop allows at most 150 frames and 30 fps. Content frames cannot be animated. `check.mjs` checks
+loop); the shop allows at most 150 frames and 30 fps. `check.mjs` checks
 the `.webp` when there is one. Keep the still too: if the person prefers it, delete the `.webp`.
 
 ## 6. Hand over

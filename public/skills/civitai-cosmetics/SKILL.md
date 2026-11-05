@@ -24,8 +24,8 @@ plumbing.
   layout: Security & Apps), in "API Keys": **Add API key**, a name, **Permission preset: AI Services**
   (enough to generate), **Save**, then copy it (it is shown once). Generation is paid in Buzz from that
   account, in Blue or Green Buzz.
-- **To sell:** the Creator Shop is open to Creator Program members. Anyone can make the files; only a
-  member can submit them.
+- **To sell:** the person submits from the **Shop** tab on their civitai.com profile. At the time of
+  writing any signed-in user has it; if theirs doesn't, they can still make the files.
 
 ### The API key
 

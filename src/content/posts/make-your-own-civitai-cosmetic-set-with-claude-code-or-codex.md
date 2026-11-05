@@ -48,9 +48,9 @@ and reading what your agent tells you.
 
 ## Who can sell, and what
 
-Anyone can make the files. To **sell** them, you need a Creator Shop, which is open to
-[Creator Program](/civitais-guide-to-earning-with-the-creator-program/#how-do-i-join-and-who-s-eligible-to-earn)
-members. The Shop tab on your profile is where you submit items.
+Anyone can make the files, and at the time of writing any signed-in Civitai user can open the Shop tab
+on their profile and submit items to sell. Who can sell may change, so check your profile for the Shop
+tab.
 
 The submit form offers four cosmetic types:
 
@@ -84,7 +84,7 @@ For every type:
 - **Transparent** means the file has a see-through background, not a white or checkered one.
 - **Animation** means an animated WebP: at most 150 frames, at most 30 frames per second, and no blank
   frame where the loop restarts.
-- **Duplicates** of artwork already submitted are refused.
+- **Duplicates:** an identical file already in the shop is refused.
 
 Civitai's [Creator Cosmetic Quality Standards](https://civitai.com/content/cosmetic-standards) and the
 submit form's design standards add the design rules a reviewer checks:

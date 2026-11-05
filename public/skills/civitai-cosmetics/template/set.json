@@ -1,0 +1,12 @@
+{
+  "name": "Night Owl",
+  "style": "cute chibi night owl character, flat vector illustration, bold clean dark outlines, soft cel shading, purple and teal palette",
+  "key": "green",
+  "pay": ["blue", "green"],
+  "items": [
+    { "id": "owl-wave", "type": "sticker", "outline": 8, "prompt": "the owl waving one wing with a big friendly smile" },
+    { "id": "owl-sleepy", "type": "sticker", "outline": 8, "prompt": "the owl yawning, eyes half closed, holding a tiny mug of coffee" },
+    { "id": "owl-wow", "type": "sticker", "outline": 8, "prompt": "the owl with huge sparkling eyes and both wings up in amazement" },
+    { "id": "owl-badge", "type": "badge", "prompt": "a hexagon badge with a thick teal hexagon rim and a purple night sky inside, the owl's face peeking over the top edge, a small gold crescent moon" }
+  ]
+}

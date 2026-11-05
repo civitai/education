@@ -273,12 +273,32 @@ agreed to the price.
 
 ### A worked example
 
-<!-- WORKED EXAMPLE: filled in from the positive-control run (3 stickers + 1 badge). -->
+We ran the skill's example set as it ships: a night owl in a purple and teal palette, three reaction
+stickers (waving, yawning over a coffee, amazed) and a matching hexagon badge. The style line in
+`set.json` was "cute chibi night owl character, flat vector illustration, bold clean dark outlines, soft
+cel shading, purple and teal palette", and each item's prompt was one line, like "the owl waving one
+wing with a big friendly smile".
+
+- **The price check** quoted 276 Buzz for the four images, about 69 each, paid from Blue Buzz. The run
+  billed exactly that.
+- **Generation** returned each item on a flat green screen at 1024 x 1024.
+- **The cut-out** made the stickers 512 px on the long edge (436 x 512, 377 x 512 and 512 x 500) with an
+  8 px white die-cut outline, and the badge 256 x 256. No settings needed changing.
+- **The checks** passed all four. As a control, the raw green-screen image checked as a sticker fails
+  twice, on size and on transparency.
+- **The badge** was then animated with a light sweep: 24 frames at 12 frames per second. It still passed.
+
+![Left: a generated owl sticker on a flat green screen. Right: the same owl cut out, with a white die-cut outline, on a dark background](/images/guides/make-your-own-civitai-cosmetic-set-with-claude-code-or-codex/before-after.webp)
+
+The contact sheet shows each item on a dark tile, a light tile, and at small size (22 px for stickers).
+No green rim on either background, and the owl still reads at chat size.
+
+![Contact sheet: three owl stickers and a hexagon owl badge, each on dark, on light, and small](/images/guides/make-your-own-civitai-cosmetic-set-with-claude-code-or-codex/contact-sheet.webp)
 
 ## 5. What it costs
 
-**Making the art:** each image is generated with GPT Image 2.5 Flare at 1024 x 1024, which priced at about
-69 Buzz per image in our runs, so a 4-item set is about 280 Buzz and a 12-sticker pack about 830, plus
+**Making the art:** each image is generated with GPT Image 2.5 Flare at 1024 x 1024, which cost 69 Buzz per
+image in our run, so a 4-item set is about 280 Buzz and a 12-sticker pack about 830, plus
 any images you redo. The price is always shown before anything is spent, and the scripts refuse a run
 priced above a cap (500 Buzz unless you raise it). Cutting out, checking and animating run on your
 computer and cost nothing.

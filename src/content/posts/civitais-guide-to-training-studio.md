@@ -251,7 +251,13 @@ With Blue first on, if your Blue Buzz does not cover the whole price, the Start 
 
 ### Spend Blue first {#spend-blue-first}
 
-To keep your Blue Buzz, turn off the **Spend Blue first** checkbox. It is in the top bar: open the Buzz balance menu (titled **Buzz to spend**) and look under the Yellow and Green choices. It is on by default. With it off, the whole price comes out of your Yellow or Green Buzz, and the confirmation says so. The note beside each price also changes to say your Buzz is spent only from that account.
+To keep your Blue Buzz, turn off the **Spend Blue first** checkbox. It is on step 1, **Select**, in the left column. Find it under the grid of base models and the **Show more models** button, just above the panel for the model you picked. A line above it says how you will pay, for example "Paid with Blue first, then your Green Buzz."
+
+![The Select step of Training Studio. Under the base model grid, a line reads "Paid with Blue first, then your Green Buzz" with a checked Spend Blue first checkbox below it, above the selected model panel](/images/guides/civitais-guide-to-training-studio/spend-blue-first-select-step.webp)
+
+![Close-up of the Spend Blue first checkbox, checked, with the line "Paid with Blue first, then your Green Buzz" above it](/images/guides/civitais-guide-to-training-studio/spend-blue-first-checkbox.webp)
+
+The box is checked by default. With it off, the whole price comes out of your Yellow or Green Buzz, and the confirmation says so. The note beside prices also changes to say your Buzz is spent only from that account. Prices in the screenshots are only examples and change.
 
 The setting is saved in your browser, so it stays the way you left it on that browser, and you set it again on another browser or device.
 

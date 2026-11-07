@@ -39,7 +39,7 @@ A few rules apply to the whole table:
 - One person can give you at most 50 points a day in total.
 - Your own actions on your own hats earn nothing.
 - Only actions before the event ends count. After that your hats stay on your work, but they stop scoring.
-- A sticker here means a regular sticker from the sticker tray, and it scores once the image's owner approves it. Regular stickers work the same as before.
+- A sticker here means a regular sticker from the sticker tray, and it scores once the image's owner approves it. Regular stickers are not affected by Hat Turf.
 - Hat Turf is a separate way to score on other people's images, with turf hats you place for free. A worn hat mutes turf: turf hats can still go on an image that wears a hat, but they do not earn until that hat comes off. So the hat you wear on your own work protects what it earns. To learn how turf works, read [Hat Turf: Stick Your Team's Hats on Other People's Images](https://civitai.com/articles/38205/hat-turf-stick-your-teams-hats-on-other-peoples-images).
 
 ## Tip 1: Put your hat on your best image {#hat-your-best}

@@ -16,7 +16,7 @@ covers:
   - "training-base-models"
   - "auto-label"
   - "buzz-training-cost"
-reviewed: "2026-10-26"
+reviewed: "2026-11-07"
 excerpt: "Train a LoRA on Civitai with Training Studio: pick a base model, label your data, set steps, pay with Buzz, then watch each epoch arrive and publish the best one."
 seo:
   title: "Civitai's Guide to Training Studio - Civitai Education"
@@ -39,10 +39,10 @@ It differs from the [classic on-site trainer](/using-civitai-the-on-site-lora-tr
 - **Steps are explained in plain terms.** Instead of a bare number, the Review step tells you how many times each image is seen, for example “each image seen ~100×”.
 - **Nothing exists until you press start.** No half-built model page sits in your profile, and nothing goes public unless you publish it.
 
-Training Studio is now the default trainer. The classic trainer is being phased out, so this is the one to learn. [Civitai’s announcement article](https://civitai.com/articles/35616) shows the same flow in a four and a half minute video, and this guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
+Training Studio is now the default trainer. The classic trainer stops starting new runs on **November 16th** (at 00:00 UTC), so this is the one to learn. To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
 
 :::note
-Training Studio still carries a **Beta** badge. It is on by default. If you would rather use the classic trainer for now, open [your account preferences](https://civitai.com/user/account/preferences), find the **Features** section and turn off **Training Studio**. You can turn it back on there at any time.
+Training Studio still carries a **Beta** badge. It is on by default. Until November 16th you can use the classic trainer instead: open [your account preferences](https://civitai.com/user/account/preferences), find the **Features** section and turn off **Training Studio**. You can turn it back on there at any time. After November 16th the classic trainer still shows your past runs, but it can no longer start new ones, so turning Training Studio off will not let you train.
 :::
 
 ## Before you start {#before-you-start}
@@ -242,16 +242,28 @@ A failed run is refunded automatically.
 
 ## Paying with Buzz {#paying-with-buzz}
 
-Training Studio charges your Buzz accounts in a fixed order:
+By default, Training Studio charges your Buzz accounts in this order:
 
-1. **Blue Buzz is spent first.** Blue always comes first.
+1. **Blue Buzz is spent first.**
 2. **Then Yellow or Green**, whichever you chose with the Buzz switch in the top bar. Yellow is Buzz you bought. Green is membership Buzz.
 
-If your Blue Buzz does not cover the whole price, the Start button shows a confirmation with the amount that will come out of Yellow or Green.
+With Blue first on, if your Blue Buzz does not cover the whole price, the Start button shows a confirmation with the amount that will come out of Yellow or Green.
+
+### Spend Blue first {#spend-blue-first}
+
+To keep your Blue Buzz, turn off the **Spend Blue first** checkbox. It is on step 1, **Select**, in the left column. Find it under the grid of base models and the **Show more models** button, just above the panel for the model you picked. A line above it says how you will pay, for example "Paid with Blue first, then your Green Buzz."
+
+![The Select step of Training Studio. Under the base model grid, a line reads "Paid with Blue first, then your Green Buzz" with a checked Spend Blue first checkbox below it, above the selected model panel](/images/guides/civitais-guide-to-training-studio/spend-blue-first-select-step.webp)
+
+![Close-up of the Spend Blue first checkbox, checked, with the line "Paid with Blue first, then your Green Buzz" above it](/images/guides/civitais-guide-to-training-studio/spend-blue-first-checkbox.webp)
+
+The box is checked by default. With it off, the whole price comes out of your Yellow or Green Buzz, and the confirmation says so. The note beside prices also changes to say your Buzz is spent only from that account. Prices in the screenshots are only examples and change.
+
+The setting is saved in your browser, so it stays the way you left it on that browser, and you set it again on another browser or device.
 
 Two cases work differently:
 
-- **Mature datasets without a membership pay in Yellow.** If any file was rated mature (R or above), Blue Buzz cannot pay for the run without a paid membership. The Studio then charges the full price in Yellow, whatever Buzz you selected, and shows a note and a confirmation first. The **see which** link takes you back to the mature files.
+- **Mature datasets pay in Yellow.** If any file was rated mature (R or above), Green Buzz never pays for it. Without a paid membership, Blue Buzz cannot pay for it either, so the Studio charges the full price in Yellow, whatever Buzz you selected, and shows a note and a confirmation first. With a membership, Blue can pay the first part, unless you turned off **Spend Blue first**, in which case the whole price is charged in Yellow. The **see which** link takes you back to the mature files.
 - **Green requires safe-for-work content.** To spend Green Buzz you tick a box confirming the training will not produce NSFW content.
 
 To see how membership works, read [Civitai’s Guide to Membership Tiers](/civitais-guide-to-membership-tiers/).
@@ -307,7 +319,7 @@ Here is a full run for an original character called Mira, using 20 images and th
 5. **Trigger word.** Enter `mira_oc`. It is prepended to every caption.
 6. **Review.** The defaults for ZImage Turbo are 2,000 steps and 10 checkpoints. With 20 images that reads about “each image seen ~100×”, so the target of ~35× for a character is met. Each checkpoint is about 200 steps, so the ten epochs run from roughly 10× to 100× per image. That spread is what gives you something to choose between.
 7. **Sample prompts.** Replace one of the three seeded prompts with `mira_oc, standing in a rainy street at night` to test a new setting. Keep one near a training image.
-8. **Price.** Read the quote and the Blue-first note. If your dataset has no mature files, only the part Blue does not cover will come from Yellow or Green.
+8. **Price.** Read the quote and the Blue-first note. If your dataset has no mature files, only the part Blue does not cover will come from Yellow or Green, unless you turned off **Spend Blue first**.
 9. **Start training.**
 10. **Watch.** Open the first epoch as it lands. If Mira already looks recognizable at epoch 3 and the rainy street prompt works, generate with it.
 11. **Pick.** Open **Compare epochs**. Choose the earliest epoch where the face is consistent and new prompts still follow your words. If the last epoch makes every prompt look like a training image, it is overbaked, so pick an earlier one.
@@ -333,7 +345,7 @@ The model decides. The Data step shows which one it uses, and only models that s
 
 ### When should I use the classic trainer instead? {#when-to-use-the-classic-trainer}
 
-The classic trainer is being phased out, so use Training Studio where you can. You can switch Training Studio off under **Features** in your preferences to return to the classic trainer, described in [Civitai’s on-site LoRA trainer guide](/using-civitai-the-on-site-lora-trainer/), but it is being phased out. For terms like epoch, rank and learning rate, see the [LoRA training glossary](/lora-training-glossary/).
+Use Training Studio. The classic trainer stops starting new runs on November 16th, for everyone. Runs you already submitted will finish, and your past runs stay in the classic trainer. Until that date you can switch Training Studio off under **Features** in your preferences to return to the classic trainer, described in [Civitai’s on-site LoRA trainer guide](/using-civitai-the-on-site-lora-trainer/). After it, the switch is still there, but the classic trainer will only show your past runs. For terms like epoch, rank and learning rate, see the [LoRA training glossary](/lora-training-glossary/).
 
 ### How long do I keep my training? {#how-long-do-i-keep-it}
 
@@ -347,7 +359,7 @@ Runs are listed for 30 days. Download or publish what you want to keep.
 | **A file failed to upload** | Check the type is accepted, then use the **Retry** button on the failed tile. A **Failed** filter lists these files. Files blocked by the upload scan cannot be retried, so remove them. |
 | **Auto-label returned nothing for a file** | Open it in the label editor and re-run, or write the label yourself. |
 | **Start is disabled and the price shows a dash** | A run could not be priced. Check that Steps is filled in and between 1 and 10,000, or wait a moment and try again if the quote failed. |
-| **I was charged Yellow, not Blue or Green** | Your dataset has mature files and you have no paid membership. See [Paying with Buzz](#paying-with-buzz). |
+| **I was charged Yellow, not Blue or Green** | Your dataset has mature files (Green never pays for these, and without a paid membership Blue cannot either), or you turned off **Spend Blue first**. See [Paying with Buzz](#paying-with-buzz). |
 | **Start is disabled in Green mode** | Tick the box confirming the training will not produce NSFW content. |
 | **Training is disabled** | A banner explains why. Training can be switched off temporarily. Try again later. |
 | **Results look weak** | Check the “each image seen” line. The amber line also says “no refund”, so decide before you start. Below target means more steps or fewer images. Try a later epoch, or use **Train further**. |

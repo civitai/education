@@ -63,7 +63,7 @@ How to do it:
 
 1. Remix a teammate's hatted image with the on-site generator. Free submissions only work for remixes made on Civitai from that image.
 2. Post the result. In the post editor, a remix card appears under the image. Submit it to the original image's Remix gallery from there.
-3. Pick the free team option on the submit card when it is offered.
+3. If the submit card shows a free team remix, submit it. The team waiver is applied for you, so there is nothing to choose. It needs the teammate's gallery to be open, and you both need to have joined the same team.
 
 If you are remixing an image from another team, the ordinary free placement applies instead: one a day, shared between stickers and remix galleries, and one free submission per image. The image owner decides whether to accept.
 

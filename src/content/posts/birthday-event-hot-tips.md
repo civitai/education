@@ -9,6 +9,7 @@ tags:
   - "guide"
 author: "civitai"
 excerpt: "Civitai's 4th Birthday runs through November 30. Here is where the points are, what each action is worth, and how to get more people looking at the work wearing your team's hat."
+image: "/images/guides/birthday-event-hot-tips/cover.webp"
 covers:
   - "birthday-2026-event"
 reviewed: "2026-11-07"

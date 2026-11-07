@@ -39,7 +39,7 @@ It differs from the [classic on-site trainer](/using-civitai-the-on-site-lora-tr
 - **Steps are explained in plain terms.** Instead of a bare number, the Review step tells you how many times each image is seen, for example “each image seen ~100×”.
 - **Nothing exists until you press start.** No half-built model page sits in your profile, and nothing goes public unless you publish it.
 
-Training Studio is now the default trainer. The classic trainer stops starting new runs on **November 16th**, so this is the one to learn. To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
+Training Studio is now the default trainer. The classic trainer stops starting new runs on **November 16th** (at 00:00 UTC), so this is the one to learn. To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
 
 :::note
 Training Studio still carries a **Beta** badge. It is on by default. Until November 16th you can use the classic trainer instead: open [your account preferences](https://civitai.com/user/account/preferences), find the **Features** section and turn off **Training Studio**. You can turn it back on there at any time. After November 16th the classic trainer still shows your past runs, but it can no longer start new ones, so turning Training Studio off will not let you train.
@@ -247,7 +247,7 @@ By default, Training Studio charges your Buzz accounts in this order:
 1. **Blue Buzz is spent first.**
 2. **Then Yellow or Green**, whichever you chose with the Buzz switch in the top bar. Yellow is Buzz you bought. Green is membership Buzz.
 
-If your Blue Buzz does not cover the whole price, the Start button shows a confirmation with the amount that will come out of Yellow or Green.
+With Blue first on, if your Blue Buzz does not cover the whole price, the Start button shows a confirmation with the amount that will come out of Yellow or Green.
 
 ### Spend Blue first {#spend-blue-first}
 
@@ -353,7 +353,7 @@ Runs are listed for 30 days. Download or publish what you want to keep.
 | **A file failed to upload** | Check the type is accepted, then use the **Retry** button on the failed tile. A **Failed** filter lists these files. Files blocked by the upload scan cannot be retried, so remove them. |
 | **Auto-label returned nothing for a file** | Open it in the label editor and re-run, or write the label yourself. |
 | **Start is disabled and the price shows a dash** | A run could not be priced. Check that Steps is filled in and between 1 and 10,000, or wait a moment and try again if the quote failed. |
-| **I was charged Yellow, not Blue or Green** | Your dataset has mature files and you have no paid membership. See [Paying with Buzz](#paying-with-buzz). |
+| **I was charged Yellow, not Blue or Green** | Your dataset has mature files (Green never pays for these, and without a paid membership Blue cannot either), or you turned off **Spend Blue first**. See [Paying with Buzz](#paying-with-buzz). |
 | **Start is disabled in Green mode** | Tick the box confirming the training will not produce NSFW content. |
 | **Training is disabled** | A banner explains why. Training can be switched off temporarily. Try again later. |
 | **Results look weak** | Check the “each image seen” line. The amber line also says “no refund”, so decide before you start. Below target means more steps or fewer images. Try a later epoch, or use **Train further**. |

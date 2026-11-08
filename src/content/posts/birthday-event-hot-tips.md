@@ -26,7 +26,7 @@ The official sources are the [event page](https://civitai.com/events/birthday202
 2. You land on one of four teams at random: Pink, Green, Blue or Yellow. Teams are final, so there is no switching. The event spreads the most active creators evenly across the four teams so nobody starts out stacked.
 3. You get a free **Party Cap** in your team's color. It is all you need to play every part of the event.
 
-The event page also shows live team standings, the hardest-working hats and the top Hat Turf players. When the event ends, every member of the winning team whose hats earned points gets the animated **Birthday 2026 Champion** badge in the winning color.
+The event page also shows live team standings, the hardest-working hats and the top Hat Turf players. When the event ends, every member of the **winning** team whose hats earned points gets the animated **Birthday 2026 Champion** badge in the winning color.
 
 ## Step 2: Wear your hat {#wear-your-hat}
 
@@ -43,9 +43,8 @@ Each hat sits on one thing at a time. You can move it whenever you like, with a 
 Different actions are worth different amounts, and the event page lists the current values. These rules apply to everything:
 
 - Most actions count once per person per item. Many different people beat one fan clicking everything.
-- There is a daily limit on how much any one person can earn a creator.
 - Your own views and reactions on your own work do not count.
-- Only people who are signed in count, and accounts made right before the event started do not count.
+- Only people who are signed in count.
 - Only actions before the event ends count.
 
 ### Strategies for your own hat {#hat-strategies}
@@ -54,7 +53,7 @@ Different actions are worth different amounts, and the event page lists the curr
 
 **Move it to what is working.** Check which of your items are getting views and re-place your hat there. Remember the 10-minute wait, so do not bounce it around.
 
-**Hat something people want to remix, then accept fast.** An accepted remix is the biggest single payout for an image, and it only counts after you accept it. A pending submission expires after 48 hours, so check your queue daily. Open your user menu, then **Placements**, switch to the **Remixes** tab and open **Received**, or go straight to [civitai.com/user/placements?type=remix&tab=received](https://civitai.com/user/placements?type=remix&tab=received).
+**Hat something people want to remix, then accept fast.** An accepted remix is the biggest single payout for an image, and it only counts after you accept it. Nothing scores while a submission sits in your queue, so check it daily. Open your user menu, then **Placements**, switch to the **Remixes** tab and open **Received**, or go straight to [civitai.com/user/placements?type=remix&tab=received](https://civitai.com/user/placements?type=remix&tab=received).
 
 **Hat your own remix post too.** A remix shows up in the original image's gallery and is also your own post. Place a hat on that post's image and it earns for you as well.
 
@@ -85,11 +84,11 @@ If you have not joined Hat Turf, nothing changes for you: you will not see turf 
 
 1. **Join Hat Turf.** Tap **Join** on any image, or on the event page. You need to be on a team first. Playing goes both ways: while you are in, your own images are in too.
 2. **Place your turf hat.** Tap the hat button on any image or video, or right from the feed. Drag the hat where you want it, then save. It costs no Buzz, and every design earns the same, so your free Party Cap works just as well as a hat you bought.
-3. **Claim the image.** The team with the most people on an image leads it. While your team leads, the earliest few players on that team earn from it. Newer accounts start earning once they reach the Spark rank on their Creator Journey.
+3. **Claim the image.** The team with the most people on an image leads it. While your team leads, the earliest few players on that team earn from it. This applies to Hat Turf only, not to wearing hats on your own work. Accounts created before the event started earn right away. Accounts created after it started earn once they reach the Spark rank on their Creator Journey.
 
 ### The rules {#turf-rules}
 
-- **One turf hat per person per image.** Make it count. Once it is on, you cannot move it, and there is no refund.
+- **One turf hat per person per image.** Make it count. Once it is on, you cannot move it, and there is no refund. <!-- HOLD: add the 48-hour turf hat lifetime line only after the lead confirms the change is live -->
 - **Images and videos only.** Anything in a visible post. Not models, articles or contest entries.
 - **Most people wins.** One turf hat each means nobody can carry an image alone, so bring your team. Ties go to whoever got there first.
 - **King of the hill.** If another team takes the lead, they earn from then on. What your team already earned stays.
@@ -101,14 +100,7 @@ Your supply of turf hats does not depend on how many hats you own. Fresh ones ar
 
 ### Reading the turf badge {#turf-badge}
 
-Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen.
-
-<figure><img src="/images/guides/birthday-event-hot-tips/hat-turf-badge-explainer.webp" alt="Three example turf badges: one filling toward its limit, one full, and one protected by the owner's hat" width="1600" height="900" loading="lazy"><figcaption><em>How to read a turf badge. The numbers are examples. Image: the official <a href="https://civitai.com/articles/38205/hat-turf-stick-your-teams-hats-on-other-peoples-images">Hat Turf article</a>.</em></figcaption></figure>
-
-- **The ring** shows how the hats on the image split between teams.
-- **The disc** fills toward the limit: the most players who can score on one image. That limit rises during the event.
-- **The plus or minus number** is your team's position, how many hats ahead or behind.
-- **The lock and the owner's hat** mean the image is protected. The team that would lead is held back while the owner's hat is on.
+Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen. The badge shows how the hats on the image split between teams, your team's position (how many hats ahead or behind), and a lock when the owner's hat is protecting the image. While the lock is on, the team that would lead is held back.
 
 If you would rather not see turf hats on the pictures, turn off **Show hats** in the Hat Turf panel on an image. You still play, and the badge and numbers stay. It is set per device.
 
@@ -135,7 +127,7 @@ If you do not want other people playing on your images, turn off **Let people pl
 - Your team may not be leading the image.
 - You may not be among the earliest few on the leading team. You still count toward your team's lead.
 - The owner may be wearing a hat on it.
-- Your account may be newer than the event and not yet at the Spark rank.
+- Your account may have been created after the event started and not yet reached the Spark rank.
 
 ## Play it straight {#fair-play}
 

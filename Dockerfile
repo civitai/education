@@ -8,6 +8,9 @@ COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build && pnpm build:drafts && node scripts/build-nginx-conf.mjs /app/nginx-generated
+# The drafts build's static folders are identical copies of public/: link them to the public build's
+# so the image carries them once. Links are relative, so they resolve where the final stage puts both.
+RUN for d in wp-content videos images covers; do       if [ -d "dist-drafts/$d" ]; then rm -rf "dist-drafts/$d" && ln -s "../site-public/$d" "dist-drafts/$d"; fi;     done
 
 FROM nginx:1.29-alpine
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf

@@ -8,17 +8,25 @@ export type Page = CollectionEntry<'pages'>;
 export type Term = { slug: string; name: string; description?: string; count: number };
 
 /** Paths the site generates itself; no post or page may claim them. */
-const RESERVED = new Set(['category', 'tag', 'author', 'page', 'feed', 'search', 'pagefind', SITE.postsPageSlug]);
+const RESERVED = new Set(['category', 'tag', 'author', 'page', 'feed', 'search', 'pagefind', 'drafts', SITE.postsPageSlug]);
 
 let postsCache: Post[] | undefined;
 
 /**
+ * The drafts build (INCLUDE_DRAFTS=1) also gives draft posts a URL, for review on a separate,
+ * sign-in-gated host. The public build never sets it.
+ */
+export const INCLUDE_DRAFTS = process.env.INCLUDE_DRAFTS === '1';
+
+/**
  * Published posts, newest first, deprecated ones included: everything that has a URL. Routes and
- * sitemaps use this; anything that lists posts for readers uses getListedPosts.
+ * sitemaps use this; anything that lists posts for readers uses getListedPosts. In the drafts build
+ * a draft is treated as unlisted: it gets a page, kept out of listings, search and sitemaps.
  */
 export async function getPosts(): Promise<Post[]> {
   if (!postsCache) {
-    const posts = await getCollection('posts', (p) => !p.data.draft);
+    const posts = await getCollection('posts', (p) => INCLUDE_DRAFTS || !p.data.draft);
+    for (const p of posts) if (p.data.draft) p.data.unlisted = true;
     posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
     const slugs = new Set(posts.map((p) => p.id));
     for (const p of posts) {

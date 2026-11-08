@@ -1,14 +1,23 @@
-# Build: pnpm build -> dist/, served by nginx (nginx/default.conf).
+# Build: pnpm build -> dist/ (public) and pnpm build:drafts -> dist-drafts/ (adds draft posts), served
+# by nginx (nginx/default.conf). One image carries both; the container serves dist/ unless
+# SERVE_DRAFTS=1, which only the sign-in-gated drafts deployment sets.
 FROM node:22-alpine AS build
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.18.0 --activate
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
-RUN pnpm build && node scripts/build-nginx-conf.mjs /app/nginx-generated
+RUN pnpm build && pnpm build:drafts && node scripts/build-nginx-conf.mjs /app/nginx-generated
+# The drafts build's static folders are identical copies of public/: link them to the public build's
+# so the image carries them once. Links are relative, so they resolve where the final stage puts both.
+RUN for d in wp-content videos images covers; do       if [ -d "dist-drafts/$d" ]; then rm -rf "dist-drafts/$d" && ln -s "../site-public/$d" "dist-drafts/$d"; fi;     done
 
 FROM nginx:1.29-alpine
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/40-select-site.sh /docker-entrypoint.d/40-select-site.sh
 COPY --from=build /app/nginx-generated /etc/nginx/education
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/site-public
+COPY --from=build /app/dist-drafts /usr/share/nginx/site-drafts
+RUN chmod +x /docker-entrypoint.d/40-select-site.sh && rm -rf /usr/share/nginx/html \
+  && ln -s /usr/share/nginx/site-public /usr/share/nginx/html
 EXPOSE 80

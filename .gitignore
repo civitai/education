@@ -29,3 +29,4 @@ designs/
 
 # Playwright MCP screenshots and snapshots
 .playwright-mcp/
+dist-drafts/

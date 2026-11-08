@@ -26,6 +26,8 @@ The official sources are the [event page](https://civitai.com/events/birthday202
 2. You land on one of four teams at random: Pink, Green, Blue or Yellow. Teams are final, so there is no switching. The event spreads the most active creators evenly across the four teams so nobody starts out stacked.
 3. You get a free **Party Cap** in your team's color. It is all you need to play every part of the event.
 
+<figure><img src="/images/guides/birthday-event-hot-tips/team-party-caps.webp" alt="The free Party Cap in the four team colors: yellow, blue, pink and green" width="1168" height="320" loading="lazy"><figcaption><em>The free Party Cap comes in all four team colors. Image: the official <a href="https://civitai.com/articles/36416">launch article</a>.</em></figcaption></figure>
+
 The event page also shows live team standings, the hardest-working hats and the top Hat Turf players. When the event ends, every member of the **winning** team whose hats earned points gets the animated **Birthday 2026 Champion** badge in the winning color.
 
 ## Step 2: Wear your hat {#wear-your-hat}
@@ -35,6 +37,8 @@ A hat sits on one of **your own** images, models or articles, and the attention 
 - **Images:** an image has to be in a post before it can wear a hat. Images score views, reactions, comments, approved stickers, accepted remixes and stories.
 - **Models:** models score views and thumbs-up reviews.
 - **Articles:** articles score views, reactions and comments.
+
+<figure><img src="/images/guides/birthday-event-hot-tips/hat-popover.webp" alt="A party hat on an image in a feed with its popover open, showing the hat name, team, a Move it link, and points, views and reactions counters" width="1600" height="904" loading="lazy"><figcaption><em>Click any hat to see its team, its stats and a link to move it. Image: the official <a href="https://civitai.com/articles/36416">launch article</a>.</em></figcaption></figure>
 
 Each hat sits on one thing at a time. You can move it whenever you like, with a 10-minute wait between moves. Hats keep earning while you are away, so there is nothing you must do every day.
 
@@ -100,7 +104,9 @@ Your supply of turf hats does not depend on how many hats you own. Fresh ones ar
 
 ### Reading the turf badge {#turf-badge}
 
-Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen. The badge shows how the hats on the image split between teams, your team's position (how many hats ahead or behind), and a lock when the owner's hat is protecting the image. While the lock is on, the team that would lead is held back.
+Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen. In the example below, the ring shows how the hats split between teams, the disc fills toward the limit on how many players can score on one image (it rises during the event), the plus or minus number is your team's position (how many hats ahead or behind), and the lock means the owner's hat is protecting the image, so the team that would lead is held back.
+
+<figure><img src="/images/guides/birthday-event-hot-tips/hat-turf-badge-explainer.webp" alt="Three example turf badges: one filling toward its limit, one full, and one protected by the owner's hat" width="1600" height="900" loading="lazy"><figcaption><em>Example values; your badge shows live numbers. Image: the official <a href="https://civitai.com/articles/38205/hat-turf-stick-your-teams-hats-on-other-peoples-images">Hat Turf article</a>.</em></figcaption></figure>
 
 If you would rather not see turf hats on the pictures, turn off **Show hats** in the Hat Turf panel on an image. You still play, and the badge and numbers stay. It is set per device.
 
@@ -134,5 +140,7 @@ If you do not want other people playing on your images, first leave Hat Turf (fr
 Fine: asking real people to look, react, comment, sticker and remix, and sharing your team's collections and posts. Not fine: extra accounts, bought or bot engagement, reaction rings of throwaway accounts, and mass low-effort reposts made only to carry hats. Those can be removed from the event.
 
 ## After the event {#after}
+
+<figure><img src="/images/guides/birthday-event-hot-tips/champion-badges.webp" alt="The Birthday 2026 Champion badge in yellow, blue, pink and green" width="1400" height="320" loading="lazy"><figcaption><em>The Champion badge comes in all four colors, but only the winning color is handed out. Image: the official <a href="https://civitai.com/articles/36416">launch article</a>.</em></figcaption></figure>
 
 You keep every hat. They stay on your content and you can still move them, but they stop scoring and are not sold any more.

@@ -92,7 +92,7 @@ If you have not joined Hat Turf, nothing changes for you: you will not see turf 
 
 ### The rules {#turf-rules}
 
-- **One turf hat per person per image.** Make it count. Once it is on, you cannot move it, and there is no refund.
+- **One turf hat per person per image.** Make it count. Turf hats last 48 hours. You cannot move one once it is on, but when yours expires you can place your team's hat there again to renew it. Your own hat shows how long it has left. Points your team already earned are never taken back.
 - **Images and videos only.** Anything in a visible post. Not models, articles or contest entries.
 - **Most people wins.** One turf hat each means nobody can carry an image alone, so bring your team. Ties go to whoever got there first.
 - **King of the hill.** If another team takes the lead, they earn from then on. What your team already earned stays.
@@ -100,7 +100,7 @@ If you have not joined Hat Turf, nothing changes for you: you will not see turf 
 - **A worn hat mutes turf.** If the owner is wearing a hat on an image, turf hats can still go on, but they do not earn until that hat comes off.
 - **Your own views do not count.**
 
-Your supply of turf hats does not depend on how many hats you own. Fresh ones arrive every few minutes and you can save some up, so a day away does not cost you much. Teams that are behind get them faster and can hold more, which keeps the race close. Your current count is in the Hat Turf panel on any image, and the event page shows how fast you refill.
+Your supply of turf hats does not depend on how many hats you own. Fresh ones arrive every few minutes and you can save some up, so a day away does not cost you much. Teams that are behind get them faster, can hold more, and get a bigger share of the credit on images they lead, which keeps the race close. Your current count is in the Hat Turf panel on any image, and the event page shows how fast you refill.
 
 ### Reading the turf badge {#turf-badge}
 

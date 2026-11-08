@@ -54,7 +54,7 @@ New accounts start with mature content off, blur on and PG selected. Mature outp
 
 ## What gets rated?
 
-Nearly everything has a rating, and every upload is scanned automatically. A new upload stays hidden from other people until its scan is done, though you can always see your own.
+Nearly everything has a rating, and every upload is scanned automatically. For the bigger picture of how Civitai keeps the site safe, see the [Safety Center](https://civitai.com/safety/how-we-keep-it-safe). A new upload stays hidden from other people until its scan is done, though you can always see your own.
 
 - **Images and videos** get their own level.
 - **Posts, bounties, challenges and Crucibles** are rated from their images, plus a text scan.

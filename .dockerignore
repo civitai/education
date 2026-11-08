@@ -7,3 +7,4 @@ nginx/generated
 # Git LFS files (.gitattributes): pointer files in the build checkout, served from B2 by nginx instead.
 public/videos
 public/wp-content/uploads/2023/08/JJBinksColab.zip
+dist-drafts

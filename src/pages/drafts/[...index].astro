@@ -1,0 +1,37 @@
+---
+// /drafts/: the review index, emitted only by the drafts build (INCLUDE_DRAFTS=1), which is served
+// on a separate sign-in-gated host. The public build returns no paths, so it never has this page.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/icons/Icon.astro';
+import { INCLUDE_DRAFTS, getPosts, postPath } from '../../lib/content';
+
+export function getStaticPaths() {
+  return INCLUDE_DRAFTS ? [{ params: { index: undefined } }] : [];
+}
+
+const posts = (await getPosts()).filter((p) => p.data.draft || p.data.unlisted);
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+---
+
+<BaseLayout title="Drafts for review" noindex>
+  <div class="notfound">
+    <h1 class="notfound-title">Drafts and unlisted guides</h1>
+    <p>Not public yet. Drafts exist only on this site; unlisted guides are also on the public site by link.</p>
+    <nav class="notfound-links" aria-label="Drafts">
+      <ul>
+        {
+          posts.map((p) => (
+            <li>
+              <a href={postPath(p)}>
+                <span>
+                  {p.data.draft ? 'Draft' : 'Unlisted'} · {p.data.title} · {fmt(p.data.date)}
+                </span>
+                <Icon name="arrow-right" size={16} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</BaseLayout>

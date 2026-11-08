@@ -2,7 +2,8 @@
 title: "Civitai’s Guide to the Content Classification System"
 slug: "civitais-guide-to-content-levels"
 date: "2024-03-26T19:02:18Z"
-modified: "2024-09-11T03:03:35Z"
+modified: "2026-11-08T12:00:00Z"
+reviewed: "2026-11-08"
 categories:
   - "civitai"
 tags:
@@ -11,102 +12,136 @@ tags:
   - "guide"
 author: "civitai"
 wpId: 3970
-excerpt: "Learn about Civitai’s new Content Classification System – a five level system designed to categorize content into five easy to understand levels!"
+excerpt: "How Civitai rates content from PG to XXX, which levels you can see on civitai.com and civitai.red, how to change what you browse, and what to do when a rating looks wrong."
 image: "/images/guides/civitais-guide-to-content-levels/cover.webp"
 seo:
   title: "Civitai's Guide to the Content Classification System - Civitai Education"
-  description: "Learn about Civitai's new Content Classification System - a five level system designed to categorize content into five levels!"
+  description: "How Civitai rates content from PG to XXX, how to choose the levels you browse on civitai.com and civitai.red, and how to challenge a rating."
   ogImage: "/images/guides/civitais-guide-to-content-levels/cover.webp"
   canonical: "https://education.civitai.com/civitais-guide-to-content-levels/"
 ---
 
 | **Last Updated** | **Changes** |
 | --- | --- |
-| 3/26/2023 | First Version |
+| 11/8/2026 | Rewritten for the current site: civitai.com and civitai.red, what gets rated, the Content & Browsing page, blur, rating votes and article maturity levels |
+| 3/26/2024 | First Version |
 
-## How is Content Categorized?
+## How is content rated?
 
-All content on Civitai is now rated based on a new **Content Classification System** into five easy to comprehend rating levels, much like those used in movie/film classification. The levels, and their content, are as follows;
+Content on Civitai is sorted into five levels, much like movie ratings. Each level has a short description in the site's own words:
 
-| Classification Level | Content |
+| Level | What it covers |
 | --- | --- |
-| PG  | Safe For Work. No naughty content! |
-| PG-13 | Revealing clothing/Sexy Attire, Violence, Light Gore |
-| R   | Adult Themes and Situations, Partial Nudity, Graphic Violence and Death |
-| X   | Graphic Nudity, Adult Objects and Settings |
-| XXX | Overtly Sexual, or Disturbing Graphic content. |
+| PG | "Safe for work. No naughty stuff." |
+| PG-13 | "Revealing clothing, small bulges, subtle nipple outline, posing/sexualized bare chested men, light gore, violence." |
+| R | "Adult themes and situations, partial nudity, bikinis, big bulges, sexual situations, graphic violence." |
+| X | "Graphic nudity, genitalia, adult objects, or settings." |
+| XXX | Explicit sexual acts and extremely disturbing content. |
 
-There are two key changes which are important to understand when using this new system;
+There is also a sixth, hidden level called **Blocked**. It is for content that breaks our terms. Blocked content is hidden everywhere, and regular accounts cannot choose to see it.
 
--   **Only images have a Content Rating!** We don’t apply ratings to resources, articles or bounties _as such_\*. **This content is categorized based on the rating of the associated images.**
+## Which levels can I see?
 
--   **\*Resources can be marked nsfw**! Resources intended to produce **_mature themes_** can be marked as such from the Model Edit menu. _**This will hide the model from PG and PG-13 feeds, regardless of the level of the associated images.**_ That includes civitai.com, which shows only PG and PG-13. A mature model is listed there once you set up its civitai.com model card, with its own title, description and cover. See [Site-Specific Model Cards](/site-specific-model-cards/).
+It depends on where you are and whether you are signed in.
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-132521.webp" alt="Content Classification System - Content intended to produce mature themes" width="697" height="167" loading="lazy"><figcaption><em>Check box for resources intended to produce mature themes</em></figcaption></figure>
+- **Signed out:** PG only, on every Civitai site.
+- **Signed in on civitai.com:** PG and PG-13.
+- **Signed in on civitai.red:** all five levels, once you turn on mature content and confirm you are over 18.
 
-## Why do we need a new Content Classification System?
+Mature levels (R, X and XXX) are not available on civitai.com, and they are not available in regions where local rules restrict them. In those regions the site tells you "Your content levels are limited by restrictions in your region."
 
-Previously, we had a binary **Safe** and **Everything** system, and gave users the ability to filter out content they didn’t want to see via **tags**. That’s still possible, but we’ve both enhanced and simplified the new Content Classification System, allowing users greater control over the level of content they’re comfortable seeing, without fiddling with tags.
+New accounts start with mature content off, blur on and PG selected. On-site generation on civitai.com is for SFW content only.
 
-The change also allows for greater flexibility in the content displayed – if you _**only**_ want to see **XXX** content, you can choose to do so!
+## What gets rated?
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-130529.png" alt="Content Classification System Levels" width="427" height="186" loading="lazy"><figcaption><em>The five new Content Classifications, enabled</em></figcaption></figure>
+Nearly everything has a rating, and every upload is scanned automatically. For the bigger picture of how Civitai keeps the site safe, see the [Safety Center](https://civitai.com/safety/how-we-keep-it-safe). A new upload stays hidden from other people until its scan is done, though you can always see your own.
 
-## How do I set these ratings?
+- **Images and videos** get their own level.
+- **Posts, bounties, challenges and Crucibles** are rated from their images, plus a text scan.
+- **Articles** have a **Maturity Level** that the author picks while writing. The final rating is the highest of that pick, the cover and content images, the text scan, and any report that moderators acted on. It updates by itself when any of those change.
+- **Collections** are rated from the items inside them.
+- **Comics** are rated per chapter, from the panels.
+- **Models** are rated from the creator's showcase images. A creator can also mark a model as intended for mature themes from the model edit page, which hides it from PG and PG-13 feeds whatever its images are rated. That includes civitai.com. A mature model can still appear there once you set up its civitai.com model card, with its own title, description and cover. See [Site-Specific Model Cards](/site-specific-model-cards/).
 
-Every user will see an initial onboarding screen, where Content Levels will be explained, and can be set.
+<figure><img src="/images/guides/civitais-guide-to-content-levels/article-maturity-level.webp" alt="The Maturity Level field in the article editor, with the helper text explaining how the final rating is chosen" width="370" height="125" loading="lazy"><figcaption><em>The Maturity Level field in the article editor</em></figcaption></figure>
 
-These choices can be changed at any time from the **Content Moderation** section of the **[Manage your Account screen](https://civitai.com/user/account)**.
+If a creator thinks a rating is too high, they can dispute it. They get a notification when the dispute is approved or rejected.
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-130219.webp" alt="Content Classification System Controls" width="557" height="1160" loading="lazy"><figcaption><em>Content Moderation onboarding</em></figcaption></figure>
+## How do I choose what I see?
 
-If you’ve opted to show mature content (and thereby confirmed that you’re over the age of 18), you will be able to see, and toggle, the five content levels from the **eye icon**, in the top right of the site menu.
+### The eye menu
 
-You can enable as many (or as few) content levels as desired.
+On civitai.red, the **eye icon** in the top right of the header opens the **Browsing Level** menu. With **Show mature content** on, you can pick any mix of the level chips (PG, PG-13, R, X, XXX). With it off, the chips and the blur option are hidden and you see only the last two options below.
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-124543.webp" alt="Content Classification System browsing levels" width="492" height="235" loading="lazy"><figcaption><em>Access the browsing levels</em></figcaption></figure>
+- **Blur mature content (R+)** hides R, X and XXX images behind a blur until you click them.
+- **Apply my filters** turns your hidden tags and topics on or off.
+- **Show event cosmetics** turns event hats and other seasonal decorations on or off.
 
-If using the site on a mobile device, the browsing levels can be changed from the bottom of the hamburger menu (the three horizontal lines, top right of the browser window);
+When the game is enabled, the menu also has a **Join the Knights Order** button. See [Knights of New Order](/knights-of-the-new-order-minigame/).
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-131138.webp" alt="Civitai Mobile Hamburger Menu" width="253" height="72" loading="lazy"><figcaption><em>The hamburger menu, top right</em></figcaption></figure>
+<figure><img src="/images/guides/civitais-guide-to-content-levels/eye-menu-civitai-red.webp" alt="The Browsing Level menu on civitai.red with level chips, blur, filters and event cosmetics" width="535" height="250" loading="lazy"><figcaption><em>The Browsing Level menu on civitai.red</em></figcaption></figure>
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-131143.webp" alt="Civitai Mobile Content Classification System Content Levels view" width="494" height="451" loading="lazy"><figcaption><em>Mobile view of the Content Levels</em></figcaption></figure>
+On civitai.com the eye menu is shorter. It has only **Apply my filters** and **Show event cosmetics**, because there are no levels to choose beyond PG and PG-13.
 
-## What are My Filters?
+On a phone there is no hamburger menu. Open the avatar menu and scroll to the bottom to find the same **Browsing Level** block.
 
-**My Filters** is much the same system as it was previously, and allows for content to be finetuned via tags. It works in conjunction with the five content rating levels, and provides additional filtering of certain topics or themes which you might not wish to see.
+<figure><img src="/images/guides/civitais-guide-to-content-levels/mobile-browsing-level.webp" alt="The Browsing Level block at the bottom of the mobile account menu" width="390" height="225" loading="lazy"><figcaption><em>Browsing Level on mobile</em></figcaption></figure>
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-134331.webp" alt="Content Classification System - My Filters" width="498" height="236" loading="lazy"><figcaption><em>My Filters, applied</em></figcaption></figure>
+### Your account defaults
 
-Clicking the **my filters** link from the Browsing Level settings launches a modal window allowing tags to be entered into Hidden Tags, and pre-set filters for the removal of **Anime**, **Furry**, **Gore**, and **Political** content/themes/topics.
+The eye menu changes your view for the current session. Your lasting defaults live on the **Content & Browsing** page, at [civitai.com/user/account/content](https://civitai.com/user/account/content). A note at the top of its **Mature content** section on civitai.red says so: "The eye button in the header overrides this for one session. These are the defaults it returns to."
 
-![Content Classification System - Content Controls - Hidden Tags](/wp-content/uploads/2024/03/Screenshot-2024-03-27-001322.webp)
+That section has three controls:
 
-## I’ve found content which I believe is incorrectly rated!
+- **Show mature content**, which confirms you are over 18. Turn it off and you are back to PG only.
+- **Blur mature content**.
+- **Browsing level**, with one switch per level and the same descriptions as the table above.
 
-Because these ratings are still driven by our auto-tagging systems, which aren’t infallible, you may come across incorrectly rated content.
+<figure><img src="/images/guides/civitais-guide-to-content-levels/content-and-browsing.webp" alt="The Mature content section of the Content & Browsing page, with show and blur switches and a switch for each level" width="668" height="478" loading="lazy"><figcaption><em>Mature content on the Content &amp; Browsing page (civitai.red)</em></figcaption></figure>
 
-If you would like to report incorrectly rated content (and we encourage you to do so!), it can be done from the image tags section – much like reporting miscategorized tags.
+On civitai.com the Content & Browsing page has no Mature content section, since there is nothing mature to turn on there.
 
-All images will display their rating at the front of the tag list – in this case, the rating has been assigned **PG**. Clicking this rating will open a dialog allowing you to select what you believe to be the appropriate level.
+## Topics, hidden tags and filters
 
-This image will now be placed into a queue for moderator review.
+Levels are only part of what you see. The **Content & Browsing** page also has:
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-125648.webp" alt="Content Classification System - Image Tags" width="455" height="356" loading="lazy"><figcaption>An image with a <strong>PG </strong>rating</figcaption></figure>
+- **Topics:** one-click buttons to hide anime, furry, gore or political content. The page says selected topics "appear less often while browsing," so they reduce what you see rather than remove it.
+- **Hidden tags:** content with these tags is hidden from you.
+- **Hidden users** and **Hidden models:** their content, or those models, stay out of your feeds.
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-145949.webp" alt="Content Classification System - Browsing Level Guide" width="443" height="639" loading="lazy"><figcaption><em>The currently selected level will be highlighted. Click on the desired level to place the image into the moderator review queue.</em></figcaption></figure>
+<figure><img src="/images/guides/civitais-guide-to-content-levels/topics.webp" alt="The Topics buttons: Hide anime, Hide furry, Hide gore, Hide political" width="668" height="105" loading="lazy"><figcaption><em>Topics</em></figcaption></figure>
 
-## FAQ {#requirements-limitations}
+The **Apply my filters** checkbox in the eye menu switches all of these on and off together.
 
--   **I’ve turned off Show Mature Content – what level do I see?**
-    If you’ve toggled **Show Mature Content** _off_ from the on-boarding, or the Manage your Account screen, you’ll be locked at **PG** level. You can change this at any time.
+## I found content that looks wrongly rated
 
-## Play _Rater_ – The Content Level Mini-Game {#i-need-more-help}
+Every image shows its rating as a chip at the front of its tag list. Click the chip to open **Vote for image rating**.
 
-Test your image rating knowledge (while helping us gather unique data insights!) with Civitai’s new “mini-game”, _Rater_. [Read how it works here!](/civitais-guide-to-the-rating-game/)
+<figure><img src="/images/guides/civitais-guide-to-content-levels/image-rating-chip.webp" alt="An image's tag list with the PG rating chip at the front" width="430" height="50" loading="lazy"><figcaption><em>The rating chip sits first in the tag list</em></figcaption></figure>
 
-<figure><img src="/wp-content/uploads/2024/03/Screenshot-2024-03-26-232346-1024x852.webp" alt="Civitai Rater Game" width="1024" height="852" loading="lazy"><figcaption><em>Rater</em></figcaption></figure>
+The dialog lists the levels with their descriptions. Click the one you think is right. That casts your vote and closes the dialog.
 
-## I need more help! {#i-need-more-help-2}
+What happens next:
 
-Having an issue with the new Content Classification system which isn’t covered here? Reach out to us on [Discord](https://www.discord.gg/civitai), or via support@civitai.com
+- Your pick counts as a **vote**. Other people's votes count too, and the uploader's own vote counts for more.
+- A rating that a moderator has locked ignores votes.
+- If you uploaded the image, picking a higher level asks you to confirm. Once the image has been scanned, the raise applies right away. Lowering it again goes to review.
+
+## FAQ
+
+**I turned off Show mature content. What do I see?**
+PG only. You can turn it back on at any time from the Content & Browsing page.
+
+**Why can't I see R, X or XXX on civitai.com?**
+civitai.com shows PG and PG-13 only. Mature levels are on civitai.red.
+
+**Why is my image's rating higher than I expected?**
+Ratings come from an automatic scan, and some uploads are checked by moderators too. If you disagree, use the rating chip to vote, or dispute the rating if it is yours.
+
+## Rating games
+
+The old Rater mini-game has moved. It is now [Knights of New Order](/knights-of-the-new-order-minigame/), and it is linked from the eye menu on civitai.red when the game is enabled.
+
+## I need more help
+
+Visit [civitai.com/support](https://civitai.com/support), or ask in the [Civitai Discord](https://www.discord.gg/civitai).

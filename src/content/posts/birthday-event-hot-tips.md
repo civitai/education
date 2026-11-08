@@ -44,7 +44,7 @@ Different actions are worth different amounts, and the event page lists the curr
 
 - Most actions count once per person per item. Many different people beat one fan clicking everything.
 - Your own views and reactions on your own work do not count.
-- Only people who are signed in count.
+- Only people who are signed in count. Actions from brand-new accounts made just before the event, and from banned accounts, do not count.
 - Only actions before the event ends count.
 
 ### Strategies for your own hat {#hat-strategies}
@@ -67,7 +67,7 @@ Teammates are your easiest crowd, and they are playing the same game.
 
 - **React and comment** on a teammate's hatted image. A thoughtful comment helps the creator too, so make it a real one.
 - **Add a regular sticker** if you have one. It scores once the image's owner approves it. Read more about stickers in [Civitai's Guide to the Creator Shop and Stickers](/civitais-guide-to-the-creator-shop-and-stickers/).
-- **Remix for free.** When you and the image owner are on the same team and the image wears a team hat, your remix submission is free, does not use up your daily free placement, and you get several a day. The submit card shows how many are left today. To do it, remix their image with the on-site generator and post the result. In the post editor a remix card appears under the image, and you submit it to the original's Remix gallery from there. The team waiver is applied for you. The owner still reviews it, and it only counts once they accept.
+- **Remix for free.** When you and the image owner are on the same team and the image owner is wearing their own team hat on it, your remix submission is free, does not use up your daily free placement, and you get several a day. The submit card shows how many are left today. To do it, remix their image with the on-site generator and post the result. In the post editor a remix card appears under the image, and you submit it to the original's Remix gallery from there. The team waiver is applied for you. The owner still reviews it, and it only counts once they accept.
 - **Rally your color.** Start a collection of your team's hatted work, or share it in a group or chat, and say which image is wearing your hat. Ask for real engagement from real people. Never trade reactions.
 
 For another team's image, the ordinary free placement applies instead: one a day, shared between stickers and remix galleries.
@@ -88,7 +88,7 @@ If you have not joined Hat Turf, nothing changes for you: you will not see turf 
 
 ### The rules {#turf-rules}
 
-- **One turf hat per person per image.** Make it count. Once it is on, you cannot move it, and there is no refund. <!-- HOLD: add the 48-hour turf hat lifetime line only after the lead confirms the change is live -->
+- **One turf hat per person per image.** Make it count. Once it is on, you cannot move it, and there is no refund.
 - **Images and videos only.** Anything in a visible post. Not models, articles or contest entries.
 - **Most people wins.** One turf hat each means nobody can carry an image alone, so bring your team. Ties go to whoever got there first.
 - **King of the hill.** If another team takes the lead, they earn from then on. What your team already earned stays.
@@ -120,7 +120,7 @@ If you would rather not see turf hats on the pictures, turn off **Show hats** in
 
 ### Keeping turf off your images {#turf-off}
 
-If you do not want other people playing on your images, turn off **Let people play Hat Turf on my images**. The turf hats on your images are hidden and stop counting, and they come back if you turn it on again. Playing goes both ways, so you cannot place turf hats while it is off. You can leave Hat Turf entirely from the Hat Turf section of the event page, and turf hats you already placed keep counting.
+If you do not want other people playing on your images, first leave Hat Turf (from the Hat Turf section of the event page or your account settings), then turn off **Let people play Hat Turf on my images**. The switch stays greyed out while you are joined. With it off, the turf hats on your images are hidden and stop counting, and they come back if you turn it on again. Playing goes both ways, so you cannot place turf hats while it is off. Turf hats you already placed on other people's images keep counting after you leave.
 
 ## Why isn't my turf earning? {#turf-troubleshooting}
 

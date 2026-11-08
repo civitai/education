@@ -38,7 +38,7 @@ Content on Civitai is sorted into five levels, much like movie ratings. Each lev
 | X | "Graphic nudity, genitalia, adult objects, or settings." |
 | XXX | Explicit sexual acts and extremely disturbing content. |
 
-There is also a sixth, hidden level called **Blocked**. It is for content that breaks our terms. Blocked content is hidden everywhere and you cannot choose to see it.
+There is also a sixth, hidden level called **Blocked**. It is for content that breaks our terms. Blocked content is hidden everywhere, and regular accounts cannot choose to see it.
 
 ## Which levels can I see?
 
@@ -50,7 +50,7 @@ It depends on where you are and whether you are signed in.
 
 Mature levels (R, X and XXX) are not available on civitai.com, and they are not available in regions where local rules restrict them. In those regions the site tells you "Your content levels are limited by restrictions in your region."
 
-New accounts start with mature content off, blur on and PG selected. Mature output is also blocked in on-site generation on civitai.com.
+New accounts start with mature content off, blur on and PG selected. On-site generation on civitai.com is for SFW content only.
 
 ## What gets rated?
 
@@ -71,13 +71,13 @@ If a creator thinks a rating is too high, they can dispute it. They get a notifi
 
 ### The eye menu
 
-On civitai.red, the **eye icon** in the top right of the header opens the **Browsing Level** menu. Pick any mix of the level chips (PG, PG-13, R, X, XXX). Under the chips are three more options:
+On civitai.red, the **eye icon** in the top right of the header opens the **Browsing Level** menu. With **Show mature content** on, you can pick any mix of the level chips (PG, PG-13, R, X, XXX). With it off, the chips and the blur option are hidden and you see only the last two options below.
 
 - **Blur mature content (R+)** hides R, X and XXX images behind a blur until you click them.
 - **Apply my filters** turns your hidden tags and topics on or off.
 - **Show event cosmetics** turns event hats and other seasonal decorations on or off.
 
-The menu also has a **Join the Knights Order** button. See [Knights of New Order](/knights-of-the-new-order-minigame/).
+When the game is enabled, the menu also has a **Join the Knights Order** button. See [Knights of New Order](/knights-of-the-new-order-minigame/).
 
 <figure><img src="/images/guides/civitais-guide-to-content-levels/eye-menu-civitai-red.webp" alt="The Browsing Level menu on civitai.red with level chips, blur, filters and event cosmetics" width="535" height="250" loading="lazy"><figcaption><em>The Browsing Level menu on civitai.red</em></figcaption></figure>
 
@@ -115,19 +115,17 @@ The **Apply my filters** checkbox in the eye menu switches all of these on and o
 
 ## I found content that looks wrongly rated
 
-Every image shows its rating as a chip at the front of its tag list. Click the chip to open **Image ratings**.
+Every image shows its rating as a chip at the front of its tag list. Click the chip to open **Vote for image rating**.
 
 <figure><img src="/images/guides/civitais-guide-to-content-levels/image-rating-chip.webp" alt="An image's tag list with the PG rating chip at the front" width="430" height="50" loading="lazy"><figcaption><em>The rating chip sits first in the tag list</em></figcaption></figure>
 
-Pick the level you think is right. You can also choose a reason from the optional list under "Why do you think this is the appropriate rating?"
-
-<figure><img src="/images/guides/civitais-guide-to-content-levels/image-ratings-dialog.webp" alt="The Image ratings dialog with the five levels and a list of optional reasons" width="440" height="625" loading="lazy"><figcaption><em>The Image ratings dialog</em></figcaption></figure>
+The dialog lists the levels with their descriptions. Click the one you think is right. That casts your vote and closes the dialog.
 
 What happens next:
 
 - Your pick counts as a **vote**. Other people's votes count too, and the uploader's own vote counts for more.
 - A rating that a moderator has locked ignores votes.
-- If you uploaded the image, raising its rating takes effect at once. Lowering it goes to review.
+- If you uploaded the image, picking a higher level asks you to confirm. Once the image has been scanned, the raise applies right away. Lowering it again goes to review.
 
 ## FAQ
 
@@ -142,7 +140,7 @@ Ratings come from an automatic scan, and some uploads are checked by moderators 
 
 ## Rating games
 
-The old Rater mini-game has moved. It is now [Knights of New Order](/knights-of-the-new-order-minigame/), and it is linked from the eye menu on civitai.red.
+The old Rater mini-game has moved. It is now [Knights of New Order](/knights-of-the-new-order-minigame/), and it is linked from the eye menu on civitai.red when the game is enabled.
 
 ## I need more help
 

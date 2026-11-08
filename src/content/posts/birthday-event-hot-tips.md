@@ -104,7 +104,7 @@ Your supply of turf hats does not depend on how many hats you own. Fresh ones ar
 
 ### Reading the turf badge {#turf-badge}
 
-Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen. In the example below, the ring shows how the hats split between teams, the disc fills toward the limit on how many players can score on one image (it rises during the event), the plus or minus number is your team's position (how many hats ahead or behind), and the lock means the owner's hat is protecting the image, so the team that would lead is held back.
+Every image and video in Hat Turf shows a turf badge, in the feeds and on the image page. It updates live, so you can watch a fight happen. In the example below, the ring shows how the hats split between teams, the disc fills toward the limit on how many of a team's players can score on one image (teams that are behind get a higher limit), the plus or minus number is your team's position (how many hats ahead or behind), and the lock means the owner's hat is protecting the image, so the team that would lead is held back.
 
 <figure><img src="/images/guides/birthday-event-hot-tips/hat-turf-badge-explainer.webp" alt="Three example turf badges: one filling toward its limit, one full, and one protected by the owner's hat" width="1600" height="900" loading="lazy"><figcaption><em>Example values; your badge shows live numbers. Image: the official <a href="https://civitai.com/articles/38205/hat-turf-stick-your-teams-hats-on-other-peoples-images">Hat Turf article</a>.</em></figcaption></figure>
 

@@ -2,7 +2,6 @@
 title: "Civitai’s Guide to Model Gift Links"
 slug: "civitais-guide-to-model-gift-links"
 date: "2026-11-09T18:00:00Z"
-draft: true
 categories:
   - "guides"
 tags:

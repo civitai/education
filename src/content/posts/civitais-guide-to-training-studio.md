@@ -90,7 +90,7 @@ These are among the models you can train at the time of writing. The picker may 
 New models are added over time. The cards in your picker are the ones you can train, so trust those over any list, including this one.
 
 :::note
-Krea 2 and Anima cannot train their text encoders, and the Review step tells you so by locking that field. This is expected, not a bug.
+Many newer models, including ZImage Turbo, Flux.1 Dev, Boogu, Krea 2, Mage-Flow, Anima, Wan and LTX, cannot train their text encoder. The Review step locks that field for them. This is expected, not a bug. SD 1.5, SDXL, Pony and Illustrious leave it editable.
 :::
 
 To train more than one model on the same dataset, open **Train an additional model**, then click **+ Add another model to train**. You can queue up to five runs on one dataset, and they are priced and started together.

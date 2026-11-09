@@ -27,7 +27,7 @@ This guide is about gift links for models. Gifting someone a membership is diffe
 
 Gift links work on a version with permanent paid access or a timed early-access window. Only the creator of the model can make gifts. Gifting free versions or comics is not supported.
 
-To get there, open your models in Creator Studio and choose the gifts page for a gated version. A page at `/models/gifts` lists all your links. There are two kinds of gift:
+To get there, open your models in Creator Studio and click the gift icon on a gated version's row. A page at `/models/gifts` lists all your links. There are two kinds of gift:
 
 - **Multi-use link.** One shareable link. You set **Max claims** (up to 100, starting at 10, never unlimited), and you can add an optional **Expires** date and an optional note.
 - **Single-use links.** Make up to 500 at a time with **How many**, each of which one person can claim. Each code is shown once when you make it, so copy it or download the CSV then.
@@ -42,11 +42,11 @@ Claimers are told on the claim page that you can see that they claimed and can r
 2. Open the gift link, or paste the code on the `/gift` page.
 3. Click to claim. Claiming is always a click you make, never automatic.
 
-You get what a buyer of that version would get: download and generation if the version sells download, or generation alone if the version only sells generation. If you already had access, nothing is used up and you are not charged.
+You get what a buyer of that version would get: download and generation if the version sells download, or generation alone if the version only sells generation. If you already had access, or the early-access window has already ended, the claim succeeds without using up a claim, and you are not charged.
 
 ## If a claim fails {#fails}
 
-A claim is refused if you own the model, if the model or version is unpublished, if the link is revoked or expired, or if the access window it unlocks has ended. You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
+A claim is refused if you own the model, if the model or version is unpublished, if the link is revoked or expired. You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
 
 ## The monthly claim allowance {#monthly}
 

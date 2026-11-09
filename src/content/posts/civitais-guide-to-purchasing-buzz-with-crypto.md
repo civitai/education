@@ -2,7 +2,7 @@
 title: "Civitai’s Guide to Purchasing Buzz with Crypto"
 slug: "civitais-guide-to-purchasing-buzz-with-crypto"
 date: "2025-05-22T17:31:27Z"
-modified: "2026-04-02T03:34:36Z"
+modified: "2026-11-09T19:05:00Z"
 categories:
   - "civitai"
   - "news"
@@ -139,6 +139,16 @@ This particular transaction took ~20 minutes to complete.
 </div>
 
 </div>
+
+### Exchange "travel rule" forms {#travel-rule-forms}
+
+Some exchanges ask for details about the recipient before sending crypto. Crypto payments for Buzz are received and held by our payment processor, NOWPayments, not by Civitai directly. If your exchange asks:
+
+- **Receiving platform / VASP:** NOWPayments (a custodial payment platform)
+- **Beneficiary name:** Civit AI, Inc.
+- **Beneficiary country:** United States
+
+We can’t provide a tax ID, registration number or any other beneficiary details. If your exchange requires more than this, or doesn’t list NOWPayments as a recipient platform, please choose another payment method instead.
 
 ### Watch for Incoming Deposits!
 

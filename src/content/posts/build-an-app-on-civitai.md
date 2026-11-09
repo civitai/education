@@ -146,7 +146,7 @@ These apply the same way to every account.
 
 ## 4. Cover art
 
-Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional: up to 8, each up to 2 MiB and at least 320 px on every side. On every image, no side can be longer than 8192 px. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
+Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional: up to 8, each up to 2 MiB and at least 320 px on every side. An icon can't be longer than 4096 px on a side, and no other image can be longer than 8192 px. Screenshots also need a width-to-height ratio between 0.4 and 2.6. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
 
 Upload the icon on the listing editor's **Media** tab. The icon can be up to 1 MiB, at least 128 px wide and tall, and close to square (width to height between 0.9 and 1.1). For the cover there are two ways:
 
@@ -189,9 +189,9 @@ A red warning icon on your app in My apps means "This listing cannot be publishe
 ### If a moderator doesn't approve it
 If your app's first version is rejected, it appears on My apps under **Submissions without a listing**, with a red **REJECTED** badge and the moderator's reason. For an app that already has a listing, the rejected version and its reason are on the listing's **History** tab. Read the reason, fix what it says, and submit again.
 
-![My apps, Submissions: rejected versions carry a red REJECTED badge. The moderator's reason appears under the app name (hidden in this example).](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
+![The My apps Submissions list with two rejected versions marked 1 to 4](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
 
-*My apps, Submissions: rejected versions carry a red REJECTED badge. The moderator's reason appears under the app name (hidden in this example).*
+*My apps, Submissions: rejected versions carry a red REJECTED badge (1 and 3). The moderator's reason appears under the app name (2 and 4, hidden in this example).*
 
 ### Choose who sees it
 On the **Publishing** tab you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Before approval you can pick Private or Moderators only; Testers and Everyone unlock once a moderator approves it.

@@ -13,8 +13,10 @@ covers:
   - "usage-limits"
   - "account-settings"
 reviewed: "2026-11-09"
+image: "/images/guides/usage-limits-on-your-account/cover.webp"
 excerpt: "Where to see how much of each daily or hourly limit you have used on Civitai, what the limit banner means, and what to do when you hit one."
 seo:
+  ogImage: "/images/guides/usage-limits-on-your-account/cover.webp"
   title: "Usage limits on your account - Civitai Education"
   description: "Where to see how much of each daily or hourly limit you have used on Civitai, what the limit banner means, and what to do when you hit one."
 ---

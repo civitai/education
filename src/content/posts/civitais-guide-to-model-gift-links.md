@@ -13,8 +13,10 @@ covers:
   - "model-gift-links"
   - "gift-claim-limits"
 reviewed: "2026-11-09"
+image: "/images/guides/civitais-guide-to-model-gift-links/cover.webp"
 excerpt: "How a creator can give free access to a paid or early-access model with a gift link, how to claim one, and the monthly and per-link limits."
 seo:
+  ogImage: "/images/guides/civitais-guide-to-model-gift-links/cover.webp"
   title: "Civitai's Guide to Model Gift Links - Civitai Education"
   description: "How a creator can give free access to a paid or early-access model with a gift link, how to claim one, and the monthly and per-link limits."
 ---

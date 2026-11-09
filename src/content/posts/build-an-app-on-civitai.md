@@ -189,9 +189,9 @@ A red warning icon on your app in My apps means "This listing cannot be publishe
 ### If a moderator doesn't approve it
 If your app's first version is rejected, it appears on My apps under **Submissions without a listing**, with a red **REJECTED** badge and the moderator's reason. For an app that already has a listing, the rejected version and its reason are on the listing's **History** tab. Read the reason, fix what it says, and submit again.
 
-![The My apps Submissions list with two rejected versions marked 1 to 4](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
+![A rejected submission in My apps with its REJECTED badge and the reason below the app name](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
 
-*My apps, Submissions: rejected versions carry a red REJECTED badge (1 and 3). The moderator's reason appears under the app name (2 and 4, hidden in this example).*
+*My apps, Submissions: a rejected version carries a red REJECTED badge (1). The moderator's reason appears under the app name (2, hidden in this example).*
 
 ### Choose who sees it
 On the **Publishing** tab you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Before approval you can pick Private or Moderators only; Testers and Everyone unlock once a moderator approves it.

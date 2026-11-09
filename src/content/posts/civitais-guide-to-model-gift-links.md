@@ -46,7 +46,7 @@ You get what a buyer of that version would get: download and generation if the v
 
 ## If a claim fails {#fails}
 
-A claim is refused if you own the model, if the model or version is unpublished, if the link is revoked or expired. You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
+A claim is refused if you own the model, if the model or version is unpublished, or if the link is revoked or expired. You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
 
 ## The monthly claim allowance {#monthly}
 

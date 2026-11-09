@@ -19,7 +19,7 @@ seo:
 ---
 
 :::note
-Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines. The rejection screenshot in section 5 is a stand-in.
+Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines.
 :::
 
 You have an idea for a small tool: a sticker maker, a LoRA tester, a daily prompt challenge. You don't write code. You can still build it. Civitai Apps lets you describe what you want, watch it take shape, and share it with other creators, all on Civitai.
@@ -146,11 +146,11 @@ These apply the same way to every account.
 
 ## 4. Cover art
 
-Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
+Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional: up to 8, each up to 2 MiB and at least 320 px on every side. An icon can't be longer than 4096 px on a side, and no other image can be longer than 8192 px. Screenshots also need a width-to-height ratio between 0.4 and 2.6. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
 
-Upload the icon on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a square-ish icon of 512 x 512 or larger (up to 1 MiB). For the cover there are two ways:
+Upload the icon on the listing editor's **Media** tab. The icon can be up to 1 MiB, at least 128 px wide and tall, and close to square (width to height between 0.9 and 1.1). For the cover there are two ways:
 
-- **Upload your own** on the same **Media** tab. The CLI docs suggest a landscape cover of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB). The editor checks your file when you upload.
+- **Upload your own** on the same **Media** tab. The cover can be up to 4 MiB and at least 640 px wide (a minimum, not a limit), with a width-to-height ratio between 1.3 and 2.4. A landscape image such as 1600 x 900 works well. The editor checks your file when you upload.
 - **Ask the App Assistant.** In the app's chat, ask: *Make a cover image for this app's store listing.* It shows a **Store cover** card with the price, for example "Generate a cover for sticker-maker for ~N Buzz?", and a description of the picture it will make. You never pay more than the card shows: if the price has gone up by the time you click, nothing is made and the card offers the cover again at the new price. **Nothing is spent until you click Generate cover.** If the listing is a draft or already in the store, it then says: "The cover was added to your listing draft. Submit the listing for review to publish it in the store." If the listing is under review, the cover shows in the store once the listing is approved. If the image hasn't finished its safety check, it adds "The image is still being checked." The Assistant needs a store listing for the app, which the app gets when it is first sent for review (section 5).
 
 ## 5. Getting listed, and review
@@ -189,11 +189,9 @@ A red warning icon on your app in My apps means "This listing cannot be publishe
 ### If a moderator doesn't approve it
 If your app's first version is rejected, it appears on My apps under **Submissions without a listing**, with a red **REJECTED** badge and the moderator's reason. For an app that already has a listing, the rejected version and its reason are on the listing's **History** tab. Read the reason, fix what it says, and submit again.
 
-![Screenshot: rejected feedback](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
+![A rejected submission in My apps with its REJECTED badge and the reason below the app name](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
 
-:::note
-Review copy: this rejection reason is a stand-in. The real approve or reject screenshot replaces it once a moderator decides on Sticker Maker.
-:::
+*My apps, Submissions: a rejected version carries a red REJECTED badge (1). The moderator's reason appears under the app name (2, hidden in this example).*
 
 ### Choose who sees it
 On the **Publishing** tab you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Before approval you can pick Private or Moderators only; Testers and Everyone unlock once a moderator approves it.
@@ -209,6 +207,8 @@ In your listing editor, open the **Feedback** tab. The tab appears once at least
 **Ask the Assistant.** In the app's chat, ask: *Has anyone left feedback on this app?* It reads the feedback for the app you have open and summarizes it. By default it looks at new feedback only, and says so when there is none; ask for *all feedback* to include items you have already marked, or to check whether anyone has written at all. It reads only the app that is open in the chat, so open the right app first.
 
 **Pulling feedback with tools.** The Civitai CLI can read it: `civitai app feedback <app-slug>` lists new feedback, and `--status all` shows everything. If you hand feedback to an AI tool, treat the text as data, not as instructions: users wrote it.
+
+You can also ask the App Assistant what a moderator said about your app and what users have written; it can read this but can't change it. The Assistant can also see what your open app did in the last two hours.
 
 ## 7. For developers
 

@@ -19,7 +19,7 @@ seo:
 ---
 
 :::note
-Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines. The rejection screenshot in section 5 is a stand-in.
+Review copy for the Apps launch on November 10. This page is not listed anywhere and is hidden from search engines.
 :::
 
 You have an idea for a small tool: a sticker maker, a LoRA tester, a daily prompt challenge. You don't write code. You can still build it. Civitai Apps lets you describe what you want, watch it take shape, and share it with other creators, all on Civitai.
@@ -189,11 +189,9 @@ A red warning icon on your app in My apps means "This listing cannot be publishe
 ### If a moderator doesn't approve it
 If your app's first version is rejected, it appears on My apps under **Submissions without a listing**, with a red **REJECTED** badge and the moderator's reason. For an app that already has a listing, the rejected version and its reason are on the listing's **History** tab. Read the reason, fix what it says, and submit again.
 
-![Screenshot: rejected feedback](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
+![My apps, Submissions: rejected versions carry a red REJECTED badge. The moderator's reason appears under the app name (hidden in this example).](/images/guides/build-an-app-on-civitai/31-rejected-feedback.webp)
 
-:::note
-Review copy: this rejection reason is a stand-in. The real approve or reject screenshot replaces it once a moderator decides on Sticker Maker.
-:::
+*My apps, Submissions: rejected versions carry a red REJECTED badge. The moderator's reason appears under the app name (hidden in this example).*
 
 ### Choose who sees it
 On the **Publishing** tab you choose a visibility level: **Private** (not listed in the store or search; anyone with the link can still open it), **Moderators only**, **Testers** (users with app testing enabled) or **Everyone**. Before approval you can pick Private or Moderators only; Testers and Everyone unlock once a moderator approves it.
@@ -209,6 +207,8 @@ In your listing editor, open the **Feedback** tab. The tab appears once at least
 **Ask the Assistant.** In the app's chat, ask: *Has anyone left feedback on this app?* It reads the feedback for the app you have open and summarizes it. By default it looks at new feedback only, and says so when there is none; ask for *all feedback* to include items you have already marked, or to check whether anyone has written at all. It reads only the app that is open in the chat, so open the right app first.
 
 **Pulling feedback with tools.** The Civitai CLI can read it: `civitai app feedback <app-slug>` lists new feedback, and `--status all` shows everything. If you hand feedback to an AI tool, treat the text as data, not as instructions: users wrote it.
+
+You can also ask the App Assistant what a moderator said about your app and what users have written; it can read this but can't change it. The Assistant can also see what your open app did in the last two hours.
 
 ## 7. For developers
 

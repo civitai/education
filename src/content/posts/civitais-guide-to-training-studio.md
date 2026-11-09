@@ -16,7 +16,7 @@ covers:
   - "training-base-models"
   - "auto-label"
   - "buzz-training-cost"
-reviewed: "2026-11-07"
+reviewed: "2026-11-09"
 excerpt: "Train a LoRA on Civitai with Training Studio: pick a base model, label your data, set steps, pay with Buzz, then watch each epoch arrive and publish the best one."
 seo:
   title: "Civitai's Guide to Training Studio - Civitai Education"
@@ -90,7 +90,7 @@ These are among the models you can train at the time of writing. The picker may 
 New models are added over time. The cards in your picker are the ones you can train, so trust those over any list, including this one.
 
 :::note
-Krea 2 cannot train its text encoder, and the Review step tells you so by locking that field. This is expected, not a bug.
+Krea 2 and Anima cannot train their text encoders, and the Review step tells you so by locking that field. This is expected, not a bug.
 :::
 
 To train more than one model on the same dataset, open **Train an additional model**, then click **+ Add another model to train**. You can queue up to five runs on one dataset, and they are priced and started together.

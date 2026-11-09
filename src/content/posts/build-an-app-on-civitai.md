@@ -146,11 +146,11 @@ These apply the same way to every account.
 
 ## 4. Cover art
 
-Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
+Every listing needs an icon and a cover before a moderator can approve it; the editor says "Add an icon and cover to publish." If they are missing when you submit, the submit card tells you what to add on the **Media** tab. Screenshots are recommended but optional: up to 8, each up to 2 MiB and at least 320 px on every side. On every image, no side can be longer than 8192 px. If your app makes images, like Sticker Maker, its own output is good material for the cover and screenshots.
 
-Upload the icon on the listing editor's **Media** tab. As a starting point, the CLI docs suggest a square-ish icon of 512 x 512 or larger (up to 1 MiB). For the cover there are two ways:
+Upload the icon on the listing editor's **Media** tab. The icon can be up to 1 MiB, at least 128 px wide and tall, and close to square (width to height between 0.9 and 1.1). For the cover there are two ways:
 
-- **Upload your own** on the same **Media** tab. The CLI docs suggest a landscape cover of 1600 x 900 or larger (PNG, JPEG or WebP, up to 4 MiB). The editor checks your file when you upload.
+- **Upload your own** on the same **Media** tab. The cover can be up to 4 MiB and at least 640 px wide (a minimum, not a limit), with a width-to-height ratio between 1.3 and 2.4. A landscape image such as 1600 x 900 works well. The editor checks your file when you upload.
 - **Ask the App Assistant.** In the app's chat, ask: *Make a cover image for this app's store listing.* It shows a **Store cover** card with the price, for example "Generate a cover for sticker-maker for ~N Buzz?", and a description of the picture it will make. You never pay more than the card shows: if the price has gone up by the time you click, nothing is made and the card offers the cover again at the new price. **Nothing is spent until you click Generate cover.** If the listing is a draft or already in the store, it then says: "The cover was added to your listing draft. Submit the listing for review to publish it in the store." If the listing is under review, the cover shows in the store once the listing is approved. If the image hasn't finished its safety check, it adds "The image is still being checked." The Assistant needs a store listing for the app, which the app gets when it is first sent for review (section 5).
 
 ## 5. Getting listed, and review

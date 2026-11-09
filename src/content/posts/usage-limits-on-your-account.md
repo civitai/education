@@ -29,7 +29,7 @@ Open your account settings and choose **Usage limits** in the **Billing & access
 
 - **Your plan.** A banner at the top shows your membership tier and your Creator Score, with a **Compare plans** button. Posting and comment limits rise with Creator Score, and posting limits also rise with membership.
 - **One card per area**, such as posts or comments. Each card has a bar and a line like "x of y used". Times are shown in your own time zone.
-- **When a card is full**, it shows when your next slot opens ("+1 at ..."). It also shows a muted "all free by ..." time, when everything is available again.
+- **When a card is full**, it usually shows when your next slot opens ("+1 at ...") and a muted "all free by ..." time, when everything is available again. Limits that reset on a calendar boundary, such as a monthly one, show a reset time instead, for example the start of the month in UTC. Each card also says whether its window is rolling or a UTC day or month.
 - **If you have used part of a limit**, the card shows the same muted "all free by ..." time.
 
 If no limit applies to you right now, the page says so.
@@ -41,7 +41,7 @@ If a limit is refusing you right now, an orange banner appears at the top of the
 ## What to do when you hit a limit {#hit}
 
 1. Open **Usage limits** and read the retry time on the banner or the card.
-2. Wait until then. Limits free up on their own.
+2. Wait until then. Most limits free up on their own. A card that says "Not available right now" is blocked outright, and waiting will not change that.
 3. If you need more room, the plan banner explains the levers: a higher Creator Score raises posting and comment limits, and a membership raises posting limits. See [the membership guide](/civitais-guide-to-membership-tiers/) for the tiers.
 
 ## For scripts and tools {#api}

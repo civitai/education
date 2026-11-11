@@ -200,7 +200,7 @@ An item goes through these states, which you can filter on the Manage Your Shop 
 - **Rejected**: final. A rejected item can't be edited.
 - **Published**: on sale. You receive your own copy of the item. For a sticker, you also receive ten times the uses a buyer gets, for your own use.
 
-If a moderator rejects an item that has already sold, or takes it down later for a terms violation, its buyers are refunded automatically and the refund comes out of what you were paid for it.
+If a moderator rejects an item that has already sold, or takes it down later for a terms violation, its buyers are refunded automatically and the refund comes out of what you were paid for it. To learn how Civitai keeps the site safe, see the [Safety Center](https://civitai.com/safety/how-we-keep-it-safe).
 
 ### Editing and delisting {#editing}
 

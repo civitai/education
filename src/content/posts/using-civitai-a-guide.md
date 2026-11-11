@@ -60,7 +60,7 @@ If you believe your content has been removed unfairly, you can submit an appeal 
 
 ### How is Content Moderated?
 
-Every uploaded image undergoes AI content and moderation tagging (utilizing a number of third-party partner services) to automatically flag potentially inappropriate content. If a model is marked as representing a minor and the image contains either inappropriate content or is photorealistic, **it’s reviewed by a human moderator before being allowed onto the site.** Our AI detection isn’t perfect, so if you spot something, please report it.
+Every uploaded image undergoes AI content and moderation tagging (utilizing a number of third-party partner services) to automatically flag potentially inappropriate content. If a model is marked as representing a minor and the image contains either inappropriate content or is photorealistic, **it’s reviewed by a human moderator before being allowed onto the site.** Our AI detection isn’t perfect, so if you spot something, please report it. For the bigger picture of how Civitai keeps the site safe, see the [Safety Center](https://civitai.com/safety/how-we-keep-it-safe).
 
 Minor content undergoes additional checks which can be read about in our [Content Rules: Minors policy](https://civitai.com/content/rules/minors).
 

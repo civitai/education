@@ -58,8 +58,8 @@ Go to [knights.civitai.com](https://knights.civitai.com) and sign in with your C
 | --- | --- | --- |
 | Acolyte | Everyone starts here. Rate images and learn. | n/a |
 | Knight | Level 20 and 75% right over your last 100 apprenticeship answers | 1x |
-| Templar | Level 50 and 80% accuracy to hold the rank | 1.25x |
-| Paladin | Level 90, 85% accuracy to hold the rank and 60 days played | 1.5x |
+| Templar | Level 50 and 80% accuracy | 1.25x |
+| Paladin | Level 90, 85% accuracy and 60 days played | 1.5x |
 
 Once you are a Knight, your accuracy is measured over your last 500 graded votes. The bar to keep is 70% for a Knight, 80% for a Templar and 85% for a Paladin. Below your rank's bar, your gold and your vote weight are both halved until accuracy recovers, once you have at least 50 graded votes. You never lose your rank, so that is the only penalty.
 
@@ -89,7 +89,7 @@ Paladin is the newest rank, and it is the highest rank a player can reach. It as
 
 Gold no longer converts to Buzz on its own. You spend it in the shop at knights.civitai.com. The shop sells:
 
-- **Buzz packs.** The rate is 20 gold for 1 Buzz, with a minimum of 5 Buzz.
+- **Buzz packs.** The rate is 20 gold for 1 Buzz.
 - **Knights cosmetics.** Some are locked to a rank.
 - **Membership weeks** (Bronze, Silver or Gold), for people who are not already members.
 

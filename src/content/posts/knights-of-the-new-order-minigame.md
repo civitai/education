@@ -57,15 +57,15 @@ Go to [knights.civitai.com](https://knights.civitai.com) and sign in with your C
 | Rank | How you get there | Gold multiplier |
 | --- | --- | --- |
 | Acolyte | Everyone starts here. Rate images and learn. | n/a |
-| Knight | Level 20 and 70% accuracy | 1x |
-| Templar | Level 50 and 80% accuracy | 1.25x |
-| Paladin | Level 90, 85% accuracy and 60 days played | 1.5x |
+| Knight | Level 20 and 75% right over your last 100 apprenticeship answers | 1x |
+| Templar | Level 50 and 80% accuracy to hold the rank | 1.25x |
+| Paladin | Level 90, 85% accuracy to hold the rank and 60 days played | 1.5x |
 
-Accuracy is measured over your last 500 graded votes. If your accuracy falls below the bar for your rank, your gold and your vote weight are both halved until it recovers.
+Once you are a Knight, your accuracy is measured over your last 500 graded votes. The bar to keep is 70% for a Knight, 80% for a Templar and 85% for a Paladin. Below your rank's bar, your gold and your vote weight are both halved until accuracy recovers, once you have at least 50 graded votes. You never lose your rank, so that is the only penalty.
 
 ### Acolyte (training rank) {#acolyte}
 
-All players begin here. An Acolyte learns through an apprenticeship: a steady run of images that have a known answer, so you get feedback as you go. You earn 100 gold for each level you gain, up to level 20. At level 20, with enough accuracy, you become a Knight.
+All players begin here. An Acolyte learns through an apprenticeship: a steady run of images that have a known answer, so you get feedback as you go. You earn 100 gold for each level you gain, up to level 20. At level 20, with 75% of your last 100 answers right, you become a Knight. Acolytes earn gold only for the levels they gain, and are not on the leaderboard.
 
 ![](/wp-content/uploads/2025/05/Acolyte.webp)
 
@@ -89,23 +89,25 @@ Paladin is the newest rank, and it is the highest rank a player can reach. It as
 
 Gold no longer converts to Buzz on its own. You spend it in the shop at knights.civitai.com. The shop sells:
 
-- **Buzz packs.** The rate is 20 gold for 1 Buzz.
-- **Knights cosmetics.** Some need a certain rank. They show on your Civitai profile, in your comments and on your avatar.
+- **Buzz packs.** The rate is 20 gold for 1 Buzz, with a minimum of 5 Buzz.
+- **Knights cosmetics.** Some are locked to a rank.
 - **Membership weeks** (Bronze, Silver or Gold), for people who are not already members.
+
+The shop's stock rotates daily at 00:00 UTC. Gold you earn stays pending until the image you judged is decided, so it is not available instantly.
 
 ## The Watch {#watch}
 
-Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 100 gold per day of your streak, up to 7 days. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
+Once you are a Knight, you can keep the Watch. Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 100 gold per day of your streak, up to 7 days. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
 
 ## The leaderboard {#leaderboard}
 
-The leaderboard is weekly, counted over the last 7 days, and ranks players by **fervor**, a measure of how accurate and consistent your ratings are.
+The leaderboard is weekly, counted over the last 7 days, and ranks players by **fervor**, a measure that weights how many images you judge by how accurate you are. Knights, Templars and Paladins appear on it.
 
 ## Smites {#smites}
 
-- You are smitten when a rating is far from the correct outcome. Rating explicit content as safe is penalized right away.
+- Hidden skill checks are images with a known answer, mixed into a Knight's feed. A wrong answer can earn a warning or a smite, and rating an image far too low is the usual cause.
 - Smites reduce your vote weight, so penalized players have less say until they show accuracy over time.
-- Accounts with suspicious voting patterns, such as the same rating for every image, are reset automatically.
+- Smites lapse after 7 days, and correct votes work them off. At 3 active smites, your career is reset.
 - There are limits on how fast and how many ratings you can submit. Vote at a natural pace and you will not notice them.
 
 ## How images are judged {#judging}
@@ -120,11 +122,11 @@ Several Knights vote independently on an image. If they cannot agree, or the res
 
 ## FAQ {#faq}
 
-**Do I lose cosmetics if I drop a rank?**
-No. You keep the cosmetics you earned.
+**Can I lose my rank?**
+No. You keep your rank and your cosmetics. The only reset is a career restart, which you can choose or which poor judging can trigger. A restart forfeits your unspent and pending gold, your streak and your older judgments. It keeps your shields and the gold you already spent.
 
 **Which images are rated?**
-Published images are sent into the rating queue.
+Images enter the queue from sampling of newly scanned images and from creators' own ratings.
 
 ## I need more help {#help}
 

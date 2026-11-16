@@ -22,6 +22,7 @@ seo:
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/16/2026 | Added moving stickers on videos. |
 | 10/26/2026 | First version. Replaces the Guide to the Cosmetic Shop. |
 
 ![Illustration of a shop stall with a badge, an avatar frame, a profile banner and three stickers](/images/guides/creator-shop-and-stickers/creator-shop-cover.webp)
@@ -128,6 +129,17 @@ Once a sticker is live, whether the owner approved it or it was accepted automat
 Some stickers are limited by a moderator to mature images only, or to non-mature images only. Such a sticker also can't be placed on an image that hasn't been rated yet. Such stickers don't appear in the panel for those images.
 
 Each person can make **one free placement a day**, once per image, on images whose owners have free slots open. The day resets at midnight UTC. A free placement costs no Buzz, but it still needs a sticker you own and uses one of its uses. A declined or expired placement doesn't give the day back, and you can only ever make one free placement on a given image.
+
+### Making a sticker move on a video {#moving-stickers}
+
+On a video, a placed sticker can move. When you place a sticker on a video, switch it from **Static** to **Movement** and a timeline opens. Move, scale, rotate or fade the sticker at any moment in the video to set a key. A key is a saved pose at that moment. For example, play to the two-second mark, drag the sticker to a corner, and that is your first key. The sticker then glides from key to key. Each key has an easing that shapes the glide: smooth, linear, in, out or jump. Before the first key the sticker holds the first pose, and after the last key it stays where it ended.
+
+- **Any sticker can move.** That includes stickers from packs and animated stickers.
+- **Videos only.** Stickers on still images stay static.
+- **It costs nothing extra.** Free placements still work. The price is the same as for a still sticker. The creator's size limit applies to the largest size the sticker reaches anywhere on its path. Creator approval works as before, unless the creator has auto-approve on.
+- **Keyboard shortcuts:** Space plays and pauses. The left and right arrow keys step a tenth of a second, and Shift with an arrow steps a full second. K sets a key. Comma and period jump between keys. Esc leaves Movement.
+
+Stickers, moving or not, stay hidden from viewers until they tap the sticker count under the media, next to the reactions. That shows them on all images. For a closer look at moving stickers, read the [announcement article](https://civitai.com/articles/39017).
 
 ### Letting people place stickers on your work {#owner-settings}
 

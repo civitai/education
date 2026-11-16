@@ -136,10 +136,10 @@ On a video, a placed sticker can move. When you place a sticker on a video, swit
 
 - **Any sticker can move.** That includes stickers from packs and animated stickers.
 - **Videos only.** Stickers on still images stay static.
-- **It costs nothing extra.** Free placements still work. The creator's price and size limit apply across the whole path the sticker travels, and creator approval works as before, unless the creator has auto-approve on.
-- **Keyboard shortcuts:** Space plays and pauses. The arrow keys step one frame, and Shift with an arrow steps a second. K sets a key. Comma and period jump between keys. Esc leaves Movement.
+- **It costs nothing extra.** Free placements still work. The price is the same as for a still sticker. The creator's size limit applies to the largest size the sticker reaches anywhere on its path. Creator approval works as before, unless the creator has auto-approve on.
+- **Keyboard shortcuts:** Space plays and pauses. The left and right arrow keys step a tenth of a second, and Shift with an arrow steps a full second. K sets a key. Comma and period jump between keys. Esc leaves Movement.
 
-Viewers do not see stickers on a video until they tap the sticker count under the media, next to the reactions. For a closer look at moving stickers, read the [announcement article](https://civitai.com/articles/39017).
+Stickers, moving or not, stay hidden from viewers until they tap the sticker count under the media, next to the reactions. That shows them on all images. For a closer look at moving stickers, read the [announcement article](https://civitai.com/articles/39017).
 
 ### Letting people place stickers on your work {#owner-settings}
 

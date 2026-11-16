@@ -58,10 +58,10 @@ Go to [knights.civitai.com](https://knights.civitai.com) and sign in with your C
 | --- | --- | --- |
 | Acolyte | Everyone starts here. Rate images and learn. | n/a |
 | Knight | Level 20 and 75% right over your last 100 apprenticeship answers | 1x |
-| Templar | Level 50 and 80% accuracy | 1.25x |
-| Paladin | Level 90, 85% accuracy and 60 days played | 1.5x |
+| Templar | Level 50 | 1.25x |
+| Paladin | Level 90 and 60 days played | 1.5x |
 
-Once you are a Knight, your accuracy is measured over your last 500 graded votes. The bar to keep is 70% for a Knight, 80% for a Templar and 85% for a Paladin. Below your rank's bar, your gold and your vote weight are both halved until accuracy recovers, once you have at least 50 graded votes. You never lose your rank, so that is the only penalty.
+Once you are a Knight, your accuracy is measured over your last 500 graded votes. To keep your rank's gold and vote weight, you need 70% as a Knight, 80% as a Templar and 85% as a Paladin. Below your rank's bar, your gold and your vote weight are both halved until accuracy recovers, once you have at least 50 graded votes. You never lose your rank, so that is the only penalty.
 
 ### Acolyte (training rank) {#acolyte}
 
@@ -77,13 +77,13 @@ Knights judge real images. Each accurate rating earns gold, and you can be smitt
 
 ### Templar {#templar}
 
-Templars settle cases that Knights cannot agree on.
+Templars settle cases that Knights cannot agree on. If you already hold a Templar badge, you keep it.
 
 ![](/wp-content/uploads/2025/05/Templar.webp)
 
 ### Paladin {#paladin}
 
-Paladin is the newest rank, and it is the highest rank a player can reach. It asks for the most: level 90, 85% accuracy and 60 days played.
+Paladin is the newest rank, and it is the highest rank a player can reach. It asks for the most: level 90 and 60 days played. You earn the Paladin badge when you reach the rank.
 
 ## Gold and the shop {#gold}
 

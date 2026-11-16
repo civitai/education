@@ -132,14 +132,14 @@ Each person can make **one free placement a day**, once per image, on images who
 
 ### Making a sticker move on a video {#moving-stickers}
 
-On a video, a placed sticker can move. In the sticker panel, switch the sticker from **Static** to **Movement** and a timeline opens. Move, scale, rotate or fade the sticker at any moment in the video to set a key. The sticker then glides from key to key. Each key has an easing that shapes the glide: smooth, linear, in, out or jump. Before the first key the sticker holds the first pose, and after the last key it stays where it ended.
+On a video, a placed sticker can move. When you place a sticker on a video, switch it from **Static** to **Movement** and a timeline opens. Move, scale, rotate or fade the sticker at any moment in the video to set a key. A key is a saved pose at that moment. For example, play to the two-second mark, drag the sticker to a corner, and that is your first key. The sticker then glides from key to key. Each key has an easing that shapes the glide: smooth, linear, in, out or jump. Before the first key the sticker holds the first pose, and after the last key it stays where it ended.
 
 - **Any sticker can move.** That includes stickers from packs and animated stickers.
 - **Videos only.** Stickers on still images stay static.
 - **It costs nothing extra.** Free placements still work. The creator's price and size limit apply across the whole path the sticker travels, and creator approval works as before, unless the creator has auto-approve on.
 - **Keyboard shortcuts:** Space plays and pauses. The arrow keys step one frame, and Shift with an arrow steps a second. K sets a key. Comma and period jump between keys. Esc leaves Movement.
 
-Viewers do not see stickers on a video until they tap the sticker count under the media, next to the reactions. For a closer look at moving stickers, read the [announcement article](/articles/39017).
+Viewers do not see stickers on a video until they tap the sticker count under the media, next to the reactions. For a closer look at moving stickers, read the [announcement article](https://civitai.com/articles/39017).
 
 ### Letting people place stickers on your work {#owner-settings}
 

@@ -34,7 +34,7 @@ reviewed: "2026-11-13"
 
 ## What's new in v2 {#v2}
 
-- **A new home.** The game now lives at [knights.civitai.com](https://knights.civitai.com). You sign in with your Civitai account. The old Civitai games page for Knights of New Order sends you there.
+- **A new home.** The game now lives at [knights.civitai.com](https://knights.civitai.com). You sign in with your Civitai account.
 - **A gold shop.** Gold no longer turns into Buzz automatically. You spend it in a fixed shop instead.
 - **A new rank.** Paladin sits above Templar.
 - **The Watch.** A daily habit that pays gold for finishing 30 judgments.
@@ -65,13 +65,13 @@ Once you are a Knight, your accuracy is measured over your last 500 graded votes
 
 ### Acolyte (training rank) {#acolyte}
 
-All players begin here. An Acolyte learns through an apprenticeship: a steady run of images that have a known answer, so you get feedback as you go. You earn 100 gold for each level you gain, up to level 20. At level 20, with 75% of your last 100 answers right, you become a Knight. Acolytes earn gold only for the levels they gain, and are not on the leaderboard.
+All players begin here. An Acolyte learns through an apprenticeship: a steady run of images that have a known answer, so you get feedback as you go. You earn 2,000 gold for each level you gain, up to level 20. At level 20, with 75% of your last 100 answers right, you become a Knight. Acolytes earn gold only for the levels they gain, and are not on the leaderboard.
 
 ![](/wp-content/uploads/2025/05/Acolyte.webp)
 
 ### Knight {#knight}
 
-Knights judge real images. Each accurate rating earns gold, and you can be smitten for judgments far from the correct outcome (see [Smites](#smites)).
+Knights judge real images. Each correct vote earns 100 gold, and you can be smitten for judgments far from the correct outcome (see [Smites](#smites)).
 
 ![](/wp-content/uploads/2025/05/Knight.webp)
 
@@ -89,7 +89,7 @@ Paladin is the newest rank, and it is the highest rank a player can reach. It as
 
 Gold no longer converts to Buzz on its own. You spend it in the shop at knights.civitai.com. The shop sells:
 
-- **Buzz packs.** The rate is 20 gold for 1 Buzz.
+- **Buzz packs.** The rate is 400 gold for 1 Buzz.
 - **Knights cosmetics.** Some are locked to a rank.
 - **Membership weeks** (Bronze, Silver or Gold), for people who are not already members.
 
@@ -97,7 +97,7 @@ The shop's stock rotates daily at 00:00 UTC. Gold you earn stays pending until t
 
 ## The Watch {#watch}
 
-Once you are a Knight, you can keep the Watch. Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 100 gold per day of your streak, up to 7 days. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
+Once you are a Knight, you can keep the Watch. Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 2,000 gold. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
 
 ## The leaderboard {#leaderboard}
 

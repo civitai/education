@@ -34,7 +34,7 @@ reviewed: "2026-11-13"
 
 ## What's new in v2 {#v2}
 
-- **A new home.** The game now lives at [knights.civitai.com](https://knights.civitai.com). You sign in with your Civitai account.
+- **A new home.** The game now lives at [knights.civitai.com](https://knights.civitai.com). You sign in with your Civitai account. On civitai.red, the old games page now sends you there.
 - **A gold shop.** Gold no longer turns into Buzz automatically. You spend it in a fixed shop instead.
 - **A new rank.** Paladin sits above Templar.
 - **The Watch.** A daily habit that pays gold for finishing 30 judgments.
@@ -71,7 +71,7 @@ All players begin here. An Acolyte learns through an apprenticeship: a steady ru
 
 ### Knight {#knight}
 
-Knights judge real images. Each correct vote earns 100 gold, and you can be smitten for judgments far from the correct outcome (see [Smites](#smites)).
+Knights judge real images. Each correct vote earns 100 gold, times your rank's gold multiplier, and you can be smitten for judgments far from the correct outcome (see [Smites](#smites)).
 
 ![](/wp-content/uploads/2025/05/Knight.webp)
 
@@ -93,11 +93,13 @@ Gold no longer converts to Buzz on its own. You spend it in the shop at knights.
 - **Knights cosmetics.** Some are locked to a rank.
 - **Membership weeks** (Bronze, Silver or Gold), for people who are not already members.
 
+There is a daily cap on the gold you can earn. It rises with your level, from 80,000 gold a day at level 20 to 400,000 gold a day from level 130.
+
 The shop's stock rotates daily at 00:00 UTC. Gold you earn stays pending until the image you judged is decided, so it is not available instantly.
 
 ## The Watch {#watch}
 
-Once you are a Knight, you can keep the Watch. Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 2,000 gold. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
+Once you are a Knight, you can keep the Watch. Complete 30 judgments in a day to finish that day's Watch. Finishing it pays 2,000 gold per day of your streak, up to 7 days, so up to 14,000 gold a day. You get one free shield a week to protect a streak. Keep a streak going for 7, 30 and 100 days to earn Vigil badges.
 
 ## The leaderboard {#leaderboard}
 

@@ -107,7 +107,7 @@ If you’re new to prompting, we have a [Prompt-Crafting Guide for Beginners](/c
 
 You can check out any image on **Civitai.com** to read the prompt/metadata – most have it included!
 
-You can also search inside prompts using the search bar at the top of the page, and the “image” filter!
+You can also search the [Images](https://civitai.com/images) page. Image search matches what is in the picture, not the words in its prompt. See [Image Search: Find Images by What They Show](https://civitai.com/articles/39085/image-search-find-images-by-what-they-show).
 
 ![](/wp-content/uploads/2023/09/image-93-1024x480.webp)
 

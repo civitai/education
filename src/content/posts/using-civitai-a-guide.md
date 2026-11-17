@@ -351,9 +351,11 @@ Model resources can be filtered by a number of **types** and **categories**. Thi
 
 ### Site Search
 
-Civitai has a powerful **Search function**, allowing us to search for **Models**, **Images** (including Prompt content!), **Articles**, **Collections** and **Users**.
+Civitai has a powerful **Search function**, allowing us to search for **Models**, **Images**, **Articles**, **Collections** and **Users**.
 
 ![](/wp-content/uploads/2024/01/search_menu-1024x145.webp)
+
+**Image search** works on the [Images](https://civitai.com/images) page. Type in the search bar and press Enter, and the feed turns into "Images matching" your words, sorted by best match. It matches what is *in* the picture, not the words in its prompt, so describe what you want to see. Base model, media type, tags, creators and posted date carry over into a search. Filters such as tools, techniques, remixes and requiring metadata are grayed out while you search; clear the search to use them. Results end after a while, so try different words or add a filter if you do not see what you want. Read more in [Image Search: Find Images by What They Show](https://civitai.com/articles/39085/image-search-find-images-by-what-they-show).
 
 Additional filtering options can be accessed from the **filter button to the left of the Search categories**.
 

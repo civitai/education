@@ -95,7 +95,7 @@ Gold no longer converts to Buzz on its own. You spend it in the shop at knights.
 
 There is a daily cap on the gold you can earn. It rises with your level, from 80,000 gold a day at level 20 to 400,000 gold a day from level 130.
 
-The shop's stock rotates daily at 00:00 UTC. Gold you earn stays pending until the image you judged is decided, so it is not available instantly.
+The shop sells a fixed set of items at fixed prices. Gold for a judgment is earned once the image is decided and your vote is graded correct.
 
 ## The Watch {#watch}
 
@@ -114,7 +114,7 @@ The leaderboard is weekly, counted over the last 7 days, and ranks players by **
 
 ## How images are judged {#judging}
 
-Several Knights vote independently on an image. If they cannot agree, or the result is far from the system's own estimate, the image goes to Templars, then to Paladins, and finally to site moderators, whose decision is final.
+Several Knights vote independently on an image. If they cannot agree, the image goes to Templars, then to Paladins, and finally to site moderators, whose decision is final. An image also moves up to the next stage when a stage's time runs out.
 
 ## Moving from v1 {#carry-over}
 

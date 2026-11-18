@@ -16,7 +16,7 @@ covers:
   - "training-base-models"
   - "auto-label"
   - "buzz-training-cost"
-reviewed: "2026-11-09"
+reviewed: "2026-11-18"
 excerpt: "Train a LoRA on Civitai with Training Studio: pick a base model, label your data, set steps, pay with Buzz, then watch each epoch arrive and publish the best one."
 seo:
   title: "Civitai's Guide to Training Studio - Civitai Education"
@@ -27,22 +27,23 @@ seo:
 | **Last Updated** | **Changes** |
 | --- | --- |
 | 10/26/2026 | First Version |
+| 11/18/2026 | Kohya engine added; classic trainer retired |
 
 ## What Training Studio is {#what-training-studio-is}
 
 Training Studio is Civitai’s newer on-site trainer for LoRAs. You tell it what you are making (a character, a style, a concept or an effect), add your data, check the settings and price, and press start. While the run works, the page fills in: the step count climbs and each epoch appears with its sample images the moment it finishes.
 
-It differs from the [classic on-site trainer](/using-civitai-the-on-site-lora-trainer/) in a few ways:
+It differs from the retired [classic on-site trainer](/using-civitai-the-on-site-lora-trainer/) in a few ways:
 
 - **It follows a run while it trains.** You can open a finished epoch and generate with it while later epochs are still training, then compare epochs side by side.
 - **It can label for you.** When auto-label is available, it adds labels in the format your chosen base model wants (tags or captions), and you are never asked to pick the format. See [Auto-label](#auto-label).
 - **Steps are explained in plain terms.** Instead of a bare number, the Review step tells you how many times each image is seen, for example “each image seen ~100×”.
 - **Nothing exists until you press start.** No half-built model page sits in your profile, and nothing goes public unless you publish it.
 
-Training Studio is now the default trainer. The classic trainer stops starting new runs on **November 16th** (at 00:00 UTC), so this is the one to learn. To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
+Training Studio is now the only trainer. The classic trainer stopped starting new runs on **November 16th** (at 00:00 UTC) and has been retired, so this is the one to learn. It trains with **AI Toolkit** by default, and you can pick **Kohya** instead for SD 1.5, SDXL, Flux.1 and Chroma (see [Engine: AI Toolkit or Kohya](#engine)). To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
 
 :::note
-Training Studio still carries a **Beta** badge. It is on by default. Until November 16th you can use the classic trainer instead: open [your account preferences](https://civitai.com/user/account/preferences), find the **Features** section and turn off **Training Studio**. You can turn it back on there at any time. After November 16th the classic trainer still shows your past runs, but it can no longer start new ones, so turning Training Studio off will not let you train.
+The classic trainer is retired, and there is no setting to switch back to it. Opening [civitai.com/models/train](https://civitai.com/models/train) takes you to Training Studio. Your past classic runs and drafts are still on the **Training** tab of your profile, where you can open them, review them and publish them. See [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100) for the announcement.
 :::
 
 ## Before you start {#before-you-start}
@@ -88,6 +89,12 @@ These are among the models you can train at the time of writing. The picker may 
 | LTX 2.5 | Video | Captions | Fast video with synced audio |
 
 New models are added over time. The cards in your picker are the ones you can train, so trust those over any list, including this one.
+
+### Engine: AI Toolkit or Kohya {#engine}
+
+At the top of the Select step, next to the media and type, there is an **Engine** choice: **AI Toolkit** or **Kohya**. AI Toolkit is the default. Pick **Kohya** and the model cards narrow to the ones Kohya can train: SD 1.5, SDXL and its families (Pony, Illustrious, NoobAI), Flux.1 and Chroma.
+
+Everything after that is the same flow as any other run: add your data, label it, and set your steps. On the Review step you will find the Kohya settings, including the AdamW, AdamW8bit, Adafactor, Prodigy and Lion optimizers, the usual schedulers, repeats, bucketing, clip skip on SD 1.5, and fp8 and block swapping on Flux.1 and Chroma. The price is shown before you start, and while the run works you can follow its logs and loss graph and generate with each epoch as it lands. Train Further and publishing work the same as for an AI Toolkit run. For the announcement, see [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100).
 
 :::note
 Many newer models, including ZImage Turbo, Flux.1 Dev, Boogu, Krea 2, Mage-Flow, Anima, Wan and LTX, cannot train their text encoder. The Review step locks that field for them. This is expected, not a bug. SD 1.5, SDXL, Pony and Illustrious leave it editable.
@@ -343,9 +350,9 @@ Optional. It helps most for characters. It does nothing on models that cannot tr
 
 The model decides. The Data step shows which one it uses, and only models that support both let you switch.
 
-### When should I use the classic trainer instead? {#when-to-use-the-classic-trainer}
+### Can I still use the classic trainer? {#when-to-use-the-classic-trainer}
 
-Use Training Studio. The classic trainer stops starting new runs on November 16th, for everyone. Runs you already submitted will finish, and your past runs stay in the classic trainer. Until that date you can switch Training Studio off under **Features** in your preferences to return to the classic trainer, described in [Civitai’s on-site LoRA trainer guide](/using-civitai-the-on-site-lora-trainer/). After it, the switch is still there, but the classic trainer will only show your past runs. For terms like epoch, rank and learning rate, see the [LoRA training glossary](/lora-training-glossary/).
+No. The classic trainer is retired. It stopped starting new runs on November 16th, and there is no setting to switch back to it. If you want Kohya, choose it as the [Engine](#engine) in Training Studio. Your past classic runs and drafts stay reachable from the **Training** tab of your profile, where you can review and publish them, and the models you already published stay up. The old steps are kept in [Civitai’s on-site LoRA trainer guide](/using-civitai-the-on-site-lora-trainer/), now archived. For terms like epoch, rank and learning rate, see the [LoRA training glossary](/lora-training-glossary/).
 
 ### How long do I keep my training? {#how-long-do-i-keep-it}
 
@@ -371,5 +378,6 @@ Runs are listed for 30 days. Download or publish what you want to keep.
 ## Where to go next {#where-to-go-next}
 
 - Watch the [Training Studio announcement and video](https://civitai.com/articles/35616).
+- Read [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100).
 - Learn the vocabulary in the [LoRA training glossary](/lora-training-glossary/).
 - Once you publish, see [Uploading content to Civitai](/using-civitai-uploading-content/) for model page tips.

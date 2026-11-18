@@ -22,6 +22,7 @@ seo:
 deprecated:
   date: "2026-10-26"
   replacedBy: "civitais-guide-to-training-studio"
+  note: "The classic trainer was retired on November 16, 2026 and no longer starts new runs, so the steps below no longer match what you will see. Training Studio now covers it, including Kohya."
 ---
 
 | **Last Updated** | **Changes** |
@@ -35,6 +36,7 @@ deprecated:
 | 11/2/2024 | SD 3.5 Medium and Large Training added! |
 | 1/9/2025 | New Dataset Upload Options! |
 | 4/1/2026 | Updated base model list; added video LoRA training; new training engines |
+| 11/18/2026 | Archived: the classic trainer was retired on 11/16/2026. See the [Training Studio guide](/civitais-guide-to-training-studio/) |
 
 **⚠️ This Guide Has Been Partially Updated**
 

@@ -92,7 +92,7 @@ We will be gradually integrating Buzz into site features and actions, but right 
 
 -   **Post Bounties**! Need a service, but don’t have the time or knowledge to achieve it? Post a Bounty with a Buzz reward and have the Community help you out.
 
--   **Train a LoRA**! You can spend your **Blue, Yellow, or Green** **Buzz** to train LoRA with the [Civitai on-site LoRA Trainer](/using-civitai-the-on-site-lora-trainer/)! The LoRA trainer is a great way to create your own models if you don’t have the required hardware, or know-how, to train locally. Now, with a little Buzz, you can let our infrastructure do the hard work – creating anything you can imagine, via a simple wizard!
+-   **Train a LoRA**! You can spend your **Blue, Yellow, or Green** **Buzz** to train LoRA with the [Civitai Training Studio](/civitais-guide-to-training-studio/)! The LoRA trainer is a great way to create your own models if you don’t have the required hardware, or know-how, to train locally. Now, with a little Buzz, you can let our infrastructure do the hard work – creating anything you can imagine, via a simple wizard!
 
 -   Create images with the [Civitai Image Generator](/using-civitai-the-on-site-image-generator/)! Images are priced on a sliding Buzz scale, based upon Step Count and model architecture.
 

@@ -22,7 +22,7 @@ seo:
   canonical: "https://education.civitai.com/lora-training-glossary/"
 ---
 
-The ability to [train a LoRA](/using-civitai-the-on-site-lora-trainer/) is an amazing thing, whether you’re using [Civitai’s LoRA trainer](/using-civitai-the-on-site-lora-trainer/), or one of the popular [local training scripts](https://github.com/bmaltais/kohya_ss), but the technical descriptions for what each of the options _actually do_ are… **complicated!** This Glossary was created to bring together as many of these terms as possible in a _**single, searchable, list**_, offering short explanations of the most common LoRA training options!
+The ability to [train a LoRA](/civitais-guide-to-training-studio/) is an amazing thing, whether you’re using [Civitai’s Training Studio](/civitais-guide-to-training-studio/), or one of the popular [local training scripts](https://github.com/bmaltais/kohya_ss), but the technical descriptions for what each of the options _actually do_ are… **complicated!** This Glossary was created to bring together as many of these terms as possible in a _**single, searchable, list**_, offering short explanations of the most common LoRA training options!
 
 Some of the terms below might be missing a description – this document is in a constant state of development to keep up to speed with additions and changes – it’s being worked on!
 

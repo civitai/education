@@ -326,7 +326,7 @@ After testing, **Epoch #6** offered an excellent balance of **likeness capture**
 
 **Remember**! LoRAs trained on images of real people _cannot be hosted on Civitai_. Please see our [Content Policies](https://civitai.com/safety#content-policies) for more information.
 
-Phenomenal examples of Flux LoRA’s trained with the [Civitai on-site LoRA Trainer](/using-civitai-the-on-site-lora-trainer/);
+Phenomenal examples of Flux LoRA’s trained with the [Civitai Training Studio](/civitais-guide-to-training-studio/);
 
 <div class="columns">
 

@@ -99,7 +99,7 @@ The Civitai on-site LoRA Trainer has an excellent built-in image captioning tool
 
 </div>
 
-Check out the [on-site LoRA Trainer Guide](/using-civitai-the-on-site-lora-trainer/) for more information!
+Check out [Civitai’s Guide to Training Studio](/civitais-guide-to-training-studio/) for more information!
 
 ### Can you help me make a prompt?
 
@@ -131,7 +131,7 @@ We’ve also added a new **Draft Mode** to the Generator; utilizing SDXL Lightni
 
 ### How can I create a model?
 
-The easiest way to create a LoRA is to use the **Civitai on-site LoRA Trainer**! More information can be found here – on the Civitai Education Hub; [http://education.civitai.com/using-civitai-the-on-site-lora-trainer/](/using-civitai-the-on-site-lora-trainer/)
+The easiest way to create a LoRA is to use the **Civitai on-site LoRA Trainer**! More information can be found on the Civitai Education Hub in [Civitai’s Guide to Training Studio](/civitais-guide-to-training-studio/).
 
 ### How do I get buzz? Can I buy buzz?
 

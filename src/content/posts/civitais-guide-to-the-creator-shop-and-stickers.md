@@ -159,6 +159,8 @@ Your profile has a **Sticker Book** tab. It shows the stickers you own, where yo
 
 ## Selling in your own shop {#selling}
 
+Eligible creators can also sell custom work, such as a commissioned LoRA, from their shop. That is covered in [Civitai's Guide to Creator Services](/civitais-guide-to-creator-services/).
+
 ### Before you start {#before-you-start}
 
 - **Where your shop is.** Open the **Shop** tab on your own profile. Members of the Creator Program also have a **My Shop** shortcut in the user menu.

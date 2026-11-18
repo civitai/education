@@ -40,10 +40,10 @@ It differs from the retired [classic on-site trainer](/using-civitai-the-on-site
 - **Steps are explained in plain terms.** Instead of a bare number, the Review step tells you how many times each image is seen, for example “each image seen ~100×”.
 - **Nothing exists until you press start.** No half-built model page sits in your profile, and nothing goes public unless you publish it.
 
-Training Studio is now the only trainer. The classic trainer stopped starting new runs on **November 16th** (at 00:00 UTC) and has been retired, so this is the one to learn. It trains with **AI Toolkit** by default, and you can pick **Kohya** instead for SD 1.5, SDXL, Flux.1 and Chroma (see [Engine: AI Toolkit or Kohya](#engine)). To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before the Studio became the default, so ignore its “off by default” line. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
+Training Studio is now the only trainer. The classic trainer stopped starting new runs on **November 16th** (at 00:00 UTC) and has been retired, so this is the one to learn. It trains with **AI Toolkit** by default, and you can pick **Kohya** instead for SD 1.5, SDXL, Flux.1 and Chroma (see [Engine: AI Toolkit or Kohya](#engine)). To see the flow first, watch [Training Studio: Watch It Train, Generate As It Goes](https://civitai.com/articles/35616), a four and a half minute video. This guide goes deeper on each step. It was written before Training Studio became the only trainer. Training Studio needs a login, so this guide describes each screen in words, using the labels you will see on it.
 
 :::note
-The classic trainer is retired, and there is no setting to switch back to it. Opening [civitai.com/models/train](https://civitai.com/models/train) takes you to Training Studio. Your past classic runs and drafts are still on the **Training** tab of your profile, where you can open them, review them and publish them. See [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100) for the announcement.
+The classic trainer is retired, and there is no setting to switch back to it. Opening [civitai.com/models/train](https://civitai.com/models/train) takes you to Training Studio. Your past classic runs and drafts are still on the **Training** tab of your profile, where you can open them, review them and publish them. See [Kohya Is Back: Train It in Training Studio](https://civitai.com/articles/39100) for the announcement.
 :::
 
 ## Before you start {#before-you-start}
@@ -94,7 +94,7 @@ New models are added over time. The cards in your picker are the ones you can tr
 
 At the top of the Select step, next to the media and type, there is an **Engine** choice: **AI Toolkit** or **Kohya**. AI Toolkit is the default. Pick **Kohya** and the model cards narrow to the ones Kohya can train: SD 1.5, SDXL and its families (Pony, Illustrious, NoobAI), Flux.1 and Chroma.
 
-Everything after that is the same flow as any other run: add your data, label it, and set your steps. On the Review step you will find the Kohya settings, including the AdamW, AdamW8bit, Adafactor, Prodigy and Lion optimizers, the usual schedulers, repeats, bucketing, clip skip on SD 1.5, and fp8 and block swapping on Flux.1 and Chroma. The price is shown before you start, and while the run works you can follow its logs and loss graph and generate with each epoch as it lands. Train Further and publishing work the same as for an AI Toolkit run. For the announcement, see [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100).
+Everything after that is the same flow as any other run: add your data, label it, and set your steps. On the Review step you will find the Kohya settings, including the AdamW, AdamW8bit, Adafactor, Prodigy and Lion optimizers, the usual schedulers, repeats, bucketing, clip skip on SD 1.5, and fp8 and block swapping on Flux.1 and Chroma. The price is shown before you start, and while the run works you can follow its logs and loss graph and generate with each epoch as it lands. Train Further and publishing work the same as for an AI Toolkit run. For the announcement, see [Kohya Is Back: Train It in Training Studio](https://civitai.com/articles/39100).
 
 :::note
 Many newer models, including ZImage Turbo, Flux.1 Dev, Boogu, Krea 2, Mage-Flow, Anima, Wan and LTX, cannot train their text encoder. The Review step locks that field for them. This is expected, not a bug. SD 1.5, SDXL, Pony and Illustrious leave it editable.
@@ -378,6 +378,6 @@ Runs are listed for 30 days. Download or publish what you want to keep.
 ## Where to go next {#where-to-go-next}
 
 - Watch the [Training Studio announcement and video](https://civitai.com/articles/35616).
-- Read [Kohya in Training Studio and the classic trainer retirement](https://civitai.com/articles/39100).
+- Read [Kohya Is Back: Train It in Training Studio](https://civitai.com/articles/39100).
 - Learn the vocabulary in the [LoRA training glossary](/lora-training-glossary/).
 - Once you publish, see [Uploading content to Civitai](/using-civitai-uploading-content/) for model page tips.

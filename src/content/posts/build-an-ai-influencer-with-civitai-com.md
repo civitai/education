@@ -136,7 +136,7 @@ With characters like _CivChan_ – signature pink hair, maid outfit, manic fixed
 
 ### **LoRA Training** – **Trainer Setup** {#lora-training-trainer-setup}
 
-We won’t go too deep into training here – there’s a [full Guide to the Civitai LoRA](/using-civitai-the-on-site-lora-trainer/) [Trainer](/using-civitai-the-on-site-lora-trainer/) that walks through the full process. Instead, here are a few key notes tailored to this specific use case:
+We won’t go too deep into training here – there’s a [full Guide to Training Studio](/civitais-guide-to-training-studio/) that walks through the full process. Instead, here are a few key notes tailored to this specific use case:
 
 **Base Models**
 Civitai currently offers three strong models for character creation. [F](https://civitai.com/models/618692)[lu](https://civitai.com/models/618692)[x](https://civitai.com/models/618692) excels at capturing likeness and fine facial detail, and we’ve already [published a Flux likeness capture guide](/quickstart-guide-to-flux-1/#likeness-capture) that explains how to get the best out of it.

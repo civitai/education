@@ -141,7 +141,7 @@ To compare engines, run the same description and lyrics on MiniMax Music 3 (the 
 
 ## Train your own audio LoRA {#train-your-own}
 
-**Training Studio** can train a LoRA on ACE-Step, so you can teach a model a genre, a sound or a style from your own tracks. Audio training is open to everyone. The full tour of the Studio, including payment, results and the classic trainer, is in [Civitai's Guide to Training Studio](/civitais-guide-to-training-studio/). This section covers what is specific to audio.
+**Training Studio** can train a LoRA on ACE-Step, so you can teach a model a genre, a sound or a style from your own tracks. Audio training is open to everyone. The full tour of the Studio, including payment and results, is in [Civitai's Guide to Training Studio](/civitais-guide-to-training-studio/). This section covers what is specific to audio.
 
 1. Open [civitai.com/training-studio](https://civitai.com/training-studio). You need to be signed in, and training costs Buzz. In the media picker choose **Audio**.
 2. Choose a type. For audio the types are **Style** and **Concept**. (Character is for images and video, and Effect is for video.)

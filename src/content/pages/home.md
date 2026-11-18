@@ -17,7 +17,7 @@ seo:
 
 ![](/wp-content/uploads/2023/09/lora_trainer_anim.webp)
 
-#### [Using Civitai – The On-Site LoRA Trainer](/using-civitai-the-on-site-lora-trainer/ "Using Civitai – The On-Site LoRA Trainer")
+#### [Civitai’s Guide to Training Studio](/civitais-guide-to-training-studio/ "Civitai’s Guide to Training Studio")
 
 ![](/wp-content/uploads/2023/10/LTXV_00087.webp)
 

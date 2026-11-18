@@ -260,7 +260,7 @@ Here are some tips and tricks we’ve found during testing Flux training on-site
 
 -   Mixing realistic images + cartoon training data set images makes everything look plastic and terrible!
 
--   ~~Danbooru comma separated captioning does not seem to be effective.~~ We’re finding that natural language captioning – narrative style – is a lot more effective for a good output. Additionally, a mix of natural language and danbooru tag style captioning has shown promising results! [Note: we now have Natural Language auto-captioning available in the on-site LoRA trainer!](/using-civitai-the-on-site-lora-trainer/)
+-   ~~Danbooru comma separated captioning does not seem to be effective.~~ We’re finding that natural language captioning – narrative style – is a lot more effective for a good output. Additionally, a mix of natural language and danbooru tag style captioning has shown promising results! [Note: we now have Natural Language auto-captioning available in Training Studio!](/civitais-guide-to-training-studio/#auto-label)
 
 -   We’re finding and hearing that **captionless training** can produce some very good, flexible, results! Try your next training session with **no captions**!
 
@@ -326,7 +326,7 @@ After testing, **Epoch #6** offered an excellent balance of **likeness capture**
 
 **Remember**! LoRAs trained on images of real people _cannot be hosted on Civitai_. Please see our [Content Policies](https://civitai.com/safety#content-policies) for more information.
 
-Phenomenal examples of Flux LoRA’s trained with the [Civitai on-site LoRA Trainer](/using-civitai-the-on-site-lora-trainer/);
+Phenomenal examples of Flux LoRA’s trained with the [Civitai Training Studio](/civitais-guide-to-training-studio/);
 
 <div class="columns">
 

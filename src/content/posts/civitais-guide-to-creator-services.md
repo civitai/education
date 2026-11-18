@@ -16,7 +16,7 @@ covers:
   - "creator-shop"
   - "buzz-escrow"
 reviewed: "2026-11-18"
-excerpt: "Commission a LoRA, a music video or other custom work from a creator on Civitai. How requests work, why your Buzz is held in escrow until you accept the delivery, previews, revisions and cancellations."
+excerpt: "Commission a LoRA, a music video or other custom work from a creator on Civitai. How requests work, why your Buzz is held in escrow until you accept the delivery, previews, revisions and cancelations."
 seo:
   title: "Civitai's Guide to Creator Services - Civitai Education"
   description: "Hire a creator on Civitai: send a request, pay in Buzz held in escrow, check a watermarked preview, ask for revisions and accept the delivery."

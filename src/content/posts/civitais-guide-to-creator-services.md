@@ -35,7 +35,7 @@ The short version: **your Buzz is held in escrow, not paid, until you accept the
 1. **Find a service.** Open [Services](https://civitai.com/services) (also **Browse Services** in your user menu), or look on a creator's storefront or in the Shop section of their profile. Each service shows its price, how many days it takes and how many revisions are included.
 2. **Send a request.** Describe what you want and attach reference files. You pay in Buzz when you send the request. The Buzz is held in escrow, so nothing goes to the creator yet. The deal shows as **Awaiting seller**.
 3. **The creator accepts.** The deal becomes **In progress**. You can talk it through in the deal chat, and you are notified as it moves along.
-4. **Check the preview.** The creator uploads a preview and the final files. You see a low-resolution, watermarked copy of the preview, and the final files stay sealed until the deal completes. If it is not right, use **Request a revision**. You can ask for as many revisions as the service includes.
+4. **Check the preview.** Most services include a preview, which the creator uploads along with the final files. If there is one, you see a low-resolution, watermarked copy, and the final files stay sealed until you accept the delivery. If it is not right, use **Request a revision**. You can ask for as many revisions as the service includes.
 5. **Accept the delivery.** When you are happy, accept it. That completes the deal and the final files are yours. If you never respond, the deal completes on its own after a few days.
 
 Everything about a deal, including its status, chat, files and updates, is on [your deals page](https://civitai.com/services/deals).
@@ -46,11 +46,11 @@ Escrow means the platform holds your Buzz while the work is done, instead of han
 
 Right now there is no fee for escrow or moderation.
 
-## Cancelling and refunds {#cancelling}
+## Canceling and refunds {#canceling}
 
 - **Before the creator accepts:** use **Withdraw request** to cancel and get your Buzz back.
 - **After the creator accepts:** use **Request cancellation** and the creator can agree to it.
-- **If the creator is running late:** once a deal is overdue you can use **Cancel (overdue)** yourself. A deal that goes well past its due date with nothing delivered is also canceled and refunded automatically.
+- **If the creator is running late:** once a deal is a little past its due date you can use **Cancel (overdue)** yourself. A deal that goes well past its due date with nothing delivered is also canceled and refunded automatically.
 - **If you cannot agree:** a deal that goes wrong and cannot be settled between you and the creator goes to Civitai moderators.
 
 ## Offering a service {#offering-a-service}

@@ -21,9 +21,9 @@ If you signed in after a sign-in update and found an empty profile, you probably
 ## Get back to your original account {#get-back}
 
 1. **Sign out.**
-2. **Sign in the way you did before.** Use the same Google, GitHub or Discord account, or ask for an email link to the same email address you used before. Signing in with Google, GitHub or an email link to the same address reaches your existing account.
+2. **Sign in the way you did before.** Use the same Google, GitHub, Discord or Reddit account you used before, or ask for an email link to the same email address you used before. Google, GitHub or an email link to the same address all reach your existing account.
 3. **Check that your original account has everything.** Make sure your content is there before you do anything else.
-4. **Delete the empty account (optional).** Sign in to the empty account, open Account Settings and delete it. Do this only after step 3, because you have to be signed in to the empty account to delete it.
+4. **Delete the empty account (optional).** Sign in to the empty account, open Account Settings and delete it. Do this only after step 3, and check the username first so you delete the empty account, not your original.
 
 ## Why you ended up with a new account {#why}
 
@@ -31,7 +31,7 @@ A new, empty account usually comes from one of these:
 
 - **A different email address.** For example, yahoo.com instead of ymail.com, or a temporary address.
 - **Reddit.** Reddit does not share an email address with Civitai, so a Reddit sign-in that was not connected to your account before always creates a new account.
-- **Discord with an unverified email.**
+- **Discord with an unverified email.** If your Discord email isn't verified, a Discord sign-in that wasn't connected to your account before creates a new account.
 
 ## Still stuck? {#help}
 

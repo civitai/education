@@ -22,7 +22,7 @@ If you signed in after a sign-in update and found an empty profile, you probably
 
 1. **Sign out.**
 2. **Sign in the way you did before.** Use the same Google, GitHub or Discord account, or ask for an email link to the same email address you used before. Signing in with Google, GitHub or an email link to the same address reaches your existing account.
-3. **Check that your original account has everything.** Make sure your profile, models and Buzz are there before you do anything else.
+3. **Check that your original account has everything.** Make sure your content is there before you do anything else.
 4. **Delete the empty account (optional).** Sign in to the empty account, open Account Settings and delete it. Do this only after step 3, because you have to be signed in to the empty account to delete it.
 
 ## Why you ended up with a new account {#why}

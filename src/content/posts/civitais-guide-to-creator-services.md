@@ -16,7 +16,7 @@ covers:
   - "creator-shop"
   - "buzz-escrow"
 image: "/images/guides/civitais-guide-to-creator-services/cover.webp"
-reviewed: "2026-11-18"
+reviewed: "2026-11-19"
 excerpt: "Commission a LoRA, a music video or other custom work from a creator on Civitai. How requests work, why your Buzz is held in escrow until you accept the delivery, previews, revisions and cancelations."
 seo:
   title: "Civitai's Guide to Creator Services - Civitai Education"
@@ -26,6 +26,7 @@ seo:
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/19/2026 | Added when the creator gets paid. |
 | 11/18/2026 | First version. |
 
 Creator Services lets you commission custom work from a creator on Civitai, such as a LoRA trained for you or a music video. The request, the payment, the files and the conversation all happen on Civitai, so neither side has to rely on DMs and payment apps elsewhere. The launch announcement is [Creator Services: Commission a LoRA, a Music Video, or Whatever You Need](https://civitai.com/articles/38740).
@@ -47,6 +48,10 @@ Everything about a deal, including its status, chat, files and updates, is on [y
 Escrow means the platform holds your Buzz while the work is done, instead of handing it to the creator up front. The deal page says it plainly: the Buzz is held, not paid, and nothing moves until the deal completes or is canceled. That protects you if the work never arrives, and it protects the creator, who knows the Buzz is there before starting.
 
 Right now there is no fee for escrow or moderation.
+
+## When the creator gets paid {#creator-paid}
+
+Right now, the creator's Buzz is released 48 hours after you accept, which gives you time to try the files and report a problem. We're adding reviews, so soon you'll be able to leave one on the deal page, and a happy review pays the creator right away. If you don't leave one, they're paid after the 48 hours as usual.
 
 ## Canceling and refunds {#canceling}
 

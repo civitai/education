@@ -22,7 +22,7 @@ seo:
 | --- | --- |
 | 11/20/2026 | First version. |
 
-Showcases let you choose what your profile shows first. Before, your profile led with your most popular models and articles, which is not always your best work. Now you can add your own sections, give each a title, and fill them with the work you want people to see. The launch announcement is [Showcase Sections: Pick What Your Profile Shows First](https://civitai.com/articles/39087). It is the first piece of the profile facelift introduced in [this article](https://civitai.com/articles/38570).
+Showcases let you choose what your profile shows first. Before, your profile showed your most popular models and articles plus a single Showcase at the top, which is not always your best work. Now you can add your own sections, give each a title, and fill them with the work you want people to see. The launch announcement is [Showcase Sections: Pick What Your Profile Shows First](https://civitai.com/articles/39087). It is the first piece of the profile facelift introduced in [this article](https://civitai.com/articles/38570).
 
 ## What you can do {#what-you-can-do}
 

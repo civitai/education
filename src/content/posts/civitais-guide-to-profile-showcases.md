@@ -22,6 +22,7 @@ seo:
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/20/2026 | Fixed the profile button name to Customize profile. |
 | 11/20/2026 | First version. |
 
 Showcases let you choose what your profile shows first. Before, your profile showed your most popular models and articles plus a single Showcase at the top, which is not always your best work. Now you can add your own sections, give each a title, and fill them with the work you want people to see. The launch announcement is [Showcase Sections: Pick What Your Profile Shows First](https://civitai.com/articles/39087). It is the first piece of the profile facelift introduced in [this article](https://civitai.com/articles/38570).
@@ -38,7 +39,7 @@ Showcases let you choose what your profile shows first. Before, your profile sho
 
 ![The showcase section editor with its type switch, title, item picker and optional button labeled, and the Add to showcase picker from an image, model or article menu](/images/guides/civitais-guide-to-profile-showcases/showcase-editor.webp)
 
-1. Open **Edit profile** and go to **Page sections**.
+1. Open **Customize profile** and go to **Page sections**.
 2. Press **Add showcase section**.
 3. Choose whether it holds images, models or articles, and give it a title.
 4. Pick items. The search only returns your own work of that type.

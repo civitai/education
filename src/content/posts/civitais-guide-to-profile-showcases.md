@@ -11,11 +11,13 @@ tags:
 author: "civitai"
 covers:
   - "profile-showcases"
+image: "/images/guides/civitais-guide-to-profile-showcases/cover.webp"
 reviewed: "2026-11-20"
 excerpt: "Add your own showcase sections to your Civitai profile: pick up to 32 images, models or articles per showcase, put them in your order, and give each one its own button."
 seo:
   title: "Civitai's Guide to Profile Showcases - Civitai Education"
   description: "How to make showcase sections on your Civitai profile: add images, models or articles, use Add to Showcase, reorder, hide, and set a custom button."
+  ogImage: "/images/guides/civitais-guide-to-profile-showcases/cover.webp"
 ---
 
 | **Last Updated** | **Changes** |
@@ -33,6 +35,8 @@ Showcases let you choose what your profile shows first. Before, your profile sho
 - Drag showcases into place or hide them, like your other profile sections.
 
 ## Make a showcase {#make-a-showcase}
+
+![The showcase section editor with its type switch, title, item picker and optional button labeled, and the Add to showcase picker from an image, model or article menu](/images/guides/civitais-guide-to-profile-showcases/showcase-editor.webp)
 
 1. Open **Edit profile** and go to **Page sections**.
 2. Press **Add showcase section**.

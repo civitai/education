@@ -22,6 +22,7 @@ seo:
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/21/2026 | Added the image picker's empty-search list and View all on the top Showcase. |
 | 11/20/2026 | Fixed the profile button name to Customize profile. |
 | 11/20/2026 | First version. |
 
@@ -42,12 +43,12 @@ Showcases let you choose what your profile shows first. Before, your profile sho
 1. Open **Customize profile** and go to **Page sections**.
 2. Press **Add showcase section**.
 3. Choose whether it holds images, models or articles, and give it a title.
-4. Pick items. The search only returns your own work of that type.
+4. Pick items. The search only returns your own work of that type. For images, an empty search box lists up to 100 of your newest published images and videos, and you can scroll the list. Typing a search still finds images only.
 5. Drag the items to put them in order, then save.
 
 ## Add as you go {#add-as-you-go}
 
-You do not have to build a showcase in one sitting. On any of your images, models or published articles, open the menu and choose **Add to Showcase**. You see each of your showcases of that type and how full it is. The Showcase at the top of your profile is also in the list, for images and models. Pick one and the item is added.
+You do not have to build a showcase in one sitting. On any of your images, models or published articles, open the menu and choose **Add to Showcase**. You see each of your showcases of that type and how full it is. The Showcase at the top of your profile is also in the list, for images and models. Pick one and the item is added. The Showcase at the top of your profile now gets a **View all** button too.
 
 ## Order, hide and move {#order}
 

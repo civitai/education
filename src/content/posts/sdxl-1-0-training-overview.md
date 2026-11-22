@@ -102,8 +102,6 @@ an example of a cell;
 
 To execute code in a cell, mouse over the **\[ \]** to the left of the cell and click the circular arrow “run” button.
 
-<div data-embed="videopress" data-src="https://video.wordpress.com/embed/LIt4YPeX?cover=1&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="800" data-height="195"></div>
-
 The code in the cell will execute, and in this case, will print out the result in the page.
 
 After execution, you’ll see a _**green checkmark**_ to show the code within that particular cell has finished running successfully;
@@ -111,8 +109,6 @@ After execution, you’ll see a _**green checkmark**_ to show the code within th
 ![](/wp-content/uploads/2023/08/image-3-1024x318.webp)
 
 Some cells will perform multiple tasks, including downloading additional files, or installing dependencies. Note that these downloads and installs _are not affecting your local PC_ – they’re running “_inside_” the virtual notebook to which you’re connected, via Colab.
-
-<div data-embed="videopress" data-src="https://video.wordpress.com/embed/68zr4e2m?cover=1&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="800" data-height="474"></div>
 
 Sometimes cells are editable, and require inputs – usually file paths (see Google Drive Integration, below). To edit a cell you can double-click to enable a cursor.
 
@@ -128,9 +124,7 @@ If you save a local copy in Google Drive to make changes, you can also view the 
 
 Whether you’re running with a free or paid Colab account, you can view system usage and active Colab sessions. _**This is most important when you’re using paid Compute Units**_, as you should **always disconnect from your active session once you’ve finished** processing to avoid inadvertently using your precious Compute Units.
 
-When you first open a Colab you’ll need to connect it up to Google’s resources. You can do so just by running the first code cell, or by connecting manually;
-
-<div data-embed="videopress" data-src="https://video.wordpress.com/embed/QQ1dcMDG?cover=1&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="800" data-height="286"></div>
+When you first open a Colab you’ll need to connect it up to Google’s resources. You can do so just by running the first code cell, or by connecting manually.
 
 Once connected, you can view (and control) your active sessions from the “**Manage Sessions**” menu.
 

@@ -113,22 +113,6 @@ Via ControlNet and the IP Adapter Preprocessor, we can supply two images, and ma
 
 Forge supports Stable Video Diffusion natively, with **reduced requirements** to generate short SVD videos. You can also easily pass your generations from the **txt2img** tab into the **SVD tab** for generation!
 
-<div class="columns va-center">
-
-<div class="column">
-
-<div data-embed="videopress" data-src="https://video.wordpress.com/embed/KvsqQCxj?cover=1&amp;autoPlay=1&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;posterUrl=https%3A%2F%2Fcivitai-education-hub-1063ae6.ingress-alpha.ewp.livewp-content%2Fuploads%2F2024%2F03%2F20240315-143720-6ozrs-1_mp4_dvd.original.jpg&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="666" data-height="1000"></div>
-
-</div>
-
-<div class="column">
-
-<div data-embed="videopress" data-src="https://video.wordpress.com/embed/fVdWvzLL?cover=1&amp;autoPlay=1&amp;loop=1&amp;muted=1&amp;persistVolume=0&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=0" data-title="VideoPress Video Player" data-width="666" data-height="1000"></div>
-
-</div>
-
-</div>
-
 ## Requirements, Notes, & Limitations
 
 -   Forge has very low VRAM requirements in comparison to Automatic 1111, and other interfaces, but you’ll still need a _**minimum**_ of **4GB of VRAM** for **SDXL** image generation, and **2GB of VRAM** for **SD 1.5** image generation!

@@ -57,7 +57,7 @@ function localizeMedia(props) {
 
 function selfHosted(p) {
   const src = String(p.dataSrc || '');
-  const guid = src.match(/videopress\.com\/(?:embed|v)\/([A-Za-z0-9]{8})/)?.[1];
+  const guid = src.match(/(?:videopress\.com|video\.wordpress\.com)\/(?:embed|v)\/([A-Za-z0-9]{8})/)?.[1];
   const v = guid && videopress[guid];
   if (!v) return undefined;
   const flags = new URL(src, 'https://videopress.com').searchParams;

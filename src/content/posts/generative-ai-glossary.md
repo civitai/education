@@ -198,12 +198,12 @@ Some of the terms below might be missing a description – this document is in a
 | AnimateDiff | Software, Extension | Technique which involves injecting motion into txt2img (or img2img) generations. https://animatediff.github.io/ |
 | ADetailer | Software, Extension | A popular Automatic1111 Extension, mostly used to enhance fine face and eye detail, but can be used to re-draw hands and full characters. |
 | Forge | Software, Interface | A popular fork of Auto1111 WebUI, by the Creator of Fooocus and ControlNet [https://github.com/lllyasviel/stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) |
-| Flux | Model | A suite of Models released August 2024 by Black Forest Labs. [Check out our Quickstart Guide](https://civitai-education-hub-1063ae6.ingress-alpha.ewp.livequickstart-guide-to-flux-1/)! |
+| Flux | Model | A suite of Models released August 2024 by Black Forest Labs. [Check out our Quickstart Guide](/quickstart-guide-to-flux-1/)! |
 | Pony | Model | Popular name for Pony Diffusion, a very popular SDXL-based model released by Creator Astraliteheart and his company, PurpleSmart AI. |
 | DoRA | Model, concept | A LoRA-like training process. Support has been added to all the major interfaces. |
 | GPT-4o | Model, LLM | Generative Pre-trained Transformer 4 refined model, currently the most advanced multi-modal model from OpenAI. |
 | Black Forest Labs | Organization | [https://blackforestlabs.ai](https://blackforestlabs.ai/), founded August 2024 from ex-Stability AI and other ML engineers. Released the hugely popular suite of text-2-img models, Flux |
-| Fooocus | Software, Interface | A lightweight interface for SDXL image creation, from the creator of Forge and ControlNet. [Check out our Quickstart Guide](https://civitai-education-hub-1063ae6.ingress-alpha.ewp.livegenerative-ai-art-with-fooocus-quickstart-guide/)! |
+| Fooocus | Software, Interface | A lightweight interface for SDXL image creation, from the creator of Forge and ControlNet. [Check out our Quickstart Guide](/generative-ai-art-with-fooocus-quickstart-guide/)! |
 | Draw Things | Software, Interface | Draw Things, is a popular Apple AppStore Stable Diffusion Interface app for inference. |
 | Civitai AiR | Programme | Civitai AiR (Artist in Residency) is an Art Residency programme which connects traditional artists with Generative AI art. Read more on [https://air.civitai.com](https://air.civitai.com/) |
 | SD3 (Stable Diffusion 3) | Model | Controversial text2img Model released by Stability AI, June 2024. |

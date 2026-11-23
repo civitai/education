@@ -1,7 +1,7 @@
 # Build: pnpm build -> dist/ (public) and pnpm build:drafts -> dist-drafts/ (adds draft posts), served
 # by nginx (nginx/default.conf). One image carries both; the container serves dist/ unless
 # SERVE_DRAFTS=1, which only the sign-in-gated drafts deployment sets.
-FROM node:22-alpine AS build
+FROM node:22.23-alpine AS build
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.18.0 --activate
 COPY package.json pnpm-lock.yaml ./

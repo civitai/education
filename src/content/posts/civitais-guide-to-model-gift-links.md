@@ -47,13 +47,13 @@ You get what a buyer of that version would get: download and generation if the v
 
 ## If a claim fails {#fails}
 
-A claim is refused if you own the model, if the model or version is unpublished, or if the link is revoked or expired. You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
+A claim is refused if you own the model, if the model or version is unpublished, if the link is revoked or expired, or if the creator's links have reached this month's allowance (see below). You also need an account that is set up, in good standing and has a verified email. If a link fails, ask the creator for a fresh one.
 
 ## The monthly claim allowance {#monthly}
 
-The allowance belongs to the creator. A creator's gift links can be claimed a limited number of times per calendar month, counted across all of that creator's links (the month runs on UTC time). People who claim a link are not limited. The allowance depends on the creator's membership tier:
+The allowance belongs to the creator. A creator's gift links can be claimed a limited number of times per calendar month, counted across all of that creator's links (the month runs on UTC time). People who claim a link are not limited by this allowance. The allowance depends on the creator's membership tier:
 
-| Creator's tier | Claims of your links per month |
+| Creator's tier | Claims of the creator's links per month |
 | --- | --- |
 | Free | 3 |
 | Founder or Bronze | 15 |
@@ -62,4 +62,4 @@ The allowance belongs to the creator. A creator's gift links can be claimed a li
 
 A claim that grants nothing new, such as claiming the same link again or claiming a version the person already has, does not count. A claim you remove no longer counts toward the month, although it still uses its slot on that link.
 
-When your links reach the allowance, new claims are refused until the next month starts, and you get a notification. Someone who tries to claim sees "This creator's gift links have reached this month's limit." The Gift links page in Creator Studio shows how many claims you have used this month and when the count resets. Your **Usage limits** page shows the same count as "Gift claims of your links per month"; see [Usage limits on your account](/usage-limits-on-your-account/).
+When your links reach the allowance, new claims are refused until the next month starts. You get a notification the first time a claim is refused that month. Someone who tries to claim sees "This creator's gift links have reached this month's limit." The Gift links page in Creator Studio shows how many claims you have used this month and when the count resets. Your **Usage limits** page shows the same count as "Gift claims of your links per month"; see [Usage limits on your account](/usage-limits-on-your-account/).

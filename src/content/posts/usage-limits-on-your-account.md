@@ -43,7 +43,7 @@ If a limit is refusing you right now, an orange banner appears on this page, bel
 
 1. Open **Usage limits** and read the retry time on the banner or the card.
 2. Wait until then. Most limits free up on their own. A card that says "Not available right now" is blocked outright, and waiting will not change that.
-3. If you need more room, the plan banner explains the levers: a higher Creator Score raises posting and comment limits, and a membership raises posting limits and several others, such as how often your gift links can be claimed. See [the membership guide](/civitais-guide-to-membership-tiers/) for the tiers.
+3. If you need more room, the plan banner explains the main levers: a higher Creator Score raises posting and comment limits, and a membership raises posting limits. A membership also raises several other limits, such as how often your gift links can be claimed. See [the membership guide](/civitais-guide-to-membership-tiers/) for the tiers.
 
 ## For scripts and tools {#api}
 

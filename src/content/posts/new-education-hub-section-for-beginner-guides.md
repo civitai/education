@@ -24,6 +24,6 @@ deprecated:
 
 We’ve updated the Education Hub to make it easier to find content aimed at absolute beginners – newcomers to the scene who want to make their own AI art, but have no clue how to get started!
 
-If that’s you, we’ve got you covered! Check out the articles in the new [Beginner’s Guides category](//category/beginner-guides/)!
+If that’s you, we’ve got you covered! Check out the articles in the new [Beginner’s Guides category](/category/beginner-guides/)!
 
-To jump right in and get the essential information, take a look at our [100% Beginner’s Guide to Generative AI Art article!](//start-making-generative-ai-art-with-civitai/)
+To jump right in and get the essential information, take a look at our [100% Beginner’s Guide to Generative AI Art article!](/start-making-ai-art-with-civitai/)

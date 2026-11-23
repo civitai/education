@@ -23,7 +23,7 @@ deprecated:
   replacedBy: "civitai-guide-to-controlnet"
 ---
 
-**Part one** of our two-part [ControlNet guide is live](//civitai-guide-to-controlnet/)! We’re touching on what ControlNet actually _**IS**_, how we install it, where we get the models which power it, and explore some of the Preprocessors, options, and settings!
+**Part one** of our two-part [ControlNet guide is live](/civitai-guide-to-controlnet/)! We’re touching on what ControlNet actually _**IS**_, how we install it, where we get the models which power it, and explore some of the Preprocessors, options, and settings!
 
 The first [SDXL ControlNet models](https://civitai.com/models/136070/controlnetxl-cnxl) are appearing, and this guide will help you understand how to get started leveraging ControlNet to take your generations to the next level!
 

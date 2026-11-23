@@ -25,7 +25,7 @@ deprecated:
 
 We’ve added the ability to upload, and filter for [AnimateDiff](https://github.com/guoyww/AnimateDiff/) Motion models, on [Civitai.com](https://www.civitai.com)! AnimateDiff is an extension which can inject a few frames of motion into generated images, and can produce some great results! Community trained models are starting to appear, and we’ve uploaded a [few of the best](https://civitai.com/models/144354/temporaldiff-motion-module)!
 
-We have a guide to getting started [here](/beginners-guide-to-animatediff/)! – [http://education.civitai.com/beginners-guide-to-animatediff/](//beginners-guide-to-animatediff/)
+We have a guide to getting started [here](/beginners-guide-to-animatediff/)! – [http://education.civitai.com/beginners-guide-to-animatediff/](/beginners-guide-to-animatediff/)
 
 <div class="columns">
 

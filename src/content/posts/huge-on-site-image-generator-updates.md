@@ -22,4 +22,4 @@ deprecated:
   replacedBy: "using-civitai-the-on-site-image-generator"
 ---
 
-Last week we released a huge update to the Civitai on-site Image Generator, bringing much awaited features including **Upscaling**, **Hires fix**, **ADetailer** (**face fix**), and **image-to-image**! [Check out our full Guide to the Civitai Image Generator for details](//using-civitai-the-on-site-image-generator/)!
+Last week we released a huge update to the Civitai on-site Image Generator, bringing much awaited features including **Upscaling**, **Hires fix**, **ADetailer** (**face fix**), and **image-to-image**! [Check out our full Guide to the Civitai Image Generator for details](/using-civitai-the-on-site-image-generator/)!

@@ -26,9 +26,9 @@ seo:
 | 8/12/2024 | First Version |
 | 8/15/2024 | On-Site and Local LoRA Training Information |
 | 9/10/2024 | Huge Update! All the latest Flux Info! |
-| 9/12/2024 | [Rapid Flux Training!](//quickstart-guide-to-flux-1/#rapid-flux-training) |
-| 11/21/2024 | [Flux Tools released](//quickstart-guide-to-flux-1/#flux-tools)! |
-| 22/27/2024 | [Inpainting and Outpainting Update](//quickstart-guide-to-flux-1/#a-note-on-inpainting-and-outpainting-workflows)! |
+| 9/12/2024 | [Rapid Flux Training!](/quickstart-guide-to-flux-1/#rapid-flux-training) |
+| 11/21/2024 | [Flux Tools released](/quickstart-guide-to-flux-1/#flux-tools)! |
+| 22/27/2024 | [Inpainting and Outpainting Update](/quickstart-guide-to-flux-1/#a-note-on-inpainting-and-outpainting-workflows)! |
 | 7/30/2025 | [Flux Kontext Pro and Max on Civitai](#flux-1-kontext) |
 | 7/31/2025 | [Flux Krea Dev – New Model!](#flux-1-krea-dev) |
 

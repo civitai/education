@@ -31,7 +31,7 @@ seo:
 
 ## Video Generation?
 
-This guide covers Civitai’s **_Image_** Generation options, but the Generator does have text2video and img2video capability, now! For more information on those, see our [Guide to Video in the Civitai Generator](//civitais-guide-to-video-in-the-civitai-generator/)!
+This guide covers Civitai’s **_Image_** Generation options, but the Generator does have text2video and img2video capability, now! For more information on those, see our [Guide to Video in the Civitai Generator](/civitais-guide-to-video-in-the-civitai-generator/)!
 
 ## What is the Civitai Image Generator?
 
@@ -43,7 +43,7 @@ It’s super easy to get started creating your own AI generated art with the Gen
 
 **_Everyone_** with a [Civitai.com](https://www.civitai.com) account can access the Generator and start creating images in seconds!
 
-For help **creating** and **configuring** your Civitai account, check out this [Guide to Civitai (Part 1)](//using-civitai-a-guide/)!
+For help **creating** and **configuring** your Civitai account, check out this [Guide to Civitai (Part 1)](/using-civitai-a-guide/)!
 
 ## What can it generate?
 
@@ -185,7 +185,7 @@ Note that we’ve set a default value for you, but it often needs tweaking to pr
 
 ## How do I make a Flux image?
 
-You may have heard of Flux! Since its release on August 1st, 2024, it’s been making waves in the text-to-image generation world! Flux is setting new standards with its incredibly high-fidelity images, nailing human anatomy – yes, even the hands! – and delivering _remarkable_ text reproduction. It’s a game-changer that’s raising the bar for what’s possible in AI-generated art. You can [read more about Flux in our Quickstart Guide, here](//quickstart-guide-to-flux-1/)!
+You may have heard of Flux! Since its release on August 1st, 2024, it’s been making waves in the text-to-image generation world! Flux is setting new standards with its incredibly high-fidelity images, nailing human anatomy – yes, even the hands! – and delivering _remarkable_ text reproduction. It’s a game-changer that’s raising the bar for what’s possible in AI-generated art. You can [read more about Flux in our Quickstart Guide, here](/quickstart-guide-to-flux-1/)!
 
 Here’s a sample of what possible with Flux – all images created by the Community using the Civitai on-site Generator!
 

@@ -29,7 +29,7 @@ Civitai is all about celebrating beautiful content, and we know everyone wants t
 
 The first is through pure chance – what we call being “organically” featured. As we go about our daily tasks, we sometimes stumble upon standout content and decide to highlight it on the front page. It’s a great surprise when it happens, but there’s also a way to take matters into your own hands.
 
-If you’ve got a new model release you want to promote or an image you’re exceptionally proud of, you can submit a request to showcase your work! By spending some Yellow [Bu](//civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/)[zz](/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/), you can make sure your creation gets the visibility it deserves.
+If you’ve got a new model release you want to promote or an image you’re exceptionally proud of, you can submit a request to showcase your work! By spending some Yellow [Bu](/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/)[zz](/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/), you can make sure your creation gets the visibility it deserves.
 
 ![](/wp-content/uploads/2024/09/Screenshot-2024-09-23-205756-1-1024x399.webp)
 
@@ -49,7 +49,7 @@ However, there are a few important guidelines that must be followed for a reques
 
 -   **Maintain Civitai’s homepage Aesthetic**: The Civitai.com homepage is a central part of the platform’s identity, and it’s important to keep its look cohesive. Some content, while great in its own right, may not align with the aesthetic we aim to maintain on the front page.
 
--   **Buzz**: You must have sufficient [Yellow Buzz](//civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/) to cover the cost of the request! Image, Model, and Article requests cost **10,000 Buzz** ?
+-   **Buzz**: You must have sufficient [Yellow Buzz](/civitais-guide-to-on-site-currency-buzz-%e2%9a%a1/) to cover the cost of the request! Image, Model, and Article requests cost **10,000 Buzz** ?
 
 By following these guidelines, you can ensure that your request stands the best chance of being featured!
 

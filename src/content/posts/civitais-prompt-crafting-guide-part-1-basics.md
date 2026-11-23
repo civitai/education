@@ -314,4 +314,4 @@ If you’ve followed the best practices in this guide (and [Par](/civitais-promp
 
 ## Conclusion
 
-In this guide we’ve explored the absolute basics of prompt creation, but there’s so much more to cover! In [Part 2](//civitais-prompt-crafting-guide-part-2-intermediate/), [we’ll look at prompt Weight & Emphasis](//civitais-prompt-crafting-guide-part-2-intermediate/), and in the final part we’ll examine a number of advanced topics!
+In this guide we’ve explored the absolute basics of prompt creation, but there’s so much more to cover! In [Part 2](/civitais-prompt-crafting-guide-part-2-intermediate/), [we’ll look at prompt Weight & Emphasis](/civitais-prompt-crafting-guide-part-2-intermediate/), and in the final part we’ll examine a number of advanced topics!

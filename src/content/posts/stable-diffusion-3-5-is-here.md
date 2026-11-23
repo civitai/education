@@ -25,4 +25,4 @@ deprecated:
 
 Stable Diffusion 3.5 has arrived, a little unexpectedly! The burning question is; is it any better than the disastrously received Stable Diffusion 3?
 
-Check out our [Getting Started Guide to Stable Diffusion 3.5](//getting-started-with-stable-diffusion-3-5/) and try it out for yourself!
+Check out our [Getting Started Guide to Stable Diffusion 3.5](/getting-started-with-stable-diffusion-3-5/) and try it out for yourself!

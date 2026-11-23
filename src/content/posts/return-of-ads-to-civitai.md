@@ -28,4 +28,4 @@ We’ve had a lot of requests for more ways for users to earn Buzz. It has been 
 
 ![](/wp-content/uploads/2024/08/SquareBuzz-1024x701.webp)
 
-Read our [Guide to Ads and Generation Buzz](//civitais-guide-to-ads-2/) for more information!
+Read our [Guide to Ads and Generation Buzz](/civitais-guide-to-ads-2/) for more information!

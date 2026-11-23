@@ -23,4 +23,4 @@ deprecated:
 
 ![](/wp-content/uploads/2024/10/halloweenarticle.webp)
 
-Now’s your chance to conjure up some Halloween sorcery and show off your magical LoRA training and generation talents in our Great Halloween Contest! Plus, enjoy 25% off [Flux Rapid training](//quickstart-guide-to-flux-1/#rapid-flux-training) to help craft your spooky masterpieces! ? [Enter here](https://civitai.com/articles/7990)!
+Now’s your chance to conjure up some Halloween sorcery and show off your magical LoRA training and generation talents in our Great Halloween Contest! Plus, enjoy 25% off [Flux Rapid training](/quickstart-guide-to-flux-1/#rapid-flux-training) to help craft your spooky masterpieces! ? [Enter here](https://civitai.com/articles/7990)!

@@ -25,6 +25,6 @@ Introducing **EduBot**, your go-to resource for all things Generative AI! Built 
 
 With advanced knowledge of Generative AI concepts, EduBot is here to help you dive deep into the intricacies of Generative AI. Whether you’re a seasoned pro or just starting your journey, EduBot is equipped to answer your questions, guide your learning, and provide insights that will take your projects to the next level.
 
-Unlike his cousin, [CivBot](//civitais-guide-to-civbot/), who is focused on Civitai’s moderation policies and site navigation, EduBot is _dedicated_ to education. His sole mission is to enrich your understanding of Generative AI without getting sidetracked by site-specific concerns. So, when you have a question about how to craft the perfect prompt, train a model, or explain the Diffusers pipeline like you’re five years old, EduBot is here to help!
+Unlike his cousin, [CivBot](/civitais-guide-to-civbot/), who is focused on Civitai’s moderation policies and site navigation, EduBot is _dedicated_ to education. His sole mission is to enrich your understanding of Generative AI without getting sidetracked by site-specific concerns. So, when you have a question about how to craft the perfect prompt, train a model, or explain the Diffusers pipeline like you’re five years old, EduBot is here to help!
 
 **EduBot** is available from the bottom left corner on [http://education.civitai.com/](/)

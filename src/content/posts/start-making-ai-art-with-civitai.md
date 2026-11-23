@@ -199,6 +199,6 @@ Generative AI is a huge field, with many applications. Some of the most popular 
 
 -   [Magnific.ai](https://magnific.ai/) – An out of this world “Upscaling” tool (upscaling is the process of taking a low quality/resolution image and enlarging or enhancing it to a larger size) which has wowed the internet recently with the quality of the output images;
 
-Check out our [Guide to Upscaling with Stable Diffusion](//civitais-guide-to-image-upscaling/) to learn how to Upscale your images on Civitai!
+Check out our [Guide to Upscaling with Stable Diffusion](/civitais-guide-to-image-upscaling/) to learn how to Upscale your images on Civitai!
 
 -   [OpenAI’s Sora](https://openai.com/sora) – Sora is one of the many recently released generative AI models that can create realistic and imaginative video scenes from text instructions (also known as txt2video).

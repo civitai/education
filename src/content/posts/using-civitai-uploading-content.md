@@ -26,15 +26,15 @@ seo:
 | 1/25/2024 | UI Change – Create Button |
 | 9/20/2024 | Real Person Acknowledgement |
 
-1.  [The Basics](//using-civitai-uploading-content/#the-basics)
-    1.  [Upload a model](//using-civitai-uploading-content/#upload-a-model)
-        1.  [Step 1 – Create your model](//using-civitai-uploading-content/#step-1-create-your-model)
-        2.  [Step 2 – Add version](//using-civitai-uploading-content/#step-2-add-version)
-        3.  [Step 3 – Upload files](//using-civitai-uploading-content/#step-3-upload-files)
-        4.  [Step 4 – Create a post](//using-civitai-uploading-content/#step-4-create-a-post)
-        5.  [Step 5- Publishing](//using-civitai-uploading-content/#step-5-publishing)
-    2.  [Post images](//using-civitai-uploading-content/#post-images)
-    3.  [Write Articles](http://education.civitai.co/musing-civitai-uploading-content/#write-articles)
+1.  [The Basics](/using-civitai-uploading-content/#the-basics)
+    1.  [Upload a model](/using-civitai-uploading-content/#upload-a-model)
+        1.  [Step 1 – Create your model](/using-civitai-uploading-content/#step-1-create-your-model)
+        2.  [Step 2 – Add version](/using-civitai-uploading-content/#step-2-add-version)
+        3.  [Step 3 – Upload files](/using-civitai-uploading-content/#step-3-upload-files)
+        4.  [Step 4 – Create a post](/using-civitai-uploading-content/#step-4-create-a-post)
+        5.  [Step 5- Publishing](/using-civitai-uploading-content/#step-5-publishing)
+    2.  [Post images](/using-civitai-uploading-content/#post-images)
+    3.  [Write Articles](/using-civitai-uploading-content/#write-articles)
 
 ## The Basics
 

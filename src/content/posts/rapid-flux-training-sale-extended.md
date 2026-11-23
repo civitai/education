@@ -28,6 +28,6 @@ Train a Flux LoRA in under 5 minutes with our new Rapid Training option in the C
 
 ![](/wp-content/uploads/2024/09/Screenshot-2024-09-18-130236.webp)
 
-Check out examples of Rapid-Trained LoRAs in our [Quickstart Guide to Flux](//quickstart-guide-to-flux-1/#rapid-flux-training), then [start your own super-fast training today](https://civitai.com/models/train).
+Check out examples of Rapid-Trained LoRAs in our [Quickstart Guide to Flux](/quickstart-guide-to-flux-1/#rapid-flux-training), then [start your own super-fast training today](https://civitai.com/models/train).
 
 Don’t miss out – sale ends **Tuesday, Sept 24th, 2024**!

@@ -25,4 +25,4 @@ deprecated:
 
 We’ve launched the Civitai on-site LoRA trainer for all Civitai [Supporters](https://civitai.com/pricing)! Don’t have the hardware to train locally? Don’t want the hassle of figuring out all the crazy advanced options? Supply your training images and let our wizard take over!
 
-[Guide to getting started here](//using-civitai-the-on-site-lora-trainer/)!
+[Guide to getting started here](/using-civitai-the-on-site-lora-trainer/)!

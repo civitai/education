@@ -29,6 +29,7 @@ seo:
 
 | **Last Updated** | **Changes** |
 | --- | --- |
+| 11/23/2026 | Added troubleshooting for license fees set by Civitai. |
 | 10/26/2026 | First version. Replaces the Guide to Early Access. |
 
 This guide is for creators who want to charge for a model: either by selling access to it, or by earning a small fee every time someone generates with it. It covers where you set each option, the limits you will run into, and where the Buzz you earn shows up.
@@ -259,7 +260,7 @@ Points to know:
 | "Paid access isn't available for this version" | The version is set to API-only generation. It has no download or on-site generation mode to sell. |
 | Paid access is blocked for a version | Check the base model license, whether the model is flagged as depicting a real person, and whether the model is private. Private models can still carry a fee. |
 | Your license fee is read-only, or saving it says it was "set by Civitai" | Civitai set this version's fee, so you can't change it yourself. Contact support to change it. |
-| "This version has a percentage license fee set by Civitai" | The fee on this version is a percentage of the generation cost, set by Civitai. Creator Studio sets fees in Buzz per generation, so it cannot change this one. Contact support to change it. |
+| "This version has a percentage license fee set by Civitai" | The fee on this version is a percentage of the compute cost, set by Civitai. Creator Studio sets fees in Buzz per generation, so it cannot change the amount. You can still turn the fee off; contact support to change it. |
 
 ## I need more help {#help}
 

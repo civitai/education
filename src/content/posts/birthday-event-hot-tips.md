@@ -112,6 +112,8 @@ If you would rather not see turf hats on the pictures, turn off **Show hats** in
 
 ### Strategies for Hat Turf {#turf-strategies}
 
+**Playing the final week?** The [last-week playbook](https://civitai.com/articles/39576) covers the plays working best right now: getting onto fresh posts early, and how many teammates to stack on one image before the next hat is worth more somewhere else.
+
 **Find rising work early.** The team with the most turf hats on an image earns from it, and only that team's earliest players get credit. Getting your hat onto a rising creator's work before the crowd arrives is the best move in the game.
 
 **Bring your team.** A lead can flip. Tell teammates which image you are claiming so they stack on, and watch the badge to see when another team is closing in.

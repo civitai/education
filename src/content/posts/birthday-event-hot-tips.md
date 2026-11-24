@@ -141,6 +141,12 @@ If you do not want other people playing on your images, first leave Hat Turf (fr
 
 Fine: asking real people to look, react, comment, sticker and remix, and sharing your team's collections and posts. Not fine: extra accounts, bought or bot engagement, reaction rings of throwaway accounts, and mass low-effort reposts made only to carry hats. Those can be removed from the event.
 
+Scripts that read the public API to find images are fine. Placing or moving hats has to be done by hand.
+
+## The Comeback Cup {#comeback-cup}
+
+The final week has a second prize. From **November 24 at 00:00 UTC** until the event ends, the team that improves the most against its own daily pace from November 1 to 22 wins the [Comeback Cup](https://civitai.com/articles/39738). Only points earned by hats count, so Flag Race wins and Crucible or Rally awards do not. Everyone on the winning team whose hats earned points that week gets the animated Comeback Cup badge. It is cosmetic only: it adds no points and cannot change who wins the Birthday.
+
 ## After the event {#after}
 
 <figure><img src="/images/guides/birthday-event-hot-tips/champion-badges.webp" alt="The Birthday 2026 Champion badge in yellow, blue, pink and green" width="1400" height="320" loading="lazy"><figcaption><em>The Champion badge comes in all four colors, but only the winning color is handed out. Image: the official <a href="https://civitai.com/articles/36416">launch article</a>.</em></figcaption></figure>

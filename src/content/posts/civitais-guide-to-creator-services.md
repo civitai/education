@@ -43,6 +43,8 @@ The short version: **your Buzz is held in escrow, not paid, until you accept the
 
 Everything about a deal, including its status, chat, files and updates, is on [your deals page](https://civitai.com/services/deals).
 
+**Save your files.** Deal files are deleted 30 days after a deal is declined, expires or is canceled, and 90 days after a completed deal's dispute window ends. Download anything you want to keep.
+
 ## Your Buzz and escrow {#escrow}
 
 Escrow means the platform holds your Buzz while the work is done, instead of handing it to the creator up front. The deal page says it plainly: the Buzz is held, not paid, and nothing moves until the deal completes or is canceled. That protects you if the work never arrives, and it protects the creator, who knows the Buzz is there before starting.
